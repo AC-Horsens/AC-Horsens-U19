@@ -576,6 +576,19 @@ def Process_data_spillere(events,df_xg,df_matchstats):
 
 events ,df_xg, df_matchstats = load_data()
 position_dataframes = Process_data_spillere(events,df_xg,df_matchstats)
+#defending_central_defender_df = position_dataframes['defending_central_defender']
+#ball_playing_central_defender_df = position_dataframes['ball_playing_central_defender']
+balanced_central_defender_df = position_dataframes['Central defender']
+fullbacks_df = position_dataframes['Fullbacks']
+number6_df = position_dataframes['Number 6']
+#number6_double_6_forward_df = position_dataframes['number6_double_6_forward']
+#number6_destroyer_df = position_dataframes['Number 6 (destroyer)']
+number8_df = position_dataframes['Number 8']
+number10_df = position_dataframes['Number 10']
+winger_df = position_dataframes['Winger']
+classic_striker_df = position_dataframes['Classic striker']
+#targetman_df = position_dataframes['Targetman']
+#box_striker_df = position_dataframes['Boxstriker']
 
 players = events['player.name'].unique()
 def plot_heatmap_location(data, title):
@@ -650,10 +663,10 @@ def plot_arrows(df):
 def Hjalte_Toftegaard(events,df_matchstats,position_dataframes):
     player_name = 'H. Toftegaard'
     st.title(f'{player_name} dashboard')    
-    rating = position_dataframes[position_dataframes['player.name'] == player_name]
-    st.write(rating)
-    rating = rating[rating['player.name'] == player_name]
-    st.dataframe(rating)
+    number6_df = number6_df[number6_df['player.name'] == player_name]
+    st.dataframe(number6_df)
+    number8_df = number8_df[number8_df['player.name'] == player_name]
+    st.dataframe(number8_df)
     df = events[(events['player.name'] == player_name)|(events['pass.recipient.name'] == player_name)]
     df['date'] = pd.to_datetime(df['date'])
     df = df.sort_values(by='date')
