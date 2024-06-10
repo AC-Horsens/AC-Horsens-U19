@@ -676,8 +676,9 @@ def Hjalte_Toftegaard(events,df_matchstats,number8_df,number6_df):
     number8_df = number8_df[(number8_df['label'].isin(kampvalg)) & (number8_df['player.name'] == player_name)]
     number6_df = number6_df.drop(columns=['player.name','team.name','position_codes'])
     number8_df = number8_df.drop(columns=['player.name','team.name','position_codes'])
-
+    st.write('As number 6')
     st.dataframe(number6_df,hide_index=True)
+    st.write('As number 8')
     st.dataframe(number8_df,hide_index=True)
 
     Bolde_modtaget = df[df['pass.recipient.name'] == player_name]
