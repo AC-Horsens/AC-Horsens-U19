@@ -655,7 +655,7 @@ def Hjalte_Toftegaard(events,df_matchstats):
     df['date'] = pd.to_datetime(df['date'])
     df = df.sort_values(by='date')
     kampe = df['label'].unique()
-    kampvalg = st.multiselect('Choose matches', kampe,default=None)
+    kampvalg = st.multiselect('Choose matches', kampe,default=kampe)
     df = df[df['label'].isin(kampvalg)]
     df_matchstats_player = df_matchstats[(df_matchstats['player.name'] == player_name) & (df_matchstats['label'].isin(kampvalg))]
 
