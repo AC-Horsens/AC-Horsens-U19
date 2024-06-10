@@ -46,7 +46,7 @@ kampdetaljer = json_normalize(json_files)
 kampdetaljer = kampdetaljer[['wyId','label','date']]
 kampdetaljer = kampdetaljer.rename(columns={'wyId':'matchId'})
 events = kampdetaljer.merge(df)
-events = events[['id','matchId','player.name','player.id','date','team.name','type.primary','type.secondary','pass.accurate','pass.endLocation.x','pass.endLocation.y','carry.endLocation.x','carry.endLocation.y','minute','label','location.x','location.y','shot.xg']]
+events = events[['id','matchId','player.name','player.id','pass.recipient.name','date','team.name','type.primary','type.secondary','pass.accurate','pass.endLocation.x','pass.endLocation.y','carry.endLocation.x','carry.endLocation.y','minute','label','location.x','location.y','shot.xg']]
 events.to_csv('events.csv',index=False)
 
 connection_string = 'SharedAccessSignature=sv=2020-08-04&ss=f&srt=sco&sp=rl&se=2025-01-11T22:47:25Z&st=2022-01-11T14:47:25Z&spr=https&sig=CXdXPlHz%2FhW0IRugFTfCrB7osNQVZJ%2BHjNR1EM2s6RU%3D;FileEndpoint=https://divforeningendataout1.file.core.windows.net/;'
@@ -92,55 +92,57 @@ import ast
 
 matchstats = pd.read_csv(r'C:\Users\SéamusPeareBartholdy\Documents\GitHub\AC-Horsens-U19\matchstats.csv')
 events = pd.read_csv(r'C:\Users\SéamusPeareBartholdy\Documents\GitHub\AC-Horsens-U19\events.csv')
-name_and_id = events[['player.name','player.id','team.name','matchId','label']]
-name_and_id.rename(columns={'player.id':'playerId'})
+matchstats.rename(columns={'playerId': 'player.id'}, inplace=True)
+name_and_id = events[['player.name','player.id','team.name','date','matchId','label']]
 name_and_id = name_and_id.drop_duplicates()
-matchstats = name_and_id.merge(matchstats)
-# Extract positions from the 'positions' column
-def extract_positions(positions_str):
-    positions_list = ast.literal_eval(positions_str)
+matchstats = matchstats.merge(name_and_id)
+data = matchstats['positions']
+df1 = pd.DataFrame(data)
+# Funktion, der ekstraherer navne og koder fra strengdata og opretter en ny kolonne med disse værdier
+def extract_positions(data):
+    positions_list = ast.literal_eval(data) # Konverterer strengen til en liste af ordbøger
     names = [pos['position']['name'] for pos in positions_list]
     codes = [pos['position']['code'] for pos in positions_list]
     return pd.Series({'position_names': names, 'position_codes': codes})
 
-# Apply the extract_positions function to the 'positions' column
-matchstats[['position_names', 'position_codes']] = matchstats['positions'].apply(extract_positions)
+# Anvender funktionen på kolonnen og tilføjer resultaterne som nye kolonner til dataframe
+df1[['position_names', 'position_codes']] = df1['positions'].apply(extract_positions)
 
-# Drop unnecessary columns and merge the extracted positions
-matchstats = matchstats[['player.name', 'team.name', 'matchId', 'label', 'position_names', 'position_codes', 'average', 'percent', 'total']]
+matchstats = pd.merge(matchstats,df1,left_index=True, right_index=True)
+matchstats = matchstats[['player.id','player.name','team.name','matchId','label','date','position_names','position_codes','average','percent','total']]
+matchstats['percent'] = matchstats['percent'].apply(lambda x: ast.literal_eval(x))
 
-# Convert 'percent', 'total', and 'average' columns to appropriate data types
-matchstats['percent'] = matchstats['percent'].apply(ast.literal_eval)
-matchstats['total'] = matchstats['total'].apply(ast.literal_eval)
-matchstats['average'] = matchstats['average'].apply(ast.literal_eval)
+new_df = pd.DataFrame(matchstats['percent'].to_list(), index=matchstats.index).add_prefix('percent_')
 
-# Expand the 'percent', 'total', and 'average' columns into separate columns
-matchstats = pd.concat([
-    matchstats,
-    pd.DataFrame(matchstats['percent'].to_list(), index=matchstats.index).add_prefix('percent_'),
-    pd.DataFrame(matchstats['total'].to_list(), index=matchstats.index).add_prefix('total_'),
-    pd.DataFrame(matchstats['average'].to_list(), index=matchstats.index).add_prefix('average_')
-], axis=1)
+matchstats = pd.concat([matchstats, new_df], axis=1)
+matchstats = matchstats.drop('percent', axis=1)
 
-# Drop the original 'percent', 'total', and 'average' columns
-matchstats = matchstats.drop(['percent', 'total', 'average'], axis=1)
-empty_lists_mask = (matchstats['position_names'].apply(len) == 0) & (matchstats['position_codes'].apply(len) == 0)
-matchstats = matchstats[~empty_lists_mask]
-matchstats = matchstats[['player.name','team.name','position_codes','total_minutesOnField','percent_duelsWon','percent_successfulPassesToFinalThird','average_xgAssist','average_crosses','average_passesToFinalThird','percent_successfulProgressivePasses','percent_successfulPasses','average_ballRecoveries','average_interceptions','average_defensiveDuels','average_successfulDefensiveAction','average_forwardPasses','average_successfulForwardPasses','average_touchInBox','average_xgShot','average_keyPasses','average_successfulAttackingActions','average_shotAssists']]
+matchstats['total'] = matchstats['total'].apply(lambda x: ast.literal_eval(x))
+
+new_df = pd.DataFrame(matchstats['total'].to_list(), index=matchstats.index).add_prefix('total_')
+
+matchstats = pd.concat([matchstats, new_df], axis=1)
+
+matchstats = matchstats.drop('total', axis=1)
+
+matchstats['average'] = matchstats['average'].apply(lambda x: ast.literal_eval(x))
+new_df = pd.DataFrame(matchstats['average'].to_list(), index=matchstats.index).add_prefix('average_')
+matchstats = pd.concat([matchstats, new_df], axis=1)
+matchstats = matchstats.drop('average', axis=1)
+matchstats['position_codes'] = matchstats['position_codes'].astype(str)
+matchstats = matchstats[['player.id','player.name','team.name','label','position_codes','total_minutesOnField','average_successfulPassesToFinalThird','percent_aerialDuelsWon','percent_newSuccessfulDribbles','average_throughPasses','percent_duelsWon','percent_successfulPassesToFinalThird','average_xgAssist','average_crosses','average_progressivePasses','average_progressiveRun','average_accelerations','average_passesToFinalThird','percent_successfulProgressivePasses','percent_successfulPasses','average_ballRecoveries','average_interceptions','average_defensiveDuels','average_successfulDefensiveAction','average_forwardPasses','average_successfulForwardPasses','average_touchInBox','average_xgShot','average_keyPasses','average_successfulAttackingActions','average_shotAssists']]
 matchstats.to_csv('matchstats.csv',index=False)
 
 xg = events[events['shot.xg'] > 0]
-xg = xg[['team.name','label','minute','shot.xg']]
+xg = xg[['team.name','label','date','minute','shot.xg']]
 xg.to_csv('xg.csv',index=False)
 
 xg_agg = xg[xg['label'].str.contains('Horsens')]
 xg_agg.to_csv('xg_agg.csv', index=False)
 
-terr_poss = events[['team.name','minute','label','location.x','location.y']]
-team_names = terr_poss['team.name'].unique()
-team_1 = team_names[0]
-team_2 = team_names[1]
-def determine_defending_team(row):
+terr_poss = events[['team.name', 'minute', 'label', 'location.x', 'location.y']]
+
+def determine_defending_team(row, team_1, team_2):
     if row['location.x'] <= 33.33:
         return row['team.name']
     elif row['location.x'] <= 66.67:
@@ -152,9 +154,17 @@ def determine_defending_team(row):
         else:
             return team_1
 
-# Apply the function to create the 'defending_team' column
-terr_poss['territorial_possession'] = terr_poss.apply(determine_defending_team, axis=1)
-terr_poss.to_csv('terr_poss.csv', index=False)
+def apply_for_each_label(group):
+    team_names = group['team.name'].unique()
+    if len(team_names) != 2:
+        raise ValueError(f"Unexpected number of teams in group: {team_names}")
+    team_1, team_2 = team_names[0], team_names[1]
+    group['territorial_possession'] = group.apply(determine_defending_team, axis=1, team_1=team_1, team_2=team_2)
+    return group
+
+# Apply the function for each unique label
+terr_poss = terr_poss.groupby('label').apply(apply_for_each_label).reset_index(drop=True)
+terr_poss = terr_poss.to_csv('terr_poss.csv', index=False)
 
 df_ppda = events[['type.primary','type.secondary','team.name','location.x','label','id']]
 df_ppdabeyond40 = df_ppda[df_ppda['location.x'] > 40]
