@@ -647,8 +647,6 @@ def plot_arrows(df):
     st.pyplot(fig)
 
 
-
-
 def Hjalte_Toftegaard(events,df_matchstats):
     player_name = 'H. Toftegaard'
     st.title(f'{player_name} dashboard')    
@@ -657,7 +655,7 @@ def Hjalte_Toftegaard(events,df_matchstats):
     df['date'] = pd.to_datetime(df['date'])
     df = df.sort_values(by='date')
     kampe = df['label'].unique()
-    kampvalg = st.multiselect('Choose matches', kampe,default=kampe)
+    kampvalg = st.multiselect('Choose matches', kampe,default=None)
     df = df[df['label'].isin(kampvalg)]
     df_matchstats_player = df_matchstats[(df_matchstats['player.name'] == player_name) & (df_matchstats['label'].isin(kampvalg))]
 
