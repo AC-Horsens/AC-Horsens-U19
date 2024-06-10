@@ -660,7 +660,7 @@ def plot_arrows(df):
     st.pyplot(fig)
 
 
-def Hjalte_Toftegaard(events,df_matchstats,number8_df):
+def Hjalte_Toftegaard(events,df_matchstats,number8_df,number6_df):
     player_name = 'H. Toftegaard'
     st.title(f'{player_name} dashboard')    
     df = events[(events['player.name'] == player_name)|(events['pass.recipient.name'] == player_name)]
@@ -731,7 +731,7 @@ def Anton_Mandrup(df):
 
 
 overskrifter_til_menu = {
-        'Hjalte Toftegaard': Hjalte_Toftegaard(events,df_matchstats,number8_df),
+        'Hjalte Toftegaard': Hjalte_Toftegaard(events,df_matchstats,number8_df,number6_df),
         'Anton Mandrup': Anton_Mandrup(events)
     }
 
