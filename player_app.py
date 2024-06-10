@@ -717,7 +717,7 @@ def Anton_Mandrup(df):
 
 
 overskrifter_til_menu = {
-        'Hjalte Toftegaard': Hjalte_Toftegaard(events,df_matchstats),
+        'Hjalte Toftegaard': Hjalte_Toftegaard(events,df_matchstats,position_dataframes),
         'Anton Mandrup': Anton_Mandrup(events)
     }
 
