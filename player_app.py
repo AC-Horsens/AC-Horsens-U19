@@ -658,6 +658,7 @@ def Hjalte_Toftegaard(events,df_matchstats):
     kampvalg = st.multiselect('Choose matches', kampe,default=kampe)
     df = df[df['label'].isin(kampvalg)]
     df_matchstats_player = df_matchstats[(df_matchstats['player.name'] == player_name) & (df_matchstats['label'].isin(kampvalg))]
+    df_matchstats_player['date'] = pd.to_datetime(df_matchstats_player['date'])
 
     Bolde_modtaget = df[df['pass.recipient.name'] == player_name]
     Bolde_modtaget_til = Bolde_modtaget[['pass.endLocation.x','pass.endLocation.y']]
@@ -677,6 +678,19 @@ def Hjalte_Toftegaard(events,df_matchstats):
     st.dataframe(combined_df,hide_index=True)
     plot_arrows(Alle_off_aktioner)
 
+    pass_percent_season = df_matchstats_player[['label', 'percent_successfulPasses']]
+
+    plt.figure(figsize=(10, 6))
+    plt.plot(pass_percent_season['label'], pass_percent_season['percent_successfulPasses'], marker='o', linestyle='-')
+    plt.title('Pass Success Percentage Over the Season')
+    plt.xlabel('Matches')
+    plt.ylabel('Pass Success Percentage')
+    plt.grid(True)
+    plt.xticks(rotation=45)
+    plt.tight_layout()
+
+    st.pyplot(plt)
+    
     col1,col2,col3 = st.columns(3)
 
     with col1:
