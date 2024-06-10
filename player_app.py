@@ -1,6 +1,6 @@
 import pandas as pd
 import streamlit as st
-import matplotlib as plt
+import matplotlib.pyplot as plt
 from mplsoccer import Pitch
 from scipy.ndimage import gaussian_filter
 st.set_page_config(layout="wide")
