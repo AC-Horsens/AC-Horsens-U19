@@ -663,8 +663,6 @@ def plot_arrows(df):
 def Hjalte_Toftegaard(events,df_matchstats,position_dataframes):
     player_name = 'H. Toftegaard'
     st.title(f'{player_name} dashboard')    
-    st.dataframe(number6_df)
-    st.dataframe(number8_df)
     df = events[(events['player.name'] == player_name)|(events['pass.recipient.name'] == player_name)]
     df['date'] = pd.to_datetime(df['date'])
     df = df.sort_values(by='date')
@@ -674,6 +672,10 @@ def Hjalte_Toftegaard(events,df_matchstats,position_dataframes):
     df_matchstats_player = df_matchstats[(df_matchstats['player.name'] == player_name) & (df_matchstats['label'].isin(kampvalg))]
     df_matchstats_player['date'] = pd.to_datetime(df_matchstats_player['date'])
     df_matchstats_player = df_matchstats_player.sort_values(by='date')
+    number6_df = number6_df[(number6_df['label'].isin(kampvalg)) & (number6_df['player.name'] == player_name)]
+    number8_df = number8_df[(number8_df['label'].isin(kampvalg)) & (number8_df['player.name'] == player_name)]
+    st.dataframe(number6_df)
+    st.dataframe(number8_df)
 
     Bolde_modtaget = df[df['pass.recipient.name'] == player_name]
     Bolde_modtaget_til = Bolde_modtaget[['pass.endLocation.x','pass.endLocation.y']]
