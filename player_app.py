@@ -687,8 +687,6 @@ def Hjalte_Toftegaard(events,df_matchstats):
     plt.ylabel('Pass Success Percentage')
     plt.grid(True)
     plt.xticks(rotation=45)
-    plt.gca().xaxis.set_ticks_position('left')  # Position the x-axis ticks to the left
-
     plt.tight_layout()
 
     st.pyplot(plt)
