@@ -650,7 +650,7 @@ def plot_arrows(df):
 def Hjalte_Toftegaard(events,df_matchstats):
     player_name = 'H. Toftegaard'
     st.title(f'{player_name} dashboard')    
-    rating = position_dataframes['H. Toftegaard']
+    rating = position_dataframes
     st.write(rating)
     rating = rating[rating['player.name'] == player_name]
     st.dataframe(rating)
