@@ -613,7 +613,7 @@ def pass_accuracy(df, kampvalg):
     if len(df_passes) == 0:
         df_accurate_percent = 0
     else:
-        df_accurate_percent = len(df_accurate) / len(df_passes)
+        df_accurate_percent = len(df_accurate) / len(df_passes)*100
     df_accurate_percent = round(df_accurate_percent, 2)
     df_pass_accuracy = pd.DataFrame({'Pass Accuracy': [df_accurate_percent]})
     return df_pass_accuracy
