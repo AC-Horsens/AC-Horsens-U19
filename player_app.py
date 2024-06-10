@@ -663,9 +663,7 @@ def plot_arrows(df):
 def Hjalte_Toftegaard(events,df_matchstats,position_dataframes):
     player_name = 'H. Toftegaard'
     st.title(f'{player_name} dashboard')    
-    number6_df = number6_df[number6_df['player.name'] == player_name]
     st.dataframe(number6_df)
-    number8_df = number8_df[number8_df['player.name'] == player_name]
     st.dataframe(number8_df)
     df = events[(events['player.name'] == player_name)|(events['pass.recipient.name'] == player_name)]
     df['date'] = pd.to_datetime(df['date'])
