@@ -686,7 +686,7 @@ def Hjalte_Toftegaard(events,df_matchstats):
     plt.title('Pass Success Percentage Over the Season')
     plt.ylabel('Pass Success Percentage')
     plt.grid(True)
-    plt.xticks(rotation=45)
+    plt.xticks(pass_percent_season['label'], rotation=45, ha='right')  # Center the labels under each point
     plt.tight_layout()
 
     st.pyplot(plt)
