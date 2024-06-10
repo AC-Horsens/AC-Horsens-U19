@@ -680,7 +680,6 @@ def Hjalte_Toftegaard(events,df_matchstats):
 
     pass_percent_season = df_matchstats_player[['label', 'percent_successfulPasses']]
 
-    plt.figure(figsize=(10, 6))
     plt.plot(pass_percent_season['label'], pass_percent_season['percent_successfulPasses'], marker='o', linestyle='-')
     plt.title('Pass Success Percentage Over the Season')
     plt.xlabel('Matches')
