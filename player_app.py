@@ -674,6 +674,9 @@ def Hjalte_Toftegaard(events,df_matchstats,number8_df,number6_df):
     df_matchstats_player = df_matchstats_player.sort_values(by='date')
     number6_df = number6_df[(number6_df['label'].isin(kampvalg)) & (number6_df['player.name'] == player_name)]
     number8_df = number8_df[(number8_df['label'].isin(kampvalg)) & (number8_df['player.name'] == player_name)]
+    number6_df = number6_df.drop(columns=['player.name','team.name','position_codes'])
+    number8_df = number8_df.drop(columns=['player.name','team.name','position_codes'])
+
     st.dataframe(number6_df,hide_index=True)
     st.dataframe(number8_df,hide_index=True)
 
