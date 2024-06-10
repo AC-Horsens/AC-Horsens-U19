@@ -659,6 +659,7 @@ def Hjalte_Toftegaard(events,df_matchstats):
     df = df[df['label'].isin(kampvalg)]
     df_matchstats_player = df_matchstats[(df_matchstats['player.name'] == player_name) & (df_matchstats['label'].isin(kampvalg))]
     df_matchstats_player['date'] = pd.to_datetime(df_matchstats_player['date'])
+    df_matchstats_player = df_matchstats_player.sort_values(by='date')
 
     Bolde_modtaget = df[df['pass.recipient.name'] == player_name]
     Bolde_modtaget_til = Bolde_modtaget[['pass.endLocation.x','pass.endLocation.y']]
