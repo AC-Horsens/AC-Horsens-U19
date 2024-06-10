@@ -660,7 +660,7 @@ def plot_arrows(df):
     st.pyplot(fig)
 
 
-def Hjalte_Toftegaard(events,df_matchstats,number6_df,number8_df):
+def Hjalte_Toftegaard(events,df_matchstats,position_dataframes):
     player_name = 'H. Toftegaard'
     st.title(f'{player_name} dashboard')    
     st.dataframe(number6_df)
