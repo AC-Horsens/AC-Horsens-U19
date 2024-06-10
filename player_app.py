@@ -651,6 +651,7 @@ def Hjalte_Toftegaard(events,df_matchstats):
     player_name = 'H. Toftegaard'
     st.title(f'{player_name} dashboard')    
     rating = Process_data_spillere(events,df_xg,df_matchstats)
+    st.dataframe(rating)
     rating = rating[rating['player.name'] == player_name]
     st.dataframe(rating)
     df = events[(events['player.name'] == player_name)|(events['pass.recipient.name'] == player_name)]
