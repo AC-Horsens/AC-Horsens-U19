@@ -5,10 +5,10 @@ from mplsoccer import Pitch
 from scipy.ndimage import gaussian_filter
 st.set_page_config(layout="wide")
 def load_data():
-    events = pd.read_csv(r'C:\Users\SéamusPeareBartholdy\Documents\GitHub\AC-Horsens-U19\events.csv')
+    events = pd.read_csv(r'events.csv')
     events = events[events['label'].str.contains('Horsens')]
-    df_xg = pd.read_csv(r'C:\Users\SéamusPeareBartholdy\Documents\GitHub\AC-Horsens-U19\xg.csv')
-    df_matchstats = pd.read_csv(r'C:\Users\SéamusPeareBartholdy\Documents\GitHub\AC-Horsens-U19\matchstats.csv')
+    df_xg = pd.read_csv(r'xg.csv')
+    df_matchstats = pd.read_csv(r'matchstats.csv')
     return events, df_xg,df_matchstats
 
 def Process_data_spillere(events,df_xg,df_matchstats):
