@@ -950,7 +950,7 @@ def create_pdf_game_report(game_data, df_xg_agg, merged_df, df_possession_stats,
         filtered_df['Total score'] = filtered_df['Total score'].astype(float)
         pdf.set_font("Arial", size=6)
         pdf.cell(190, 4, txt=f"Position Report: {position}", ln=True, align='C')
-        pdf.ln(2)
+        pdf.ln(-1)
         # Add table headers
         pdf.set_font("Arial", size=6)
         headers = filtered_df.columns

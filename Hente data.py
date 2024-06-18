@@ -189,7 +189,8 @@ df_ppda.to_csv('PPDA.csv')
 
 penalty_area_entry_condition = (
     ((events['pass.endLocation.x'] > 83) & 
-     (events['pass.endLocation.y'].between(19, 81))) |
+     (events['pass.endLocation.y'].between(19, 81)) & 
+     (events['pass.accurate'] == True)) |
     ((events['carry.endLocation.x'] > 83) &
      (events['carry.endLocation.y'].between(19, 81)))
 )

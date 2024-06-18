@@ -4,6 +4,8 @@ import matplotlib.pyplot as plt
 from mplsoccer import Pitch
 from scipy.ndimage import gaussian_filter
 st.set_page_config(layout="wide")
+
+@st.cache_data()
 def load_data():
     events = pd.read_csv(r'events.csv')
     events = events[events['label'].str.contains('Horsens')]
