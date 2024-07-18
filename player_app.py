@@ -666,6 +666,7 @@ def Hjalte_Toftegaard(events,df_matchstats,number8_df,number6_df):
     player_name = 'H. Toftegaard'
     st.title(f'{player_name} dashboard')    
     df = events[(events['player.name'] == player_name)|(events['pass.recipient.name'] == player_name)]
+    df = df[df['type.primary']!= 'corner'] & df[df['type.primary']!= 'free_kick'] & df[df['type.primary']!= 'throw_in']
     st.dataframe(df, hide_index=True)
     df['date'] = pd.to_datetime(df['date'])
     df = df.sort_values(by='date',ascending=False)
@@ -690,7 +691,7 @@ def Hjalte_Toftegaard(events,df_matchstats,number8_df,number6_df):
     Pasninger_spillet = df[(df['type.primary'] == 'pass') & (df['pass.accurate'] == True)]
     Pasninger_spillet_til = Pasninger_spillet[['pass.endLocation.x','pass.endLocation.y']]
 
-    Defensive_aktioner = df[(df['type.primary'] == 'interception') | (df['type.primary'] == 'duel')]
+    Defensive_aktioner = df[(df['type.primary'] == 'interception') | (df['type.primary'] == 'duel') | (df['type.primary'] == 'clearance') | (df['type.primary'] == 'infraction')]
     Defensive_aktioner = Defensive_aktioner[['location.x','location.y']]
     
     col1,col2,col3 = st.columns(3)
