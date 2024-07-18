@@ -707,11 +707,11 @@ def Hjalte_Toftegaard(events,df_matchstats,number8_df,number6_df):
     with col1:
         plot_heatmap_location(Defensive_aktioner, f'Defensive actions taken by {player_name}')
 
-    with col3:
-        plot_heatmap_end_location(Bolde_modtaget_til, f'Passes recieved endlocation {player_name}')
-                
     with col2:
-        plot_heatmap_end_location(Pasninger_spillet_til, f'Passes endlocation {player_name}')
+        plot_heatmap_end_location(Bolde_modtaget_til, f'Passes recieved {player_name}')
+                
+    with col3:
+        plot_heatmap_end_location(Pasninger_spillet_til, f'Passes {player_name}')
 
 def Anton_Mandrup(df):
     df = df[(df['player.name'] == 'A. Mandrup')|(df['pass.recipient.name'] == 'A. Mandrup')]
