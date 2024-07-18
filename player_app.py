@@ -614,7 +614,6 @@ def plot_heatmap_end_location(data, title):
     bin_statistic = pitch.bin_statistic(data['pass.endLocation.x'], data['pass.endLocation.y'], statistic='count', bins=(50, 25))
     bin_statistic['statistic'] = gaussian_filter(bin_statistic['statistic'], 1)
     pcm = pitch.heatmap(bin_statistic, ax=ax, cmap='hot', edgecolors='black')
-    cbar = fig.colorbar(pcm, ax=ax, shrink=0.6)
     st.write(title)  # Use st.title() instead of plt.title()
     st.pyplot(fig)
 
