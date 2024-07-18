@@ -692,7 +692,10 @@ def Hjalte_Toftegaard(events,df_matchstats,number8_df,number6_df):
     Defensive_aktioner = df[(df['type.primary'] == 'interception') | (df['type.primary'] == 'duel')]
     Defensive_aktioner = Defensive_aktioner[['location.x','location.y']]
 
-    Alle_off_aktioner = df[(df['pass.endLocation.x'] is not None)]
+    if 'pass.endLocation.x' in df.columns:
+        Alle_off_aktioner = df[df['pass.endLocation.x'].notnull()]
+    else:
+        st.error("'pass.endLocation.x' column does not exist in the DataFrame.")
     df_pass_percent = pass_accuracy(df, kampvalg)
     df_duels_won = df_matchstats_player['percent_duelsWon'].mean().round(2)
     combined_df = pd.concat([df_pass_percent.reset_index(drop=True), pd.DataFrame({'Duels Won Percentage': [df_duels_won]})], axis=1)
