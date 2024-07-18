@@ -715,9 +715,9 @@ def Anton_Mandrup(df):
 
 
 overskrifter_til_menu = {
-    'Hjalte Toftegaard': lambda: Hjalte_Toftegaard(events, df_matchstats, number8_df, number6_df),
-    'Anton Mandrup': lambda: Anton_Mandrup(events)
-}
+        'Hjalte Toftegaard': Hjalte_Toftegaard(events,df_matchstats,number8_df,number6_df),
+        'Anton Mandrup': Anton_Mandrup(events)
+    }
 
 selected_tab = st.sidebar.radio("Choose player", list(overskrifter_til_menu.keys()))
 
