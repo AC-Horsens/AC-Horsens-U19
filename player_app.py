@@ -758,10 +758,18 @@ def Anton_Mandrup(events, df_matchstats, balanced_central_defender_df, fullbacks
     plot_arrows(Alle_off_aktioner)
 
 overskrifter_til_menu = {
-        'Hjalte Toftegaard': Hjalte_Toftegaard(events,df_matchstats,number8_df,number6_df),
-        'Anton Mandrup': Anton_Mandrup(events, df_matchstats, balanced_central_defender_df, fullbacks_df)
-    }
+    'Hjalte Toftegaard': lambda: Hjalte_Toftegaard(events, df_matchstats, number8_df, number6_df),
+    'Anton Mandrup': lambda: Anton_Mandrup(events, df_matchstats, balanced_central_defender_df, fullbacks_df)
+}
 
+# Debug logging
 selected_tab = st.sidebar.radio("Choose player", list(overskrifter_til_menu.keys()))
-overskrifter_til_menu[selected_tab]()
+st.write(f"Selected tab: {selected_tab}")
+
+# Ensure the selected tab is valid and callable
+if selected_tab in overskrifter_til_menu:
+    overskrifter_til_menu[selected_tab]()
+else:
+    st.error("Invalid selection")
+
 
