@@ -761,7 +761,7 @@ def Anton_Mandrup(events,df, df_matchstats, balanced_central_defender_df, fullba
 
 overskrifter_til_menu = {
         'Hjalte Toftegaard': Hjalte_Toftegaard(events,df_matchstats,number8_df,number6_df),
-        'Anton Mandrup': Anton_Mandrup(events,df, df_matchstats, balanced_central_defender_df, fullbacks_df)
+        'Anton Mandrup': Anton_Mandrup(events, df_matchstats, balanced_central_defender_df, fullbacks_df)
     }
 
 selected_tab = st.sidebar.radio("Choose player", list(overskrifter_til_menu.keys()))
