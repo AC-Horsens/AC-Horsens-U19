@@ -752,7 +752,7 @@ def Anton_Mandrup(events, df_matchstats, balanced_central_defender_df, fullbacks
         plot_heatmap_end_location(Pasninger_spillet_til, f'Passes {player_name}')
 
     if 'pass.endLocation.x' in df.columns:
-        Alle_off_aktioner = df[df['pass.endLocation.x'] > 0]
+        Alle_off_aktioner = df[df['pass.endLocation.x'] > 0 & df[df['player.name'] == player_name]]
     else:
         st.error("'pass.endLocation.x' column does not exist in the DataFrame.")
     plot_arrows(Alle_off_aktioner)
