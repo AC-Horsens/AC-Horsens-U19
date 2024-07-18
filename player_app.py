@@ -12,7 +12,7 @@ def load_data():
     df_xg = pd.read_csv(r'xg.csv')
     df_matchstats = pd.read_csv(r'matchstats.csv')
     return events, df_xg,df_matchstats
-
+@st.cache_data()
 def Process_data_spillere(events,df_xg,df_matchstats):
     xg = events[['player.name','label','shot.xg']]
     xg['shot.xg'] = xg['shot.xg'].astype(float)
@@ -715,9 +715,9 @@ def Anton_Mandrup(df):
 
 
 overskrifter_til_menu = {
-        'Hjalte Toftegaard': Hjalte_Toftegaard(events,df_matchstats,number8_df,number6_df),
-        'Anton Mandrup': Anton_Mandrup(events)
-    }
+    'Hjalte Toftegaard': lambda: Hjalte_Toftegaard(events, df_matchstats, number8_df, number6_df),
+    'Anton Mandrup': lambda: Anton_Mandrup(events)
+}
 
 selected_tab = st.sidebar.radio("Choose player", list(overskrifter_til_menu.keys()))
 
