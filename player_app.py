@@ -685,16 +685,14 @@ def Hjalte_Toftegaard(events,df_matchstats,number8_df,number6_df):
 
     Bolde_modtaget = df[df['pass.recipient.name'] == player_name]
     Bolde_modtaget_til = Bolde_modtaget[['pass.endLocation.x','pass.endLocation.y']]
-    Bolde_modtaget_fra = Bolde_modtaget[['location.x','location.y']]
 
     Pasninger_spillet = df[(df['type.primary'] == 'pass') & (df['pass.accurate'] == True)]
     Pasninger_spillet_til = Pasninger_spillet[['pass.endLocation.x','pass.endLocation.y']]
-    Pasninger_spillet_fra = Pasninger_spillet[['location.x','location.y']]
 
     Defensive_aktioner = df[(df['type.primary'] == 'interception') | (df['type.primary'] == 'duel')]
     Defensive_aktioner = Defensive_aktioner[['location.x','location.y']]
 
-    Alle_off_aktioner = df[(df['pass.endLocation.x'] is not None) | (df['carry.endLocation.x'] is not None) | (df['type.primary'] == 'duel')]
+    Alle_off_aktioner = df[(df['pass.endLocation.x'] is not None)]
     df_pass_percent = pass_accuracy(df, kampvalg)
     df_duels_won = df_matchstats_player['percent_duelsWon'].mean().round(2)
     combined_df = pd.concat([df_pass_percent.reset_index(drop=True), pd.DataFrame({'Duels Won Percentage': [df_duels_won]})], axis=1)
