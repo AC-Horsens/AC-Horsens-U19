@@ -667,7 +667,6 @@ def Hjalte_Toftegaard(events,df_matchstats,number8_df,number6_df):
     st.title(f'{player_name} dashboard')    
     df = events[(events['player.name'] == player_name)|(events['pass.recipient.name'] == player_name)]
     df = df[~df['type.primary'].isin(['corner', 'free_kick', 'throw_in'])]
-    st.dataframe(df, hide_index=True)
     df['date'] = pd.to_datetime(df['date'])
     df = df.sort_values(by='date',ascending=False)
     kampe = df['label'].unique()
