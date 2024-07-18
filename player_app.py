@@ -691,9 +691,6 @@ def Hjalte_Toftegaard(events,df_matchstats,number8_df,number6_df):
 
     Defensive_aktioner = df[(df['type.primary'] == 'interception') | (df['type.primary'] == 'duel')]
     Defensive_aktioner = Defensive_aktioner[['location.x','location.y']]
-
-
-
     
     col1,col2,col3 = st.columns(3)
 
@@ -707,7 +704,7 @@ def Hjalte_Toftegaard(events,df_matchstats,number8_df,number6_df):
         plot_heatmap_end_location(Pasninger_spillet_til, f'Passes {player_name}')
 
     if 'pass.endLocation.x' in df.columns:
-        Alle_off_aktioner = df[df['pass.endLocation.x'].notnull()]
+        Alle_off_aktioner = df[df['pass.endLocation.x'] > 0]
     else:
         st.error("'pass.endLocation.x' column does not exist in the DataFrame.")
     plot_arrows(Alle_off_aktioner)
