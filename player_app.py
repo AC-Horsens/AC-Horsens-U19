@@ -758,6 +758,7 @@ def Anton_Mandrup(events,df, df_matchstats, fullbacks_df, balanced_central_defen
         st.error("'pass.endLocation.x' column does not exist in the DataFrame.")
     plot_arrows(Alle_off_aktioner)
 
+
 overskrifter_til_menu = {
         'Hjalte Toftegaard': Hjalte_Toftegaard(events,df_matchstats,number8_df,number6_df),
         'Anton Mandrup': Anton_Mandrup(events)
