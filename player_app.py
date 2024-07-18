@@ -701,18 +701,6 @@ def Hjalte_Toftegaard(events,df_matchstats,number8_df,number6_df):
     st.dataframe(combined_df,hide_index=True)
     plot_arrows(Alle_off_aktioner)
 
-    pass_percent_season = df_matchstats_player[['label', 'percent_successfulPasses']]
-
-    plt.figure(figsize=(10, 6))
-    plt.plot(pass_percent_season['label'], pass_percent_season['percent_successfulPasses'], marker='o', linestyle='-')
-    plt.title('Pass Success Percentage Over the Season')
-    plt.ylabel('Pass Success Percentage')
-    plt.grid(True)
-    plt.xticks(pass_percent_season['label'], rotation=45, ha='right')  # Center the labels under each point
-    plt.tight_layout()
-
-    st.pyplot(plt)
-
     
     col1,col2,col3 = st.columns(3)
 
