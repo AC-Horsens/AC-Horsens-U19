@@ -611,7 +611,7 @@ def plot_heatmap_end_location(data, title):
     pitch = Pitch(pitch_type='wyscout', line_zorder=2, pitch_color='grass', line_color='white')
     fig, ax = pitch.draw(figsize=(6.6, 4.125))
     fig.set_facecolor('#22312b')
-    bin_statistic = pitch.bin_statistic(data['pass.endLocation.x'], data['pass.endLocation.y'], statistic='count', bins=(50, 50))
+    bin_statistic = pitch.bin_statistic(data['pass.endLocation.x'], data['pass.endLocation.y'], statistic='count', bins=(50, 25))
     bin_statistic['statistic'] = gaussian_filter(bin_statistic['statistic'], 1)
     pcm = pitch.heatmap(bin_statistic, ax=ax, cmap='hot', edgecolors='#22312b')
     cbar = fig.colorbar(pcm, ax=ax, shrink=0.6)
