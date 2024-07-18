@@ -764,7 +764,6 @@ overskrifter_til_menu = {
 
 # Debug logging
 selected_tab = st.sidebar.radio("Choose player", list(overskrifter_til_menu.keys()))
-st.write(f"Selected tab: {selected_tab}")
 
 # Ensure the selected tab is valid and callable
 if selected_tab in overskrifter_til_menu:
