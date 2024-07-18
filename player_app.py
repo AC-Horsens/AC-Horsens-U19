@@ -661,7 +661,6 @@ def plot_arrows(df):
 
     st.pyplot(fig)
 
-
 def Hjalte_Toftegaard(events,df_matchstats,number8_df,number6_df):
     player_name = 'H. Toftegaard'
     st.title(f'{player_name} dashboard')    
@@ -757,7 +756,6 @@ def Anton_Mandrup(events, df_matchstats, balanced_central_defender_df, fullbacks
     else:
         st.error("'pass.endLocation.x' column does not exist in the DataFrame.")
     plot_arrows(Alle_off_aktioner)
-
 
 overskrifter_til_menu = {
         'Hjalte Toftegaard': Hjalte_Toftegaard(events,df_matchstats,number8_df,number6_df),
