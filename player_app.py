@@ -763,4 +763,5 @@ overskrifter_til_menu = {
     }
 
 selected_tab = st.sidebar.radio("Choose player", list(overskrifter_til_menu.keys()))
+overskrifter_til_menu[selected_tab]()
 
