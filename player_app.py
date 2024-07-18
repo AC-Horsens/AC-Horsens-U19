@@ -666,10 +666,11 @@ def Hjalte_Toftegaard(events,df_matchstats,number8_df,number6_df):
     player_name = 'H. Toftegaard'
     st.title(f'{player_name} dashboard')    
     df = events[(events['player.name'] == player_name)|(events['pass.recipient.name'] == player_name)]
+    st.dataframe(df, hide_index=True)
     df['date'] = pd.to_datetime(df['date'])
     df = df.sort_values(by='date',ascending=False)
     kampe = df['label'].unique()
-    kampvalg = st.multiselect('Choose matches', kampe,default=kampe)
+    kampvalg = st.multiselect('Choose matches', kampe, kampe[0:3])
     df = df[df['label'].isin(kampvalg)]
     df_matchstats_player = df_matchstats[(df_matchstats['player.name'] == player_name) & (df_matchstats['label'].isin(kampvalg))]
     df_matchstats_player['date'] = pd.to_datetime(df_matchstats_player['date'])
