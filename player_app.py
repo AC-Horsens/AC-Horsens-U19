@@ -613,7 +613,7 @@ def plot_heatmap_end_location(data, title):
     fig.set_facecolor('#22312b')
     bin_statistic = pitch.bin_statistic(data['pass.endLocation.x'], data['pass.endLocation.y'], statistic='count', bins=(50, 25))
     bin_statistic['statistic'] = gaussian_filter(bin_statistic['statistic'], 1)
-    pcm = pitch.heatmap(bin_statistic, ax=ax, cmap='hot', edgecolors='#22312b')
+    pcm = pitch.heatmap(bin_statistic, ax=ax, cmap='hot', edgecolors='black')
     cbar = fig.colorbar(pcm, ax=ax, shrink=0.6)
     cbar.outline.set_edgecolor('#efefef')
     cbar.ax.yaxis.set_tick_params(color='#efefef')  # Set color directly here
