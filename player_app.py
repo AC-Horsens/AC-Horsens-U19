@@ -600,10 +600,6 @@ def plot_heatmap_location(data, title):
     bin_statistic = pitch.bin_statistic(data['location.x'], data['location.y'], statistic='count', bins=(50, 25))
     bin_statistic['statistic'] = gaussian_filter(bin_statistic['statistic'], 1)
     pcm = pitch.heatmap(bin_statistic, ax=ax, cmap='hot', edgecolors='black')
-    cbar = fig.colorbar(pcm, ax=ax, shrink=0.6)
-    cbar.outline.set_edgecolor('#efefef')
-    cbar.ax.yaxis.set_tick_params(color='#efefef')  # Set color directly here
-    cbar.ax.yaxis.set_tick_params(labelsize=6)  # Adjust label size if needed
     st.write(title)  # Use st.title() instead of plt.title()
     st.pyplot(fig)
 
