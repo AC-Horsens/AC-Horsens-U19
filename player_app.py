@@ -667,14 +667,35 @@ def player_data(events,df_matchstats,balanced_central_defender_df,fullbacks_df,n
     df_matchstats_player = df_matchstats[(df_matchstats['player.name'] == player_name) & (df_matchstats['label'].isin(kampvalg))]
     df_matchstats_player['date'] = pd.to_datetime(df_matchstats_player['date'])
     df_matchstats_player = df_matchstats_player.sort_values(by='date')
+    balanced_central_defender_df = balanced_central_defender_df[(balanced_central_defender_df['label'].isin(kampvalg)) & (balanced_central_defender_df['player.name'] == player_name)]
+    fullbacks_df = fullbacks_df[(fullbacks_df['label'].isin(kampvalg)) & (fullbacks_df['player.name'] == player_name)]
     number6_df = number6_df[(number6_df['label'].isin(kampvalg)) & (number6_df['player.name'] == player_name)]
     number8_df = number8_df[(number8_df['label'].isin(kampvalg)) & (number8_df['player.name'] == player_name)]
+    number10_df = number10_df[(number10_df['label'].isin(kampvalg)) & (number10_df['player.name'] == player_name)]
+    winger_df = winger_df[(winger_df['label'].isin(kampvalg)) & (winger_df['player.name'] == player_name)]
+    classic_striker_df = classic_striker_df[(classic_striker_df['label'].isin(kampvalg)) & (classic_striker_df['player.name'] == player_name)]
+    balanced_central_defender_df = balanced_central_defender_df.drop(columns=['player.name', 'team.name', 'position_codes'])
+    fullbacks_df = fullbacks_df.drop(columns=['player.name', 'team.name', 'position_codes'])
     number6_df = number6_df.drop(columns=['player.name','team.name','position_codes'])
     number8_df = number8_df.drop(columns=['player.name','team.name','position_codes'])
+    number10_df = number10_df.drop(columns=['player.name', 'team.name', 'position_codes'])
+    winger_df = winger_df.drop(columns=['player.name', 'team.name', 'position_codes'])
+    classic_striker_df = classic_striker_df.drop(columns=['player.name', 'team.name', 'position_codes'])
+    
+    st.write('As central defender')
+    st.dataframe(balanced_central_defender_df, hide_index=True)
+    st.write('As fullback')
+    st.dataframe(fullbacks_df,hide_index=True)
     st.write('As number 6')
     st.dataframe(number6_df,hide_index=True)
     st.write('As number 8')
     st.dataframe(number8_df,hide_index=True)
+    st.write('As number 10')
+    st.dataframe(number10_df,hide_index=True)
+    st.write('As winger')
+    st.dataframe(winger_df,hide_index=True)
+    st.write('As classic striker')
+    st.dataframe(classic_striker_df,hide_index=True)
 
     Bolde_modtaget = df[df['pass.recipient.name'] == player_name]
     Bolde_modtaget_til = Bolde_modtaget[['pass.endLocation.x','pass.endLocation.y']]
