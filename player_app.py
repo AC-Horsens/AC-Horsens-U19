@@ -653,8 +653,9 @@ def plot_arrows(df):
 
     st.pyplot(fig)
 
-def Hjalte_Toftegaard(events,df_matchstats,number8_df,number6_df):
-    player_name = 'H. Toftegaard'
+def player_data(events,df_matchstats,number8_df,number6_df):
+    horsens = events[events['team.name'] == 'Horsens']
+    player_name = st.selectbox('Choose player', horsens['player.name'].unique())
     st.title(f'{player_name} dashboard')    
     df = events[(events['player.name'] == player_name)|(events['pass.recipient.name'] == player_name)]
     df = df[~df['type.primary'].isin(['corner', 'free_kick', 'throw_in'])]
@@ -749,18 +750,6 @@ def Anton_Mandrup(events, df_matchstats, balanced_central_defender_df, fullbacks
         st.error("'pass.endLocation.x' column does not exist in the DataFrame.")
     plot_arrows(Alle_off_aktioner)
 
-overskrifter_til_menu = {
-    'Hjalte Toftegaard': lambda: Hjalte_Toftegaard(events, df_matchstats, number8_df, number6_df),
-    'Anton Mandrup': lambda: Anton_Mandrup(events, df_matchstats, balanced_central_defender_df, fullbacks_df)
-}
-
-# Debug logging
-selected_tab = st.sidebar.radio("Choose player", list(overskrifter_til_menu.keys()))
-
-# Ensure the selected tab is valid and callable
-if selected_tab in overskrifter_til_menu:
-    overskrifter_til_menu[selected_tab]()
-else:
-    st.error("Invalid selection")
+player_data(events, df_matchstats, number8_df, number6_df)
 
 
