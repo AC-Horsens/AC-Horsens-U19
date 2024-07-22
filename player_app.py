@@ -655,7 +655,7 @@ def plot_arrows(df):
 
 def player_data(events,df_matchstats,balanced_central_defender_df,fullbacks_df,number8_df,number6_df,number10_df,winger_df,classic_striker_df):
     horsens = events[events['team.name'].str.contains('Horsens')]
-    horsens = sorted(horsens['player.name'].unique())
+    horsens = horsens.sort_values(by='player.name')
     player_name = st.selectbox('Choose player', horsens['player.name'].unique())
     st.title(f'{player_name} dashboard')    
     df = events[(events['player.name'] == player_name)|(events['pass.recipient.name'] == player_name)]
