@@ -681,21 +681,35 @@ def player_data(events,df_matchstats,balanced_central_defender_df,fullbacks_df,n
     number10_df = number10_df.drop(columns=['player.name', 'team.name', 'position_codes'],errors = 'ignore')
     winger_df = winger_df.drop(columns=['player.name', 'team.name', 'position_codes'],errors = 'ignore')
     classic_striker_df = classic_striker_df.drop(columns=['player.name', 'team.name', 'position_codes'],errors = 'ignore')
-    
-    st.write('As central defender')
-    st.dataframe(balanced_central_defender_df, hide_index=True)
-    st.write('As fullback')
-    st.dataframe(fullbacks_df,hide_index=True)
-    st.write('As number 6')
-    st.dataframe(number6_df,hide_index=True)
-    st.write('As number 8')
-    st.dataframe(number8_df,hide_index=True)
-    st.write('As number 10')
-    st.dataframe(number10_df,hide_index=True)
-    st.write('As winger')
-    st.dataframe(winger_df,hide_index=True)
-    st.write('As classic striker')
-    st.dataframe(classic_striker_df,hide_index=True)
+        
+    if not balanced_central_defender_df.empty:
+        st.write('As central defender')
+        st.dataframe(balanced_central_defender_df, hide_index=True)
+
+    if not fullbacks_df.empty:
+        st.write('As fullback')
+        st.dataframe(fullbacks_df, hide_index=True)
+
+    if not number6_df.empty:
+        st.write('As number 6')
+        st.dataframe(number6_df, hide_index=True)
+
+    if not number8_df.empty:
+        st.write('As number 8')
+        st.dataframe(number8_df, hide_index=True)
+
+    if not number10_df.empty:
+        st.write('As number 10')
+        st.dataframe(number10_df, hide_index=True)
+
+    if not winger_df.empty:
+        st.write('As winger')
+        st.dataframe(winger_df, hide_index=True)
+
+    if not classic_striker_df.empty:
+        st.write('As classic striker')
+        st.dataframe(classic_striker_df, hide_index=True)
+
 
     Bolde_modtaget = df[df['pass.recipient.name'] == player_name]
     Bolde_modtaget_til = Bolde_modtaget[['pass.endLocation.x','pass.endLocation.y']]
