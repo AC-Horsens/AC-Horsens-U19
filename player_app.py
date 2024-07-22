@@ -750,6 +750,6 @@ def Anton_Mandrup(events, df_matchstats, balanced_central_defender_df, fullbacks
         st.error("'pass.endLocation.x' column does not exist in the DataFrame.")
     plot_arrows(Alle_off_aktioner)
 
-player_data(events, df_matchstats, number8_df, number6_df)
+player_data(events,df_matchstats,balanced_central_defender_df,fullbacks_df,number8_df,number6_df,number10_df,winger_df,classic_striker_df)
 
 
