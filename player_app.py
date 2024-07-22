@@ -674,13 +674,13 @@ def player_data(events,df_matchstats,balanced_central_defender_df,fullbacks_df,n
     number10_df = number10_df[(number10_df['label'].isin(kampvalg)) & (number10_df['player.name'] == player_name)]
     winger_df = winger_df[(winger_df['label'].isin(kampvalg)) & (winger_df['player.name'] == player_name)]
     classic_striker_df = classic_striker_df[(classic_striker_df['label'].isin(kampvalg)) & (classic_striker_df['player.name'] == player_name)]
-    balanced_central_defender_df = balanced_central_defender_df.drop(columns=['player.name', 'team.name', 'position_codes'])
-    fullbacks_df = fullbacks_df.drop(columns=['player.name', 'team.name', 'position_codes'])
-    number6_df = number6_df.drop(columns=['player.name','team.name','position_codes'])
-    number8_df = number8_df.drop(columns=['player.name','team.name','position_codes'])
-    number10_df = number10_df.drop(columns=['player.name', 'team.name', 'position_codes'])
-    winger_df = winger_df.drop(columns=['player.name', 'team.name', 'position_codes'])
-    classic_striker_df = classic_striker_df.drop(columns=['player.name', 'team.name', 'position_codes'])
+    balanced_central_defender_df = balanced_central_defender_df.drop(columns=['player.name', 'team.name', 'position_codes'],errors = 'ignore')
+    fullbacks_df = fullbacks_df.drop(columns=['player.name', 'team.name', 'position_codes'],errors = 'ignore')
+    number6_df = number6_df.drop(columns=['player.name','team.name','position_codes'],errors = 'ignore')
+    number8_df = number8_df.drop(columns=['player.name','team.name','position_codes'],errors = 'ignore')
+    number10_df = number10_df.drop(columns=['player.name', 'team.name', 'position_codes'],errors = 'ignore')
+    winger_df = winger_df.drop(columns=['player.name', 'team.name', 'position_codes'],errors = 'ignore')
+    classic_striker_df = classic_striker_df.drop(columns=['player.name', 'team.name', 'position_codes'],errors = 'ignore')
     
     st.write('As central defender')
     st.dataframe(balanced_central_defender_df, hide_index=True)
