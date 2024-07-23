@@ -738,54 +738,6 @@ def player_data(events,df_matchstats,balanced_central_defender_df,fullbacks_df,n
         st.error("'pass.endLocation.x' column does not exist in the DataFrame.")
     plot_arrows(Alle_off_aktioner)
 
-def Anton_Mandrup(events, df_matchstats, balanced_central_defender_df, fullbacks_df):
-    player_name = 'A. Mandrup'
-    st.title(f'{player_name} dashboard')    
-    df = events[(events['player.name'] == player_name)|(events['pass.recipient.name'] == player_name)]
-    df = df[~df['type.primary'].isin(['corner', 'free_kick', 'throw_in'])]
-    df['date'] = pd.to_datetime(df['date'])
-    df = df.sort_values(by='date',ascending=False)
-    kampe = df['label'].unique()
-    kampvalg = st.multiselect('Choose matches', kampe, kampe[0:3])
-    df = df[df['label'].isin(kampvalg)]
-    df_matchstats_player = df_matchstats[(df_matchstats['player.name'] == player_name) & (df_matchstats['label'].isin(kampvalg))]
-    df_matchstats_player['date'] = pd.to_datetime(df_matchstats_player['date'])
-    df_matchstats_player = df_matchstats_player.sort_values(by='date')
-    fullbacks_df = fullbacks_df[(fullbacks_df['label'].isin(kampvalg)) & (fullbacks_df['player.name'] == player_name)]
-    balanced_central_defender_df = balanced_central_defender_df[(balanced_central_defender_df['label'].isin(kampvalg)) & (balanced_central_defender_df['player.name'] == player_name)]
-    fullbacks_df = fullbacks_df.drop(columns=['player.name','team.name','position_codes'])
-    balanced_central_defender_df = balanced_central_defender_df.drop(columns=['player.name','team.name','position_codes'])
-    st.write('As fullback')
-    st.dataframe(fullbacks_df,hide_index=True)
-    st.write('As centerback')
-    st.dataframe(balanced_central_defender_df,hide_index=True)
-
-    Bolde_modtaget = df[df['pass.recipient.name'] == player_name]
-    Bolde_modtaget_til = Bolde_modtaget[['pass.endLocation.x','pass.endLocation.y']]
-
-    Pasninger_spillet = df[(df['type.primary'] == 'pass') & (df['pass.accurate'] == True)]
-    Pasninger_spillet_til = Pasninger_spillet[['pass.endLocation.x','pass.endLocation.y']]
-
-    Defensive_aktioner = df[(df['type.primary'] == 'interception') | (df['type.primary'] == 'duel') | (df['type.primary'] == 'clearance') | (df['type.primary'] == 'infraction')]
-    Defensive_aktioner = Defensive_aktioner[['location.x','location.y']]
-    
-    col1,col2,col3 = st.columns(3)
-
-    with col1:
-        plot_heatmap_location(Defensive_aktioner, f'Defensive actions taken by {player_name}')
-
-    with col2:
-        plot_heatmap_end_location(Bolde_modtaget_til, f'Passes recieved {player_name}')
-                
-    with col3:
-        plot_heatmap_end_location(Pasninger_spillet_til, f'Passes {player_name}')
-
-    if 'pass.endLocation.x' in df.columns:
-        Alle_off_aktioner = df[(df['pass.endLocation.x'] > 0) & (df['player.name'] == player_name)]
-    else:
-        st.error("'pass.endLocation.x' column does not exist in the DataFrame.")
-    plot_arrows(Alle_off_aktioner)
-
 player_data(events,df_matchstats,balanced_central_defender_df,fullbacks_df,number8_df,number6_df,number10_df,winger_df,classic_striker_df)
 
 
