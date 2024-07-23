@@ -661,6 +661,43 @@ def training_ratings():
         ws = sh.worksheet('Formularsvar 1')
         df = pd.DataFrame(ws.get_all_records())
         st.dataframe(df)
+        df['Tidsstempel'] = pd.to_datetime(df['Tidsstempel'], format='%d/%m/%Y %H.%M.%S')
+        # Melt the DataFrame to long format
+        df_melted = df.melt(id_vars=['Tidsstempel', 'Coach name'], 
+                            var_name='Player', 
+                            value_name='Rating')
+
+        # Remove 'Rating [' and ']' from Player names
+        df_melted['Player'] = df_melted['Player'].str.replace('Rating \[|\]', '', regex=True)
+
+        # Streamlit app
+        st.title("Player Ratings Visualization")
+
+        # Sidebar filters
+        selected_coach = st.sidebar.multiselect('Select Coach', df['Coach name'].unique(), df['Coach name'].unique())
+        selected_player = st.sidebar.multiselect('Select Player', df_melted['Player'].unique(), df_melted['Player'].unique())
+        selected_dates = st.sidebar.slider('Select Date Range', 
+                                        min_value=df['Tidsstempel'].min().date(), 
+                                        max_value=df['Tidsstempel'].max().date(), 
+                                        value=(df['Tidsstempel'].min().date(), df['Tidsstempel'].max().date()))
+
+        # Filter data based on selections
+        filtered_df = df_melted[
+            (df_melted['Coach name'].isin(selected_coach)) &
+            (df_melted['Player'].isin(selected_player)) &
+            (df_melted['Tidsstempel'].dt.date >= selected_dates[0]) &
+            (df_melted['Tidsstempel'].dt.date <= selected_dates[1])
+        ]
+
+        # Line chart
+        line_chart = alt.Chart(filtered_df).mark_line().encode(
+            x='Tidsstempel:T',
+            y='Rating:Q',
+            color='Player:N',
+            tooltip=['Tidsstempel', 'Coach name', 'Player', 'Rating']
+        ).interactive()
+
+        st.altair_chart(line_chart, use_container_width=True)
 
 
 def player_data(events,df_matchstats,balanced_central_defender_df,fullbacks_df,number8_df,number6_df,number10_df,winger_df,classic_striker_df):
