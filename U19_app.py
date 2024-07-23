@@ -3,6 +3,8 @@ import streamlit as st
 import matplotlib.pyplot as plt
 from mplsoccer import Pitch
 from scipy.ndimage import gaussian_filter
+import gspread
+
 st.set_page_config(layout="wide")
 
 @st.cache_data()
@@ -653,6 +655,14 @@ def plot_arrows(df):
 
     st.pyplot(fig)
 
+def training_ratings():
+        gc = gspread.service_account('wellness-1123-178fea106d0a.json')
+        sh = gc.open_by_url('https://docs.google.com/spreadsheets/d/1fG0BYf_BbbDIgELdkSGTgjzdT_7pnKDfocUW7TR510I/edit?resourcekey=&gid=201497853#gid=201497853')
+        ws = sh.worksheet('Formularsvar 1')
+        df = pd.DataFrame(ws.get_all_records())
+        st.dataframe(df)
+
+
 def player_data(events,df_matchstats,balanced_central_defender_df,fullbacks_df,number8_df,number6_df,number10_df,winger_df,classic_striker_df):
     horsens = events[events['team.name'].str.contains('Horsens')]
     horsens = horsens.sort_values(by='player.name')
@@ -738,6 +748,15 @@ def player_data(events,df_matchstats,balanced_central_defender_df,fullbacks_df,n
         st.error("'pass.endLocation.x' column does not exist in the DataFrame.")
     plot_arrows(Alle_off_aktioner)
 
-player_data(events,df_matchstats,balanced_central_defender_df,fullbacks_df,number8_df,number6_df,number10_df,winger_df,classic_striker_df)
+option = st.sidebar.selectbox(
+    'Select data type',
+    ('training ratings', 'player data')
+)
+
+# Show the selected function
+if option == 'training ratings':
+    training_ratings()
+elif option == 'player data':
+    player_data(events,df_matchstats,balanced_central_defender_df,fullbacks_df,number8_df,number6_df,number10_df,winger_df,classic_striker_df)
 
 

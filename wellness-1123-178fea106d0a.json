@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "wellness-1123",
+  "private_key_id": "178fea106d0a88d2b405b236413b91341b1d60e1",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQDTm2NYGdXWnUPU\nn/shAYZd8wZXcceq0TTq+hTE13DrnnBLUgyyFcZlbEaNqoS+FYUxw0sErYB7w4od\nlXbYiMsFEAyMWu4Gcb0Fz2nzhot+bcYCt4N4xjNxPD48qtC9foZYxVniZ14K3hEg\nuqitKkbnhoEkonXGtXVYnMPnDJKka844srqXQIKSl9EoMxogR48OIYGEmu03hbin\nvIoto5TxQ4qGWd+gW9Ii9aw6WBzB+bSgAlmgrYZXjPZHEKYNA2HnsSajVC8rRi9p\nATSp/rDqfpCXA7JyT3x7s03DctnFzAWfiobP1y41acg3LLEL9YfR3ncwbwgLfRH8\nBur73PGpAgMBAAECggEALFlzY0oa4r2YM06KXBsNNdCTAi3DGr55GExsoOrEbGWL\nBIZASey9ZZFhYhyccJhjD5BuPx87//R2FIg4Xd6hqkB4WMxP+cLJypdzjcojn05T\ng0tB/0SPEIr/QkjMsgJ8FsvZ8FUYxS9QqKrmYlCrhqfOlkaEZ66tVvKYLmsYquPZ\nsqiojk19XnQJoYnl9p5+4A+076ZN43kOffD87stR2T4edzEIM9q4A7P4AhF7ekxZ\nGseUTc67X5b2hWkfZsCVfVPXBSpVgXrTYSKEFCPs2WErijoNRy3G+T4+QiZKOF+2\npaFazdgasetx2YkuNHq1oA6hWVrfnsjAYTlBTWd6OQKBgQDydIUTv3gD0iE8yYK2\nHf3syok22pg4ZwUiXDs6fuW4vGwUSD8wAMZrBAhb/w0GHmvEqH6hkJMayNtegdZL\nRCZsfQDa8BypA/avcjRLdrp3HNLwaEgstBtEJ7B5rMoBDXF48Jp1IRYZ7wnkgxB2\nQVHSBxr1yQXcTXXIrf42Evk1bQKBgQDfbbEvK4pv75AQs5MSxCsiFM2WKyz1I0Yh\nUuxg75sd2QN9aZFWIsuhzbG+MbROtwP9wag116rLdjKEnPLrV43+tZjodnqZMhFW\nAtLjw7DnOQiHCsKAkRJJeX88anHuvzt4dtZ9Z9bF3XWnR7GDpNWQe8MwvVrlDixt\nsha2aDfTrQKBgQCUe9ekKHaPoHjKiX6LmgKQqdkuxuDCahUy3dlIEb8OTBbEtRo9\ng7wAfg/Ah4qqXKcTYT1sJOZyWOBAGLPslGgTuNp1OufSeqLw/7gXHzdDC1wD71mE\nRykLrGLfoXp0+o6rym5NnV2ztDkSwVGrmoVJYyCXtezo5mdj52rwIt6MYQKBgQDX\nDVXF+Tq+ku8vpCijn32EyFE5gUU8jj8qRA6RHw9Go2Lgi4QATG2Dx+CVGHJccXu9\n+3BUoskaHSJy0j5el19tEo2i8qb+XVqiVwV1hR348MRsdsbPyNK5NeBp3mrbSeWM\nBZZeDlyDBq3/3NnXxAhrkTRG7XtXjVTmIMwLtjRF4QKBgH/LM4jiXR5Qu5/A/udR\nG+a09FlqUtVDtEgjCZcNJnzhvhl6fC5xAZKI+uAouktS/D0iJAaYZT5hxi0gkdqy\ny5E3R8AXvbCBpg4m3vxU4/35k6EjfJKmCvVQCCqdD3LtFISbuX4w9/ALnXS7vJlQ\ntHFI2qtwJxCyIrHmeqfwT9tB\n-----END PRIVATE KEY-----\n",
+  "client_email": "googlesheetsaccess@wellness-1123.iam.gserviceaccount.com",
+  "client_id": "109781373613787255678",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/googlesheetsaccess%40wellness-1123.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
