@@ -701,7 +701,6 @@ def training_ratings():
     filtered_df = filtered_df.dropna(subset=['Rating'])
 
     # Ensure 'Rating' column is numeric
-    filtered_df['Rating'] = pd.to_numeric(filtered_df['Rating'])
     average_ratings = filtered_df.groupby(['date', 'Player']).agg({'Rating': 'mean'}).reset_index()
 
     # Line chart
