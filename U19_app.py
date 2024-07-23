@@ -702,7 +702,7 @@ def training_ratings():
     filtered_df = filtered_df[['date','Player', 'Rating']]
     st.dataframe(filtered_df)
     # Ensure 'Rating' column is numeric
-    average_ratings = filtered_df.groupby(['date', 'Player']).agg({'Rating': 'mean'}).reset_index()
+    average_ratings = filtered_df.groupby(['date', 'Player']).mean().reset_index()
 
     # Line chart
     line_chart = alt.Chart(average_ratings).mark_line().encode(
