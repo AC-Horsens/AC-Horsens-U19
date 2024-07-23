@@ -676,12 +676,12 @@ def training_ratings():
     df_melted['Player'] = df_melted['Player'].str.replace('Rating \[|\]', '', regex=True)
 
     # Streamlit app
-    st.title("Player Ratings Visualization")
+    st.title("Player Ratings")
 
     # Main layout filters
     selected_coaches = st.multiselect('Select Coaches', df['Coach name'].unique(), df['Coach name'].unique())
-    selected_players = st.multiselect('Select Players', df_melted['Player'].unique(), df_melted['Player'].unique())
-    selected_date = st.select_slider('Select Date', options=sorted(df['date'].unique()), value=sorted(df['date'].unique())[0])
+    selected_players = st.multiselect('Select Players', df_melted['Player'].unique())
+    selected_date = st.select_slider('Select Date', options=sorted(df['date'].unique()))
 
     # Filter data based on selections
     filtered_df = df_melted.copy()
