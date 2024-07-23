@@ -662,7 +662,7 @@ def training_ratings():
     sh = gc.open_by_url('https://docs.google.com/spreadsheets/d/1fG0BYf_BbbDIgELdkSGTgjzdT_7pnKDfocUW7TR510I/edit?resourcekey=&gid=201497853#gid=201497853')
     ws = sh.worksheet('Formularsvar 1')
     df = pd.DataFrame(ws.get_all_records())
-    df['Tidsstempel'] = pd.to_datetime(df['Tidsstempel'], format='%d/%m/%Y %H.%M.%S')
+    df['Tidsstempel'] = pd.to_datetime(df['Tidsstempel'],dayfirst=True, format='%d/%m/%Y')
 
     # Create a new column 'date' with the format 'dd/mm/yyyy'
     df['date'] = df['Tidsstempel'].dt.strftime('%d/%m/%Y')
@@ -692,9 +692,7 @@ def training_ratings():
         (pd.to_datetime(df_melted['date'], format='%d/%m/%Y').dt.date >= start_date) &
         (pd.to_datetime(df_melted['date'], format='%d/%m/%Y').dt.date <= end_date)
     ]
-    
-    # Calculate average rating per player
-    
+        
     # Drop rows where Rating is NaN
     filtered_df = filtered_df[['date','Player', 'Rating','Coach name']]
     # Ensure 'Rating' column is numeric
