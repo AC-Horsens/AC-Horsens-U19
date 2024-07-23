@@ -698,7 +698,7 @@ def training_ratings():
     filtered_df = df_melted.copy()
     
     # Calculate average rating per player
-    df_melted['Rating'] = pd.to_numeric(df_melted['Rating'], errors='coerce')
+    filtered_df['Rating'] = pd.to_numeric(filtered_df['Rating'], errors='coerce')
     
     # Drop rows where Rating is NaN
     filtered_df = filtered_df[['Player', 'Rating']]
