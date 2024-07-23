@@ -662,8 +662,8 @@ def training_ratings():
         sh = gc.open_by_url('https://docs.google.com/spreadsheets/d/1fG0BYf_BbbDIgELdkSGTgjzdT_7pnKDfocUW7TR510I/edit?resourcekey=&gid=201497853#gid=201497853')
         ws = sh.worksheet('Formularsvar 1')
         df = pd.DataFrame(ws.get_all_records())
-        st.dataframe(df)
         df['Tidsstempel'] = pd.to_datetime(df['Tidsstempel'], format='%d/%m/%Y %H.%M.%S')
+
         # Melt the DataFrame to long format
         df_melted = df.melt(id_vars=['Tidsstempel', 'Coach name'], 
                             var_name='Player', 
@@ -676,20 +676,21 @@ def training_ratings():
         st.title("Player Ratings Visualization")
 
         # Sidebar filters
-        selected_coach = st.sidebar.multiselect('Select Coach', df['Coach name'].unique(), df['Coach name'].unique())
-        selected_player = st.sidebar.multiselect('Select Player', df_melted['Player'].unique(), df_melted['Player'].unique())
-        selected_dates = st.sidebar.slider('Select Date Range', 
-                                        min_value=df['Tidsstempel'].min().date(), 
-                                        max_value=df['Tidsstempel'].max().date(), 
-                                        value=(df['Tidsstempel'].min().date(), df['Tidsstempel'].max().date()))
+        selected_coach = st.selectbox('Select Coach', ['All'] + list(df['Coach name'].unique()))
+        selected_player = st.selectbox('Select Player', ['All'] + list(df_melted['Player'].unique()))
+        selected_date = st.selectbox('Select Date', ['All'] + list(df['Tidsstempel'].dt.date.unique()))
 
         # Filter data based on selections
-        filtered_df = df_melted[
-            (df_melted['Coach name'].isin(selected_coach)) &
-            (df_melted['Player'].isin(selected_player)) &
-            (df_melted['Tidsstempel'].dt.date >= selected_dates[0]) &
-            (df_melted['Tidsstempel'].dt.date <= selected_dates[1])
-        ]
+        filtered_df = df_melted.copy()
+
+        if selected_coach != 'All':
+            filtered_df = filtered_df[filtered_df['Coach name'] == selected_coach]
+
+        if selected_player != 'All':
+            filtered_df = filtered_df[filtered_df['Player'] == selected_player]
+
+        if selected_date != 'All':
+            filtered_df = filtered_df[filtered_df['Tidsstempel'].dt.date == selected_date]
 
         # Line chart
         line_chart = alt.Chart(filtered_df).mark_line().encode(
@@ -701,6 +702,7 @@ def training_ratings():
 
         st.altair_chart(line_chart, use_container_width=True)
 
+    # Heatmap
 
 def player_data(events,df_matchstats,balanced_central_defender_df,fullbacks_df,number8_df,number6_df,number10_df,winger_df,classic_striker_df):
     horsens = events[events['team.name'].str.contains('Horsens')]
