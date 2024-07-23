@@ -681,7 +681,6 @@ def training_ratings():
     # Main layout filters
     selected_coaches = st.multiselect('Select Coaches', df['Coach name'].unique(), df['Coach name'].unique())
     selected_players = st.multiselect('Select Players', sorted(df_melted['Player'].unique()))
-    selected_date = st.select_slider('Select Date', options=sorted(df['date'].unique()))
     df['date'] = pd.to_datetime(df['date'])
     min_date = df['date'].min().date()
     max_date = df['date'].max().date()
