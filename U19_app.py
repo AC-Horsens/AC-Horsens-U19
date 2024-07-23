@@ -682,7 +682,17 @@ def training_ratings():
     selected_coaches = st.multiselect('Select Coaches', df['Coach name'].unique(), df['Coach name'].unique())
     selected_players = st.multiselect('Select Players', sorted(df_melted['Player'].unique()))
     selected_date = st.select_slider('Select Date', options=sorted(df['date'].unique()))
+    min_date = df['date'].min().date()
+    max_date = df['date'].max().date()
+    start_date, end_date = st.date_input('Select Date Range', [min_date, max_date], min_value=min_date, max_value=max_date)
 
+    # Filter DataFrame based on the selected filters
+    filtered_df = df_melted[
+        (df_melted['Coach name'].isin(selected_coaches)) &
+        (df_melted['Player'].isin(selected_players)) &
+        (df_melted['date'].dt.date >= start_date) &
+        (df_melted['date'].dt.date <= end_date)
+    ]
     # Filter data based on selections
     filtered_df = df_melted.copy()
 
