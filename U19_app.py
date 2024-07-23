@@ -694,7 +694,6 @@ def training_ratings():
     ]
     
     # Calculate average rating per player
-    filtered_df['Rating'] = pd.to_numeric(filtered_df['Rating'], errors='coerce')
     
     # Drop rows where Rating is NaN
     filtered_df = filtered_df[['date','Player', 'Rating','Coach name']]
