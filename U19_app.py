@@ -678,10 +678,10 @@ def training_ratings():
     # Streamlit app
     st.title("Player Ratings Visualization")
 
-    # Sidebar filters
-    selected_coaches = st.sidebar.multiselect('Select Coaches', df['Coach name'].unique(), df['Coach name'].unique())
-    selected_players = st.sidebar.multiselect('Select Players', df_melted['Player'].unique(), df_melted['Player'].unique())
-    selected_date = st.sidebar.select_slider('Select Date', options=df['date'].unique(), value=df['date'].min())
+    # Main layout filters
+    selected_coaches = st.multiselect('Select Coaches', df['Coach name'].unique(), df['Coach name'].unique())
+    selected_players = st.multiselect('Select Players', df_melted['Player'].unique(), df_melted['Player'].unique())
+    selected_date = st.select_slider('Select Date', options=sorted(df['date'].unique()), value=sorted(df['date'].unique())[0])
 
     # Filter data based on selections
     filtered_df = df_melted.copy()
