@@ -699,7 +699,6 @@ def training_ratings():
 
     # Drop rows where Rating is NaN
     filtered_df['Rating'] = filtered_df['Rating'].fillna(0)
-    filtered_df['Rating'] = filtered_df['Rating'].astype(float)
     # Ensure 'Rating' column is numeric
     average_ratings = filtered_df.groupby(['date', 'Player']).agg({'Rating': 'mean'}).reset_index()
 
