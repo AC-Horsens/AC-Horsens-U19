@@ -707,8 +707,8 @@ def training_ratings():
 
     fig = go.Figure()
 
-    for player in filtered_df['Player'].unique():
-        player_data = filtered_df[filtered_df['Player'] == player]
+    for player in average_ratings['Player'].unique():
+        player_data = average_ratings[average_ratings['Player'] == player]
         fig.add_trace(go.Scatter(
             x=player_data['date'],
             y=player_data['Rating'],
