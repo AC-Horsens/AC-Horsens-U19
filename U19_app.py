@@ -668,7 +668,7 @@ def training_ratings():
     df['date'] = df['Tidsstempel'].dt.strftime('%d/%m/%Y')
 
     # Melt the DataFrame to long format
-    df_melted = df.melt(id_vars=['Coach name', 'date'], 
+    df_melted = df.melt(id_vars=['Tidsstempel', 'Coach name', 'date'], 
                         var_name='Player', 
                         value_name='Rating')
 
@@ -676,35 +676,36 @@ def training_ratings():
     df_melted['Player'] = df_melted['Player'].str.replace('Rating \[|\]', '', regex=True)
 
     # Streamlit app
-    st.title("Player Ratings")
+    st.title("Player Ratings Visualization")
 
     # Sidebar filters
-    selected_coach = st.selectbox('Select Coach', ['All'] + list(df['Coach name'].unique()))
-    selected_player = st.selectbox('Select Player', ['All'] + list(df_melted['Player'].unique()))
-    selected_date = st.select_slider('Select Date', options=df['date'].unique(), value=df['date'].min())
+    selected_coaches = st.sidebar.multiselect('Select Coaches', df['Coach name'].unique(), df['Coach name'].unique())
+    selected_players = st.sidebar.multiselect('Select Players', df_melted['Player'].unique(), df_melted['Player'].unique())
+    selected_date = st.sidebar.select_slider('Select Date', options=df['date'].unique(), value=df['date'].min())
 
     # Filter data based on selections
     filtered_df = df_melted.copy()
 
-    if selected_coach != 'All':
-        filtered_df = filtered_df[filtered_df['Coach name'] == selected_coach]
+    if selected_coaches:
+        filtered_df = filtered_df[filtered_df['Coach name'].isin(selected_coaches)]
 
-    if selected_player != 'All':
-        filtered_df = filtered_df[filtered_df['Player'] == selected_player]
+    if selected_players:
+        filtered_df = filtered_df[filtered_df['Player'].isin(selected_players)]
 
-    if selected_date != 'All':
-        filtered_df = filtered_df[filtered_df['date'] == selected_date]
+    filtered_df = filtered_df[filtered_df['date'] == selected_date]
+
+    # Calculate average rating per player
+    average_ratings = filtered_df.groupby(['date', 'Player']).agg({'Rating': 'mean'}).reset_index()
 
     # Line chart
-    line_chart = alt.Chart(filtered_df).mark_line().encode(
-        x='date',
+    line_chart = alt.Chart(average_ratings).mark_line().encode(
+        x='date:T',
         y='Rating:Q',
         color='Player:N',
-        tooltip=['date', 'Coach name', 'Player', 'Rating']
+        tooltip=['date', 'Player', 'Rating']
     ).interactive()
 
     st.altair_chart(line_chart, use_container_width=True)
-
 
 def player_data(events,df_matchstats,balanced_central_defender_df,fullbacks_df,number8_df,number6_df,number10_df,winger_df,classic_striker_df):
     horsens = events[events['team.name'].str.contains('Horsens')]
