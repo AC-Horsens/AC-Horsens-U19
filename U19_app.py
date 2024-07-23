@@ -668,7 +668,7 @@ def training_ratings():
     df['date'] = df['Tidsstempel'].dt.strftime('%d/%m/%Y')
 
     # Melt the DataFrame to long format
-    df_melted = df.melt(id_vars=['Tidsstempel', 'Coach name', 'date'], 
+    df_melted = df.melt(id_vars=['Coach name', 'date'], 
                         var_name='Player', 
                         value_name='Rating')
 
