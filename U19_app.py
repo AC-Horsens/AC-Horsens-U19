@@ -666,7 +666,6 @@ def training_ratings():
 
     # Create a new column 'date' with the format 'dd/mm/yyyy'
     df['date'] = df['Tidsstempel'].dt.strftime('%d/%m/%Y')
-    st.dataframe(df)
     # Melt the DataFrame to long format
     df_melted = df.melt(id_vars=['Coach name', 'date','Tidsstempel'], 
                         var_name='Player', 
@@ -703,7 +702,6 @@ def training_ratings():
     # Ensure 'Rating' column is numeric
     filtered_df = filtered_df[['date','Player', 'Rating']]
     average_ratings = filtered_df.groupby(['Player','date']).mean().reset_index()
-    st.dataframe(average_ratings)
 
     fig = go.Figure()
 
