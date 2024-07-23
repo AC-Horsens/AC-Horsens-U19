@@ -682,16 +682,16 @@ def training_ratings():
     # Main layout filters
     selected_coaches = st.multiselect('Select Coaches', df['Coach name'].unique(), df['Coach name'].unique())
     selected_players = st.multiselect('Select Players', sorted(df_melted['Player'].unique()))
-    min_date = df_melted['date'].min().date()
-    max_date = df_melted['date'].max().date()
+    min_date = pd.to_datetime(df_melted['date'], format='%d/%m/%Y').min().date()
+    max_date = pd.to_datetime(df_melted['date'], format='%d/%m/%Y').max().date()
     start_date, end_date = st.date_input('Select Date Range', [min_date, max_date], min_value=min_date, max_value=max_date)
 
     # Filter DataFrame based on the selected filters
     filtered_df = df_melted[
         (df_melted['Coach name'].isin(selected_coaches)) &
         (df_melted['Player'].isin(selected_players)) &
-        (df_melted['date'].dt.date >= start_date) &
-        (df_melted['date'].dt.date <= end_date)
+        (pd.to_datetime(df_melted['date'], format='%d/%m/%Y').dt.date >= start_date) &
+        (pd.to_datetime(df_melted['date'], format='%d/%m/%Y').dt.date <= end_date)
     ]
     
     # Calculate average rating per player
