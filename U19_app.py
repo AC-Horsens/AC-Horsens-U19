@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 from mplsoccer import Pitch
 from scipy.ndimage import gaussian_filter
 import gspread
-import altair as alt
+import plotly.graph_objs as go
 
 
 st.set_page_config(layout="wide")
@@ -699,12 +699,33 @@ def training_ratings():
     filtered_df['Rating'] = pd.to_numeric(filtered_df['Rating'], errors='coerce')
     
     # Drop rows where Rating is NaN
-    filtered_df = filtered_df[['date','Player', 'Rating']]
+    filtered_df = filtered_df[['date','Player', 'Rating','Coach name']]
     st.dataframe(filtered_df)
     # Ensure 'Rating' column is numeric
+    filtered_df = filtered_df[['date','Player', 'Rating']]
     average_ratings = filtered_df.groupby(['Player','date']).mean().reset_index()
     st.dataframe(average_ratings)
 
+    fig = go.Figure()
+
+    for player in filtered_df['Player'].unique():
+        player_data = filtered_df[filtered_df['Player'] == player]
+        fig.add_trace(go.Scatter(
+            x=player_data['date'],
+            y=player_data['Rating'],
+            mode='lines+markers',
+            name=player
+        ))
+
+    fig.update_layout(
+        title='Player Ratings Over Time',
+        xaxis_title='Date',
+        yaxis_title='Rating',
+        width=800,
+        height=400
+    )
+
+    st.plotly_chart(fig, use_container_width=True)
 
 def player_data(events,df_matchstats,balanced_central_defender_df,fullbacks_df,number8_df,number6_df,number10_df,winger_df,classic_striker_df):
     horsens = events[events['team.name'].str.contains('Horsens')]
