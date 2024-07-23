@@ -658,51 +658,53 @@ def plot_arrows(df):
     st.pyplot(fig)
 
 def training_ratings():
-        gc = gspread.service_account('wellness-1123-178fea106d0a.json')
-        sh = gc.open_by_url('https://docs.google.com/spreadsheets/d/1fG0BYf_BbbDIgELdkSGTgjzdT_7pnKDfocUW7TR510I/edit?resourcekey=&gid=201497853#gid=201497853')
-        ws = sh.worksheet('Formularsvar 1')
-        df = pd.DataFrame(ws.get_all_records())
-        df['Tidsstempel'] = pd.to_datetime(df['Tidsstempel'], format='%d/%m/%Y')
+    gc = gspread.service_account('wellness-1123-178fea106d0a.json')
+    sh = gc.open_by_url('https://docs.google.com/spreadsheets/d/1fG0BYf_BbbDIgELdkSGTgjzdT_7pnKDfocUW7TR510I/edit?resourcekey=&gid=201497853#gid=201497853')
+    ws = sh.worksheet('Formularsvar 1')
+    df = pd.DataFrame(ws.get_all_records())
+    df['Tidsstempel'] = pd.to_datetime(df['Tidsstempel'], format='%d/%m/%Y %H.%M.%S')
 
-        # Melt the DataFrame to long format
-        df_melted = df.melt(id_vars=['Tidsstempel', 'Coach name'], 
-                            var_name='Player', 
-                            value_name='Rating')
+    # Create a new column 'date' with the format 'dd/mm/yyyy'
+    df['date'] = df['Tidsstempel'].dt.strftime('%d/%m/%Y')
 
-        # Remove 'Rating [' and ']' from Player names
-        df_melted['Player'] = df_melted['Player'].str.replace('Rating \[|\]', '', regex=True)
+    # Melt the DataFrame to long format
+    df_melted = df.melt(id_vars=['Tidsstempel', 'Coach name', 'date'], 
+                        var_name='Player', 
+                        value_name='Rating')
 
-        # Streamlit app
-        st.title("Player Ratings Visualization")
+    # Remove 'Rating [' and ']' from Player names
+    df_melted['Player'] = df_melted['Player'].str.replace('Rating \[|\]', '', regex=True)
 
-        # Sidebar filters
-        selected_coach = st.selectbox('Select Coach', ['All'] + list(df['Coach name'].unique()))
-        selected_player = st.selectbox('Select Player', ['All'] + list(df_melted['Player'].unique()))
-        selected_date = st.selectbox('Select Date', ['All'] + list(df['Tidsstempel'].dt.date.unique()))
+    # Streamlit app
+    st.title("Player Ratings Visualization")
 
-        # Filter data based on selections
-        filtered_df = df_melted.copy()
+    # Sidebar filters
+    selected_coach = st.selectbox('Select Coach', ['All'] + list(df['Coach name'].unique()))
+    selected_player = st.selectbox('Select Player', ['All'] + list(df_melted['Player'].unique()))
+    selected_date = st.selectbox('Select Date', ['All'] + list(df['date'].unique()))
 
-        if selected_coach != 'All':
-            filtered_df = filtered_df[filtered_df['Coach name'] == selected_coach]
+    # Filter data based on selections
+    filtered_df = df_melted.copy()
 
-        if selected_player != 'All':
-            filtered_df = filtered_df[filtered_df['Player'] == selected_player]
+    if selected_coach != 'All':
+        filtered_df = filtered_df[filtered_df['Coach name'] == selected_coach]
 
-        if selected_date != 'All':
-            filtered_df = filtered_df[filtered_df['Tidsstempel'].dt.date == selected_date]
+    if selected_player != 'All':
+        filtered_df = filtered_df[filtered_df['Player'] == selected_player]
 
-        # Line chart
-        line_chart = alt.Chart(filtered_df).mark_line().encode(
-            x='Tidsstempel:T',
-            y='Rating:Q',
-            color='Player:N',
-            tooltip=['Tidsstempel', 'Coach name', 'Player', 'Rating']
-        ).interactive()
+    if selected_date != 'All':
+        filtered_df = filtered_df[filtered_df['date'] == selected_date]
 
-        st.altair_chart(line_chart, use_container_width=True)
+    # Line chart
+    line_chart = alt.Chart(filtered_df).mark_line().encode(
+        x='Tidsstempel:T',
+        y='Rating:Q',
+        color='Player:N',
+        tooltip=['Tidsstempel', 'Coach name', 'Player', 'Rating']
+    ).interactive()
 
-    # Heatmap
+    st.altair_chart(line_chart, use_container_width=True)
+
 
 def player_data(events,df_matchstats,balanced_central_defender_df,fullbacks_df,number8_df,number6_df,number10_df,winger_df,classic_striker_df):
     horsens = events[events['team.name'].str.contains('Horsens')]
