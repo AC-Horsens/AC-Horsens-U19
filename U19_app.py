@@ -674,6 +674,7 @@ def training_ratings():
 
     # Remove 'Rating [' and ']' from Player names
     df_melted['Player'] = df_melted['Player'].str.replace('Rating \[|\]', '', regex=True)
+    df_melted['date'] = pd.to_datetime(df_melted['date'], format='%d/%m/%Y')
 
     # Streamlit app
     st.title("Player Ratings")
