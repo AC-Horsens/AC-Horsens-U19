@@ -695,14 +695,6 @@ def training_ratings():
     ]
     # Filter data based on selections
     filtered_df = df_melted.copy()
-
-    if selected_coaches:
-        filtered_df = filtered_df[filtered_df['Coach name'].isin(selected_coaches)]
-
-    if selected_players:
-        filtered_df = filtered_df[filtered_df['Player'].isin(selected_players)]
-
-    filtered_df = filtered_df[filtered_df['date'] == selected_date]
     
     # Calculate average rating per player
     df_melted['Rating'] = pd.to_numeric(df_melted['Rating'], errors='coerce')
