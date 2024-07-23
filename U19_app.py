@@ -668,7 +668,7 @@ def training_ratings():
     df['date'] = df['Tidsstempel'].dt.strftime('%d/%m/%Y')
 
     # Melt the DataFrame to long format
-    df_melted = df.melt(id_vars=['Tidsstempel', 'Coach name', 'date'], 
+    df_melted = df.melt(id_vars=['date', 'Coach name', 'date'], 
                         var_name='Player', 
                         value_name='Rating')
 
@@ -697,10 +697,10 @@ def training_ratings():
 
     # Line chart
     line_chart = alt.Chart(filtered_df).mark_line().encode(
-        x='Tidsstempel:T',
+        x='date',
         y='Rating:Q',
         color='Player:N',
-        tooltip=['Tidsstempel', 'Coach name', 'Player', 'Rating']
+        tooltip=['date', 'Coach name', 'Player', 'Rating']
     ).interactive()
 
     st.altair_chart(line_chart, use_container_width=True)
