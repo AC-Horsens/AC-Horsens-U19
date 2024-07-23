@@ -694,14 +694,12 @@ def training_ratings():
         (df_melted['date'].dt.date >= start_date) &
         (df_melted['date'].dt.date <= end_date)
     ]
-    # Filter data based on selections
-    filtered_df = df_melted.copy()
     
     # Calculate average rating per player
     filtered_df['Rating'] = pd.to_numeric(filtered_df['Rating'], errors='coerce')
     
     # Drop rows where Rating is NaN
-    filtered_df = filtered_df[['Player', 'Rating']]
+    filtered_df = filtered_df[['date','Player', 'Rating']]
     st.dataframe(filtered_df)
     # Ensure 'Rating' column is numeric
     average_ratings = filtered_df.groupby(['Player','date']).mean(skipna=True).reset_index()
