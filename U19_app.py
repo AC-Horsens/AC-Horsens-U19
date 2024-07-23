@@ -714,6 +714,7 @@ def training_ratings():
         title='Player Ratings Over Time',
         xaxis_title='Date',
         yaxis_title='Rating',
+        yaxis=dict(range=[1, 10]),  # Set y-axis range from 1 to 10        
         width=800,
         height=400
     )
