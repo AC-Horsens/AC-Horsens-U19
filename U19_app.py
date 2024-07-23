@@ -696,9 +696,10 @@ def training_ratings():
 
     # Calculate average rating per player
     df_melted['Rating'] = pd.to_numeric(df_melted['Rating'], errors='coerce')
-
+    
     # Drop rows where Rating is NaN
     filtered_df['Rating'] = filtered_df['Rating'].fillna(0)
+    st.dataframe(filtered_df)
     # Ensure 'Rating' column is numeric
     average_ratings = filtered_df.groupby(['date', 'Player']).agg({'Rating': 'mean'}).reset_index()
 
