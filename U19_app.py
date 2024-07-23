@@ -698,7 +698,6 @@ def training_ratings():
     
     # Drop rows where Rating is NaN
     filtered_df = filtered_df[['date','Player', 'Rating','Coach name']]
-    st.dataframe(filtered_df)
     # Ensure 'Rating' column is numeric
     filtered_df = filtered_df[['date','Player', 'Rating']]
     average_ratings = filtered_df.groupby(['Player','date']).mean().reset_index()
