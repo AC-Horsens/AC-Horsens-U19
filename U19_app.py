@@ -695,6 +695,7 @@ def training_ratings():
     filtered_df = filtered_df[filtered_df['date'] == selected_date]
 
     # Calculate average rating per player
+    filtered_df = filtered_df.dropna(subset=['Rating'])
     average_ratings = filtered_df.groupby(['date', 'Player']).agg({'Rating': 'mean'}).reset_index()
 
     # Line chart
