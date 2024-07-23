@@ -4,6 +4,8 @@ import matplotlib.pyplot as plt
 from mplsoccer import Pitch
 from scipy.ndimage import gaussian_filter
 import gspread
+import altair as alt
+
 
 st.set_page_config(layout="wide")
 
