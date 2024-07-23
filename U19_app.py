@@ -702,20 +702,12 @@ def training_ratings():
     
     # Drop rows where Rating is NaN
     filtered_df['Rating'] = filtered_df['Rating'].fillna(0)
-    filtered_df = filtered_df[['date','Player', 'Rating']]
+    filtered_df = filtered_df[['Player', 'Rating']]
     st.dataframe(filtered_df)
     # Ensure 'Rating' column is numeric
-    average_ratings = filtered_df.groupby(['date', 'Player']).mean().reset_index()
+    average_ratings = filtered_df.groupby(['Player']).mean().reset_index()
 
-    # Line chart
-    line_chart = alt.Chart(average_ratings).mark_line().encode(
-        x='date:T',
-        y='Rating:Q',
-        color='Player:N',
-        tooltip=['date', 'Player', 'Rating']
-    ).interactive()
 
-    st.altair_chart(line_chart, use_container_width=True)
 
 def player_data(events,df_matchstats,balanced_central_defender_df,fullbacks_df,number8_df,number6_df,number10_df,winger_df,classic_striker_df):
     horsens = events[events['team.name'].str.contains('Horsens')]
