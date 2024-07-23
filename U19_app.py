@@ -702,8 +702,8 @@ def training_ratings():
     filtered_df = filtered_df[['date','Player', 'Rating']]
     st.dataframe(filtered_df)
     # Ensure 'Rating' column is numeric
-    average_ratings = filtered_df.groupby(['Player','date']).mean(skipna=True).reset_index()
-
+    average_ratings = filtered_df.groupby(['Player','date']).mean().reset_index()
+    st.dataframe(average_ratings)
 
 
 def player_data(events,df_matchstats,balanced_central_defender_df,fullbacks_df,number8_df,number6_df,number10_df,winger_df,classic_striker_df):
