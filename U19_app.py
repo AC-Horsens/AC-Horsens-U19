@@ -700,10 +700,10 @@ def training_ratings():
     filtered_df.replace('', pd.NA, inplace=True)
 
     # Filter out rows where the 'rating' column has NaN values
-    filtered_df = filtered_df.dropna(subset=['rating'])
+    filtered_df = filtered_df.dropna(subset=['Rating'])
 
     # Calculate the average ratings, ignoring None values
-    average_ratings = filtered_df.groupby(['Player', 'date'])['rating'].mean().reset_index()
+    average_ratings = filtered_df.groupby(['Player', 'date'])['Rating'].mean().reset_index()
 
     fig = go.Figure()
 
