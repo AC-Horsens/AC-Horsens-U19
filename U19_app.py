@@ -740,7 +740,7 @@ def wellness():
     activity = st.multiselect('Choose activity', df['Questionnaire'].unique())
     df = df[df['Player Name'].isin(players)]
     df = df[df['Questionnaire'].isin(activity)]
-    st.dataframe(df)
+    st.dataframe(df,hide_index=True)
 
 def player_data(events,df_matchstats,balanced_central_defender_df,fullbacks_df,number8_df,number6_df,number10_df,winger_df,classic_striker_df):
     horsens = events[events['team.name'].str.contains('Horsens')]
