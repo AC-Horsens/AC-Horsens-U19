@@ -734,22 +734,18 @@ def wellness():
     df = pd.DataFrame(ws.get_all_records())
     df['Tidsstempel'] = pd.to_datetime(df['Tidsstempel'], dayfirst=True, format='%d/%m/%Y %H.%M.%S')
 
-    # Create a new column 'date' with the format 'dd/mm/yyyy'
     df['date'] = df['Tidsstempel'].dt.strftime('%d/%m/%Y')
 
     players = st.multiselect('Choose player', df['Player Name'].unique())
     activity = st.selectbox('Choose activity', df['Questionnaire'].unique())
 
-    # Filter the dataframe based on selected players and activity
     df = df[df['Player Name'].isin(players)]
     df = df[df['Questionnaire'] == activity]
 
-    # Convert the 'date' column to datetime for the slider
     df['date'] = pd.to_datetime(df['date'], format='%d/%m/%Y')
 
-    # Add a date slider to filter the dataframe by date
-    min_date = df['Tidsstempel'].min()
-    max_date = df['Tidsstempel'].max()
+    min_date = df['Tidsstempel'].min().to_pydatetime()
+    max_date = df['Tidsstempel'].max().to_pydatetime()
     start_date, end_date = st.slider(
         'Select date range',
         min_value=min_date,
@@ -758,10 +754,8 @@ def wellness():
         format="DD/MM/YYYY"
     )
 
-    # Filter the dataframe based on the selected date range
     df = df[(df['Tidsstempel'] >= start_date) & (df['Tidsstempel'] <= end_date)]
 
-    # Format the date column back to 'dd/mm/yyyy' for display
     df['date'] = df['date'].dt.strftime('%d/%m/%Y')
 
     if activity == 'Before activity':
