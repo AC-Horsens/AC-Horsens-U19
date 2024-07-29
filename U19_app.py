@@ -738,7 +738,6 @@ def wellness():
     df['date'] = df['Tidsstempel'].dt.strftime('%d/%m/%Y')
     players = st.multiselect('Choose player', df['Player Name'].unique())
     activity = st.selectbox('Choose activity', df['Questionnaire'].unique())
-    st.write(df.columns)
     df = df[df['Player Name'].isin(players)]
     df = df[df['Questionnaire'] == activity]
     if activity == 'Before activity':
@@ -746,7 +745,7 @@ def wellness():
     if activity == 'After activity':
         df = df[['date','Player Name','Activity length in minutes (only write a number)','How hard was the training/match (10 is hardest) ','How exausted are you?  (1 is the best, 7 is the worst)','Rate your muscle soreness  (1 is the best, 7 is the worst)','How do you feel mentally?  (1 is the best, 7 is the worst)','I felt suitably challenged during training/match  (1 is the best, 7 is the worst)','My sense of time disappeared during training/match   (1 is the best, 7 is the worst)','I experienced that thoughts and actions were directed towards training  (1 is the best, 7 is the worst)']]
     
-    st.dataframe(df)
+    st.dataframe(df,hide_index=True)
 
 
 def player_data(events,df_matchstats,balanced_central_defender_df,fullbacks_df,number8_df,number6_df,number10_df,winger_df,classic_striker_df):
