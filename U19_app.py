@@ -728,42 +728,47 @@ def training_ratings():
     st.plotly_chart(fig, use_container_width=True)
 
 def wellness():
-    gc = gspread.service_account('wellness-1123-178fea106d0a.json')
-    sh = gc.open_by_url('https://docs.google.com/spreadsheets/d/170aa3MNioMs4fxYtCgaS_x73yG6d8Lxb9QOEejilu1w/edit?gid=1576347711#gid=1576347711')
-    ws = sh.worksheet('Formularsvar 1')
-    df = pd.DataFrame(ws.get_all_records())
-    df['Tidsstempel'] = pd.to_datetime(df['Tidsstempel'], dayfirst=True, format='%d/%m/%Y %H.%M.%S')
+    try:
+        gc = gspread.service_account('wellness-1123-178fea106d0a.json')
+        sh = gc.open_by_url('https://docs.google.com/spreadsheets/d/170aa3MNioMs4fxYtCgaS_x73yG6d8Lxb9QOEejilu1w/edit?gid=1576347711#gid=1576347711')
+        ws = sh.worksheet('Formularsvar 1')
+        df = pd.DataFrame(ws.get_all_records())
+        df['Tidsstempel'] = pd.to_datetime(df['Tidsstempel'], dayfirst=True, format='%d/%m/%Y %H.%M.%S')
 
-    df['date'] = df['Tidsstempel'].dt.strftime('%d/%m/%Y')
+        df['date'] = df['Tidsstempel'].dt.strftime('%d/%m/%Y')
+        col1,col2 = st.columns(2)
+        with col1:
+            players = st.multiselect('Choose player', sorted(df['Player Name'].unique()))
+        
+        with col2:
+            activity = st.selectbox('Choose activity', df['Questionnaire'].unique())
 
-    players = st.multiselect('Choose player', sorted(df['Player Name'].unique()))
-    activity = st.selectbox('Choose activity', df['Questionnaire'].unique())
+        df = df[df['Player Name'].isin(players)]
+        df = df[df['Questionnaire'] == activity]
 
-    df = df[df['Player Name'].isin(players)]
-    df = df[df['Questionnaire'] == activity]
+        df['date'] = pd.to_datetime(df['date'], format='%d/%m/%Y')
+        min_date = df['Tidsstempel'].min().to_pydatetime()
+        max_date = df['Tidsstempel'].max().to_pydatetime()
+        start_date, end_date = st.slider(
+            'Select date range',
+            min_value=min_date,
+            max_value=max_date,
+            value=(min_date, max_date),
+            format="DD/MM/YYYY"
+        )
 
-    df['date'] = pd.to_datetime(df['date'], format='%d/%m/%Y')
-    min_date = df['Tidsstempel'].min().to_pydatetime()
-    max_date = df['Tidsstempel'].max().to_pydatetime()
-    start_date, end_date = st.slider(
-        'Select date range',
-        min_value=min_date,
-        max_value=max_date,
-        value=(min_date, max_date),
-        format="DD/MM/YYYY"
-    )
+        df = df[(df['Tidsstempel'] >= start_date) & (df['Tidsstempel'] <= end_date)]
 
-    df = df[(df['Tidsstempel'] >= start_date) & (df['Tidsstempel'] <= end_date)]
+        df['date'] = df['date'].dt.strftime('%d/%m/%Y')
 
-    df['date'] = df['date'].dt.strftime('%d/%m/%Y')
-
-    if activity == 'Before activity':
-        df = df[['date', 'Player Name', 'Rate your freshness (1 is the best, 7 is the worst)', 'Rate how you feel mentally (1 is the best, 7 is the worst)', 'Have you eaten enough yesterday? (1 is the best, 7 is the worst)', 'Have you eaten enough before the activity? (1 is the best, 7 is the worst)', 'Rate your sleep quality (1 is the best, 7 is the worst)', 'How many hours did you sleep last night?']]
-    if activity == 'After activity':
-        df = df[['date', 'Player Name', 'Activity length in minutes (only write a number)', 'How hard was the training/match (10 is hardest) ', 'How exausted are you?  (1 is the best, 7 is the worst)', 'Rate your muscle soreness  (1 is the best, 7 is the worst)', 'How do you feel mentally?  (1 is the best, 7 is the worst)', 'I felt suitably challenged during training/match  (1 is the best, 7 is the worst)', 'My sense of time disappeared during training/match   (1 is the best, 7 is the worst)', 'I experienced that thoughts and actions were directed towards training  (1 is the best, 7 is the worst)']]
-    
-    st.dataframe(df, hide_index=True)
-
+        if activity == 'Before activity':
+            df = df[['date', 'Player Name', 'Rate your freshness (1 is the best, 7 is the worst)', 'Rate how you feel mentally (1 is the best, 7 is the worst)', 'Have you eaten enough yesterday? (1 is the best, 7 is the worst)', 'Have you eaten enough before the activity? (1 is the best, 7 is the worst)', 'Rate your sleep quality (1 is the best, 7 is the worst)', 'How many hours did you sleep last night?']]
+        if activity == 'After activity':
+            df = df[['date', 'Player Name', 'Activity length in minutes (only write a number)', 'How hard was the training/match (10 is hardest) ', 'How exausted are you?  (1 is the best, 7 is the worst)', 'Rate your muscle soreness  (1 is the best, 7 is the worst)', 'How do you feel mentally?  (1 is the best, 7 is the worst)', 'I felt suitably challenged during training/match  (1 is the best, 7 is the worst)', 'My sense of time disappeared during training/match   (1 is the best, 7 is the worst)', 'I experienced that thoughts and actions were directed towards training  (1 is the best, 7 is the worst)']]
+        
+        st.dataframe(df, hide_index=True)
+    except KeyError:
+        st.write('Choose one or more players')
 
 def player_data(events,df_matchstats,balanced_central_defender_df,fullbacks_df,number8_df,number6_df,number10_df,winger_df,classic_striker_df):
     horsens = events[events['team.name'].str.contains('Horsens')]
