@@ -743,7 +743,6 @@ def wellness():
     df = df[df['Questionnaire'] == activity]
 
     df['date'] = pd.to_datetime(df['date'], format='%d/%m/%Y')
-    st.write(df.columns)
     min_date = df['Tidsstempel'].min().to_pydatetime()
     max_date = df['Tidsstempel'].max().to_pydatetime()
     start_date, end_date = st.slider(
