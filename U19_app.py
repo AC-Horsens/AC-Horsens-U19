@@ -748,8 +748,8 @@ def wellness():
     df['date'] = pd.to_datetime(df['date'], format='%d/%m/%Y')
 
     # Add a date slider to filter the dataframe by date
-    min_date = df['date'].min()
-    max_date = df['date'].max()
+    min_date = df['Tidsstempel'].min()
+    max_date = df['Tidsstempel'].max()
     start_date, end_date = st.slider(
         'Select date range',
         min_value=min_date,
@@ -759,7 +759,7 @@ def wellness():
     )
 
     # Filter the dataframe based on the selected date range
-    df = df[(df['date'] >= start_date) & (df['date'] <= end_date)]
+    df = df[(df['Tidsstempel'] >= start_date) & (df['Tidsstempel'] <= end_date)]
 
     # Format the date column back to 'dd/mm/yyyy' for display
     df['date'] = df['date'].dt.strftime('%d/%m/%Y')
