@@ -737,7 +737,8 @@ def wellness():
     # Create a new column 'date' with the format 'dd/mm/yyyy'
     df['date'] = df['Tidsstempel'].dt.strftime('%d/%m/%Y')
     players = st.multiselect('Choose player', df['Player Name'].unique())
-    activity = st.multiselect('Choose activity', df['Questionnaire'].unique())
+    activity = st.selectbox('Choose activity', df['Questionnaire'].unique())
+    
     df = df[df['Player Name'].isin(players)]
     df = df[df['Questionnaire'].isin(activity)]
     if activity == 'Before activity':
