@@ -740,8 +740,11 @@ def wellness():
     activity = st.multiselect('Choose activity', df['Questionnaire'].unique())
     df = df[df['Player Name'].isin(players)]
     df = df[df['Questionnaire'].isin(activity)]
+    if activity == 'Before activity':
+        df = df[['date','Player Name','Activity length in minutes (only write a number)','Rate your freshness (1 is the best, 7 is the worst)','Rate how you feel mentally (1 is the best, 7 is the worst)','Have you eaten enough yesterday? (1 is the best, 7 is the worst)','Have you eaten enough before the activity? (1 is the best, 7 is the worst)','Rate your sleep quality (1 is the best, 7 is the worst)','How many hours did you sleep last night?']]
     st.dataframe(df,hide_index=True)
-
+    if activity == 'After activity':
+        df = df[['date','Player Name','Activity length in minutes (only write a number)','How hard was the training/match (10 is hardest)','How exausted are you? (1 is the best, 7 is the worst)','Rate your muscle soreness (1 is the best, 7 is the worst)','How do you feel mentally? (1 is the best, 7 is the worst)','I felt suitably challenged during training/match (1 is the best, 7 is the worst)','my sense of time disapeared during training/match (1 is the best, 7 is the worst)','I experienced that thoughts and actions where directed towards training (1 is the best, 7 is the worst)']]
 def player_data(events,df_matchstats,balanced_central_defender_df,fullbacks_df,number8_df,number6_df,number10_df,winger_df,classic_striker_df):
     horsens = events[events['team.name'].str.contains('Horsens')]
     horsens = horsens.sort_values(by='player.name')
