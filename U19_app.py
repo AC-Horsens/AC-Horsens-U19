@@ -729,7 +729,7 @@ def training_ratings():
 
 def wellness():
     gc = gspread.service_account('wellness-1123-178fea106d0a.json')
-    sh = gc.open_by_url('https://docs.google.com/spreadsheets/d/1fG0BYf_BbbDIgELdkSGTgjzdT_7pnKDfocUW7TR510I/edit?resourcekey=&gid=201497853#gid=201497853')
+    sh = gc.open_by_url('https://docs.google.com/spreadsheets/d/170aa3MNioMs4fxYtCgaS_x73yG6d8Lxb9QOEejilu1w/edit?gid=1576347711#gid=1576347711')
     ws = sh.worksheet('Formularsvar 1')
     df = pd.DataFrame(ws.get_all_records())
     df['Tidsstempel'] = pd.to_datetime(df['Tidsstempel'],dayfirst=True, format='%d/%m/%Y %H.%M.%S')
