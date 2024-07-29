@@ -740,7 +740,7 @@ def wellness():
     activity = st.selectbox('Choose activity', df['Questionnaire'].unique())
     
     df = df[df['Player Name'].isin(players)]
-    df = df[df['Questionnaire'].isin(activity)]
+    df = df[df['Questionnaire'] == activity]
     if activity == 'Before activity':
         df = df[['date','Player Name','Activity length in minutes (only write a number)','Rate your freshness (1 is the best, 7 is the worst)','Rate how you feel mentally (1 is the best, 7 is the worst)','Have you eaten enough yesterday? (1 is the best, 7 is the worst)','Have you eaten enough before the activity? (1 is the best, 7 is the worst)','Rate your sleep quality (1 is the best, 7 is the worst)','How many hours did you sleep last night?']]
     if activity == 'After activity':
