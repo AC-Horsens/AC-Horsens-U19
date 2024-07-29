@@ -740,12 +740,31 @@ def wellness():
     activity = st.selectbox('Choose activity', df['Questionnaire'].unique())
     df = df[df['Player Name'].isin(players)]
     df = df[df['Questionnaire'] == activity]
+    df['date'] = pd.to_datetime(df['date'], dayfirst=True, format='%d/%m/%Y')
+
+    # Add a date slider to filter the dataframe by date
+    min_date = df['date'].min()
+    max_date = df['date'].max()
+    start_date, end_date = st.slider(
+        'Select date range',
+        min_value=min_date,
+        max_value=max_date,
+        value=(min_date, max_date),
+        format="DD/MM/YYYY"
+    )
+
+    # Filter the dataframe based on the selected date range
+    df = df[(df['date'] >= start_date) & (df['date'] <= end_date)]
+
+    # Format the date column back to 'dd/mm/yyyy' for display
+    df['date'] = df['date'].dt.strftime('%d/%m/%Y')
+
     if activity == 'Before activity':
-        df = df[['date','Player Name','Rate your freshness (1 is the best, 7 is the worst)','Rate how you feel mentally (1 is the best, 7 is the worst)','Have you eaten enough yesterday? (1 is the best, 7 is the worst)','Have you eaten enough before the activity? (1 is the best, 7 is the worst)','Rate your sleep quality (1 is the best, 7 is the worst)','How many hours did you sleep last night?']]
+        df = df[['date', 'Player Name', 'Rate your freshness (1 is the best, 7 is the worst)', 'Rate how you feel mentally (1 is the best, 7 is the worst)', 'Have you eaten enough yesterday? (1 is the best, 7 is the worst)', 'Have you eaten enough before the activity? (1 is the best, 7 is the worst)', 'Rate your sleep quality (1 is the best, 7 is the worst)', 'How many hours did you sleep last night?']]
     if activity == 'After activity':
-        df = df[['date','Player Name','Activity length in minutes (only write a number)','How hard was the training/match (10 is hardest) ','How exausted are you?  (1 is the best, 7 is the worst)','Rate your muscle soreness  (1 is the best, 7 is the worst)','How do you feel mentally?  (1 is the best, 7 is the worst)','I felt suitably challenged during training/match  (1 is the best, 7 is the worst)','My sense of time disappeared during training/match   (1 is the best, 7 is the worst)','I experienced that thoughts and actions were directed towards training  (1 is the best, 7 is the worst)']]
+        df = df[['date', 'Player Name', 'Activity length in minutes (only write a number)', 'How hard was the training/match (10 is hardest)', 'How exausted are you? (1 is the best, 7 is the worst)', 'Rate your muscle soreness (1 is the best, 7 is the worst)', 'How do you feel mentally? (1 is the best, 7 is the worst)', 'I felt suitably challenged during training/match (1 is the best, 7 is the worst)', 'My sense of time disappeared during training/match (1 is the best, 7 is the worst)', 'I experienced that thoughts and actions were directed towards training (1 is the best, 7 is the worst)']]
     
-    st.dataframe(df,hide_index=True)
+    st.dataframe(df, hide_index=True)
 
 
 def player_data(events,df_matchstats,balanced_central_defender_df,fullbacks_df,number8_df,number6_df,number10_df,winger_df,classic_striker_df):
