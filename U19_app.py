@@ -732,15 +732,20 @@ def wellness():
     sh = gc.open_by_url('https://docs.google.com/spreadsheets/d/170aa3MNioMs4fxYtCgaS_x73yG6d8Lxb9QOEejilu1w/edit?gid=1576347711#gid=1576347711')
     ws = sh.worksheet('Formularsvar 1')
     df = pd.DataFrame(ws.get_all_records())
-    df['Tidsstempel'] = pd.to_datetime(df['Tidsstempel'],dayfirst=True, format='%d/%m/%Y %H.%M.%S')
+    df['Tidsstempel'] = pd.to_datetime(df['Tidsstempel'], dayfirst=True, format='%d/%m/%Y %H.%M.%S')
 
     # Create a new column 'date' with the format 'dd/mm/yyyy'
     df['date'] = df['Tidsstempel'].dt.strftime('%d/%m/%Y')
+
     players = st.multiselect('Choose player', df['Player Name'].unique())
     activity = st.selectbox('Choose activity', df['Questionnaire'].unique())
+
+    # Filter the dataframe based on selected players and activity
     df = df[df['Player Name'].isin(players)]
     df = df[df['Questionnaire'] == activity]
-    df['date'] = pd.to_datetime(df['date'], dayfirst=True, format='%d/%m/%Y')
+
+    # Convert the 'date' column to datetime for the slider
+    df['date'] = pd.to_datetime(df['date'], format='%d/%m/%Y')
 
     # Add a date slider to filter the dataframe by date
     min_date = df['date'].min()
