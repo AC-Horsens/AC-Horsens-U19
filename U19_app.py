@@ -736,7 +736,7 @@ def wellness():
 
     df['date'] = df['Tidsstempel'].dt.strftime('%d/%m/%Y')
 
-    players = st.multiselect('Choose player', df['Player Name'].unique())
+    players = st.multiselect('Choose player', sorted(df['Player Name'].unique()))
     activity = st.selectbox('Choose activity', df['Questionnaire'].unique())
 
     df = df[df['Player Name'].isin(players)]
