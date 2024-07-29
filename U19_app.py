@@ -736,6 +736,10 @@ def wellness():
 
     # Create a new column 'date' with the format 'dd/mm/yyyy'
     df['date'] = df['Tidsstempel'].dt.strftime('%d/%m/%Y')
+    players = st.multiselect('Choose player', df['Player Name'].unique())
+    activity = st.multiselect('Choose activity', df['Questionnaire'].unique())
+    df = df[df['Player Name'].isin(players)]
+    df = df[df['Questionnaire'].isin(activity)]
     st.dataframe(df)
 
 def player_data(events,df_matchstats,balanced_central_defender_df,fullbacks_df,number8_df,number6_df,number10_df,winger_df,classic_striker_df):
