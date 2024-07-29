@@ -825,7 +825,7 @@ def player_data(events,df_matchstats,balanced_central_defender_df,fullbacks_df,n
 
 option = st.sidebar.selectbox(
     'Select data type',
-    ('training ratings', 'player data')
+    ('training ratings', 'player data','wellness')
 )
 
 # Show the selected function
