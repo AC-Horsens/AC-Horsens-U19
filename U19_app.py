@@ -886,7 +886,7 @@ def dashboard(events):
         all_xg['match_xg'] = all_xg.groupby('label')['shot.xg'].transform('sum')
         all_xg['team_xg'] = all_xg.groupby(['label', 'team.name'])['shot.xg'].transform('sum')
         all_xg['xg_diff'] = all_xg['team_xg'] - all_xg['match_xg'] + all_xg['team_xg']
-        all_xg['xG rolling average'] = all_xg.groupby('team_name')['xG difference'].transform(lambda x: x.rolling(window=3, min_periods=1).mean())
+        all_xg['xG rolling average'] = all_xg.groupby('team.name')['xg_diff'].transform(lambda x: x.rolling(window=3, min_periods=1).mean())
         fig = go.Figure()
         
         for team in all_xg['team_name'].unique():
