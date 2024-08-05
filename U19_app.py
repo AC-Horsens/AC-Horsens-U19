@@ -1012,18 +1012,18 @@ def dashboard():
         if st.session_state['selected_data3']:
             Data_types[st.session_state['selected_data3']]()
 
-option = st.sidebar.selectbox(
-    'Select data type',
-    ('U19 dashboard','training ratings', 'player data','wellness')
-)
+Data_types = {
+    'Dashboard': dashboard,
+    'Wellness data': wellness,
+    'Player data': player_data,
+    'Training ratings': training_ratings
+    }
 
-# Show the selected function
-if option == 'U19 dashboard':
-    dashboard()
-elif option == 'training ratings':
-    training_ratings()
-elif option == 'player data':
-    player_data(events,df_matchstats,balanced_central_defender_df,fullbacks_df,number8_df,number6_df,number10_df,winger_df,classic_striker_df)
-elif option == 'wellness':
-    wellness()  
 
+st.cache_data(experimental_allow_widgets=True)
+st.cache_resource(experimental_allow_widgets=True)
+selected_data = st.sidebar.radio('Choose data type',list(Data_types.keys()))
+
+st.cache_data(experimental_allow_widgets=True)
+st.cache_resource(experimental_allow_widgets=True)
+Data_types[selected_data]()
