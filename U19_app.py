@@ -881,6 +881,7 @@ def dashboard(events):
 
     def xg (df_xg):
         all_xg = df_xg.copy()
+        df_xg1 = df_xg.copy()
         all_xg['label'] = all_xg['label'] + ' ' + all_xg['date']
 
         all_xg['date'] = pd.to_datetime(all_xg['date'], utc=True)
@@ -928,15 +929,15 @@ def dashboard(events):
         st.dataframe(all_xg, hide_index=True)
         st.write('Chosen matches')
         st.dataframe(df_xg, hide_index=True)
-        df_xg['team.name'] = df_xg['team.name'].apply(lambda x: x if x == 'Horsens U19' else 'Opponent')
-        df_xg = df_xg.sort_values(by=['team.name','minute'])
+        df_xg1['team.name'] = df_xg1['team.name'].apply(lambda x: x if x == 'Horsens U19' else 'Opponent')
+        df_xg1 = df_xg1.sort_values(by=['team.name','minute'])
 
-        df_xg['cumulative_xG'] = df_xg.groupby(['team.name'])['shot.xg'].cumsum()
+        df_xg1['cumulative_xG'] = df_xg1.groupby(['team.name'])['shot.xg'].cumsum()
 
         fig = go.Figure()
         
-        for team in df_xg['team_name'].unique():
-            team_data = df_xg[df_xg['team_name'] == team]
+        for team in df_xg1['team_name'].unique():
+            team_data = df_xg1[df_xg1['team_name'] == team]
             fig.add_trace(go.Scatter(
                 x=team_data['minute'], 
                 y=team_data['cumulative_xG'], 
