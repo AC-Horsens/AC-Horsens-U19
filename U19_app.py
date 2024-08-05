@@ -876,6 +876,7 @@ events, df_xg, df_xg_agg,df_matchstats = load_data()
 
 def dashboard():
     st.title('U19 Dashboard')
+    events = load_data()
     events['label'] = events['label'] + ' ' + events['date']
     events['date'] = pd.to_datetime(events['date'],utc=True)
     events = events.sort_values('date').reset_index(drop=True)
