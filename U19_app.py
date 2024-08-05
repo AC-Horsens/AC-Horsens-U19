@@ -872,7 +872,7 @@ def player_data(events,df_matchstats,balanced_central_defender_df,fullbacks_df,n
 
 def dashboard(events):
     st.title('U19 Dashboard')
-    events = events.sort.values('date').reset_index(drop=True)
+    events = events.sort_values('date').reset_index(drop=True)
     events['label'] = events['label'] + ' ' + events['date']
     matches = events['label'].unique()
     matches = matches[::-1]
