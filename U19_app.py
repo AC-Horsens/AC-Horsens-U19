@@ -1002,10 +1002,14 @@ def dashboard():
         st.write('To be added')
 
     Data_types = {
-        'xG': xg(),
-        'Pressing': pressing(),
-        'Chance Creation': chance_creation()
+        'xG': xg,
+        'Pressing': pressing,
+        'Chance Creation': chance_creation
     }
+
+    for i in range(1, 4):
+        if f'selected_data{i}' not in st.session_state:
+            st.session_state[f'selected_data{i}'] = ''
 
     # Create three columns for select boxes
     col1, col2, col3 = st.columns(3)
