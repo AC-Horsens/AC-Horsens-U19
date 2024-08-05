@@ -884,7 +884,7 @@ def dashboard(events):
         all_xg['label'] = all_xg['label'] + ' ' + all_xg['date']
         df_xg['label'] = df_xg['label'] + ' ' + df_xg['date']
         df_xg = df_xg[df_xg['label'].isin(match_choice)]
-        st.dataframe(xg, hide_index=True)
+        st.dataframe(df_xg, hide_index=True)
     xg(df_xg)
 option = st.sidebar.selectbox(
     'Select data type',
