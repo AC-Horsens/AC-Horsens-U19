@@ -882,6 +882,12 @@ def dashboard(events):
     def xg (df_xg):
         all_xg = df_xg.copy()
         all_xg['label'] = all_xg['label'] + ' ' + all_xg['date']
+        all_xg['match_xg'] = all_xg.groupby('label')['shot.xg'].transform('sum')
+        all_xg['team_xg'] = all_xg.groupby(['label', 'team.name'])['shot.xg'].transform('sum')
+        all_xg['xg_diff'] = all_xg['team_xg'] - all_xg['match_xg'] + all_xg['team_xg']
+        all_xg = all_xg[['team.name','xg_diff']]
+        all_xg = all_xg.drop_duplicates()
+        all_xg = all_xg.groupby('team.name')['xg_diff'].sum().reset_index()
         df_xg['label'] = df_xg['label'] + ' ' + df_xg['date']
         df_xg = df_xg[df_xg['label'].isin(match_choice)]
         df_xg['match_xg'] = df_xg.groupby('label')['shot.xg'].transform('sum')
@@ -891,6 +897,9 @@ def dashboard(events):
         df_xg = df_xg.drop_duplicates()
         df_xg = df_xg[df_xg['team.name'].str.contains('Horsens')]
         df_xg = df_xg.groupby('team.name')['xg_diff'].sum().reset_index()
+        st.write('All matches')
+        st.dataframe(all_xg, hide_index=True)
+        st.write('Chosen matches')
         st.dataframe(df_xg, hide_index=True)
     xg(df_xg)
 option = st.sidebar.selectbox(
