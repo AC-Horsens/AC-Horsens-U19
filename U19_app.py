@@ -881,10 +881,34 @@ def dashboard(events):
 
     def xg (df_xg):
         all_xg = df_xg.copy()
+        all_xg = all_xg.sort_values('date').reset_index(drop=True)
         all_xg['label'] = all_xg['label'] + ' ' + all_xg['date']
         all_xg['match_xg'] = all_xg.groupby('label')['shot.xg'].transform('sum')
         all_xg['team_xg'] = all_xg.groupby(['label', 'team.name'])['shot.xg'].transform('sum')
         all_xg['xg_diff'] = all_xg['team_xg'] - all_xg['match_xg'] + all_xg['team_xg']
+        all_xg['xG rolling average'] = all_xg.groupby('team_name')['xG difference'].transform(lambda x: x.rolling(window=3, min_periods=1).mean())
+        fig = go.Figure()
+        
+        for team in all_xg['team_name'].unique():
+            team_data = all_xg[all_xg['team_name'] == team]
+            line_size = 5 if team == 'Horsens' else 1  # Larger line for Horsens
+            fig.add_trace(go.Scatter(
+                x=team_data['date'], 
+                y=team_data['xG rolling average'], 
+                mode='lines',
+                name=team,
+                line=dict(width=line_size)
+            ))
+        
+        fig.update_layout(
+            title='3-Game Rolling Average of xG Difference Over Time',
+            xaxis_title='Date',
+            yaxis_title='3-Game Rolling Average xG Difference',
+            template='plotly_white'
+        )
+        
+        st.plotly_chart(fig)
+
         all_xg = all_xg[['team.name','xg_diff']]
         all_xg = all_xg.drop_duplicates()
         all_xg = all_xg.groupby('team.name')['xg_diff'].sum().reset_index()
