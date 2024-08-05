@@ -739,7 +739,10 @@ def wellness():
 
         df['date'] = df['Tidsstempel'].dt.strftime('%d/%m/%Y')
         number_of_dates = len(df['date'].unique())
-        st.write('Number of replies:', number_of_dates)
+        number_of_replies_per_player = df['Player Name'].value_counts()
+        
+        st.write('Number of replies that should be made:', number_of_dates)
+        st.write('Number of replies per player:', number_of_replies_per_player)
         col1,col2 = st.columns(2)
         with col1:
             players = st.multiselect('Choose player', sorted(df['Player Name'].unique()))
