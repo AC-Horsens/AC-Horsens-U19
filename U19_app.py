@@ -889,8 +889,8 @@ def dashboard(events):
         all_xg['xG rolling average'] = all_xg.groupby('team.name')['xg_diff'].transform(lambda x: x.rolling(window=3, min_periods=1).mean())
         fig = go.Figure()
         
-        for team in all_xg['team_name'].unique():
-            team_data = all_xg[all_xg['team_name'] == team]
+        for team in all_xg['team.name'].unique():
+            team_data = all_xg[all_xg['team.name'] == team]
             line_size = 5 if team == 'Horsens' else 1  # Larger line for Horsens
             fig.add_trace(go.Scatter(
                 x=team_data['date'], 
