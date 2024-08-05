@@ -10,16 +10,22 @@ import plotly.graph_objs as go
 st.set_page_config(layout="wide")
 
 @st.cache_data()
-def load_data():
+def load_matchstats():
     #events = pd.read_csv(r'events.csv')
-    df_xg = pd.read_csv(r'xg.csv')
-    df_xg_agg = pd.read_csv(r'xg_agg.csv')
     df_matchstats = pd.read_csv(r'matchstats.csv')
-    return df_xg, df_xg_agg,df_matchstats
+    return df_matchstats
 
 def load_events():
     events = pd.read_csv(r'events.csv')
     return events
+
+def load_xg():
+    df_xg = pd.read_csv(r'xg.csv')
+    return df_xg
+
+def load_xg_agg():
+    df_xg_agg = pd.read_csv(r'xg_agg.csv')
+    return df_xg_agg
 
 def load_horsens_events():
     events = pd.read_csv(r'events.csv')
@@ -590,9 +596,12 @@ def Process_data_spillere(events,df_xg,df_matchstats):
         'Classic striker': Classic_striker(),
     }
 
-df_xg,df_xg_agg, df_matchstats = load_data()
-
+df_matchstats = load_matchstats()
+df_xg = load_xg()
+df_xg_agg = load_xg_agg()
+horsens_events = load_horsens_events()
 events = load_events()
+
 position_dataframes = Process_data_spillere(events,df_xg,df_matchstats)
 #defending_central_defender_df = position_dataframes['defending_central_defender']
 #ball_playing_central_defender_df = position_dataframes['ball_playing_central_defender']
