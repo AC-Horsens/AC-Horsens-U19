@@ -929,7 +929,7 @@ def dashboard(events):
         st.write('Chosen matches')
         st.dataframe(df_xg, hide_index=True)
         df_xg['team.name'] = df_xg['team.name'].apply(lambda x: x if x == 'Horsens U19' else 'Opponent')
-        df_xg = df_xg.sort_values(by=['team_name','minute'])
+        df_xg = df_xg.sort_values(by=['team.name','minute'])
 
         df_xg['cumulative_xG'] = df_xg.groupby(['team.name'])['shot.xg'].cumsum()
 
