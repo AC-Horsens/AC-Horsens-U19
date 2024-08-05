@@ -888,6 +888,7 @@ def dashboard(events):
         all_xg = all_xg[['team.name','xg_diff']]
         all_xg = all_xg.drop_duplicates()
         all_xg = all_xg.groupby('team.name')['xg_diff'].sum().reset_index()
+        all_xg = all_xg.sort_values('xg_diff', ascending=False)
         df_xg['label'] = df_xg['label'] + ' ' + df_xg['date']
         df_xg = df_xg[df_xg['label'].isin(match_choice)]
         df_xg['match_xg'] = df_xg.groupby('label')['shot.xg'].transform('sum')
