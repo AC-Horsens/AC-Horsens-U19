@@ -881,9 +881,10 @@ def dashboard(events):
 
     def xg (df_xg):
         all_xg = df_xg.copy()
+        all_xg['label'] = all_xg['label'] + ' ' + all_xg['date']
+
         all_xg['date'] = pd.to_datetime(all_xg['date'], utc=True)
         all_xg = all_xg.sort_values('date').reset_index(drop=True)
-        all_xg['label'] = all_xg['label'] + ' ' + all_xg['date']
         all_xg['match_xg'] = all_xg.groupby('label')['shot.xg'].transform('sum')
         all_xg['team_xg'] = all_xg.groupby(['label', 'team.name'])['shot.xg'].transform('sum')
         all_xg['xg_diff'] = all_xg['team_xg'] - all_xg['match_xg'] + all_xg['team_xg']
