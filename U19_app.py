@@ -936,8 +936,8 @@ def dashboard(events):
 
         fig = go.Figure()
         
-        for team in df_xg1['team_name'].unique():
-            team_data = df_xg1[df_xg1['team_name'] == team]
+        for team in df_xg1['team.name'].unique():
+            team_data = df_xg1[df_xg1['team.name'] == team]
             fig.add_trace(go.Scatter(
                 x=team_data['minute'], 
                 y=team_data['cumulative_xG'], 
