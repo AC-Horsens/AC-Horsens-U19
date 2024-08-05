@@ -881,7 +881,7 @@ def dashboard():
     matches = matches[::-1]
     match_choice = st.multiselect('Choose a match', matches)
 
-    def xg ():
+    def xg():
         events, df_xg, df_xg_agg,df_matchstats = load_data()    
 
         all_xg = df_xg.copy()
