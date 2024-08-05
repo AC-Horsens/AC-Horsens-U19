@@ -995,8 +995,16 @@ def dashboard():
         
         st.pyplot(fig)
 
+    def pressing():
+        st.write('To be added')
+        
+    def chance_creation():
+        st.write('To be added')
+
     Data_types = {
         'xG': xg(),
+        'Pressing': pressing(),
+        'Chance Creation': chance_creation()
     }
 
     # Create three columns for select boxes
