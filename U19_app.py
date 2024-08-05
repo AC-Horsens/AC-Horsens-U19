@@ -975,8 +975,6 @@ def dashboard():
 
     Data_types = {
         'xG': xg(),
-        'Build-up play': st.write('Build-up play data'),
-        'Pressing play': st.write('Pressing play data'),
     }
 
     for i in range(1, 4):
