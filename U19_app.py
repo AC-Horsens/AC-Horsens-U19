@@ -873,7 +873,7 @@ def player_data(events,df_matchstats,balanced_central_defender_df,fullbacks_df,n
 def dashboard(events):
     st.title('U19 Dashboard')
     events['label'] = events['label'] + ' ' + events['date']
-    events['date'] = pd.to_datetime(events['date'])
+    events['date'] = pd.to_datetime(events['date'],utc=True)
     events = events.sort_values('date').reset_index(drop=True)
     matches = events['label'].unique()
     matches = matches[::-1]
@@ -886,6 +886,7 @@ def dashboard(events):
         df_xg = df_xg[df_xg['label'].isin(match_choice)]
         df_xg['match_xg'] = df_xg.groupby('label')['shot.xg'].transform('sum')
         df_xg['team_xg'] = df_xg.groupby(['label','team.name'])['shot.xg'].transform('sum')
+        df_xg['xg_diff'] = df_xg['team_xg'] - df_xg['match_xg'] + df_xg['team_xg']
         st.dataframe(df_xg, hide_index=True)
     xg(df_xg)
 option = st.sidebar.selectbox(
