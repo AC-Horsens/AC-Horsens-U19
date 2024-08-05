@@ -704,7 +704,8 @@ def training_ratings():
 
     # Calculate the average ratings, ignoring None values
     average_ratings = filtered_df.groupby(['Player', 'date'])['Rating'].mean().reset_index()
-    st.dataframe(average_ratings,hide_index=True)
+    average_of_period = average_ratings.groupby('Player')['Rating'].mean().reset_index()
+    st.dataframe(average_of_period,hide_index=True)
     fig = go.Figure()
 
     for player in average_ratings['Player'].unique():
