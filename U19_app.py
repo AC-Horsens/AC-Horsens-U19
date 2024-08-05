@@ -958,14 +958,14 @@ def dashboard(events):
         st.plotly_chart(fig)
 
         df_xg_plot = df_xg_agg[['player.name','team.name','location.x','location.y', 'shot.xg']]
-        df_xg_plot = df_xg_plot[df_xg_plot['team.name'] == 'Horsens']
+        df_xg_plot = df_xg_plot[df_xg_plot['team.name'] == 'Horsens U19']
         pitch = Pitch(pitch_type='wyscout',half=True,line_color='white', pitch_color='grass')
         fig, ax = pitch.draw(figsize=(10, 6))
         
         sc = ax.scatter(df_xg_plot['location.x'], df_xg_plot['location.y'], s=df_xg_plot['shot.xg'] * 100, c='red', edgecolors='black', alpha=0.6)
         
         for i, row in df_xg_plot.iterrows():
-            ax.text(row['x'], row['y'], f"{row['player.name']}\n{row['321']:.2f}", fontsize=6, ha='center', va='center')
+            ax.text(row['location.x'], row['location.y'], f"{row['player.name']}\n{row['shot.xg']:.2f}", fontsize=6, ha='center', va='center')
         
         st.pyplot(fig)
 
