@@ -134,7 +134,7 @@ matchstats = matchstats[['player.id','player.name','team.name','label','date','p
 matchstats.to_csv('matchstats.csv',index=False)
 
 xg = events[events['shot.xg'] > 0]
-xg = xg[['team.name','label','date','minute','shot.xg']]
+xg = xg[['team.name','label','date','location.x','location.y','minute','shot.xg']]
 xg.to_csv('xg.csv',index=False)
 
 xg_agg = xg[xg['label'].str.contains('Horsens')]
