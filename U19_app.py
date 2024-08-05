@@ -687,7 +687,7 @@ def training_ratings():
         selected_players = []
 
     # Multiselect for players
-    selected_players = st.multiselect('Select Players', sorted(df_melted['Player'].unique()), st.session_state.selected_players)
+    selected_players = st.multiselect('Select Players', sorted(df_melted['Player'].unique()), selected_players)
 
     # Update session state based on multiselect
     st.session_state.selected_players = selected_players
