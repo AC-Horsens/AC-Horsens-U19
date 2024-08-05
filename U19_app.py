@@ -871,7 +871,8 @@ def player_data(events,df_matchstats,balanced_central_defender_df,fullbacks_df,n
         st.error("'pass.endLocation.x' column does not exist in the DataFrame.")
     plot_arrows(Alle_off_aktioner)
 
-def dashboard(events):
+def dashboard():
+    
     st.title('U19 Dashboard')
     events['label'] = events['label'] + ' ' + events['date']
     events['date'] = pd.to_datetime(events['date'],utc=True)
