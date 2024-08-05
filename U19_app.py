@@ -742,7 +742,7 @@ def wellness():
         number_of_replies_per_player = df['Player Name'].value_counts()
         
         st.write('Number of replies that should be made:', number_of_dates)
-        st.write('Number of replies per player:', number_of_replies_per_player)
+        st.write('Number of replies per player:', number_of_replies_per_player/2)
         col1,col2 = st.columns(2)
         with col1:
             players = st.multiselect('Choose player', sorted(df['Player Name'].unique()))
