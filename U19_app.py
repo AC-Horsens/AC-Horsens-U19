@@ -883,7 +883,6 @@ def dashboard(events):
     def xg (df_xg,df_xg_agg):
         all_xg = df_xg.copy()
         df_xg1 = df_xg.copy()
-        df_xg_agg = df_xg_agg.copy()
         all_xg['label'] = all_xg['label'] + ' ' + all_xg['date']
 
         all_xg['date'] = pd.to_datetime(all_xg['date'], utc=True)
