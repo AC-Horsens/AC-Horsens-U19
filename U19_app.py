@@ -881,7 +881,7 @@ def dashboard():
     matches = matches[::-1]
     match_choice = st.multiselect('Choose a match', matches)
 
-    def xg (df_xg,df_xg_agg):
+    def xg ():
         all_xg = df_xg.copy()
         df_xg1 = df_xg.copy()
         all_xg['label'] = all_xg['label'] + ' ' + all_xg['date']
@@ -972,7 +972,7 @@ def dashboard():
         st.pyplot(fig)
 
     Data_types = {
-        'xG': xg(df_xg,df_xg_agg),
+        'xG': xg(),
     }
 
     for i in range(1, 4):
@@ -1015,7 +1015,7 @@ option = st.sidebar.selectbox(
 
 # Show the selected function
 if option == 'U19 dashboard':
-    dashboard(events)
+    dashboard()
 elif option == 'training ratings':
     training_ratings()
 elif option == 'player data':
