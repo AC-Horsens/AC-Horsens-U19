@@ -890,6 +890,7 @@ def dashboard(events):
         df_xg = df_xg[['team.name','xg_diff']]
         df_xg = df_xg.drop_duplicates()
         df_xg = df_xg[df_xg['team.name'].str.contains('Horsens')]
+        df_xg = df_xg.groupby('team.name')['xg_diff'].sum().reset_index()
         st.dataframe(df_xg, hide_index=True)
     xg(df_xg)
 option = st.sidebar.selectbox(
