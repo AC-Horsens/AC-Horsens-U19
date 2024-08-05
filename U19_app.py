@@ -681,11 +681,16 @@ def training_ratings():
     # Main layout filters
     selected_coaches = st.multiselect('Select Coaches', df['Coach name'].unique(), df['Coach name'].unique())
     if st.button('Select All Players'):
-        selected_players = df_melted['Player'].unique().tolist()
-    elif st.button('Deselect All Players'):
-        selected_players = []
-    else:
-        selected_players = st.multiselect('Select Players', sorted(df_melted['Player'].unique()))
+        st.session_state.selected_players = sorted(df_melted['Player'].unique())
+
+    if st.button('Deselect All Players'):
+        st.session_state.selected_players = []
+
+    # Multiselect for players
+    selected_players = st.multiselect('Select Players', sorted(df_melted['Player'].unique()), st.session_state.selected_players)
+
+    # Update session state based on multiselect
+    st.session_state.selected_players = selected_players
     min_date = pd.to_datetime(df_melted['date'], format='%d/%m/%Y').min().date()
     max_date = pd.to_datetime(df_melted['date'], format='%d/%m/%Y').max().date()
     start_date, end_date = st.date_input('Select Date Range', [min_date, max_date], min_value=min_date, max_value=max_date)
