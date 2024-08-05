@@ -903,6 +903,9 @@ def dashboard():
     match_choice = st.multiselect('Choose a match', matches)
 
     def xg():
+        df_xg = load_xg()
+        df_xg_agg = load_xg_agg()
+
         all_xg = df_xg.copy()
         df_xg1 = df_xg.copy()
         all_xg['label'] = all_xg['label'] + ' ' + all_xg['date']
