@@ -872,6 +872,7 @@ def player_data(events,df_matchstats,balanced_central_defender_df,fullbacks_df,n
 
 def dashboard():
     st.title('U19 Dashboard')
+    events['label'] = events['label'] + ' ' + events['date']
     matches = events['label'].unique()
     matches = matches[::-1]
     match_choice = st.multiselect('Choose a match', matches)
