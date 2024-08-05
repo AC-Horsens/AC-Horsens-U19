@@ -971,7 +971,7 @@ def dashboard(events):
         st.pyplot(fig)
 
     Data_types = {
-        'xG': xg,
+        'xG': xg(df_xg,df_xg_agg),
     }
 
     for i in range(1, 4):
