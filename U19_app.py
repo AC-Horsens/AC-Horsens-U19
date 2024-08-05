@@ -885,6 +885,7 @@ def dashboard(events):
         df_xg['label'] = df_xg['label'] + ' ' + df_xg['date']
         df_xg = df_xg[df_xg['label'].isin(match_choice)]
         df_xg['match_xg'] = df_xg.groupby('label')['shot.xg'].transform('sum')
+        df_xg['team_xg'] = df_xg.groupby(['label','team.name'])['shot.xg'].transform('sum')
         st.dataframe(df_xg, hide_index=True)
     xg(df_xg)
 option = st.sidebar.selectbox(
