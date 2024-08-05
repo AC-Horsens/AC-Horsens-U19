@@ -972,6 +972,43 @@ def dashboard(events):
 
 
     xg(df_xg,df_xg_agg)
+    Data_types = {
+        'xG': xg,
+    }
+
+    for i in range(1, 4):
+        if f'selected_data{i}' not in st.session_state:
+            st.session_state[f'selected_data{i}'] = ''
+
+    # Create three columns for select boxes
+    col1, col2, col3 = st.columns(3)
+
+    # Function to create selectbox and update session state without rerunning entire page
+    def create_selectbox(column, key):
+        with column:
+            selected_data = st.selectbox(f'Choose data type {key[-1]}', [''] + list(Data_types.keys()), key=key)
+            if selected_data and selected_data != st.session_state[key]:
+                st.session_state[key] = selected_data
+                st.experimental_rerun()
+
+    # Create select boxes for each column
+    create_selectbox(col1, 'selected_data1')
+    create_selectbox(col2, 'selected_data2')
+    create_selectbox(col3, 'selected_data3')
+
+    # Display the current selection results in columns
+    with col1:
+        if st.session_state['selected_data1']:
+            Data_types[st.session_state['selected_data1']]()
+
+    with col2:
+        if st.session_state['selected_data2']:
+            Data_types[st.session_state['selected_data2']]()
+
+    with col3:
+        if st.session_state['selected_data3']:
+            Data_types[st.session_state['selected_data3']]()
+
 option = st.sidebar.selectbox(
     'Select data type',
     ('U19 dashboard','training ratings', 'player data','wellness')
