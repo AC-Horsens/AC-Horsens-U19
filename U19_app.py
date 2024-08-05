@@ -20,6 +20,12 @@ def load_data():
 def load_events():
     events = pd.read_csv(r'events.csv')
     return events
+
+def load_horsens_events():
+    events = pd.read_csv(r'events.csv')
+    events = events[events['label'].str.contains('Horsens')]
+    return events
+
 @st.cache_data()
 def Process_data_spillere(events,df_xg,df_matchstats):
     xg = events[['player.name','label','shot.xg']]
@@ -879,13 +885,12 @@ def player_data(events,df_matchstats,balanced_central_defender_df,fullbacks_df,n
 
 def dashboard():
     st.title('U19 Dashboard')
-    events = load_events()
+    events = load_horsens_events()
     events['label'] = events['label'] + ' ' + events['date']
     events['date'] = pd.to_datetime(events['date'],utc=True)
     events = events.sort_values('date').reset_index(drop=True)
     matches = events['label'].unique()
     matches = matches[::-1]
-    matches = matches.str.contains('Horsens')
     match_choice = st.multiselect('Choose a match', matches)
 
     def xg():
