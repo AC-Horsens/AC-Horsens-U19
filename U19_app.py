@@ -934,7 +934,7 @@ def dashboard(events):
         df_xg1 = df_xg1.sort_values(by=['team.name','minute'])
 
         df_xg1['cumulative_xG'] = df_xg1.groupby(['team.name'])['shot.xg'].cumsum()
-
+        st.dataframe(df_xg1, hide_index=True)
         fig = go.Figure()
         
         for team in df_xg1['team.name'].unique():
