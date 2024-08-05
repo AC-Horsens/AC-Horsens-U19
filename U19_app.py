@@ -870,13 +870,20 @@ def player_data(events,df_matchstats,balanced_central_defender_df,fullbacks_df,n
         st.error("'pass.endLocation.x' column does not exist in the DataFrame.")
     plot_arrows(Alle_off_aktioner)
 
+def dashboard():
+    st.title('U19 Dashboard')
+    def xg (df_xg):
+        st.dataframe(df_xg, hide_index=True)
+    xg(df_xg)
 option = st.sidebar.selectbox(
     'Select data type',
-    ('training ratings', 'player data','wellness')
+    ('U19 dashboard','training ratings', 'player data','wellness')
 )
 
 # Show the selected function
-if option == 'training ratings':
+if option == 'U19 dashboard':
+    dashboard()
+elif option == 'training ratings':
     training_ratings()
 elif option == 'player data':
     player_data(events,df_matchstats,balanced_central_defender_df,fullbacks_df,number8_df,number6_df,number10_df,winger_df,classic_striker_df)
