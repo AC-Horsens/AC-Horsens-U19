@@ -879,7 +879,7 @@ def player_data(events,df_matchstats,balanced_central_defender_df,fullbacks_df,n
 
 def dashboard():
     st.title('U19 Dashboard')
-    events = load_data()
+    events = load_events()
     events['label'] = events['label'] + ' ' + events['date']
     events['date'] = pd.to_datetime(events['date'],utc=True)
     events = events.sort_values('date').reset_index(drop=True)
