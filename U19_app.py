@@ -11,12 +11,15 @@ st.set_page_config(layout="wide")
 
 @st.cache_data()
 def load_data():
-    events = pd.read_csv(r'events.csv')
-    events = events[events['label'].str.contains('Horsens')]
+    #events = pd.read_csv(r'events.csv')
     df_xg = pd.read_csv(r'xg.csv')
     df_xg_agg = pd.read_csv(r'xg_agg.csv')
     df_matchstats = pd.read_csv(r'matchstats.csv')
-    return events, df_xg, df_xg_agg,df_matchstats
+    return df_xg, df_xg_agg,df_matchstats
+
+def load_events():
+    events = pd.read_csv(r'events.csv')
+    return events
 @st.cache_data()
 def Process_data_spillere(events,df_xg,df_matchstats):
     xg = events[['player.name','label','shot.xg']]
