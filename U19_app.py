@@ -887,7 +887,7 @@ def dashboard(events):
         df_xg['match_xg'] = df_xg.groupby('label')['shot.xg'].transform('sum')
         df_xg['team_xg'] = df_xg.groupby(['label','team.name'])['shot.xg'].transform('sum')
         df_xg['xg_diff'] = df_xg['team_xg'] - df_xg['match_xg'] + df_xg['team_xg']
-        df_xg = df_xg[['team.name','label','xg_diff']]
+        df_xg = df_xg[['team.name','xg_diff']]
         df_xg = df_xg.drop_duplicates()
         df_xg = df_xg[df_xg['team.name'].str.contains('Horsens')]
         st.dataframe(df_xg, hide_index=True)
