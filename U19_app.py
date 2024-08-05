@@ -890,7 +890,7 @@ option = st.sidebar.selectbox(
 
 # Show the selected function
 if option == 'U19 dashboard':
-    dashboard()
+    dashboard(events)
 elif option == 'training ratings':
     training_ratings()
 elif option == 'player data':
