@@ -584,7 +584,9 @@ def Process_data_spillere(events,df_xg,df_matchstats):
         'Classic striker': Classic_striker(),
     }
 
-events ,df_xg,df_xg_agg, df_matchstats = load_data()
+df_xg,df_xg_agg, df_matchstats = load_data()
+
+events = load_events()
 position_dataframes = Process_data_spillere(events,df_xg,df_matchstats)
 #defending_central_defender_df = position_dataframes['defending_central_defender']
 #ball_playing_central_defender_df = position_dataframes['ball_playing_central_defender']
