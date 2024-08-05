@@ -738,7 +738,7 @@ def wellness():
         df['Tidsstempel'] = pd.to_datetime(df['Tidsstempel'], dayfirst=True, format='%d/%m/%Y %H.%M.%S')
 
         df['date'] = df['Tidsstempel'].dt.strftime('%d/%m/%Y')
-        number_of_dates = df['date'].nunique()
+        number_of_dates = df['date'].unique()
         st.dataframe(number_of_dates)
         col1,col2 = st.columns(2)
         with col1:
