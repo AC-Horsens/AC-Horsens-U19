@@ -917,8 +917,12 @@ def dashboard(events):
         all_xg = all_xg.groupby('team.name')['xg_diff'].sum().reset_index()
         all_xg = all_xg.sort_values('xg_diff', ascending=False)
         df_xg['label'] = df_xg['label'] + ' ' + df_xg['date']
+        df_xg1['label'] = df_xg1['label'] + ' ' + df_xg1['date']
+
         df_xg = df_xg[df_xg['label'].isin(match_choice)]
         df_xg1 = df_xg1[df_xg1['label'].isin(match_choice)]
+        st.dataframe(df_xg1, hide_index=True)
+
         df_xg['match_xg'] = df_xg.groupby('label')['shot.xg'].transform('sum')
         df_xg['team_xg'] = df_xg.groupby(['label','team.name'])['shot.xg'].transform('sum')
         df_xg['xg_diff'] = df_xg['team_xg'] - df_xg['match_xg'] + df_xg['team_xg']
@@ -932,7 +936,6 @@ def dashboard(events):
         st.dataframe(df_xg, hide_index=True)
         df_xg1['team.name'] = df_xg1['team.name'].apply(lambda x: x if x == 'Horsens U19' else 'Opponent')
         df_xg1 = df_xg1.sort_values(by=['team.name','minute'])
-        st.dataframe(df_xg1, hide_index=True)
 
         df_xg1['cumulative_xG'] = df_xg1.groupby(['team.name'])['shot.xg'].cumsum()
         fig = go.Figure()
