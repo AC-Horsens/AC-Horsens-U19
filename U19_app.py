@@ -885,6 +885,7 @@ def dashboard():
     events = events.sort_values('date').reset_index(drop=True)
     matches = events['label'].unique()
     matches = matches[::-1]
+    matches = matches[matches['label'].str.contains('Horsens')]
     match_choice = st.multiselect('Choose a match', matches)
 
     def xg():
