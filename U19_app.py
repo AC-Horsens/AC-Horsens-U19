@@ -872,8 +872,14 @@ def player_data(events,df_matchstats,balanced_central_defender_df,fullbacks_df,n
 
 def dashboard():
     st.title('U19 Dashboard')
+    matches = events['label'].unique()
+    matches = matches[::-1]
+    match_choice = st.multiselect('Choose a match', matches)
+
     def xg (df_xg):
-        st.dataframe(df_xg, hide_index=True)
+        all_xg = df_xg.copy()
+        xg = df_xg[df_xg['label'].isin(match_choice)]
+        st.dataframe(xg, hide_index=True)
     xg(df_xg)
 option = st.sidebar.selectbox(
     'Select data type',
