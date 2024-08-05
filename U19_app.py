@@ -14,8 +14,9 @@ def load_data():
     events = pd.read_csv(r'events.csv')
     events = events[events['label'].str.contains('Horsens')]
     df_xg = pd.read_csv(r'xg.csv')
+    df_xg_agg = pd.read_csv(r'xg_agg.csv')
     df_matchstats = pd.read_csv(r'matchstats.csv')
-    return events, df_xg,df_matchstats
+    return events, df_xg, df_xg_agg,df_matchstats
 @st.cache_data()
 def Process_data_spillere(events,df_xg,df_matchstats):
     xg = events[['player.name','label','shot.xg']]
@@ -879,7 +880,7 @@ def dashboard(events):
     matches = matches[::-1]
     match_choice = st.multiselect('Choose a match', matches)
 
-    def xg (df_xg):
+    def xg (df_xg,df_xg_agg):
         all_xg = df_xg.copy()
         df_xg1 = df_xg.copy()
         all_xg['label'] = all_xg['label'] + ' ' + all_xg['date']
@@ -955,6 +956,19 @@ def dashboard(events):
             template='plotly_white'
         )
         st.plotly_chart(fig)
+
+        df_xg_plot = df_xg_agg[['player.name','team.name','location.x','location.y', 'shot.xg']]
+        df_xg_plot = df_xg_plot[df_xg_plot['team_name'] == 'Horsens']
+        pitch = Pitch(pitch_type='wyscout',half=True,line_color='white', pitch_color='grass')
+        fig, ax = pitch.draw(figsize=(10, 6))
+        
+        sc = ax.scatter(df_xg_plot['x'], df_xg_plot['y'], s=df_xg_plot['321'] * 100, c='red', edgecolors='black', alpha=0.6)
+        
+        for i, row in df_xg_plot.iterrows():
+            ax.text(row['x'], row['y'], f"{row['playerName']}\n{row['321']:.2f}", fontsize=6, ha='center', va='center')
+        
+        st.pyplot(fig)
+
 
     xg(df_xg)
 option = st.sidebar.selectbox(
