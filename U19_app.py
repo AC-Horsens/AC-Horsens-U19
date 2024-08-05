@@ -877,8 +877,6 @@ def player_data(events,df_matchstats,balanced_central_defender_df,fullbacks_df,n
     plot_arrows(Alle_off_aktioner)
 
 
-events, df_xg, df_xg_agg,df_matchstats = load_data()    
-
 def dashboard():
     st.title('U19 Dashboard')
     events = load_data()
