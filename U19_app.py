@@ -682,6 +682,8 @@ def training_ratings():
     selected_coaches = st.multiselect('Select Coaches', df['Coach name'].unique(), df['Coach name'].unique())
     if st.button('Select All Players'):
         selected_players = df_melted['Player'].unique().tolist()
+    elif st.button('Deselect All Players'):
+        selected_players = []
     else:
         selected_players = st.multiselect('Select Players', sorted(df_melted['Player'].unique()))
     min_date = pd.to_datetime(df_melted['date'], format='%d/%m/%Y').min().date()
