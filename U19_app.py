@@ -928,6 +928,30 @@ def dashboard(events):
         st.dataframe(all_xg, hide_index=True)
         st.write('Chosen matches')
         st.dataframe(df_xg, hide_index=True)
+        df_xg['team.name'] = df_xg['team.name'].apply(lambda x: x if x == 'Horsens U19' else 'Opponent')
+        df_xg = df_xg.sort_values(by=['team_name','minute'])
+
+        df_xg['cumulative_xG'] = df_xg.groupby(['team.name'])['shot.xg'].cumsum()
+
+        fig = go.Figure()
+        
+        for team in df_xg['team_name'].unique():
+            team_data = df_xg[df_xg['team_name'] == team]
+            fig.add_trace(go.Scatter(
+                x=team_data['minute'], 
+                y=team_data['cumulative_xG'], 
+                mode='lines',
+                name=team,
+            ))
+        
+        fig.update_layout(
+            title='Average Cumulative xG Over Time',
+            xaxis_title='Time (Minutes)',
+            yaxis_title='Average Cumulative xG',
+            template='plotly_white'
+        )
+        st.plotly_chart(fig)
+
     xg(df_xg)
 option = st.sidebar.selectbox(
     'Select data type',
