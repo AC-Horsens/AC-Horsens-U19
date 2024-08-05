@@ -921,7 +921,6 @@ def dashboard(events):
 
         df_xg = df_xg[df_xg['label'].isin(match_choice)]
         df_xg1 = df_xg1[df_xg1['label'].isin(match_choice)]
-        st.dataframe(df_xg1, hide_index=True)
 
         df_xg['match_xg'] = df_xg.groupby('label')['shot.xg'].transform('sum')
         df_xg['team_xg'] = df_xg.groupby(['label','team.name'])['shot.xg'].transform('sum')
