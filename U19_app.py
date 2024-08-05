@@ -884,6 +884,7 @@ def dashboard(events):
         all_xg = df_xg.copy()
         df_xg1 = df_xg.copy()
         all_xg['label'] = all_xg['label'] + ' ' + all_xg['date']
+        df_xg_agg['label'] = df_xg_agg['label'] + ' ' + df_xg_agg['date']
 
         all_xg['date'] = pd.to_datetime(all_xg['date'], utc=True)
         all_xg = all_xg.sort_values('date').reset_index(drop=True)
@@ -956,7 +957,7 @@ def dashboard(events):
             template='plotly_white'
         )
         st.plotly_chart(fig)
-
+        df_xg_agg = df_xg_agg[df_xg_agg['label'].isin(match_choice)]    
         df_xg_plot = df_xg_agg[['player.name','team.name','location.x','location.y', 'shot.xg']]
         df_xg_plot = df_xg_plot[df_xg_plot['team.name'] == 'Horsens U19']
         pitch = Pitch(pitch_type='wyscout',half=True,line_color='white', pitch_color='grass')
