@@ -881,6 +881,7 @@ def dashboard(events):
 
     def xg (df_xg):
         all_xg = df_xg.copy()
+        all_xg['date'] = pd.to_datetime(all_xg['date'], utc=True)
         all_xg = all_xg.sort_values('date').reset_index(drop=True)
         all_xg['label'] = all_xg['label'] + ' ' + all_xg['date']
         all_xg['match_xg'] = all_xg.groupby('label')['shot.xg'].transform('sum')
@@ -891,7 +892,7 @@ def dashboard(events):
         
         for team in all_xg['team.name'].unique():
             team_data = all_xg[all_xg['team.name'] == team]
-            line_size = 5 if team == 'Horsens' else 1  # Larger line for Horsens
+            line_size = 5 if team == 'Horsens U19' else 1  # Larger line for Horsens
             fig.add_trace(go.Scatter(
                 x=team_data['date'], 
                 y=team_data['xG rolling average'], 
