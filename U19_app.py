@@ -974,7 +974,6 @@ def dashboard():
         st.pyplot(fig)
 
     Data_types = {
-        ' ': '',
         'xG': xg(),
     }
 
