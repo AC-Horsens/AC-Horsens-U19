@@ -940,6 +940,7 @@ def dashboard():
             yaxis_title='3-Game Rolling Average xG Difference',
             template='plotly_white'
         )
+        st.write('All matches')
         
         st.plotly_chart(fig)
 
@@ -960,7 +961,6 @@ def dashboard():
         df_xg = df_xg.drop_duplicates()
         df_xg = df_xg[df_xg['team.name'].str.contains('Horsens')]
         df_xg = df_xg.groupby('team.name')['xg_diff'].sum().reset_index()
-        st.write('All matches')
         st.dataframe(all_xg, hide_index=True)
         st.write('Chosen matches')
         st.dataframe(df_xg, hide_index=True)
