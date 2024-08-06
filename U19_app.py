@@ -1000,7 +1000,8 @@ def dashboard():
         st.pyplot(fig)
 
     def offensive_transitions():
-        st.write('Whole season')
+        st.header('Whole season')
+        st.write('Transition xg')
         transitions = load_transitions()
         transitionxg = transitions.groupby(['team.name'])['shot.xg'].sum().reset_index()
         transitionxg = transitionxg.sort_values('shot.xg', ascending=False)
