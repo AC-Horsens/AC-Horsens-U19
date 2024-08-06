@@ -940,7 +940,7 @@ def dashboard():
             yaxis_title='3-Game Rolling Average xG Difference',
             template='plotly_white'
         )
-        st.write('All matches')
+        st.header('Whole season')
         
         st.plotly_chart(fig)
 
