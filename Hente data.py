@@ -2,8 +2,6 @@ from azure.storage.fileshare import ShareServiceClient
 import json
 import pandas as pd
 from pandas import json_normalize
-import numpy as np
-import re
 
 
 connection_string = 'SharedAccessSignature=sv=2020-08-04&ss=f&srt=sco&sp=rl&se=2025-01-11T22:47:25Z&st=2022-01-11T14:47:25Z&spr=https&sig=CXdXPlHz%2FhW0IRugFTfCrB7osNQVZJ%2BHjNR1EM2s6RU%3D;FileEndpoint=https://divforeningendataout1.file.core.windows.net/;'
@@ -49,24 +47,19 @@ kampdetaljer = kampdetaljer[['wyId','label','date']]
 kampdetaljer = kampdetaljer.rename(columns={'wyId':'matchId'})
 events = kampdetaljer.merge(df)
 events = events[['id','player.name', 'player.id', 'team.name', 'matchId','pass.recipient.name','pass.accurate','label','date','minute','second','groundDuel','aerialDuel','infraction','carry','type.primary','type.secondary','location.x','location.y','pass.endLocation.x','pass.endLocation.y','carry.endLocation.x','carry.endLocation.y','shot.xg','possession.types','possession.eventsNumber','possession.eventIndex','possession.startLocation.x','possession.startLocation.y','possession.endLocation.x','possession.endLocation.y','possession.team.name','possession.attack.xg']]
-events.to_csv('events.csv',index=False)
 transitions = events[events['possession.eventsNumber']<=15]
 exclude_types = ['throw_in', 'set_piece_attack', 'free_kick', 'corner']
 
-# Function to convert string representation of list to actual list (if needed)
 def convert_to_list(value):
     if isinstance(value, str):
         return ast.literal_eval(value)
     return value
 
-# Apply the conversion function to the 'possession.types' column
 transitions['possession.types'] = transitions['possession.types'].apply(convert_to_list)
 
-# Function to check if any of the exclude types are present in the list
 def exclude_possession_types(possession_types):
     return any(ex_type in possession_types for ex_type in exclude_types)
 
-# Filter transitions to exclude rows where 'possession.types' contains any of the specified substrings
 transitions = transitions[~transitions['possession.types'].apply(exclude_possession_types)]
 transitions.to_csv('transitions.csv', index=False)
 
@@ -119,14 +112,12 @@ name_and_id = name_and_id.drop_duplicates()
 matchstats = matchstats.merge(name_and_id)
 data = matchstats['positions']
 df1 = pd.DataFrame(data)
-# Funktion, der ekstraherer navne og koder fra strengdata og opretter en ny kolonne med disse værdier
 def extract_positions(data):
     positions_list = ast.literal_eval(data) # Konverterer strengen til en liste af ordbøger
     names = [pos['position']['name'] for pos in positions_list]
     codes = [pos['position']['code'] for pos in positions_list]
     return pd.Series({'position_names': names, 'position_codes': codes})
 
-# Anvender funktionen på kolonnen og tilføjer resultaterne som nye kolonner til dataframe
 df1[['position_names', 'position_codes']] = df1['positions'].apply(extract_positions)
 
 matchstats = pd.merge(matchstats,df1,left_index=True, right_index=True)
@@ -169,7 +160,6 @@ def determine_defending_team(row, team_1, team_2):
     elif row['location.x'] <= 66.67:
         return 'Middle'
     else:
-        # Assume the other team is defending the final third
         if row['team.name'] == team_1:
             return team_2
         else:
@@ -183,7 +173,6 @@ def apply_for_each_label(group):
     group['territorial_possession'] = group.apply(determine_defending_team, axis=1, team_1=team_1, team_2=team_2)
     return group
 
-# Apply the function for each unique label
 terr_poss = terr_poss.groupby('label').apply(apply_for_each_label).reset_index(drop=True)
 terr_poss = terr_poss.to_csv('terr_poss.csv', index=False)
 
@@ -229,18 +218,14 @@ penalty_area_entry_condition = (
         )
     )
 )
-# Assign the boolean mask to a new column 'penalty_area_entry'
 events['penalty_area_entry'] = penalty_area_entry_condition
 
-# Create a new DataFrame with selected columns
 penalty_area_entries = events[['team.name', 'label','location.x', 'location.y','pass.endLocation.x', 'pass.endLocation.y', 'carry.endLocation.x', 'carry.endLocation.y', 'penalty_area_entry']]
 penalty_area_entries = penalty_area_entries[penalty_area_entries['penalty_area_entry'] == True]
 penalty_area_entries.to_csv('penalty_area_entries.csv')
 penalty_area_entry_counts = penalty_area_entries.groupby(['label', 'team.name'])['penalty_area_entry'].sum()
 
-# Reset the index to convert the result into a DataFrame
 penalty_area_entry_counts = penalty_area_entry_counts.reset_index()
 
-# Rename the column to 'count' for clarity
 penalty_area_entry_counts = penalty_area_entry_counts.rename(columns={'penalty_area_entry': 'count'})
 penalty_area_entry_counts.to_csv('penalty_area_entry_counts.csv')
