@@ -209,19 +209,33 @@ df_ppda = df_ppdabeyond40[['label', 'team.name', 'PPDA']]
 df_ppda.to_csv('PPDA.csv')
 
 penalty_area_entry_condition = (
-    ((events['pass.endLocation.x'] > 83) & 
-     (events['pass.endLocation.y'].between(19, 81)) & 
-     (events['pass.accurate'] == True)) |
-    ((events['carry.endLocation.x'] > 83) &
-     (events['carry.endLocation.y'].between(19, 81)))
+    (
+        (events['pass.endLocation.x'] > 83) & 
+        (events['pass.endLocation.y'].between(19, 81)) & 
+        (events['pass.accurate'] == True) &
+        (
+            (events['location.x'] <= 83) | 
+            (events['location.y'] < 19) | 
+            (events['location.y'] > 81)
+        )
+    ) |
+    (
+        (events['carry.endLocation.x'] > 83) &
+        (events['carry.endLocation.y'].between(19, 81)) &
+        (
+            (events['location.x'] <= 83) | 
+            (events['location.y'] < 19) | 
+            (events['location.y'] > 81)
+        )
+    )
 )
-
 # Assign the boolean mask to a new column 'penalty_area_entry'
 events['penalty_area_entry'] = penalty_area_entry_condition
 
 # Create a new DataFrame with selected columns
-penalty_area_entries = events[['team.name', 'label', 'penalty_area_entry']]
-
+penalty_area_entries = events[['team.name', 'label','location.x', 'location.y','pass.endLocation.x', 'pass.endLocation.y', 'carry.endLocation.x', 'carry.endLocation.y', 'penalty_area_entry']]
+penalty_area_entries = penalty_area_entries[penalty_area_entries['penalty_area_entry'] == True]
+penalty_area_entries.to_csv('penalty_area_entries.csv')
 penalty_area_entry_counts = penalty_area_entries.groupby(['label', 'team.name'])['penalty_area_entry'].sum()
 
 # Reset the index to convert the result into a DataFrame

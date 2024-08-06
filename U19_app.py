@@ -36,6 +36,18 @@ def load_transitions():
     transitions = pd.read_csv(r'transitions.csv')
     return transitions
 
+def load_PPDA():
+    df_ppda = pd.read_csv(r'ppda.csv')
+    return df_ppda
+
+def load_penalty_area_entry_counts():
+    penalty_area_entry_counts = pd.read_csv(r'penalty_area_entry_counts.csv')
+    return penalty_area_entry_counts
+
+def load_penalty_area_entries():
+    penalty_area_entries = pd.read_csv(r'penalty_area_entries.csv')
+    return penalty_area_entries    
+
 @st.cache_data()
 def Process_data_spillere(events,df_xg,df_matchstats):
     xg = events[['player.name','label','shot.xg']]
@@ -604,6 +616,8 @@ df_matchstats = load_matchstats()
 df_xg = load_xg()
 df_xg_agg = load_xg_agg()
 horsens_events = load_horsens_events()
+penalty_area_entry_counts = load_penalty_area_entry_counts()
+penalty_area_entries = load_penalty_area_entries()
 events = load_events()
 
 position_dataframes = Process_data_spillere(events,df_xg,df_matchstats)
@@ -898,6 +912,13 @@ def player_data(events,df_matchstats,balanced_central_defender_df,fullbacks_df,n
 
 def dashboard():
     st.title('U19 Dashboard')
+    xg = load_xg_agg()
+    df_ppda = load_PPDA()
+    penareaentries = load_penalty_area_entries()
+    st.write(penalty_area_entries.columns)
+    st.dataframe(penalty_area_entries)
+    
+    
     events = load_horsens_events()
     events['label'] = events['label'] + ' ' + events['date']
     events['date'] = pd.to_datetime(events['date'],utc=True)
@@ -905,6 +926,7 @@ def dashboard():
     matches = events['label'].unique()
     matches = matches[::-1]
     match_choice = st.multiselect('Choose a match', matches)
+    
 
     def xg():
         df_xg = load_xg()
