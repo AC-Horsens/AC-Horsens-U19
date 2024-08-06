@@ -3,6 +3,8 @@ import json
 import pandas as pd
 from pandas import json_normalize
 import numpy as np
+import re
+
 
 connection_string = 'SharedAccessSignature=sv=2020-08-04&ss=f&srt=sco&sp=rl&se=2025-01-11T22:47:25Z&st=2022-01-11T14:47:25Z&spr=https&sig=CXdXPlHz%2FhW0IRugFTfCrB7osNQVZJ%2BHjNR1EM2s6RU%3D;FileEndpoint=https://divforeningendataout1.file.core.windows.net/;'
 share_name = 'divisionsforeningen-outgoingdata'
@@ -46,8 +48,27 @@ kampdetaljer = json_normalize(json_files)
 kampdetaljer = kampdetaljer[['wyId','label','date']]
 kampdetaljer = kampdetaljer.rename(columns={'wyId':'matchId'})
 events = kampdetaljer.merge(df)
-events = events[['id','matchId','player.name','player.id','pass.recipient.name','date','team.name','type.primary','type.secondary','pass.accurate','pass.endLocation.x','pass.endLocation.y','carry.endLocation.x','carry.endLocation.y','minute','label','location.x','location.y','shot.xg']]
+events = events[['id','player.name', 'player.id', 'team.name', 'matchId','pass.recipient.name','pass.accurate','label','date','minute','second','groundDuel','aerialDuel','infraction','carry','type.primary','type.secondary','location.x','location.y','pass.endLocation.x','pass.endLocation.y','carry.endLocation.x','carry.endLocation.y','shot.xg','possession.types','possession.eventsNumber','possession.eventIndex','possession.startLocation.x','possession.startLocation.y','possession.endLocation.x','possession.endLocation.y','possession.team.name','possession.attack.xg']]
 events.to_csv('events.csv',index=False)
+transitions = events[events['possession.eventsNumber']<=15]
+exclude_types = ['throw_in', 'set_piece_attack', 'free_kick', 'corner']
+
+# Function to convert string representation of list to actual list (if needed)
+def convert_to_list(value):
+    if isinstance(value, str):
+        return ast.literal_eval(value)
+    return value
+
+# Apply the conversion function to the 'possession.types' column
+transitions['possession.types'] = transitions['possession.types'].apply(convert_to_list)
+
+# Function to check if any of the exclude types are present in the list
+def exclude_possession_types(possession_types):
+    return any(ex_type in possession_types for ex_type in exclude_types)
+
+# Filter transitions to exclude rows where 'possession.types' contains any of the specified substrings
+transitions = transitions[~transitions['possession.types'].apply(exclude_possession_types)]
+transitions.to_csv('transitions.csv', index=False)
 
 connection_string = 'SharedAccessSignature=sv=2020-08-04&ss=f&srt=sco&sp=rl&se=2025-01-11T22:47:25Z&st=2022-01-11T14:47:25Z&spr=https&sig=CXdXPlHz%2FhW0IRugFTfCrB7osNQVZJ%2BHjNR1EM2s6RU%3D;FileEndpoint=https://divforeningendataout1.file.core.windows.net/;'
 share_name = 'divisionsforeningen-outgoingdata'

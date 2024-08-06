@@ -32,6 +32,10 @@ def load_horsens_events():
     events = events[events['label'].str.contains('Horsens')]
     return events
 
+def load_transitions():
+    transitions = pd.read_csv(r'transitions.csv')
+    return transitions
+
 @st.cache_data()
 def Process_data_spillere(events,df_xg,df_matchstats):
     xg = events[['player.name','label','shot.xg']]
@@ -997,7 +1001,9 @@ def dashboard():
 
     def offensive_transitions():
         st.write('Whole season')
-        st.dataframe(events)
+        transitions = load_transitions()
+        transitionxg = transitions.groupby(['team.name'])['shot.xg'].sum().reset_index()
+        st.dataframe(transitionxg)
         
     def chance_creation():
         st.write('To be added')
