@@ -1010,6 +1010,8 @@ def dashboard():
         transitionxg_diff['team_xg'] = transitionxg_diff.groupby(['label', 'team.name'])['shot.xg'].transform('sum')
         transitionxg_diff['xg_diff'] = transitionxg_diff['team_xg'] - transitionxg_diff['match_xg'] + transitionxg_diff['team_xg']
         transitionxg_diff = transitionxg_diff[['team.name','label','xg_diff']]
+        transitionxg_diff = transitionxg_diff.drop_duplicates()
+        transitionxg_diff = transitionxg_diff.groupby('team.name')['xg_diff'].sum().reset_index()
         st.dataframe(transitionxg_diff)
         st.dataframe(transitionxg)
         
