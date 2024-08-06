@@ -995,15 +995,16 @@ def dashboard():
         
         st.pyplot(fig)
 
-    def pressing():
-        st.write('To be added')
+    def offensive_transitions():
+        st.write('Whole season')
+        st.dataframe(events)
         
     def chance_creation():
         st.write('To be added')
 
     Data_types = {
         'xG': xg,
-        'Pressing': pressing,
+        'Offensive transitions': offensive_transitions,
         'Chance Creation': chance_creation
     }
 
