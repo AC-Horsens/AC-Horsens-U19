@@ -1003,6 +1003,7 @@ def dashboard():
         st.write('Whole season')
         transitions = load_transitions()
         transitionxg = transitions.groupby(['team.name'])['shot.xg'].sum().reset_index()
+        transitionxg = transitionxg.sort_values('shot.xg', ascending=False)
         st.dataframe(transitionxg)
         
     def chance_creation():
