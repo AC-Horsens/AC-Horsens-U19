@@ -1005,6 +1005,11 @@ def dashboard():
         transitions = load_transitions()
         transitionxg = transitions.groupby(['team.name'])['shot.xg'].sum().reset_index()
         transitionxg = transitionxg.sort_values('shot.xg', ascending=False)
+        transitionxg_diff = transitions.copy()
+        transitionxg_diff['match_xg'] = transitionxg_diff.groupby('label')['shot.xg'].transform('sum')
+        transitionxg_diff['team_xg'] = transitionxg_diff.groupby(['label', 'team.name'])['shot.xg'].transform('sum')
+        transitionxg_diff['xg_diff'] = transitionxg_diff['team_xg'] - transitionxg_diff['match_xg'] + transitionxg_diff['team_xg']
+        st.dataframe(transitionxg_diff)
         st.dataframe(transitionxg)
         
     def chance_creation():
