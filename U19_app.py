@@ -1102,7 +1102,7 @@ def dashboard():
 
         # Display the plot in Streamlit
         st.pyplot(fig)
-        st.write('Player involvement count')
+        st.write('Player involvement')
         player_involvement = chance_start.groupby(['player.name'])['possession.attack.xg'].sum().reset_index()
         player_involvement = player_involvement.sort_values('possession.attack.xg', ascending=False)
         st.dataframe(player_involvement, hide_index=True)
