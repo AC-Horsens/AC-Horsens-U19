@@ -1034,6 +1034,7 @@ def dashboard():
         ]       
         high_transitions = transitions[(transitions['location.x'] >= 66) & (transitions['possession.eventsNumber'] < 8)]
         transitions = pd.concat([low_transitions, mid_transitions, high_transitions])
+        transitions = transitions.sort_values('date', ascending=False)
         transitionxg_chosen = transitions[transitions['label'].isin(match_choice)]
         transitionxg_chosen = transitionxg_chosen.groupby(['team.name','label'])['shot.xg'].sum().reset_index()
 
