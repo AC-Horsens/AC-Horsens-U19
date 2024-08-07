@@ -834,9 +834,16 @@ def wellness():
     except KeyError:
         st.write('Choose one or more players')
 
-def player_data(balanced_central_defender_df,fullbacks_df,number6_df,number8_df,number10_df,winger_df,classic_striker_df):
+def player_data():
     events = load_events()
     df_matchstats = load_matchstats()
+    balanced_central_defender_df = position_dataframes['Central defender']
+    fullbacks_df = position_dataframes['Fullbacks']
+    number6_df = position_dataframes['Number 6']
+    number8_df = position_dataframes['Number 8']
+    number10_df = position_dataframes['Number 10']
+    winger_df = position_dataframes['Winger']
+    classic_striker_df = position_dataframes['Classic striker']
     horsens = events[events['team.name'].str.contains('Horsens')]
     horsens = horsens.sort_values(by='player.name')
     player_name = st.selectbox('Choose player', horsens['player.name'].unique())
@@ -1144,7 +1151,7 @@ def dashboard():
 Data_types = {
     'Dashboard': dashboard,
     'Wellness data': wellness,
-    'Player data': player_data(balanced_central_defender_df,fullbacks_df,number6_df,number8_df,number10_df,winger_df,classic_striker_df),
+    'Player data': player_data,
     'Training ratings': training_ratings
     }
 
