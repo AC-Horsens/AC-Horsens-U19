@@ -1053,7 +1053,7 @@ def dashboard():
         st.dataframe(transitionxg,hide_index=True)
         st.header('Chosen matches')
         transitionxg_chosen = transitionxg_chosen[transitionxg_chosen['team.name'] == 'Horsens U19']
-        transitionxg_diff_chosen = transitionxg_diff_chosen[transitionxg_diff_chosen['team_name'] == 'Horsens U19']
+        transitionxg_diff_chosen = transitionxg_diff_chosen[transitionxg_diff_chosen['team.name'] == 'Horsens U19']
         st.dataframe(transitionxg_chosen, hide_index=True)
         st.dataframe(transitionxg_diff_chosen, hide_index=True)
         
