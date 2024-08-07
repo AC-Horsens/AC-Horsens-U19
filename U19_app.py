@@ -1056,6 +1056,11 @@ def dashboard():
         st.header('Chosen matches')
         st.dataframe(transitionxg_chosen, hide_index=True)
         st.dataframe(transitionxg_diff_chosen, hide_index=True)
+        
+        st.write('Interceptions/recoveries that lead to a chance')
+        chance_start = transitions[transitions['possession.eventIndex'] == 1]
+        st.dataframe(chance_start)
+        
     def chance_creation():
         st.write('To be added')
 
