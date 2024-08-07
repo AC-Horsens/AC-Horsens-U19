@@ -1036,7 +1036,7 @@ def dashboard():
         transitions = pd.concat([low_transitions, mid_transitions, high_transitions])
         transitionxg_chosen = transitions[transitions['label'].isin(match_choice)]
         transitionxg_chosen = transitionxg_chosen.groupby(['team.name','label'])['shot.xg'].sum().reset_index()
-        st.dataframe(transitionxg_chosen,hide_index=True)
+
         transitionxg = transitions.groupby(['team.name'])['shot.xg'].sum().reset_index()
         transitionxg = transitionxg.sort_values('shot.xg', ascending=False)
         transitionxg_diff = transitions.copy()
