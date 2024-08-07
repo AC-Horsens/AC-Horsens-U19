@@ -1055,7 +1055,7 @@ def dashboard():
         transitionxg_chosen = transitionxg_chosen[transitionxg_chosen['team.name'] == 'Horsens U19']
         transitionxg_chosen = transitionxg_chosen.sort_values('shot.xg',ascending=False)
         transitionxg_diff_chosen = transitionxg_diff_chosen[transitionxg_diff_chosen['team.name'] == 'Horsens U19']
-        transitionxg_diff_chosen = transitionxg_diff_chosen.sort_values('shot.xg',ascending=False)
+        #transitionxg_diff_chosen = transitionxg_diff_chosen.sort_values('shot.xg',ascending=False)
 
         st.dataframe(transitionxg_chosen, hide_index=True)
         st.dataframe(transitionxg_diff_chosen, hide_index=True)
