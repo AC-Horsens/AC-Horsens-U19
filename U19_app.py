@@ -1033,6 +1033,8 @@ def dashboard():
         ]       
         high_transitions = transitions[(transitions['location.x'] >= 66) & (transitions['possession.eventsNumber'] < 8)]
         transitions = pd.concat([low_transitions, mid_transitions, high_transitions])
+        transitionxg_chosen = transitions[transitions['label'].isin(match_choice)]
+        transitionxg_chosen = transitionxg_chosen.groupby(['team.name'])['shot.xg'].sum().reset_index()
         transitionxg = transitions.groupby(['team.name'])['shot.xg'].sum().reset_index()
         transitionxg = transitionxg.sort_values('shot.xg', ascending=False)
         transitionxg_diff = transitions.copy()
@@ -1040,12 +1042,15 @@ def dashboard():
         transitionxg_diff['team_xg'] = transitionxg_diff.groupby(['label', 'team.name'])['shot.xg'].transform('sum')
         transitionxg_diff['xg_diff'] = transitionxg_diff['team_xg'] - transitionxg_diff['match_xg'] + transitionxg_diff['team_xg']
         transitionxg_diff = transitionxg_diff[['team.name','label','xg_diff']]
+        transitionxg_diff_chosen = transitionxg_diff[transitionxg_diff['label'].isin(match_choice)]
         transitionxg_diff = transitionxg_diff.drop_duplicates()
         transitionxg_diff = transitionxg_diff.groupby('team.name')['xg_diff'].sum().reset_index()
         transitionxg_diff = transitionxg_diff.sort_values('xg_diff', ascending=False)
         st.dataframe(transitionxg_diff,hide_index=True)
         st.dataframe(transitionxg,hide_index=True)
-        
+        st.header('Chosen matches')
+        st.dataframe(transitionxg_chosen, hide_index=True)
+        st.dataframe(transitionxg_diff_chosen, hide_index=True)
     def chance_creation():
         st.write('To be added')
 
