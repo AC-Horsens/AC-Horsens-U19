@@ -921,7 +921,6 @@ def player_data(balanced_central_defender_df,fullbacks_df,number6_df,number8_df,
         st.error("'pass.endLocation.x' column does not exist in the DataFrame.")
     plot_arrows(Alle_off_aktioner)
 
-
 def dashboard():
     st.title('U19 Dashboard')
     xg = load_xg_agg()
