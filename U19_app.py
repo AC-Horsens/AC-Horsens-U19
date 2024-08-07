@@ -1079,11 +1079,8 @@ def dashboard():
         for i, row in chance_start_plot.iterrows():
             label = f"{row['player.name']}\n{row['possession.attack.xg']:.2f}"
             ax.annotate(label, (row['location.x'], row['location.y']),
-                        fontsize=8, ha='center', va='center', color='black', weight='bold',
+                        fontsize=8, ha='center', va='bottom', color='black', weight='bold',
                         bbox=dict(facecolor='white', alpha=0.7, edgecolor='black', boxstyle='round,pad=0.3'))
-
-        # Display the plot in Streamlit
-        st.pyplot(fig)
 
         # Display the plot in Streamlit
         st.pyplot(fig)
