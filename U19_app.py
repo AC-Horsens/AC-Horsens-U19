@@ -1081,10 +1081,9 @@ def dashboard():
 
         # Display the plot in Streamlit
         st.pyplot(fig)
-
-        
-        
-        
+        st.write('Player involvement count')
+        player_involvement = chance_start.groupby(['player.name'])['possession.attack.xg'].sum().reset_index()
+        st.dataframe(player_involvement, hide_index=True)
     def chance_creation():
         st.write('To be added')
 
