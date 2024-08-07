@@ -16,36 +16,44 @@ def load_matchstats():
     df_matchstats = pd.read_csv(r'matchstats.csv')
     return df_matchstats
 
+@st.cache_data()
 def load_events():
     events = pd.read_csv(r'events.csv')
     return events
 
+@st.cache_data()
 def load_xg():
     df_xg = pd.read_csv(r'xg.csv')
     return df_xg
 
+@st.cache_data()
 def load_xg_agg():
     df_xg_agg = pd.read_csv(r'xg_agg.csv')
     return df_xg_agg
 
+@st.cache_data()
 def load_horsens_events():
     events = pd.read_csv(r'events.csv')
     events = events[events['label'].str.contains('Horsens')]
     return events
 
+@st.cache_data()
 def load_transitions():
     transitions = pd.read_csv(r'transitions.csv')
     transitions['label'] = transitions['label'] + ' ' + transitions['date']
     return transitions
 
+@st.cache_data()
 def load_PPDA():
     df_ppda = pd.read_csv(r'PPDA.csv')
     return df_ppda
 
+@st.cache_data()
 def load_penalty_area_entry_counts():
     penalty_area_entry_counts = pd.read_csv(r'penalty_area_entry_counts.csv')
     return penalty_area_entry_counts
 
+@st.cache_data()
 def load_penalty_area_entries():
     penalty_area_entries = pd.read_csv(r'penalty_area_entries.csv')
     return penalty_area_entries    
@@ -983,7 +991,7 @@ def dashboard():
         df_xg = df_xg[df_xg['team.name'].str.contains('Horsens')]
         df_xg = df_xg.groupby('team.name')['xg_diff'].sum().reset_index()
         st.dataframe(all_xg, hide_index=True)
-        st.write('Chosen matches')
+        st.header('Chosen matches')
         st.dataframe(df_xg, hide_index=True)
         df_xg1['team.name'] = df_xg1['team.name'].apply(lambda x: x if x == 'Horsens U19' else 'Opponent')
         df_xg1 = df_xg1.sort_values(by=['team.name','minute'])
@@ -1019,6 +1027,7 @@ def dashboard():
             ax.text(row['location.x'], row['location.y'], f"{row['player.name']}\n{row['shot.xg']:.2f}", fontsize=6, ha='center', va='center')
         
         st.pyplot(fig)
+
 
     def offensive_transitions():
         st.header('Whole season')
