@@ -34,6 +34,7 @@ def load_horsens_events():
 
 def load_transitions():
     transitions = pd.read_csv(r'transitions.csv')
+    transitions['label'] = transitions['label'] + ' ' + transitions['date']
     return transitions
 
 def load_PPDA():
