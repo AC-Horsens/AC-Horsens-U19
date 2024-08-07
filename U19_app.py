@@ -1076,11 +1076,14 @@ def dashboard():
             linewidth=1.5,
             alpha=0.7
         )
+        for i, row in chance_start_plot.iterrows():
+            ax.annotate(row['player.name'], (row['location.x'], row['location.y']),
+                        fontsize=8, ha='center', va='center', color='white',
+                        bbox=dict(facecolor='black', alpha=0.7, edgecolor='black', boxstyle='round,pad=0.2'))
 
         st.pyplot(fig)
         
         
-        st.dataframe(chance_start)
         
     def chance_creation():
         st.write('To be added')
