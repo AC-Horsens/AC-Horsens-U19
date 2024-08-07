@@ -1043,8 +1043,8 @@ def dashboard():
         transitionxg_diff = transitionxg_diff.drop_duplicates()
         transitionxg_diff = transitionxg_diff.groupby('team.name')['xg_diff'].sum().reset_index()
         transitionxg_diff = transitionxg_diff.sort_values('xg_diff', ascending=False)
-        st.dataframe(transitionxg_diff)
-        st.dataframe(transitionxg)
+        st.dataframe(transitionxg_diff,hide_index=True)
+        st.dataframe(transitionxg,hide_index=True)
         
     def chance_creation():
         st.write('To be added')
