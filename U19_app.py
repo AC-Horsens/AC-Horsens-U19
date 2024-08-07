@@ -1039,8 +1039,8 @@ def dashboard():
         transitionxg_chosen = transitionxg_chosen.groupby(['team.name','label'])['shot.xg'].sum().reset_index()
 
         transitionxg = transitions.groupby(['team.name'])['shot.xg'].sum().reset_index()
-        transitionxg = transitionxg.sort_values('shot.xg', ascending=False)
         transitionxg_diff = transitions.copy()
+        transitionxg = transitionxg.sort_values('shot.xg', ascending=False)
         transitionxg_diff['match_xg'] = transitionxg_diff.groupby('label')['shot.xg'].transform('sum')
         transitionxg_diff['team_xg'] = transitionxg_diff.groupby(['label', 'team.name'])['shot.xg'].transform('sum')
         transitionxg_diff['xg_diff'] = transitionxg_diff['team_xg'] - transitionxg_diff['match_xg'] + transitionxg_diff['team_xg']
