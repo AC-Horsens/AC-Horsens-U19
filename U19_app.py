@@ -917,10 +917,7 @@ def dashboard():
     xg = load_xg_agg()
     df_ppda = load_PPDA()
     penareaentries = load_penalty_area_entries()
-    st.write(penalty_area_entries.columns)
-    st.dataframe(penalty_area_entries)
-    
-    
+
     events = load_horsens_events()
     events['label'] = events['label'] + ' ' + events['date']
     events['date'] = pd.to_datetime(events['date'],utc=True)
