@@ -1025,6 +1025,11 @@ def dashboard():
         st.header('Whole season')
         st.write('Transition xg')
         transitions = load_transitions()
+        low_transitions = transitions[transitions['location.x'] < 33]
+        mid_transitions = transitions[(transitions['location.x'] >= 33 & transitions['location.x'] < 66) & transitions['possession.eventsNumber'] < 12]
+        high_transitions = transitions[transitions['location.x'] >= 66 & transitions['possession.eventsNumber'] < 8]
+        transitions = pd.concat([low_transitions, mid_transitions, high_transitions])
+        st.dataframe(transitions)
         transitionxg = transitions.groupby(['team.name'])['shot.xg'].sum().reset_index()
         transitionxg = transitionxg.sort_values('shot.xg', ascending=False)
         transitionxg_diff = transitions.copy()
