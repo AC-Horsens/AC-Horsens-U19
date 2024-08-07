@@ -1060,6 +1060,7 @@ def dashboard():
         
         st.write('Interceptions/recoveries that lead to a chance')
         chance_start = transitions[transitions['team.name'].str.contains('Horsens')]
+        chance_start = chance_start[chance_start['label'].isin(match_choice)]
         chance_start = chance_start[chance_start['possession.attack.xg'] > 0.1]
         chance_start_plot = chance_start[chance_start['possession.eventIndex'] == 0]
         pitch = mplsoccer.Pitch(pitch_type='wyscout', line_zorder=2,pitch_color='grass')
