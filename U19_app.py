@@ -834,7 +834,7 @@ def wellness():
     except KeyError:
         st.write('Choose one or more players')
 
-def player_data():
+def player_data(balanced_central_defender_df,fullbacks_df,number6_df,number8_df,number10_df,winger_df,classic_striker_df):
     events = load_events()
     df_matchstats = load_matchstats()
     horsens = events[events['team.name'].str.contains('Horsens')]
