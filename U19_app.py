@@ -1058,7 +1058,6 @@ def dashboard():
         st.dataframe(transitionxg_diff_chosen, hide_index=True)
         
         st.write('Interceptions/recoveries that lead to a chance')
-        chance_start = transitions[transitions['possession.eventIndex'] == 0]
         chance_start = chance_start[chance_start['team.name'].str.contains('Horsens')]
         chance_start = chance_start[chance_start['possession.attack.xg'] > 0]
         st.dataframe(chance_start)
