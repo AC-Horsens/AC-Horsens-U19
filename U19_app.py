@@ -1143,7 +1143,7 @@ def dashboard():
 Data_types = {
     'Dashboard': dashboard,
     'Wellness data': wellness,
-    'Player data': player_data,
+    'Player data': player_data(events,df_matchstats,balanced_central_defender_df,fullbacks_df,number8_df,number6_df,number10_df,winger_df,classic_striker_df),
     'Training ratings': training_ratings
     }
 
