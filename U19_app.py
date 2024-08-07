@@ -1033,7 +1033,6 @@ def dashboard():
         ]       
         high_transitions = transitions[(transitions['location.x'] >= 66) & (transitions['possession.eventsNumber'] < 8)]
         transitions = pd.concat([low_transitions, mid_transitions, high_transitions])
-        st.dataframe(transitions)
         transitionxg = transitions.groupby(['team.name'])['shot.xg'].sum().reset_index()
         transitionxg = transitionxg.sort_values('shot.xg', ascending=False)
         transitionxg_diff = transitions.copy()
