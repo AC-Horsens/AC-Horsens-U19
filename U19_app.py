@@ -1028,7 +1028,6 @@ def dashboard():
         
         st.pyplot(fig)
 
-
     def offensive_transitions():
         st.header('Whole season')
         st.write('Transition xg')
