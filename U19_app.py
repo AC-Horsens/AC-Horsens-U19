@@ -1045,6 +1045,7 @@ def dashboard():
         transitionxg_diff['xg_diff'] = transitionxg_diff['team_xg'] - transitionxg_diff['match_xg'] + transitionxg_diff['team_xg']
         transitionxg_diff = transitionxg_diff[['team.name','label','xg_diff']]
         transitionxg_diff_chosen = transitionxg_diff[transitionxg_diff['label'].isin(match_choice)]
+        transitionxg_diff_chosen = transitionxg_diff_chosen.drop_duplicates()
         transitionxg_diff = transitionxg_diff.drop_duplicates()
         transitionxg_diff = transitionxg_diff.groupby('team.name')['xg_diff'].sum().reset_index()
         transitionxg_diff = transitionxg_diff.sort_values('xg_diff', ascending=False)
