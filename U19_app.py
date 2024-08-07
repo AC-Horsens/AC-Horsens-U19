@@ -1,6 +1,7 @@
 import pandas as pd
 import streamlit as st
 import matplotlib.pyplot as plt
+import mplsoccer
 from mplsoccer import Pitch
 from scipy.ndimage import gaussian_filter
 import gspread
@@ -1060,6 +1061,29 @@ def dashboard():
         st.write('Interceptions/recoveries that lead to a chance')
         chance_start = transitions[transitions['team.name'].str.contains('Horsens')]
         chance_start = chance_start[chance_start['possession.attack.xg'] > 0.1]
+        chance_start_plot = chance_start[chance_start['possession.eventIndex'] == 0]
+        pitch = mplsoccer.Pitch(pitch_type='wyscout', line_zorder=2)
+        fig, ax = pitch.draw(figsize=(10, 7))
+
+        # Plot the data
+        sc = ax.scatter(
+            chance_start_plot['location.x'],
+            chance_start_plot['location.y'],
+            s=chance_start_plot['possession.attack.xg'] * 1000,  # Scale dot size
+            c='blue',
+            edgecolors='black',
+            linewidth=1.5,
+            alpha=0.7
+        )
+
+        # Add a color bar
+        cbar = fig.colorbar(sc, ax=ax)
+        cbar.set_label('Possession Attack xG')
+
+        # Display the plot in Streamlit
+        st.pyplot(fig)
+        
+        
         st.dataframe(chance_start)
         
     def chance_creation():
