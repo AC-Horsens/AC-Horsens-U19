@@ -1029,7 +1029,7 @@ def dashboard():
         pitch = Pitch(pitch_type='wyscout',half=True,line_color='white', pitch_color='grass')
         fig, ax = pitch.draw(figsize=(10, 6))
         
-        sc = ax.scatter(df_xg_plot['location.x'], df_xg_plot['location.y'], s=df_xg_plot['shot.xg'] * 100, c='red', edgecolors='black', alpha=0.6)
+        sc = ax.scatter(df_xg_plot['location.x'], df_xg_plot['location.y'], s=df_xg_plot['shot.xg'] * 100, c='yellow', edgecolors='black', alpha=0.6)
         
         for i, row in df_xg_plot.iterrows():
             ax.text(row['location.x'], row['location.y'], f"{row['player.name']}\n{row['shot.xg']:.2f}", fontsize=6, ha='center', va='center')
@@ -1089,7 +1089,7 @@ def dashboard():
             chance_start_plot['location.x'],
             chance_start_plot['location.y'],
             s=chance_start_plot['possession.attack.xg'] * 1000,  # Scale dot size
-            c='blue',
+            c='yellow',
             edgecolors='black',
             linewidth=1.5,
             alpha=0.7

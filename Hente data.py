@@ -105,7 +105,6 @@ import pandas as pd
 import ast
 
 matchstats = pd.read_csv(r'C:\Users\SéamusPeareBartholdy\Documents\GitHub\AC-Horsens-U19\matchstats.csv')
-events = pd.read_csv(r'C:\Users\SéamusPeareBartholdy\Documents\GitHub\AC-Horsens-U19\events.csv')
 matchstats.rename(columns={'playerId': 'player.id'}, inplace=True)
 name_and_id = events[['player.name','player.id','team.name','date','matchId','label']]
 name_and_id = name_and_id.drop_duplicates()
