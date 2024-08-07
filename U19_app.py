@@ -1062,7 +1062,7 @@ def dashboard():
         chance_start = transitions[transitions['team.name'].str.contains('Horsens')]
         chance_start = chance_start[chance_start['possession.attack.xg'] > 0.1]
         chance_start_plot = chance_start[chance_start['possession.eventIndex'] == 0]
-        pitch = mplsoccer.Pitch(pitch_type='wyscout', line_zorder=2)
+        pitch = mplsoccer.Pitch(pitch_type='wyscout', line_zorder=2,pitch_color='grass')
         fig, ax = pitch.draw(figsize=(10, 7))
 
         # Plot the data
@@ -1076,11 +1076,6 @@ def dashboard():
             alpha=0.7
         )
 
-        # Add a color bar
-        cbar = fig.colorbar(sc, ax=ax)
-        cbar.set_label('Possession Attack xG')
-
-        # Display the plot in Streamlit
         st.pyplot(fig)
         
         
