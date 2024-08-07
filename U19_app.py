@@ -1059,7 +1059,7 @@ def dashboard():
         
         st.write('Interceptions/recoveries that lead to a chance')
         chance_start = transitions[transitions['team.name'].str.contains('Horsens')]
-        chance_start = chance_start[chance_start['possession.attack.xg'] > 0]
+        chance_start = chance_start[chance_start['possession.attack.xg'] > 0.1]
         st.dataframe(chance_start)
         
     def chance_creation():
