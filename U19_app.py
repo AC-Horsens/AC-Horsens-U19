@@ -1036,7 +1036,7 @@ def dashboard():
         transitions = pd.concat([low_transitions, mid_transitions, high_transitions])
         transitions = transitions.sort_values('date', ascending=False)
         transitionxg_chosen = transitions[transitions['label'].isin(match_choice)]
-        transitionxg_chosen = transitionxg_chosen.groupby(['team.name','label'])['shot.xg'].sum().reset_index()
+        transitionxg_chosen = transitionxg_chosen.groupby(['team.name','label','date'])['shot.xg'].sum().reset_index()
 
         transitionxg = transitions.groupby(['team.name'])['shot.xg'].sum().reset_index()
         transitionxg_diff = transitions.copy()
@@ -1044,9 +1044,8 @@ def dashboard():
         transitionxg_diff['match_xg'] = transitionxg_diff.groupby('label')['shot.xg'].transform('sum')
         transitionxg_diff['team_xg'] = transitionxg_diff.groupby(['label', 'team.name'])['shot.xg'].transform('sum')
         transitionxg_diff['xg_diff'] = transitionxg_diff['team_xg'] - transitionxg_diff['match_xg'] + transitionxg_diff['team_xg']
-        transitionxg_diff_chosen = transitionxg_diff[transitionxg_diff['label'].isin(match_choice)]
-        transitionxg_diff_chosen = transitionxg_diff_chosen.sort_values('date', ascending=False)
         transitionxg_diff = transitionxg_diff[['team.name','label','xg_diff']]
+        transitionxg_diff_chosen = transitionxg_diff[transitionxg_diff['label'].isin(match_choice)]
         transitionxg_diff_chosen = transitionxg_diff_chosen.drop_duplicates()
         transitionxg_diff = transitionxg_diff.drop_duplicates()
         transitionxg_diff = transitionxg_diff.groupby('team.name')['xg_diff'].sum().reset_index()
