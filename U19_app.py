@@ -1108,7 +1108,8 @@ def dashboard():
         st.dataframe(player_involvement, hide_index=True)
     def chance_creation():
         st.write('To be added')
-
+        penalty_area_entries = load_penalty_area_entries()
+        st.dataframe(penalty_area_entries, hide_index=True)
     Data_types = {
         'xG': xg,
         'Offensive transitions': offensive_transitions,
