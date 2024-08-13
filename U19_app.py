@@ -46,16 +46,21 @@ def load_transitions():
 @st.cache_data()
 def load_PPDA():
     df_ppda = pd.read_csv(r'PPDA.csv')
+    df_ppda['label'] = df_ppda['label'] + ' ' + df_ppda['date']
+
     return df_ppda
 
 @st.cache_data()
 def load_penalty_area_entry_counts():
     penalty_area_entry_counts = pd.read_csv(r'penalty_area_entry_counts.csv')
+    penalty_area_entry_counts['label'] = penalty_area_entry_counts['label'] + ' ' + penalty_area_entry_counts['date']
     return penalty_area_entry_counts
 
 @st.cache_data()
 def load_penalty_area_entries():
     penalty_area_entries = pd.read_csv(r'penalty_area_entries.csv')
+    penalty_area_entries['label'] = penalty_area_entries['label'] + ' ' + penalty_area_entries['date']
+
     return penalty_area_entries    
 
 @st.cache_data()
