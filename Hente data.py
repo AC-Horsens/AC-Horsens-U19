@@ -151,7 +151,7 @@ xg.to_csv('xg.csv',index=False)
 xg_agg = xg[xg['label'].str.contains('Horsens')]
 xg_agg.to_csv('xg_agg.csv', index=False)
 
-terr_poss = events[['team.name', 'minute', 'label', 'location.x', 'location.y']]
+terr_poss = events[['team.name', 'minute', 'label','date', 'location.x', 'location.y']]
 
 def determine_defending_team(row, team_1, team_2):
     if row['location.x'] <= 33.33:
@@ -175,25 +175,25 @@ def apply_for_each_label(group):
 terr_poss = terr_poss.groupby('label').apply(apply_for_each_label).reset_index(drop=True)
 terr_poss = terr_poss.to_csv('terr_poss.csv', index=False)
 
-df_ppda = events[['type.primary','type.secondary','team.name','location.x','label','id']]
+df_ppda = events[['type.primary','type.secondary','team.name','location.x','label','date','id']]
 df_ppdabeyond40 = df_ppda[df_ppda['location.x'] > 40]
 df_ppdabeyond40_passes = df_ppdabeyond40[df_ppdabeyond40['type.primary'] == 'pass']
-df_ppdabeyond40_passestotal = df_ppdabeyond40_passes.groupby('label')['id'].count().reset_index()
+df_ppdabeyond40_passestotal = df_ppdabeyond40_passes.groupby(['label','date'])['id'].count().reset_index()
 df_ppdabeyond40_passestotal = df_ppdabeyond40_passestotal.rename(columns={'id': 'passes in game'})
-df_ppdabeyond40_passesteam = df_ppdabeyond40_passes.groupby(['label','team.name'])['id'].count().reset_index()
+df_ppdabeyond40_passesteam = df_ppdabeyond40_passes.groupby(['label','date','team.name'])['id'].count().reset_index()
 df_ppdabeyond40_passesteam = df_ppdabeyond40_passesteam.rename(columns={'id': 'passes'})
 
 df_ppdabeyond40_defactions = df_ppdabeyond40[(df_ppdabeyond40['type.primary'].isin(['interception', 'infraction', 'clearance']))]
-df_ppdabeyond40_defactionstotal = df_ppdabeyond40_defactions.groupby('label')['id'].count().reset_index()
+df_ppdabeyond40_defactionstotal = df_ppdabeyond40_defactions.groupby(['label','date'])['id'].count().reset_index()
 df_ppdabeyond40_defactionstotal = df_ppdabeyond40_defactionstotal.rename(columns={'id': 'defactions in game'})
-df_ppdabeyond40_defactionsteam = df_ppdabeyond40_defactions.groupby(['label', 'team.name'])['id'].count().reset_index()
+df_ppdabeyond40_defactionsteam = df_ppdabeyond40_defactions.groupby(['label', 'team.name','date'])['id'].count().reset_index()
 df_ppdabeyond40_defactionsteam = df_ppdabeyond40_defactionsteam.rename(columns={'id': 'defensive actions'})
 df_ppdabeyond40_total = df_ppdabeyond40_defactionstotal.merge(df_ppdabeyond40_passestotal)
 df_ppdabeyond40 = df_ppdabeyond40_defactionsteam.merge(df_ppdabeyond40_total)
 df_ppdabeyond40 = df_ppdabeyond40.merge(df_ppdabeyond40_passesteam)
 df_ppdabeyond40['opponents passes'] = df_ppdabeyond40['passes in game'] - df_ppdabeyond40['passes']
 df_ppdabeyond40['PPDA'] = df_ppdabeyond40['opponents passes'] / df_ppdabeyond40['defensive actions']
-df_ppda = df_ppdabeyond40[['label', 'team.name', 'PPDA']]
+df_ppda = df_ppdabeyond40[['label', 'team.name','date', 'PPDA']]
 df_ppda.to_csv('PPDA.csv', index=False)
 
 penalty_area_entry_condition = (
@@ -219,10 +219,10 @@ penalty_area_entry_condition = (
 )
 events['penalty_area_entry'] = penalty_area_entry_condition
 
-penalty_area_entries = events[['team.name', 'label','location.x', 'location.y','pass.endLocation.x', 'pass.endLocation.y', 'carry.endLocation.x', 'carry.endLocation.y', 'penalty_area_entry']]
+penalty_area_entries = events[['team.name', 'label','date','location.x', 'location.y','pass.endLocation.x', 'pass.endLocation.y', 'carry.endLocation.x', 'carry.endLocation.y', 'penalty_area_entry']]
 penalty_area_entries = penalty_area_entries[penalty_area_entries['penalty_area_entry'] == True]
 penalty_area_entries.to_csv('penalty_area_entries.csv', index=False)
-penalty_area_entry_counts = penalty_area_entries.groupby(['label', 'team.name'])['penalty_area_entry'].sum()
+penalty_area_entry_counts = penalty_area_entries.groupby(['label','date', 'team.name'])['penalty_area_entry'].sum()
 
 penalty_area_entry_counts = penalty_area_entry_counts.reset_index()
 
