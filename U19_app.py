@@ -1112,6 +1112,10 @@ def dashboard():
         penalty_area_entries_per_team = penalty_area_entries.groupby(['team.name'])['penalty_area_entry'].sum().reset_index()
         penalty_area_entries_per_team = penalty_area_entries_per_team.sort_values('penalty_area_entry', ascending=False)
         st.dataframe(penalty_area_entries_per_team, hide_index=True)
+        
+        penalty_area_entries_matches = penalty_area_entries[penalty_area_entries['label'].isin(match_choice)]
+        penalty_area_entries_matches['match_penalty_area_entries'] = penalty_area_entries_matches.groupby('label')['penalty_area_entry'].transform('sum')
+        st.dataframe(penalty_area_entries_matches, hide_index=True)
     Data_types = {
         'xG': xg,
         'Offensive transitions': offensive_transitions,
