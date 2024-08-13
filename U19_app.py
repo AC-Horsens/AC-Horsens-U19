@@ -1114,7 +1114,6 @@ def dashboard():
         st.dataframe(penalty_area_entries_per_team, hide_index=True)
         
         penalty_area_entries_matches = penalty_area_entries[penalty_area_entries['label'].isin(match_choice)]
-        penalty_area_entries_matches['match_penalty_area_entries'] = penalty_area_entries_matches.groupby('label')['penalty_area_entry'].transform('sum')
         st.dataframe(penalty_area_entries_matches, hide_index=True)
     Data_types = {
         'xG': xg,
