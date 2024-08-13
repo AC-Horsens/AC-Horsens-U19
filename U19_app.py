@@ -1107,9 +1107,10 @@ def dashboard():
         player_involvement = player_involvement.sort_values('possession.attack.xg', ascending=False)
         st.dataframe(player_involvement, hide_index=True)
     def chance_creation():
-        st.write('To be added')
+        st.header('Whole season')
         penalty_area_entries = load_penalty_area_entries()
-        st.dataframe(penalty_area_entries, hide_index=True)
+        penalty_area_entries_per_team = penalty_area_entries.groupby(['team.name'])['penalty_area_entry'].sum().reset_index()
+        st.dataframe(penalty_area_entries_per_team, hide_index=True)
     Data_types = {
         'xG': xg,
         'Offensive transitions': offensive_transitions,
