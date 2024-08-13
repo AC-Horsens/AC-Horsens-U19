@@ -194,7 +194,7 @@ df_ppdabeyond40 = df_ppdabeyond40.merge(df_ppdabeyond40_passesteam)
 df_ppdabeyond40['opponents passes'] = df_ppdabeyond40['passes in game'] - df_ppdabeyond40['passes']
 df_ppdabeyond40['PPDA'] = df_ppdabeyond40['opponents passes'] / df_ppdabeyond40['defensive actions']
 df_ppda = df_ppdabeyond40[['label', 'team.name', 'PPDA']]
-df_ppda.to_csv('PPDA.csv')
+df_ppda.to_csv('PPDA.csv', index=False)
 
 penalty_area_entry_condition = (
     (
@@ -221,10 +221,10 @@ events['penalty_area_entry'] = penalty_area_entry_condition
 
 penalty_area_entries = events[['team.name', 'label','location.x', 'location.y','pass.endLocation.x', 'pass.endLocation.y', 'carry.endLocation.x', 'carry.endLocation.y', 'penalty_area_entry']]
 penalty_area_entries = penalty_area_entries[penalty_area_entries['penalty_area_entry'] == True]
-penalty_area_entries.to_csv('penalty_area_entries.csv')
+penalty_area_entries.to_csv('penalty_area_entries.csv', index=False)
 penalty_area_entry_counts = penalty_area_entries.groupby(['label', 'team.name'])['penalty_area_entry'].sum()
 
 penalty_area_entry_counts = penalty_area_entry_counts.reset_index()
 
 penalty_area_entry_counts = penalty_area_entry_counts.rename(columns={'penalty_area_entry': 'count'})
-penalty_area_entry_counts.to_csv('penalty_area_entry_counts.csv')
+penalty_area_entry_counts.to_csv('penalty_area_entry_counts.csv', index=False)
