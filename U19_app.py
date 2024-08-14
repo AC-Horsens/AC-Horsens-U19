@@ -1166,6 +1166,34 @@ def dashboard():
     def pressing():
         st.header('Whole season')
         ppda = load_PPDA()
+        ppda['date'] = pd.to_datetime(ppda['date'], utc=True)
+        ppda = ppda.sort_values('date').reset_index(drop=True)
+        ppda['ppda rolling average'] = ppda.groupby('team.name')['xg_diff'].transform(lambda x: x.rolling(window=3, min_periods=1).mean())
+        fig = go.Figure()
+        
+        for team in ppda['team.name'].unique():
+            team_data = ppda[ppda['team.name'] == team]
+            line_size = 5 if team == 'Horsens U19' else 1  # Larger line for Horsens
+            fig.add_trace(go.Scatter(
+                x=team_data['date'], 
+                y=team_data['xG rolling average'], 
+                mode='lines',
+                name=team,
+                line=dict(width=line_size)
+            ))
+        
+        fig.update_layout(
+            title='3-Game Rolling Average of ppda Over Time',
+            xaxis_title='Date',
+            yaxis_title='3-Game Rolling Average ppda',
+            template='plotly_white'
+        )
+        st.header('Whole season')
+        
+        st.plotly_chart(fig)
+
+        ppda_sæson = ppda[['team.name','PPDA']]
+        ppda_sæson = ppda_sæson.groupby(['team.name'])['PPDA'].mean().reset_index()
         st.dataframe(ppda, hide_index=True)
     
     Data_types = {
