@@ -991,7 +991,7 @@ def dashboard():
     team_summary = df_xg_summary.merge(df_passes, on=['team.name','label'])
     team_summary = team_summary.merge(penareaentries, on=['team.name','label'])
     st.dataframe(team_summary)
-
+    st.dataframe(df_ppda)
     team_summary = team_summary.merge(df_ppda, on=['team.name','label'])
 
     team_summary = team_summary.drop(columns=['label'])
