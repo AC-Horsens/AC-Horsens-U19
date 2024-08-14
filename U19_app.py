@@ -1040,7 +1040,8 @@ def dashboard():
             ax.text(row['location.x'], row['location.y'], f"{row['player.name']}\n{row['shot.xg']:.2f}", fontsize=6, ha='center', va='center')
         
         st.pyplot(fig)
-
+        df_xg_plot = df_xg_plot.groupby(['player.name'])['shot.xg'].sum().reset_index()
+        df_xg_plot = df_xg_plot.sort_values('shot.xg', ascending=False)
         st.dataframe(df_xg_plot, hide_index=True)
     def offensive_transitions():
         st.header('Whole season')
@@ -1121,6 +1122,7 @@ def dashboard():
         st.header('Chosen matches')
         penalty_area_entries_matches = penalty_area_entries[penalty_area_entries['label'].isin(match_choice)]
         player_penalty_area_entries = penalty_area_entries_matches[penalty_area_entries_matches['team.name'] == 'Horsens U19']
+        player_penalty_area_received = player_penalty_area_entries.groupby(['pass.recipient.name'])['penalty_area_entry'].sum().reset_index()
         player_penalty_area_entries = player_penalty_area_entries.groupby(['player.name'])['penalty_area_entry'].sum().reset_index()
 
         penalty_area_entries_location = penalty_area_entries_matches.copy()
@@ -1160,6 +1162,7 @@ def dashboard():
 
         # Display the plot in Streamlit
         st.pyplot(fig)
+        st.dataframe(player_penalty_area_received,hide_index=True)
         player_penalty_area_entries = player_penalty_area_entries.sort_values('penalty_area_entry', ascending=False)
         st.dataframe(player_penalty_area_entries,hide_index=True)
         # Display the plot in Streamlit

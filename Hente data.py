@@ -222,7 +222,7 @@ events['penalty_area_entry'] = penalty_area_entry_condition
 events['possession.types'] = events['possession.types'].apply(lambda x: x if isinstance(x, list) else [])
 events = events[~events['possession.types'].apply(exclude_possession_types)]
 
-penalty_area_entries = events[['player.name','team.name', 'label','date','location.x', 'location.y','pass.endLocation.x', 'pass.endLocation.y', 'carry.endLocation.x', 'carry.endLocation.y', 'penalty_area_entry']]
+penalty_area_entries = events[['player.name','team.name', 'label','pass.recipient.name','date','location.x', 'location.y','pass.endLocation.x', 'pass.endLocation.y', 'carry.endLocation.x', 'carry.endLocation.y', 'penalty_area_entry']]
 penalty_area_entries = penalty_area_entries[penalty_area_entries['penalty_area_entry'] == True]
 penalty_area_entries.to_csv('penalty_area_entries.csv', index=False)
 penalty_area_entry_counts = penalty_area_entries.groupby(['label','date', 'team.name'])['penalty_area_entry'].sum()
@@ -258,6 +258,6 @@ events['dangerzone_entry'] = dangerzone_entry_condition
 events['possession.types'] = events['possession.types'].apply(lambda x: x if isinstance(x, list) else [])
 events = events[~events['possession.types'].apply(exclude_possession_types)]
 
-dangerzone_entries = events[['player.name','team.name', 'label','date','location.x', 'location.y','pass.endLocation.x', 'pass.endLocation.y', 'carry.endLocation.x', 'carry.endLocation.y', 'dangerzone_entry']]
-dangerzone_entries = dangerzone_entries[dangerzone_entries['penalty_area_entry'] == True]
+dangerzone_entries = events[['player.name','team.name', 'label','pass.recipient.name','date','location.x', 'location.y','pass.endLocation.x', 'pass.endLocation.y', 'carry.endLocation.x', 'carry.endLocation.y', 'dangerzone_entry']]
+dangerzone_entries = dangerzone_entries[dangerzone_entries['dangerzone_entry'] == True]
 dangerzone_entries.to_csv('dangerzone_entries.csv', index=False)
