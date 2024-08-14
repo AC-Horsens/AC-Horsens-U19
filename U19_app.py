@@ -971,6 +971,7 @@ def dashboard():
     df_xg = df_xg[df_xg['label'].isin(match_choice)]
     df_possession_stats = df_possession_stats[df_possession_stats['label'].isin(match_choice)]
     df_matchstats = df_matchstats[df_matchstats['label'].isin(match_choice)]
+    penareaentries = penareaentries[penareaentries['label'].isin(match_choice)]
     df_matchstats = df_matchstats.drop_duplicates()
     df_matchstats['team.name'] = df_matchstats['team.name'].apply(lambda x: x if x == 'Horsens U19' else 'Opponent')
     df_passes = df_matchstats[['team.name','label','average_forwardPasses','average_successfulForwardPasses']]
@@ -979,8 +980,9 @@ def dashboard():
 
     df_xg_summary = df_xg.groupby(['team.name','label'])['shot.xg'].sum().reset_index()
 
-    
+    penareaentries = penareaentries.groupby(['team.name','label']).sum().reset_index()
     team_summary = df_xg_summary.merge(df_passes, on=['team.name','label'])
+    team_summary = team_summary.merge(penareaentries, on=['team.name','label'])
     team_summary = team_summary.drop(columns='label')
     team_summary = team_summary.groupby('team.name').mean().reset_index()
     team_summary = team_summary.round(2)
