@@ -999,7 +999,7 @@ def dashboard():
     df_possession_stats = pd.merge(df_possession_stats, df_possession_stats_grouped, on='label')
 
     # Calculate the possession percentage
-    df_possession_stats['possession_percentage'] = (df_possession_stats['count'] / df_possession_stats['total_possession']) * 100
+    df_possession_stats['terr_poss %'] = (df_possession_stats['count'] / df_possession_stats['total_possession']) * 100
 
     # Drop unnecessary columns if needed
     df_possession_stats = df_possession_stats.drop(columns=['total_possession'])
