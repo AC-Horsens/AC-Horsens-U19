@@ -960,11 +960,13 @@ def dashboard():
     match_choice = st.multiselect('Choose a match', matches)
     df_xg = load_xg()
     df_xg['label'] = df_xg['label'] + ' ' + df_xg['date']
+    df_xg = df_xg.drop(columns=['date'],errors = 'ignore')
     events['team.name'] = events['team.name'].apply(lambda x: x if x == 'Horsens U19' else 'Opponent')
     df_xg['team.name'] = df_xg['team.name'].apply(lambda x: x if x == 'Horsens U19' else 'Opponent')
 
     df_matchstats = load_matchstats()
     df_matchstats['label'] = df_matchstats['label'] + ' ' + df_matchstats['date']
+    df_matchstats = df_matchstats.drop(columns=['date'],errors = 'ignore')
 
     df_xg = df_xg[df_xg['label'].isin(match_choice)]
     df_possession_stats = df_possession_stats[df_possession_stats['label'].isin(match_choice)]
@@ -979,6 +981,7 @@ def dashboard():
     df_xg_summary = df_xg.groupby(['team.name','label'])['shot.xg'].sum().reset_index()
     st.dataframe(df_ppda)
     df_ppda = df_ppda[df_ppda['label'].isin(match_choice)]
+    df_ppda = df_ppda.drop(columns=['date'],errors = 'ignore')
     df_ppda = df_ppda.groupby(['team.name','label']).sum().reset_index()
     st.dataframe(df_ppda)
     penareaentries = penareaentries.groupby(['team.name','label']).sum().reset_index()
@@ -991,7 +994,7 @@ def dashboard():
 
     team_summary = team_summary.merge(df_ppda, on=['team.name','label'])
 
-    team_summary = team_summary.drop(columns=['label','date'])
+    team_summary = team_summary.drop(columns=['label'])
     team_summary = team_summary.groupby('team.name').mean().reset_index()
     team_summary = team_summary.round(2)
     st.dataframe(team_summary.style.format(precision=2), use_container_width=True,hide_index=True)
