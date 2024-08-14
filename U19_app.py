@@ -985,11 +985,12 @@ def dashboard():
     penareaentries = penareaentries.groupby(['team.name','label']).sum().reset_index()
     penareaentries = penareaentries.rename(columns={'count':'penaltyAreaEntryCount'})
     penareaentries['team.name'] = penareaentries['team.name'].apply(lambda x: x if x == 'Horsens U19' else 'Opponent')
-    penalty_area_entries = penalty_area_entries.drop(columns=['date'],errors = 'ignore')
+    #penalty_area_entries = penalty_area_entries.drop(columns=['date'],errors = 'ignore')
     
     team_summary = df_xg_summary.merge(df_passes, on=['team.name','label'])
-    team_summary = team_summary.merge(penareaentries, on=['team.name','label'])
     st.dataframe(team_summary)
+
+    team_summary = team_summary.merge(penareaentries, on=['team.name','label'])
 
     team_summary = team_summary.merge(df_ppda, on=['team.name','label'])
 
