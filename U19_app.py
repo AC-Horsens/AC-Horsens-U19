@@ -56,6 +56,12 @@ def load_penalty_area_entry_counts():
     penalty_area_entry_counts['label'] = penalty_area_entry_counts['label'] + ' ' + penalty_area_entry_counts['date']
     return penalty_area_entry_counts
 
+st.cache_data()
+def load_dangerzone_entries():
+    dangerzone_entries = pd.read_csv(r'dangerzone_entries.csv')
+    dangerzone_entries['label'] = dangerzone_entries['label'] + ' ' + dangerzone_entries['date']
+    return dangerzone_entries
+
 @st.cache_data()
 def load_penalty_area_entries():
     penalty_area_entries = pd.read_csv(r'penalty_area_entries.csv')
@@ -1116,6 +1122,10 @@ def dashboard():
     def chance_creation():
         st.header('Whole season')
         penalty_area_entries = load_penalty_area_entries()
+        dangerzone_entries = load_dangerzone_entries()
+        dangerzone_entries_per_team = dangerzone_entries.groupby(['team.name'])['dangerzone_entry'].sum().reset_index()
+        dangerzone_entries_per_team = dangerzone_entries_per_team.sort_values('dangerzone_entry', ascending=False)
+        st.dataframe(dangerzone_entries_per_team, hide_index=True)
         penalty_area_entries_per_team = penalty_area_entries.groupby(['team.name'])['penalty_area_entry'].sum().reset_index()
         penalty_area_entries_per_team = penalty_area_entries_per_team.sort_values('penalty_area_entry', ascending=False)
         st.dataframe(penalty_area_entries_per_team, hide_index=True)
