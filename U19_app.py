@@ -991,7 +991,6 @@ def dashboard():
     penareaentries['team.name'] = penareaentries['team.name'].apply(lambda x: x if x == 'Horsens U19' else 'Opponent')
     penareaentries = penareaentries.drop(columns=['date'],errors = 'ignore')
     df_possession_stats = df_possession_stats.value_counts(['territorial_possession','label']).reset_index()
-    st.dataframe(df_possession_stats)
     df_possession_stats_grouped = df_possession_stats.groupby('label')['count'].sum().reset_index()
     df_possession_stats_grouped.columns = ['label', 'total_possession']
 
