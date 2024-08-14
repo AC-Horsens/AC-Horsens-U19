@@ -975,7 +975,7 @@ def dashboard():
     df_matchstats['team.name'] = df_matchstats['team.name'].apply(lambda x: x if x == 'Horsens' else 'Opponent')
     df_passes = df_matchstats[['team.name','label','average_forwardPasses','average_successfulForwardPasses']]
 
-    df_passes = df_passes.groupby(['team_name','label']).sum().reset_index()
+    df_passes = df_passes.groupby(['team.name','label']).sum().reset_index()
 
     df_xA_summary = df_possession.groupby(['team_name','label'])['318.0'].sum().reset_index()
     df_xA_summary = df_xA_summary.rename(columns={'318.0': 'xA'})
