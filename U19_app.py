@@ -23,7 +23,8 @@ def load_events():
 
 @st.cache_data()
 def load_xg():
-    df_xg = pd.read_csv(r'xg.csv')
+    df_xg = pd.read_csv(r'xg.csv')    
+    df_xg['label'] = df_xg['label'] + ' ' + df_xg['date']
     return df_xg
 
 @st.cache_data()
@@ -72,6 +73,7 @@ def load_penalty_area_entries():
 @st.cache_data()
 def load_possession_stats():
     df_possession_stats = pd.read_csv(r'possession_stats.csv')
+    df_possession_stats['label'] = df_possession_stats['label'] + ' ' + df_possession_stats['date']
     return df_possession_stats
 
 @st.cache_data()
