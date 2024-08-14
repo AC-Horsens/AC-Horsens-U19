@@ -982,6 +982,7 @@ def dashboard():
     df_ppda = df_ppda[df_ppda['label'].isin(match_choice)]
     df_ppda = df_ppda.groupby(['team.name','label']).sum().reset_index()
     df_ppda = df_ppda.drop(columns=['date'],errors = 'ignore')
+    st.dataframe(df_ppda)
     penareaentries = penareaentries.groupby(['team.name','label']).sum().reset_index()
     penareaentries = penareaentries.rename(columns={'count':'penaltyAreaEntryCount'})
     penareaentries['team.name'] = penareaentries['team.name'].apply(lambda x: x if x == 'Horsens U19' else 'Opponent')
