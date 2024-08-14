@@ -1211,8 +1211,7 @@ def dashboard():
 # Apply the label formatting
         ppda_kampe['formatted_label'] = ppda_kampe['label'].apply(format_label)
 
-        
-        st.dataframe(ppda_kampe, hide_index=True)
+        st.dataframe(ppda_kampe[['label','PPDA']], hide_index=True)
         fig = go.Figure()
 
         # Add bars for the PPDA of chosen matches
