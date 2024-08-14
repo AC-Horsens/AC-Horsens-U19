@@ -965,7 +965,7 @@ def dashboard():
     df_xg['team.name'] = df_xg['team.name'].apply(lambda x: x if x == 'Horsens U19' else 'Opponent')
 
     df_matchstats = load_matchstats()
-    df_matchstats = df_matchstats['label'] + ' ' + df_matchstats['date']
+    df_matchstats['label'] = df_matchstats['label'] + ' ' + df_matchstats['date']
     st.dataframe(df_matchstats)
 
     df_xg = df_xg[df_xg['label'].isin(match_choice)]
