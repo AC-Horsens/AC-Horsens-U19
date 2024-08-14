@@ -1126,34 +1126,35 @@ def dashboard():
         penalty_area_entries_matches = penalty_area_entries_matches[['team.name', 'Diff']]
         penalty_area_entries_matches = penalty_area_entries_matches.groupby('team.name').mean()
         st.dataframe(penalty_area_entries_matches)
-        st.dataframe(penalty_area_entries_location)
+        penalty_area_entries_location['endLocation.x'] = penalty_area_entries_location['pass.endLocation.x'].combine_first(penalty_area_entries_location['carry.endLocation.x'])
+        penalty_area_entries_location['endLocation.y'] = penalty_area_entries_location['pass.endLocation.y'].combine_first(penalty_area_entries_location['carry.endLocation.y'])
         option2 = st.selectbox(
             'Select the position',
             ('Start', 'End')
         )
 
         # Initialize the pitch
-        pitch = Pitch(pitch_type='opta',line_zorder=2, pitch_color='grass', line_color='white')
+        pitch = Pitch(pitch_type='wyscout',line_zorder=2, pitch_color='grass', line_color='white')
         fig, ax = pitch.draw()
 
         # Extract coordinates based on user selection
         if option2 == 'Start':
             x_coords = penalty_area_entries_location['location.x']
             y_coords = penalty_area_entries_location['location.y']
-        else if not None:
-            x_coords = penalty_area_entries_location['140.0']
-            y_coords = penalty_area_entries_location['141.0']
+        elif option2 == 'End':
+            x_coords = penalty_area_entries_location['endLocation.x']
+            y_coords = penalty_area_entries_location['endLocation.y']
 
         # Plot the heatmap
         fig.set_facecolor('#22312b')
-        bin_statistic = pitch.bin_statistic(x_coords, y_coords, statistic='count', bins=(50, 50)) # Adjust bins as needed
+        bin_statistic = pitch.bin_statistic(x_coords, y_coords, statistic='count', bins=(50, 50))  # Adjust bins as needed
         bin_statistic['statistic'] = gaussian_filter(bin_statistic['statistic'], 1)
         pcm = pitch.heatmap(bin_statistic, ax=ax, cmap='hot', edgecolors='#22312b')
 
-        pitch.heatmap(bin_statistic, ax=ax, cmap='hot', edgecolors='black')
-
         # Display the plot in Streamlit
         st.pyplot(fig)
+
+        # Display the plot in Streamlit
     Data_types = {
         'xG': xg,
         'Offensive transitions': offensive_transitions,
