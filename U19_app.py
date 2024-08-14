@@ -1244,7 +1244,6 @@ def dashboard():
         st.plotly_chart(fig)
 
         
-        
     Data_types = {
         'xG': xg,
         'Offensive transitions': offensive_transitions,
