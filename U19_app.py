@@ -958,8 +958,8 @@ def dashboard():
     matches = matches[::-1]
     match_choice = st.multiselect('Choose a match', matches)
     df_xg = load_xg()
-    events['team_name'] = events['team_name'].apply(lambda x: x if x == 'Horsens' else 'Opponent')
-    df_xg['team_name'] = df_xg['team_name'].apply(lambda x: x if x == 'Horsens' else 'Opponent')
+    events['team.name'] = events['team.name'].apply(lambda x: x if x == 'Horsens U19' else 'Opponent')
+    df_xg['team.name'] = df_xg['team.name'].apply(lambda x: x if x == 'Horsens U19' else 'Opponent')
 
     df_matchstats = load_matchstats()    
     df_xg = df_xg[df_xg['label'].isin(match_choice)]
