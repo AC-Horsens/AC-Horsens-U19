@@ -1191,8 +1191,7 @@ def dashboard():
         
         st.plotly_chart(fig)
 
-        ppda_sæson = ppda[['team.name','PPDA']]
-        ppda_sæson = ppda_sæson.groupby(['team.name'])['PPDA'].mean().reset_index()
+        ppda_sæson = ppda[['team.name', 'PPDA']].groupby(['team.name'])['PPDA'].mean().reset_index()
         ppda_sæson = ppda_sæson.sort_values('PPDA',ascending=True)
         st.dataframe(ppda_sæson, hide_index=True)
         ppda_horsens = ppda_sæson[ppda_sæson['team.name'] == 'Horsens U19']
