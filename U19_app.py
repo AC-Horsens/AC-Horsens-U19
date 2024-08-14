@@ -1201,12 +1201,23 @@ def dashboard():
         ppda_kampe = ppda_kampe[['team.name','label','PPDA']]
         ppda_kampe = ppda_kampe[ppda_kampe['team.name'] == 'Horsens U19']
         ppda_kampe = ppda_kampe.sort_values('PPDA', ascending=True)
+        def format_label(label):
+    # Split the label into parts and add a line break after the match result
+            parts = label.split(',')
+            if len(parts) >= 3:
+                return f"{parts[0]}, {parts[1]}<br>{parts[2]}"
+            return label
+
+# Apply the label formatting
+        ppda_kampe['formatted_label'] = ppda_kampe['label'].apply(format_label)
+
+        
         st.dataframe(ppda_kampe, hide_index=True)
         fig = go.Figure()
 
         # Add bars for the PPDA of chosen matches
         fig.add_trace(go.Bar(
-            x=ppda_kampe['label'],
+            x=ppda_kampe['formatted_label'],
             y=ppda_kampe['PPDA'],
             name='PPDA per Match',
             marker_color='blue'
@@ -1215,7 +1226,7 @@ def dashboard():
         # Add a horizontal line for the season average PPDA
         fig.add_trace(go.Scatter(
             x=ppda_kampe['label'],
-            y=[ppda_sæson_gennemsnit] * len(ppda_kampe['label']),
+            y=[ppda_sæson_gennemsnit] * len(ppda_kampe['formatted_label']),
             mode='lines',
             name=f'Season Avg: {ppda_sæson_gennemsnit:.2f}',
             line=dict(color='red', dash='dash')
