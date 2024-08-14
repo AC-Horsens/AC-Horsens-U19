@@ -972,7 +972,7 @@ def dashboard():
     df_possession_stats = df_possession_stats[df_possession_stats['label'].isin(match_choice)]
     df_matchstats = df_matchstats[df_matchstats['label'].isin(match_choice)]
     df_matchstats = df_matchstats.drop_duplicates()
-    df_matchstats['team.name'] = df_matchstats['team.name'].apply(lambda x: x if x == 'Horsens' else 'Opponent')
+    df_matchstats['team.name'] = df_matchstats['team.name'].apply(lambda x: x if x == 'Horsens U19' else 'Opponent')
     df_passes = df_matchstats[['team.name','label','average_forwardPasses','average_successfulForwardPasses']]
 
     df_passes = df_passes.groupby(['team.name','label']).sum().reset_index()
