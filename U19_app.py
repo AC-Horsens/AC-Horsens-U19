@@ -1163,7 +1163,7 @@ def dashboard():
         # Display the plot in Streamlit
         st.pyplot(fig)
         st.dataframe(player_penalty_area_received,hide_index=True)
-        player_penalty_area_received = player_penalty_area_received.rename(columns={'pass.recipient.name': 'player.name'})
+        player_penalty_area_received = player_penalty_area_received.rename(columns={'pass.recipient.name': 'player.name','penalty_area_entry': 'penalty_area_received'})
         player_penalty_area_entries = player_penalty_area_entries.merge(player_penalty_area_received, on='player.name')
         #player_penalty_area_entries = player_penalty_area_entries.sort_values('penalty_area_entry', ascending=False)
         st.dataframe(player_penalty_area_entries,hide_index=True)
