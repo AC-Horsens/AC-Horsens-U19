@@ -966,7 +966,6 @@ def dashboard():
 
     df_matchstats = load_matchstats()
     df_matchstats['label'] = df_matchstats['label'] + ' ' + df_matchstats['date']
-    st.dataframe(df_matchstats)
 
     df_xg = df_xg[df_xg['label'].isin(match_choice)]
     df_possession_stats = df_possession_stats[df_possession_stats['label'].isin(match_choice)]
