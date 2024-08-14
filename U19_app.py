@@ -1198,7 +1198,7 @@ def dashboard():
         st.dataframe(dangerzone_entries_matches,hide_index=True)
         dangerzone_entries_location['endLocation.x'] = dangerzone_entries_location['pass.endLocation.x'].combine_first(dangerzone_entries_location['carry.endLocation.x'])
         dangerzone_entries_location['endLocation.y'] = dangerzone_entries_location['pass.endLocation.y'].combine_first(dangerzone_entries_location['carry.endLocation.y'])
-        option2 = st.selectbox(
+        option3 = st.selectbox(
             'Select the position',
             ('Start', 'End')
         )
@@ -1208,10 +1208,10 @@ def dashboard():
         fig, ax = pitch.draw()
 
         # Extract coordinates based on user selection
-        if option2 == 'Start':
+        if option3 == 'Start':
             x_coords = dangerzone_entries_location['location.x']
             y_coords = dangerzone_entries_location['location.y']
-        elif option2 == 'End':
+        elif option3 == 'End':
             x_coords = dangerzone_entries_location['endLocation.x']
             y_coords = dangerzone_entries_location['endLocation.y']
 
