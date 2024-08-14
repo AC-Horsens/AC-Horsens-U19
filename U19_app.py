@@ -1159,6 +1159,7 @@ def dashboard():
 
         # Display the plot in Streamlit
         st.pyplot(fig)
+        player_penalty_area_entries = player_penalty_area_entries.sort_values('penalty_area_entry', ascending=False)
         st.dataframe(player_penalty_area_entries,hide_index=True)
         # Display the plot in Streamlit
     
