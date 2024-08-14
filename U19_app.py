@@ -1195,12 +1195,24 @@ def dashboard():
         ppda_sæson = ppda_sæson.sort_values('PPDA',ascending=True)
         st.dataframe(ppda_sæson, hide_index=True)
         ppda_horsens = ppda_sæson[ppda_sæson['team.name'] == 'Horsens U19']
-        ppda_sæson_gennemsnit = ppda_horsens['PPDA']
+        ppda_sæson_gennemsnit = ppda_horsens['PPDA'].values[0]  # Extracting the value
         st.header('Chosen matches')
         ppda_kampe = ppda[ppda['label'].isin(match_choice)]
         ppda_kampe = ppda_kampe[['team.name','label','PPDA']]
         ppda_kampe = ppda_kampe[ppda_kampe['team.name'] == 'Horsens U19']
         st.dataframe(ppda_kampe)
+        fig, ax = plt.subplots()
+        ax.bar(ppda_kampe['label'], ppda_kampe['PPDA'], color='blue')
+        ax.axhline(y=ppda_sæson_gennemsnit, color='red', linestyle='--', label=f'Season Avg: {ppda_sæson_gennemsnit:.2f}')
+
+        # Add labels and title
+        ax.set_xlabel('Match Label')
+        ax.set_ylabel('PPDA')
+        ax.set_title('PPDA for Chosen Matches (Horsens U19)')
+        ax.legend()
+
+        # Display the plot in Streamlit
+        st.pyplot(fig)
         
         
     Data_types = {
