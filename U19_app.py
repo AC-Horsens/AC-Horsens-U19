@@ -960,13 +960,13 @@ def dashboard():
     matches = matches[::-1]
     match_choice = st.multiselect('Choose a match', matches)
     df_xg = load_xg()
+    df_xg['label'] = df_xg['label'] + ' ' + df_xg['date']
     events['team.name'] = events['team.name'].apply(lambda x: x if x == 'Horsens U19' else 'Opponent')
     df_xg['team.name'] = df_xg['team.name'].apply(lambda x: x if x == 'Horsens U19' else 'Opponent')
 
     df_matchstats = load_matchstats()
     df_matchstats = df_matchstats['label'] + ' ' + df_matchstats['date']
     df_xg = df_xg[df_xg['label'].isin(match_choice)]
-    st.dataframe(df_xg)
     df_possession_stats = df_possession_stats[df_possession_stats['label'].isin(match_choice)]
     df_matchstats = df_matchstats[df_matchstats['label'].isin(match_choice)]
     df_matchstats = df_matchstats.drop_duplicates()
