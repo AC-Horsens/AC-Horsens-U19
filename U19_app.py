@@ -1128,6 +1128,7 @@ def dashboard():
         st.dataframe(dangerzone_entries_per_team, hide_index=True)
         penalty_area_entries_per_team = penalty_area_entries.groupby(['team.name'])['penalty_area_entry'].sum().reset_index()
         penalty_area_entries_per_team = penalty_area_entries_per_team.sort_values('penalty_area_entry', ascending=False)
+        penalty_area_entries_per_team = penalty_area_entries_per_team.merge(dangerzone_entries_per_team, on='team.name')
         st.dataframe(penalty_area_entries_per_team, hide_index=True)
         st.header('Chosen matches')
         penalty_area_entries_matches = penalty_area_entries[penalty_area_entries['label'].isin(match_choice)]
