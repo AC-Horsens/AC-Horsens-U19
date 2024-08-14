@@ -980,8 +980,9 @@ def dashboard():
     df_xg_summary = df_xg.groupby(['team.name','label'])['shot.xg'].sum().reset_index()
 
     penareaentries = penareaentries.groupby(['team.name','label']).sum().reset_index()
+    st.dataframe(penareaentries)
     penareaentries = penareaentries['team.name'].apply(lambda x: x if x == 'Horsens U19' else 'Opponent')
-    team_summary = df_xg_summary.merge(df_passes, on=['team.name','label'])
+    st.dataframe(penareaentries)
     team_summary = team_summary.merge(penareaentries, on=['team.name','label'])
     team_summary = team_summary.drop(columns=['label','date'])
     team_summary = team_summary.groupby('team.name').mean().reset_index()
