@@ -1122,6 +1122,7 @@ def dashboard():
         penalty_area_entries_matches['Whole match'] = penalty_area_entries_matches.groupby('label')['penalty_area_entry'].transform('sum')
         penalty_area_entries_matches['Team'] = penalty_area_entries_matches.groupby(['label', 'team.name'])['penalty_area_entry'].transform('sum')
         penalty_area_entries_matches['Diff'] = penalty_area_entries_matches['Team'] - penalty_area_entries_matches['Whole match'] + penalty_area_entries_matches['Team']
+        penalty_area_entries_matches = penalty_area_entries_matches[['team.name', 'label', 'Diff']]
         st.dataframe(penalty_area_entries_matches, hide_index=True)
     Data_types = {
         'xG': xg,
