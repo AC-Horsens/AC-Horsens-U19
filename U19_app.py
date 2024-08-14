@@ -949,7 +949,8 @@ def dashboard():
     xg = load_xg_agg()
     df_ppda = load_PPDA()
     penareaentries = load_penalty_area_entries()
-
+    df_possession_stats = load_possession_stats()
+    
     events = load_horsens_events()
     events['label'] = events['label'] + ' ' + events['date']
     events['date'] = pd.to_datetime(events['date'],utc=True)
