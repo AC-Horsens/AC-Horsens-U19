@@ -1160,8 +1160,13 @@ def dashboard():
 
         # Display the plot in Streamlit
         st.pyplot(fig)
-        st.dataframe(player_penalty_area_entries)
+        st.dataframe(player_penalty_area_entries,hide_index=True)
         # Display the plot in Streamlit
+    
+    def pressing():
+        st.header('Whole season')
+        ppda = load_PPDA()
+        st.dataframe(ppda, hide_index=True)
     Data_types = {
         'xG': xg,
         'Offensive transitions': offensive_transitions,
