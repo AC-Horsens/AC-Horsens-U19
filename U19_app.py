@@ -1195,7 +1195,13 @@ def dashboard():
         ppda_sæson = ppda_sæson.groupby(['team.name'])['PPDA'].mean().reset_index()
         ppda_sæson = ppda_sæson.sort_values('PPDA',ascending=True)
         st.dataframe(ppda_sæson, hide_index=True)
-    
+        ppda_horsens = ppda_sæson[ppda_sæson['team.name'] == 'Horsens U19']
+        ppda_sæson_gennemsnit = ppda_horsens['PPDA']
+        st.header('Chosen matches')
+        ppda_kampe = ppda[ppda['label'].isin(match_choice)]
+        st.dataframe(ppda_kampe)
+        
+        
     Data_types = {
         'xG': xg,
         'Offensive transitions': offensive_transitions,
