@@ -1041,6 +1041,7 @@ def dashboard():
         
         st.pyplot(fig)
 
+        st.dataframe(df_xg_plot, hide_index=True)
     def offensive_transitions():
         st.header('Whole season')
         st.write('Transition xg')
