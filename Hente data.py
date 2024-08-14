@@ -231,3 +231,33 @@ penalty_area_entry_counts = penalty_area_entry_counts.reset_index()
 
 penalty_area_entry_counts = penalty_area_entry_counts.rename(columns={'penalty_area_entry': 'count'})
 penalty_area_entry_counts.to_csv('penalty_area_entry_counts.csv', index=False)
+
+dangerzone_entry_condition = (
+    (
+        (events['pass.endLocation.x'] > 83) & 
+        (events['pass.endLocation.y'].between(37, 63)) & 
+        (events['pass.accurate'] == True) &
+        (
+            (events['location.x'] <= 83) | 
+            (events['location.y'] < 37) | 
+            (events['location.y'] > 63)
+        )
+    ) |
+    (
+        (events['carry.endLocation.x'] > 83) &
+        (events['carry.endLocation.y'].between(37, 63)) &
+        (
+            (events['location.x'] <= 83) | 
+            (events['location.y'] < 37) | 
+            (events['location.y'] > 63)
+        )
+    )
+)
+events['dangerzone_entry'] = dangerzone_entry_condition
+
+events['possession.types'] = events['possession.types'].apply(lambda x: x if isinstance(x, list) else [])
+events = events[~events['possession.types'].apply(exclude_possession_types)]
+
+dangerzone_entries = events[['player.name','team.name', 'label','date','location.x', 'location.y','pass.endLocation.x', 'pass.endLocation.y', 'carry.endLocation.x', 'carry.endLocation.y', 'dangerzone_entry']]
+dangerzone_entries = dangerzone_entries[dangerzone_entries['penalty_area_entry'] == True]
+dangerzone_entries.to_csv('dangerzone_entries.csv', index=False)
