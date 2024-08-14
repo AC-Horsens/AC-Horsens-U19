@@ -949,9 +949,9 @@ def dashboard():
     st.title('U19 Dashboard')
     xg = load_xg_agg()
     df_ppda = load_PPDA()
-    penareaentries = load_penalty_area_entries()
+    penareaentries = load_penalty_area_entry_counts()
     df_possession_stats = load_possession_stats()
-    
+    st.dataframe(penareaentries)
     events = load_horsens_events()
     events['label'] = events['label'] + ' ' + events['date']
     events['date'] = pd.to_datetime(events['date'],utc=True)
