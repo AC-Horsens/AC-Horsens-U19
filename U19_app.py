@@ -980,6 +980,7 @@ def dashboard():
     df_xg_summary = df_xg.groupby(['team.name','label'])['shot.xg'].sum().reset_index()
 
     penareaentries = penareaentries.groupby(['team.name','label']).sum().reset_index()
+    penareaentries = penareaentries.rename(columns={'count':'penaltyAreaEntryCount'})
     st.dataframe(penareaentries)
     penareaentries['team.name'] = penareaentries['team.name'].apply(lambda x: x if x == 'Horsens U19' else 'Opponent')
     
