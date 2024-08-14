@@ -979,11 +979,9 @@ def dashboard():
     df_passes = df_passes.groupby(['team.name','label']).sum().reset_index()
 
     df_xg_summary = df_xg.groupby(['team.name','label'])['shot.xg'].sum().reset_index()
-    st.dataframe(df_ppda)
     df_ppda = df_ppda[df_ppda['label'].isin(match_choice)]
-    df_ppda = df_ppda.drop(columns=['date'],errors = 'ignore')
     df_ppda = df_ppda.groupby(['team.name','label']).sum().reset_index()
-    st.dataframe(df_ppda)
+    df_ppda = df_ppda.drop(columns=['date'],errors = 'ignore')
     penareaentries = penareaentries.groupby(['team.name','label']).sum().reset_index()
     penareaentries = penareaentries.rename(columns={'count':'penaltyAreaEntryCount'})
     penareaentries['team.name'] = penareaentries['team.name'].apply(lambda x: x if x == 'Horsens U19' else 'Opponent')
