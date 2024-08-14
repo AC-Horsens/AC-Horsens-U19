@@ -1176,7 +1176,7 @@ def dashboard():
             line_size = 5 if team == 'Horsens U19' else 1  # Larger line for Horsens
             fig.add_trace(go.Scatter(
                 x=team_data['date'], 
-                y=team_data['xG rolling average'], 
+                y=team_data['PPDA'], 
                 mode='lines',
                 name=team,
                 line=dict(width=line_size)
