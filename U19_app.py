@@ -983,6 +983,7 @@ def dashboard():
     penareaentries = penareaentries.groupby(['team.name','label']).sum().reset_index()
     team_summary = df_xg_summary.merge(df_passes, on=['team.name','label'])
     team_summary = team_summary.merge(penareaentries, on=['team.name','label'])
+    st.dataframe(team_summary)
     team_summary = team_summary.drop(columns='label')
     team_summary = team_summary.groupby('team.name').mean().reset_index()
     team_summary = team_summary.round(2)
