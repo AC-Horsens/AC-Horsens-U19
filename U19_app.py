@@ -1225,7 +1225,7 @@ def dashboard():
 
         # Add a horizontal line for the season average PPDA
         fig.add_trace(go.Scatter(
-            x=ppda_kampe['label'],
+            x=ppda_kampe['formatted_label'],
             y=[ppda_sæson_gennemsnit] * len(ppda_kampe['label']),
             mode='lines',
             name=f'Season Avg: {ppda_sæson_gennemsnit:.2f}',
