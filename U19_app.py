@@ -1208,10 +1208,10 @@ def dashboard():
         fig, ax = pitch.draw()
 
         # Extract coordinates based on user selection
-        if option3 == 'Start':
+        if option3 == 'Start position':
             x_coords = dangerzone_entries_location['location.x']
             y_coords = dangerzone_entries_location['location.y']
-        elif option3 == 'End':
+        elif option3 == 'End position':
             x_coords = dangerzone_entries_location['endLocation.x']
             y_coords = dangerzone_entries_location['endLocation.y']
 
