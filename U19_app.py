@@ -1225,7 +1225,7 @@ def dashboard():
             title='PPDA for Chosen Matches (Horsens U19)',
             xaxis_title='Match Label',
             yaxis_title='PPDA',
-            xaxis_tickangle=-45,  # Angle x-axis labels for better readability
+            xaxis_tickangle=0,  # Angle x-axis labels for better readability
             legend=dict(yanchor="top", y=0.99, xanchor="left", x=0.01),
             height=500
         )
