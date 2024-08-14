@@ -977,7 +977,7 @@ def dashboard():
 
     df_passes = df_passes.groupby(['team.name','label']).sum().reset_index()
 
-    df_xg_summary = df_xg.groupby(['team_name','label'])['shot.xg'].sum().reset_index()
+    df_xg_summary = df_xg.groupby(['team.name','label'])['shot.xg'].sum().reset_index()
 
     
     team_summary = df_xg_summary.merge(df_passes, on=['team_name','label'])
