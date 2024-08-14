@@ -1194,7 +1194,7 @@ def dashboard():
 
         ppda_sæson = ppda[['team.name','PPDA']]
         ppda_sæson = ppda_sæson.groupby(['team.name'])['PPDA'].mean().reset_index()
-        st.dataframe(ppda, hide_index=True)
+        st.dataframe(ppda_sæson, hide_index=True)
     
     Data_types = {
         'xG': xg,
