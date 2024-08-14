@@ -974,6 +974,7 @@ def dashboard():
     df_possession_stats = df_possession_stats[df_possession_stats['label'].isin(match_choice)]
     df_matchstats = df_matchstats[df_matchstats['label'].isin(match_choice)]
     penareaentries = penareaentries[penareaentries['label'].isin(match_choice)]
+    dangerzone_entries = dangerzone_entries[dangerzone_entries['label'].isin(match_choice)]
     df_matchstats = df_matchstats.drop_duplicates()
     df_matchstats['team.name'] = df_matchstats['team.name'].apply(lambda x: x if x == 'Horsens U19' else 'Opponent')
     df_passes = df_matchstats[['team.name','label','average_forwardPasses','average_successfulForwardPasses']]
