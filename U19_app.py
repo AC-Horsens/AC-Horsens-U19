@@ -1200,7 +1200,8 @@ def dashboard():
         ppda_kampe = ppda[ppda['label'].isin(match_choice)]
         ppda_kampe = ppda_kampe[['team.name','label','PPDA']]
         ppda_kampe = ppda_kampe[ppda_kampe['team.name'] == 'Horsens U19']
-        st.dataframe(ppda_kampe)
+        ppda_kampe = ppda_kampe.sort_values('PPDA', ascending=True)
+        st.dataframe(ppda_kampe, hide_index=True)
         fig = go.Figure()
 
         # Add bars for the PPDA of chosen matches
