@@ -1201,17 +1201,38 @@ def dashboard():
         ppda_kampe = ppda_kampe[['team.name','label','PPDA']]
         ppda_kampe = ppda_kampe[ppda_kampe['team.name'] == 'Horsens U19']
         st.dataframe(ppda_kampe)
-        fig, ax = plt.subplots()
-        ax.bar(ppda_kampe['label'], ppda_kampe['PPDA'], color='blue')
-        ax.axhline(y=ppda_sæson_gennemsnit, color='red', linestyle='--', label=f'Season Avg: {ppda_sæson_gennemsnit:.2f}')
+        fig = go.Figure()
 
-        # Add labels and title
-        ax.set_ylabel('PPDA')
-        ax.set_title('PPDA for Chosen Matches (Horsens U19)')
-        ax.legend()
+        # Add bars for the PPDA of chosen matches
+        fig.add_trace(go.Bar(
+            x=ppda_kampe['label'],
+            y=ppda_kampe['PPDA'],
+            name='PPDA per Match',
+            marker_color='blue'
+        ))
+
+        # Add a horizontal line for the season average PPDA
+        fig.add_trace(go.Scatter(
+            x=ppda_kampe['label'],
+            y=[ppda_sæson_gennemsnit] * len(ppda_kampe['label']),
+            mode='lines',
+            name=f'Season Avg: {ppda_sæson_gennemsnit:.2f}',
+            line=dict(color='red', dash='dash')
+        ))
+
+        # Update layout for better readability
+        fig.update_layout(
+            title='PPDA for Chosen Matches (Horsens U19)',
+            xaxis_title='Match Label',
+            yaxis_title='PPDA',
+            xaxis_tickangle=-45,  # Angle x-axis labels for better readability
+            legend=dict(yanchor="top", y=0.99, xanchor="left", x=0.01),
+            height=500
+        )
 
         # Display the plot in Streamlit
-        st.pyplot(fig)
+        st.plotly_chart(fig)
+
         
         
     Data_types = {
