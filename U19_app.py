@@ -980,6 +980,7 @@ def dashboard():
     st.dataframe(df_ppda)
     df_ppda = df_ppda[df_ppda['label'].isin(match_choice)]
     df_ppda = df_ppda.groupby(['team.name','label']).sum().reset_index()
+    st.dataframe(df_ppda)
     penareaentries = penareaentries.groupby(['team.name','label']).sum().reset_index()
     penareaentries = penareaentries.rename(columns={'count':'penaltyAreaEntryCount'})
     penareaentries['team.name'] = penareaentries['team.name'].apply(lambda x: x if x == 'Horsens U19' else 'Opponent')
@@ -987,7 +988,7 @@ def dashboard():
     team_summary = df_xg_summary.merge(df_passes, on=['team.name','label'])
     team_summary = team_summary.merge(penareaentries, on=['team.name','label'])
     team_summary = team_summary.merge(df_ppda, on=['team.name','label'])
-    #team_summary = team_summary.drop(columns=['label','date'])
+    team_summary = team_summary.drop(columns=['label','date'])
     team_summary = team_summary.groupby('team.name').mean().reset_index()
     team_summary = team_summary.round(2)
     st.dataframe(team_summary.style.format(precision=2), use_container_width=True,hide_index=True)
