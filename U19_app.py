@@ -1125,6 +1125,7 @@ def dashboard():
         penalty_area_entries_matches['Diff'] = penalty_area_entries_matches['Team'] - penalty_area_entries_matches['Whole match'] + penalty_area_entries_matches['Team']
         penalty_area_entries_matches = penalty_area_entries_matches[['team.name', 'Diff']]
         penalty_area_entries_matches = penalty_area_entries_matches.groupby('team.name').mean()
+        penalty_area_entries_matches = penalty_area_entries_matches.round(2)
         st.dataframe(penalty_area_entries_matches)
         penalty_area_entries_location['endLocation.x'] = penalty_area_entries_location['pass.endLocation.x'].combine_first(penalty_area_entries_location['carry.endLocation.x'])
         penalty_area_entries_location['endLocation.y'] = penalty_area_entries_location['pass.endLocation.y'].combine_first(penalty_area_entries_location['carry.endLocation.y'])
