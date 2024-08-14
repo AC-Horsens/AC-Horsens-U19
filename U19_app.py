@@ -1119,6 +1119,8 @@ def dashboard():
         st.dataframe(penalty_area_entries_per_team, hide_index=True)
         st.header('Chosen matches')
         penalty_area_entries_matches = penalty_area_entries[penalty_area_entries['label'].isin(match_choice)]
+        player_penalty_area_entries = penalty_area_entries.groupby(['player.name'])['penalty_area_entry'].sum().reset_index()
+
         penalty_area_entries_location = penalty_area_entries_matches.copy()
         penalty_area_entries_matches['Whole match'] = penalty_area_entries_matches.groupby('label')['penalty_area_entry'].transform('sum')
         penalty_area_entries_matches['Team'] = penalty_area_entries_matches.groupby(['label', 'team.name'])['penalty_area_entry'].transform('sum')
@@ -1156,7 +1158,7 @@ def dashboard():
 
         # Display the plot in Streamlit
         st.pyplot(fig)
-
+        st.dataframe(player_penalty_area_entries)
         # Display the plot in Streamlit
     Data_types = {
         'xG': xg,
