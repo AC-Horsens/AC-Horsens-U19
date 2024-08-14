@@ -1125,7 +1125,6 @@ def dashboard():
         dangerzone_entries = load_dangerzone_entries()
         dangerzone_entries_per_team = dangerzone_entries.groupby(['team.name'])['dangerzone_entry'].sum().reset_index()
         dangerzone_entries_per_team = dangerzone_entries_per_team.sort_values('dangerzone_entry', ascending=False)
-        st.dataframe(dangerzone_entries_per_team, hide_index=True)
         penalty_area_entries_per_team = penalty_area_entries.groupby(['team.name'])['penalty_area_entry'].sum().reset_index()
         penalty_area_entries_per_team = penalty_area_entries_per_team.sort_values('penalty_area_entry', ascending=False)
         penalty_area_entries_per_team = penalty_area_entries_per_team.merge(dangerzone_entries_per_team, on='team.name')
