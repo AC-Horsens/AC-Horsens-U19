@@ -219,6 +219,9 @@ penalty_area_entry_condition = (
 )
 events['penalty_area_entry'] = penalty_area_entry_condition
 
+events['possession.types'] = events['possession.types'].apply(lambda x: x if isinstance(x, list) else [])
+events = events[~events['possession.types'].apply(exclude_possession_types)]
+
 penalty_area_entries = events[['team.name', 'label','date','location.x', 'location.y','pass.endLocation.x', 'pass.endLocation.y', 'carry.endLocation.x', 'carry.endLocation.y', 'penalty_area_entry']]
 penalty_area_entries = penalty_area_entries[penalty_area_entries['penalty_area_entry'] == True]
 penalty_area_entries.to_csv('penalty_area_entries.csv', index=False)
