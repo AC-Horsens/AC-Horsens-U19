@@ -992,9 +992,20 @@ def dashboard():
     penareaentries = penareaentries.drop(columns=['date'],errors = 'ignore')
     df_possession_stats = df_possession_stats.value_counts(['territorial_possession','label']).reset_index()
     st.dataframe(df_possession_stats)
+    df_possession_stats_grouped = df_possession_stats.groupby('game')['count'].sum().reset_index()
+    df_possession_stats_grouped.columns = ['label', 'total_possession']
 
-    df_possession_stats = df_possession_stats.groupby(['territorial_possession'])['count'].mean().reset_index()
-    df_possession_stats = df_possession_stats[df_possession_stats['territorial_possession'] != 'Middle']
+    # Merge back with original dataframe to calculate percentage
+    df_possession_stats = pd.merge(df_possession_stats, df_possession_stats_grouped, on='label')
+
+    # Calculate the possession percentage
+    df_possession_stats['possession_percentage'] = (df_possession_stats['count'] / df_possession_stats['total_possession']) * 100
+
+    # Drop unnecessary columns if needed
+    df_possession_stats = df_possession_stats.drop(columns=['total_possession'])
+    st.dataframe(df_possession_stats)
+    #df_possession_stats = df_possession_stats.groupby(['territorial_possession'])['count'].mean().reset_index()
+    #df_possession_stats = df_possession_stats[df_possession_stats['territorial_possession'] != 'Middle']
     df_possession_stats = df_possession_stats.rename(columns={'count':'terr_Possession'})
     df_possession_stats = df_possession_stats.rename(columns={'territorial_possession':'team.name'})
     df_possession_stats['team.name'] = df_possession_stats['team.name'].apply(lambda x: x if x == 'Horsens U19' else 'Opponent')
