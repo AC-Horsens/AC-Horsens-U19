@@ -1168,7 +1168,7 @@ def dashboard():
         ppda = load_PPDA()
         ppda['date'] = pd.to_datetime(ppda['date'], utc=True)
         ppda = ppda.sort_values('date').reset_index(drop=True)
-        ppda['ppda rolling average'] = ppda.groupby('team.name')['xg_diff'].transform(lambda x: x.rolling(window=3, min_periods=1).mean())
+        ppda['ppda rolling average'] = ppda.groupby('team.name')['PPDA'].transform(lambda x: x.rolling(window=3, min_periods=1).mean())
         fig = go.Figure()
         
         for team in ppda['team.name'].unique():
