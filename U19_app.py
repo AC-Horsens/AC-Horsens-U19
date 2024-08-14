@@ -1206,7 +1206,6 @@ def dashboard():
         ax.axhline(y=ppda_sæson_gennemsnit, color='red', linestyle='--', label=f'Season Avg: {ppda_sæson_gennemsnit:.2f}')
 
         # Add labels and title
-        ax.set_xlabel('Match Label')
         ax.set_ylabel('PPDA')
         ax.set_title('PPDA for Chosen Matches (Horsens U19)')
         ax.legend()
