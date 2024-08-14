@@ -1130,6 +1130,7 @@ def dashboard():
         penalty_area_entries_per_team = penalty_area_entries_per_team.merge(dangerzone_entries_per_team, on='team.name')
         st.dataframe(penalty_area_entries_per_team, hide_index=True)
         st.header('Chosen matches')
+        st.write('Penalty area entries')
         penalty_area_entries_matches = penalty_area_entries[penalty_area_entries['label'].isin(match_choice)]
         player_penalty_area_entries = penalty_area_entries_matches[penalty_area_entries_matches['team.name'] == 'Horsens U19']
         player_penalty_area_received = player_penalty_area_entries.groupby(['pass.recipient.name'])['penalty_area_entry'].sum().reset_index()
@@ -1138,7 +1139,7 @@ def dashboard():
         penalty_area_entries_location = penalty_area_entries_matches.copy()
         penalty_area_entries_matches['Whole match'] = penalty_area_entries_matches.groupby('label')['penalty_area_entry'].transform('sum')
         penalty_area_entries_matches['Team'] = penalty_area_entries_matches.groupby(['label', 'team.name'])['penalty_area_entry'].transform('sum')
-        penalty_area_entries_matches['Diff'] = penalty_area_entries_matches['Team'] - penalty_area_entries_matches['Whole match'] + penalty_area_entries_matches['Team']
+        penalty_area_entries_matches['Paentries Diff'] = penalty_area_entries_matches['Team'] - penalty_area_entries_matches['Whole match'] + penalty_area_entries_matches['Team']
         penalty_area_entries_matches = penalty_area_entries_matches[['team.name','label', 'Diff']]
         penalty_area_entries_matches = penalty_area_entries_matches.groupby(['team.name','label'])['Diff'].sum().reset_index()
         penalty_area_entries_matches = penalty_area_entries_matches[penalty_area_entries_matches['team.name'] == 'Horsens U19']
@@ -1178,6 +1179,55 @@ def dashboard():
         player_penalty_area_entries = player_penalty_area_entries.sort_values('Total', ascending=False)
         st.dataframe(player_penalty_area_entries,hide_index=True)
         # Display the plot in Streamlit
+        
+        st.write('Dangerzone entries')
+        dangerzone_entries_matches = dangerzone_entries[dangerzone_entries['label'].isin(match_choice)]
+        player_dangerzone_entries = dangerzone_entries_matches[dangerzone_entries_matches['team.name'] == 'Horsens U19']
+        player_dangerzone_received = player_dangerzone_entries.groupby(['pass.recipient.name'])['dangerzone_entry'].sum().reset_index()
+        player_dangerzone_entries = player_dangerzone_entries.groupby(['player.name'])['dangerzone_entry'].sum().reset_index()
+
+        dangerzone_entries_location = dangerzone_entries_matches.copy()
+        dangerzone_entries_matches['Whole match'] = dangerzone_entries_matches.groupby('label')['dangerzone_entry'].transform('sum')
+        dangerzone_entries_matches['Team'] = dangerzone_entries_matches.groupby(['label', 'team.name'])['dangerzone_entry'].transform('sum')
+        dangerzone_entries_matches['Dzentries Diff'] = dangerzone_entries_matches['Team'] - dangerzone_entries_matches['Whole match'] + dangerzone_entries_matches['Team']
+        dangerzone_entries_matches = dangerzone_entries_matches[['team.name','label', 'Diff']]
+        dangerzone_entries_matches = dangerzone_entries_matches.groupby(['team.name','label'])['Diff'].sum().reset_index()
+        dangerzone_entries_matches = dangerzone_entries_matches[dangerzone_entries_matches['team.name'] == 'Horsens U19']
+        dangerzone_entries_matches = dangerzone_entries_matches.round(2)
+        dangerzone_entries_matches = dangerzone_entries_matches.sort_values('Diff', ascending=False)
+        st.dataframe(dangerzone_entries_matches,hide_index=True)
+        dangerzone_entries_location['endLocation.x'] = dangerzone_entries_location['pass.endLocation.x'].combine_first(dangerzone_entries_location['carry.endLocation.x'])
+        dangerzone_entries_location['endLocation.y'] = dangerzone_entries_location['pass.endLocation.y'].combine_first(dangerzone_entries_location['carry.endLocation.y'])
+        option2 = st.selectbox(
+            'Select the position',
+            ('Start', 'End')
+        )
+
+        # Initialize the pitch
+        pitch = Pitch(pitch_type='wyscout',line_zorder=2, pitch_color='grass', line_color='white')
+        fig, ax = pitch.draw()
+
+        # Extract coordinates based on user selection
+        if option2 == 'Start':
+            x_coords = dangerzone_entries_location['location.x']
+            y_coords = dangerzone_entries_location['location.y']
+        elif option2 == 'End':
+            x_coords = dangerzone_entries_location['endLocation.x']
+            y_coords = dangerzone_entries_location['endLocation.y']
+
+        # Plot the heatmap
+        fig.set_facecolor('#22312b')
+        bin_statistic = pitch.bin_statistic(x_coords, y_coords, statistic='count', bins=(50, 50))  # Adjust bins as needed
+        bin_statistic['statistic'] = gaussian_filter(bin_statistic['statistic'], 1)
+        pcm = pitch.heatmap(bin_statistic, ax=ax, cmap='hot', edgecolors='#22312b')
+
+        # Display the plot in Streamlit
+        st.pyplot(fig)
+        player_dangerzone_received = player_dangerzone_received.rename(columns={'pass.recipient.name': 'player.name','dangerzone_entry': 'dangerzone_received'})
+        player_dangerzone_entries = player_dangerzone_entries.merge(player_dangerzone_received, on='player.name')
+        player_dangerzone_entries['Total'] = player_dangerzone_entries['dangerzone_entry'] + player_dangerzone_entries['dangerzone_received']
+        player_dangerzone_entries = player_dangerzone_entries.sort_values('Total', ascending=False)
+        st.dataframe(player_dangerzone_entries,hide_index=True)
     
     def pressing():
         st.header('Whole season')
