@@ -1124,7 +1124,7 @@ def dashboard():
         penalty_area_entries_matches['Diff'] = penalty_area_entries_matches['Team'] - penalty_area_entries_matches['Whole match'] + penalty_area_entries_matches['Team']
         penalty_area_entries_matches = penalty_area_entries_matches[['team.name', 'Diff']]
         penalty_area_entries_matches = penalty_area_entries_matches.groupby('team.name').mean()
-        st.dataframe(penalty_area_entries_matches, hide_index=True)
+        st.dataframe(penalty_area_entries_matches)
     Data_types = {
         'xG': xg,
         'Offensive transitions': offensive_transitions,
