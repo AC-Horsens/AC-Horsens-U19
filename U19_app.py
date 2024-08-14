@@ -1199,6 +1199,8 @@ def dashboard():
         ppda_sæson_gennemsnit = ppda_horsens['PPDA']
         st.header('Chosen matches')
         ppda_kampe = ppda[ppda['label'].isin(match_choice)]
+        ppda_kampe = ppda_kampe[['team.name','label','PPDA']]
+        ppda_kampe = ppda_kampe[ppda_kampe['team.name'] == 'Horsens U19']
         st.dataframe(ppda_kampe)
         
         
