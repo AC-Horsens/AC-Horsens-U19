@@ -1194,7 +1194,7 @@ def dashboard():
         dangerzone_entries_matches = dangerzone_entries_matches.groupby(['team.name','label'])['Dzentries Diff'].sum().reset_index()
         dangerzone_entries_matches = dangerzone_entries_matches[dangerzone_entries_matches['team.name'] == 'Horsens U19']
         dangerzone_entries_matches = dangerzone_entries_matches.round(2)
-        dangerzone_entries_matches = dangerzone_entries_matches.sort_values('Diff', ascending=False)
+        dangerzone_entries_matches = dangerzone_entries_matches.sort_values('Dzentries Diff', ascending=False)
         st.dataframe(dangerzone_entries_matches,hide_index=True)
         dangerzone_entries_location['endLocation.x'] = dangerzone_entries_location['pass.endLocation.x'].combine_first(dangerzone_entries_location['carry.endLocation.x'])
         dangerzone_entries_location['endLocation.y'] = dangerzone_entries_location['pass.endLocation.y'].combine_first(dangerzone_entries_location['carry.endLocation.y'])
