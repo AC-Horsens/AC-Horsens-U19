@@ -70,6 +70,11 @@ def load_penalty_area_entries():
     return penalty_area_entries    
 
 @st.cache_data()
+def load_possession_stats():
+    df_possession_stats = pd.read_csv(r'possession_stats.csv')
+    return df_possession_stats
+
+@st.cache_data()
 def Process_data_spillere(events,df_xg,df_matchstats):
     xg = events[['player.name','label','shot.xg']]
     xg['shot.xg'] = xg['shot.xg'].astype(float)
@@ -952,6 +957,40 @@ def dashboard():
     matches = events['label'].unique()
     matches = matches[::-1]
     match_choice = st.multiselect('Choose a match', matches)
+    df_xg = load_xg()
+    events['team_name'] = events['team_name'].apply(lambda x: x if x == 'Horsens' else 'Opponent')
+    df_xg['team_name'] = df_xg['team_name'].apply(lambda x: x if x == 'Horsens' else 'Opponent')
+
+    df_matchstats = load_matchstats()    
+    df_xg = df_xg[df_xg['label'].isin(match_choice)]
+    df_possession_stats = df_possession_stats[df_possession_stats['label'].isin(match_choice)]
+    df_matchstats = df_matchstats[df_matchstats['label'].isin(match_choice)]
+    st.dataframe(df_xg)
+    df_matchstats = df_matchstats.merge(xA_map, on='contestantId', how='inner')
+    df_matchstats = df_matchstats.drop_duplicates()
+    df_matchstats['team_name'] = df_matchstats['team_name'].apply(lambda x: x if x == 'Horsens' else 'Opponent')
+    df_passes = df_matchstats[['team_name','label','openPlayPass','successfulOpenPlayPass']]
+
+    df_passes = df_passes.groupby(['team_name','label']).sum().reset_index()
+
+    df_xA_summary = df_possession.groupby(['team_name','label'])['318.0'].sum().reset_index()
+    df_xA_summary = df_xA_summary.rename(columns={'318.0': 'xA'})
+
+    df_xg_summary = df_xg.groupby(['team_name','label'])['321'].sum().reset_index()
+    df_xg_summary = df_xg_summary.rename(columns={'321': 'xG'})
+    df_packing_summary = df_packing[['team_name','label','bypassed_opponents','bypassed_defenders']]
+    df_packing_summary['team_name'] = df_packing_summary['team_name'].apply(lambda x: x if x == 'Horsens' else 'Opponent')
+
+    df_packing_summary = df_packing_summary.groupby(['team_name','label']).sum().reset_index()
+    
+    team_summary = df_xg_summary.merge(df_xA_summary, on=['team_name','label'])
+    team_summary = team_summary.merge(df_passes, on=['team_name','label'])
+    team_summary = team_summary.merge(df_packing_summary, on=['team_name', 'label'])
+    team_summary = team_summary.merge(df_spacecontrol, on=['team_name', 'label'])
+    team_summary = team_summary.drop(columns='label')
+    team_summary = team_summary.groupby('team_name').mean().reset_index()
+    team_summary = team_summary.round(2)
+    st.dataframe(team_summary.style.format(precision=2), use_container_width=True,hide_index=True)
     
 
     def xg():
