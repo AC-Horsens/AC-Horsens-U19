@@ -24,7 +24,6 @@ def load_events():
 @st.cache_data()
 def load_xg():
     df_xg = pd.read_csv(r'xg.csv')    
-    df_xg['label'] = df_xg['label'] + ' ' + df_xg['date']
     return df_xg
 
 @st.cache_data()
