@@ -987,7 +987,7 @@ def dashboard():
     penareaentries = penareaentries.rename(columns={'count':'penaltyAreaEntryCount'})
     penareaentries['team.name'] = penareaentries['team.name'].apply(lambda x: x if x == 'Horsens U19' else 'Opponent')
     penareaentries = penareaentries.drop(columns=['date'],errors = 'ignore')
-    
+    df_possession_stats = df_possession_stats.value_counts('territorial_possession').reset_index()    
     st.dataframe(df_possession_stats)
     team_summary = df_xg_summary.merge(df_passes, on=['team.name','label'])
     team_summary = team_summary.merge(penareaentries, on=['team.name','label'])
