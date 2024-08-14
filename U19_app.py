@@ -1167,10 +1167,12 @@ def dashboard():
         st.header('Whole season')
         ppda = load_PPDA()
         st.dataframe(ppda, hide_index=True)
+    
     Data_types = {
         'xG': xg,
         'Offensive transitions': offensive_transitions,
-        'Chance Creation': chance_creation
+        'Chance Creation': chance_creation,
+        'Pressing': pressing
     }
 
     for i in range(1, 4):
