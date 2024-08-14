@@ -13,9 +13,7 @@ st.set_page_config(layout="wide")
 @st.cache_data()
 def load_matchstats():
     #events = pd.read_csv(r'events.csv')
-    df_matchstats = pd.read_csv(r'matchstats.csv')
-    df_matchstats['label'] = df_matchstats['label'] + ' ' + df_matchstats['date']
-    
+    df_matchstats = pd.read_csv(r'matchstats.csv')    
     return df_matchstats
 
 @st.cache_data()
