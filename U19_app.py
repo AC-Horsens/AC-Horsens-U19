@@ -992,10 +992,10 @@ def dashboard():
     df_possession_stats = df_possession_stats[df_possession_stats['territorial_possession'] != 'Middle']
     df_possession_stats = df_possession_stats.rename(columns={'count':'terr_Possession'})
     df_possession_stats['territorial_possession'] = df_possession_stats['territorial_possession'].apply(lambda x: x if x == 'Horsens U19' else 'Opponent')
-    st.dataframe(df_possession_stats)
     team_summary = df_xg_summary.merge(df_passes, on=['team.name','label'])
     team_summary = team_summary.merge(penareaentries, on=['team.name','label'])
     team_summary = team_summary.merge(df_ppda, on=['team.name','label'])
+    team_summary = team_summary.merge(df_possession_stats, on=['terr_Possession'])
     team_summary = team_summary.drop(columns=['label'])
     team_summary = team_summary.groupby('team.name').mean().reset_index()
     team_summary = team_summary.round(2)
