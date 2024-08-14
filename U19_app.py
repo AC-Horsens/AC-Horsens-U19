@@ -14,6 +14,8 @@ st.set_page_config(layout="wide")
 def load_matchstats():
     #events = pd.read_csv(r'events.csv')
     df_matchstats = pd.read_csv(r'matchstats.csv')
+    df_matchstats['label'] = df_matchstats['label'] + ' ' + df_matchstats['date']
+    
     return df_matchstats
 
 @st.cache_data()
@@ -968,7 +970,6 @@ def dashboard():
     st.dataframe(df_xg)
     df_possession_stats = df_possession_stats[df_possession_stats['label'].isin(match_choice)]
     df_matchstats = df_matchstats[df_matchstats['label'].isin(match_choice)]
-    df_matchstats = df_matchstats.merge(xA_map, on='contestantId', how='inner')
     df_matchstats = df_matchstats.drop_duplicates()
     df_matchstats['team_name'] = df_matchstats['team_name'].apply(lambda x: x if x == 'Horsens' else 'Opponent')
     df_passes = df_matchstats[['team_name','label','openPlayPass','successfulOpenPlayPass']]
