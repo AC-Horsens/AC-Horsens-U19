@@ -992,6 +992,7 @@ def dashboard():
     penareaentries = penareaentries.drop(columns=['date'],errors = 'ignore')
     df_possession_stats = df_possession_stats.value_counts(['territorial_possession','label']).reset_index()
     df_possession_stats = df_possession_stats.groupby(['territorial_possession'])['count'].mean().reset_index()
+    st.dataframe(df_possession_stats)
     df_possession_stats = df_possession_stats[df_possession_stats['territorial_possession'] != 'Middle']
     df_possession_stats = df_possession_stats.rename(columns={'count':'terr_Possession'})
     df_possession_stats = df_possession_stats.rename(columns={'territorial_possession':'team.name'})
