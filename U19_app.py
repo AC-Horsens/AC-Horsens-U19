@@ -71,7 +71,7 @@ def load_penalty_area_entries():
 
 @st.cache_data()
 def load_possession_stats():
-    df_possession_stats = pd.read_csv(r'possession_stats.csv')
+    df_possession_stats = pd.read_csv(r'terr_poss.csv')
     df_possession_stats['label'] = df_possession_stats['label'] + ' ' + df_possession_stats['date']
     return df_possession_stats
 
@@ -965,9 +965,9 @@ def dashboard():
 
     df_matchstats = load_matchstats()    
     df_xg = df_xg[df_xg['label'].isin(match_choice)]
+    st.dataframe(df_xg)
     df_possession_stats = df_possession_stats[df_possession_stats['label'].isin(match_choice)]
     df_matchstats = df_matchstats[df_matchstats['label'].isin(match_choice)]
-    st.dataframe(df_xg)
     df_matchstats = df_matchstats.merge(xA_map, on='contestantId', how='inner')
     df_matchstats = df_matchstats.drop_duplicates()
     df_matchstats['team_name'] = df_matchstats['team_name'].apply(lambda x: x if x == 'Horsens' else 'Opponent')
