@@ -1188,12 +1188,12 @@ def dashboard():
             yaxis_title='3-Game Rolling Average ppda',
             template='plotly_white'
         )
-        st.header('Whole season')
         
         st.plotly_chart(fig)
 
         ppda_sæson = ppda[['team.name','PPDA']]
         ppda_sæson = ppda_sæson.groupby(['team.name'])['PPDA'].mean().reset_index()
+        ppda_sæson = ppda_sæson.sort_values('PPDA',ascending=True)
         st.dataframe(ppda_sæson, hide_index=True)
     
     Data_types = {
