@@ -1190,8 +1190,8 @@ def dashboard():
         dangerzone_entries_matches['Whole match'] = dangerzone_entries_matches.groupby('label')['dangerzone_entry'].transform('sum')
         dangerzone_entries_matches['Team'] = dangerzone_entries_matches.groupby(['label', 'team.name'])['dangerzone_entry'].transform('sum')
         dangerzone_entries_matches['Dzentries Diff'] = dangerzone_entries_matches['Team'] - dangerzone_entries_matches['Whole match'] + dangerzone_entries_matches['Team']
-        dangerzone_entries_matches = dangerzone_entries_matches[['team.name','label', 'Diff']]
-        dangerzone_entries_matches = dangerzone_entries_matches.groupby(['team.name','label'])['Diff'].sum().reset_index()
+        dangerzone_entries_matches = dangerzone_entries_matches[['team.name','label', 'Dzentries Diff']]
+        dangerzone_entries_matches = dangerzone_entries_matches.groupby(['team.name','label'])['Dzentries Diff'].sum().reset_index()
         dangerzone_entries_matches = dangerzone_entries_matches[dangerzone_entries_matches['team.name'] == 'Horsens U19']
         dangerzone_entries_matches = dangerzone_entries_matches.round(2)
         dangerzone_entries_matches = dangerzone_entries_matches.sort_values('Diff', ascending=False)
