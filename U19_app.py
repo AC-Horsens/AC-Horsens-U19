@@ -992,7 +992,7 @@ def dashboard():
     penareaentries = penareaentries.drop(columns=['date'],errors = 'ignore')
     df_possession_stats = df_possession_stats.value_counts(['territorial_possession','label']).reset_index()
     st.dataframe(df_possession_stats)
-    df_possession_stats_grouped = df_possession_stats.groupby('game')['count'].sum().reset_index()
+    df_possession_stats_grouped = df_possession_stats.groupby('label')['count'].sum().reset_index()
     df_possession_stats_grouped.columns = ['label', 'total_possession']
 
     # Merge back with original dataframe to calculate percentage
