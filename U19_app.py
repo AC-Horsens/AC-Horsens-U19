@@ -993,6 +993,7 @@ def dashboard():
     df_possession_stats = df_possession_stats.rename(columns={'count':'terr_Possession'})
     df_possession_stats = df_possession_stats.rename(columns={'territorial_possession':'team.name'})
     df_possession_stats['team.name'] = df_possession_stats['team.name'].apply(lambda x: x if x == 'Horsens U19' else 'Opponent')
+    st.dataframe(df_possession_stats)
     team_summary = df_xg_summary.merge(df_passes, on=['team.name','label'])
     team_summary = team_summary.merge(penareaentries, on=['team.name','label'])
     team_summary = team_summary.merge(df_ppda, on=['team.name','label'])
