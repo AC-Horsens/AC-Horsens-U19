@@ -292,7 +292,7 @@ def Process_data_spillere(events,df_xg,df_matchstats):
         df_unique.loc[:, score_column] = pd.qcut(df_unique[column], q=10, labels=False, duplicates='raise') + 1
         return df.merge(df_unique[[column, score_column]], on=column, how='left')
     
-    minutter_kamp = 45
+    minutter_kamp = 30
     minutter_total = 300
     
     df_matchstats = df_matchstats[['player.name','team.name','label','position_codes','total_minutesOnField','average_successfulPassesToFinalThird','percent_aerialDuelsWon','percent_newSuccessfulDribbles','average_throughPasses','percent_duelsWon','percent_successfulPassesToFinalThird','average_xgAssist','average_crosses','average_progressivePasses','average_progressiveRun','average_accelerations','average_passesToFinalThird','percent_successfulProgressivePasses','percent_successfulPasses','average_ballRecoveries','average_interceptions','average_defensiveDuels','average_successfulDefensiveAction','average_forwardPasses','average_successfulForwardPasses','average_touchInBox','average_xgShot','average_keyPasses','average_successfulAttackingActions','average_shotAssists']]
@@ -604,7 +604,7 @@ def Process_data_spillere(events,df_xg,df_matchstats):
         return df_otter
         
     def number10():
-        df_10 = df_scouting[(df_scouting['position_codes'].str.contains('amf')) & (~df_scouting['position_codes'].str.contains('lamf|ramf'))]
+        df_10 = df_scouting[(df_scouting['position_codes'].str.contains('amf'))]
         df_10['total_minutesOnField'] = df_10['total_minutesOnField'].astype(int)
         df_10 = df_10[df_10['total_minutesOnField'].astype(int) >= minutter_kamp]
         

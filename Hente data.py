@@ -47,6 +47,7 @@ kampdetaljer = kampdetaljer[['wyId','label','date']]
 kampdetaljer = kampdetaljer.rename(columns={'wyId':'matchId'})
 events = kampdetaljer.merge(df)
 events = events[['id','player.name', 'player.id', 'team.name', 'matchId','pass.recipient.name','pass.accurate','label','date','minute','second','groundDuel','aerialDuel','infraction','carry','type.primary','type.secondary','location.x','location.y','pass.endLocation.x','pass.endLocation.y','carry.endLocation.x','carry.endLocation.y','shot.xg','possession.types','possession.eventsNumber','possession.eventIndex','possession.startLocation.x','possession.startLocation.y','possession.endLocation.x','possession.endLocation.y','possession.team.name','possession.attack.xg']]
+events.to_csv('events.csv', index=False)
 transitions = events[events['possession.eventsNumber']<=15]
 exclude_types = ['throw_in', 'set_piece_attack', 'free_kick', 'corner']
 
