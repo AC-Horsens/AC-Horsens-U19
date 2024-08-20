@@ -1204,6 +1204,7 @@ def dashboard():
         penalty_area_entries_matches['Whole match'] = penalty_area_entries_matches.groupby('label')['penalty_area_entry'].transform('sum')
         penalty_area_entries_matches['Team'] = penalty_area_entries_matches.groupby(['label', 'team.name'])['penalty_area_entry'].transform('sum')
         penalty_area_entries_matches['Paentries Diff'] = penalty_area_entries_matches['Team'] - penalty_area_entries_matches['Whole match'] + penalty_area_entries_matches['Team']
+        st.dataframe(penalty_area_entries_matches)
         penalty_area_entries_matches = penalty_area_entries_matches[['team.name','label', 'Paentries Diff']]
         penalty_area_entries_matches = penalty_area_entries_matches.groupby(['team.name','label'])['Paentries Diff'].sum().reset_index()
         penalty_area_entries_matches = penalty_area_entries_matches[penalty_area_entries_matches['team.name'] == 'Horsens U19']
