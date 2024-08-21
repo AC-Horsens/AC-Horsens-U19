@@ -1192,6 +1192,7 @@ def dashboard():
         penalty_area_entries_per_team = penalty_area_entries.groupby(['team.name'])['penalty_area_entry'].sum().reset_index()
         penalty_area_entries_per_team = penalty_area_entries_per_team.sort_values('penalty_area_entry', ascending=False)
         penalty_area_entries_per_team = penalty_area_entries_per_team.merge(dangerzone_entries_per_team,how='outer', on='team.name')
+        penalty_area_entries_per_team = penalty_area_entries_per_team.fillna(0)
         st.dataframe(penalty_area_entries_per_team, hide_index=True)
         st.header('Chosen matches')
         st.write('Penalty area entries')
