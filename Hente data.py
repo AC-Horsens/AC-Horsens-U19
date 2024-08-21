@@ -255,7 +255,7 @@ dangerzone_entry_condition = (
     )
 )
 events['dangerzone_entry'] = dangerzone_entry_condition
-
+events = events[events['pass.accurate'] == True]
 events['possession.types'] = events['possession.types'].apply(lambda x: x if isinstance(x, list) else [])
 events = events[~events['possession.types'].apply(exclude_possession_types)]
 
