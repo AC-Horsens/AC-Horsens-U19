@@ -1289,7 +1289,7 @@ def dashboard():
         # Display the plot in Streamlit
         st.pyplot(fig)
         player_dangerzone_received = player_dangerzone_received.rename(columns={'pass.recipient.name': 'player.name','dangerzone_entry': 'dangerzone_received'})
-        player_dangerzone_entries = player_dangerzone_entries.merge(player_dangerzone_received)
+        player_dangerzone_entries = player_dangerzone_entries.merge(player_dangerzone_received,how='outer')
         st.dataframe(player_dangerzone_entries,hide_index=True)
         player_dangerzone_entries['Total'] = player_dangerzone_entries['dangerzone_entry'] + player_dangerzone_entries['dangerzone_received']
         player_dangerzone_entries = player_dangerzone_entries.sort_values('Total', ascending=False)
