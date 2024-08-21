@@ -1262,6 +1262,7 @@ def dashboard():
         st.dataframe(dangerzone_entries_matches,hide_index=True)
         dangerzone_entries_location['endLocation.x'] = dangerzone_entries_location['pass.endLocation.x'].combine_first(dangerzone_entries_location['carry.endLocation.x'])
         dangerzone_entries_location['endLocation.y'] = dangerzone_entries_location['pass.endLocation.y'].combine_first(dangerzone_entries_location['carry.endLocation.y'])
+        dangerzone_entries_location = dangerzone_entries_location[dangerzone_entries_location['team.name'] == 'Horsens U19']
         option3 = st.selectbox(
             'Select the position',
             ('Start', 'End'),key='2'
