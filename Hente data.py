@@ -201,7 +201,6 @@ penalty_area_entry_condition = (
     (
         (events['pass.endLocation.x'] > 83) & 
         (events['pass.endLocation.y'].between(19, 81)) & 
-        (events['pass.accurate'] == True) &
         (
             (events['location.x'] <= 83) | 
             (events['location.y'] < 19) | 
@@ -237,7 +236,6 @@ dangerzone_entry_condition = (
     (
         (events['pass.endLocation.x'] > 83) & 
         (events['pass.endLocation.y'].between(37, 63)) & 
-        (events['pass.accurate'] == True) &
         (
             (events['location.x'] <= 83) | 
             (events['location.y'] < 37) | 
