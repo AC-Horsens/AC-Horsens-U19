@@ -1241,6 +1241,7 @@ def dashboard():
         player_penalty_area_entries['penalty_area_entry'] = pd.to_numeric(player_penalty_area_entries['penalty_area_entry'], errors='coerce').fillna(0)
         player_penalty_area_received['penalty_area_received'] = pd.to_numeric(player_penalty_area_received['penalty_area_received'], errors='coerce').fillna(0)
         player_penalty_area_entries = player_penalty_area_entries.merge(player_penalty_area_received, on='player.name', how='outer')
+        player_penalty_area_entries = player_penalty_area_entries.fillna(0)
         player_penalty_area_entries['Total'] = player_penalty_area_entries['penalty_area_entry'] + player_penalty_area_entries['penalty_area_received']
         player_penalty_area_entries = player_penalty_area_entries.sort_values('Total', ascending=False)
 
