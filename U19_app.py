@@ -1239,7 +1239,9 @@ def dashboard():
         # Display the plot in Streamlit
         st.pyplot(fig)
         player_penalty_area_received = player_penalty_area_received.rename(columns={'pass.recipient.name': 'player.name','penalty_area_entry': 'penalty_area_received'})
+        player_penalty_area_received['penalty_area_received'] = player_penalty_area_received['penalty_area_received'].astype(float)
         player_penalty_area_received.fillna(0, inplace=True)
+        player_penalty_area_entries['penalty_area_entry'] = player_penalty_area_entries['penalty_area_entry'].astype(float)
         player_penalty_area_entries.fillna(0, inplace=True)
         player_penalty_area_entries = player_penalty_area_entries.merge(player_penalty_area_received, on='player.name', how='outer')
         player_penalty_area_entries['Total'] = player_penalty_area_entries['penalty_area_entry'] + player_penalty_area_entries['penalty_area_received']
