@@ -1200,7 +1200,6 @@ def dashboard():
         player_penalty_area_entries = penalty_area_entries_matches[penalty_area_entries_matches['team.name'] == 'Horsens U19']
         player_penalty_area_received = player_penalty_area_entries.groupby(['pass.recipient.name'])['penalty_area_entry'].sum().reset_index()
         player_penalty_area_entries = player_penalty_area_entries.groupby(['player.name'])['penalty_area_entry'].sum().reset_index()
-        player_penalty_area_entries = player_penalty_area_entries.fillna(0)
         penalty_area_entries_location = penalty_area_entries_matches.copy()
         penalty_area_entries_matches['Whole match'] = penalty_area_entries_matches.groupby('label')['penalty_area_entry'].transform('sum')
         penalty_area_entries_matches['Team'] = penalty_area_entries_matches.groupby(['label', 'team.name'])['penalty_area_entry'].transform('sum')
@@ -1239,13 +1238,10 @@ def dashboard():
         # Display the plot in Streamlit
         st.pyplot(fig)
         player_penalty_area_received = player_penalty_area_received.rename(columns={'pass.recipient.name': 'player.name','penalty_area_entry': 'penalty_area_received'})
-        player_penalty_area_received['penalty_area_received'] = player_penalty_area_received['penalty_area_received'].astype(float)
-        player_penalty_area_received.fillna(0, inplace=True)
-        player_penalty_area_entries['penalty_area_entry'] = player_penalty_area_entries['penalty_area_entry'].astype(float)
-        player_penalty_area_entries.fillna(0, inplace=True)
         player_penalty_area_entries = player_penalty_area_entries.merge(player_penalty_area_received, on='player.name', how='outer')
         player_penalty_area_entries['Total'] = player_penalty_area_entries['penalty_area_entry'] + player_penalty_area_entries['penalty_area_received']
         player_penalty_area_entries = player_penalty_area_entries.sort_values('Total', ascending=False)
+        st.write(player_penalty_area_entries.dtypes)
         st.dataframe(player_penalty_area_entries,hide_index=True)
         # Display the plot in Streamlit
         
