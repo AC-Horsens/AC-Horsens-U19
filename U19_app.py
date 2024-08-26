@@ -1200,7 +1200,6 @@ def dashboard():
         player_penalty_area_entries = penalty_area_entries_matches[penalty_area_entries_matches['team.name'] == 'Horsens U19']
         player_penalty_area_received = player_penalty_area_entries.groupby(['pass.recipient.name'])['penalty_area_entry'].sum().reset_index()
         player_penalty_area_entries = player_penalty_area_entries.groupby(['player.name'])['penalty_area_entry'].sum().reset_index()
-        st.dataframe(player_penalty_area_entries, hide_index=True)
         player_penalty_area_entries = player_penalty_area_entries.fillna(0)
         penalty_area_entries_location = penalty_area_entries_matches.copy()
         penalty_area_entries_matches['Whole match'] = penalty_area_entries_matches.groupby('label')['penalty_area_entry'].transform('sum')
@@ -1241,6 +1240,7 @@ def dashboard():
         st.pyplot(fig)
         player_penalty_area_received = player_penalty_area_received.rename(columns={'pass.recipient.name': 'player.name','penalty_area_entry': 'penalty_area_received'})
         player_penalty_area_received = player_penalty_area_received.fillna(0)
+        st.dataframe(player_penalty_area_received,hide_index=True)
         player_penalty_area_entries = player_penalty_area_entries.merge(player_penalty_area_received, on='player.name')
         player_penalty_area_entries['Total'] = player_penalty_area_entries['penalty_area_entry'] + player_penalty_area_entries['penalty_area_received']
         player_penalty_area_entries = player_penalty_area_entries.sort_values('Total', ascending=False)
