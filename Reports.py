@@ -450,11 +450,14 @@ def Process_data_spillere(events,df_xg,df_matchstats):
         df_sekser = calculate_score(df_sekser, 'average_ballRecoveries', 'ballRecovery score')
         df_sekser = calculate_score(df_sekser, 'average_successfulPassesToFinalThird', 'average_successfulPassesToFinalThird score')
         df_sekser = calculate_score(df_sekser, 'percent_successfulProgressivePasses', 'percent_successfulProgressivePasses score')
-
+        df_sekser = calculate_score(df_sekser, 'average_progressivePasses', 'average_progressivePasses score')
+        df_sekser = calculate_score(df_sekser, 'average_touchInBox', 'average_touchInBox score')
+        df_sekser = calculate_score(df_sekser, 'average_shotAssists', 'average_shotAssists score')
+        
         
         df_sekser['Defending'] = df_sekser[['percent_duelsWon score','average_interceptions score','average_interceptions score','ballRecovery score']].mean(axis=1)
         df_sekser['Passing'] = df_sekser[['percent_successfulPasses score','percent_successfulPasses score']].mean(axis=1)
-        df_sekser['Progressive ball movement'] = df_sekser[['Possession value added score','Possession value added score','percent_successfulPassesToFinalThird score']].mean(axis=1)
+        df_sekser['Progressive ball movement'] = df_sekser[['average_shotAssists score','average_progressivePasses score','average_touchInBox score','percent_successfulPassesToFinalThird score','Possession value added score']].mean(axis=1)
         df_sekser['Possession value added'] = df_sekser[['average_successfulPassesToFinalThird score','percent_successfulPassesToFinalThird score','percent_successfulProgressivePasses score','percent_successfulProgressivePasses score']].mean(axis=1)
         
         df_sekser = calculate_score(df_sekser, 'Defending', 'Defending_')
