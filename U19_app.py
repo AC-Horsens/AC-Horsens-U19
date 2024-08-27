@@ -1113,6 +1113,7 @@ def dashboard():
         df_xg_plot = df_xg_plot.groupby(['player.name'])['shot.xg'].sum().reset_index()
         df_xg_plot = df_xg_plot.sort_values('shot.xg', ascending=False)
         st.dataframe(df_xg_plot, hide_index=True)
+        
     def offensive_transitions():
         st.header('Whole season')
         st.write('Transition xg')
@@ -1183,6 +1184,7 @@ def dashboard():
         player_involvement = chance_start.groupby(['player.name'])['possession.attack.xg'].sum().reset_index()
         player_involvement = player_involvement.sort_values('possession.attack.xg', ascending=False)
         st.dataframe(player_involvement, hide_index=True)
+
     def chance_creation():
         st.header('Whole season')
         penalty_area_entries = load_penalty_area_entries()
