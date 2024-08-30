@@ -99,6 +99,7 @@ def Process_data_spillere(events,df_xg,df_matchstats,groundduels):
     
     df_matchstats = df_matchstats[['player.name','team.name','label','position_codes','total_minutesOnField','average_successfulPassesToFinalThird','percent_aerialDuelsWon','percent_newSuccessfulDribbles','average_throughPasses','percent_duelsWon','percent_successfulPassesToFinalThird','average_xgAssist','average_crosses','average_progressivePasses','average_progressiveRun','average_accelerations','average_passesToFinalThird','percent_successfulProgressivePasses','percent_successfulPasses','average_ballRecoveries','average_interceptions','average_defensiveDuels','average_successfulDefensiveAction','average_forwardPasses','average_successfulForwardPasses','average_touchInBox','average_xgShot','average_keyPasses','average_successfulAttackingActions','average_shotAssists']]
     df_scouting = df_xg.merge(df_matchstats,how='right')
+    st.dataframe(df_scouting)
     df_scouting = groundduels.merge(df_matchstats,on=['player.name','team.name', 'label'], how='right')
     df_scouting['penAreaEntries_per90&crosses%shotassists'] = ((df_scouting['average_passesToFinalThird'].astype(float)+df_scouting['average_crosses'].astype(float) + df_scouting['average_xgAssist'].astype(float))/ df_scouting['total_minutesOnField'].astype(float)) * 90
 
