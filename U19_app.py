@@ -105,7 +105,6 @@ def Process_data_spillere(events,df_xg,df_matchstats,groundduels):
 
     df_scouting.fillna(0, inplace=True)
     df_scouting = df_scouting.drop_duplicates(subset=['player.name', 'team.name', 'position_codes','label'])
-    st.dataframe(df_scouting)
 
     def calculate_match_xg(df_scouting):
         # Calculate the total match_xg for each match_id
@@ -224,6 +223,10 @@ def Process_data_spillere(events,df_xg,df_matchstats,groundduels):
         df_backs['total_minutesOnField'] = df_backs['total_minutesOnField'].astype(int)
         df_backs = df_backs[df_backs['total_minutesOnField'].astype(int) >= minutter_kamp]
 
+        df_backs = calculate_score(df_backs,'totalDuels', 'totalDuels score')
+        df_backs = calculate_score(df_backs,'stoppedProgressPercentage', 'stoppedProgressPercentage score')
+        df_backs = calculate_score(df_backs,'recoveredPossessionPercentage', 'recoveredPossessionPercentage score')
+        df_backs = calculate_opposite_score(df_backs,'opponents_xg', 'opponents xg score')
         df_backs = calculate_score(df_backs,'average_successfulAttackingActions', 'Possession value added score')
         df_backs = calculate_score(df_backs, 'percent_duelsWon', 'percent_duelsWon score')
         df_backs = calculate_score(df_backs, 'percent_successfulPassesToFinalThird', 'percent_successfulPassesToFinalThird score')
@@ -237,8 +240,8 @@ def Process_data_spillere(events,df_xg,df_matchstats,groundduels):
         df_backs = calculate_score(df_backs, 'percent_successfulProgressivePasses', 'percent_successfulProgressivePasses score')
         df_backs = calculate_score(df_backs, 'average_successfulPassesToFinalThird', 'average_successfulPassesToFinalThird score')
 
-        df_backs['Defending'] = (df_backs['percent_duelsWon score'] + df_backs['percent_duelsWon score'] + df_backs['average_interceptions score'])/3
-        df_backs['Passing'] = (df_backs['percent_successfulPassesToFinalThird score'] + df_backs['percent_successfulPassesToFinalThird score'] + df_backs['percent_successfulPasses score'] + df_backs['Possession value added score'])/4
+        df_backs['Defending'] = df_backs[['percent_duelsWon score','totalDuels score','stoppedProgressPercentage score','stoppedProgressPercentage score','stoppedProgressPercentage score','recoveredPossessionPercentage score','percent_duelsWon score','average_interceptions score','opponents xg score','']].mean(axis=1)
+        df_backs['Passing'] = df_backs[['percent_successfulPassesToFinalThird score','percent_successfulPassesToFinalThird score','percent_successfulPasses score','Possession value added score']].mean(axis=1)
         df_backs['Chance creation'] = (df_backs['Penalty area entries & crosses & shot assists score'] + df_backs['average_crosses_per90 score'] + df_backs['average_crosses_per90 score'] + df_backs['percent_successfulPassesToFinalThird score']+ df_backs['percent_successfulPassesToFinalThird score'] + df_backs['percent_successfulPassesToFinalThird score']+ df_backs['percent_successfulPassesToFinalThird score'] + df_backs['Possession value added score'] + df_backs['Possession value added score'])/9
         df_backs['Possession value added'] = df_backs[['average_successfulPassesToFinalThird score','percent_successfulPassesToFinalThird score','percent_successfulProgressivePasses score','percent_successfulProgressivePasses score']].mean(axis=1)
         
@@ -266,7 +269,10 @@ def Process_data_spillere(events,df_xg,df_matchstats,groundduels):
         df_sekser = df_sekser[df_sekser['total_minutesOnField'].astype(int) >= minutter_kamp]
 
 
-        
+        df_sekser = calculate_score(df_sekser,'totalDuels', 'totalDuels score')
+        df_sekser = calculate_score(df_sekser,'stoppedProgressPercentage', 'stoppedProgressPercentage score')
+        df_sekser = calculate_score(df_sekser,'recoveredPossessionPercentage', 'recoveredPossessionPercentage score')
+        df_sekser = calculate_opposite_score(df_sekser,'opponents_xg', 'opponents xg score')
         df_sekser = calculate_score(df_sekser,'average_successfulAttackingActions', 'Possession value added score')
         df_sekser = calculate_score(df_sekser, 'percent_duelsWon', 'percent_duelsWon score')
         df_sekser = calculate_score(df_sekser, 'percent_successfulPasses', 'percent_successfulPasses score')
@@ -278,7 +284,7 @@ def Process_data_spillere(events,df_xg,df_matchstats,groundduels):
         df_sekser = calculate_score(df_sekser, 'percent_successfulProgressivePasses', 'percent_successfulProgressivePasses score')
 
         
-        df_sekser['Defending'] = df_sekser[['percent_duelsWon score','average_interceptions score','average_interceptions score','ballRecovery score']].mean(axis=1)
+        df_sekser['Defending'] = df_sekser[['percent_duelsWon score','opponents xg score','totalDuels score','stoppedProgressPercentage score','stoppedProgressPercentage score','recoveredPossessionPercentage score','average_interceptions score','average_interceptions score','ballRecovery score']].mean(axis=1)
         df_sekser['Passing'] = df_sekser[['percent_successfulPasses score','percent_successfulPasses score']].mean(axis=1)
         df_sekser['Progressive ball movement'] = df_sekser[['Possession value added score','Possession value added score','percent_successfulPassesToFinalThird score']].mean(axis=1)
         df_sekser['Possession value added'] = df_sekser[['average_successfulPassesToFinalThird score','percent_successfulPassesToFinalThird score','percent_successfulProgressivePasses score','percent_successfulProgressivePasses score']].mean(axis=1)

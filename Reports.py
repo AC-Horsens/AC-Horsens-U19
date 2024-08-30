@@ -22,7 +22,10 @@ def load_data():
     
     df_ppda = pd.read_csv('C:/Users/SéamusPeareBartholdy/Documents/GitHub/AC-Horsens-U19/ppda.csv')
     
-    return df_xg ,events, df_possession_stats,df_xg_agg, penalty_area_entry_counts, df_matchstats, df_ppda
+    df_groundduels = pd.read_csv('C:/Users/SéamusPeareBartholdy/Documents/GitHub/AC-Horsens-U19/groundduels_per_player.csv')
+    
+    return df_xg ,events, df_possession_stats,df_xg_agg, penalty_area_entry_counts, df_matchstats, df_ppda, df_groundduels
+
 def create_stacked_bar_chart(win_prob, draw_prob, loss_prob, title, filename):
     fig, ax = plt.subplots(figsize=(8, 2))
     
@@ -282,7 +285,7 @@ def create_holdsummary(df_xg, df_matchstats,penalty_area_entry_counts,df_ppda):
     
     return df_holdsummary
 
-def Process_data_spillere(events,df_xg,df_matchstats):
+def Process_data_spillere(events,df_xg,df_matchstats,groundduels):
     xg = events[['player.name','label','shot.xg']]
     xg['shot.xg'] = xg['shot.xg'].astype(float)
     xg = xg.groupby(['player.name','label']).sum().reset_index()
@@ -292,15 +295,36 @@ def Process_data_spillere(events,df_xg,df_matchstats):
         df_unique.loc[:, score_column] = pd.qcut(df_unique[column], q=10, labels=False, duplicates='raise') + 1
         return df.merge(df_unique[[column, score_column]], on=column, how='left')
     
+    def calculate_opposite_score(df, column, score_column):
+        df_unique = df.drop_duplicates(column).copy()
+        df_unique.loc[:, score_column] = pd.qcut(-df_unique[column], q=10, labels=False, duplicates='raise') + 1
+        return df.merge(df_unique[[column, score_column]], on=column, how='left')
     minutter_kamp = 45
     minutter_total = 300
     
     df_matchstats = df_matchstats[['player.name','team.name','label','position_codes','total_minutesOnField','average_successfulPassesToFinalThird','percent_aerialDuelsWon','percent_newSuccessfulDribbles','average_throughPasses','percent_duelsWon','percent_successfulPassesToFinalThird','average_xgAssist','average_crosses','average_progressivePasses','average_progressiveRun','average_accelerations','average_passesToFinalThird','percent_successfulProgressivePasses','percent_successfulPasses','average_ballRecoveries','average_interceptions','average_defensiveDuels','average_successfulDefensiveAction','average_forwardPasses','average_successfulForwardPasses','average_touchInBox','average_xgShot','average_keyPasses','average_successfulAttackingActions','average_shotAssists']]
     df_scouting = df_xg.merge(df_matchstats,how='right')
+    df_scouting = groundduels.merge(df_scouting,on=['player.name','team.name', 'label'],how='right')
     df_scouting['penAreaEntries_per90&crosses%shotassists'] = ((df_scouting['average_passesToFinalThird'].astype(float)+df_scouting['average_crosses'].astype(float) + df_scouting['average_xgAssist'].astype(float))/ df_scouting['total_minutesOnField'].astype(float)) * 90
 
     df_scouting.fillna(0, inplace=True)
     df_scouting = df_scouting.drop_duplicates(subset=['player.name', 'team.name', 'position_codes','label'])
+
+    def calculate_match_xg(df_scouting):
+        # Calculate the total match_xg for each match_id
+        df_scouting['match_xg'] = df_scouting.groupby('label')['shot.xg'].transform('sum')
+        
+        # Calculate the total team_xg for each team in each match
+        df_scouting['team_xg'] = df_scouting.groupby(['team.name', 'label'])['shot.xg'].transform('sum')
+        
+        # Calculate opponents_xg as match_xg - team_xg
+        df_scouting['opponents_xg'] = df_scouting['match_xg'] - df_scouting['team_xg']
+        df_scouting['opponents_xg'] = pd.to_numeric(df_scouting['opponents_xg'], errors='coerce')
+       
+        return df_scouting
+
+    df_scouting = calculate_match_xg(df_scouting)
+    df_scouting.fillna(0, inplace=True)
 
     def ball_playing_central_defender():
         df_spillende_stopper = df_scouting[df_scouting['player_codes'].str.contains('cb')]
@@ -367,7 +391,10 @@ def Process_data_spillere(events,df_xg,df_matchstats):
         df_balanced_central_defender = df_scouting[df_scouting['position_codes'].str.contains('cb')]
         df_balanced_central_defender['total_minutesOnField'] = df_balanced_central_defender['total_minutesOnField'].astype(int)
         df_balanced_central_defender = df_balanced_central_defender[df_balanced_central_defender['total_minutesOnField'].astype(int) >= minutter_kamp]
-        
+        df_balanced_central_defender = calculate_opposite_score(df_balanced_central_defender,'opponents_xg', 'opponents xg score')
+        df_balanced_central_defender = calculate_score(df_balanced_central_defender,'totalDuels', 'totalDuels score')
+        df_balanced_central_defender = calculate_score(df_balanced_central_defender,'stoppedProgressPercentage', 'stoppedProgressPercentage score')
+        df_balanced_central_defender = calculate_score(df_balanced_central_defender,'recoveredPossessionPercentage', 'recoveredPossessionPercentage score')
         df_balanced_central_defender = calculate_score(df_balanced_central_defender, 'percent_duelsWon', 'percent_duelsWon score')
         df_balanced_central_defender = calculate_score(df_balanced_central_defender, 'average_interceptions', 'average_interceptions score')
         df_balanced_central_defender = calculate_score(df_balanced_central_defender, 'average_ballRecoveries', 'ballRecovery score')
@@ -378,7 +405,7 @@ def Process_data_spillere(events,df_xg,df_matchstats):
         df_balanced_central_defender = calculate_score(df_balanced_central_defender, 'average_progressivePasses', 'average_progressivePasses score')
         df_balanced_central_defender = calculate_score(df_balanced_central_defender, 'percent_successfulProgressivePasses', 'percent_successfulProgressivePasses score')
 
-        df_balanced_central_defender['Defending'] = df_balanced_central_defender[['percent_duelsWon score','percent_aerialDuelsWon score', 'average_interceptions score', 'average_interceptions score', 'ballRecovery score']].mean(axis=1)
+        df_balanced_central_defender['Defending'] = df_balanced_central_defender[['percent_duelsWon score','totalDuels score','stoppedProgressPercentage score','stoppedProgressPercentage score','recoveredPossessionPercentage score','stoppedProgressPercentage score','opponents xg score','opponents xg score','percent_aerialDuelsWon score', 'average_interceptions score', 'average_interceptions score', 'ballRecovery score']].mean(axis=1)
         df_balanced_central_defender['Possession value added'] = df_balanced_central_defender[['average_successfulPassesToFinalThird score','percent_successfulPassesToFinalThird score','percent_successfulProgressivePasses score','percent_successfulProgressivePasses score']].mean(axis=1)
         df_balanced_central_defender['Passing'] = df_balanced_central_defender[['percent_successfulPasses score', 'percent_successfulPasses score','percent_successfulPassesToFinalThird score']].mean(axis=1)
         df_balanced_central_defender['Total score'] = df_balanced_central_defender[['Defending','Possession value added','Passing']].mean(axis=1)
@@ -400,6 +427,10 @@ def Process_data_spillere(events,df_xg,df_matchstats):
         df_backs['total_minutesOnField'] = df_backs['total_minutesOnField'].astype(int)
         df_backs = df_backs[df_backs['total_minutesOnField'].astype(int) >= minutter_kamp]
 
+        df_backs = calculate_score(df_backs,'totalDuels', 'totalDuels score')
+        df_backs = calculate_score(df_backs,'stoppedProgressPercentage', 'stoppedProgressPercentage score')
+        df_backs = calculate_score(df_backs,'recoveredPossessionPercentage', 'recoveredPossessionPercentage score')
+        df_backs = calculate_opposite_score(df_backs,'opponents_xg', 'opponents xg score')
         df_backs = calculate_score(df_backs,'average_successfulAttackingActions', 'Possession value added score')
         df_backs = calculate_score(df_backs, 'percent_duelsWon', 'percent_duelsWon score')
         df_backs = calculate_score(df_backs, 'percent_successfulPassesToFinalThird', 'percent_successfulPassesToFinalThird score')
@@ -413,8 +444,8 @@ def Process_data_spillere(events,df_xg,df_matchstats):
         df_backs = calculate_score(df_backs, 'percent_successfulProgressivePasses', 'percent_successfulProgressivePasses score')
         df_backs = calculate_score(df_backs, 'average_successfulPassesToFinalThird', 'average_successfulPassesToFinalThird score')
 
-        df_backs['Defending'] = (df_backs['percent_duelsWon score'] + df_backs['percent_duelsWon score'] + df_backs['average_interceptions score'])/3
-        df_backs['Passing'] = (df_backs['percent_successfulPassesToFinalThird score'] + df_backs['percent_successfulPassesToFinalThird score'] + df_backs['percent_successfulPasses score'] + df_backs['Possession value added score'])/4
+        df_backs['Defending'] = df_backs[['percent_duelsWon score','totalDuels score','stoppedProgressPercentage score','stoppedProgressPercentage score','stoppedProgressPercentage score','recoveredPossessionPercentage score','percent_duelsWon score','average_interceptions score','opponents xg score']].mean(axis=1)
+        df_backs['Passing'] = df_backs[['percent_successfulPassesToFinalThird score','percent_successfulPassesToFinalThird score','percent_successfulPasses score','Possession value added score']].mean(axis=1)
         df_backs['Chance creation'] = (df_backs['Penalty area entries & crosses & shot assists score'] + df_backs['average_crosses_per90 score'] + df_backs['average_crosses_per90 score'] + df_backs['percent_successfulPassesToFinalThird score']+ df_backs['percent_successfulPassesToFinalThird score'] + df_backs['percent_successfulPassesToFinalThird score']+ df_backs['percent_successfulPassesToFinalThird score'] + df_backs['Possession value added score'] + df_backs['Possession value added score'])/9
         df_backs['Possession value added'] = df_backs[['average_successfulPassesToFinalThird score','percent_successfulPassesToFinalThird score','percent_successfulProgressivePasses score','percent_successfulProgressivePasses score']].mean(axis=1)
         
@@ -441,6 +472,11 @@ def Process_data_spillere(events,df_xg,df_matchstats):
         df_sekser['total_minutesOnField'] = df_sekser['total_minutesOnField'].astype(int)
         df_sekser = df_sekser[df_sekser['total_minutesOnField'].astype(int) >= minutter_kamp]
 
+
+        df_sekser = calculate_score(df_sekser,'totalDuels', 'totalDuels score')
+        df_sekser = calculate_score(df_sekser,'stoppedProgressPercentage', 'stoppedProgressPercentage score')
+        df_sekser = calculate_score(df_sekser,'recoveredPossessionPercentage', 'recoveredPossessionPercentage score')
+        df_sekser = calculate_opposite_score(df_sekser,'opponents_xg', 'opponents xg score')
         df_sekser = calculate_score(df_sekser,'average_successfulAttackingActions', 'Possession value added score')
         df_sekser = calculate_score(df_sekser, 'percent_duelsWon', 'percent_duelsWon score')
         df_sekser = calculate_score(df_sekser, 'percent_successfulPasses', 'percent_successfulPasses score')
@@ -450,14 +486,11 @@ def Process_data_spillere(events,df_xg,df_matchstats):
         df_sekser = calculate_score(df_sekser, 'average_ballRecoveries', 'ballRecovery score')
         df_sekser = calculate_score(df_sekser, 'average_successfulPassesToFinalThird', 'average_successfulPassesToFinalThird score')
         df_sekser = calculate_score(df_sekser, 'percent_successfulProgressivePasses', 'percent_successfulProgressivePasses score')
-        df_sekser = calculate_score(df_sekser, 'average_progressivePasses', 'average_progressivePasses score')
-        df_sekser = calculate_score(df_sekser, 'average_touchInBox', 'average_touchInBox score')
-        df_sekser = calculate_score(df_sekser, 'average_shotAssists', 'average_shotAssists score')
+
         
-        
-        df_sekser['Defending'] = df_sekser[['percent_duelsWon score','average_interceptions score','average_interceptions score','ballRecovery score']].mean(axis=1)
+        df_sekser['Defending'] = df_sekser[['percent_duelsWon score','opponents xg score','totalDuels score','stoppedProgressPercentage score','stoppedProgressPercentage score','recoveredPossessionPercentage score','average_interceptions score','average_interceptions score','ballRecovery score']].mean(axis=1)
         df_sekser['Passing'] = df_sekser[['percent_successfulPasses score','percent_successfulPasses score']].mean(axis=1)
-        df_sekser['Progressive ball movement'] = df_sekser[['average_shotAssists score','average_progressivePasses score','average_touchInBox score','percent_successfulPassesToFinalThird score','Possession value added score']].mean(axis=1)
+        df_sekser['Progressive ball movement'] = df_sekser[['Possession value added score','Possession value added score','percent_successfulPassesToFinalThird score']].mean(axis=1)
         df_sekser['Possession value added'] = df_sekser[['average_successfulPassesToFinalThird score','percent_successfulPassesToFinalThird score','percent_successfulProgressivePasses score','percent_successfulProgressivePasses score']].mean(axis=1)
         
         df_sekser = calculate_score(df_sekser, 'Defending', 'Defending_')
@@ -607,7 +640,7 @@ def Process_data_spillere(events,df_xg,df_matchstats):
         return df_otter
         
     def number10():
-        df_10 = df_scouting[(df_scouting['position_codes'].str.contains('amf')) | df_scouting['position_codes'].str.contains('cmf') & (~df_scouting['position_codes'].str.contains('lamf|ramf'))]
+        df_10 = df_scouting[(df_scouting['position_codes'].str.contains('amf'))]
         df_10['total_minutesOnField'] = df_10['total_minutesOnField'].astype(int)
         df_10 = df_10[df_10['total_minutesOnField'].astype(int) >= minutter_kamp]
         
@@ -636,7 +669,7 @@ def Process_data_spillere(events,df_xg,df_matchstats):
         df_10 = calculate_score(df_10, 'Goalscoring','Goalscoring_')        
         df_10 = calculate_score(df_10, 'Possession value', 'Possession_value')
         
-        df_10['Total score'] = df_10[['Passing_','Chance_creation','Chance_creation','Chance_creation','Chance_creation','Goalscoring_','Goalscoring_','Goalscoring_','Possession_value','Possession_value','Possession_value']].mean(axis=1)
+        df_10['Total score'] = df_10[['Passing_','Chance_creation','Chance_creation','Chance_creation','Goalscoring_','Goalscoring_','Possession_value','Possession_value']].mean(axis=1)
         df_10 = df_10[['player.name','team.name','label','total_minutesOnField','Passing_','Chance_creation','Goalscoring_','Possession_value','Total score']]
         df_10 = df_10.dropna()
         df_10total = df_10[['player.name','team.name','total_minutesOnField','Passing_','Chance_creation','Goalscoring_','Possession_value','Total score']]
@@ -725,7 +758,7 @@ def Process_data_spillere(events,df_xg,df_matchstats):
         df_striker = calculate_score(df_striker, 'Possession_value', 'Possession value')
 
         
-        df_striker['Total score'] = df_striker[['Linkup play','Chance creation','Goalscoring','Possession value']].mean(axis=1)
+        df_striker['Total score'] = df_striker[['Linkup play','Chance creation','Goalscoring','Goalscoring','Possession value']].mean(axis=1)
         df_striker = df_striker[['player.name','team.name','label','total_minutesOnField','Linkup play','Chance creation','Goalscoring','Possession value','Total score']]
         df_striker = df_striker.dropna()
 
@@ -848,8 +881,8 @@ def Process_data_spillere(events,df_xg,df_matchstats):
         'Classic striker': Classic_striker(),
     }
 
-df_xg ,events, df_possession_stats,df_xg_agg, penalty_area_entry_counts, df_matchstats, df_ppda = load_data()
-position_dataframes = Process_data_spillere(events,df_xg,df_matchstats)
+df_xg ,events, df_possession_stats,df_xg_agg, penalty_area_entry_counts, df_matchstats, df_ppda, df_groundduels = load_data()
+position_dataframes = Process_data_spillere(events,df_xg,df_matchstats,df_groundduels)
 
 #defending_central_defender_df = position_dataframes['defending_central_defender']
 #ball_playing_central_defender_df = position_dataframes['ball_playing_central_defender']
