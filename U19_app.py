@@ -75,6 +75,7 @@ def load_possession_stats():
     df_possession_stats['label'] = df_possession_stats['label'] + ' ' + df_possession_stats['date']
     return df_possession_stats
 
+@st.cache_data
 def load_groundduels():
     groundduels = pd.read_csv(r'groundduels_per_player.csv')
     return groundduels
@@ -101,10 +102,10 @@ def Process_data_spillere(events,df_xg,df_matchstats,groundduels):
     df_scouting = df_xg.merge(df_matchstats,how='right')
     df_scouting = groundduels.merge(df_scouting,on=['player.name','team.name', 'label'],how='right')
     df_scouting['penAreaEntries_per90&crosses%shotassists'] = ((df_scouting['average_passesToFinalThird'].astype(float)+df_scouting['average_crosses'].astype(float) + df_scouting['average_xgAssist'].astype(float))/ df_scouting['total_minutesOnField'].astype(float)) * 90
-    st.dataframe(df_scouting)
 
     df_scouting.fillna(0, inplace=True)
     df_scouting = df_scouting.drop_duplicates(subset=['player.name', 'team.name', 'position_codes','label'])
+    st.dataframe(df_scouting)
 
     def calculate_match_xg(df_scouting):
         # Calculate the total match_xg for each match_id
@@ -264,6 +265,8 @@ def Process_data_spillere(events,df_xg,df_matchstats,groundduels):
         df_sekser['total_minutesOnField'] = df_sekser['total_minutesOnField'].astype(int)
         df_sekser = df_sekser[df_sekser['total_minutesOnField'].astype(int) >= minutter_kamp]
 
+
+        
         df_sekser = calculate_score(df_sekser,'average_successfulAttackingActions', 'Possession value added score')
         df_sekser = calculate_score(df_sekser, 'percent_duelsWon', 'percent_duelsWon score')
         df_sekser = calculate_score(df_sekser, 'percent_successfulPasses', 'percent_successfulPasses score')
