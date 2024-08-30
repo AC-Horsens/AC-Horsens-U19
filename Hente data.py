@@ -46,8 +46,23 @@ kampdetaljer = json_normalize(json_files)
 kampdetaljer = kampdetaljer[['wyId','label','date']]
 kampdetaljer = kampdetaljer.rename(columns={'wyId':'matchId'})
 events = kampdetaljer.merge(df)
+groundduel = events[events['groundDuel.duelType'] == 'defensive_duel']
+groundduel = groundduel[['team.name','label','player.name','groundDuel.stoppedProgress','groundDuel.recoveredPossession']]
+
+player_stats = groundduel.groupby(['player.name','team.name','label']).agg(
+    stoppedProgressCount=('groundDuel.stoppedProgress', 'sum'),
+    recoveredPossessionCount=('groundDuel.recoveredPossession', 'sum'),
+    totalDuels=('groundDuel.stoppedProgress', 'count')
+).reset_index()
+
+# Calculate the percentage of True values for each player
+player_stats['stoppedProgressPercentage'] = (player_stats['stoppedProgressCount'] / player_stats['totalDuels']) * 100
+player_stats['recoveredPossessionPercentage'] = (player_stats['recoveredPossessionCount'] / player_stats['totalDuels']) * 100
+
+# Save to CSV
+player_stats.to_csv('groundduels_per_player.csv', index=False)
+
 events = events[['id','player.name', 'player.id', 'team.name', 'matchId','pass.recipient.name','pass.accurate','label','date','minute','second','groundDuel','aerialDuel','infraction','carry','type.primary','type.secondary','location.x','location.y','pass.endLocation.x','pass.endLocation.y','carry.endLocation.x','carry.endLocation.y','shot.xg','possession.types','possession.eventsNumber','possession.eventIndex','possession.startLocation.x','possession.startLocation.y','possession.endLocation.x','possession.endLocation.y','possession.team.name','possession.attack.xg']]
-events.to_csv('events.csv', index=False)
 transitions = events[events['possession.eventsNumber']<=15]
 exclude_types = ['throw_in', 'set_piece_attack', 'free_kick', 'corner']
 
