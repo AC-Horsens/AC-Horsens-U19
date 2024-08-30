@@ -187,9 +187,9 @@ def Process_data_spillere(events,df_xg,df_matchstats,groundduels):
         df_balanced_central_defender['total_minutesOnField'] = df_balanced_central_defender['total_minutesOnField'].astype(int)
         df_balanced_central_defender = df_balanced_central_defender[df_balanced_central_defender['total_minutesOnField'].astype(int) >= minutter_kamp]
         df_balanced_central_defender = calculate_opposite_score(df_balanced_central_defender,'opponents_xg', 'opponents xg score')
-        df_balanced_central_defender = calculate_opposite_score(df_balanced_central_defender,'totalDuels', 'totalDuels score')
-        df_balanced_central_defender = calculate_opposite_score(df_balanced_central_defender,'stoppedProgressPercentage', 'stoppedProgressPercentage score')
-        df_balanced_central_defender = calculate_opposite_score(df_balanced_central_defender,'recoveredPossessionPercentage', 'recoveredPossessionPercentage score')
+        df_balanced_central_defender = calculate_score(df_balanced_central_defender,'totalDuels', 'totalDuels score')
+        df_balanced_central_defender = calculate_score(df_balanced_central_defender,'stoppedProgressPercentage', 'stoppedProgressPercentage score')
+        df_balanced_central_defender = calculate_score(df_balanced_central_defender,'recoveredPossessionPercentage', 'recoveredPossessionPercentage score')
         df_balanced_central_defender = calculate_score(df_balanced_central_defender, 'percent_duelsWon', 'percent_duelsWon score')
         df_balanced_central_defender = calculate_score(df_balanced_central_defender, 'average_interceptions', 'average_interceptions score')
         df_balanced_central_defender = calculate_score(df_balanced_central_defender, 'average_ballRecoveries', 'ballRecovery score')
