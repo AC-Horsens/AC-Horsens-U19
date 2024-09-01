@@ -3,10 +3,16 @@ label,team.name,date,PPDA
 "AaB U19 - Randers U19, 0 - 3",Randers U19,"August 24, 2024 at 1:00:00 PM GMT+2",11.521739130434783
 "Brøndby U19 - Midtjylland U19, 4 - 0",Brøndby U19,"August 27, 2024 at 12:30:00 PM GMT+2",14.571428571428571
 "Brøndby U19 - Midtjylland U19, 4 - 0",Midtjylland U19,"August 27, 2024 at 12:30:00 PM GMT+2",28.25
+"Brøndby U19 - OB U19, 2 - 3",Brøndby U19,"August 31, 2024 at 12:30:00 PM GMT+2",13.75
+"Brøndby U19 - OB U19, 2 - 3",OB U19,"August 31, 2024 at 12:30:00 PM GMT+2",14.933333333333334
 "Brøndby U19 - Silkeborg U19, 2 - 3",Brøndby U19,"August 17, 2024 at 12:00:00 PM GMT+2",6.133333333333334
 "Brøndby U19 - Silkeborg U19, 2 - 3",Silkeborg U19,"August 17, 2024 at 12:00:00 PM GMT+2",28.615384615384617
 "Esbjerg U19 - AGF U19, 1 - 2",AGF U19,"August 16, 2024 at 2:00:00 PM GMT+2",13.777777777777779
 "Esbjerg U19 - AGF U19, 1 - 2",Esbjerg U19,"August 16, 2024 at 2:00:00 PM GMT+2",6.523809523809524
+"Esbjerg U19 - SønderjyskE U19, 2 - 0",Esbjerg U19,"August 31, 2024 at 12:00:00 PM GMT+2",17.384615384615383
+"Esbjerg U19 - SønderjyskE U19, 2 - 0",SønderjyskE U19,"August 31, 2024 at 12:00:00 PM GMT+2",8.148148148148149
+"Horsens U19 - AGF U19, 1 - 1 (P)",AGF U19,"August 31, 2024 at 12:30:00 PM GMT+2",18.833333333333332
+"Horsens U19 - AGF U19, 1 - 1 (P)",Horsens U19,"August 31, 2024 at 12:30:00 PM GMT+2",9.157894736842104
 "Horsens U19 - Midtjylland U19, 0 - 2",Horsens U19,"August 17, 2024 at 12:30:00 PM GMT+2",11.761904761904763
 "Horsens U19 - Midtjylland U19, 0 - 2",Midtjylland U19,"August 17, 2024 at 12:30:00 PM GMT+2",5.809523809523809
 "Lyngby U19 - Esbjerg U19, 1 - 1 (P)",Esbjerg U19,"August 24, 2024 at 1:00:00 PM GMT+2",13.210526315789474
@@ -15,6 +21,8 @@ label,team.name,date,PPDA
 "Nordsjælland U19 - AaB U19, 2 - 0",Nordsjælland U19,"August 17, 2024 at 1:00:00 PM GMT+2",3.90625
 "OB U19 - Vejle U19, 4 - 0",OB U19,"August 17, 2024 at 12:30:00 PM GMT+2",8.478260869565217
 "OB U19 - Vejle U19, 4 - 0",Vejle U19,"August 17, 2024 at 12:30:00 PM GMT+2",22.714285714285715
+"Randers U19 - Lyngby U19, 0 - 2",Lyngby U19,"August 31, 2024 at 1:00:00 PM GMT+2",25.53846153846154
+"Randers U19 - Lyngby U19, 0 - 2",Randers U19,"August 31, 2024 at 1:00:00 PM GMT+2",6.035714285714286
 "Randers U19 - SønderjyskE U19, 0 - 2",Randers U19,"August 17, 2024 at 1:00:00 PM GMT+2",19.083333333333332
 "Randers U19 - SønderjyskE U19, 0 - 2",SønderjyskE U19,"August 17, 2024 at 1:00:00 PM GMT+2",13.181818181818182
 "Silkeborg U19 - Horsens U19, 1 - 1 (P)",Horsens U19,"August 24, 2024 at 1:00:00 PM GMT+2",16.45
