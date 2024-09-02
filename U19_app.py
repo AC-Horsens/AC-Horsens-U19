@@ -1493,7 +1493,7 @@ def opposition_analysis():
 
 def keeper_ratings():
     gc = gspread.service_account('wellness-1123-178fea106d0a.json')
-    sh = gc.open_by_url('https://docs.google.com/forms/d/12nSw18jaWIdrqDr7VoesBXfxJqYcAhe41s46GuEtxjc/edit')
+    sh = gc.open_by_url('https://docs.google.com/spreadsheets/d/1e5kAIxFAMmTSuamV1E_ymgzva0rLA6Q4oM21VRU6FwI/edit?resourcekey=&gid=1263806243#gid=1263806243')
     ws = sh.worksheet('Formularsvar 1')
     df = pd.DataFrame(ws.get_all_records())
     df['Tidsstempel'] = pd.to_datetime(df['Tidsstempel'],dayfirst=True, format='%d/%m/%Y %H.%M.%S')
