@@ -7,6 +7,7 @@ from scipy.ndimage import gaussian_filter
 import gspread
 import plotly.graph_objs as go
 from datetime import datetime
+from dateutil import parser
 
 
 st.set_page_config(layout="wide")
@@ -1472,13 +1473,23 @@ def dashboard():
 
 def opposition_analysis():
     st.dataframe(df_matchstats)
+    df_matchstats['date'] = df_matchstats['date'].str.replace('GMT\+(\d)$', r'GMT+0\1:00')
+
+    # Use dateutil parser to parse the dates
     date_times = []
     for date in df_matchstats['date']:
         try:
-            date_time = datetime.strptime(date, "%B %d, %Y at %I:%M:%S %p GMT%z")
+            date_time = parser.parse(date)
             date_times.append(date_time)
         except ValueError:
             st.write(f"Invalid date format: {date}")
+
+    # Streamlit slider for date selection
+    if date_times:
+        selected_date = st.slider("Select a date:", min_value=min(date_times), max_value=max(date_times), value=min(date_times))
+        st.write(f"Selected Date and Time: {selected_date}")
+    else:
+        st.write("No valid dates available for selection.")
 
 Data_types = {
     'Dashboard': dashboard,
