@@ -1,43 +1,95 @@
 player.name,team.name,label,pass.recipient.name,date,location.x,location.y,pass.endLocation.x,pass.endLocation.y,carry.endLocation.x,carry.endLocation.y,penalty_area_entry
+M. Svane,Esbjerg U19,"Esbjerg U19 - AGF U19, 1 - 2",C. Storch,"August 16, 2024 at 2:00:00 PM GMT+2",88.0,0.0,89.0,34.0,,,True
 G. Efe Egbedi,AGF U19,"Esbjerg U19 - AGF U19, 1 - 2",A. Drexel,"August 16, 2024 at 2:00:00 PM GMT+2",94.0,13.0,95.0,44.0,,,True
 G. Efe Egbedi,AGF U19,"Esbjerg U19 - AGF U19, 1 - 2",,"August 16, 2024 at 2:00:00 PM GMT+2",87.0,15.0,,,97.0,27.0,True
 K. Pedersen,Esbjerg U19,"Esbjerg U19 - AGF U19, 1 - 2",M. Kruse,"August 16, 2024 at 2:00:00 PM GMT+2",72.0,83.0,96.0,75.0,,,True
 A. Skovgaard,AGF U19,"Esbjerg U19 - AGF U19, 1 - 2",M. Engsted,"August 16, 2024 at 2:00:00 PM GMT+2",92.0,12.0,89.0,71.0,,,True
+F. Elkjær Andersen,AGF U19,"Esbjerg U19 - AGF U19, 1 - 2",A. Drexel,"August 16, 2024 at 2:00:00 PM GMT+2",100.0,100.0,98.0,51.0,,,True
+M. Svane,Esbjerg U19,"Esbjerg U19 - AGF U19, 1 - 2",C. Storch,"August 16, 2024 at 2:00:00 PM GMT+2",84.0,17.0,91.0,36.0,,,True
 R. Zwinge,Esbjerg U19,"Esbjerg U19 - AGF U19, 1 - 2",S. Stefánsson,"August 16, 2024 at 2:00:00 PM GMT+2",78.0,3.0,86.0,30.0,,,True
 M. Svane,Esbjerg U19,"Esbjerg U19 - AGF U19, 1 - 2",,"August 16, 2024 at 2:00:00 PM GMT+2",75.0,13.0,,,91.0,21.0,True
 E. Larsen,Esbjerg U19,"Esbjerg U19 - AGF U19, 1 - 2",C. Storch,"August 16, 2024 at 2:00:00 PM GMT+2",78.0,78.0,91.0,46.0,,,True
+S. Stefánsson,AGF U19,"Esbjerg U19 - AGF U19, 1 - 2",L. Falk Hansen,"August 16, 2024 at 2:00:00 PM GMT+2",36.0,75.0,90.0,68.0,,,True
+S. Schøt,AGF U19,"Esbjerg U19 - AGF U19, 1 - 2",A. Drexel,"August 16, 2024 at 2:00:00 PM GMT+2",95.0,10.0,98.0,51.0,,,True
+O. Haugstrup,AGF U19,"Esbjerg U19 - AGF U19, 1 - 2",F. Elkjær Andersen,"August 16, 2024 at 2:00:00 PM GMT+2",69.0,33.0,88.0,29.0,,,True
 O. Haugstrup,AGF U19,"Esbjerg U19 - AGF U19, 1 - 2",M. Svane,"August 16, 2024 at 2:00:00 PM GMT+2",71.0,46.0,84.0,76.0,,,True
 M. Svane,Esbjerg U19,"Esbjerg U19 - AGF U19, 1 - 2",A. Lund Jørgensen,"August 16, 2024 at 2:00:00 PM GMT+2",75.0,5.0,86.0,36.0,,,True
 K. Pedersen,Esbjerg U19,"Esbjerg U19 - AGF U19, 1 - 2",M. Kruse,"August 16, 2024 at 2:00:00 PM GMT+2",80.0,74.0,91.0,57.0,,,True
 E. Larsen,Esbjerg U19,"Esbjerg U19 - AGF U19, 1 - 2",K. Pedersen,"August 16, 2024 at 2:00:00 PM GMT+2",85.0,87.0,91.0,59.0,,,True
 P. Nielsen,Esbjerg U19,"Esbjerg U19 - AGF U19, 1 - 2",M. Kruse,"August 16, 2024 at 2:00:00 PM GMT+2",75.0,42.0,86.0,73.0,,,True
+S. Stefánsson,AGF U19,"Esbjerg U19 - AGF U19, 1 - 2",R. Düring,"August 16, 2024 at 2:00:00 PM GMT+2",11.0,70.0,93.0,71.0,,,True
+A. Lund Jørgensen,Esbjerg U19,"Esbjerg U19 - AGF U19, 1 - 2",P. Nielsen,"August 16, 2024 at 2:00:00 PM GMT+2",82.0,8.0,88.0,34.0,,,True
+E. Larsen,Esbjerg U19,"Esbjerg U19 - AGF U19, 1 - 2",K. Pedersen,"August 16, 2024 at 2:00:00 PM GMT+2",78.0,85.0,92.0,73.0,,,True
+S. Schøt,AGF U19,"Esbjerg U19 - AGF U19, 1 - 2",A. Drexel,"August 16, 2024 at 2:00:00 PM GMT+2",43.0,8.0,90.0,47.0,46.0,23.0,True
+F. Elkjær Andersen,AGF U19,"Esbjerg U19 - AGF U19, 1 - 2",E. Omerovic,"August 16, 2024 at 2:00:00 PM GMT+2",73.0,26.0,88.0,51.0,,,True
+F. Elkjær Andersen,AGF U19,"Esbjerg U19 - AGF U19, 1 - 2",R. Zwinge,"August 16, 2024 at 2:00:00 PM GMT+2",100.0,100.0,96.0,46.0,,,True
+O. Haugstrup,AGF U19,"Esbjerg U19 - AGF U19, 1 - 2",S. Schøt,"August 16, 2024 at 2:00:00 PM GMT+2",76.0,55.0,89.0,38.0,,,True
+O. Haugstrup,AGF U19,"Esbjerg U19 - AGF U19, 1 - 2",M. Svane,"August 16, 2024 at 2:00:00 PM GMT+2",34.0,31.0,96.0,79.0,,,True
+F. Emmery,AGF U19,"Esbjerg U19 - AGF U19, 1 - 2",A. Drexel,"August 16, 2024 at 2:00:00 PM GMT+2",81.0,71.0,96.0,53.0,,,True
 R. Düring,AGF U19,"Esbjerg U19 - AGF U19, 1 - 2",R. Zwinge,"August 16, 2024 at 2:00:00 PM GMT+2",81.0,92.0,93.0,68.0,,,True
+F. Elkjær Andersen,AGF U19,"Esbjerg U19 - AGF U19, 1 - 2",S. Schøt,"August 16, 2024 at 2:00:00 PM GMT+2",100.0,100.0,97.0,48.0,,,True
+F. Elkjær Andersen,AGF U19,"Esbjerg U19 - AGF U19, 1 - 2",K. Pedersen,"August 16, 2024 at 2:00:00 PM GMT+2",100.0,0.0,92.0,40.0,,,True
 F. Emmery,AGF U19,"Esbjerg U19 - AGF U19, 1 - 2",M. Engsted,"August 16, 2024 at 2:00:00 PM GMT+2",94.0,17.0,89.0,66.0,,,True
 M. Engsted,Esbjerg U19,"Esbjerg U19 - AGF U19, 1 - 2",M. Svane,"August 16, 2024 at 2:00:00 PM GMT+2",74.0,6.0,92.0,19.0,,,True
 M. Svane,Esbjerg U19,"Esbjerg U19 - AGF U19, 1 - 2",,"August 16, 2024 at 2:00:00 PM GMT+2",75.0,29.0,100.0,57.0,,,True
 L. Falk Hansen,AGF U19,"Esbjerg U19 - AGF U19, 1 - 2",F. Emmery,"August 16, 2024 at 2:00:00 PM GMT+2",69.0,51.0,88.0,31.0,,,True
+M. Kruse,Esbjerg U19,"Esbjerg U19 - AGF U19, 1 - 2",R. Zwinge,"August 16, 2024 at 2:00:00 PM GMT+2",86.0,0.0,91.0,33.0,,,True
+M. Kruse,Esbjerg U19,"Esbjerg U19 - AGF U19, 1 - 2",A. Skovgaard,"August 16, 2024 at 2:00:00 PM GMT+2",81.0,100.0,96.0,71.0,87.0,86.0,True
+M. Kruse,Esbjerg U19,"Esbjerg U19 - AGF U19, 1 - 2",F. Elkjær Andersen,"August 16, 2024 at 2:00:00 PM GMT+2",87.0,86.0,96.0,57.0,,,True
+M. Svane,Esbjerg U19,"Esbjerg U19 - AGF U19, 1 - 2",R. Düring,"August 16, 2024 at 2:00:00 PM GMT+2",100.0,100.0,92.0,65.0,,,True
 K. Pedersen,Esbjerg U19,"Esbjerg U19 - AGF U19, 1 - 2",C. Storch,"August 16, 2024 at 2:00:00 PM GMT+2",83.0,92.0,92.0,56.0,,,True
+M. Svane,Esbjerg U19,"Esbjerg U19 - AGF U19, 1 - 2",W. Rygaard,"August 16, 2024 at 2:00:00 PM GMT+2",100.0,100.0,98.0,54.0,,,True
+F. Elkjær Andersen,AGF U19,"Esbjerg U19 - AGF U19, 1 - 2",,"August 16, 2024 at 2:00:00 PM GMT+2",72.0,34.0,88.0,56.0,,,True
+O. Haugstrup,AGF U19,"Esbjerg U19 - AGF U19, 1 - 2",A. Skovgaard,"August 16, 2024 at 2:00:00 PM GMT+2",42.0,28.0,97.0,30.0,,,True
+E. Larsen,Esbjerg U19,"Esbjerg U19 - AGF U19, 1 - 2",S. Schøt,"August 16, 2024 at 2:00:00 PM GMT+2",29.0,90.0,93.0,76.0,,,True
+M. Svane,Esbjerg U19,"Esbjerg U19 - AGF U19, 1 - 2",E. Omerovic,"August 16, 2024 at 2:00:00 PM GMT+2",100.0,100.0,98.0,56.0,,,True
+M. Svane,Esbjerg U19,"Esbjerg U19 - AGF U19, 1 - 2",E. Omerovic,"August 16, 2024 at 2:00:00 PM GMT+2",87.0,92.0,90.0,60.0,,,True
+E. Larsen,Esbjerg U19,"Esbjerg U19 - AGF U19, 1 - 2",S. Stefánsson,"August 16, 2024 at 2:00:00 PM GMT+2",42.0,75.0,91.0,34.0,,,True
+E. Larsen,Esbjerg U19,"Esbjerg U19 - AGF U19, 1 - 2",C. Storch,"August 16, 2024 at 2:00:00 PM GMT+2",69.0,88.0,90.0,49.0,,,True
+A. Lund Jørgensen,Esbjerg U19,"Esbjerg U19 - AGF U19, 1 - 2",V. De Paoli,"August 16, 2024 at 2:00:00 PM GMT+2",74.0,93.0,91.0,48.0,,,True
 B. Baldursson,Esbjerg U19,"Esbjerg U19 - AGF U19, 1 - 2",V. De Paoli,"August 16, 2024 at 2:00:00 PM GMT+2",38.0,61.0,91.0,45.0,,,True
+O. Haugstrup,AGF U19,"Esbjerg U19 - AGF U19, 1 - 2",E. Omerovic,"August 16, 2024 at 2:00:00 PM GMT+2",81.0,88.0,88.0,56.0,,,True
 S. Schøt,AGF U19,"Esbjerg U19 - AGF U19, 1 - 2",W. Rygaard,"August 16, 2024 at 2:00:00 PM GMT+2",84.0,83.0,88.0,36.0,,,True
 M. Svane,Esbjerg U19,"Esbjerg U19 - AGF U19, 1 - 2",C. Storch,"August 16, 2024 at 2:00:00 PM GMT+2",79.0,16.0,93.0,47.0,,,True
 E. Larsen,Esbjerg U19,"Esbjerg U19 - AGF U19, 1 - 2",M. Svane,"August 16, 2024 at 2:00:00 PM GMT+2",89.0,89.0,91.0,52.0,,,True
+M. Svane,Esbjerg U19,"Esbjerg U19 - AGF U19, 1 - 2",C. Storch,"August 16, 2024 at 2:00:00 PM GMT+2",89.0,94.0,98.0,34.0,,,True
+B. Baldursson,Esbjerg U19,"Esbjerg U19 - AGF U19, 1 - 2",V. De Paoli,"August 16, 2024 at 2:00:00 PM GMT+2",100.0,0.0,99.0,54.0,,,True
+M. Kruse,Esbjerg U19,"Esbjerg U19 - AGF U19, 1 - 2",S. Stefánsson,"August 16, 2024 at 2:00:00 PM GMT+2",89.0,93.0,96.0,52.0,,,True
 F. Emmery,AGF U19,"Esbjerg U19 - AGF U19, 1 - 2",,"August 16, 2024 at 2:00:00 PM GMT+2",44.0,49.0,,,90.0,37.0,True
+M. Kruse,Esbjerg U19,"Esbjerg U19 - AGF U19, 1 - 2",K. Pedersen,"August 16, 2024 at 2:00:00 PM GMT+2",87.0,0.0,93.0,38.0,,,True
 S. Stefánsson,AGF U19,"Esbjerg U19 - AGF U19, 1 - 2",F. Emmery,"August 16, 2024 at 2:00:00 PM GMT+2",71.0,75.0,87.0,44.0,,,True
 K. Pedersen,Esbjerg U19,"Esbjerg U19 - AGF U19, 1 - 2",,"August 16, 2024 at 2:00:00 PM GMT+2",61.0,65.0,,,94.0,69.0,True
+M. Kruse,Esbjerg U19,"Esbjerg U19 - AGF U19, 1 - 2",C. E. Lauridsen,"August 16, 2024 at 2:00:00 PM GMT+2",87.0,0.0,92.0,43.0,,,True
 A. Cehobasic,Esbjerg U19,"Esbjerg U19 - AGF U19, 1 - 2",C. Storch,"August 16, 2024 at 2:00:00 PM GMT+2",73.0,74.0,93.0,73.0,,,True
+M. Kruse,Esbjerg U19,"Esbjerg U19 - AGF U19, 1 - 2",,"August 16, 2024 at 2:00:00 PM GMT+2",88.0,100.0,100.0,71.0,,,True
 S. Schøt,AGF U19,"Esbjerg U19 - AGF U19, 1 - 2",A. Drexel,"August 16, 2024 at 2:00:00 PM GMT+2",55.0,18.0,94.0,38.0,,,True
+B. Baldursson,Esbjerg U19,"Esbjerg U19 - AGF U19, 1 - 2",R. Zwinge,"August 16, 2024 at 2:00:00 PM GMT+2",100.0,0.0,92.0,64.0,,,True
+F. Elkjær Andersen,AGF U19,"Esbjerg U19 - AGF U19, 1 - 2",R. Zwinge,"August 16, 2024 at 2:00:00 PM GMT+2",75.0,14.0,88.0,47.0,,,True
 K. Pedersen,Esbjerg U19,"Esbjerg U19 - AGF U19, 1 - 2",,"August 16, 2024 at 2:00:00 PM GMT+2",69.0,23.0,100.0,80.0,,,True
+F. Emmery,AGF U19,"Esbjerg U19 - AGF U19, 1 - 2",R. Zwinge,"August 16, 2024 at 2:00:00 PM GMT+2",77.0,64.0,86.0,50.0,,,True
 M. Svane,Esbjerg U19,"Esbjerg U19 - AGF U19, 1 - 2",S. Schøt,"August 16, 2024 at 2:00:00 PM GMT+2",80.0,22.0,93.0,56.0,,,True
 F. Emmery,AGF U19,"Esbjerg U19 - AGF U19, 1 - 2",F. Elkjær Andersen,"August 16, 2024 at 2:00:00 PM GMT+2",94.0,13.0,89.0,36.0,,,True
 W. Rygaard,AGF U19,"Esbjerg U19 - AGF U19, 1 - 2",R. Zwinge,"August 16, 2024 at 2:00:00 PM GMT+2",93.0,12.0,96.0,46.0,,,True
 F. Emmery,AGF U19,"Esbjerg U19 - AGF U19, 1 - 2",,"August 16, 2024 at 2:00:00 PM GMT+2",66.0,5.0,,,86.0,45.0,True
 R. Düring,AGF U19,"Esbjerg U19 - AGF U19, 1 - 2",W. Rygaard,"August 16, 2024 at 2:00:00 PM GMT+2",26.0,89.0,89.0,69.0,,,True
+B. Baldursson,Esbjerg U19,"Esbjerg U19 - AGF U19, 1 - 2",J. Jensen,"August 16, 2024 at 2:00:00 PM GMT+2",68.0,90.0,96.0,48.0,,,True
+B. Baldursson,Esbjerg U19,"Esbjerg U19 - AGF U19, 1 - 2",C. E. Lauridsen,"August 16, 2024 at 2:00:00 PM GMT+2",66.0,80.0,94.0,25.0,,,True
+M. Svane,Esbjerg U19,"Esbjerg U19 - AGF U19, 1 - 2",S. Stefánsson,"August 16, 2024 at 2:00:00 PM GMT+2",70.0,9.0,88.0,41.0,,,True
+M. Svane,Esbjerg U19,"Esbjerg U19 - AGF U19, 1 - 2",V. De Paoli,"August 16, 2024 at 2:00:00 PM GMT+2",69.0,13.0,95.0,64.0,,,True
 M. Salah,Horsens U19,"Horsens U19 - Midtjylland U19, 0 - 2",,"August 17, 2024 at 12:30:00 PM GMT+2",80.0,27.0,,,87.0,28.0,True
 M. Salah,Horsens U19,"Horsens U19 - Midtjylland U19, 0 - 2",,"August 17, 2024 at 12:30:00 PM GMT+2",89.0,18.0,,,96.0,26.0,True
 E. A´Ngon,Horsens U19,"Horsens U19 - Midtjylland U19, 0 - 2",L. Selin,"August 17, 2024 at 12:30:00 PM GMT+2",54.0,68.0,95.0,44.0,,,True
+C. Jørgensen,Midtjylland U19,"Horsens U19 - Midtjylland U19, 0 - 2",F. Roslyng Christiansen,"August 17, 2024 at 12:30:00 PM GMT+2",91.0,92.0,94.0,58.0,,,True
+C. Jørgensen,Midtjylland U19,"Horsens U19 - Midtjylland U19, 0 - 2",,"August 17, 2024 at 12:30:00 PM GMT+2",86.0,93.0,100.0,64.0,,,True
 L. Nielsen,Midtjylland U19,"Horsens U19 - Midtjylland U19, 0 - 2",J. Arinze,"August 17, 2024 at 12:30:00 PM GMT+2",55.0,49.0,94.0,69.0,,,True
 M. Salah,Horsens U19,"Horsens U19 - Midtjylland U19, 0 - 2",Y. Ouorou,"August 17, 2024 at 12:30:00 PM GMT+2",88.0,17.0,87.0,30.0,,,True
+J. Arinze,Midtjylland U19,"Horsens U19 - Midtjylland U19, 0 - 2",A. Lodberg,"August 17, 2024 at 12:30:00 PM GMT+2",81.0,81.0,93.0,72.0,,,True
+C. Jørgensen,Midtjylland U19,"Horsens U19 - Midtjylland U19, 0 - 2",,"August 17, 2024 at 12:30:00 PM GMT+2",76.0,10.0,100.0,65.0,,,True
+S. Dalby Wille,Horsens U19,"Horsens U19 - Midtjylland U19, 0 - 2",L. Selin,"August 17, 2024 at 12:30:00 PM GMT+2",7.0,50.0,88.0,54.0,,,True
 Y. Ouorou,Horsens U19,"Horsens U19 - Midtjylland U19, 0 - 2",M. Salah,"August 17, 2024 at 12:30:00 PM GMT+2",78.0,43.0,87.0,32.0,,,True
+A. Lodberg,Midtjylland U19,"Horsens U19 - Midtjylland U19, 0 - 2",G. Bjerge,"August 17, 2024 at 12:30:00 PM GMT+2",72.0,40.0,90.0,50.0,,,True
+A. Lodberg,Midtjylland U19,"Horsens U19 - Midtjylland U19, 0 - 2",G. Bjerge,"August 17, 2024 at 12:30:00 PM GMT+2",93.0,11.0,94.0,61.0,,,True
+S. Johannesen,Midtjylland U19,"Horsens U19 - Midtjylland U19, 0 - 2",S. Dalby Wille,"August 17, 2024 at 12:30:00 PM GMT+2",64.0,23.0,87.0,58.0,,,True
 L. Nielsen,Midtjylland U19,"Horsens U19 - Midtjylland U19, 0 - 2",S. Dalby Wille,"August 17, 2024 at 12:30:00 PM GMT+2",78.0,18.0,95.0,35.0,,,True
 S. Johannesen,Midtjylland U19,"Horsens U19 - Midtjylland U19, 0 - 2",S. Kristiansen,"August 17, 2024 at 12:30:00 PM GMT+2",77.0,18.0,93.0,21.0,,,True
 M. Konradsen,Midtjylland U19,"Horsens U19 - Midtjylland U19, 0 - 2",F. Roslyng Christiansen,"August 17, 2024 at 12:30:00 PM GMT+2",91.0,90.0,93.0,54.0,,,True
@@ -46,84 +98,163 @@ Y. Ouorou,Horsens U19,"Horsens U19 - Midtjylland U19, 0 - 2",L. Selin,"August 17
 S. Kristiansen,Midtjylland U19,"Horsens U19 - Midtjylland U19, 0 - 2",S. Dalby Wille,"August 17, 2024 at 12:30:00 PM GMT+2",46.0,6.0,92.0,25.0,,,True
 G. Bjerge,Midtjylland U19,"Horsens U19 - Midtjylland U19, 0 - 2",A. Lodberg,"August 17, 2024 at 12:30:00 PM GMT+2",28.0,26.0,92.0,69.0,,,True
 M. Salah,Horsens U19,"Horsens U19 - Midtjylland U19, 0 - 2",,"August 17, 2024 at 12:30:00 PM GMT+2",62.0,11.0,,,92.0,28.0,True
+S. Johannesen,Midtjylland U19,"Horsens U19 - Midtjylland U19, 0 - 2",,"August 17, 2024 at 12:30:00 PM GMT+2",78.0,30.0,,,86.0,32.0,True
+S. Kristiansen,Midtjylland U19,"Horsens U19 - Midtjylland U19, 0 - 2",,"August 17, 2024 at 12:30:00 PM GMT+2",89.0,15.0,,,87.0,26.0,True
+H. Toftegaard,Horsens U19,"Horsens U19 - Midtjylland U19, 0 - 2",F. Roslyng Christiansen,"August 17, 2024 at 12:30:00 PM GMT+2",94.0,13.0,94.0,61.0,,,True
+S. Kristiansen,Midtjylland U19,"Horsens U19 - Midtjylland U19, 0 - 2",,"August 17, 2024 at 12:30:00 PM GMT+2",55.0,11.0,100.0,24.0,,,True
 Y. Ouorou,Horsens U19,"Horsens U19 - Midtjylland U19, 0 - 2",J. Arinze,"August 17, 2024 at 12:30:00 PM GMT+2",78.0,57.0,88.0,74.0,,,True
+M. Konradsen,Midtjylland U19,"Horsens U19 - Midtjylland U19, 0 - 2",C. Jørgensen,"August 17, 2024 at 12:30:00 PM GMT+2",95.0,86.0,89.0,70.0,,,True
 A. Lodberg,Midtjylland U19,"Horsens U19 - Midtjylland U19, 0 - 2",F. Roslyng Christiansen,"August 17, 2024 at 12:30:00 PM GMT+2",75.0,90.0,86.0,73.0,,,True
 S. Kristiansen,Midtjylland U19,"Horsens U19 - Midtjylland U19, 0 - 2",N. Tornvig,"August 17, 2024 at 12:30:00 PM GMT+2",78.0,11.0,89.0,49.0,,,True
+H. Toftegaard,Horsens U19,"Horsens U19 - Midtjylland U19, 0 - 2",R. Nybo,"August 17, 2024 at 12:30:00 PM GMT+2",79.0,22.0,93.0,61.0,,,True
 A. Lodberg,Midtjylland U19,"Horsens U19 - Midtjylland U19, 0 - 2",,"August 17, 2024 at 12:30:00 PM GMT+2",87.0,83.0,,,90.0,75.0,True
 M. Konradsen,Midtjylland U19,"Horsens U19 - Midtjylland U19, 0 - 2",R. Nybo,"August 17, 2024 at 12:30:00 PM GMT+2",79.0,78.0,94.0,37.0,,,True
+S. Kristiansen,Midtjylland U19,"Horsens U19 - Midtjylland U19, 0 - 2",E. A´Ngon,"August 17, 2024 at 12:30:00 PM GMT+2",66.0,6.0,92.0,19.0,,,True
+O. Mandrup,Horsens U19,"Horsens U19 - Midtjylland U19, 0 - 2",M. Salah,"August 17, 2024 at 12:30:00 PM GMT+2",62.0,25.0,93.0,27.0,,,True
+H. Toftegaard,Horsens U19,"Horsens U19 - Midtjylland U19, 0 - 2",M. Konradsen,"August 17, 2024 at 12:30:00 PM GMT+2",100.0,0.0,94.0,39.0,,,True
 S. Kristiansen,Midtjylland U19,"Horsens U19 - Midtjylland U19, 0 - 2",A. Lodberg,"August 17, 2024 at 12:30:00 PM GMT+2",86.0,16.0,94.0,75.0,,,True
 S. Johannesen,Midtjylland U19,"Horsens U19 - Midtjylland U19, 0 - 2",S. Dalby Wille,"August 17, 2024 at 12:30:00 PM GMT+2",67.0,28.0,86.0,27.0,,,True
+S. Kristiansen,Midtjylland U19,"Horsens U19 - Midtjylland U19, 0 - 2",N. Tornvig,"August 17, 2024 at 12:30:00 PM GMT+2",75.0,28.0,87.0,40.0,,,True
 J. Emefile,Midtjylland U19,"Horsens U19 - Midtjylland U19, 0 - 2",S. Kristiansen,"August 17, 2024 at 12:30:00 PM GMT+2",81.0,25.0,87.0,29.0,,,True
 N. Tornvig,Midtjylland U19,"Horsens U19 - Midtjylland U19, 0 - 2",,"August 17, 2024 at 12:30:00 PM GMT+2",58.0,77.0,,,86.0,74.0,True
 S. Traoré,Horsens U19,"Horsens U19 - Midtjylland U19, 0 - 2",M. Konradsen,"August 17, 2024 at 12:30:00 PM GMT+2",69.0,80.0,91.0,63.0,,,True
 S. Kristiansen,Midtjylland U19,"Horsens U19 - Midtjylland U19, 0 - 2",F. Roslyng Christiansen,"August 17, 2024 at 12:30:00 PM GMT+2",87.0,14.0,89.0,52.0,,,True
 Y. Ouorou,Horsens U19,"Horsens U19 - Midtjylland U19, 0 - 2",,"August 17, 2024 at 12:30:00 PM GMT+2",37.0,70.0,,,89.0,36.0,True
+A. Lodberg,Midtjylland U19,"Horsens U19 - Midtjylland U19, 0 - 2",S. Dalby Wille,"August 17, 2024 at 12:30:00 PM GMT+2",76.0,30.0,96.0,49.0,,,True
 Y. Ouorou,Horsens U19,"Horsens U19 - Midtjylland U19, 0 - 2",S. Traoré,"August 17, 2024 at 12:30:00 PM GMT+2",80.0,13.0,86.0,70.0,,,True
+J. Emefile,Midtjylland U19,"Horsens U19 - Midtjylland U19, 0 - 2",M. Pimpong,"August 17, 2024 at 12:30:00 PM GMT+2",80.0,51.0,89.0,59.0,,,True
 S. Traoré,Horsens U19,"Horsens U19 - Midtjylland U19, 0 - 2",L. Osmani,"August 17, 2024 at 12:30:00 PM GMT+2",76.0,73.0,91.0,55.0,,,True
+S. Johannesen,Midtjylland U19,"Horsens U19 - Midtjylland U19, 0 - 2",E. A´Ngon,"August 17, 2024 at 12:30:00 PM GMT+2",74.0,88.0,92.0,58.0,,,True
 M. Konradsen,Midtjylland U19,"Horsens U19 - Midtjylland U19, 0 - 2",S. Dalby Wille,"August 17, 2024 at 12:30:00 PM GMT+2",96.0,89.0,89.0,56.0,,,True
 M. Salah,Horsens U19,"Horsens U19 - Midtjylland U19, 0 - 2",L. Osmani,"August 17, 2024 at 12:30:00 PM GMT+2",94.0,5.0,85.0,27.0,,,True
+A. Lodberg,Midtjylland U19,"Horsens U19 - Midtjylland U19, 0 - 2",G. Bjerge,"August 17, 2024 at 12:30:00 PM GMT+2",100.0,100.0,94.0,63.0,,,True
 M. Konradsen,Midtjylland U19,"Horsens U19 - Midtjylland U19, 0 - 2",M. Pimpong,"August 17, 2024 at 12:30:00 PM GMT+2",57.0,64.0,90.0,33.0,,,True
 S. Kristiansen,Midtjylland U19,"Horsens U19 - Midtjylland U19, 0 - 2",G. Bjerge,"August 17, 2024 at 12:30:00 PM GMT+2",74.0,23.0,96.0,65.0,,,True
 M. Konradsen,Midtjylland U19,"Horsens U19 - Midtjylland U19, 0 - 2",M. Pimpong,"August 17, 2024 at 12:30:00 PM GMT+2",89.0,91.0,93.0,46.0,,,True
 S. Johannesen,Midtjylland U19,"Horsens U19 - Midtjylland U19, 0 - 2",,"August 17, 2024 at 12:30:00 PM GMT+2",84.0,12.0,,,99.0,24.0,True
+S. Traoré,Horsens U19,"Horsens U19 - Midtjylland U19, 0 - 2",,"August 17, 2024 at 12:30:00 PM GMT+2",83.0,89.0,,,97.0,71.0,True
+H. Toftegaard,Horsens U19,"Horsens U19 - Midtjylland U19, 0 - 2",R. Nybo,"August 17, 2024 at 12:30:00 PM GMT+2",100.0,100.0,95.0,34.0,,,True
 L. Osmani,Horsens U19,"Horsens U19 - Midtjylland U19, 0 - 2",,"August 17, 2024 at 12:30:00 PM GMT+2",80.0,79.0,100.0,33.0,,,True
+R. Nybo,Horsens U19,"Horsens U19 - Midtjylland U19, 0 - 2",S. Kristiansen,"August 17, 2024 at 12:30:00 PM GMT+2",81.0,71.0,87.0,71.0,,,True
+H. Toftegaard,Horsens U19,"Horsens U19 - Midtjylland U19, 0 - 2",O. Mandrup,"August 17, 2024 at 12:30:00 PM GMT+2",93.0,84.0,93.0,55.0,,,True
+G. Bjerge,Midtjylland U19,"Horsens U19 - Midtjylland U19, 0 - 2",S. Dalby Wille,"August 17, 2024 at 12:30:00 PM GMT+2",22.0,55.0,87.0,69.0,,,True
+Z. Hussein,Horsens U19,"Horsens U19 - Midtjylland U19, 0 - 2",L. Selin,"August 17, 2024 at 12:30:00 PM GMT+2",36.0,3.0,89.0,27.0,,,True
 M. Salah,Horsens U19,"Horsens U19 - Midtjylland U19, 0 - 2",,"August 17, 2024 at 12:30:00 PM GMT+2",34.0,43.0,,,89.0,65.0,True
 G. Bjerge,Midtjylland U19,"Horsens U19 - Midtjylland U19, 0 - 2",A. Lodberg,"August 17, 2024 at 12:30:00 PM GMT+2",77.0,24.0,89.0,60.0,,,True
 W. Jensen,Midtjylland U19,"Horsens U19 - Midtjylland U19, 0 - 2",A. Lodberg,"August 17, 2024 at 12:30:00 PM GMT+2",76.0,52.0,89.0,68.0,,,True
+M. Konradsen,Midtjylland U19,"Horsens U19 - Midtjylland U19, 0 - 2",E. Favor Fully,"August 17, 2024 at 12:30:00 PM GMT+2",93.0,92.0,95.0,58.0,,,True
 M. Konradsen,Midtjylland U19,"Horsens U19 - Midtjylland U19, 0 - 2",S. Dalby Wille,"August 17, 2024 at 12:30:00 PM GMT+2",48.0,93.0,92.0,30.0,,,True
+L. Osmani,Horsens U19,"Horsens U19 - Midtjylland U19, 0 - 2",E. A´Ngon,"August 17, 2024 at 12:30:00 PM GMT+2",100.0,100.0,89.0,41.0,,,True
+D. Catak,Midtjylland U19,"Horsens U19 - Midtjylland U19, 0 - 2",,"August 17, 2024 at 12:30:00 PM GMT+2",82.0,73.0,,,90.0,71.0,True
+M. Konradsen,Midtjylland U19,"Horsens U19 - Midtjylland U19, 0 - 2",S. Dalby Wille,"August 17, 2024 at 12:30:00 PM GMT+2",77.0,85.0,96.0,47.0,,,True
+M. Konradsen,Midtjylland U19,"Horsens U19 - Midtjylland U19, 0 - 2",M. Pimpong,"August 17, 2024 at 12:30:00 PM GMT+2",73.0,79.0,90.0,63.0,,,True
 A. Arouna,Horsens U19,"Horsens U19 - Midtjylland U19, 0 - 2",B. Konteh Krubally,"August 17, 2024 at 12:30:00 PM GMT+2",77.0,83.0,93.0,51.0,,,True
+A. Moro,Horsens U19,"Horsens U19 - Midtjylland U19, 0 - 2",L. Selin,"August 17, 2024 at 12:30:00 PM GMT+2",30.0,28.0,95.0,73.0,,,True
 M. Øxenberg,Silkeborg U19,"Brøndby U19 - Silkeborg U19, 2 - 3",M. Ryberg,"August 17, 2024 at 12:00:00 PM GMT+2",79.0,23.0,89.0,20.0,,,True
+W. Kirk,Silkeborg U19,"Brøndby U19 - Silkeborg U19, 2 - 3",A. Claridge,"August 17, 2024 at 12:00:00 PM GMT+2",100.0,0.0,97.0,56.0,,,True
+A. Claridge,Brøndby U19,"Brøndby U19 - Silkeborg U19, 2 - 3",,"August 17, 2024 at 12:00:00 PM GMT+2",65.0,44.0,100.0,71.0,,,True
+M. Ryberg,Silkeborg U19,"Brøndby U19 - Silkeborg U19, 2 - 3",,"August 17, 2024 at 12:00:00 PM GMT+2",75.0,22.0,,,86.0,20.0,True
 M. Jensen,Brøndby U19,"Brøndby U19 - Silkeborg U19, 2 - 3",M. Øxenberg,"August 17, 2024 at 12:00:00 PM GMT+2",86.0,82.0,90.0,59.0,,,True
 J. Agyekum,Brøndby U19,"Brøndby U19 - Silkeborg U19, 2 - 3",,"August 17, 2024 at 12:00:00 PM GMT+2",83.0,48.0,100.0,28.0,,,True
 W. Kirk,Silkeborg U19,"Brøndby U19 - Silkeborg U19, 2 - 3",,"August 17, 2024 at 12:00:00 PM GMT+2",74.0,37.0,,,85.0,36.0,True
+W. Kirk,Silkeborg U19,"Brøndby U19 - Silkeborg U19, 2 - 3",P. Søndergaard,"August 17, 2024 at 12:00:00 PM GMT+2",100.0,0.0,93.0,41.0,,,True
+S. Stüker,Silkeborg U19,"Brøndby U19 - Silkeborg U19, 2 - 3",,"August 17, 2024 at 12:00:00 PM GMT+2",88.0,88.0,100.0,20.0,,,True
 S. Biller Mikkelsen,Silkeborg U19,"Brøndby U19 - Silkeborg U19, 2 - 3",,"August 17, 2024 at 12:00:00 PM GMT+2",73.0,38.0,,,88.0,36.0,True
 M. Jensen,Brøndby U19,"Brøndby U19 - Silkeborg U19, 2 - 3",C. Risom,"August 17, 2024 at 12:00:00 PM GMT+2",44.0,88.0,86.0,76.0,,,True
+G. Nøhr,Brøndby U19,"Brøndby U19 - Silkeborg U19, 2 - 3",M. Micha Jacobsen,"August 17, 2024 at 12:00:00 PM GMT+2",100.0,100.0,93.0,32.0,,,True
 S. Biller Mikkelsen,Silkeborg U19,"Brøndby U19 - Silkeborg U19, 2 - 3",M. Ryberg,"August 17, 2024 at 12:00:00 PM GMT+2",82.0,22.0,96.0,28.0,,,True
+W. Kirk,Silkeborg U19,"Brøndby U19 - Silkeborg U19, 2 - 3",W. Sonne,"August 17, 2024 at 12:00:00 PM GMT+2",80.0,26.0,97.0,54.0,,,True
+M. Jensen,Brøndby U19,"Brøndby U19 - Silkeborg U19, 2 - 3",J. Agyekum,"August 17, 2024 at 12:00:00 PM GMT+2",82.0,38.0,95.0,32.0,,,True
+G. Nøhr,Brøndby U19,"Brøndby U19 - Silkeborg U19, 2 - 3",,"August 17, 2024 at 12:00:00 PM GMT+2",100.0,0.0,100.0,69.0,,,True
 M. Jensen,Brøndby U19,"Brøndby U19 - Silkeborg U19, 2 - 3",J. Ambæk,"August 17, 2024 at 12:00:00 PM GMT+2",58.0,61.0,84.0,78.0,,,True
 J. Agyekum,Brøndby U19,"Brøndby U19 - Silkeborg U19, 2 - 3",,"August 17, 2024 at 12:00:00 PM GMT+2",89.0,15.0,,,97.0,19.0,True
 G. Nøhr,Brøndby U19,"Brøndby U19 - Silkeborg U19, 2 - 3",W. Bjergfeldt,"August 17, 2024 at 12:00:00 PM GMT+2",78.0,43.0,88.0,54.0,,,True
+P. Søndergaard,Brøndby U19,"Brøndby U19 - Silkeborg U19, 2 - 3",J. Agyekum,"August 17, 2024 at 12:00:00 PM GMT+2",31.0,38.0,93.0,27.0,,,True
+M. Jensen,Brøndby U19,"Brøndby U19 - Silkeborg U19, 2 - 3",C. Risom,"August 17, 2024 at 12:00:00 PM GMT+2",100.0,0.0,100.0,49.0,,,True
 J. Agyekum,Brøndby U19,"Brøndby U19 - Silkeborg U19, 2 - 3",J. Remark Wismann,"August 17, 2024 at 12:00:00 PM GMT+2",82.0,39.0,93.0,30.0,,,True
 J. Ambæk,Brøndby U19,"Brøndby U19 - Silkeborg U19, 2 - 3",J. Agyekum,"August 17, 2024 at 12:00:00 PM GMT+2",82.0,47.0,93.0,36.0,,,True
 J. Ambæk,Brøndby U19,"Brøndby U19 - Silkeborg U19, 2 - 3",,"August 17, 2024 at 12:00:00 PM GMT+2",63.0,58.0,100.0,43.0,,,True
 P. Søndergaard,Brøndby U19,"Brøndby U19 - Silkeborg U19, 2 - 3",C. Risom,"August 17, 2024 at 12:00:00 PM GMT+2",64.0,36.0,98.0,54.0,,,True
+L. Larsen,Brøndby U19,"Brøndby U19 - Silkeborg U19, 2 - 3",G. Nøhr,"August 17, 2024 at 12:00:00 PM GMT+2",75.0,17.0,89.0,38.0,,,True
 W. Bjergfeldt,Brøndby U19,"Brøndby U19 - Silkeborg U19, 2 - 3",A. Claridge,"August 17, 2024 at 12:00:00 PM GMT+2",83.0,62.0,84.0,72.0,,,True
 W. Bjergfeldt,Brøndby U19,"Brøndby U19 - Silkeborg U19, 2 - 3",,"August 17, 2024 at 12:00:00 PM GMT+2",77.0,74.0,,,89.0,71.0,True
+S. Biller Mikkelsen,Silkeborg U19,"Brøndby U19 - Silkeborg U19, 2 - 3",O. Sejer Lauritsen,"August 17, 2024 at 12:00:00 PM GMT+2",84.0,0.0,91.0,19.0,,,True
 M. Øxenberg,Silkeborg U19,"Brøndby U19 - Silkeborg U19, 2 - 3",W. Sonne,"August 17, 2024 at 12:00:00 PM GMT+2",83.0,34.0,93.0,56.0,,,True
+S. Stüker,Silkeborg U19,"Brøndby U19 - Silkeborg U19, 2 - 3",W. Sonne,"August 17, 2024 at 12:00:00 PM GMT+2",80.0,89.0,90.0,44.0,,,True
 G. Nøhr,Brøndby U19,"Brøndby U19 - Silkeborg U19, 2 - 3",M. Micha Jacobsen,"August 17, 2024 at 12:00:00 PM GMT+2",74.0,23.0,86.0,30.0,,,True
+W. Kirk,Silkeborg U19,"Brøndby U19 - Silkeborg U19, 2 - 3",S. Stüker,"August 17, 2024 at 12:00:00 PM GMT+2",66.0,79.0,99.0,77.0,,,True
 M. Ryberg,Silkeborg U19,"Brøndby U19 - Silkeborg U19, 2 - 3",,"August 17, 2024 at 12:00:00 PM GMT+2",83.0,54.0,,,91.0,68.0,True
+W. Kirk,Silkeborg U19,"Brøndby U19 - Silkeborg U19, 2 - 3",M. Ryberg,"August 17, 2024 at 12:00:00 PM GMT+2",100.0,100.0,98.0,28.0,,,True
 J. Agyekum,Brøndby U19,"Brøndby U19 - Silkeborg U19, 2 - 3",,"August 17, 2024 at 12:00:00 PM GMT+2",83.0,14.0,,,96.0,31.0,True
+M. Jensen,Brøndby U19,"Brøndby U19 - Silkeborg U19, 2 - 3",C. Risom,"August 17, 2024 at 12:00:00 PM GMT+2",100.0,0.0,98.0,52.0,,,True
 N. Jakobsen,Brøndby U19,"Brøndby U19 - Silkeborg U19, 2 - 3",M. Andersen,"August 17, 2024 at 12:00:00 PM GMT+2",81.0,34.0,94.0,29.0,,,True
+M. Andersen,Brøndby U19,"Brøndby U19 - Silkeborg U19, 2 - 3",,"August 17, 2024 at 12:00:00 PM GMT+2",78.0,68.0,,,88.0,71.0,True
 O. Sejer Lauritsen,Brøndby U19,"Brøndby U19 - Silkeborg U19, 2 - 3",C. Risom,"August 17, 2024 at 12:00:00 PM GMT+2",52.0,33.0,86.0,47.0,,,True
 S. Stüker,Silkeborg U19,"Brøndby U19 - Silkeborg U19, 2 - 3",W. Pedersen,"August 17, 2024 at 12:00:00 PM GMT+2",91.0,92.0,94.0,31.0,,,True
+W. Kirk,Silkeborg U19,"Brøndby U19 - Silkeborg U19, 2 - 3",M. Micha Jacobsen,"August 17, 2024 at 12:00:00 PM GMT+2",73.0,26.0,95.0,69.0,,,True
 L. Larsen,Brøndby U19,"Brøndby U19 - Silkeborg U19, 2 - 3",N. Jakobsen,"August 17, 2024 at 12:00:00 PM GMT+2",33.0,3.0,88.0,19.0,,,True
 M. Andersen,Brøndby U19,"Brøndby U19 - Silkeborg U19, 2 - 3",W. Bjergfeldt,"August 17, 2024 at 12:00:00 PM GMT+2",79.0,27.0,89.0,31.0,,,True
+L. Larsen,Brøndby U19,"Brøndby U19 - Silkeborg U19, 2 - 3",W. Møller,"August 17, 2024 at 12:00:00 PM GMT+2",73.0,41.0,92.0,60.0,,,True
+W. Bjergfeldt,Brøndby U19,"Brøndby U19 - Silkeborg U19, 2 - 3",N. Jakobsen,"August 17, 2024 at 12:00:00 PM GMT+2",64.0,53.0,96.0,26.0,,,True
 B. Binggeli,Silkeborg U19,"Brøndby U19 - Silkeborg U19, 2 - 3",,"August 17, 2024 at 12:00:00 PM GMT+2",57.0,61.0,,,90.0,75.0,True
+W. Kirk,Silkeborg U19,"Brøndby U19 - Silkeborg U19, 2 - 3",W. Sonne,"August 17, 2024 at 12:00:00 PM GMT+2",100.0,100.0,99.0,45.0,,,True
+M. Øxenberg,Silkeborg U19,"Brøndby U19 - Silkeborg U19, 2 - 3",W. Sonne,"August 17, 2024 at 12:00:00 PM GMT+2",70.0,46.0,94.0,62.0,,,True
 M. Ryberg,Silkeborg U19,"Brøndby U19 - Silkeborg U19, 2 - 3",W. Sonne,"August 17, 2024 at 12:00:00 PM GMT+2",46.0,77.0,87.0,81.0,,,True
 P. Søndergaard,Brøndby U19,"Brøndby U19 - Silkeborg U19, 2 - 3",W. Møller,"August 17, 2024 at 12:00:00 PM GMT+2",36.0,22.0,88.0,71.0,,,True
 B. Binggeli,Silkeborg U19,"Brøndby U19 - Silkeborg U19, 2 - 3",,"August 17, 2024 at 12:00:00 PM GMT+2",65.0,14.0,,,93.0,27.0,True
+W. Bjergfeldt,Brøndby U19,"Brøndby U19 - Silkeborg U19, 2 - 3",J. Ambæk,"August 17, 2024 at 12:00:00 PM GMT+2",66.0,73.0,88.0,71.0,,,True
 M. Jensen,Brøndby U19,"Brøndby U19 - Silkeborg U19, 2 - 3",,"August 17, 2024 at 12:00:00 PM GMT+2",76.0,33.0,,,86.0,34.0,True
 C. Risom,Silkeborg U19,"Brøndby U19 - Silkeborg U19, 2 - 3",W. Sonne,"August 17, 2024 at 12:00:00 PM GMT+2",16.0,69.0,97.0,76.0,,,True
+J. Valtteri Lähteenmäki,Nordsjælland U19,"Nordsjælland U19 - AaB U19, 2 - 0",V. Gustafsen,"August 17, 2024 at 1:00:00 PM GMT+2",75.0,14.0,88.0,68.0,,,True
+M. Seim-Monsen,Nordsjælland U19,"Nordsjælland U19 - AaB U19, 2 - 0",,"August 17, 2024 at 1:00:00 PM GMT+2",80.0,32.0,,,87.0,28.0,True
+V. Berthelsen,Nordsjælland U19,"Nordsjælland U19 - AaB U19, 2 - 0",,"August 17, 2024 at 1:00:00 PM GMT+2",78.0,43.0,87.0,28.0,,,True
+G. Ejsing,AaB U19,"Nordsjælland U19 - AaB U19, 2 - 0",B. Pihl Jørgensen,"August 17, 2024 at 1:00:00 PM GMT+2",69.0,78.0,87.0,81.0,,,True
 J. Valtteri Lähteenmäki,Nordsjælland U19,"Nordsjælland U19 - AaB U19, 2 - 0",B. Grønkjær,"August 17, 2024 at 1:00:00 PM GMT+2",78.0,58.0,91.0,44.0,,,True
 S. Acquah,Nordsjælland U19,"Nordsjælland U19 - AaB U19, 2 - 0",B. Grønkjær,"August 17, 2024 at 1:00:00 PM GMT+2",41.0,8.0,86.0,51.0,,,True
+M. Heyde,Nordsjælland U19,"Nordsjælland U19 - AaB U19, 2 - 0",B. Grønkjær,"August 17, 2024 at 1:00:00 PM GMT+2",65.0,75.0,96.0,73.0,,,True
 M. Bonde,AaB U19,"Nordsjælland U19 - AaB U19, 2 - 0",V. Møller,"August 17, 2024 at 1:00:00 PM GMT+2",75.0,51.0,87.0,53.0,,,True
+J. Valtteri Lähteenmäki,Nordsjælland U19,"Nordsjælland U19 - AaB U19, 2 - 0",,"August 17, 2024 at 1:00:00 PM GMT+2",89.0,17.0,,,94.0,24.0,True
+J. Valtteri Lähteenmäki,Nordsjælland U19,"Nordsjælland U19 - AaB U19, 2 - 0",,"August 17, 2024 at 1:00:00 PM GMT+2",80.0,93.0,100.0,52.0,,,True
+V. Berthelsen,Nordsjælland U19,"Nordsjælland U19 - AaB U19, 2 - 0",,"August 17, 2024 at 1:00:00 PM GMT+2",76.0,36.0,86.0,43.0,,,True
 J. Valtteri Lähteenmäki,Nordsjælland U19,"Nordsjælland U19 - AaB U19, 2 - 0",M. Samson,"August 17, 2024 at 1:00:00 PM GMT+2",76.0,10.0,88.0,44.0,,,True
 M. Heyde,Nordsjælland U19,"Nordsjælland U19 - AaB U19, 2 - 0",B. Grønkjær,"August 17, 2024 at 1:00:00 PM GMT+2",61.0,60.0,88.0,69.0,,,True
+V. Berthelsen,Nordsjælland U19,"Nordsjælland U19 - AaB U19, 2 - 0",B. Grønkjær,"August 17, 2024 at 1:00:00 PM GMT+2",59.0,90.0,87.0,47.0,,,True
+M. Heyde,Nordsjælland U19,"Nordsjælland U19 - AaB U19, 2 - 0",B. Pihl Jørgensen,"August 17, 2024 at 1:00:00 PM GMT+2",67.0,37.0,85.0,25.0,,,True
 J. Valtteri Lähteenmäki,Nordsjælland U19,"Nordsjælland U19 - AaB U19, 2 - 0",,"August 17, 2024 at 1:00:00 PM GMT+2",79.0,18.0,,,85.0,25.0,True
 S. Acquah,Nordsjælland U19,"Nordsjælland U19 - AaB U19, 2 - 0",,"August 17, 2024 at 1:00:00 PM GMT+2",80.0,37.0,,,85.0,50.0,True
 M. Walker,Nordsjælland U19,"Nordsjælland U19 - AaB U19, 2 - 0",J. Valtteri Lähteenmäki,"August 17, 2024 at 1:00:00 PM GMT+2",81.0,33.0,89.0,24.0,,,True
+J. Valtteri Lähteenmäki,Nordsjælland U19,"Nordsjælland U19 - AaB U19, 2 - 0",E. Borup,"August 17, 2024 at 1:00:00 PM GMT+2",100.0,100.0,97.0,59.0,,,True
 S. Acquah,Nordsjælland U19,"Nordsjælland U19 - AaB U19, 2 - 0",V. Berthelsen,"August 17, 2024 at 1:00:00 PM GMT+2",75.0,45.0,86.0,66.0,,,True
 V. Berthelsen,Nordsjælland U19,"Nordsjælland U19 - AaB U19, 2 - 0",V. Gustafsen,"August 17, 2024 at 1:00:00 PM GMT+2",79.0,47.0,88.0,75.0,,,True
 T. Nielsen,Nordsjælland U19,"Nordsjælland U19 - AaB U19, 2 - 0",V. Gustafsen,"August 17, 2024 at 1:00:00 PM GMT+2",81.0,46.0,88.0,77.0,,,True
+J. Valtteri Lähteenmäki,Nordsjælland U19,"Nordsjælland U19 - AaB U19, 2 - 0",,"August 17, 2024 at 1:00:00 PM GMT+2",100.0,100.0,93.0,59.0,,,True
 S. Acquah,Nordsjælland U19,"Nordsjælland U19 - AaB U19, 2 - 0",V. Gustafsen,"August 17, 2024 at 1:00:00 PM GMT+2",81.0,34.0,96.0,77.0,,,True
+V. Berthelsen,Nordsjælland U19,"Nordsjælland U19 - AaB U19, 2 - 0",M. Samson,"August 17, 2024 at 1:00:00 PM GMT+2",100.0,0.0,95.0,42.0,,,True
 T. Nielsen,Nordsjælland U19,"Nordsjælland U19 - AaB U19, 2 - 0",M. Seim-Monsen,"August 17, 2024 at 1:00:00 PM GMT+2",75.0,4.0,85.0,44.0,,,True
+T. Nielsen,Nordsjælland U19,"Nordsjælland U19 - AaB U19, 2 - 0",M. Kjølby,"August 17, 2024 at 1:00:00 PM GMT+2",83.0,9.0,89.0,29.0,,,True
+T. Nielsen,Nordsjælland U19,"Nordsjælland U19 - AaB U19, 2 - 0",M. Kjølby,"August 17, 2024 at 1:00:00 PM GMT+2",78.0,24.0,89.0,41.0,,,True
+J. Valtteri Lähteenmäki,Nordsjælland U19,"Nordsjælland U19 - AaB U19, 2 - 0",M. Walker,"August 17, 2024 at 1:00:00 PM GMT+2",100.0,100.0,92.0,30.0,,,True
+J. Valtteri Lähteenmäki,Nordsjælland U19,"Nordsjælland U19 - AaB U19, 2 - 0",M. Jensen,"August 17, 2024 at 1:00:00 PM GMT+2",78.0,24.0,86.0,57.0,,,True
 M. Heyde,Nordsjælland U19,"Nordsjælland U19 - AaB U19, 2 - 0",J. Valtteri Lähteenmäki,"August 17, 2024 at 1:00:00 PM GMT+2",75.0,59.0,86.0,40.0,,,True
+A. Diagne,AaB U19,"Nordsjælland U19 - AaB U19, 2 - 0",,"August 17, 2024 at 1:00:00 PM GMT+2",44.0,9.0,,,86.0,31.0,True
+C. Tcacenco,AaB U19,"Nordsjælland U19 - AaB U19, 2 - 0",V. Møller,"August 17, 2024 at 1:00:00 PM GMT+2",100.0,0.0,97.0,55.0,,,True
+N. Andersen,AaB U19,"Nordsjælland U19 - AaB U19, 2 - 0",M. Kjølby,"August 17, 2024 at 1:00:00 PM GMT+2",78.0,70.0,90.0,44.0,,,True
+V. Berthelsen,Nordsjælland U19,"Nordsjælland U19 - AaB U19, 2 - 0",J. Valtteri Lähteenmäki,"August 17, 2024 at 1:00:00 PM GMT+2",80.0,33.0,89.0,23.0,,,True
+D. Jóhannesson,Nordsjælland U19,"Nordsjælland U19 - AaB U19, 2 - 0",M. Samson,"August 17, 2024 at 1:00:00 PM GMT+2",82.0,8.0,91.0,45.0,,,True
+V. Berthelsen,Nordsjælland U19,"Nordsjælland U19 - AaB U19, 2 - 0",,"August 17, 2024 at 1:00:00 PM GMT+2",100.0,100.0,92.0,53.0,,,True
 V. Møller,AaB U19,"Nordsjælland U19 - AaB U19, 2 - 0",O. Bødker,"August 17, 2024 at 1:00:00 PM GMT+2",77.0,63.0,88.0,75.0,,,True
 D. Jóhannesson,Nordsjælland U19,"Nordsjælland U19 - AaB U19, 2 - 0",,"August 17, 2024 at 1:00:00 PM GMT+2",64.0,12.0,100.0,25.0,,,True
+V. Gustafsen,Nordsjælland U19,"Nordsjælland U19 - AaB U19, 2 - 0",,"August 17, 2024 at 1:00:00 PM GMT+2",75.0,87.0,,,95.0,77.0,True
 D. Jóhannesson,Nordsjælland U19,"Nordsjælland U19 - AaB U19, 2 - 0",M. Seim-Monsen,"August 17, 2024 at 1:00:00 PM GMT+2",75.0,47.0,89.0,37.0,,,True
+V. Berthelsen,Nordsjælland U19,"Nordsjælland U19 - AaB U19, 2 - 0",B. Grønkjær,"August 17, 2024 at 1:00:00 PM GMT+2",100.0,0.0,98.0,48.0,,,True
 A. Diagne,AaB U19,"Nordsjælland U19 - AaB U19, 2 - 0",C. Tcacenco,"August 17, 2024 at 1:00:00 PM GMT+2",75.0,92.0,94.0,74.0,,,True
 B. Skovgaard,AaB U19,"Nordsjælland U19 - AaB U19, 2 - 0",C. Marfo,"August 17, 2024 at 1:00:00 PM GMT+2",82.0,23.0,86.0,42.0,,,True
 V. Berthelsen,Nordsjælland U19,"Nordsjælland U19 - AaB U19, 2 - 0",M. Jensen,"August 17, 2024 at 1:00:00 PM GMT+2",82.0,30.0,89.0,63.0,,,True
 M. Heyde,Nordsjælland U19,"Nordsjælland U19 - AaB U19, 2 - 0",D. Jóhannesson,"August 17, 2024 at 1:00:00 PM GMT+2",72.0,76.0,89.0,22.0,,,True
+V. Gustafsen,Nordsjælland U19,"Nordsjælland U19 - AaB U19, 2 - 0",B. Skovgaard,"August 17, 2024 at 1:00:00 PM GMT+2",59.0,60.0,89.0,73.0,,,True
+M. Heyde,Nordsjælland U19,"Nordsjælland U19 - AaB U19, 2 - 0",M. Samson,"August 17, 2024 at 1:00:00 PM GMT+2",68.0,70.0,87.0,41.0,,,True
+M. Heyde,Nordsjælland U19,"Nordsjælland U19 - AaB U19, 2 - 0",,"August 17, 2024 at 1:00:00 PM GMT+2",72.0,79.0,,,87.0,75.0,True
+M. Seim-Monsen,Nordsjælland U19,"Nordsjælland U19 - AaB U19, 2 - 0",,"August 17, 2024 at 1:00:00 PM GMT+2",82.0,42.0,89.0,44.0,,,True
 B. Grønkjær,AaB U19,"Nordsjælland U19 - AaB U19, 2 - 0",L. Wernblad,"August 17, 2024 at 1:00:00 PM GMT+2",11.0,52.0,87.0,43.0,,,True
 D. Jóhannesson,Nordsjælland U19,"Nordsjælland U19 - AaB U19, 2 - 0",,"August 17, 2024 at 1:00:00 PM GMT+2",78.0,25.0,,,90.0,26.0,True
 V. Berthelsen,Nordsjælland U19,"Nordsjælland U19 - AaB U19, 2 - 0",M. Seim-Monsen,"August 17, 2024 at 1:00:00 PM GMT+2",78.0,66.0,89.0,40.0,,,True
@@ -133,11 +264,16 @@ N. Stojanovic,AaB U19,"Nordsjælland U19 - AaB U19, 2 - 0",M. Heyde,"August 17, 
 M. Heyde,Nordsjælland U19,"Nordsjælland U19 - AaB U19, 2 - 0",N. Nielsen,"August 17, 2024 at 1:00:00 PM GMT+2",81.0,53.0,90.0,64.0,,,True
 V. Berthelsen,Nordsjælland U19,"Nordsjælland U19 - AaB U19, 2 - 0",,"August 17, 2024 at 1:00:00 PM GMT+2",68.0,89.0,,,91.0,75.0,True
 C. Tcacenco,AaB U19,"Nordsjælland U19 - AaB U19, 2 - 0",,"August 17, 2024 at 1:00:00 PM GMT+2",73.0,74.0,,,88.0,71.0,True
+C. Tcacenco,AaB U19,"Nordsjælland U19 - AaB U19, 2 - 0",N. Nielsen,"August 17, 2024 at 1:00:00 PM GMT+2",100.0,100.0,89.0,61.0,,,True
+V. Møller,AaB U19,"Nordsjælland U19 - AaB U19, 2 - 0",M. Jensen,"August 17, 2024 at 1:00:00 PM GMT+2",80.0,50.0,85.0,64.0,,,True
 H. Rasmussen,OB U19,"OB U19 - Vejle U19, 4 - 0",N. Lassen,"August 17, 2024 at 12:30:00 PM GMT+2",58.0,66.0,86.0,67.0,,,True
+A. Tomaselli,Vejle U19,"OB U19 - Vejle U19, 4 - 0",L. Flø Borregaard,"August 17, 2024 at 12:30:00 PM GMT+2",90.0,96.0,98.0,76.0,,,True
+Noah Barholt Rasmussen,OB U19,"OB U19 - Vejle U19, 4 - 0",G. Knudsen,"August 17, 2024 at 12:30:00 PM GMT+2",34.0,14.0,85.0,33.0,,,True
 L. Flø Borregaard,Vejle U19,"OB U19 - Vejle U19, 4 - 0",M. McCoy,"August 17, 2024 at 12:30:00 PM GMT+2",79.0,74.0,87.0,24.0,,,True
 M. Andersen,OB U19,"OB U19 - Vejle U19, 4 - 0",A. Sønderskov,"August 17, 2024 at 12:30:00 PM GMT+2",77.0,21.0,90.0,21.0,,,True
 A. Tomaselli,Vejle U19,"OB U19 - Vejle U19, 4 - 0",T. Elnegaard,"August 17, 2024 at 12:30:00 PM GMT+2",58.0,88.0,86.0,48.0,,,True
 M. Udengaard,Vejle U19,"OB U19 - Vejle U19, 4 - 0",J. Askou,"August 17, 2024 at 12:30:00 PM GMT+2",90.0,15.0,96.0,37.0,,,True
+N. Juul-Sandberg,OB U19,"OB U19 - Vejle U19, 4 - 0",V. Friis,"August 17, 2024 at 12:30:00 PM GMT+2",100.0,100.0,88.0,31.0,,,True
 V. Friis,OB U19,"OB U19 - Vejle U19, 4 - 0",G. Knudsen,"August 17, 2024 at 12:30:00 PM GMT+2",35.0,36.0,86.0,64.0,,,True
 A. Klaster,Vejle U19,"OB U19 - Vejle U19, 4 - 0",T. Elnegaard,"August 17, 2024 at 12:30:00 PM GMT+2",69.0,56.0,92.0,58.0,,,True
 A. Sønderskov,Vejle U19,"OB U19 - Vejle U19, 4 - 0",T. Elnegaard,"August 17, 2024 at 12:30:00 PM GMT+2",44.0,69.0,96.0,78.0,,,True
@@ -147,50 +283,95 @@ A. Klaster,Vejle U19,"OB U19 - Vejle U19, 4 - 0",T. Elnegaard,"August 17, 2024 a
 M. McCoy,OB U19,"OB U19 - Vejle U19, 4 - 0",H. Rasmussen,"August 17, 2024 at 12:30:00 PM GMT+2",75.0,89.0,95.0,70.0,,,True
 A. Klaster,Vejle U19,"OB U19 - Vejle U19, 4 - 0",T. Elnegaard,"August 17, 2024 at 12:30:00 PM GMT+2",53.0,37.0,88.0,57.0,,,True
 M. Andersen,OB U19,"OB U19 - Vejle U19, 4 - 0",H. Rasmussen,"August 17, 2024 at 12:30:00 PM GMT+2",93.0,13.0,87.0,55.0,,,True
+N. Juul-Sandberg,OB U19,"OB U19 - Vejle U19, 4 - 0",V. Friis,"August 17, 2024 at 12:30:00 PM GMT+2",100.0,0.0,95.0,39.0,,,True
 H. Rasmussen,OB U19,"OB U19 - Vejle U19, 4 - 0",G. Knudsen,"August 17, 2024 at 12:30:00 PM GMT+2",77.0,68.0,89.0,43.0,,,True
+Noah Barholt Rasmussen,OB U19,"OB U19 - Vejle U19, 4 - 0",M. Andersen,"August 17, 2024 at 12:30:00 PM GMT+2",68.0,0.0,100.0,23.0,,,True
+H. Rasmussen,OB U19,"OB U19 - Vejle U19, 4 - 0",V. Friis,"August 17, 2024 at 12:30:00 PM GMT+2",62.0,70.0,91.0,66.0,,,True
+A. Tomaselli,Vejle U19,"OB U19 - Vejle U19, 4 - 0",A. Stengaard,"August 17, 2024 at 12:30:00 PM GMT+2",83.0,89.0,90.0,32.0,,,True
+A. Stengaard,Vejle U19,"OB U19 - Vejle U19, 4 - 0",Noah Barholt Rasmussen,"August 17, 2024 at 12:30:00 PM GMT+2",80.0,13.0,91.0,74.0,,,True
+A. Tomaselli,Vejle U19,"OB U19 - Vejle U19, 4 - 0",D. Amtrup,"August 17, 2024 at 12:30:00 PM GMT+2",86.0,95.0,85.0,67.0,,,True
 V. Friis,OB U19,"OB U19 - Vejle U19, 4 - 0",E. Petersen,"August 17, 2024 at 12:30:00 PM GMT+2",79.0,21.0,86.0,37.0,,,True
+N. Juul-Sandberg,OB U19,"OB U19 - Vejle U19, 4 - 0",D. Amtrup,"August 17, 2024 at 12:30:00 PM GMT+2",100.0,100.0,92.0,50.0,,,True
 A. Stengaard,Vejle U19,"OB U19 - Vejle U19, 4 - 0",,"August 17, 2024 at 12:30:00 PM GMT+2",84.0,13.0,86.0,24.0,,,True
+Noah Barholt Rasmussen,OB U19,"OB U19 - Vejle U19, 4 - 0",,"August 17, 2024 at 12:30:00 PM GMT+2",72.0,0.0,100.0,36.0,,,True
 M. McCoy,OB U19,"OB U19 - Vejle U19, 4 - 0",,"August 17, 2024 at 12:30:00 PM GMT+2",94.0,84.0,100.0,65.0,,,True
 M. Andersen,OB U19,"OB U19 - Vejle U19, 4 - 0",,"August 17, 2024 at 12:30:00 PM GMT+2",69.0,44.0,,,90.0,39.0,True
+Noah Barholt Rasmussen,OB U19,"OB U19 - Vejle U19, 4 - 0",A. Klaster,"August 17, 2024 at 12:30:00 PM GMT+2",82.0,0.0,87.0,33.0,,,True
 M. Andersen,OB U19,"OB U19 - Vejle U19, 4 - 0",,"August 17, 2024 at 12:30:00 PM GMT+2",70.0,21.0,,,92.0,20.0,True
+V. Friis,OB U19,"OB U19 - Vejle U19, 4 - 0",,"August 17, 2024 at 12:30:00 PM GMT+2",74.0,21.0,,,89.0,35.0,True
 Noah Barholt Rasmussen,OB U19,"OB U19 - Vejle U19, 4 - 0",H. Rasmussen,"August 17, 2024 at 12:30:00 PM GMT+2",85.0,15.0,94.0,56.0,,,True
 N. Lassen,OB U19,"OB U19 - Vejle U19, 4 - 0",V. Friis,"August 17, 2024 at 12:30:00 PM GMT+2",80.0,71.0,86.0,67.0,,,True
+M. Udengaard,Vejle U19,"OB U19 - Vejle U19, 4 - 0",A. Muhammad,"August 17, 2024 at 12:30:00 PM GMT+2",84.0,17.0,90.0,37.0,,,True
+M. McCoy,OB U19,"OB U19 - Vejle U19, 4 - 0",H. Rasmussen,"August 17, 2024 at 12:30:00 PM GMT+2",88.0,91.0,89.0,68.0,,,True
+M. McCoy,OB U19,"OB U19 - Vejle U19, 4 - 0",R. Koch Groth Pedersen,"August 17, 2024 at 12:30:00 PM GMT+2",77.0,100.0,88.0,75.0,,,True
 L. Flø Borregaard,Vejle U19,"OB U19 - Vejle U19, 4 - 0",,"August 17, 2024 at 12:30:00 PM GMT+2",81.0,65.0,,,87.0,72.0,True
 T. Lykkebak,Vejle U19,"OB U19 - Vejle U19, 4 - 0",T. Elnegaard,"August 17, 2024 at 12:30:00 PM GMT+2",76.0,56.0,94.0,52.0,,,True
+M. McCoy,OB U19,"OB U19 - Vejle U19, 4 - 0",H. Rasmussen,"August 17, 2024 at 12:30:00 PM GMT+2",71.0,98.0,97.0,75.0,,,True
 Noah Barholt Rasmussen,OB U19,"OB U19 - Vejle U19, 4 - 0",,"August 17, 2024 at 12:30:00 PM GMT+2",79.0,11.0,,,85.0,42.0,True
 M. Andersen,OB U19,"OB U19 - Vejle U19, 4 - 0",,"August 17, 2024 at 12:30:00 PM GMT+2",92.0,17.0,,,96.0,37.0,True
+Noah Barholt Rasmussen,OB U19,"OB U19 - Vejle U19, 4 - 0",N. Juul-Sandberg,"August 17, 2024 at 12:30:00 PM GMT+2",85.0,15.0,84.0,19.0,,,True
+N. Juul-Sandberg,OB U19,"OB U19 - Vejle U19, 4 - 0",M. Andersen,"August 17, 2024 at 12:30:00 PM GMT+2",87.0,9.0,84.0,20.0,,,True
+M. McCoy,OB U19,"OB U19 - Vejle U19, 4 - 0",N. Lassen,"August 17, 2024 at 12:30:00 PM GMT+2",90.0,90.0,84.0,80.0,,,True
+H. Rasmussen,OB U19,"OB U19 - Vejle U19, 4 - 0",,"August 17, 2024 at 12:30:00 PM GMT+2",83.0,82.0,,,87.0,77.0,True
+T. Lykkebak,Vejle U19,"OB U19 - Vejle U19, 4 - 0",Noah Barholt Rasmussen,"August 17, 2024 at 12:30:00 PM GMT+2",100.0,100.0,98.0,76.0,,,True
 M. McCoy,OB U19,"OB U19 - Vejle U19, 4 - 0",R. Koch Groth Pedersen,"August 17, 2024 at 12:30:00 PM GMT+2",86.0,83.0,96.0,55.0,,,True
+M. McCoy,OB U19,"OB U19 - Vejle U19, 4 - 0",M. Larsen,"August 17, 2024 at 12:30:00 PM GMT+2",83.0,100.0,95.0,69.0,,,True
 V. Friis,OB U19,"OB U19 - Vejle U19, 4 - 0",,"August 17, 2024 at 12:30:00 PM GMT+2",78.0,20.0,,,87.0,39.0,True
 H. Rasmussen,OB U19,"OB U19 - Vejle U19, 4 - 0",,"August 17, 2024 at 12:30:00 PM GMT+2",82.0,75.0,,,98.0,73.0,True
 V. Friis,OB U19,"OB U19 - Vejle U19, 4 - 0",R. Koch Groth Pedersen,"August 17, 2024 at 12:30:00 PM GMT+2",90.0,85.0,92.0,55.0,,,True
+N. Juul-Sandberg,OB U19,"OB U19 - Vejle U19, 4 - 0",M. Larsen,"August 17, 2024 at 12:30:00 PM GMT+2",100.0,100.0,98.0,78.0,,,True
 Noah Barholt Rasmussen,OB U19,"OB U19 - Vejle U19, 4 - 0",G. Knudsen,"August 17, 2024 at 12:30:00 PM GMT+2",56.0,48.0,96.0,49.0,,,True
 V. Friis,OB U19,"OB U19 - Vejle U19, 4 - 0",V. Grymer,"August 17, 2024 at 12:30:00 PM GMT+2",73.0,22.0,94.0,22.0,,,True
 R. Koch Groth Pedersen,Vejle U19,"OB U19 - Vejle U19, 4 - 0",T. Elnegaard,"August 17, 2024 at 12:30:00 PM GMT+2",15.0,84.0,87.0,55.0,,,True
 M. McCoy,OB U19,"OB U19 - Vejle U19, 4 - 0",M. Søfeldt Nielsen,"August 17, 2024 at 12:30:00 PM GMT+2",91.0,89.0,97.0,53.0,,,True
 V. Friis,OB U19,"OB U19 - Vejle U19, 4 - 0",,"August 17, 2024 at 12:30:00 PM GMT+2",82.0,22.0,,,91.0,24.0,True
+M. Larsen,OB U19,"OB U19 - Vejle U19, 4 - 0",M. Søfeldt Nielsen,"August 17, 2024 at 12:30:00 PM GMT+2",96.0,82.0,96.0,48.0,,,True
 A. Tomaselli,Vejle U19,"OB U19 - Vejle U19, 4 - 0",T. Lykkebak,"August 17, 2024 at 12:30:00 PM GMT+2",74.0,87.0,93.0,81.0,,,True
 A. Høyer,Randers U19,"Randers U19 - SønderjyskE U19, 0 - 2",M. Ottesen,"August 17, 2024 at 1:00:00 PM GMT+2",77.0,9.0,87.0,25.0,,,True
+A. Høyer,Randers U19,"Randers U19 - SønderjyskE U19, 0 - 2",B. Andersen,"August 17, 2024 at 1:00:00 PM GMT+2",84.0,0.0,97.0,30.0,,,True
+A. Rrahmani,SønderjyskE U19,"Randers U19 - SønderjyskE U19, 0 - 2",M. Henning,"August 17, 2024 at 1:00:00 PM GMT+2",82.0,37.0,89.0,42.0,,,True
+M. Ottesen,SønderjyskE U19,"Randers U19 - SønderjyskE U19, 0 - 2",M. Simonsen,"August 17, 2024 at 1:00:00 PM GMT+2",22.0,70.0,87.0,69.0,,,True
+W. Køhler Simonsen,Randers U19,"Randers U19 - SønderjyskE U19, 0 - 2",B. Andersen,"August 17, 2024 at 1:00:00 PM GMT+2",86.0,100.0,91.0,66.0,,,True
+M. Henning,Randers U19,"Randers U19 - SønderjyskE U19, 0 - 2",S. Bogdan,"August 17, 2024 at 1:00:00 PM GMT+2",40.0,86.0,89.0,60.0,,,True
+M. Larsson,Randers U19,"Randers U19 - SønderjyskE U19, 0 - 2",S. Bogdan,"August 17, 2024 at 1:00:00 PM GMT+2",100.0,100.0,98.0,48.0,,,True
+M. Albæk,Randers U19,"Randers U19 - SønderjyskE U19, 0 - 2",J. Jonsson,"August 17, 2024 at 1:00:00 PM GMT+2",100.0,0.0,96.0,50.0,,,True
+A. Høyer,Randers U19,"Randers U19 - SønderjyskE U19, 0 - 2",M. Larsson,"August 17, 2024 at 1:00:00 PM GMT+2",90.0,16.0,88.0,33.0,,,True
 M. Henning,Randers U19,"Randers U19 - SønderjyskE U19, 0 - 2",B. Andersen,"August 17, 2024 at 1:00:00 PM GMT+2",76.0,83.0,96.0,43.0,,,True
 W. Køhler Simonsen,Randers U19,"Randers U19 - SønderjyskE U19, 0 - 2",J. Jonsson,"August 17, 2024 at 1:00:00 PM GMT+2",81.0,83.0,89.0,56.0,,,True
 C. Østergaard,Randers U19,"Randers U19 - SønderjyskE U19, 0 - 2",W. Køhler Simonsen,"August 17, 2024 at 1:00:00 PM GMT+2",59.0,30.0,98.0,76.0,,,True
+W. Køhler Simonsen,Randers U19,"Randers U19 - SønderjyskE U19, 0 - 2",L. Riggelsen,"August 17, 2024 at 1:00:00 PM GMT+2",96.0,95.0,94.0,40.0,,,True
 L. Riggelsen,SønderjyskE U19,"Randers U19 - SønderjyskE U19, 0 - 2",,"August 17, 2024 at 1:00:00 PM GMT+2",90.0,87.0,100.0,54.0,,,True
+S. Escobar Jensen,SønderjyskE U19,"Randers U19 - SønderjyskE U19, 0 - 2",S. Larsen,"August 17, 2024 at 1:00:00 PM GMT+2",79.0,19.0,87.0,34.0,,,True
 A. Vogtmann,SønderjyskE U19,"Randers U19 - SønderjyskE U19, 0 - 2",M. Henning,"August 17, 2024 at 1:00:00 PM GMT+2",81.0,14.0,94.0,45.0,,,True
 V. Klindt Sørensen,SønderjyskE U19,"Randers U19 - SønderjyskE U19, 0 - 2",C. Østergaard,"August 17, 2024 at 1:00:00 PM GMT+2",58.0,15.0,92.0,53.0,,,True
 S. Escobar Jensen,SønderjyskE U19,"Randers U19 - SønderjyskE U19, 0 - 2",,"August 17, 2024 at 1:00:00 PM GMT+2",81.0,30.0,,,86.0,35.0,True
+W. Køhler Simonsen,Randers U19,"Randers U19 - SønderjyskE U19, 0 - 2",B. Andersen,"August 17, 2024 at 1:00:00 PM GMT+2",94.0,100.0,97.0,72.0,,,True
 M. Larsson,Randers U19,"Randers U19 - SønderjyskE U19, 0 - 2",L. Mandal Andersen,"August 17, 2024 at 1:00:00 PM GMT+2",77.0,75.0,91.0,63.0,,,True
+W. Køhler Simonsen,Randers U19,"Randers U19 - SønderjyskE U19, 0 - 2",B. Andersen,"August 17, 2024 at 1:00:00 PM GMT+2",98.0,89.0,91.0,44.0,,,True
+L. Mandal Andersen,Randers U19,"Randers U19 - SønderjyskE U19, 0 - 2",A. Risgaard,"August 17, 2024 at 1:00:00 PM GMT+2",77.0,50.0,84.0,47.0,,,True
+L. Mandal Andersen,Randers U19,"Randers U19 - SønderjyskE U19, 0 - 2",B. Andersen,"August 17, 2024 at 1:00:00 PM GMT+2",81.0,32.0,95.0,19.0,,,True
 S. Escobar Jensen,SønderjyskE U19,"Randers U19 - SønderjyskE U19, 0 - 2",M. Simonsen,"August 17, 2024 at 1:00:00 PM GMT+2",51.0,25.0,86.0,46.0,,,True
 W. Køhler Simonsen,Randers U19,"Randers U19 - SønderjyskE U19, 0 - 2",,"August 17, 2024 at 1:00:00 PM GMT+2",62.0,80.0,,,88.0,68.0,True
 S. Escobar Jensen,SønderjyskE U19,"Randers U19 - SønderjyskE U19, 0 - 2",M. Simonsen,"August 17, 2024 at 1:00:00 PM GMT+2",71.0,26.0,84.0,40.0,,,True
 L. Mandal Andersen,Randers U19,"Randers U19 - SønderjyskE U19, 0 - 2",L. Riggelsen,"August 17, 2024 at 1:00:00 PM GMT+2",74.0,47.0,84.0,30.0,,,True
+S. Larsen,SønderjyskE U19,"Randers U19 - SønderjyskE U19, 0 - 2",,"August 17, 2024 at 1:00:00 PM GMT+2",82.0,63.0,,,88.0,64.0,True
+A. Høyer,Randers U19,"Randers U19 - SønderjyskE U19, 0 - 2",S. Bogdan,"August 17, 2024 at 1:00:00 PM GMT+2",69.0,10.0,90.0,42.0,,,True
 L. Riggelsen,SønderjyskE U19,"Randers U19 - SønderjyskE U19, 0 - 2",E. Hjorth Pedersen,"August 17, 2024 at 1:00:00 PM GMT+2",76.0,79.0,94.0,71.0,,,True
 S. Escobar Jensen,SønderjyskE U19,"Randers U19 - SønderjyskE U19, 0 - 2",,"August 17, 2024 at 1:00:00 PM GMT+2",80.0,29.0,,,87.0,36.0,True
 S. Escobar Jensen,SønderjyskE U19,"Randers U19 - SønderjyskE U19, 0 - 2",,"August 17, 2024 at 1:00:00 PM GMT+2",79.0,8.0,,,91.0,32.0,True
 B. Andersen,Randers U19,"Randers U19 - SønderjyskE U19, 0 - 2",,"August 17, 2024 at 1:00:00 PM GMT+2",87.0,87.0,,,89.0,75.0,True
 L. Mandal Andersen,Randers U19,"Randers U19 - SønderjyskE U19, 0 - 2",L. Riggelsen,"August 17, 2024 at 1:00:00 PM GMT+2",69.0,75.0,97.0,29.0,,,True
+M. Albæk,Randers U19,"Randers U19 - SønderjyskE U19, 0 - 2",M. Albæk,"August 17, 2024 at 1:00:00 PM GMT+2",100.0,0.0,95.0,19.0,95.0,19.0,True
+M. Larsson,Randers U19,"Randers U19 - SønderjyskE U19, 0 - 2",S. Bogdan,"August 17, 2024 at 1:00:00 PM GMT+2",74.0,18.0,98.0,55.0,,,True
+S. Maass,SønderjyskE U19,"Randers U19 - SønderjyskE U19, 0 - 2",E. Hjorth Pedersen,"August 17, 2024 at 1:00:00 PM GMT+2",74.0,64.0,90.0,69.0,,,True
+B. Andersen,Randers U19,"Randers U19 - SønderjyskE U19, 0 - 2",,"August 17, 2024 at 1:00:00 PM GMT+2",83.0,50.0,,,88.0,49.0,True
 V. Klindt Sørensen,SønderjyskE U19,"Randers U19 - SønderjyskE U19, 0 - 2",M. Simonsen,"August 17, 2024 at 1:00:00 PM GMT+2",60.0,17.0,95.0,33.0,,,True
 M. Henning,Randers U19,"Randers U19 - SønderjyskE U19, 0 - 2",A. Risgaard,"August 17, 2024 at 1:00:00 PM GMT+2",28.0,74.0,84.0,42.0,,,True
 M. Larsson,Randers U19,"Randers U19 - SønderjyskE U19, 0 - 2",V. Klindt Sørensen,"August 17, 2024 at 1:00:00 PM GMT+2",79.0,51.0,86.0,52.0,,,True
+S. Larsen,SønderjyskE U19,"Randers U19 - SønderjyskE U19, 0 - 2",A. Rrahmani,"August 17, 2024 at 1:00:00 PM GMT+2",75.0,42.0,86.0,33.0,,,True
 L. Riggelsen,SønderjyskE U19,"Randers U19 - SønderjyskE U19, 0 - 2",W. Køhler Simonsen,"August 17, 2024 at 1:00:00 PM GMT+2",83.0,85.0,91.0,39.0,,,True
+L. Mandal Andersen,Randers U19,"Randers U19 - SønderjyskE U19, 0 - 2",S. Bogdan,"August 17, 2024 at 1:00:00 PM GMT+2",69.0,46.0,85.0,62.0,,,True
+E. Hjorth Pedersen,SønderjyskE U19,"Randers U19 - SønderjyskE U19, 0 - 2",W. Køhler Simonsen,"August 17, 2024 at 1:00:00 PM GMT+2",97.0,87.0,91.0,52.0,,,True
 A. Risgaard,Randers U19,"Randers U19 - SønderjyskE U19, 0 - 2",S. Bogdan,"August 17, 2024 at 1:00:00 PM GMT+2",74.0,25.0,97.0,45.0,,,True
 S. Escobar Jensen,SønderjyskE U19,"Randers U19 - SønderjyskE U19, 0 - 2",,"August 17, 2024 at 1:00:00 PM GMT+2",86.0,3.0,,,86.0,19.0,True
 A. Rrahmani,SønderjyskE U19,"Randers U19 - SønderjyskE U19, 0 - 2",S. Larsen,"August 17, 2024 at 1:00:00 PM GMT+2",77.0,34.0,85.0,38.0,,,True
@@ -199,38 +380,88 @@ S. Maass,SønderjyskE U19,"Randers U19 - SønderjyskE U19, 0 - 2",M. Simonsen,"A
 L. Riggelsen,SønderjyskE U19,"Randers U19 - SønderjyskE U19, 0 - 2",M. Simonsen,"August 17, 2024 at 1:00:00 PM GMT+2",80.0,77.0,98.0,49.0,,,True
 M. Larsson,Randers U19,"Randers U19 - SønderjyskE U19, 0 - 2",B. Andersen,"August 17, 2024 at 1:00:00 PM GMT+2",74.0,68.0,95.0,68.0,,,True
 E. Hjorth Pedersen,SønderjyskE U19,"Randers U19 - SønderjyskE U19, 0 - 2",L. Mandal Andersen,"August 17, 2024 at 1:00:00 PM GMT+2",97.0,82.0,93.0,49.0,,,True
+S. Escobar Jensen,SønderjyskE U19,"Randers U19 - SønderjyskE U19, 0 - 2",M. Henning,"August 17, 2024 at 1:00:00 PM GMT+2",78.0,57.0,84.0,43.0,,,True
+M. Henning,Randers U19,"Randers U19 - SønderjyskE U19, 0 - 2",B. Andersen,"August 17, 2024 at 1:00:00 PM GMT+2",25.0,77.0,90.0,55.0,,,True
+M. Albæk,Randers U19,"Randers U19 - SønderjyskE U19, 0 - 2",J. Pedersen,"August 17, 2024 at 1:00:00 PM GMT+2",69.0,47.0,89.0,40.0,,,True
+S. Escobar Jensen,SønderjyskE U19,"Randers U19 - SønderjyskE U19, 0 - 2",L. Riggelsen,"August 17, 2024 at 1:00:00 PM GMT+2",82.0,49.0,88.0,67.0,,,True
+A. Vogtmann,SønderjyskE U19,"Randers U19 - SønderjyskE U19, 0 - 2",M. Simonsen,"August 17, 2024 at 1:00:00 PM GMT+2",100.0,100.0,98.0,48.0,,,True
+A. Vogtmann,SønderjyskE U19,"Randers U19 - SønderjyskE U19, 0 - 2",S. Escobar Jensen,"August 17, 2024 at 1:00:00 PM GMT+2",75.0,13.0,87.0,22.0,,,True
+A. Rrahmani,SønderjyskE U19,"Randers U19 - SønderjyskE U19, 0 - 2",E. Hjorth Pedersen,"August 17, 2024 at 1:00:00 PM GMT+2",79.0,30.0,94.0,33.0,,,True
+A. Vogtmann,SønderjyskE U19,"Randers U19 - SønderjyskE U19, 0 - 2",A. Risgaard,"August 17, 2024 at 1:00:00 PM GMT+2",100.0,0.0,93.0,33.0,,,True
 A. Riiser,Randers U19,"Randers U19 - SønderjyskE U19, 0 - 2",B. Andersen,"August 17, 2024 at 1:00:00 PM GMT+2",97.0,85.0,92.0,48.0,,,True
+A. Riiser,Randers U19,"Randers U19 - SønderjyskE U19, 0 - 2",,"August 17, 2024 at 1:00:00 PM GMT+2",84.0,84.0,,,95.0,68.0,True
 A. Rrahmani,SønderjyskE U19,"Randers U19 - SønderjyskE U19, 0 - 2",E. Hjorth Pedersen,"August 17, 2024 at 1:00:00 PM GMT+2",63.0,47.0,88.0,50.0,,,True
 W. Køhler Simonsen,Randers U19,"Randers U19 - SønderjyskE U19, 0 - 2",J. Pedersen,"August 17, 2024 at 1:00:00 PM GMT+2",95.0,86.0,98.0,41.0,,,True
 J. Pedersen,Randers U19,"Randers U19 - SønderjyskE U19, 0 - 2",,"August 17, 2024 at 1:00:00 PM GMT+2",90.0,88.0,100.0,47.0,,,True
 E. Hjorth Pedersen,SønderjyskE U19,"Randers U19 - SønderjyskE U19, 0 - 2",E. Hjorth Pedersen,"August 17, 2024 at 1:00:00 PM GMT+2",80.0,66.0,91.0,43.0,91.0,43.0,True
+A. Vogtmann,SønderjyskE U19,"Randers U19 - SønderjyskE U19, 0 - 2",,"August 17, 2024 at 1:00:00 PM GMT+2",100.0,100.0,99.0,58.0,,,True
+M. Albæk,Randers U19,"Randers U19 - SønderjyskE U19, 0 - 2",M. Albæk,"August 17, 2024 at 1:00:00 PM GMT+2",100.0,0.0,94.0,26.0,98.0,28.0,True
+A. Risgaard,Randers U19,"Randers U19 - SønderjyskE U19, 0 - 2",,"August 17, 2024 at 1:00:00 PM GMT+2",79.0,79.0,100.0,30.0,,,True
+E. Bramsen,Randers U19,"Randers U19 - SønderjyskE U19, 0 - 2",S. Larsen,"August 17, 2024 at 1:00:00 PM GMT+2",86.0,100.0,93.0,67.0,,,True
+M. Albæk,Randers U19,"Randers U19 - SønderjyskE U19, 0 - 2",W. Køhler Simonsen,"August 17, 2024 at 1:00:00 PM GMT+2",68.0,17.0,90.0,57.0,,,True
 S. Larsen,SønderjyskE U19,"Randers U19 - SønderjyskE U19, 0 - 2",A. Rrahmani,"August 17, 2024 at 1:00:00 PM GMT+2",82.0,73.0,87.0,53.0,,,True
 E. Bramsen,Randers U19,"Randers U19 - SønderjyskE U19, 0 - 2",W. Køhler Simonsen,"August 17, 2024 at 1:00:00 PM GMT+2",86.0,85.0,93.0,50.0,,,True
 A. Risgaard,Randers U19,"Randers U19 - SønderjyskE U19, 0 - 2",W. Køhler Simonsen,"August 17, 2024 at 1:00:00 PM GMT+2",82.0,11.0,89.0,35.0,,,True
+L. Mandal Andersen,Randers U19,"Randers U19 - SønderjyskE U19, 0 - 2",A. Risgaard,"August 17, 2024 at 1:00:00 PM GMT+2",74.0,73.0,94.0,44.0,,,True
+F. Konstmann,Randers U19,"Randers U19 - SønderjyskE U19, 0 - 2",M. Ottesen,"August 17, 2024 at 1:00:00 PM GMT+2",67.0,23.0,90.0,41.0,,,True
 A. Ebrat,SønderjyskE U19,"Randers U19 - SønderjyskE U19, 0 - 2",,"August 17, 2024 at 1:00:00 PM GMT+2",80.0,56.0,,,87.0,42.0,True
+A. Ebrat,SønderjyskE U19,"Randers U19 - SønderjyskE U19, 0 - 2",F. Nygaard Jürgensen,"August 17, 2024 at 1:00:00 PM GMT+2",100.0,100.0,91.0,79.0,,,True
 S. Johannesen,Midtjylland U19,"Brøndby U19 - Midtjylland U19, 4 - 0",W. Bjergfeldt,"August 27, 2024 at 12:30:00 PM GMT+2",96.0,17.0,93.0,30.0,,,True
+A. Lodberg,Midtjylland U19,"Brøndby U19 - Midtjylland U19, 4 - 0",B. Konteh Krubally,"August 27, 2024 at 12:30:00 PM GMT+2",100.0,0.0,87.0,51.0,,,True
 S. Kristiansen,Midtjylland U19,"Brøndby U19 - Midtjylland U19, 4 - 0",A. Lodberg,"August 27, 2024 at 12:30:00 PM GMT+2",95.0,15.0,95.0,69.0,,,True
+M. Konradsen,Midtjylland U19,"Brøndby U19 - Midtjylland U19, 4 - 0",P. Søndergaard,"August 27, 2024 at 12:30:00 PM GMT+2",75.0,90.0,88.0,58.0,,,True
+A. Lodberg,Midtjylland U19,"Brøndby U19 - Midtjylland U19, 4 - 0",W. Bjergfeldt,"August 27, 2024 at 12:30:00 PM GMT+2",80.0,95.0,90.0,40.0,,,True
+S. Johannesen,Midtjylland U19,"Brøndby U19 - Midtjylland U19, 4 - 0",W. Bjergfeldt,"August 27, 2024 at 12:30:00 PM GMT+2",79.0,23.0,85.0,25.0,,,True
 A. Lodberg,Midtjylland U19,"Brøndby U19 - Midtjylland U19, 4 - 0",,"August 27, 2024 at 12:30:00 PM GMT+2",84.0,91.0,,,89.0,73.0,True
 L. Larsen,Brøndby U19,"Brøndby U19 - Midtjylland U19, 4 - 0",N. Jakobsen,"August 27, 2024 at 12:30:00 PM GMT+2",89.0,17.0,88.0,42.0,,,True
 S. Kristiansen,Midtjylland U19,"Brøndby U19 - Midtjylland U19, 4 - 0",A. Lodberg,"August 27, 2024 at 12:30:00 PM GMT+2",62.0,10.0,93.0,69.0,,,True
+J. Agyekum,Brøndby U19,"Brøndby U19 - Midtjylland U19, 4 - 0",,"August 27, 2024 at 12:30:00 PM GMT+2",74.0,85.0,,,88.0,72.0,True
+A. Lodberg,Midtjylland U19,"Brøndby U19 - Midtjylland U19, 4 - 0",,"August 27, 2024 at 12:30:00 PM GMT+2",100.0,100.0,94.0,44.0,,,True
+S. Kristiansen,Midtjylland U19,"Brøndby U19 - Midtjylland U19, 4 - 0",P. Søndergaard,"August 27, 2024 at 12:30:00 PM GMT+2",67.0,36.0,85.0,60.0,,,True
+C. Jørgensen,Midtjylland U19,"Brøndby U19 - Midtjylland U19, 4 - 0",P. Søndergaard,"August 27, 2024 at 12:30:00 PM GMT+2",87.0,87.0,92.0,56.0,,,True
+J. Agyekum,Brøndby U19,"Brøndby U19 - Midtjylland U19, 4 - 0",,"August 27, 2024 at 12:30:00 PM GMT+2",81.0,87.0,,,99.0,72.0,True
+G. Nøhr,Brøndby U19,"Brøndby U19 - Midtjylland U19, 4 - 0",G. Bjerge,"August 27, 2024 at 12:30:00 PM GMT+2",100.0,100.0,95.0,42.0,,,True
 G. Nøhr,Brøndby U19,"Brøndby U19 - Midtjylland U19, 4 - 0",B. Konteh Krubally,"August 27, 2024 at 12:30:00 PM GMT+2",87.0,97.0,94.0,52.0,,,True
 M. Jensen,Brøndby U19,"Brøndby U19 - Midtjylland U19, 4 - 0",L. Selin,"August 27, 2024 at 12:30:00 PM GMT+2",75.0,21.0,99.0,48.0,,,True
+L. Nielsen,Midtjylland U19,"Brøndby U19 - Midtjylland U19, 4 - 0",S. Johannesen,"August 27, 2024 at 12:30:00 PM GMT+2",92.0,0.0,95.0,22.0,,,True
+S. Kristiansen,Midtjylland U19,"Brøndby U19 - Midtjylland U19, 4 - 0",,"August 27, 2024 at 12:30:00 PM GMT+2",72.0,17.0,86.0,52.0,,,True
 N. Jakobsen,Brøndby U19,"Brøndby U19 - Midtjylland U19, 4 - 0",L. Selin,"August 27, 2024 at 12:30:00 PM GMT+2",47.0,31.0,84.0,19.0,,,True
+A. Lodberg,Midtjylland U19,"Brøndby U19 - Midtjylland U19, 4 - 0",W. Sonne,"August 27, 2024 at 12:30:00 PM GMT+2",42.0,91.0,85.0,44.0,,,True
+S. Kristiansen,Midtjylland U19,"Brøndby U19 - Midtjylland U19, 4 - 0",W. Bjergfeldt,"August 27, 2024 at 12:30:00 PM GMT+2",76.0,14.0,90.0,29.0,,,True
 J. Agyekum,Brøndby U19,"Brøndby U19 - Midtjylland U19, 4 - 0",,"August 27, 2024 at 12:30:00 PM GMT+2",77.0,78.0,,,89.0,73.0,True
 G. Nøhr,Brøndby U19,"Brøndby U19 - Midtjylland U19, 4 - 0",M. Konradsen,"August 27, 2024 at 12:30:00 PM GMT+2",70.0,59.0,92.0,25.0,,,True
 P. Søndergaard,Brøndby U19,"Brøndby U19 - Midtjylland U19, 4 - 0",,"August 27, 2024 at 12:30:00 PM GMT+2",36.0,61.0,,,86.0,31.0,True
+M. Konradsen,Midtjylland U19,"Brøndby U19 - Midtjylland U19, 4 - 0",N. Tornvig,"August 27, 2024 at 12:30:00 PM GMT+2",75.0,100.0,89.0,81.0,,,True
+A. Lodberg,Midtjylland U19,"Brøndby U19 - Midtjylland U19, 4 - 0",G. Bjerge,"August 27, 2024 at 12:30:00 PM GMT+2",74.0,77.0,89.0,53.0,,,True
 L. Nielsen,Midtjylland U19,"Brøndby U19 - Midtjylland U19, 4 - 0",S. Kristiansen,"August 27, 2024 at 12:30:00 PM GMT+2",66.0,64.0,86.0,35.0,,,True
 J. Agyekum,Brøndby U19,"Brøndby U19 - Midtjylland U19, 4 - 0",,"August 27, 2024 at 12:30:00 PM GMT+2",81.0,25.0,,,95.0,27.0,True
+G. Nøhr,Brøndby U19,"Brøndby U19 - Midtjylland U19, 4 - 0",L. Larsen,"August 27, 2024 at 12:30:00 PM GMT+2",100.0,100.0,96.0,55.0,,,True
+A. Lodberg,Midtjylland U19,"Brøndby U19 - Midtjylland U19, 4 - 0",W. Bjergfeldt,"August 27, 2024 at 12:30:00 PM GMT+2",70.0,69.0,91.0,37.0,,,True
+L. Nielsen,Midtjylland U19,"Brøndby U19 - Midtjylland U19, 4 - 0",G. Bjerge,"August 27, 2024 at 12:30:00 PM GMT+2",100.0,0.0,90.0,59.0,,,True
+A. Lodberg,Midtjylland U19,"Brøndby U19 - Midtjylland U19, 4 - 0",,"August 27, 2024 at 12:30:00 PM GMT+2",79.0,81.0,89.0,44.0,,,True
 N. Jakobsen,Brøndby U19,"Brøndby U19 - Midtjylland U19, 4 - 0",,"August 27, 2024 at 12:30:00 PM GMT+2",81.0,68.0,,,88.0,64.0,True
+M. Konradsen,Midtjylland U19,"Brøndby U19 - Midtjylland U19, 4 - 0",W. Bjergfeldt,"August 27, 2024 at 12:30:00 PM GMT+2",31.0,55.0,84.0,24.0,,,True
+L. Nielsen,Midtjylland U19,"Brøndby U19 - Midtjylland U19, 4 - 0",M. Jensen,"August 27, 2024 at 12:30:00 PM GMT+2",87.0,16.0,89.0,21.0,,,True
 C. Jørgensen,Midtjylland U19,"Brøndby U19 - Midtjylland U19, 4 - 0",P. Søndergaard,"August 27, 2024 at 12:30:00 PM GMT+2",95.0,88.0,93.0,67.0,,,True
+M. Konradsen,Midtjylland U19,"Brøndby U19 - Midtjylland U19, 4 - 0",W. Bjergfeldt,"August 27, 2024 at 12:30:00 PM GMT+2",84.0,94.0,93.0,37.0,,,True
+S. Johannesen,Midtjylland U19,"Brøndby U19 - Midtjylland U19, 4 - 0",B. Konteh Krubally,"August 27, 2024 at 12:30:00 PM GMT+2",100.0,0.0,87.0,42.0,,,True
+M. Konradsen,Midtjylland U19,"Brøndby U19 - Midtjylland U19, 4 - 0",N. Jakobsen,"August 27, 2024 at 12:30:00 PM GMT+2",88.0,100.0,88.0,62.0,75.0,90.0,True
+A. Lodberg,Midtjylland U19,"Brøndby U19 - Midtjylland U19, 4 - 0",,"August 27, 2024 at 12:30:00 PM GMT+2",100.0,100.0,91.0,34.0,,,True
+J. Ambæk,Brøndby U19,"Brøndby U19 - Midtjylland U19, 4 - 0",N. Jakobsen,"August 27, 2024 at 12:30:00 PM GMT+2",70.0,57.0,85.0,32.0,,,True
 L. Larsen,Brøndby U19,"Brøndby U19 - Midtjylland U19, 4 - 0",J. Ambæk,"August 27, 2024 at 12:30:00 PM GMT+2",73.0,55.0,86.0,68.0,,,True
 P. Søndergaard,Brøndby U19,"Brøndby U19 - Midtjylland U19, 4 - 0",L. Selin,"August 27, 2024 at 12:30:00 PM GMT+2",68.0,12.0,97.0,29.0,,,True
 J. Agyekum,Brøndby U19,"Brøndby U19 - Midtjylland U19, 4 - 0",,"August 27, 2024 at 12:30:00 PM GMT+2",77.0,67.0,,,85.0,62.0,True
+J. Agyekum,Brøndby U19,"Brøndby U19 - Midtjylland U19, 4 - 0",N. Jakobsen,"August 27, 2024 at 12:30:00 PM GMT+2",71.0,43.0,99.0,28.0,,,True
+N. Jakobsen,Brøndby U19,"Brøndby U19 - Midtjylland U19, 4 - 0",J. Agyekum,"August 27, 2024 at 12:30:00 PM GMT+2",83.0,8.0,84.0,23.0,,,True
+A. Claridge,Brøndby U19,"Brøndby U19 - Midtjylland U19, 4 - 0",,"August 27, 2024 at 12:30:00 PM GMT+2",78.0,31.0,,,85.0,24.0,True
+M. Jensen,Brøndby U19,"Brøndby U19 - Midtjylland U19, 4 - 0",L. Larsen,"August 27, 2024 at 12:30:00 PM GMT+2",100.0,0.0,98.0,57.0,,,True
+W. Jensen,Midtjylland U19,"Brøndby U19 - Midtjylland U19, 4 - 0",J. Arinze,"August 27, 2024 at 12:30:00 PM GMT+2",76.0,91.0,93.0,48.0,,,True
 A. Lodberg,Midtjylland U19,"Brøndby U19 - Midtjylland U19, 4 - 0",S. Johannesen,"August 27, 2024 at 12:30:00 PM GMT+2",80.0,26.0,87.0,28.0,,,True
 J. Ambæk,Brøndby U19,"Brøndby U19 - Midtjylland U19, 4 - 0",,"August 27, 2024 at 12:30:00 PM GMT+2",71.0,82.0,,,90.0,74.0,True
 W. Jensen,Midtjylland U19,"Brøndby U19 - Midtjylland U19, 4 - 0",M. Pimpong,"August 27, 2024 at 12:30:00 PM GMT+2",70.0,89.0,86.0,81.0,,,True
 W. Jensen,Midtjylland U19,"Brøndby U19 - Midtjylland U19, 4 - 0",P. Søndergaard,"August 27, 2024 at 12:30:00 PM GMT+2",90.0,87.0,86.0,76.0,,,True
 L. Nielsen,Midtjylland U19,"Brøndby U19 - Midtjylland U19, 4 - 0",S. Johannesen,"August 27, 2024 at 12:30:00 PM GMT+2",75.0,62.0,84.0,52.0,,,True
+W. Bjergfeldt,Brøndby U19,"Brøndby U19 - Midtjylland U19, 4 - 0",L. Selin,"August 27, 2024 at 12:30:00 PM GMT+2",34.0,94.0,87.0,59.0,,,True
 J. Arinze,Midtjylland U19,"Brøndby U19 - Midtjylland U19, 4 - 0",,"August 27, 2024 at 12:30:00 PM GMT+2",76.0,36.0,86.0,58.0,,,True
 C. Jørgensen,Midtjylland U19,"Brøndby U19 - Midtjylland U19, 4 - 0",M. Pimpong,"August 27, 2024 at 12:30:00 PM GMT+2",74.0,58.0,89.0,39.0,,,True
 N. Jakobsen,Brøndby U19,"Brøndby U19 - Midtjylland U19, 4 - 0",J. Ambæk,"August 27, 2024 at 12:30:00 PM GMT+2",68.0,21.0,87.0,40.0,,,True
@@ -243,7 +474,9 @@ A. Lodberg,Midtjylland U19,"Brøndby U19 - Midtjylland U19, 4 - 0",O. Sejer Laur
 L. Nielsen,Midtjylland U19,"Brøndby U19 - Midtjylland U19, 4 - 0",P. Søndergaard,"August 27, 2024 at 12:30:00 PM GMT+2",72.0,36.0,91.0,57.0,78.0,45.0,True
 W. Jensen,Midtjylland U19,"Brøndby U19 - Midtjylland U19, 4 - 0",O. Sejer Lauritsen,"August 27, 2024 at 12:30:00 PM GMT+2",79.0,87.0,87.0,50.0,,,True
 M. Pimpong,Midtjylland U19,"Brøndby U19 - Midtjylland U19, 4 - 0",W. Jensen,"August 27, 2024 at 12:30:00 PM GMT+2",81.0,70.0,98.0,80.0,,,True
+G. Nøhr,Brøndby U19,"Brøndby U19 - Midtjylland U19, 4 - 0",L. Selin,"August 27, 2024 at 12:30:00 PM GMT+2",44.0,77.0,85.0,69.0,,,True
 W. Jensen,Midtjylland U19,"Brøndby U19 - Midtjylland U19, 4 - 0",S. Johannesen,"August 27, 2024 at 12:30:00 PM GMT+2",75.0,89.0,97.0,30.0,,,True
+L. Larsen,Brøndby U19,"Brøndby U19 - Midtjylland U19, 4 - 0",C. Jørgensen,"August 27, 2024 at 12:30:00 PM GMT+2",92.0,18.0,89.0,37.0,,,True
 S. Johannesen,Midtjylland U19,"Brøndby U19 - Midtjylland U19, 4 - 0",,"August 27, 2024 at 12:30:00 PM GMT+2",80.0,14.0,,,95.0,28.0,True
 J. Agyekum,Brøndby U19,"Brøndby U19 - Midtjylland U19, 4 - 0",,"August 27, 2024 at 12:30:00 PM GMT+2",81.0,80.0,,,86.0,74.0,True
 M. Andersen,Brøndby U19,"Brøndby U19 - Midtjylland U19, 4 - 0",L. Larsen,"August 27, 2024 at 12:30:00 PM GMT+2",75.0,25.0,86.0,19.0,,,True
@@ -256,136 +489,334 @@ S. Johannesen,Midtjylland U19,"Brøndby U19 - Midtjylland U19, 4 - 0",,"August 2
 A. Lodberg,Midtjylland U19,"Brøndby U19 - Midtjylland U19, 4 - 0",P. Søndergaard,"August 27, 2024 at 12:30:00 PM GMT+2",95.0,18.0,89.0,33.0,,,True
 M. Pimpong,Midtjylland U19,"Brøndby U19 - Midtjylland U19, 4 - 0",,"August 27, 2024 at 12:30:00 PM GMT+2",76.0,75.0,,,87.0,75.0,True
 M. Konradsen,Midtjylland U19,"Brøndby U19 - Midtjylland U19, 4 - 0",P. Søndergaard,"August 27, 2024 at 12:30:00 PM GMT+2",80.0,86.0,92.0,60.0,,,True
+M. Andersen,Brøndby U19,"Brøndby U19 - Midtjylland U19, 4 - 0",,"August 27, 2024 at 12:30:00 PM GMT+2",68.0,16.0,,,86.0,36.0,True
+G. Nøhr,Brøndby U19,"Brøndby U19 - Midtjylland U19, 4 - 0",P. Søndergaard,"August 27, 2024 at 12:30:00 PM GMT+2",100.0,100.0,91.0,39.0,,,True
 A. Lodberg,Midtjylland U19,"Brøndby U19 - Midtjylland U19, 4 - 0",W. Jensen,"August 27, 2024 at 12:30:00 PM GMT+2",71.0,13.0,84.0,76.0,,,True
 J. Remark Wismann,Brøndby U19,"Brøndby U19 - Midtjylland U19, 4 - 0",M. Beyer,"August 27, 2024 at 12:30:00 PM GMT+2",53.0,41.0,85.0,20.0,,,True
+L. Larsen,Brøndby U19,"Brøndby U19 - Midtjylland U19, 4 - 0",,"August 27, 2024 at 12:30:00 PM GMT+2",86.0,16.0,,,85.0,29.0,True
 L. Larsen,Brøndby U19,"Brøndby U19 - Midtjylland U19, 4 - 0",,"August 27, 2024 at 12:30:00 PM GMT+2",73.0,32.0,,,89.0,31.0,True
 W. Jensen,Midtjylland U19,"Brøndby U19 - Midtjylland U19, 4 - 0",,"August 27, 2024 at 12:30:00 PM GMT+2",71.0,95.0,93.0,77.0,,,True
 W. Jensen,Midtjylland U19,"Brøndby U19 - Midtjylland U19, 4 - 0",M. Pimpong,"August 27, 2024 at 12:30:00 PM GMT+2",76.0,88.0,92.0,48.0,,,True
+C. Jørgensen,Midtjylland U19,"Brøndby U19 - Midtjylland U19, 4 - 0",M. Pimpong,"August 27, 2024 at 12:30:00 PM GMT+2",83.0,87.0,93.0,49.0,,,True
+A. Lodberg,Midtjylland U19,"Brøndby U19 - Midtjylland U19, 4 - 0",J. Arinze,"August 27, 2024 at 12:30:00 PM GMT+2",92.0,10.0,88.0,41.0,,,True
 J. Remark Wismann,Brøndby U19,"Brøndby U19 - Midtjylland U19, 4 - 0",M. Beyer,"August 27, 2024 at 12:30:00 PM GMT+2",78.0,28.0,96.0,23.0,,,True
+W. Køhler Simonsen,Randers U19,"AaB U19 - Randers U19, 0 - 3",V. Møller,"August 24, 2024 at 1:00:00 PM GMT+2",85.0,100.0,86.0,67.0,,,True
+L. Mandal Andersen,Randers U19,"AaB U19 - Randers U19, 0 - 3",E. Borup,"August 24, 2024 at 1:00:00 PM GMT+2",71.0,47.0,93.0,24.0,,,True
+V. Møller,AaB U19,"AaB U19 - Randers U19, 0 - 3",M. Simonsen,"August 24, 2024 at 1:00:00 PM GMT+2",68.0,40.0,94.0,50.0,,,True
+B. Clemmensen,Randers U19,"AaB U19 - Randers U19, 0 - 3",B. Grønkjær,"August 24, 2024 at 1:00:00 PM GMT+2",46.0,61.0,93.0,47.0,,,True
+W. Køhler Simonsen,Randers U19,"AaB U19 - Randers U19, 0 - 3",B. Andersen,"August 24, 2024 at 1:00:00 PM GMT+2",90.0,92.0,91.0,46.0,,,True
 F. Konstmann,Randers U19,"AaB U19 - Randers U19, 0 - 3",R. Rexhepi,"August 24, 2024 at 1:00:00 PM GMT+2",75.0,6.0,87.0,43.0,,,True
 M. Jensen,AaB U19,"AaB U19 - Randers U19, 0 - 3",F. Konstmann,"August 24, 2024 at 1:00:00 PM GMT+2",90.0,12.0,88.0,63.0,,,True
 A. Risgaard,Randers U19,"AaB U19 - Randers U19, 0 - 3",R. Rexhepi,"August 24, 2024 at 1:00:00 PM GMT+2",91.0,13.0,96.0,58.0,,,True
 W. Køhler Simonsen,Randers U19,"AaB U19 - Randers U19, 0 - 3",B. Andersen,"August 24, 2024 at 1:00:00 PM GMT+2",78.0,85.0,85.0,48.0,,,True
+M. Larsson,Randers U19,"AaB U19 - Randers U19, 0 - 3",E. Borup,"August 24, 2024 at 1:00:00 PM GMT+2",73.0,48.0,86.0,26.0,,,True
 A. Diagne,AaB U19,"AaB U19 - Randers U19, 0 - 3",,"August 24, 2024 at 1:00:00 PM GMT+2",66.0,11.0,,,86.0,37.0,True
+F. Konstmann,Randers U19,"AaB U19 - Randers U19, 0 - 3",M. Samson,"August 24, 2024 at 1:00:00 PM GMT+2",73.0,6.0,89.0,57.0,,,True
+M. Simonsen,Randers U19,"AaB U19 - Randers U19, 0 - 3",B. Grønkjær,"August 24, 2024 at 1:00:00 PM GMT+2",23.0,45.0,97.0,66.0,,,True
 M. Albæk,Randers U19,"AaB U19 - Randers U19, 0 - 3",B. Andersen,"August 24, 2024 at 1:00:00 PM GMT+2",77.0,49.0,93.0,68.0,,,True
 F. Konstmann,Randers U19,"AaB U19 - Randers U19, 0 - 3",R. Rexhepi,"August 24, 2024 at 1:00:00 PM GMT+2",84.0,6.0,86.0,38.0,,,True
 B. Pihl Jørgensen,AaB U19,"AaB U19 - Randers U19, 0 - 3",,"August 24, 2024 at 1:00:00 PM GMT+2",94.0,82.0,,,98.0,73.0,True
 W. Køhler Simonsen,Randers U19,"AaB U19 - Randers U19, 0 - 3",E. Borup,"August 24, 2024 at 1:00:00 PM GMT+2",94.0,87.0,94.0,38.0,,,True
+M. Larsson,Randers U19,"AaB U19 - Randers U19, 0 - 3",B. Clemmensen,"August 24, 2024 at 1:00:00 PM GMT+2",100.0,100.0,92.0,46.0,,,True
+L. Mandal Andersen,Randers U19,"AaB U19 - Randers U19, 0 - 3",C. Østergaard,"August 24, 2024 at 1:00:00 PM GMT+2",70.0,10.0,88.0,27.0,,,True
+M. Larsson,Randers U19,"AaB U19 - Randers U19, 0 - 3",R. Rexhepi,"August 24, 2024 at 1:00:00 PM GMT+2",100.0,100.0,97.0,49.0,,,True
+W. Køhler Simonsen,Randers U19,"AaB U19 - Randers U19, 0 - 3",R. Rexhepi,"August 24, 2024 at 1:00:00 PM GMT+2",94.0,92.0,91.0,46.0,,,True
+L. Mandal Andersen,Randers U19,"AaB U19 - Randers U19, 0 - 3",R. Rexhepi,"August 24, 2024 at 1:00:00 PM GMT+2",77.0,19.0,91.0,49.0,,,True
+M. Larsson,Randers U19,"AaB U19 - Randers U19, 0 - 3",C. Tcacenco,"August 24, 2024 at 1:00:00 PM GMT+2",100.0,100.0,92.0,58.0,,,True
+W. Køhler Simonsen,Randers U19,"AaB U19 - Randers U19, 0 - 3",B. Andersen,"August 24, 2024 at 1:00:00 PM GMT+2",85.0,100.0,89.0,67.0,,,True
+A. Risgaard,Randers U19,"AaB U19 - Randers U19, 0 - 3",F. Konstmann,"August 24, 2024 at 1:00:00 PM GMT+2",82.0,28.0,95.0,23.0,,,True
+A. Risgaard,Randers U19,"AaB U19 - Randers U19, 0 - 3",B. Grønkjær,"August 24, 2024 at 1:00:00 PM GMT+2",79.0,47.0,94.0,50.0,,,True
 M. Larsson,Randers U19,"AaB U19 - Randers U19, 0 - 3",M. Samson,"August 24, 2024 at 1:00:00 PM GMT+2",88.0,92.0,87.0,60.0,,,True
+V. Møller,AaB U19,"AaB U19 - Randers U19, 0 - 3",M. Jensen,"August 24, 2024 at 1:00:00 PM GMT+2",77.0,41.0,86.0,23.0,,,True
+F. Konstmann,Randers U19,"AaB U19 - Randers U19, 0 - 3",B. Andersen,"August 24, 2024 at 1:00:00 PM GMT+2",87.0,16.0,86.0,33.0,,,True
+M. Larsson,Randers U19,"AaB U19 - Randers U19, 0 - 3",F. Konstmann,"August 24, 2024 at 1:00:00 PM GMT+2",100.0,100.0,96.0,50.0,,,True
+W. Køhler Simonsen,Randers U19,"AaB U19 - Randers U19, 0 - 3",R. Rexhepi,"August 24, 2024 at 1:00:00 PM GMT+2",74.0,100.0,88.0,80.0,,,True
+N. Andersen,AaB U19,"AaB U19 - Randers U19, 0 - 3",M. Kjølby,"August 24, 2024 at 1:00:00 PM GMT+2",100.0,100.0,92.0,59.0,,,True
+A. Risgaard,Randers U19,"AaB U19 - Randers U19, 0 - 3",M. Larsson,"August 24, 2024 at 1:00:00 PM GMT+2",96.0,82.0,86.0,73.0,,,True
+W. Køhler Simonsen,Randers U19,"AaB U19 - Randers U19, 0 - 3",R. Rexhepi,"August 24, 2024 at 1:00:00 PM GMT+2",80.0,94.0,91.0,34.0,,,True
 W. Køhler Simonsen,Randers U19,"AaB U19 - Randers U19, 0 - 3",M. Samson,"August 24, 2024 at 1:00:00 PM GMT+2",88.0,93.0,86.0,60.0,,,True
 M. Larsson,Randers U19,"AaB U19 - Randers U19, 0 - 3",A. Risgaard,"August 24, 2024 at 1:00:00 PM GMT+2",78.0,34.0,89.0,30.0,,,True
 B. Andersen,Randers U19,"AaB U19 - Randers U19, 0 - 3",W. Køhler Simonsen,"August 24, 2024 at 1:00:00 PM GMT+2",83.0,57.0,89.0,76.0,,,True
 W. Køhler Simonsen,Randers U19,"AaB U19 - Randers U19, 0 - 3",M. Samson,"August 24, 2024 at 1:00:00 PM GMT+2",97.0,87.0,94.0,66.0,,,True
 M. Albæk,Randers U19,"AaB U19 - Randers U19, 0 - 3",F. Konstmann,"August 24, 2024 at 1:00:00 PM GMT+2",83.0,33.0,94.0,23.0,,,True
+C. Tcacenco,AaB U19,"AaB U19 - Randers U19, 0 - 3",,"August 24, 2024 at 1:00:00 PM GMT+2",90.0,14.0,93.0,66.0,,,True
+N. Andersen,AaB U19,"AaB U19 - Randers U19, 0 - 3",B. Andersen,"August 24, 2024 at 1:00:00 PM GMT+2",100.0,100.0,87.0,62.0,,,True
+A. Diagne,AaB U19,"AaB U19 - Randers U19, 0 - 3",B. Pihl Jørgensen,"August 24, 2024 at 1:00:00 PM GMT+2",76.0,67.0,92.0,64.0,,,True
+M. Larsson,Randers U19,"AaB U19 - Randers U19, 0 - 3",B. Andersen,"August 24, 2024 at 1:00:00 PM GMT+2",77.0,13.0,92.0,53.0,,,True
 A. Diagne,AaB U19,"AaB U19 - Randers U19, 0 - 3",V. Møller,"August 24, 2024 at 1:00:00 PM GMT+2",81.0,23.0,93.0,25.0,,,True
+C. Tcacenco,AaB U19,"AaB U19 - Randers U19, 0 - 3",M. Simonsen,"August 24, 2024 at 1:00:00 PM GMT+2",100.0,0.0,95.0,52.0,,,True
+C. Tcacenco,AaB U19,"AaB U19 - Randers U19, 0 - 3",M. Samson,"August 24, 2024 at 1:00:00 PM GMT+2",75.0,15.0,90.0,57.0,,,True
+F. Nygaard,AaB U19,"AaB U19 - Randers U19, 0 - 3",C. Tcacenco,"August 24, 2024 at 1:00:00 PM GMT+2",55.0,24.0,93.0,75.0,,,True
+C. Tcacenco,AaB U19,"AaB U19 - Randers U19, 0 - 3",M. Kjølby,"August 24, 2024 at 1:00:00 PM GMT+2",100.0,100.0,92.0,56.0,,,True
 M. Larsson,Randers U19,"AaB U19 - Randers U19, 0 - 3",,"August 24, 2024 at 1:00:00 PM GMT+2",82.0,27.0,,,87.0,28.0,True
+M. Larsson,Randers U19,"AaB U19 - Randers U19, 0 - 3",B. Clemmensen,"August 24, 2024 at 1:00:00 PM GMT+2",100.0,100.0,93.0,46.0,,,True
 M. Albæk,Randers U19,"AaB U19 - Randers U19, 0 - 3",B. Clemmensen,"August 24, 2024 at 1:00:00 PM GMT+2",82.0,54.0,89.0,38.0,,,True
 L. Mandal Andersen,Randers U19,"AaB U19 - Randers U19, 0 - 3",A. Risgaard,"August 24, 2024 at 1:00:00 PM GMT+2",82.0,35.0,96.0,24.0,,,True
 L. Mandal Andersen,Randers U19,"AaB U19 - Randers U19, 0 - 3",F. Nygaard,"August 24, 2024 at 1:00:00 PM GMT+2",75.0,40.0,88.0,71.0,,,True
+M. Larsson,Randers U19,"AaB U19 - Randers U19, 0 - 3",B. Clemmensen,"August 24, 2024 at 1:00:00 PM GMT+2",100.0,100.0,96.0,42.0,,,True
 A. Diagne,AaB U19,"AaB U19 - Randers U19, 0 - 3",,"August 24, 2024 at 1:00:00 PM GMT+2",68.0,13.0,,,85.0,23.0,True
+M. Larsson,Randers U19,"AaB U19 - Randers U19, 0 - 3",R. Rexhepi,"August 24, 2024 at 1:00:00 PM GMT+2",78.0,17.0,95.0,51.0,,,True
+R. Rexhepi,Randers U19,"AaB U19 - Randers U19, 0 - 3",,"August 24, 2024 at 1:00:00 PM GMT+2",78.0,28.0,100.0,27.0,,,True
+M. Ritter,AaB U19,"AaB U19 - Randers U19, 0 - 3",V. Fjeldgaard,"August 24, 2024 at 1:00:00 PM GMT+2",80.0,17.0,92.0,31.0,,,True
 M. Albæk,Randers U19,"AaB U19 - Randers U19, 0 - 3",M. Kjølby,"August 24, 2024 at 1:00:00 PM GMT+2",66.0,37.0,95.0,30.0,,,True
+M. Albæk,Randers U19,"AaB U19 - Randers U19, 0 - 3",,"August 24, 2024 at 1:00:00 PM GMT+2",88.0,18.0,,,88.0,36.0,True
+O. Kahr,Randers U19,"AaB U19 - Randers U19, 0 - 3",M. Albæk,"August 24, 2024 at 1:00:00 PM GMT+2",98.0,11.0,87.0,40.0,,,True
+M. Albæk,Randers U19,"AaB U19 - Randers U19, 0 - 3",R. Rexhepi,"August 24, 2024 at 1:00:00 PM GMT+2",75.0,95.0,88.0,69.0,,,True
 A. Diagne,AaB U19,"AaB U19 - Randers U19, 0 - 3",C. Østergaard,"August 24, 2024 at 1:00:00 PM GMT+2",87.0,13.0,87.0,45.0,80.0,22.0,True
+C. Tcacenco,AaB U19,"AaB U19 - Randers U19, 0 - 3",C. Østergaard,"August 24, 2024 at 1:00:00 PM GMT+2",79.0,22.0,89.0,47.0,,,True
+V. Fjeldgaard,AaB U19,"AaB U19 - Randers U19, 0 - 3",M. Ritter,"August 24, 2024 at 1:00:00 PM GMT+2",80.0,67.0,87.0,50.0,,,True
 A. Diagne,AaB U19,"AaB U19 - Randers U19, 0 - 3",,"August 24, 2024 at 1:00:00 PM GMT+2",75.0,14.0,,,96.0,24.0,True
+F. Nygaard,AaB U19,"AaB U19 - Randers U19, 0 - 3",V. Fjeldgaard,"August 24, 2024 at 1:00:00 PM GMT+2",69.0,17.0,87.0,47.0,,,True
+L. Mandal Andersen,Randers U19,"AaB U19 - Randers U19, 0 - 3",B. Grønkjær,"August 24, 2024 at 1:00:00 PM GMT+2",89.0,12.0,99.0,50.0,,,True
 C. Tcacenco,AaB U19,"AaB U19 - Randers U19, 0 - 3",V. Møller,"August 24, 2024 at 1:00:00 PM GMT+2",78.0,68.0,90.0,39.0,,,True
 E. Borup,AaB U19,"AaB U19 - Randers U19, 0 - 3",M. Simonsen,"August 24, 2024 at 1:00:00 PM GMT+2",47.0,76.0,84.0,45.0,,,True
+E. Borup,AaB U19,"AaB U19 - Randers U19, 0 - 3",B. Clemmensen,"August 24, 2024 at 1:00:00 PM GMT+2",87.0,85.0,93.0,42.0,,,True
 N. Stojanovic,AaB U19,"AaB U19 - Randers U19, 0 - 3",,"August 24, 2024 at 1:00:00 PM GMT+2",71.0,28.0,,,93.0,19.0,True
+C. Tcacenco,AaB U19,"AaB U19 - Randers U19, 0 - 3",M. Kjølby,"August 24, 2024 at 1:00:00 PM GMT+2",100.0,0.0,91.0,46.0,,,True
+C. Tcacenco,AaB U19,"AaB U19 - Randers U19, 0 - 3",J. Pedersen,"August 24, 2024 at 1:00:00 PM GMT+2",79.0,72.0,87.0,54.0,,,True
+N. Stojanovic,AaB U19,"AaB U19 - Randers U19, 0 - 3",,"August 24, 2024 at 1:00:00 PM GMT+2",74.0,63.0,,,84.0,36.0,True
+L. Mandal Andersen,Randers U19,"AaB U19 - Randers U19, 0 - 3",M. Kjølby,"August 24, 2024 at 1:00:00 PM GMT+2",67.0,56.0,90.0,32.0,,,True
+R. Rexhepi,Randers U19,"AaB U19 - Randers U19, 0 - 3",L. Mandal Andersen,"August 24, 2024 at 1:00:00 PM GMT+2",89.0,0.0,92.0,32.0,,,True
+M. Kaarsbo,Lyngby U19,"Lyngby U19 - Esbjerg U19, 1 - 1 (P)",W. Steindorsson,"August 24, 2024 at 1:00:00 PM GMT+2",74.0,14.0,92.0,58.0,,,True
+H. Heidarali,Lyngby U19,"Lyngby U19 - Esbjerg U19, 1 - 1 (P)",,"August 24, 2024 at 1:00:00 PM GMT+2",86.0,4.0,97.0,56.0,,,True
+K. Pedersen,Esbjerg U19,"Lyngby U19 - Esbjerg U19, 1 - 1 (P)",V. Lykke,"August 24, 2024 at 1:00:00 PM GMT+2",84.0,93.0,92.0,55.0,,,True
+M. Kruse,Esbjerg U19,"Lyngby U19 - Esbjerg U19, 1 - 1 (P)",A. Jørgensen,"August 24, 2024 at 1:00:00 PM GMT+2",83.0,100.0,90.0,64.0,,,True
+K. Pedersen,Esbjerg U19,"Lyngby U19 - Esbjerg U19, 1 - 1 (P)",M. Kruse,"August 24, 2024 at 1:00:00 PM GMT+2",83.0,93.0,99.0,77.0,,,True
 K. Pedersen,Esbjerg U19,"Lyngby U19 - Esbjerg U19, 1 - 1 (P)",M. Henriksen,"August 24, 2024 at 1:00:00 PM GMT+2",94.0,94.0,97.0,72.0,,,True
+M. Svane,Esbjerg U19,"Lyngby U19 - Esbjerg U19, 1 - 1 (P)",J. Otoa,"August 24, 2024 at 1:00:00 PM GMT+2",100.0,100.0,97.0,47.0,,,True
+E. Thor,Lyngby U19,"Lyngby U19 - Esbjerg U19, 1 - 1 (P)",,"August 24, 2024 at 1:00:00 PM GMT+2",73.0,13.0,100.0,70.0,,,True
+M. Svane,Esbjerg U19,"Lyngby U19 - Esbjerg U19, 1 - 1 (P)",M. Kruse,"August 24, 2024 at 1:00:00 PM GMT+2",80.0,36.0,88.0,65.0,,,True
 B. Andersen Magui,Lyngby U19,"Lyngby U19 - Esbjerg U19, 1 - 1 (P)",E. Thor,"August 24, 2024 at 1:00:00 PM GMT+2",80.0,48.0,85.0,52.0,,,True
 A. Cehobasic,Esbjerg U19,"Lyngby U19 - Esbjerg U19, 1 - 1 (P)",,"August 24, 2024 at 1:00:00 PM GMT+2",82.0,70.0,,,88.0,70.0,True
+B. Baldursson,Esbjerg U19,"Lyngby U19 - Esbjerg U19, 1 - 1 (P)",A. Cehobasic,"August 24, 2024 at 1:00:00 PM GMT+2",100.0,0.0,95.0,25.0,,,True
+M. Svane,Esbjerg U19,"Lyngby U19 - Esbjerg U19, 1 - 1 (P)",B. Baldursson,"August 24, 2024 at 1:00:00 PM GMT+2",78.0,18.0,94.0,19.0,,,True
+K. Pedersen,Esbjerg U19,"Lyngby U19 - Esbjerg U19, 1 - 1 (P)",A. Cehobasic,"August 24, 2024 at 1:00:00 PM GMT+2",75.0,70.0,85.0,66.0,,,True
 M. Kruse,Esbjerg U19,"Lyngby U19 - Esbjerg U19, 1 - 1 (P)",E. Larsen,"August 24, 2024 at 1:00:00 PM GMT+2",77.0,59.0,87.0,76.0,,,True
+M. Svane,Esbjerg U19,"Lyngby U19 - Esbjerg U19, 1 - 1 (P)",R. Zwinge,"August 24, 2024 at 1:00:00 PM GMT+2",100.0,100.0,93.0,33.0,,,True
+M. Engsted,Esbjerg U19,"Lyngby U19 - Esbjerg U19, 1 - 1 (P)",M. Kruse,"August 24, 2024 at 1:00:00 PM GMT+2",85.0,16.0,86.0,65.0,,,True
+M. Kruse,Esbjerg U19,"Lyngby U19 - Esbjerg U19, 1 - 1 (P)",E. Omerovic,"August 24, 2024 at 1:00:00 PM GMT+2",84.0,100.0,90.0,66.0,,,True
 E. Larsen,Esbjerg U19,"Lyngby U19 - Esbjerg U19, 1 - 1 (P)",M. Engsted,"August 24, 2024 at 1:00:00 PM GMT+2",95.0,85.0,97.0,44.0,,,True
+M. Svane,Esbjerg U19,"Lyngby U19 - Esbjerg U19, 1 - 1 (P)",A. Cehobasic,"August 24, 2024 at 1:00:00 PM GMT+2",70.0,20.0,87.0,36.0,,,True
+W. Steindorsson,Lyngby U19,"Lyngby U19 - Esbjerg U19, 1 - 1 (P)",B. Andersen Magui,"August 24, 2024 at 1:00:00 PM GMT+2",81.0,63.0,86.0,43.0,,,True
+M. Kaarsbo,Lyngby U19,"Lyngby U19 - Esbjerg U19, 1 - 1 (P)",E. Thor,"August 24, 2024 at 1:00:00 PM GMT+2",100.0,100.0,95.0,73.0,,,True
+E. Thor,Lyngby U19,"Lyngby U19 - Esbjerg U19, 1 - 1 (P)",A. Drexel,"August 24, 2024 at 1:00:00 PM GMT+2",80.0,74.0,84.0,43.0,,,True
+M. Kaarsbo,Lyngby U19,"Lyngby U19 - Esbjerg U19, 1 - 1 (P)",A. Aslani,"August 24, 2024 at 1:00:00 PM GMT+2",100.0,100.0,92.0,42.0,,,True
+M. Henriksen,Lyngby U19,"Lyngby U19 - Esbjerg U19, 1 - 1 (P)",A. Drexel,"August 24, 2024 at 1:00:00 PM GMT+2",20.0,33.0,88.0,25.0,,,True
+E. Thor,Lyngby U19,"Lyngby U19 - Esbjerg U19, 1 - 1 (P)",B. Andersen Magui,"August 24, 2024 at 1:00:00 PM GMT+2",68.0,3.0,84.0,29.0,,,True
+J. Jensen,Esbjerg U19,"Lyngby U19 - Esbjerg U19, 1 - 1 (P)",E. Larsen,"August 24, 2024 at 1:00:00 PM GMT+2",59.0,23.0,92.0,79.0,,,True
 R. Flügge,Lyngby U19,"Lyngby U19 - Esbjerg U19, 1 - 1 (P)",,"August 24, 2024 at 1:00:00 PM GMT+2",76.0,70.0,91.0,68.0,,,True
 W. Steindorsson,Lyngby U19,"Lyngby U19 - Esbjerg U19, 1 - 1 (P)",,"August 24, 2024 at 1:00:00 PM GMT+2",91.0,89.0,,,97.0,76.0,True
 J. Jensen,Esbjerg U19,"Lyngby U19 - Esbjerg U19, 1 - 1 (P)",V. Andersen,"August 24, 2024 at 1:00:00 PM GMT+2",36.0,44.0,86.0,51.0,,,True
+E. Thor,Lyngby U19,"Lyngby U19 - Esbjerg U19, 1 - 1 (P)",,"August 24, 2024 at 1:00:00 PM GMT+2",84.0,14.0,100.0,69.0,,,True
+E. Larsen,Esbjerg U19,"Lyngby U19 - Esbjerg U19, 1 - 1 (P)",,"August 24, 2024 at 1:00:00 PM GMT+2",79.0,69.0,,,88.0,70.0,True
+M. Svane,Esbjerg U19,"Lyngby U19 - Esbjerg U19, 1 - 1 (P)",,"August 24, 2024 at 1:00:00 PM GMT+2",100.0,100.0,100.0,39.0,,,True
+V. Svenstrup,Lyngby U19,"Lyngby U19 - Esbjerg U19, 1 - 1 (P)",B. Andersen Magui,"August 24, 2024 at 1:00:00 PM GMT+2",77.0,22.0,93.0,38.0,,,True
 A. Lund Jørgensen,Esbjerg U19,"Lyngby U19 - Esbjerg U19, 1 - 1 (P)",P. Nielsen,"August 24, 2024 at 1:00:00 PM GMT+2",76.0,38.0,85.0,27.0,,,True
 E. Thor,Lyngby U19,"Lyngby U19 - Esbjerg U19, 1 - 1 (P)",V. Svenstrup,"August 24, 2024 at 1:00:00 PM GMT+2",81.0,34.0,93.0,28.0,,,True
+B. Baldursson,Esbjerg U19,"Lyngby U19 - Esbjerg U19, 1 - 1 (P)",A. Lund Jørgensen,"August 24, 2024 at 1:00:00 PM GMT+2",60.0,72.0,88.0,42.0,,,True
+B. Andersen Magui,Lyngby U19,"Lyngby U19 - Esbjerg U19, 1 - 1 (P)",W. Steindorsson,"August 24, 2024 at 1:00:00 PM GMT+2",70.0,31.0,93.0,32.0,,,True
 E. Omerovic,Esbjerg U19,"Lyngby U19 - Esbjerg U19, 1 - 1 (P)",V. Andersen,"August 24, 2024 at 1:00:00 PM GMT+2",27.0,59.0,90.0,25.0,,,True
 A. Jørgensen,Lyngby U19,"Lyngby U19 - Esbjerg U19, 1 - 1 (P)",R. Flügge,"August 24, 2024 at 1:00:00 PM GMT+2",76.0,57.0,87.0,67.0,,,True
+M. Kruse,Esbjerg U19,"Lyngby U19 - Esbjerg U19, 1 - 1 (P)",V. Lykke,"August 24, 2024 at 1:00:00 PM GMT+2",80.0,0.0,93.0,31.0,,,True
+M. Svane,Esbjerg U19,"Lyngby U19 - Esbjerg U19, 1 - 1 (P)",A. Lund Jørgensen,"August 24, 2024 at 1:00:00 PM GMT+2",75.0,11.0,92.0,36.0,,,True
+J. Jensen,Esbjerg U19,"Lyngby U19 - Esbjerg U19, 1 - 1 (P)",A. Aslani,"August 24, 2024 at 1:00:00 PM GMT+2",76.0,12.0,85.0,25.0,,,True
+E. Thor,Lyngby U19,"Lyngby U19 - Esbjerg U19, 1 - 1 (P)",B. Andersen Magui,"August 24, 2024 at 1:00:00 PM GMT+2",100.0,0.0,93.0,59.0,,,True
 R. Flügge,Lyngby U19,"Lyngby U19 - Esbjerg U19, 1 - 1 (P)",B. Andersen Magui,"August 24, 2024 at 1:00:00 PM GMT+2",88.0,95.0,94.0,45.0,,,True
 M. Svane,Esbjerg U19,"Lyngby U19 - Esbjerg U19, 1 - 1 (P)",P. Nielsen,"August 24, 2024 at 1:00:00 PM GMT+2",73.0,11.0,86.0,29.0,,,True
 M. Kruse,Esbjerg U19,"Lyngby U19 - Esbjerg U19, 1 - 1 (P)",K. Pedersen,"August 24, 2024 at 1:00:00 PM GMT+2",72.0,69.0,91.0,68.0,,,True
 P. Nielsen,Esbjerg U19,"Lyngby U19 - Esbjerg U19, 1 - 1 (P)",M. Kruse,"August 24, 2024 at 1:00:00 PM GMT+2",72.0,12.0,98.0,29.0,,,True
+M. Svane,Esbjerg U19,"Lyngby U19 - Esbjerg U19, 1 - 1 (P)",R. Zwinge,"August 24, 2024 at 1:00:00 PM GMT+2",100.0,100.0,95.0,31.0,,,True
+T. Nilsson,Lyngby U19,"Lyngby U19 - Esbjerg U19, 1 - 1 (P)",W. Steindorsson,"August 24, 2024 at 1:00:00 PM GMT+2",36.0,82.0,95.0,74.0,,,True
+M. Kaarsbo,Lyngby U19,"Lyngby U19 - Esbjerg U19, 1 - 1 (P)",W. Steindorsson,"August 24, 2024 at 1:00:00 PM GMT+2",79.0,82.0,98.0,35.0,,,True
+E. Thor,Lyngby U19,"Lyngby U19 - Esbjerg U19, 1 - 1 (P)",,"August 24, 2024 at 1:00:00 PM GMT+2",100.0,0.0,90.0,65.0,,,True
+B. Andersen Magui,Lyngby U19,"Lyngby U19 - Esbjerg U19, 1 - 1 (P)",E. Thor,"August 24, 2024 at 1:00:00 PM GMT+2",83.0,32.0,93.0,21.0,,,True
+T. Di Carlo,Lyngby U19,"Lyngby U19 - Esbjerg U19, 1 - 1 (P)",W. Steindorsson,"August 24, 2024 at 1:00:00 PM GMT+2",78.0,29.0,98.0,61.0,,,True
 R. Flügge,Lyngby U19,"Lyngby U19 - Esbjerg U19, 1 - 1 (P)",M. Svane,"August 24, 2024 at 1:00:00 PM GMT+2",93.0,14.0,91.0,61.0,,,True
 V. Svenstrup,Lyngby U19,"Lyngby U19 - Esbjerg U19, 1 - 1 (P)",M. Kaarsbo,"August 24, 2024 at 1:00:00 PM GMT+2",88.0,12.0,95.0,77.0,,,True
+E. Thor,Lyngby U19,"Lyngby U19 - Esbjerg U19, 1 - 1 (P)",M. Kaarsbo,"August 24, 2024 at 1:00:00 PM GMT+2",100.0,0.0,87.0,48.0,,,True
+B. Baldursson,Esbjerg U19,"Lyngby U19 - Esbjerg U19, 1 - 1 (P)",V. Svenstrup,"August 24, 2024 at 1:00:00 PM GMT+2",77.0,65.0,85.0,70.0,,,True
 S. Stüker,Silkeborg U19,"Silkeborg U19 - Horsens U19, 1 - 1 (P)",S. Biller Mikkelsen,"August 24, 2024 at 1:00:00 PM GMT+2",88.0,83.0,87.0,73.0,,,True
+W. Kirk,Silkeborg U19,"Silkeborg U19 - Horsens U19, 1 - 1 (P)",Y. Ouorou,"August 24, 2024 at 1:00:00 PM GMT+2",100.0,100.0,86.0,46.0,,,True
+S. Stüker,Silkeborg U19,"Silkeborg U19 - Horsens U19, 1 - 1 (P)",,"August 24, 2024 at 1:00:00 PM GMT+2",88.0,90.0,100.0,63.0,,,True
 M. Salah,Horsens U19,"Silkeborg U19 - Horsens U19, 1 - 1 (P)",R. Nybo,"August 24, 2024 at 1:00:00 PM GMT+2",80.0,18.0,90.0,64.0,,,True
+R. Nybo,Horsens U19,"Silkeborg U19 - Horsens U19, 1 - 1 (P)",Y. Ouorou,"August 24, 2024 at 1:00:00 PM GMT+2",76.0,93.0,95.0,76.0,,,True
+W. Møller,Silkeborg U19,"Silkeborg U19 - Horsens U19, 1 - 1 (P)",A. Mandrup,"August 24, 2024 at 1:00:00 PM GMT+2",80.0,22.0,92.0,71.0,,,True
+W. Kirk,Silkeborg U19,"Silkeborg U19 - Horsens U19, 1 - 1 (P)",S. Laustsen,"August 24, 2024 at 1:00:00 PM GMT+2",100.0,100.0,91.0,55.0,,,True
 Y. Ouorou,Horsens U19,"Silkeborg U19 - Horsens U19, 1 - 1 (P)",M. Salah,"August 24, 2024 at 1:00:00 PM GMT+2",84.0,88.0,92.0,41.0,,,True
+A. Mandrup,Horsens U19,"Silkeborg U19 - Horsens U19, 1 - 1 (P)",A. Moro,"August 24, 2024 at 1:00:00 PM GMT+2",88.0,0.0,89.0,26.0,,,True
 S. Stüker,Silkeborg U19,"Silkeborg U19 - Horsens U19, 1 - 1 (P)",,"August 24, 2024 at 1:00:00 PM GMT+2",94.0,85.0,100.0,54.0,,,True
 O. Mandrup,Horsens U19,"Silkeborg U19 - Horsens U19, 1 - 1 (P)",,"August 24, 2024 at 1:00:00 PM GMT+2",76.0,32.0,,,91.0,34.0,True
 V. Dahl,Silkeborg U19,"Silkeborg U19 - Horsens U19, 1 - 1 (P)",S. Juel,"August 24, 2024 at 1:00:00 PM GMT+2",79.0,39.0,86.0,38.0,,,True
+S. Biller Mikkelsen,Silkeborg U19,"Silkeborg U19 - Horsens U19, 1 - 1 (P)",S. Dalby Wille,"August 24, 2024 at 1:00:00 PM GMT+2",87.0,7.0,96.0,52.0,,,True
+M. Ryberg,Silkeborg U19,"Silkeborg U19 - Horsens U19, 1 - 1 (P)",M. Micha Jacobsen,"August 24, 2024 at 1:00:00 PM GMT+2",71.0,39.0,90.0,41.0,,,True
 W. Kirk,Silkeborg U19,"Silkeborg U19 - Horsens U19, 1 - 1 (P)",,"August 24, 2024 at 1:00:00 PM GMT+2",83.0,54.0,,,85.0,46.0,True
 M. Øxenberg,Silkeborg U19,"Silkeborg U19 - Horsens U19, 1 - 1 (P)",,"August 24, 2024 at 1:00:00 PM GMT+2",65.0,23.0,100.0,67.0,,,True
 V. Dahl,Silkeborg U19,"Silkeborg U19 - Horsens U19, 1 - 1 (P)",S. Dalby Wille,"August 24, 2024 at 1:00:00 PM GMT+2",71.0,52.0,86.0,56.0,,,True
+P. Rolke,Horsens U19,"Silkeborg U19 - Horsens U19, 1 - 1 (P)",,"August 24, 2024 at 1:00:00 PM GMT+2",79.0,68.0,,,89.0,70.0,True
+O. Mandrup,Horsens U19,"Silkeborg U19 - Horsens U19, 1 - 1 (P)",C. Risom,"August 24, 2024 at 1:00:00 PM GMT+2",97.0,84.0,88.0,59.0,,,True
+Y. Ouorou,Horsens U19,"Silkeborg U19 - Horsens U19, 1 - 1 (P)",M. Micha Jacobsen,"August 24, 2024 at 1:00:00 PM GMT+2",78.0,66.0,90.0,50.0,,,True
+M. Salah,Horsens U19,"Silkeborg U19 - Horsens U19, 1 - 1 (P)",S. Juel,"August 24, 2024 at 1:00:00 PM GMT+2",74.0,20.0,92.0,54.0,,,True
+M. Salah,Horsens U19,"Silkeborg U19 - Horsens U19, 1 - 1 (P)",M. Frederiksen,"August 24, 2024 at 1:00:00 PM GMT+2",100.0,100.0,86.0,64.0,,,True
 V. Dahl,Silkeborg U19,"Silkeborg U19 - Horsens U19, 1 - 1 (P)",,"August 24, 2024 at 1:00:00 PM GMT+2",73.0,34.0,100.0,69.0,,,True
+W. Kirk,Silkeborg U19,"Silkeborg U19 - Horsens U19, 1 - 1 (P)",,"August 24, 2024 at 1:00:00 PM GMT+2",82.0,68.0,,,88.0,66.0,True
+L. Osmani,Horsens U19,"Silkeborg U19 - Horsens U19, 1 - 1 (P)",Y. Ouorou,"August 24, 2024 at 1:00:00 PM GMT+2",80.0,12.0,90.0,54.0,,,True
 A. Mandrup,Horsens U19,"Silkeborg U19 - Horsens U19, 1 - 1 (P)",,"August 24, 2024 at 1:00:00 PM GMT+2",83.0,9.0,,,91.0,22.0,True
+M. Salah,Horsens U19,"Silkeborg U19 - Horsens U19, 1 - 1 (P)",O. Mandrup,"August 24, 2024 at 1:00:00 PM GMT+2",100.0,0.0,93.0,49.0,,,True
 S. Stüker,Silkeborg U19,"Silkeborg U19 - Horsens U19, 1 - 1 (P)",V. Dahl,"August 24, 2024 at 1:00:00 PM GMT+2",81.0,88.0,88.0,59.0,,,True
+S. Biller Mikkelsen,Silkeborg U19,"Silkeborg U19 - Horsens U19, 1 - 1 (P)",W. Pedersen,"August 24, 2024 at 1:00:00 PM GMT+2",59.0,36.0,94.0,25.0,,,True
+S. Dalby Wille,Horsens U19,"Silkeborg U19 - Horsens U19, 1 - 1 (P)",O. Mandrup,"August 24, 2024 at 1:00:00 PM GMT+2",24.0,64.0,93.0,72.0,,,True
+M. Salah,Horsens U19,"Silkeborg U19 - Horsens U19, 1 - 1 (P)",S. Stüker,"August 24, 2024 at 1:00:00 PM GMT+2",100.0,100.0,95.0,56.0,,,True
+A. Mandrup,Horsens U19,"Silkeborg U19 - Horsens U19, 1 - 1 (P)",R. Nybo,"August 24, 2024 at 1:00:00 PM GMT+2",93.0,4.0,96.0,70.0,,,True
+L. Osmani,Horsens U19,"Silkeborg U19 - Horsens U19, 1 - 1 (P)",W. Pedersen,"August 24, 2024 at 1:00:00 PM GMT+2",78.0,31.0,92.0,62.0,,,True
+M. Ryberg,Silkeborg U19,"Silkeborg U19 - Horsens U19, 1 - 1 (P)",S. Christoffersen,"August 24, 2024 at 1:00:00 PM GMT+2",81.0,36.0,90.0,45.0,,,True
+S. Stüker,Silkeborg U19,"Silkeborg U19 - Horsens U19, 1 - 1 (P)",S. Dalby Wille,"August 24, 2024 at 1:00:00 PM GMT+2",85.0,93.0,99.0,53.0,,,True
 W. Kirk,Silkeborg U19,"Silkeborg U19 - Horsens U19, 1 - 1 (P)",M. Ryberg,"August 24, 2024 at 1:00:00 PM GMT+2",96.0,85.0,91.0,70.0,,,True
 A. Arouna,Horsens U19,"Silkeborg U19 - Horsens U19, 1 - 1 (P)",,"August 24, 2024 at 1:00:00 PM GMT+2",69.0,73.0,,,87.0,67.0,True
+S. Christoffersen,Silkeborg U19,"Silkeborg U19 - Horsens U19, 1 - 1 (P)",S. Dalby Wille,"August 24, 2024 at 1:00:00 PM GMT+2",65.0,46.0,88.0,37.0,,,True
+M. Salah,Horsens U19,"Silkeborg U19 - Horsens U19, 1 - 1 (P)",P. Rolke,"August 24, 2024 at 1:00:00 PM GMT+2",70.0,93.0,87.0,46.0,,,True
 S. Biller Mikkelsen,Silkeborg U19,"Silkeborg U19 - Horsens U19, 1 - 1 (P)",E. Kjær,"August 24, 2024 at 1:00:00 PM GMT+2",77.0,76.0,87.0,73.0,,,True
 W. Kirk,Silkeborg U19,"Silkeborg U19 - Horsens U19, 1 - 1 (P)",E. Kjær,"August 24, 2024 at 1:00:00 PM GMT+2",80.0,68.0,97.0,75.0,,,True
+M. Salah,Horsens U19,"Silkeborg U19 - Horsens U19, 1 - 1 (P)",S. Traoré,"August 24, 2024 at 1:00:00 PM GMT+2",68.0,32.0,88.0,35.0,,,True
+S. Stüker,Silkeborg U19,"Silkeborg U19 - Horsens U19, 1 - 1 (P)",S. Christoffersen,"August 24, 2024 at 1:00:00 PM GMT+2",77.0,94.0,90.0,55.0,,,True
 L. Risager Kristensen,Horsens U19,"Silkeborg U19 - Horsens U19, 1 - 1 (P)",W. Møller,"August 24, 2024 at 1:00:00 PM GMT+2",74.0,73.0,85.0,64.0,,,True
+M. Salah,Horsens U19,"Silkeborg U19 - Horsens U19, 1 - 1 (P)",E. A´Ngon,"August 24, 2024 at 1:00:00 PM GMT+2",100.0,100.0,90.0,42.0,,,True
 L. Risager Kristensen,Horsens U19,"Silkeborg U19 - Horsens U19, 1 - 1 (P)",,"August 24, 2024 at 1:00:00 PM GMT+2",79.0,65.0,,,86.0,59.0,True
+L. Riggelsen,SønderjyskE U19,"SønderjyskE U19 - OB U19, 1 - 3",S. Larsen,"August 24, 2024 at 12:30:00 PM GMT+2",79.0,100.0,87.0,69.0,,,True
+M. Søfeldt Nielsen,OB U19,"SønderjyskE U19 - OB U19, 1 - 3",E. Hansborg-Sørensen,"August 24, 2024 at 12:30:00 PM GMT+2",77.0,88.0,91.0,69.0,,,True
 L. Riggelsen,SønderjyskE U19,"SønderjyskE U19 - OB U19, 1 - 3",O. Hyseni,"August 24, 2024 at 12:30:00 PM GMT+2",73.0,80.0,90.0,29.0,,,True
+S. Maass,SønderjyskE U19,"SønderjyskE U19 - OB U19, 1 - 3",L. Riggelsen,"August 24, 2024 at 12:30:00 PM GMT+2",74.0,22.0,94.0,67.0,,,True
+N. Juul-Sandberg,OB U19,"SønderjyskE U19 - OB U19, 1 - 3",S. Larsen,"August 24, 2024 at 12:30:00 PM GMT+2",100.0,0.0,98.0,45.0,,,True
+N. Juul-Sandberg,OB U19,"SønderjyskE U19 - OB U19, 1 - 3",M. Søfeldt Nielsen,"August 24, 2024 at 12:30:00 PM GMT+2",100.0,0.0,95.0,52.0,,,True
+M. Andersen,OB U19,"SønderjyskE U19 - OB U19, 1 - 3",L. Riggelsen,"August 24, 2024 at 12:30:00 PM GMT+2",81.0,35.0,81.0,32.0,87.0,19.0,True
+Noah Barholt Rasmussen,OB U19,"SønderjyskE U19 - OB U19, 1 - 3",N. Lassen,"August 24, 2024 at 12:30:00 PM GMT+2",90.0,17.0,94.0,28.0,,,True
+N. Juul-Sandberg,OB U19,"SønderjyskE U19 - OB U19, 1 - 3",A. Rrahmani,"August 24, 2024 at 12:30:00 PM GMT+2",100.0,0.0,91.0,55.0,,,True
+Noah Barholt Rasmussen,OB U19,"SønderjyskE U19 - OB U19, 1 - 3",J. Jonsson,"August 24, 2024 at 12:30:00 PM GMT+2",83.0,0.0,91.0,27.0,,,True
 E. Hansborg-Sørensen,OB U19,"SønderjyskE U19 - OB U19, 1 - 3",S. Bogdan,"August 24, 2024 at 12:30:00 PM GMT+2",54.0,41.0,91.0,44.0,,,True
 S. Larsen,SønderjyskE U19,"SønderjyskE U19 - OB U19, 1 - 3",A. Rrahmani,"August 24, 2024 at 12:30:00 PM GMT+2",81.0,62.0,87.0,59.0,,,True
+M. McCoy,OB U19,"SønderjyskE U19 - OB U19, 1 - 3",J. Jonsson,"August 24, 2024 at 12:30:00 PM GMT+2",89.0,95.0,92.0,50.0,,,True
+E. Hansborg-Sørensen,OB U19,"SønderjyskE U19 - OB U19, 1 - 3",M. Andersen,"August 24, 2024 at 12:30:00 PM GMT+2",85.0,91.0,85.0,48.0,,,True
+M. Ottesen,SønderjyskE U19,"SønderjyskE U19 - OB U19, 1 - 3",M. Eskildsen,"August 24, 2024 at 12:30:00 PM GMT+2",44.0,62.0,88.0,45.0,,,True
+M. McCoy,OB U19,"SønderjyskE U19 - OB U19, 1 - 3",N. Lassen,"August 24, 2024 at 12:30:00 PM GMT+2",79.0,100.0,88.0,78.0,,,True
+N. Lassen,OB U19,"SønderjyskE U19 - OB U19, 1 - 3",L. Riggelsen,"August 24, 2024 at 12:30:00 PM GMT+2",89.0,91.0,95.0,43.0,,,True
+W. Martin,OB U19,"SønderjyskE U19 - OB U19, 1 - 3",,"August 24, 2024 at 12:30:00 PM GMT+2",92.0,18.0,95.0,62.0,,,True
+S. Maass,SønderjyskE U19,"SønderjyskE U19 - OB U19, 1 - 3",A. Bergholdt,"August 24, 2024 at 12:30:00 PM GMT+2",52.0,24.0,86.0,40.0,,,True
 L. Riggelsen,SønderjyskE U19,"SønderjyskE U19 - OB U19, 1 - 3",M. Eskildsen,"August 24, 2024 at 12:30:00 PM GMT+2",72.0,86.0,94.0,54.0,,,True
 M. McCoy,OB U19,"SønderjyskE U19 - OB U19, 1 - 3",W. Martin,"August 24, 2024 at 12:30:00 PM GMT+2",82.0,84.0,92.0,37.0,,,True
+L. Riggelsen,SønderjyskE U19,"SønderjyskE U19 - OB U19, 1 - 3",D. Amtrup,"August 24, 2024 at 12:30:00 PM GMT+2",74.0,100.0,85.0,68.0,,,True
+A. Bergholdt,SønderjyskE U19,"SønderjyskE U19 - OB U19, 1 - 3",,"August 24, 2024 at 12:30:00 PM GMT+2",82.0,78.0,,,87.0,75.0,True
+M. McCoy,OB U19,"SønderjyskE U19 - OB U19, 1 - 3",S. Bogdan,"August 24, 2024 at 12:30:00 PM GMT+2",70.0,83.0,85.0,46.0,,,True
+N. Juul-Sandberg,OB U19,"SønderjyskE U19 - OB U19, 1 - 3",J. Askou,"August 24, 2024 at 12:30:00 PM GMT+2",100.0,100.0,95.0,60.0,,,True
 E. Hansborg-Sørensen,OB U19,"SønderjyskE U19 - OB U19, 1 - 3",,"August 24, 2024 at 12:30:00 PM GMT+2",69.0,94.0,,,88.0,71.0,True
+Noah Barholt Rasmussen,OB U19,"SønderjyskE U19 - OB U19, 1 - 3",W. Martin,"August 24, 2024 at 12:30:00 PM GMT+2",83.0,17.0,90.0,33.0,,,True
 Noah Barholt Rasmussen,OB U19,"SønderjyskE U19 - OB U19, 1 - 3",W. Martin,"August 24, 2024 at 12:30:00 PM GMT+2",92.0,12.0,97.0,23.0,,,True
 N. Juul-Sandberg,OB U19,"SønderjyskE U19 - OB U19, 1 - 3",,"August 24, 2024 at 12:30:00 PM GMT+2",81.0,21.0,,,89.0,20.0,True
 M. Andersen,OB U19,"SønderjyskE U19 - OB U19, 1 - 3",M. Søfeldt Nielsen,"August 24, 2024 at 12:30:00 PM GMT+2",87.0,13.0,94.0,48.0,,,True
 M. McCoy,OB U19,"SønderjyskE U19 - OB U19, 1 - 3",M. Søfeldt Nielsen,"August 24, 2024 at 12:30:00 PM GMT+2",93.0,86.0,86.0,57.0,,,True
+N. Juul-Sandberg,OB U19,"SønderjyskE U19 - OB U19, 1 - 3",M. Andersen,"August 24, 2024 at 12:30:00 PM GMT+2",63.0,34.0,90.0,27.0,,,True
 E. Hansborg-Sørensen,OB U19,"SønderjyskE U19 - OB U19, 1 - 3",V. Klindt Sørensen,"August 24, 2024 at 12:30:00 PM GMT+2",69.0,71.0,87.0,58.0,,,True
 N. Lassen,OB U19,"SønderjyskE U19 - OB U19, 1 - 3",,"August 24, 2024 at 12:30:00 PM GMT+2",92.0,86.0,,,94.0,71.0,True
+Noah Barholt Rasmussen,OB U19,"SønderjyskE U19 - OB U19, 1 - 3",S. Bogdan,"August 24, 2024 at 12:30:00 PM GMT+2",85.0,16.0,98.0,39.0,,,True
+N. Juul-Sandberg,OB U19,"SønderjyskE U19 - OB U19, 1 - 3",S. Bogdan,"August 24, 2024 at 12:30:00 PM GMT+2",100.0,0.0,99.0,52.0,,,True
+M. Eskildsen,OB U19,"SønderjyskE U19 - OB U19, 1 - 3",W. Martin,"August 24, 2024 at 12:30:00 PM GMT+2",23.0,87.0,84.0,55.0,,,True
 Noah Barholt Rasmussen,OB U19,"SønderjyskE U19 - OB U19, 1 - 3",M. Andersen,"August 24, 2024 at 12:30:00 PM GMT+2",97.0,14.0,87.0,21.0,,,True
 E. Hansborg-Sørensen,OB U19,"SønderjyskE U19 - OB U19, 1 - 3",V. Friis,"August 24, 2024 at 12:30:00 PM GMT+2",79.0,71.0,88.0,43.0,,,True
+Noah Barholt Rasmussen,OB U19,"SønderjyskE U19 - OB U19, 1 - 3",M. Andersen,"August 24, 2024 at 12:30:00 PM GMT+2",54.0,3.0,93.0,28.0,,,True
+N. Juul-Sandberg,OB U19,"SønderjyskE U19 - OB U19, 1 - 3",V. Friis,"August 24, 2024 at 12:30:00 PM GMT+2",100.0,0.0,97.0,49.0,,,True
 N. Lassen,OB U19,"SønderjyskE U19 - OB U19, 1 - 3",,"August 24, 2024 at 12:30:00 PM GMT+2",81.0,27.0,,,99.0,24.0,True
+N. Juul-Sandberg,OB U19,"SønderjyskE U19 - OB U19, 1 - 3",D. Amtrup,"August 24, 2024 at 12:30:00 PM GMT+2",100.0,0.0,93.0,55.0,,,True
+S. Bogdan,SønderjyskE U19,"SønderjyskE U19 - OB U19, 1 - 3",M. Eskildsen,"August 24, 2024 at 12:30:00 PM GMT+2",33.0,65.0,86.0,25.0,,,True
+Noah Barholt Rasmussen,OB U19,"SønderjyskE U19 - OB U19, 1 - 3",M. Søfeldt Nielsen,"August 24, 2024 at 12:30:00 PM GMT+2",61.0,0.0,90.0,26.0,,,True
 S. Larsen,SønderjyskE U19,"SønderjyskE U19 - OB U19, 1 - 3",E. Hjorth Pedersen,"August 24, 2024 at 12:30:00 PM GMT+2",76.0,71.0,87.0,81.0,,,True
+J. Askou,OB U19,"SønderjyskE U19 - OB U19, 1 - 3",A. Vogtmann,"August 24, 2024 at 12:30:00 PM GMT+2",44.0,91.0,89.0,81.0,,,True
 M. Andersen,OB U19,"SønderjyskE U19 - OB U19, 1 - 3",,"August 24, 2024 at 12:30:00 PM GMT+2",69.0,3.0,,,89.0,22.0,True
+M. McCoy,OB U19,"SønderjyskE U19 - OB U19, 1 - 3",N. Lassen,"August 24, 2024 at 12:30:00 PM GMT+2",77.0,69.0,84.0,66.0,,,True
 A. Vogtmann,SønderjyskE U19,"SønderjyskE U19 - OB U19, 1 - 3",D. Amtrup,"August 24, 2024 at 12:30:00 PM GMT+2",88.0,14.0,90.0,61.0,,,True
 V. Friis,OB U19,"SønderjyskE U19 - OB U19, 1 - 3",N. Lassen,"August 24, 2024 at 12:30:00 PM GMT+2",91.0,90.0,89.0,75.0,,,True
 V. Friis,OB U19,"SønderjyskE U19 - OB U19, 1 - 3",S. Bogdan,"August 24, 2024 at 12:30:00 PM GMT+2",83.0,16.0,95.0,49.0,,,True
 A. Bergholdt,SønderjyskE U19,"SønderjyskE U19 - OB U19, 1 - 3",D. Amtrup,"August 24, 2024 at 12:30:00 PM GMT+2",89.0,17.0,90.0,38.0,,,True
 N. Lassen,OB U19,"SønderjyskE U19 - OB U19, 1 - 3",,"August 24, 2024 at 12:30:00 PM GMT+2",78.0,80.0,,,85.0,71.0,True
+L. Riggelsen,SønderjyskE U19,"SønderjyskE U19 - OB U19, 1 - 3",S. Larsen,"August 24, 2024 at 12:30:00 PM GMT+2",92.0,100.0,93.0,64.0,,,True
+A. Bergholdt,SønderjyskE U19,"SønderjyskE U19 - OB U19, 1 - 3",Noah Barholt Rasmussen,"August 24, 2024 at 12:30:00 PM GMT+2",81.0,14.0,91.0,68.0,,,True
+A. Vogtmann,SønderjyskE U19,"SønderjyskE U19 - OB U19, 1 - 3",V. Bolander,"August 24, 2024 at 12:30:00 PM GMT+2",100.0,100.0,97.0,57.0,,,True
+A. Vogtmann,SønderjyskE U19,"SønderjyskE U19 - OB U19, 1 - 3",M. McCoy,"August 24, 2024 at 12:30:00 PM GMT+2",82.0,92.0,95.0,38.0,,,True
+M. Andersen,OB U19,"SønderjyskE U19 - OB U19, 1 - 3",M. Ottesen,"August 24, 2024 at 12:30:00 PM GMT+2",79.0,13.0,89.0,26.0,,,True
+S. Larsen,SønderjyskE U19,"SønderjyskE U19 - OB U19, 1 - 3",M. McCoy,"August 24, 2024 at 12:30:00 PM GMT+2",95.0,13.0,87.0,23.0,,,True
+A. Raffnsøe Hoeg,SønderjyskE U19,"SønderjyskE U19 - OB U19, 1 - 3",,"August 24, 2024 at 12:30:00 PM GMT+2",100.0,0.0,96.0,66.0,,,True
+N. Sabroe Lund,SønderjyskE U19,"SønderjyskE U19 - OB U19, 1 - 3",M. Eskildsen,"August 24, 2024 at 12:30:00 PM GMT+2",60.0,42.0,90.0,46.0,,,True
 H. Rasmussen,OB U19,"SønderjyskE U19 - OB U19, 1 - 3",,"August 24, 2024 at 12:30:00 PM GMT+2",91.0,83.0,,,85.0,81.0,True
 Noah Barholt Rasmussen,OB U19,"SønderjyskE U19 - OB U19, 1 - 3",S. Bogdan,"August 24, 2024 at 12:30:00 PM GMT+2",93.0,15.0,96.0,50.0,,,True
 H. Rasmussen,OB U19,"SønderjyskE U19 - OB U19, 1 - 3",V. Klindt Sørensen,"August 24, 2024 at 12:30:00 PM GMT+2",80.0,52.0,86.0,54.0,,,True
 N. Sabroe Lund,SønderjyskE U19,"SønderjyskE U19 - OB U19, 1 - 3",M. McCoy,"August 24, 2024 at 12:30:00 PM GMT+2",86.0,15.0,88.0,25.0,,,True
+A. Raffnsøe Hoeg,SønderjyskE U19,"SønderjyskE U19 - OB U19, 1 - 3",M. Eskildsen,"August 24, 2024 at 12:30:00 PM GMT+2",100.0,0.0,98.0,51.0,,,True
 E. Hjorth Pedersen,SønderjyskE U19,"SønderjyskE U19 - OB U19, 1 - 3",S. Larsen,"August 24, 2024 at 12:30:00 PM GMT+2",81.0,72.0,87.0,52.0,,,True
+T. Lykkebak,Vejle U19,"Vejle U19 - Brøndby U19, 1 - 1",,"August 24, 2024 at 12:30:00 PM GMT+2",75.0,26.0,,,90.0,34.0,True
+M. Udengaard,Vejle U19,"Vejle U19 - Brøndby U19, 1 - 1",P. Søndergaard,"August 24, 2024 at 12:30:00 PM GMT+2",90.0,12.0,91.0,49.0,,,True
+L. Flø Borregaard,Vejle U19,"Vejle U19 - Brøndby U19, 1 - 1",T. Pedersen,"August 24, 2024 at 12:30:00 PM GMT+2",83.0,96.0,84.0,69.0,,,True
+L. Flø Borregaard,Vejle U19,"Vejle U19 - Brøndby U19, 1 - 1",R. Koch Groth Pedersen,"August 24, 2024 at 12:30:00 PM GMT+2",88.0,100.0,91.0,69.0,,,True
 M. Udengaard,Vejle U19,"Vejle U19 - Brøndby U19, 1 - 1",R. Koch Groth Pedersen,"August 24, 2024 at 12:30:00 PM GMT+2",92.0,15.0,92.0,54.0,,,True
 T. Lykkebak,Vejle U19,"Vejle U19 - Brøndby U19, 1 - 1",,"August 24, 2024 at 12:30:00 PM GMT+2",71.0,18.0,100.0,29.0,,,True
+L. Larsen,Brøndby U19,"Vejle U19 - Brøndby U19, 1 - 1",J. Remark Wismann,"August 24, 2024 at 12:30:00 PM GMT+2",94.0,4.0,98.0,28.0,,,True
 W. Bjergfeldt,Brøndby U19,"Vejle U19 - Brøndby U19, 1 - 1",M. Jensen,"August 24, 2024 at 12:30:00 PM GMT+2",76.0,63.0,86.0,55.0,,,True
+T. Lykkebak,Vejle U19,"Vejle U19 - Brøndby U19, 1 - 1",A. Klaster,"August 24, 2024 at 12:30:00 PM GMT+2",71.0,76.0,94.0,33.0,,,True
 P. Søndergaard,Brøndby U19,"Vejle U19 - Brøndby U19, 1 - 1",G. Knudsen,"August 24, 2024 at 12:30:00 PM GMT+2",20.0,34.0,90.0,27.0,,,True
 A. Muhammad,Vejle U19,"Vejle U19 - Brøndby U19, 1 - 1",W. Sonne,"August 24, 2024 at 12:30:00 PM GMT+2",70.0,45.0,89.0,50.0,,,True
 L. Larsen,Brøndby U19,"Vejle U19 - Brøndby U19, 1 - 1",G. Nøhr,"August 24, 2024 at 12:30:00 PM GMT+2",80.0,4.0,93.0,24.0,,,True
 P. Søndergaard,Brøndby U19,"Vejle U19 - Brøndby U19, 1 - 1",M. Udengaard,"August 24, 2024 at 12:30:00 PM GMT+2",77.0,41.0,88.0,65.0,,,True
+W. Bjergfeldt,Brøndby U19,"Vejle U19 - Brøndby U19, 1 - 1",J. Ambæk,"August 24, 2024 at 12:30:00 PM GMT+2",86.0,100.0,94.0,74.0,,,True
+G. Nøhr,Brøndby U19,"Vejle U19 - Brøndby U19, 1 - 1",A. Tomaselli,"August 24, 2024 at 12:30:00 PM GMT+2",100.0,100.0,93.0,53.0,,,True
+L. Flø Borregaard,Vejle U19,"Vejle U19 - Brøndby U19, 1 - 1",L. Vraa-Jensen,"August 24, 2024 at 12:30:00 PM GMT+2",88.0,98.0,90.0,50.0,,,True
+M. Udengaard,Vejle U19,"Vejle U19 - Brøndby U19, 1 - 1",T. Lykkebak,"August 24, 2024 at 12:30:00 PM GMT+2",77.0,28.0,93.0,48.0,,,True
+J. Agyekum,Brøndby U19,"Vejle U19 - Brøndby U19, 1 - 1",L. Larsen,"August 24, 2024 at 12:30:00 PM GMT+2",73.0,33.0,91.0,30.0,,,True
+M. Jensen,Brøndby U19,"Vejle U19 - Brøndby U19, 1 - 1",W. Bjergfeldt,"August 24, 2024 at 12:30:00 PM GMT+2",100.0,0.0,92.0,67.0,,,True
 T. Lykkebak,Vejle U19,"Vejle U19 - Brøndby U19, 1 - 1",,"August 24, 2024 at 12:30:00 PM GMT+2",81.0,85.0,,,91.0,73.0,True
+M. Udengaard,Vejle U19,"Vejle U19 - Brøndby U19, 1 - 1",T. Pedersen,"August 24, 2024 at 12:30:00 PM GMT+2",78.0,15.0,87.0,59.0,,,True
+G. Nøhr,Brøndby U19,"Vejle U19 - Brøndby U19, 1 - 1",A. Tomaselli,"August 24, 2024 at 12:30:00 PM GMT+2",80.0,5.0,90.0,34.0,,,True
+M. Udengaard,Vejle U19,"Vejle U19 - Brøndby U19, 1 - 1",W. Sonne,"August 24, 2024 at 12:30:00 PM GMT+2",77.0,12.0,90.0,50.0,,,True
+T. Lykkebak,Vejle U19,"Vejle U19 - Brøndby U19, 1 - 1",W. Sonne,"August 24, 2024 at 12:30:00 PM GMT+2",74.0,12.0,88.0,51.0,,,True
+M. Jensen,Brøndby U19,"Vejle U19 - Brøndby U19, 1 - 1",J. Ambæk,"August 24, 2024 at 12:30:00 PM GMT+2",68.0,66.0,87.0,58.0,,,True
 P. Søndergaard,Brøndby U19,"Vejle U19 - Brøndby U19, 1 - 1",L. Larsen,"August 24, 2024 at 12:30:00 PM GMT+2",79.0,74.0,89.0,32.0,,,True
 W. Bjergfeldt,Brøndby U19,"Vejle U19 - Brøndby U19, 1 - 1",A. Klaster,"August 24, 2024 at 12:30:00 PM GMT+2",80.0,82.0,87.0,62.0,72.0,95.0,True
 L. Vraa-Jensen,Brøndby U19,"Vejle U19 - Brøndby U19, 1 - 1",J. Ambæk,"August 24, 2024 at 12:30:00 PM GMT+2",64.0,89.0,84.0,38.0,,,True
+M. Jensen,Brøndby U19,"Vejle U19 - Brøndby U19, 1 - 1",W. Bjergfeldt,"August 24, 2024 at 12:30:00 PM GMT+2",74.0,78.0,90.0,69.0,,,True
 A. Stengaard,Vejle U19,"Vejle U19 - Brøndby U19, 1 - 1",R. Lynder,"August 24, 2024 at 12:30:00 PM GMT+2",95.0,14.0,90.0,55.0,,,True
+T. Lykkebak,Vejle U19,"Vejle U19 - Brøndby U19, 1 - 1",A. Stengaard,"August 24, 2024 at 12:30:00 PM GMT+2",100.0,0.0,92.0,44.0,,,True
 A. Tomaselli,Vejle U19,"Vejle U19 - Brøndby U19, 1 - 1",A. Muhammad,"August 24, 2024 at 12:30:00 PM GMT+2",79.0,49.0,88.0,53.0,,,True
 J. Ambæk,Brøndby U19,"Vejle U19 - Brøndby U19, 1 - 1",,"August 24, 2024 at 12:30:00 PM GMT+2",81.0,84.0,,,90.0,77.0,True
 M. Udengaard,Vejle U19,"Vejle U19 - Brøndby U19, 1 - 1",T. Lykkebak,"August 24, 2024 at 12:30:00 PM GMT+2",94.0,16.0,91.0,34.0,,,True
 R. Koch Groth Pedersen,Vejle U19,"Vejle U19 - Brøndby U19, 1 - 1",T. Lykkebak,"August 24, 2024 at 12:30:00 PM GMT+2",80.0,70.0,84.0,28.0,,,True
+L. Vraa-Jensen,Brøndby U19,"Vejle U19 - Brøndby U19, 1 - 1",M. Jensen,"August 24, 2024 at 12:30:00 PM GMT+2",62.0,81.0,96.0,74.0,,,True
 G. Nøhr,Brøndby U19,"Vejle U19 - Brøndby U19, 1 - 1",,"August 24, 2024 at 12:30:00 PM GMT+2",78.0,10.0,86.0,24.0,,,True
 P. Søndergaard,Brøndby U19,"Vejle U19 - Brøndby U19, 1 - 1",J. Agyekum,"August 24, 2024 at 12:30:00 PM GMT+2",79.0,37.0,88.0,46.0,,,True
 R. Lynder,Brøndby U19,"Vejle U19 - Brøndby U19, 1 - 1",G. Knudsen,"August 24, 2024 at 12:30:00 PM GMT+2",59.0,18.0,92.0,32.0,,,True
+W. Bjergfeldt,Brøndby U19,"Vejle U19 - Brøndby U19, 1 - 1",A. Klaster,"August 24, 2024 at 12:30:00 PM GMT+2",80.0,83.0,97.0,72.0,,,True
 T. Lykkebak,Vejle U19,"Vejle U19 - Brøndby U19, 1 - 1",L. Flø Borregaard,"August 24, 2024 at 12:30:00 PM GMT+2",90.0,89.0,94.0,81.0,,,True
+M. Udengaard,Vejle U19,"Vejle U19 - Brøndby U19, 1 - 1",L. Flø Borregaard,"August 24, 2024 at 12:30:00 PM GMT+2",100.0,100.0,95.0,54.0,,,True
 R. Koch Groth Pedersen,Vejle U19,"Vejle U19 - Brøndby U19, 1 - 1",,"August 24, 2024 at 12:30:00 PM GMT+2",82.0,80.0,,,95.0,71.0,True
 M. Jensen,Brøndby U19,"Vejle U19 - Brøndby U19, 1 - 1",J. Agyekum,"August 24, 2024 at 12:30:00 PM GMT+2",75.0,80.0,95.0,43.0,,,True
 M. Jensen,Brøndby U19,"Vejle U19 - Brøndby U19, 1 - 1",J. Ambæk,"August 24, 2024 at 12:30:00 PM GMT+2",93.0,85.0,88.0,64.0,,,True
 L. Vraa-Jensen,Brøndby U19,"Vejle U19 - Brøndby U19, 1 - 1",H. Christensen,"August 24, 2024 at 12:30:00 PM GMT+2",75.0,98.0,94.0,67.0,,,True
 M. Jensen,Brøndby U19,"Vejle U19 - Brøndby U19, 1 - 1",,"August 24, 2024 at 12:30:00 PM GMT+2",78.0,80.0,100.0,58.0,,,True
+J. Agyekum,Brøndby U19,"Vejle U19 - Brøndby U19, 1 - 1",,"August 24, 2024 at 12:30:00 PM GMT+2",80.0,32.0,,,97.0,30.0,True
+M. Udengaard,Vejle U19,"Vejle U19 - Brøndby U19, 1 - 1",,"August 24, 2024 at 12:30:00 PM GMT+2",93.0,13.0,,,95.0,26.0,True
+M. Udengaard,Vejle U19,"Vejle U19 - Brøndby U19, 1 - 1",A. Tomaselli,"August 24, 2024 at 12:30:00 PM GMT+2",100.0,100.0,95.0,55.0,,,True
+L. Flø Borregaard,Vejle U19,"Vejle U19 - Brøndby U19, 1 - 1",W. Sonne,"August 24, 2024 at 12:30:00 PM GMT+2",59.0,56.0,91.0,35.0,,,True
 P. Søndergaard,Brøndby U19,"Vejle U19 - Brøndby U19, 1 - 1",L. Larsen,"August 24, 2024 at 12:30:00 PM GMT+2",63.0,47.0,89.0,26.0,,,True
 L. Larsen,Brøndby U19,"Vejle U19 - Brøndby U19, 1 - 1",P. Søndergaard,"August 24, 2024 at 12:30:00 PM GMT+2",97.0,18.0,90.0,55.0,,,True
 M. Andersen,Brøndby U19,"Vejle U19 - Brøndby U19, 1 - 1",A. Tomaselli,"August 24, 2024 at 12:30:00 PM GMT+2",75.0,47.0,85.0,43.0,,,True
 L. Vraa-Jensen,Brøndby U19,"Vejle U19 - Brøndby U19, 1 - 1",N. Jakobsen,"August 24, 2024 at 12:30:00 PM GMT+2",68.0,92.0,91.0,40.0,,,True
 N. Jakobsen,Brøndby U19,"Vejle U19 - Brøndby U19, 1 - 1",,"August 24, 2024 at 12:30:00 PM GMT+2",80.0,61.0,,,89.0,73.0,True
+G. Nøhr,Brøndby U19,"Vejle U19 - Brøndby U19, 1 - 1",H. Christensen,"August 24, 2024 at 12:30:00 PM GMT+2",83.0,24.0,88.0,62.0,,,True
 L. Flø Borregaard,Vejle U19,"Vejle U19 - Brøndby U19, 1 - 1",A. Stengaard,"August 24, 2024 at 12:30:00 PM GMT+2",85.0,83.0,90.0,38.0,,,True
+M. Jensen,Brøndby U19,"Vejle U19 - Brøndby U19, 1 - 1",W. Bjergfeldt,"August 24, 2024 at 12:30:00 PM GMT+2",75.0,43.0,90.0,71.0,,,True
+M. Andersen,Brøndby U19,"Vejle U19 - Brøndby U19, 1 - 1",W. Bjergfeldt,"August 24, 2024 at 12:30:00 PM GMT+2",64.0,53.0,90.0,73.0,,,True
 L. Larsen,Brøndby U19,"Vejle U19 - Brøndby U19, 1 - 1",N. Jakobsen,"August 24, 2024 at 12:30:00 PM GMT+2",81.0,36.0,89.0,54.0,,,True
+M. Andersen,Brøndby U19,"Vejle U19 - Brøndby U19, 1 - 1",A. Tomaselli,"August 24, 2024 at 12:30:00 PM GMT+2",78.0,86.0,89.0,43.0,,,True
+R. Lynder,Brøndby U19,"Vejle U19 - Brøndby U19, 1 - 1",M. Andersen,"August 24, 2024 at 12:30:00 PM GMT+2",74.0,45.0,89.0,74.0,,,True
 G. Nøhr,Brøndby U19,"Vejle U19 - Brøndby U19, 1 - 1",L. Larsen,"August 24, 2024 at 12:30:00 PM GMT+2",66.0,39.0,91.0,20.0,,,True
+T. Lykkebak,Vejle U19,"Vejle U19 - Brøndby U19, 1 - 1",R. Koch Groth Pedersen,"August 24, 2024 at 12:30:00 PM GMT+2",88.0,83.0,94.0,43.0,,,True
+P. Søndergaard,Brøndby U19,"Vejle U19 - Brøndby U19, 1 - 1",,"August 24, 2024 at 12:30:00 PM GMT+2",75.0,73.0,100.0,63.0,,,True
 L. Flø Borregaard,Vejle U19,"Vejle U19 - Brøndby U19, 1 - 1",,"August 24, 2024 at 12:30:00 PM GMT+2",64.0,89.0,,,97.0,63.0,True
+T. Lykkebak,Vejle U19,"Vejle U19 - Brøndby U19, 1 - 1",P. Søndergaard,"August 24, 2024 at 12:30:00 PM GMT+2",100.0,0.0,94.0,36.0,,,True
 Y. Ouorou,Horsens U19,"Horsens U19 - AGF U19, 1 - 1 (P)",S. Traoré,"August 31, 2024 at 12:30:00 PM GMT+2",86.0,11.0,93.0,59.0,,,True
 E. A´Ngon,Horsens U19,"Horsens U19 - AGF U19, 1 - 1 (P)",V. De Paoli,"August 31, 2024 at 12:30:00 PM GMT+2",39.0,14.0,99.0,31.0,,,True
 R. Nybo,Horsens U19,"Horsens U19 - AGF U19, 1 - 1 (P)",H. Toftegaard,"August 31, 2024 at 12:30:00 PM GMT+2",78.0,78.0,89.0,78.0,,,True
@@ -393,14 +824,21 @@ H. Toftegaard,Horsens U19,"Horsens U19 - AGF U19, 1 - 1 (P)",C. Storch,"August 3
 M. Salah,Horsens U19,"Horsens U19 - AGF U19, 1 - 1 (P)",Y. Ouorou,"August 31, 2024 at 12:30:00 PM GMT+2",78.0,61.0,88.0,45.0,,,True
 S. Traoré,Horsens U19,"Horsens U19 - AGF U19, 1 - 1 (P)",,"August 31, 2024 at 12:30:00 PM GMT+2",91.0,90.0,,,98.0,75.0,True
 H. Toftegaard,Horsens U19,"Horsens U19 - AGF U19, 1 - 1 (P)",R. Nybo,"August 31, 2024 at 12:30:00 PM GMT+2",78.0,74.0,89.0,76.0,,,True
+R. Nybo,Horsens U19,"Horsens U19 - AGF U19, 1 - 1 (P)",O. Mandrup,"August 31, 2024 at 12:30:00 PM GMT+2",75.0,100.0,96.0,74.0,,,True
 A. Moro,Horsens U19,"Horsens U19 - AGF U19, 1 - 1 (P)",S. Traoré,"August 31, 2024 at 12:30:00 PM GMT+2",64.0,65.0,84.0,73.0,,,True
 R. Nybo,Horsens U19,"Horsens U19 - AGF U19, 1 - 1 (P)",,"August 31, 2024 at 12:30:00 PM GMT+2",90.0,86.0,,,88.0,77.0,True
 H. Toftegaard,Horsens U19,"Horsens U19 - AGF U19, 1 - 1 (P)",C. Storch,"August 31, 2024 at 12:30:00 PM GMT+2",86.0,85.0,88.0,61.0,,,True
+L. Falk Hansen,AGF U19,"Horsens U19 - AGF U19, 1 - 1 (P)",,"August 31, 2024 at 12:30:00 PM GMT+2",74.0,63.0,,,96.0,62.0,True
+S. Stefánsson,AGF U19,"Horsens U19 - AGF U19, 1 - 1 (P)",,"August 31, 2024 at 12:30:00 PM GMT+2",42.0,56.0,100.0,21.0,,,True
+M. Salah,Horsens U19,"Horsens U19 - AGF U19, 1 - 1 (P)",Y. Ouorou,"August 31, 2024 at 12:30:00 PM GMT+2",96.0,8.0,96.0,28.0,,,True
+M. Salah,Horsens U19,"Horsens U19 - AGF U19, 1 - 1 (P)",H. Toftegaard,"August 31, 2024 at 12:30:00 PM GMT+2",100.0,0.0,92.0,27.0,,,True
 F. Elkjær Andersen,AGF U19,"Horsens U19 - AGF U19, 1 - 1 (P)",S. Dalby Wille,"August 31, 2024 at 12:30:00 PM GMT+2",70.0,18.0,94.0,23.0,,,True
 S. Traoré,Horsens U19,"Horsens U19 - AGF U19, 1 - 1 (P)",C. Storch,"August 31, 2024 at 12:30:00 PM GMT+2",79.0,79.0,92.0,51.0,,,True
 S. Traoré,Horsens U19,"Horsens U19 - AGF U19, 1 - 1 (P)",,"August 31, 2024 at 12:30:00 PM GMT+2",75.0,72.0,100.0,60.0,,,True
 F. Emmery,AGF U19,"Horsens U19 - AGF U19, 1 - 1 (P)",,"August 31, 2024 at 12:30:00 PM GMT+2",50.0,3.0,,,95.0,28.0,True
 F. Elkjær Andersen,AGF U19,"Horsens U19 - AGF U19, 1 - 1 (P)",,"August 31, 2024 at 12:30:00 PM GMT+2",79.0,29.0,,,89.0,27.0,True
+F. Elkjær Andersen,AGF U19,"Horsens U19 - AGF U19, 1 - 1 (P)",S. Dalby Wille,"August 31, 2024 at 12:30:00 PM GMT+2",100.0,100.0,97.0,45.0,,,True
+L. Falk Hansen,AGF U19,"Horsens U19 - AGF U19, 1 - 1 (P)",S. Dalby Wille,"August 31, 2024 at 12:30:00 PM GMT+2",99.0,82.0,89.0,59.0,,,True
 R. Nybo,Horsens U19,"Horsens U19 - AGF U19, 1 - 1 (P)",V. De Paoli,"August 31, 2024 at 12:30:00 PM GMT+2",45.0,94.0,94.0,50.0,,,True
 F. Emmery,AGF U19,"Horsens U19 - AGF U19, 1 - 1 (P)",R. Nybo,"August 31, 2024 at 12:30:00 PM GMT+2",79.0,17.0,84.0,23.0,,,True
 N. Strandby,AGF U19,"Horsens U19 - AGF U19, 1 - 1 (P)",,"August 31, 2024 at 12:30:00 PM GMT+2",74.0,74.0,,,92.0,70.0,True
@@ -409,36 +847,88 @@ F. Elkjær Andersen,AGF U19,"Horsens U19 - AGF U19, 1 - 1 (P)",N. Strandby,"Augu
 N. Strandby,AGF U19,"Horsens U19 - AGF U19, 1 - 1 (P)",S. Tchamche,"August 31, 2024 at 12:30:00 PM GMT+2",94.0,83.0,93.0,53.0,,,True
 R. Nybo,Horsens U19,"Horsens U19 - AGF U19, 1 - 1 (P)",M. Salah,"August 31, 2024 at 12:30:00 PM GMT+2",76.0,60.0,86.0,47.0,,,True
 M. Salah,Horsens U19,"Horsens U19 - AGF U19, 1 - 1 (P)",,"August 31, 2024 at 12:30:00 PM GMT+2",85.0,18.0,,,94.0,31.0,True
+H. Toftegaard,Horsens U19,"Horsens U19 - AGF U19, 1 - 1 (P)",M. Salah,"August 31, 2024 at 12:30:00 PM GMT+2",74.0,41.0,86.0,19.0,,,True
+M. Salah,Horsens U19,"Horsens U19 - AGF U19, 1 - 1 (P)",V. De Paoli,"August 31, 2024 at 12:30:00 PM GMT+2",100.0,0.0,99.0,47.0,,,True
+F. Emmery,AGF U19,"Horsens U19 - AGF U19, 1 - 1 (P)",S. Tchamche,"August 31, 2024 at 12:30:00 PM GMT+2",81.0,4.0,90.0,51.0,,,True
+O. Haugstrup,AGF U19,"Horsens U19 - AGF U19, 1 - 1 (P)",C. Storch,"August 31, 2024 at 12:30:00 PM GMT+2",71.0,89.0,89.0,41.0,,,True
+F. Emmery,AGF U19,"Horsens U19 - AGF U19, 1 - 1 (P)",S. Dalby Wille,"August 31, 2024 at 12:30:00 PM GMT+2",71.0,7.0,86.0,46.0,,,True
 Y. Ouorou,Horsens U19,"Horsens U19 - AGF U19, 1 - 1 (P)",M. Steffensen,"August 31, 2024 at 12:30:00 PM GMT+2",76.0,17.0,92.0,30.0,,,True
 O. Mandrup,Horsens U19,"Horsens U19 - AGF U19, 1 - 1 (P)",S. Stefánsson,"August 31, 2024 at 12:30:00 PM GMT+2",82.0,41.0,92.0,41.0,,,True
 F. Roslyng Christiansen,Horsens U19,"Horsens U19 - AGF U19, 1 - 1 (P)",S. Stefánsson,"August 31, 2024 at 12:30:00 PM GMT+2",75.0,8.0,90.0,34.0,,,True
+R. Nybo,Horsens U19,"Horsens U19 - AGF U19, 1 - 1 (P)",C. Storch,"August 31, 2024 at 12:30:00 PM GMT+2",86.0,83.0,91.0,52.0,,,True
+H. Toftegaard,Horsens U19,"Horsens U19 - AGF U19, 1 - 1 (P)",M. Steffensen,"August 31, 2024 at 12:30:00 PM GMT+2",92.0,82.0,94.0,43.0,,,True
+M. Salah,Horsens U19,"Horsens U19 - AGF U19, 1 - 1 (P)",F. Roslyng Christiansen,"August 31, 2024 at 12:30:00 PM GMT+2",82.0,46.0,87.0,34.0,,,True
+F. Emmery,AGF U19,"Horsens U19 - AGF U19, 1 - 1 (P)",,"August 31, 2024 at 12:30:00 PM GMT+2",27.0,1.0,,,86.0,34.0,True
 Y. Ouorou,Horsens U19,"Horsens U19 - AGF U19, 1 - 1 (P)",S. Traoré,"August 31, 2024 at 12:30:00 PM GMT+2",75.0,43.0,84.0,61.0,,,True
+M. Salah,Horsens U19,"Horsens U19 - AGF U19, 1 - 1 (P)",S. Traoré,"August 31, 2024 at 12:30:00 PM GMT+2",78.0,8.0,91.0,66.0,,,True
 F. Emmery,AGF U19,"Horsens U19 - AGF U19, 1 - 1 (P)",,"August 31, 2024 at 12:30:00 PM GMT+2",71.0,7.0,,,91.0,24.0,True
 O. Haugstrup,AGF U19,"Horsens U19 - AGF U19, 1 - 1 (P)",F. Emmery,"August 31, 2024 at 12:30:00 PM GMT+2",47.0,90.0,90.0,47.0,,,True
+M. Steffensen,AGF U19,"Horsens U19 - AGF U19, 1 - 1 (P)",S. Dalby Wille,"August 31, 2024 at 12:30:00 PM GMT+2",79.0,100.0,91.0,64.0,,,True
 H. Toftegaard,Horsens U19,"Horsens U19 - AGF U19, 1 - 1 (P)",F. Roslyng Christiansen,"August 31, 2024 at 12:30:00 PM GMT+2",45.0,78.0,88.0,27.0,,,True
+H. Toftegaard,Horsens U19,"Horsens U19 - AGF U19, 1 - 1 (P)",O. Mandrup,"August 31, 2024 at 12:30:00 PM GMT+2",76.0,48.0,89.0,56.0,,,True
+S. Tchamche,AGF U19,"Horsens U19 - AGF U19, 1 - 1 (P)",,"August 31, 2024 at 12:30:00 PM GMT+2",78.0,71.0,,,96.0,72.0,True
+R. Düring,AGF U19,"Horsens U19 - AGF U19, 1 - 1 (P)",N. Strandby,"August 31, 2024 at 12:30:00 PM GMT+2",87.0,94.0,88.0,57.0,,,True
+F. Elkjær Andersen,AGF U19,"Horsens U19 - AGF U19, 1 - 1 (P)",S. Dalby Wille,"August 31, 2024 at 12:30:00 PM GMT+2",79.0,17.0,95.0,51.0,,,True
 M. Steffensen,AGF U19,"Horsens U19 - AGF U19, 1 - 1 (P)",,"August 31, 2024 at 12:30:00 PM GMT+2",79.0,71.0,,,88.0,69.0,True
+F. Elkjær Andersen,AGF U19,"Horsens U19 - AGF U19, 1 - 1 (P)",S. Tchamche,"August 31, 2024 at 12:30:00 PM GMT+2",100.0,100.0,97.0,55.0,,,True
+R. Düring,AGF U19,"Horsens U19 - AGF U19, 1 - 1 (P)",P. Rolke,"August 31, 2024 at 12:30:00 PM GMT+2",96.0,84.0,97.0,55.0,,,True
+O. Mandrup,Horsens U19,"Horsens U19 - AGF U19, 1 - 1 (P)",S. Stefánsson,"August 31, 2024 at 12:30:00 PM GMT+2",79.0,39.0,84.0,38.0,,,True
+M. Frederiksen,Horsens U19,"Horsens U19 - AGF U19, 1 - 1 (P)",C. Storch,"August 31, 2024 at 12:30:00 PM GMT+2",92.0,16.0,92.0,52.0,,,True
+H. Toftegaard,Horsens U19,"Horsens U19 - AGF U19, 1 - 1 (P)",R. Nybo,"August 31, 2024 at 12:30:00 PM GMT+2",82.0,5.0,88.0,64.0,,,True
+H. Toftegaard,Horsens U19,"Horsens U19 - AGF U19, 1 - 1 (P)",R. Nybo,"August 31, 2024 at 12:30:00 PM GMT+2",100.0,100.0,97.0,38.0,,,True
 P. Rolke,Horsens U19,"Horsens U19 - AGF U19, 1 - 1 (P)",,"August 31, 2024 at 12:30:00 PM GMT+2",68.0,86.0,,,90.0,78.0,True
+F. Elkjær Andersen,AGF U19,"Horsens U19 - AGF U19, 1 - 1 (P)",M. Frederiksen,"August 31, 2024 at 12:30:00 PM GMT+2",94.0,13.0,93.0,39.0,,,True
+V. De Paoli,AGF U19,"Horsens U19 - AGF U19, 1 - 1 (P)",S. Dalby Wille,"August 31, 2024 at 12:30:00 PM GMT+2",26.0,47.0,87.0,50.0,,,True
 E. Favor Fully,Horsens U19,"Horsens U19 - AGF U19, 1 - 1 (P)",V. De Paoli,"August 31, 2024 at 12:30:00 PM GMT+2",96.0,18.0,85.0,41.0,,,True
 E. Favor Fully,Horsens U19,"Horsens U19 - AGF U19, 1 - 1 (P)",V. De Paoli,"August 31, 2024 at 12:30:00 PM GMT+2",66.0,13.0,89.0,49.0,,,True
+F. Elkjær Andersen,AGF U19,"Horsens U19 - AGF U19, 1 - 1 (P)",C. Storch,"August 31, 2024 at 12:30:00 PM GMT+2",70.0,9.0,94.0,55.0,,,True
 Y. Ouorou,Horsens U19,"Horsens U19 - AGF U19, 1 - 1 (P)",A. Arouna,"August 31, 2024 at 12:30:00 PM GMT+2",80.0,23.0,91.0,55.0,,,True
+H. Toftegaard,Horsens U19,"Horsens U19 - AGF U19, 1 - 1 (P)",S. Stefánsson,"August 31, 2024 at 12:30:00 PM GMT+2",65.0,60.0,92.0,40.0,,,True
+H. Toftegaard,Horsens U19,"Horsens U19 - AGF U19, 1 - 1 (P)",F. Roslyng Christiansen,"August 31, 2024 at 12:30:00 PM GMT+2",100.0,0.0,91.0,55.0,,,True
+F. Roslyng Christiansen,Horsens U19,"Horsens U19 - AGF U19, 1 - 1 (P)",W. Rygaard,"August 31, 2024 at 12:30:00 PM GMT+2",87.0,100.0,95.0,54.0,,,True
+H. Toftegaard,Horsens U19,"Horsens U19 - AGF U19, 1 - 1 (P)",E. Favor Fully,"August 31, 2024 at 12:30:00 PM GMT+2",100.0,100.0,94.0,45.0,,,True
 M. Jensen,Brøndby U19,"Brøndby U19 - OB U19, 2 - 3",J. Agyekum,"August 31, 2024 at 12:30:00 PM GMT+2",69.0,42.0,88.0,78.0,,,True
 J. Agyekum,Brøndby U19,"Brøndby U19 - OB U19, 2 - 3",,"August 31, 2024 at 12:30:00 PM GMT+2",88.0,83.0,,,98.0,62.0,True
+Noah Barholt Rasmussen,OB U19,"Brøndby U19 - OB U19, 2 - 3",W. Martin,"August 31, 2024 at 12:30:00 PM GMT+2",76.0,5.0,91.0,27.0,,,True
+M. Andersen,OB U19,"Brøndby U19 - OB U19, 2 - 3",,"August 31, 2024 at 12:30:00 PM GMT+2",95.0,10.0,,,88.0,30.0,True
+Noah Barholt Rasmussen,OB U19,"Brøndby U19 - OB U19, 2 - 3",O. Sejer Lauritsen,"August 31, 2024 at 12:30:00 PM GMT+2",92.0,14.0,96.0,40.0,,,True
+N. Juul-Sandberg,OB U19,"Brøndby U19 - OB U19, 2 - 3",J. Askou,"August 31, 2024 at 12:30:00 PM GMT+2",100.0,0.0,98.0,46.0,,,True
 J. Ambæk,Brøndby U19,"Brøndby U19 - OB U19, 2 - 3",,"August 31, 2024 at 12:30:00 PM GMT+2",73.0,34.0,,,86.0,42.0,True
 J. Agyekum,Brøndby U19,"Brøndby U19 - OB U19, 2 - 3",W. Bjergfeldt,"August 31, 2024 at 12:30:00 PM GMT+2",83.0,65.0,97.0,67.0,,,True
+G. Nøhr,Brøndby U19,"Brøndby U19 - OB U19, 2 - 3",P. Søndergaard,"August 31, 2024 at 12:30:00 PM GMT+2",100.0,100.0,94.0,53.0,,,True
 W. Martin,OB U19,"Brøndby U19 - OB U19, 2 - 3",E. Hansborg-Sørensen,"August 31, 2024 at 12:30:00 PM GMT+2",77.0,31.0,87.0,27.0,,,True
 J. Agyekum,Brøndby U19,"Brøndby U19 - OB U19, 2 - 3",,"August 31, 2024 at 12:30:00 PM GMT+2",92.0,84.0,,,98.0,62.0,True
 N. Juul-Sandberg,OB U19,"Brøndby U19 - OB U19, 2 - 3",,"August 31, 2024 at 12:30:00 PM GMT+2",90.0,14.0,,,94.0,28.0,True
 M. Andersen,OB U19,"Brøndby U19 - OB U19, 2 - 3",W. Martin,"August 31, 2024 at 12:30:00 PM GMT+2",76.0,18.0,88.0,31.0,,,True
+W. Bjergfeldt,Brøndby U19,"Brøndby U19 - OB U19, 2 - 3",Noah Barholt Rasmussen,"August 31, 2024 at 12:30:00 PM GMT+2",77.0,63.0,87.0,72.0,,,True
 Noah Barholt Rasmussen,OB U19,"Brøndby U19 - OB U19, 2 - 3",,"August 31, 2024 at 12:30:00 PM GMT+2",91.0,13.0,100.0,71.0,,,True
+M. Jensen,Brøndby U19,"Brøndby U19 - OB U19, 2 - 3",M. Eskildsen,"August 31, 2024 at 12:30:00 PM GMT+2",67.0,25.0,95.0,64.0,,,True
 H. Rasmussen,OB U19,"Brøndby U19 - OB U19, 2 - 3",M. Jalloh,"August 31, 2024 at 12:30:00 PM GMT+2",81.0,82.0,99.0,49.0,,,True
+M. Andersen,OB U19,"Brøndby U19 - OB U19, 2 - 3",M. Jalloh,"August 31, 2024 at 12:30:00 PM GMT+2",91.0,0.0,97.0,29.0,,,True
 L. Larsen,Brøndby U19,"Brøndby U19 - OB U19, 2 - 3",J. Ambæk,"August 31, 2024 at 12:30:00 PM GMT+2",73.0,21.0,84.0,38.0,,,True
 P. Søndergaard,Brøndby U19,"Brøndby U19 - OB U19, 2 - 3",,"August 31, 2024 at 12:30:00 PM GMT+2",65.0,37.0,,,89.0,33.0,True
 M. Andersen,OB U19,"Brøndby U19 - OB U19, 2 - 3",E. Hansborg-Sørensen,"August 31, 2024 at 12:30:00 PM GMT+2",77.0,33.0,87.0,49.0,,,True
+O. Sejer Lauritsen,Brøndby U19,"Brøndby U19 - OB U19, 2 - 3",M. Eskildsen,"August 31, 2024 at 12:30:00 PM GMT+2",49.0,62.0,87.0,27.0,,,True
 M. McCoy,OB U19,"Brøndby U19 - OB U19, 2 - 3",P. Søndergaard,"August 31, 2024 at 12:30:00 PM GMT+2",92.0,88.0,97.0,63.0,,,True
+N. Juul-Sandberg,OB U19,"Brøndby U19 - OB U19, 2 - 3",D. Amtrup,"August 31, 2024 at 12:30:00 PM GMT+2",63.0,65.0,90.0,28.0,,,True
 W. Martin,OB U19,"Brøndby U19 - OB U19, 2 - 3",,"August 31, 2024 at 12:30:00 PM GMT+2",81.0,28.0,,,87.0,30.0,True
+M. Andersen,OB U19,"Brøndby U19 - OB U19, 2 - 3",O. Sejer Lauritsen,"August 31, 2024 at 12:30:00 PM GMT+2",91.0,10.0,95.0,29.0,,,True
+N. Juul-Sandberg,OB U19,"Brøndby U19 - OB U19, 2 - 3",P. Søndergaard,"August 31, 2024 at 12:30:00 PM GMT+2",100.0,0.0,96.0,43.0,,,True
+N. Juul-Sandberg,OB U19,"Brøndby U19 - OB U19, 2 - 3",D. Amtrup,"August 31, 2024 at 12:30:00 PM GMT+2",100.0,100.0,91.0,45.0,,,True
+M. Andersen,OB U19,"Brøndby U19 - OB U19, 2 - 3",M. Jalloh,"August 31, 2024 at 12:30:00 PM GMT+2",86.0,0.0,93.0,51.0,,,True
+H. Rasmussen,OB U19,"Brøndby U19 - OB U19, 2 - 3",M. Andersen,"August 31, 2024 at 12:30:00 PM GMT+2",79.0,66.0,86.0,25.0,,,True
+M. Andersen,OB U19,"Brøndby U19 - OB U19, 2 - 3",,"August 31, 2024 at 12:30:00 PM GMT+2",82.0,23.0,,,89.0,29.0,True
+H. Rasmussen,OB U19,"Brøndby U19 - OB U19, 2 - 3",M. Andersen,"August 31, 2024 at 12:30:00 PM GMT+2",90.0,91.0,96.0,26.0,,,True
+M. Andersen,OB U19,"Brøndby U19 - OB U19, 2 - 3",W. Martin,"August 31, 2024 at 12:30:00 PM GMT+2",90.0,14.0,89.0,38.0,,,True
+N. Lassen,OB U19,"Brøndby U19 - OB U19, 2 - 3",,"August 31, 2024 at 12:30:00 PM GMT+2",89.0,18.0,,,97.0,19.0,True
 G. Nøhr,Brøndby U19,"Brøndby U19 - OB U19, 2 - 3",J. Ambæk,"August 31, 2024 at 12:30:00 PM GMT+2",76.0,25.0,84.0,44.0,,,True
+J. Agyekum,Brøndby U19,"Brøndby U19 - OB U19, 2 - 3",,"August 31, 2024 at 12:30:00 PM GMT+2",88.0,83.0,,,87.0,71.0,True
+N. Lassen,OB U19,"Brøndby U19 - OB U19, 2 - 3",H. Rasmussen,"August 31, 2024 at 12:30:00 PM GMT+2",85.0,88.0,90.0,63.0,,,True
+N. Juul-Sandberg,OB U19,"Brøndby U19 - OB U19, 2 - 3",,"August 31, 2024 at 12:30:00 PM GMT+2",87.0,85.0,,,87.0,71.0,True
 H. Rasmussen,OB U19,"Brøndby U19 - OB U19, 2 - 3",E. Hansborg-Sørensen,"August 31, 2024 at 12:30:00 PM GMT+2",73.0,73.0,87.0,68.0,,,True
 N. Juul-Sandberg,OB U19,"Brøndby U19 - OB U19, 2 - 3",E. Hansborg-Sørensen,"August 31, 2024 at 12:30:00 PM GMT+2",86.0,82.0,93.0,62.0,,,True
+N. Juul-Sandberg,OB U19,"Brøndby U19 - OB U19, 2 - 3",J. Askou,"August 31, 2024 at 12:30:00 PM GMT+2",100.0,100.0,94.0,57.0,,,True
+Noah Barholt Rasmussen,OB U19,"Brøndby U19 - OB U19, 2 - 3",O. Sejer Lauritsen,"August 31, 2024 at 12:30:00 PM GMT+2",65.0,0.0,87.0,25.0,,,True
 W. Martin,OB U19,"Brøndby U19 - OB U19, 2 - 3",,"August 31, 2024 at 12:30:00 PM GMT+2",79.0,26.0,,,88.0,26.0,True
 L. Larsen,Brøndby U19,"Brøndby U19 - OB U19, 2 - 3",M. Eskildsen,"August 31, 2024 at 12:30:00 PM GMT+2",56.0,7.0,92.0,27.0,,,True
 Noah Barholt Rasmussen,OB U19,"Brøndby U19 - OB U19, 2 - 3",L. Larsen,"August 31, 2024 at 12:30:00 PM GMT+2",86.0,14.0,95.0,56.0,,,True
@@ -448,67 +938,154 @@ H. Rasmussen,OB U19,"Brøndby U19 - OB U19, 2 - 3",M. Jalloh,"August 31, 2024 at
 A. Escobar,Brøndby U19,"Brøndby U19 - OB U19, 2 - 3",J. Ambæk,"August 31, 2024 at 12:30:00 PM GMT+2",78.0,35.0,94.0,19.0,,,True
 L. Larsen,Brøndby U19,"Brøndby U19 - OB U19, 2 - 3",A. Escobar,"August 31, 2024 at 12:30:00 PM GMT+2",81.0,36.0,89.0,33.0,,,True
 A. Escobar,Brøndby U19,"Brøndby U19 - OB U19, 2 - 3",J. Agyekum,"August 31, 2024 at 12:30:00 PM GMT+2",80.0,41.0,93.0,71.0,,,True
+M. Andersen,OB U19,"Brøndby U19 - OB U19, 2 - 3",P. Søndergaard,"August 31, 2024 at 12:30:00 PM GMT+2",90.0,89.0,85.0,58.0,85.0,89.0,True
+M. Andersen,OB U19,"Brøndby U19 - OB U19, 2 - 3",V. Friis,"August 31, 2024 at 12:30:00 PM GMT+2",85.0,89.0,85.0,63.0,,,True
+M. McCoy,OB U19,"Brøndby U19 - OB U19, 2 - 3",,"August 31, 2024 at 12:30:00 PM GMT+2",94.0,93.0,100.0,63.0,,,True
+Noah Barholt Rasmussen,OB U19,"Brøndby U19 - OB U19, 2 - 3",V. Bender,"August 31, 2024 at 12:30:00 PM GMT+2",85.0,10.0,91.0,28.0,,,True
 W. Martin,OB U19,"Brøndby U19 - OB U19, 2 - 3",E. Hansborg-Sørensen,"August 31, 2024 at 12:30:00 PM GMT+2",78.0,39.0,87.0,38.0,,,True
+N. Juul-Sandberg,OB U19,"Brøndby U19 - OB U19, 2 - 3",J. Askou,"August 31, 2024 at 12:30:00 PM GMT+2",100.0,0.0,93.0,42.0,,,True
+N. Juul-Sandberg,OB U19,"Brøndby U19 - OB U19, 2 - 3",M. Andersen,"August 31, 2024 at 12:30:00 PM GMT+2",60.0,79.0,91.0,72.0,,,True
+N. Juul-Sandberg,OB U19,"Brøndby U19 - OB U19, 2 - 3",M. Jensen,"August 31, 2024 at 12:30:00 PM GMT+2",100.0,100.0,91.0,54.0,,,True
+M. Jensen,Brøndby U19,"Brøndby U19 - OB U19, 2 - 3",D. Amtrup,"August 31, 2024 at 12:30:00 PM GMT+2",100.0,0.0,91.0,37.0,,,True
+G. Nøhr,Brøndby U19,"Brøndby U19 - OB U19, 2 - 3",W. Martin,"August 31, 2024 at 12:30:00 PM GMT+2",82.0,47.0,91.0,73.0,,,True
 M. Jensen,Brøndby U19,"Brøndby U19 - OB U19, 2 - 3",J. Askou,"August 31, 2024 at 12:30:00 PM GMT+2",73.0,27.0,90.0,53.0,,,True
+N. Juul-Sandberg,OB U19,"Brøndby U19 - OB U19, 2 - 3",,"August 31, 2024 at 12:30:00 PM GMT+2",100.0,0.0,95.0,39.0,,,True
 L. Larsen,Brøndby U19,"Brøndby U19 - OB U19, 2 - 3",,"August 31, 2024 at 12:30:00 PM GMT+2",96.0,18.0,,,97.0,29.0,True
 A. Claridge,Brøndby U19,"Brøndby U19 - OB U19, 2 - 3",A. Escobar,"August 31, 2024 at 12:30:00 PM GMT+2",78.0,62.0,88.0,61.0,,,True
+A. Escobar,Brøndby U19,"Brøndby U19 - OB U19, 2 - 3",M. Eskildsen,"August 31, 2024 at 12:30:00 PM GMT+2",64.0,16.0,92.0,44.0,,,True
+G. Wulff,OB U19,"Brøndby U19 - OB U19, 2 - 3",W. Martin,"August 31, 2024 at 12:30:00 PM GMT+2",89.0,93.0,86.0,79.0,,,True
 G. Wulff,OB U19,"Brøndby U19 - OB U19, 2 - 3",,"August 31, 2024 at 12:30:00 PM GMT+2",86.0,89.0,,,90.0,73.0,True
+N. Juul-Sandberg,OB U19,"Brøndby U19 - OB U19, 2 - 3",,"August 31, 2024 at 12:30:00 PM GMT+2",94.0,16.0,,,93.0,31.0,True
 V. Friis,OB U19,"Brøndby U19 - OB U19, 2 - 3",O. Sejer Lauritsen,"August 31, 2024 at 12:30:00 PM GMT+2",85.0,95.0,96.0,74.0,,,True
 E. Hansborg-Sørensen,OB U19,"Brøndby U19 - OB U19, 2 - 3",,"August 31, 2024 at 12:30:00 PM GMT+2",69.0,28.0,,,86.0,29.0,True
+A. Escobar,Brøndby U19,"Brøndby U19 - OB U19, 2 - 3",M. Eskildsen,"August 31, 2024 at 12:30:00 PM GMT+2",83.0,7.0,95.0,49.0,,,True
+M. Kruse,Esbjerg U19,"Esbjerg U19 - SønderjyskE U19, 2 - 0",R. Zwinge,"August 31, 2024 at 12:00:00 PM GMT+2",83.0,100.0,87.0,71.0,,,True
+A. Cehobasic,Esbjerg U19,"Esbjerg U19 - SønderjyskE U19, 2 - 0",,"August 31, 2024 at 12:00:00 PM GMT+2",75.0,65.0,,,84.0,63.0,True
+A. Lund Jørgensen,Esbjerg U19,"Esbjerg U19 - SønderjyskE U19, 2 - 0",M. Ottesen,"August 31, 2024 at 12:00:00 PM GMT+2",94.0,18.0,90.0,44.0,,,True
 S. Escobar Jensen,SønderjyskE U19,"Esbjerg U19 - SønderjyskE U19, 2 - 0",E. Hjorth Pedersen,"August 31, 2024 at 12:00:00 PM GMT+2",62.0,85.0,84.0,77.0,,,True
 P. Nielsen,Esbjerg U19,"Esbjerg U19 - SønderjyskE U19, 2 - 0",N. Sabroe Lund,"August 31, 2024 at 12:00:00 PM GMT+2",78.0,56.0,89.0,73.0,,,True
+S. Escobar Jensen,SønderjyskE U19,"Esbjerg U19 - SønderjyskE U19, 2 - 0",E. Hjorth Pedersen,"August 31, 2024 at 12:00:00 PM GMT+2",77.0,69.0,96.0,69.0,,,True
+A. Raffnsøe Hoeg,SønderjyskE U19,"Esbjerg U19 - SønderjyskE U19, 2 - 0",E. Hjorth Pedersen,"August 31, 2024 at 12:00:00 PM GMT+2",100.0,0.0,95.0,57.0,,,True
 A. Rrahmani,SønderjyskE U19,"Esbjerg U19 - SønderjyskE U19, 2 - 0",S. Larsen,"August 31, 2024 at 12:00:00 PM GMT+2",70.0,44.0,84.0,55.0,,,True
 E. Hjorth Pedersen,SønderjyskE U19,"Esbjerg U19 - SønderjyskE U19, 2 - 0",S. Larsen,"August 31, 2024 at 12:00:00 PM GMT+2",80.0,85.0,91.0,41.0,,,True
 S. Escobar Jensen,SønderjyskE U19,"Esbjerg U19 - SønderjyskE U19, 2 - 0",E. Hjorth Pedersen,"August 31, 2024 at 12:00:00 PM GMT+2",75.0,62.0,88.0,70.0,,,True
 O. Hyseni,SønderjyskE U19,"Esbjerg U19 - SønderjyskE U19, 2 - 0",,"August 31, 2024 at 12:00:00 PM GMT+2",81.0,57.0,,,90.0,72.0,True
+M. Svane,Esbjerg U19,"Esbjerg U19 - SønderjyskE U19, 2 - 0",M. Kruse,"August 31, 2024 at 12:00:00 PM GMT+2",64.0,72.0,86.0,61.0,,,True
+M. Svane,Esbjerg U19,"Esbjerg U19 - SønderjyskE U19, 2 - 0",S. Bogdan,"August 31, 2024 at 12:00:00 PM GMT+2",75.0,19.0,93.0,58.0,,,True
 K. Pedersen,Esbjerg U19,"Esbjerg U19 - SønderjyskE U19, 2 - 0",E. Larsen,"August 31, 2024 at 12:00:00 PM GMT+2",78.0,63.0,87.0,76.0,,,True
+N. Sabroe Lund,SønderjyskE U19,"Esbjerg U19 - SønderjyskE U19, 2 - 0",S. Larsen,"August 31, 2024 at 12:00:00 PM GMT+2",79.0,0.0,92.0,24.0,,,True
+M. Svane,Esbjerg U19,"Esbjerg U19 - SønderjyskE U19, 2 - 0",J. Jensen,"August 31, 2024 at 12:00:00 PM GMT+2",100.0,100.0,93.0,60.0,,,True
 E. Hjorth Pedersen,SønderjyskE U19,"Esbjerg U19 - SønderjyskE U19, 2 - 0",A. Drexel,"August 31, 2024 at 12:00:00 PM GMT+2",72.0,77.0,92.0,52.0,,,True
+M. Svane,Esbjerg U19,"Esbjerg U19 - SønderjyskE U19, 2 - 0",S. Maass,"August 31, 2024 at 12:00:00 PM GMT+2",82.0,14.0,88.0,35.0,,,True
+P. Nielsen,Esbjerg U19,"Esbjerg U19 - SønderjyskE U19, 2 - 0",A. Lund Jørgensen,"August 31, 2024 at 12:00:00 PM GMT+2",100.0,0.0,97.0,25.0,,,True
+A. Lund Jørgensen,Esbjerg U19,"Esbjerg U19 - SønderjyskE U19, 2 - 0",L. Riggelsen,"August 31, 2024 at 12:00:00 PM GMT+2",91.0,17.0,96.0,72.0,,,True
 S. Larsen,SønderjyskE U19,"Esbjerg U19 - SønderjyskE U19, 2 - 0",E. Omerovic,"August 31, 2024 at 12:00:00 PM GMT+2",63.0,54.0,89.0,28.0,,,True
 R. Zwinge,Esbjerg U19,"Esbjerg U19 - SønderjyskE U19, 2 - 0",K. Pedersen,"August 31, 2024 at 12:00:00 PM GMT+2",38.0,70.0,93.0,74.0,,,True
 P. Nielsen,Esbjerg U19,"Esbjerg U19 - SønderjyskE U19, 2 - 0",S. Maass,"August 31, 2024 at 12:00:00 PM GMT+2",82.0,76.0,93.0,54.0,,,True
 A. Lund Jørgensen,Esbjerg U19,"Esbjerg U19 - SønderjyskE U19, 2 - 0",M. Svane,"August 31, 2024 at 12:00:00 PM GMT+2",77.0,35.0,97.0,24.0,,,True
 A. Lund Jørgensen,Esbjerg U19,"Esbjerg U19 - SønderjyskE U19, 2 - 0",,"August 31, 2024 at 12:00:00 PM GMT+2",80.0,32.0,100.0,21.0,,,True
 E. Larsen,Esbjerg U19,"Esbjerg U19 - SønderjyskE U19, 2 - 0",,"August 31, 2024 at 12:00:00 PM GMT+2",86.0,86.0,100.0,27.0,,,True
+A. Rrahmani,SønderjyskE U19,"Esbjerg U19 - SønderjyskE U19, 2 - 0",N. Sabroe Lund,"August 31, 2024 at 12:00:00 PM GMT+2",89.0,10.0,94.0,27.0,,,True
 E. Larsen,Esbjerg U19,"Esbjerg U19 - SønderjyskE U19, 2 - 0",A. Cehobasic,"August 31, 2024 at 12:00:00 PM GMT+2",79.0,81.0,91.0,57.0,,,True
 M. Svane,Esbjerg U19,"Esbjerg U19 - SønderjyskE U19, 2 - 0",,"August 31, 2024 at 12:00:00 PM GMT+2",93.0,18.0,,,96.0,28.0,True
 S. Escobar Jensen,SønderjyskE U19,"Esbjerg U19 - SønderjyskE U19, 2 - 0",S. Larsen,"August 31, 2024 at 12:00:00 PM GMT+2",82.0,29.0,90.0,53.0,,,True
 M. Kruse,Esbjerg U19,"Esbjerg U19 - SønderjyskE U19, 2 - 0",A. Lund Jørgensen,"August 31, 2024 at 12:00:00 PM GMT+2",83.0,46.0,90.0,36.0,,,True
 E. Larsen,Esbjerg U19,"Esbjerg U19 - SønderjyskE U19, 2 - 0",N. Sabroe Lund,"August 31, 2024 at 12:00:00 PM GMT+2",81.0,89.0,90.0,71.0,,,True
+E. Larsen,Esbjerg U19,"Esbjerg U19 - SønderjyskE U19, 2 - 0",P. Nielsen,"August 31, 2024 at 12:00:00 PM GMT+2",77.0,90.0,88.0,66.0,,,True
+M. Kruse,Esbjerg U19,"Esbjerg U19 - SønderjyskE U19, 2 - 0",S. Larsen,"August 31, 2024 at 12:00:00 PM GMT+2",82.0,100.0,92.0,69.0,,,True
+J. Jensen,Esbjerg U19,"Esbjerg U19 - SønderjyskE U19, 2 - 0",,"August 31, 2024 at 12:00:00 PM GMT+2",79.0,74.0,,,92.0,73.0,True
+M. Kruse,Esbjerg U19,"Esbjerg U19 - SønderjyskE U19, 2 - 0",R. Zwinge,"August 31, 2024 at 12:00:00 PM GMT+2",94.0,100.0,97.0,65.0,,,True
+M. Kruse,Esbjerg U19,"Esbjerg U19 - SønderjyskE U19, 2 - 0",K. Pedersen,"August 31, 2024 at 12:00:00 PM GMT+2",90.0,100.0,95.0,65.0,,,True
+M. Svane,Esbjerg U19,"Esbjerg U19 - SønderjyskE U19, 2 - 0",S. Bogdan,"August 31, 2024 at 12:00:00 PM GMT+2",93.0,86.0,98.0,50.0,,,True
 E. Hjorth Pedersen,SønderjyskE U19,"Esbjerg U19 - SønderjyskE U19, 2 - 0",A. Rrahmani,"August 31, 2024 at 12:00:00 PM GMT+2",74.0,79.0,91.0,76.0,,,True
 S. Escobar Jensen,SønderjyskE U19,"Esbjerg U19 - SønderjyskE U19, 2 - 0",O. Hyseni,"August 31, 2024 at 12:00:00 PM GMT+2",45.0,66.0,84.0,33.0,,,True
+S. Maass,SønderjyskE U19,"Esbjerg U19 - SønderjyskE U19, 2 - 0",O. Hyseni,"August 31, 2024 at 12:00:00 PM GMT+2",74.0,89.0,95.0,32.0,,,True
+A. Raffnsøe Hoeg,SønderjyskE U19,"Esbjerg U19 - SønderjyskE U19, 2 - 0",K. Pedersen,"August 31, 2024 at 12:00:00 PM GMT+2",100.0,0.0,99.0,45.0,,,True
+A. Vogtmann,SønderjyskE U19,"Esbjerg U19 - SønderjyskE U19, 2 - 0",S. Larsen,"August 31, 2024 at 12:00:00 PM GMT+2",93.0,0.0,95.0,29.0,,,True
+A. Raffnsøe Hoeg,SønderjyskE U19,"Esbjerg U19 - SønderjyskE U19, 2 - 0",,"August 31, 2024 at 12:00:00 PM GMT+2",77.0,29.0,,,87.0,22.0,True
+S. Maass,SønderjyskE U19,"Esbjerg U19 - SønderjyskE U19, 2 - 0",S. Larsen,"August 31, 2024 at 12:00:00 PM GMT+2",46.0,59.0,85.0,35.0,,,True
+K. Pedersen,Esbjerg U19,"Esbjerg U19 - SønderjyskE U19, 2 - 0",A. Lund Jørgensen,"August 31, 2024 at 12:00:00 PM GMT+2",86.0,83.0,93.0,53.0,,,True
+B. Baldursson,Esbjerg U19,"Esbjerg U19 - SønderjyskE U19, 2 - 0",E. Omerovic,"August 31, 2024 at 12:00:00 PM GMT+2",100.0,0.0,99.0,41.0,,,True
+B. Baldursson,Esbjerg U19,"Esbjerg U19 - SønderjyskE U19, 2 - 0",S. Larsen,"August 31, 2024 at 12:00:00 PM GMT+2",91.0,12.0,93.0,25.0,,,True
 M. Svane,Esbjerg U19,"Esbjerg U19 - SønderjyskE U19, 2 - 0",S. Bogdan,"August 31, 2024 at 12:00:00 PM GMT+2",90.0,8.0,84.0,46.0,,,True
+A. Rrahmani,SønderjyskE U19,"Esbjerg U19 - SønderjyskE U19, 2 - 0",S. Escobar Jensen,"August 31, 2024 at 12:00:00 PM GMT+2",77.0,56.0,88.0,34.0,,,True
 S. Escobar Jensen,SønderjyskE U19,"Esbjerg U19 - SønderjyskE U19, 2 - 0",R. Zwinge,"August 31, 2024 at 12:00:00 PM GMT+2",83.0,15.0,94.0,59.0,,,True
+F. Flaskager,Esbjerg U19,"Esbjerg U19 - SønderjyskE U19, 2 - 0",K. Pedersen,"August 31, 2024 at 12:00:00 PM GMT+2",77.0,30.0,91.0,59.0,,,True
+M. Svane,Esbjerg U19,"Esbjerg U19 - SønderjyskE U19, 2 - 0",K. Pedersen,"August 31, 2024 at 12:00:00 PM GMT+2",63.0,10.0,87.0,52.0,,,True
 J. Klemann Pålsson,SønderjyskE U19,"Esbjerg U19 - SønderjyskE U19, 2 - 0",A. Drexel,"August 31, 2024 at 12:00:00 PM GMT+2",75.0,70.0,89.0,48.0,,,True
 K. Pedersen,Esbjerg U19,"Esbjerg U19 - SønderjyskE U19, 2 - 0",,"August 31, 2024 at 12:00:00 PM GMT+2",87.0,83.0,100.0,54.0,,,True
+A. Vogtmann,SønderjyskE U19,"Esbjerg U19 - SønderjyskE U19, 2 - 0",E. Omerovic,"August 31, 2024 at 12:00:00 PM GMT+2",63.0,26.0,87.0,31.0,,,True
 M. Engsted,Esbjerg U19,"Esbjerg U19 - SønderjyskE U19, 2 - 0",J. Klemann Pålsson,"August 31, 2024 at 12:00:00 PM GMT+2",82.0,13.0,91.0,36.0,,,True
 M. Svane,Esbjerg U19,"Esbjerg U19 - SønderjyskE U19, 2 - 0",F. Flaskager,"August 31, 2024 at 12:00:00 PM GMT+2",66.0,37.0,87.0,52.0,,,True
+L. Riggelsen,SønderjyskE U19,"Esbjerg U19 - SønderjyskE U19, 2 - 0",S. Larsen,"August 31, 2024 at 12:00:00 PM GMT+2",79.0,93.0,87.0,54.0,,,True
+A. Vogtmann,SønderjyskE U19,"Esbjerg U19 - SønderjyskE U19, 2 - 0",J. Jensen,"August 31, 2024 at 12:00:00 PM GMT+2",100.0,100.0,92.0,34.0,,,True
+S. Escobar Jensen,SønderjyskE U19,"Esbjerg U19 - SønderjyskE U19, 2 - 0",A. Drexel,"August 31, 2024 at 12:00:00 PM GMT+2",78.0,14.0,97.0,56.0,,,True
 B. Baldursson,Esbjerg U19,"Esbjerg U19 - SønderjyskE U19, 2 - 0",A. Lund Jørgensen,"August 31, 2024 at 12:00:00 PM GMT+2",54.0,54.0,89.0,28.0,,,True
+S. Maass,SønderjyskE U19,"Esbjerg U19 - SønderjyskE U19, 2 - 0",S. Larsen,"August 31, 2024 at 12:00:00 PM GMT+2",63.0,72.0,93.0,34.0,,,True
+A. Lund Jørgensen,Esbjerg U19,"Esbjerg U19 - SønderjyskE U19, 2 - 0",,"August 31, 2024 at 12:00:00 PM GMT+2",75.0,62.0,,,88.0,62.0,True
 A. Lund Jørgensen,Esbjerg U19,"Esbjerg U19 - SønderjyskE U19, 2 - 0",F. Flaskager,"August 31, 2024 at 12:00:00 PM GMT+2",76.0,26.0,84.0,60.0,,,True
+B. Baldursson,Esbjerg U19,"Esbjerg U19 - SønderjyskE U19, 2 - 0",E. Omerovic,"August 31, 2024 at 12:00:00 PM GMT+2",100.0,0.0,98.0,38.0,,,True
+S. Escobar Jensen,SønderjyskE U19,"Esbjerg U19 - SønderjyskE U19, 2 - 0",A. Rrahmani,"August 31, 2024 at 12:00:00 PM GMT+2",44.0,25.0,89.0,37.0,,,True
+A. Vogtmann,SønderjyskE U19,"Esbjerg U19 - SønderjyskE U19, 2 - 0",A. Rrahmani,"August 31, 2024 at 12:00:00 PM GMT+2",100.0,100.0,95.0,63.0,,,True
+A. Rrahmani,SønderjyskE U19,"Esbjerg U19 - SønderjyskE U19, 2 - 0",M. Engsted,"August 31, 2024 at 12:00:00 PM GMT+2",83.0,83.0,89.0,76.0,,,True
+A. Ebrat,SønderjyskE U19,"Esbjerg U19 - SønderjyskE U19, 2 - 0",B. Baldursson,"August 31, 2024 at 12:00:00 PM GMT+2",99.0,84.0,90.0,63.0,,,True
+S. Escobar Jensen,SønderjyskE U19,"Esbjerg U19 - SønderjyskE U19, 2 - 0",M. Svane,"August 31, 2024 at 12:00:00 PM GMT+2",72.0,43.0,88.0,65.0,,,True
 J. Klemann Pålsson,SønderjyskE U19,"Esbjerg U19 - SønderjyskE U19, 2 - 0",,"August 31, 2024 at 12:00:00 PM GMT+2",73.0,74.0,100.0,37.0,,,True
+M. Kruse,Esbjerg U19,"Esbjerg U19 - SønderjyskE U19, 2 - 0",,"August 31, 2024 at 12:00:00 PM GMT+2",89.0,85.0,,,98.0,64.0,True
 S. Maass,SønderjyskE U19,"Esbjerg U19 - SønderjyskE U19, 2 - 0",,"August 31, 2024 at 12:00:00 PM GMT+2",64.0,89.0,100.0,25.0,,,True
+A. Rrahmani,SønderjyskE U19,"Esbjerg U19 - SønderjyskE U19, 2 - 0",S. Larsen,"August 31, 2024 at 12:00:00 PM GMT+2",83.0,64.0,87.0,59.0,,,True
 F. Flaskager,Esbjerg U19,"Esbjerg U19 - SønderjyskE U19, 2 - 0",M. Kruse,"August 31, 2024 at 12:00:00 PM GMT+2",86.0,84.0,87.0,68.0,,,True
+W. Køhler Simonsen,Randers U19,"Randers U19 - Lyngby U19, 0 - 2",B. Andersen,"August 31, 2024 at 1:00:00 PM GMT+2",91.0,100.0,89.0,72.0,,,True
 W. Steindorsson,Lyngby U19,"Randers U19 - Lyngby U19, 0 - 2",E. Thor,"August 31, 2024 at 1:00:00 PM GMT+2",75.0,56.0,85.0,23.0,,,True
 M. Larsson,Randers U19,"Randers U19 - Lyngby U19, 0 - 2",M. Henriksen,"August 31, 2024 at 1:00:00 PM GMT+2",65.0,69.0,87.0,67.0,,,True
 L. Mandal Andersen,Randers U19,"Randers U19 - Lyngby U19, 0 - 2",M. Larsson,"August 31, 2024 at 1:00:00 PM GMT+2",64.0,35.0,90.0,32.0,,,True
 B. Clemmensen,Randers U19,"Randers U19 - Lyngby U19, 0 - 2",,"August 31, 2024 at 1:00:00 PM GMT+2",53.0,49.0,,,88.0,76.0,True
+R. Rexhepi,Randers U19,"Randers U19 - Lyngby U19, 0 - 2",,"August 31, 2024 at 1:00:00 PM GMT+2",80.0,40.0,,,88.0,36.0,True
 R. Flügge,Lyngby U19,"Randers U19 - Lyngby U19, 0 - 2",M. Simonsen,"August 31, 2024 at 1:00:00 PM GMT+2",71.0,59.0,91.0,57.0,,,True
 W. Køhler Simonsen,Randers U19,"Randers U19 - Lyngby U19, 0 - 2",,"August 31, 2024 at 1:00:00 PM GMT+2",85.0,88.0,,,92.0,77.0,True
+W. Køhler Simonsen,Randers U19,"Randers U19 - Lyngby U19, 0 - 2",A. Risgaard,"August 31, 2024 at 1:00:00 PM GMT+2",88.0,93.0,99.0,63.0,,,True
+B. Clemmensen,Randers U19,"Randers U19 - Lyngby U19, 0 - 2",R. Rexhepi,"August 31, 2024 at 1:00:00 PM GMT+2",57.0,80.0,98.0,28.0,,,True
+M. Albæk,Randers U19,"Randers U19 - Lyngby U19, 0 - 2",B. Andersen,"August 31, 2024 at 1:00:00 PM GMT+2",80.0,61.0,88.0,39.0,,,True
+M. Albæk,Randers U19,"Randers U19 - Lyngby U19, 0 - 2",A. Høyer,"August 31, 2024 at 1:00:00 PM GMT+2",100.0,0.0,97.0,59.0,,,True
+L. Mandal Andersen,Randers U19,"Randers U19 - Lyngby U19, 0 - 2",F. Kongslev,"August 31, 2024 at 1:00:00 PM GMT+2",87.0,84.0,91.0,68.0,,,True
 A. Aslani,Lyngby U19,"Randers U19 - Lyngby U19, 0 - 2",M. Simonsen,"August 31, 2024 at 1:00:00 PM GMT+2",7.0,90.0,88.0,46.0,,,True
+E. Thor,Lyngby U19,"Randers U19 - Lyngby U19, 0 - 2",B. Andersen,"August 31, 2024 at 1:00:00 PM GMT+2",100.0,0.0,96.0,50.0,,,True
+M. Albæk,Randers U19,"Randers U19 - Lyngby U19, 0 - 2",R. Rexhepi,"August 31, 2024 at 1:00:00 PM GMT+2",73.0,86.0,92.0,47.0,,,True
 W. Køhler Simonsen,Randers U19,"Randers U19 - Lyngby U19, 0 - 2",R. Rexhepi,"August 31, 2024 at 1:00:00 PM GMT+2",81.0,96.0,88.0,56.0,,,True
+M. Albæk,Randers U19,"Randers U19 - Lyngby U19, 0 - 2",V. Andersen,"August 31, 2024 at 1:00:00 PM GMT+2",100.0,0.0,99.0,52.0,,,True
 A. Risgaard,Randers U19,"Randers U19 - Lyngby U19, 0 - 2",B. Andersen,"August 31, 2024 at 1:00:00 PM GMT+2",75.0,91.0,87.0,56.0,,,True
 W. Køhler Simonsen,Randers U19,"Randers U19 - Lyngby U19, 0 - 2",R. Rexhepi,"August 31, 2024 at 1:00:00 PM GMT+2",82.0,92.0,89.0,56.0,,,True
 W. Køhler Simonsen,Randers U19,"Randers U19 - Lyngby U19, 0 - 2",V. Andersen,"August 31, 2024 at 1:00:00 PM GMT+2",74.0,95.0,94.0,51.0,,,True
 M. Kaarsbo,Lyngby U19,"Randers U19 - Lyngby U19, 0 - 2",E. Thor,"August 31, 2024 at 1:00:00 PM GMT+2",76.0,30.0,94.0,36.0,,,True
 A. Høyer,Randers U19,"Randers U19 - Lyngby U19, 0 - 2",F. Kongslev,"August 31, 2024 at 1:00:00 PM GMT+2",53.0,25.0,88.0,69.0,,,True
 M. Kaarsbo,Lyngby U19,"Randers U19 - Lyngby U19, 0 - 2",V. Lykke,"August 31, 2024 at 1:00:00 PM GMT+2",44.0,69.0,89.0,80.0,,,True
+W. Køhler Simonsen,Randers U19,"Randers U19 - Lyngby U19, 0 - 2",R. Rexhepi,"August 31, 2024 at 1:00:00 PM GMT+2",75.0,82.0,87.0,57.0,,,True
 R. Flügge,Lyngby U19,"Randers U19 - Lyngby U19, 0 - 2",M. Simonsen,"August 31, 2024 at 1:00:00 PM GMT+2",81.0,87.0,96.0,43.0,,,True
 W. Køhler Simonsen,Randers U19,"Randers U19 - Lyngby U19, 0 - 2",R. Rexhepi,"August 31, 2024 at 1:00:00 PM GMT+2",80.0,90.0,87.0,57.0,,,True
 W. Køhler Simonsen,Randers U19,"Randers U19 - Lyngby U19, 0 - 2",J. Pedersen,"August 31, 2024 at 1:00:00 PM GMT+2",87.0,87.0,93.0,48.0,,,True
 B. Andersen Magui,Lyngby U19,"Randers U19 - Lyngby U19, 0 - 2",W. Steindorsson,"August 31, 2024 at 1:00:00 PM GMT+2",59.0,67.0,89.0,75.0,,,True
+M. Kaarsbo,Lyngby U19,"Randers U19 - Lyngby U19, 0 - 2",,"August 31, 2024 at 1:00:00 PM GMT+2",80.0,74.0,,,87.0,73.0,True
+V. Lykke,Lyngby U19,"Randers U19 - Lyngby U19, 0 - 2",,"August 31, 2024 at 1:00:00 PM GMT+2",82.0,87.0,,,93.0,75.0,True
 B. Clemmensen,Randers U19,"Randers U19 - Lyngby U19, 0 - 2",,"August 31, 2024 at 1:00:00 PM GMT+2",39.0,75.0,100.0,72.0,,,True
+W. Køhler Simonsen,Randers U19,"Randers U19 - Lyngby U19, 0 - 2",R. Rexhepi,"August 31, 2024 at 1:00:00 PM GMT+2",89.0,100.0,89.0,71.0,,,True
 W. Køhler Simonsen,Randers U19,"Randers U19 - Lyngby U19, 0 - 2",J. Pedersen,"August 31, 2024 at 1:00:00 PM GMT+2",81.0,85.0,90.0,46.0,,,True
+,Randers U19,"Randers U19 - Lyngby U19, 0 - 2",,"August 31, 2024 at 1:00:00 PM GMT+2",86.0,13.0,100.0,65.0,,,True
+M. Larsson,Randers U19,"Randers U19 - Lyngby U19, 0 - 2",A. Høyer,"August 31, 2024 at 1:00:00 PM GMT+2",77.0,6.0,90.0,39.0,,,True
+M. Albæk,Randers U19,"Randers U19 - Lyngby U19, 0 - 2",L. Mandal Andersen,"August 31, 2024 at 1:00:00 PM GMT+2",100.0,0.0,96.0,41.0,,,True
 W. Steindorsson,Lyngby U19,"Randers U19 - Lyngby U19, 0 - 2",B. Andersen Magui,"August 31, 2024 at 1:00:00 PM GMT+2",74.0,66.0,92.0,65.0,,,True
+M. Kaarsbo,Lyngby U19,"Randers U19 - Lyngby U19, 0 - 2",J. Pedersen,"August 31, 2024 at 1:00:00 PM GMT+2",100.0,100.0,94.0,58.0,,,True
+W. Køhler Simonsen,Randers U19,"Randers U19 - Lyngby U19, 0 - 2",F. Kongslev,"August 31, 2024 at 1:00:00 PM GMT+2",88.0,100.0,88.0,68.0,,,True
+M. Albæk,Randers U19,"Randers U19 - Lyngby U19, 0 - 2",J. Pedersen,"August 31, 2024 at 1:00:00 PM GMT+2",81.0,63.0,89.0,41.0,,,True
+R. Rexhepi,Randers U19,"Randers U19 - Lyngby U19, 0 - 2",,"August 31, 2024 at 1:00:00 PM GMT+2",81.0,70.0,,,90.0,76.0,True
+L. Mandal Andersen,Randers U19,"Randers U19 - Lyngby U19, 0 - 2",V. Andersen,"August 31, 2024 at 1:00:00 PM GMT+2",74.0,73.0,97.0,47.0,,,True
 W. Køhler Simonsen,Randers U19,"Randers U19 - Lyngby U19, 0 - 2",J. Pedersen,"August 31, 2024 at 1:00:00 PM GMT+2",74.0,88.0,87.0,53.0,,,True
+L. Mandal Andersen,Randers U19,"Randers U19 - Lyngby U19, 0 - 2",F. Kongslev,"August 31, 2024 at 1:00:00 PM GMT+2",73.0,19.0,91.0,55.0,,,True
 W. Køhler Simonsen,Randers U19,"Randers U19 - Lyngby U19, 0 - 2",M. Henriksen,"August 31, 2024 at 1:00:00 PM GMT+2",81.0,93.0,92.0,59.0,,,True
+W. Køhler Simonsen,Randers U19,"Randers U19 - Lyngby U19, 0 - 2",R. Rexhepi,"August 31, 2024 at 1:00:00 PM GMT+2",86.0,100.0,90.0,66.0,,,True
+M. Albæk,Randers U19,"Randers U19 - Lyngby U19, 0 - 2",R. Rexhepi,"August 31, 2024 at 1:00:00 PM GMT+2",79.0,81.0,92.0,59.0,,,True
+A. Risgaard,Randers U19,"Randers U19 - Lyngby U19, 0 - 2",,"August 31, 2024 at 1:00:00 PM GMT+2",84.0,12.0,100.0,54.0,,,True
 M. Albæk,Randers U19,"Randers U19 - Lyngby U19, 0 - 2",V. Andersen,"August 31, 2024 at 1:00:00 PM GMT+2",67.0,38.0,90.0,56.0,,,True
 E. Thor,Lyngby U19,"Randers U19 - Lyngby U19, 0 - 2",,"August 31, 2024 at 1:00:00 PM GMT+2",66.0,10.0,,,96.0,41.0,True
+L. Mandal Andersen,Randers U19,"Randers U19 - Lyngby U19, 0 - 2",M. Kaarsbo,"August 31, 2024 at 1:00:00 PM GMT+2",84.0,92.0,93.0,42.0,,,True
+A. Høyer,Randers U19,"Randers U19 - Lyngby U19, 0 - 2",R. Rexhepi,"August 31, 2024 at 1:00:00 PM GMT+2",78.0,5.0,92.0,52.0,,,True
+E. Bramsen,Randers U19,"Randers U19 - Lyngby U19, 0 - 2",T. Di Carlo,"August 31, 2024 at 1:00:00 PM GMT+2",77.0,87.0,87.0,62.0,,,True

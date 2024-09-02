@@ -85,7 +85,7 @@ def Process_data_spillere(events,df_xg,df_matchstats,groundduels):
     xg = events[['player.name','label','shot.xg']]
     xg['shot.xg'] = xg['shot.xg'].astype(float)
     xg = xg.groupby(['player.name','label']).sum().reset_index()
-    df_scouting = xg.merge(df_matchstats, on=['player.name', 'label'], how='outer')
+    df_scouting = xg.merge(df_matchstats, on=['player.name', 'label'], how='inner')
     def calculate_score(df, column, score_column):
         df_unique = df.drop_duplicates(column).copy()
         df_unique.loc[:, score_column] = pd.qcut(df_unique[column], q=10, labels=False, duplicates='raise') + 1
