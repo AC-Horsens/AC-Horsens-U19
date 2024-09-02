@@ -6,6 +6,7 @@ from mplsoccer import Pitch
 from scipy.ndimage import gaussian_filter
 import gspread
 import plotly.graph_objs as go
+from datetime import datetime
 
 
 st.set_page_config(layout="wide")
@@ -1471,6 +1472,13 @@ def dashboard():
 
 def opposition_analysis():
     st.dataframe(df_matchstats)
+    date_times = [datetime.strptime(date, "%B %d, %Y at %I:%M:%S %p GMT%z") for date in df_matchstats['date']]
+
+    # Streamlit slider for date selection
+    selected_date = st.slider("Select a date:", min_value=min(date_times), max_value=max(date_times), value=min(date_times))
+
+    # Display the selected date
+    st.write(f"Selected Date and Time: {selected_date}")
 
 Data_types = {
     'Dashboard': dashboard,
