@@ -300,7 +300,7 @@ def Process_data_spillere(events,df_xg,df_matchstats,groundduels):
         df_unique.loc[:, score_column] = pd.qcut(-df_unique[column], q=10, labels=False, duplicates='raise') + 1
         return df.merge(df_unique[[column, score_column]], on=column, how='left')
     minutter_kamp = 45
-    minutter_total = 300
+    minutter_total = 160
     
     df_matchstats = df_matchstats[['player.name','team.name','label','position_codes','total_minutesOnField','average_successfulPassesToFinalThird','percent_aerialDuelsWon','percent_newSuccessfulDribbles','average_throughPasses','percent_duelsWon','percent_successfulPassesToFinalThird','average_xgAssist','average_crosses','average_progressivePasses','average_progressiveRun','average_accelerations','average_passesToFinalThird','percent_successfulProgressivePasses','percent_successfulPasses','average_ballRecoveries','average_interceptions','average_defensiveDuels','average_successfulDefensiveAction','average_forwardPasses','average_successfulForwardPasses','average_touchInBox','average_xgShot','average_keyPasses','average_successfulAttackingActions','average_shotAssists']]
     df_scouting = df_xg.merge(df_matchstats,how='right')
@@ -481,17 +481,19 @@ def Process_data_spillere(events,df_xg,df_matchstats,groundduels):
         df_sekser = calculate_score(df_sekser, 'percent_duelsWon', 'percent_duelsWon score')
         df_sekser = calculate_score(df_sekser, 'percent_successfulPasses', 'percent_successfulPasses score')
         df_sekser = calculate_score(df_sekser, 'average_interceptions', 'average_interceptions score')
+        df_sekser = calculate_score(df_sekser, 'average_forwardPasses', 'average_forwardPasses score')
+        df_sekser = calculate_score(df_sekser, 'average_successfulForwardPasses', 'average_successfulForwardPasses score')
         df_sekser = calculate_score(df_sekser, 'average_ballRecoveries', 'possWonDef3rd_possWonMid3rd_possWonAtt3rd_per90 score')
         df_sekser = calculate_score(df_sekser, 'percent_successfulPassesToFinalThird', 'percent_successfulPassesToFinalThird score')
         df_sekser = calculate_score(df_sekser, 'average_ballRecoveries', 'ballRecovery score')
         df_sekser = calculate_score(df_sekser, 'average_successfulPassesToFinalThird', 'average_successfulPassesToFinalThird score')
         df_sekser = calculate_score(df_sekser, 'percent_successfulProgressivePasses', 'percent_successfulProgressivePasses score')
-
+        df_sekser = calculate_score(df_sekser, 'average_progressivePasses', 'average_progressivePasses score')
         
         df_sekser['Defending'] = df_sekser[['percent_duelsWon score','opponents xg score','totalDuels score','stoppedProgressPercentage score','stoppedProgressPercentage score','recoveredPossessionPercentage score','average_interceptions score','average_interceptions score','ballRecovery score']].mean(axis=1)
         df_sekser['Passing'] = df_sekser[['percent_successfulPasses score','percent_successfulPasses score']].mean(axis=1)
-        df_sekser['Progressive ball movement'] = df_sekser[['Possession value added score','Possession value added score','percent_successfulPassesToFinalThird score']].mean(axis=1)
-        df_sekser['Possession value added'] = df_sekser[['average_successfulPassesToFinalThird score','percent_successfulPassesToFinalThird score','percent_successfulProgressivePasses score','percent_successfulProgressivePasses score']].mean(axis=1)
+        df_sekser['Progressive ball movement'] = df_sekser[['average_progressivePasses score','average_forwardPasses score','average_successfulForwardPasses score','percent_successfulPassesToFinalThird score']].mean(axis=1)
+        df_sekser['Possession value added'] = df_sekser[['average_successfulPassesToFinalThird score','average_progressivePasses score','average_progressivePasses score','percent_successfulPassesToFinalThird score','percent_successfulProgressivePasses score','percent_successfulProgressivePasses score']].mean(axis=1)
         
         df_sekser = calculate_score(df_sekser, 'Defending', 'Defending_')
         df_sekser = calculate_score(df_sekser, 'Passing', 'Passing_')
@@ -1064,7 +1066,7 @@ def create_pdf_progress_report(horsens_df, total_expected_points_combined):
         aggregation_dict['total_minutesOnField'] = 'sum'
         
         filtered_df = filtered_df.groupby('player.name').agg(aggregation_dict).reset_index()
-        filtered_df = filtered_df[filtered_df['total_minutesOnField'] > 400]
+        filtered_df = filtered_df[filtered_df['total_minutesOnField'] > 160]
         filtered_df = filtered_df.round(2)
         filtered_df['Total score'] = filtered_df['Total score'].astype(float)        
         reordered_columns = ['player.name', 'total_minutesOnField'] + numeric_columns
