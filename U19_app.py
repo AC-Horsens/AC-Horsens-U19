@@ -1491,12 +1491,94 @@ def opposition_analysis():
     else:
         st.write("No valid dates available for selection.")
 
+def keeper_ratings():
+    gc = gspread.service_account('wellness-1123-178fea106d0a.json')
+    sh = gc.open_by_url('https://docs.google.com/forms/d/12nSw18jaWIdrqDr7VoesBXfxJqYcAhe41s46GuEtxjc/edit')
+    ws = sh.worksheet('Formularsvar 1')
+    df = pd.DataFrame(ws.get_all_records())
+    df['Tidsstempel'] = pd.to_datetime(df['Tidsstempel'],dayfirst=True, format='%d/%m/%Y %H.%M.%S')
+
+    # Create a new column 'date' with the format 'dd/mm/yyyy'
+    df['date'] = df['Tidsstempel'].dt.strftime('%d/%m/%Y')
+    # Melt the DataFrame to long format
+    df_melted = df.melt(id_vars=['Coach name', 'date','Tidsstempel'], 
+                        var_name='Player', 
+                        value_name='Rating')
+
+    # Remove 'Rating [' and ']' from Player names
+    df_melted['Player'] = df_melted['Player'].str.replace('Rating \[|\]', '', regex=True)
+    df_melted['date'] = pd.to_datetime(df_melted['date'], format='%d/%m/%Y')
+
+    # Streamlit app
+    st.title("Player Ratings")
+
+    # Main layout filters
+    selected_coaches = st.multiselect('Select Coaches', df['Coach name'].unique(), df['Coach name'].unique())
+    if st.button('Select All Players'):
+        selected_players = df_melted['Player'].unique().tolist()
+    elif st.button('Deselect All Players'):
+        selected_players = []
+    else:
+        selected_players = st.multiselect('Select Players', sorted(df_melted['Player'].unique()))
+    min_date = pd.to_datetime(df_melted['date'], format='%d/%m/%Y').min().date()
+    max_date = pd.to_datetime(df_melted['date'], format='%d/%m/%Y').max().date()
+    start_date, end_date = st.date_input('Select Date Range', [min_date, max_date], min_value=min_date, max_value=max_date)
+
+    # Filter DataFrame based on the selected filters
+    filtered_df = df_melted[
+        (df_melted['Coach name'].isin(selected_coaches)) &
+        (df_melted['Player'].isin(selected_players)) &
+        (pd.to_datetime(df_melted['date'], format='%d/%m/%Y').dt.date >= start_date) &
+        (pd.to_datetime(df_melted['date'], format='%d/%m/%Y').dt.date <= end_date)
+    ]
+        
+    # Drop rows where Rating is NaN
+    filtered_df = filtered_df[['date','Player', 'Rating','Coach name']]
+    # Ensure 'Rating' column is numeric
+    filtered_df = filtered_df[['date','Player', 'Rating']]
+    filtered_df.replace('', pd.NA, inplace=True)
+
+    # Filter out rows where the 'rating' column has NaN values
+    filtered_df = filtered_df.dropna(subset=['Rating'])
+
+    # Calculate the average ratings, ignoring None values
+    average_ratings = filtered_df.groupby(['Player', 'date'])['Rating'].mean().reset_index()
+    average_of_period = average_ratings.groupby('Player')['Rating'].mean().reset_index()
+    average_of_period['Rating'] = average_of_period['Rating'].astype(float)
+    average_of_period['Rating'] = average_of_period['Rating'].round(2)
+
+    average_of_period = average_of_period.sort_values('Rating', ascending=False)
+    st.dataframe(average_of_period,hide_index=True)
+    fig = go.Figure()
+
+    for player in average_ratings['Player'].unique():
+        player_data = average_ratings[average_ratings['Player'] == player]
+        fig.add_trace(go.Scatter(
+            x=player_data['date'],
+            y=player_data['Rating'],
+            mode='lines+markers',
+            name=player
+        ))
+
+    fig.update_layout(
+        title='Player Ratings Over Time',
+        xaxis_title='Date',
+        yaxis_title='Rating',
+        yaxis=dict(range=[1, 10]),  # Set y-axis range from 1 to 10        
+        width=800,
+        height=400
+    )
+
+    st.plotly_chart(fig, use_container_width=True)
+
+
 Data_types = {
     'Dashboard': dashboard,
     'Opposition analysis': opposition_analysis,
     'Wellness data': wellness,
     'Player data': player_data,
-    'Training ratings': training_ratings
+    'Training ratings': training_ratings,
+    'Keeper ratings': keeper_ratings
     }
 
 st.cache_data(experimental_allow_widgets=True)
