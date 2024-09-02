@@ -1476,21 +1476,23 @@ def opposition_analysis():
     df_matchstats['date'] = df_matchstats['date'].str.replace('GMT\+(\d)$', r'GMT+0\1:00')
 
     # Use dateutil parser to parse the dates
-    date_times = []
-    for date in df_matchstats['date']:
-        try:
-            date_time = parser.parse(date)
-            date_times.append(date_time)
-        except ValueError:
-            st.write(f"Invalid date format: {date}")
+    df_matchstats['date'] = df_matchstats['date'].apply(lambda x: parser.parse(x))
 
-    # Streamlit slider for date selection
-    if date_times:
-        selected_date = st.slider("Select a date:", min_value=min(date_times), max_value=max(date_times), value=min(date_times))
-        st.write(f"Selected Date and Time: {selected_date}")
+    # Use the date slider to select a date
+    if not df_matchstats.empty:
+        min_date = df_matchstats['date'].min()
+        max_date = df_matchstats['date'].max()
+        selected_date = st.slider("Select a date:", min_value=min_date, max_value=max_date, value=min_date)
+
+        # Filter the DataFrame based on the selected date
+        filtered_df = df_matchstats[df_matchstats['date'].dt.date == selected_date.date()]
+
+        # Display the filtered DataFrame
+        st.write(f"Filtered Data for {selected_date.date()}:")
+        st.write(filtered_df)
     else:
-        st.write("No valid dates available for selection.")
-
+        st.write("No valid dates available for filtering.")
+    
 def keeper_ratings():
     gc = gspread.service_account('wellness-1123-178fea106d0a.json')
     sh = gc.open_by_url('https://docs.google.com/spreadsheets/d/1e5kAIxFAMmTSuamV1E_ymgzva0rLA6Q4oM21VRU6FwI/edit?resourcekey=&gid=1263806243#gid=1263806243')
