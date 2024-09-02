@@ -1472,13 +1472,13 @@ def dashboard():
 
 def opposition_analysis():
     st.dataframe(df_matchstats)
-    date_times = [datetime.strptime(date, "%B %d, %Y at %I:%M:%S %p GMT%z") for date in df_matchstats['date']]
-
-    # Streamlit slider for date selection
-    selected_date = st.slider("Select a date:", min_value=min(date_times), max_value=max(date_times), value=min(date_times))
-
-    # Display the selected date
-    st.write(f"Selected Date and Time: {selected_date}")
+    date_times = []
+    for date in df_matchstats['date']:
+        try:
+            date_time = datetime.strptime(date, "%B %d, %Y at %I:%M:%S %p GMT%z")
+            date_times.append(date_time)
+        except ValueError:
+            st.write(f"Invalid date format: {date}")
 
 Data_types = {
     'Dashboard': dashboard,
