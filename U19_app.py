@@ -1469,13 +1469,16 @@ def dashboard():
         if st.session_state['selected_data3']:
             Data_types[st.session_state['selected_data3']]()
 
+def opposition_analysis():
+    st.dataframe(df_matchstats)
+
 Data_types = {
     'Dashboard': dashboard,
+    'Opposition analysis': opposition_analysis,
     'Wellness data': wellness,
     'Player data': player_data,
     'Training ratings': training_ratings
     }
-
 
 st.cache_data(experimental_allow_widgets=True)
 st.cache_resource(experimental_allow_widgets=True)
