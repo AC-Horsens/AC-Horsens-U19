@@ -1475,13 +1475,13 @@ def opposition_analysis():
     st.dataframe(df_matchstats)
     df_matchstats['date'] = df_matchstats['date'].str.replace('GMT\+(\d)$', r'GMT+0\1:00')
 
-    # Use dateutil parser to parse the dates
+    # Convert the date column to datetime objects
     df_matchstats['date'] = df_matchstats['date'].apply(lambda x: parser.parse(x))
 
-    # Use the date slider to select a date
+    # Ensure min_date and max_date are datetime objects
     if not df_matchstats.empty:
-        min_date = df_matchstats['date'].min()
-        max_date = df_matchstats['date'].max()
+        min_date = df_matchstats['date'].min().to_pydatetime()  # Convert to Python datetime object
+        max_date = df_matchstats['date'].max().to_pydatetime()  # Convert to Python datetime object
         selected_date = st.slider("Select a date:", min_value=min_date, max_value=max_date, value=min_date)
 
         # Filter the DataFrame based on the selected date
