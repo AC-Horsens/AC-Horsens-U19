@@ -745,33 +745,31 @@ def pass_accuracy(df, kampvalg):
     return df_pass_accuracy
 
 def plot_arrows(df):
-    df_passes = df[(df['pass.endLocation.x'].notna()) | (df['carry.endLocation.x'].notna())]
-    df_duels = df[df['type.primary'] == 'duel']
 
     pitch = Pitch(pitch_type='wyscout', pitch_color='grass', line_color='white')
     fig, ax = pitch.draw()
 
-    for index, row in df_passes.iterrows():
-        # Start point
-        start_x = row['location.x']
-        start_y = row['location.y']
+    # Plot passes with color based on accuracy
+    passes = df[df['pass.endLocation.x'] > 0]
+    for _, row in passes.iterrows():
+        # Determine arrow color based on pass accuracy
+        pass_color = 'blue' if row.get('pass.accurate', False) else 'red'
+        pitch.arrows(row['x'], row['y'], row['pass.endLocation.x'], row['pass.endLocation.y'],
+                     color=pass_color, ax=ax, width=2, headwidth=3, headlength=3)
 
-        # End point
-        end_x = row['pass.endLocation.x'] if pd.notnull(row['pass.endLocation.x']) else row['carry.endLocation.x']
-        end_y = row['pass.endLocation.y'] if pd.notnull(row['pass.endLocation.y']) else row['carry.endLocation.y']
+    # Plot carries (yellow arrows)
+    carries = df[df['carry.endLocation.x'] > 0]
+    for _, row in carries.iterrows():
+        pitch.arrows(row['x'], row['y'], row['carry.endLocation.x'], row['carry.endLocation.y'],
+                     color='yellow', ax=ax, width=2, headwidth=3, headlength=3)
 
-        # Determine arrow color
-        arrow_color = 'red' if not row['pass.accurate'] else '#0dff00'
+    # Plot shots (dots with size proportional to shot.xg)
+    shots = df[df['shot.xg'] > 0]
+    pitch.scatter(shots['x'], shots['y'], s=shots['shot.xg'] * 100, color='red', edgecolors='black', ax=ax, alpha=0.6)
 
-        # Plot arrow
-        ax.arrow(start_x, start_y, end_x - start_x, end_y - start_y, color=arrow_color,
-                 length_includes_head=True, head_width=0.5, head_length=0.5)
-
-    # Plot duels as yellow dots
-    ax.scatter(df_duels['location.x'], df_duels['location.y'], color='yellow', zorder=3)
-
+    # Use Streamlit to display the plot
     st.pyplot(fig)
-
+    
 def training_ratings():
     gc = gspread.service_account('wellness-1123-178fea106d0a.json')
     sh = gc.open_by_url('https://docs.google.com/spreadsheets/d/1fG0BYf_BbbDIgELdkSGTgjzdT_7pnKDfocUW7TR510I/edit?resourcekey=&gid=201497853#gid=201497853')
@@ -977,6 +975,7 @@ def player_data():
     Defensive_aktioner = df[(df['type.primary'] == 'interception') | (df['type.primary'] == 'duel') | (df['type.primary'] == 'clearance') | (df['type.primary'] == 'infraction')]
     Defensive_aktioner = Defensive_aktioner[['location.x','location.y']]
     
+    
     col1,col2,col3 = st.columns(3)
 
     with col1:
@@ -989,7 +988,7 @@ def player_data():
         plot_heatmap_end_location(Pasninger_spillet_til, f'Passes {player_name}')
 
     if 'pass.endLocation.x' in df.columns:
-        Alle_off_aktioner = df[(df['pass.endLocation.x'] > 0) & (df['player.name'] == player_name)]
+        Alle_off_aktioner = (df[(df['pass.endLocation.x'] > 0) | (df['carry.endLocation.x'] > 0])) & (df['player.name'] == player_name)]
     else:
         st.error("'pass.endLocation.x' column does not exist in the DataFrame.")
     plot_arrows(Alle_off_aktioner)
