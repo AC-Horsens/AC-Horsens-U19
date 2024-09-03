@@ -753,7 +753,7 @@ def plot_arrows(df):
     passes = df[df['pass.endLocation.x'] > 0]
     for _, row in passes.iterrows():
         # Determine arrow color based on pass accuracy
-        pass_color = 'green' if row.get('pass.accurate', False) else 'red'
+        pass_color ='#90EE90' if row.get('pass.accurate', False) else 'red'
         pitch.arrows(row['location.x'], row['location.y'], row['pass.endLocation.x'], row['pass.endLocation.y'],
                      color=pass_color, ax=ax, width=2, headwidth=3, headlength=3)
 
@@ -986,7 +986,7 @@ def player_data():
                 
     with col3:
         plot_heatmap_end_location(Pasninger_spillet_til, f'Passes {player_name}')
-
+    df = df[df['player.name'] == player_name]
     plot_arrows(df)
 
 def dashboard():
