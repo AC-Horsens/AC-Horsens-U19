@@ -753,7 +753,7 @@ def plot_arrows(df):
     passes = df[df['pass.endLocation.x'] > 0]
     for _, row in passes.iterrows():
         # Determine arrow color based on pass accuracy
-        pass_color = 'blue' if row.get('pass.accurate', False) else 'red'
+        pass_color = 'green' if row.get('pass.accurate', False) else 'red'
         pitch.arrows(row['location.x'], row['location.y'], row['pass.endLocation.x'], row['pass.endLocation.y'],
                      color=pass_color, ax=ax, width=2, headwidth=3, headlength=3)
 
