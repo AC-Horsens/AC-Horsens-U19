@@ -754,18 +754,18 @@ def plot_arrows(df):
     for _, row in passes.iterrows():
         # Determine arrow color based on pass accuracy
         pass_color = 'blue' if row.get('pass.accurate', False) else 'red'
-        pitch.arrows(row['x'], row['y'], row['pass.endLocation.x'], row['pass.endLocation.y'],
+        pitch.arrows(row['location.x'], row['location.y'], row['pass.endLocation.x'], row['pass.endLocation.y'],
                      color=pass_color, ax=ax, width=2, headwidth=3, headlength=3)
 
     # Plot carries (yellow arrows)
     carries = df[df['carry.endLocation.x'] > 0]
     for _, row in carries.iterrows():
-        pitch.arrows(row['x'], row['y'], row['carry.endLocation.x'], row['carry.endLocation.y'],
+        pitch.arrows(row['location.x'], row['location.y'], row['carry.endLocation.x'], row['carry.endLocation.y'],
                      color='yellow', ax=ax, width=2, headwidth=3, headlength=3)
 
     # Plot shots (dots with size proportional to shot.xg)
     shots = df[df['shot.xg'] > 0]
-    pitch.scatter(shots['x'], shots['y'], s=shots['shot.xg'] * 100, color='red', edgecolors='black', ax=ax, alpha=0.6)
+    pitch.scatter(shots['location.x'], shots['location.y'], s=shots['shot.xg'] * 100, color='yellow', edgecolors='black', ax=ax, alpha=0.6)
 
     # Use Streamlit to display the plot
     st.pyplot(fig)
