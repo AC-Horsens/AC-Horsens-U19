@@ -987,11 +987,7 @@ def player_data():
     with col3:
         plot_heatmap_end_location(Pasninger_spillet_til, f'Passes {player_name}')
 
-    if 'pass.endLocation.x' in df.columns:
-        Alle_off_aktioner = (df[(df['pass.endLocation.x'] > 0) | (df['carry.endLocation.x'] > 0])) & (df['player.name'] == player_name)]
-    else:
-        st.error("'pass.endLocation.x' column does not exist in the DataFrame.")
-    plot_arrows(Alle_off_aktioner)
+    plot_arrows(df)
 
 def dashboard():
     st.title('U19 Dashboard')
