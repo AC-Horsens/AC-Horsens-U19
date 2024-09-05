@@ -323,7 +323,7 @@ W. Martin,OB U19,"Brøndby U19 - OB U19, 2 - 4","August 31, 2024 at 12:30:00 PM 
 N. Jakobsen,Brøndby U19,"Brøndby U19 - OB U19, 2 - 4","August 31, 2024 at 12:30:00 PM GMT+2",78.0,64.0,34,0.005716
 D. Amtrup,OB U19,"Brøndby U19 - OB U19, 2 - 4","August 31, 2024 at 12:30:00 PM GMT+2",90.0,48.0,37,0.1662
 D. Amtrup,OB U19,"Brøndby U19 - OB U19, 2 - 4","August 31, 2024 at 12:30:00 PM GMT+2",92.0,52.0,38,0.113
-M. Andersen,OB U19,"Brøndby U19 - OB U19, 2 - 4","August 31, 2024 at 12:30:00 PM GMT+2",88.0,35.0,42,0.1252
+M. Andersen,OB U19,"Brøndby U19 - OB U19, 2 - 4","August 31, 2024 at 12:30:00 PM GMT+2",88.0,35.0,42,0.1172
 J. Agyekum,Brøndby U19,"Brøndby U19 - OB U19, 2 - 4","August 31, 2024 at 12:30:00 PM GMT+2",87.0,71.0,47,0.0502
 H. Rasmussen,OB U19,"Brøndby U19 - OB U19, 2 - 4","August 31, 2024 at 12:30:00 PM GMT+2",73.0,62.0,49,0.01019
 E. Hansborg-Sørensen,OB U19,"Brøndby U19 - OB U19, 2 - 4","August 31, 2024 at 12:30:00 PM GMT+2",87.0,68.0,50,0.05509
@@ -414,3 +414,26 @@ A. Riiser,Randers U19,"Randers U19 - Lyngby U19, 0 - 2","August 31, 2024 at 1:00
 W. Køhler Simonsen,Randers U19,"Randers U19 - Lyngby U19, 0 - 2","August 31, 2024 at 1:00:00 PM GMT+2",96.0,65.0,82,0.03393
 R. Rexhepi,Randers U19,"Randers U19 - Lyngby U19, 0 - 2","August 31, 2024 at 1:00:00 PM GMT+2",91.0,59.0,85,0.05299
 A. Risgaard,Randers U19,"Randers U19 - Lyngby U19, 0 - 2","August 31, 2024 at 1:00:00 PM GMT+2",80.0,25.0,93,0.002947
+S. Ravn,Vejle U19,"Vejle U19 - AaB U19, 1 - 1","August 31, 2024 at 12:30:00 PM GMT+2",76.0,64.0,5,0.009059
+M. Ritter,AaB U19,"Vejle U19 - AaB U19, 1 - 1","August 31, 2024 at 12:30:00 PM GMT+2",81.0,47.0,8,0.09676
+N. Andersen,AaB U19,"Vejle U19 - AaB U19, 1 - 1","August 31, 2024 at 12:30:00 PM GMT+2",79.0,55.0,13,0.005808
+T. Lykkebak,Vejle U19,"Vejle U19 - AaB U19, 1 - 1","August 31, 2024 at 12:30:00 PM GMT+2",75.0,22.0,18,0.005496
+M. Holt,AaB U19,"Vejle U19 - AaB U19, 1 - 1","August 31, 2024 at 12:30:00 PM GMT+2",89.0,39.0,20,0.02186
+N. Stojanovic,AaB U19,"Vejle U19 - AaB U19, 1 - 1","August 31, 2024 at 12:30:00 PM GMT+2",86.0,32.0,33,0.09034
+T. Lykkebak,Vejle U19,"Vejle U19 - AaB U19, 1 - 1","August 31, 2024 at 12:30:00 PM GMT+2",88.0,55.0,33,0.2272
+C. Astrup,Vejle U19,"Vejle U19 - AaB U19, 1 - 1","August 31, 2024 at 12:30:00 PM GMT+2",87.0,42.0,40,0.1252
+T. Lykkebak,Vejle U19,"Vejle U19 - AaB U19, 1 - 1","August 31, 2024 at 12:30:00 PM GMT+2",91.0,30.0,40,0.235
+A. Stengaard,Vejle U19,"Vejle U19 - AaB U19, 1 - 1","August 31, 2024 at 12:30:00 PM GMT+2",90.0,52.0,46,0.1843
+T. Pedersen,Vejle U19,"Vejle U19 - AaB U19, 1 - 1","August 31, 2024 at 12:30:00 PM GMT+2",97.0,59.0,46,0.4889
+L. Flø Borregaard,Vejle U19,"Vejle U19 - AaB U19, 1 - 1","August 31, 2024 at 12:30:00 PM GMT+2",88.0,66.0,49,0.0642
+S. Ravn,Vejle U19,"Vejle U19 - AaB U19, 1 - 1","August 31, 2024 at 12:30:00 PM GMT+2",72.0,29.0,49,0.005755
+V. Møller,AaB U19,"Vejle U19 - AaB U19, 1 - 1","August 31, 2024 at 12:30:00 PM GMT+2",87.0,47.0,51,0.03507
+M. Holt,AaB U19,"Vejle U19 - AaB U19, 1 - 1","August 31, 2024 at 12:30:00 PM GMT+2",83.0,66.0,54,0.004186
+V. Møller,AaB U19,"Vejle U19 - AaB U19, 1 - 1","August 31, 2024 at 12:30:00 PM GMT+2",86.0,47.0,66,0.08453
+V. Møller,AaB U19,"Vejle U19 - AaB U19, 1 - 1","August 31, 2024 at 12:30:00 PM GMT+2",94.0,45.0,67,0.1783
+S. Piechnik Hust,Vejle U19,"Vejle U19 - AaB U19, 1 - 1","August 31, 2024 at 12:30:00 PM GMT+2",69.0,27.0,69,0.01113
+L. Flø Borregaard,Vejle U19,"Vejle U19 - AaB U19, 1 - 1","August 31, 2024 at 12:30:00 PM GMT+2",97.0,65.0,71,0.008509
+F. Nygaard,AaB U19,"Vejle U19 - AaB U19, 1 - 1","August 31, 2024 at 12:30:00 PM GMT+2",76.0,42.0,73,0.006845
+V. Møller,AaB U19,"Vejle U19 - AaB U19, 1 - 1","August 31, 2024 at 12:30:00 PM GMT+2",67.0,60.0,78,0.001032
+V. Fjeldgaard,AaB U19,"Vejle U19 - AaB U19, 1 - 1","August 31, 2024 at 12:30:00 PM GMT+2",91.0,55.0,86,0.0161
+T. Lykkebak,Vejle U19,"Vejle U19 - AaB U19, 1 - 1","August 31, 2024 at 12:30:00 PM GMT+2",92.0,54.0,90,0.3638

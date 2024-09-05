@@ -222,7 +222,7 @@ L. Larsen,Brøndby U19,"Brøndby U19 - OB U19, 2 - 4",J. Ambæk,"August 31, 2024
 M. Andersen,OB U19,"Brøndby U19 - OB U19, 2 - 4",E. Hansborg-Sørensen,"August 31, 2024 at 12:30:00 PM GMT+2",77.0,33.0,87.0,49.0,,,True
 D. Amtrup,OB U19,"Brøndby U19 - OB U19, 2 - 4",H. Rasmussen,"August 31, 2024 at 12:30:00 PM GMT+2",90.0,28.0,90.0,54.0,,,True
 N. Juul-Sandberg,OB U19,"Brøndby U19 - OB U19, 2 - 4",D. Amtrup,"August 31, 2024 at 12:30:00 PM GMT+2",100.0,100.0,91.0,45.0,,,True
-M. Andersen,OB U19,"Brøndby U19 - OB U19, 2 - 4",W. Martin,"August 31, 2024 at 12:30:00 PM GMT+2",90.0,14.0,89.0,38.0,,,True
+M. Andersen,OB U19,"Brøndby U19 - OB U19, 2 - 4",,"August 31, 2024 at 12:30:00 PM GMT+2",90.0,14.0,88.0,38.0,,,True
 G. Nøhr,Brøndby U19,"Brøndby U19 - OB U19, 2 - 4",J. Ambæk,"August 31, 2024 at 12:30:00 PM GMT+2",76.0,25.0,84.0,44.0,,,True
 N. Lassen,OB U19,"Brøndby U19 - OB U19, 2 - 4",H. Rasmussen,"August 31, 2024 at 12:30:00 PM GMT+2",85.0,88.0,90.0,63.0,,,True
 N. Juul-Sandberg,OB U19,"Brøndby U19 - OB U19, 2 - 4",E. Hansborg-Sørensen,"August 31, 2024 at 12:30:00 PM GMT+2",86.0,82.0,93.0,62.0,,,True
@@ -305,3 +305,25 @@ M. Albæk,Randers U19,"Randers U19 - Lyngby U19, 0 - 2",J. Pedersen,"August 31, 
 W. Køhler Simonsen,Randers U19,"Randers U19 - Lyngby U19, 0 - 2",J. Pedersen,"August 31, 2024 at 1:00:00 PM GMT+2",74.0,88.0,87.0,53.0,,,True
 M. Albæk,Randers U19,"Randers U19 - Lyngby U19, 0 - 2",R. Rexhepi,"August 31, 2024 at 1:00:00 PM GMT+2",79.0,81.0,92.0,59.0,,,True
 A. Høyer,Randers U19,"Randers U19 - Lyngby U19, 0 - 2",R. Rexhepi,"August 31, 2024 at 1:00:00 PM GMT+2",78.0,5.0,92.0,52.0,,,True
+T. Pedersen,Vejle U19,"Vejle U19 - AaB U19, 1 - 1",A. Sønderskov,"August 31, 2024 at 12:30:00 PM GMT+2",100.0,100.0,97.0,60.0,,,True
+T. Lykkebak,Vejle U19,"Vejle U19 - AaB U19, 1 - 1",C. Astrup,"August 31, 2024 at 12:30:00 PM GMT+2",95.0,12.0,91.0,37.0,,,True
+T. Lykkebak,Vejle U19,"Vejle U19 - AaB U19, 1 - 1",L. Flø Borregaard,"August 31, 2024 at 12:30:00 PM GMT+2",79.0,80.0,95.0,58.0,,,True
+T. Pedersen,Vejle U19,"Vejle U19 - AaB U19, 1 - 1",A. Tomaselli,"August 31, 2024 at 12:30:00 PM GMT+2",100.0,100.0,97.0,57.0,,,True
+L. Flø Borregaard,Vejle U19,"Vejle U19 - AaB U19, 1 - 1",R. Koch Groth Pedersen,"August 31, 2024 at 12:30:00 PM GMT+2",78.0,28.0,92.0,55.0,,,True
+T. Lykkebak,Vejle U19,"Vejle U19 - AaB U19, 1 - 1",R. Koch Groth Pedersen,"August 31, 2024 at 12:30:00 PM GMT+2",100.0,100.0,92.0,45.0,,,True
+R. Koch Groth Pedersen,Vejle U19,"Vejle U19 - AaB U19, 1 - 1",T. Lykkebak,"August 31, 2024 at 12:30:00 PM GMT+2",81.0,62.0,88.0,55.0,,,True
+M. Udengaard,Vejle U19,"Vejle U19 - AaB U19, 1 - 1",A. Stengaard,"August 31, 2024 at 12:30:00 PM GMT+2",95.0,13.0,90.0,52.0,,,True
+M. Holt,AaB U19,"Vejle U19 - AaB U19, 1 - 1",N. Andersen,"August 31, 2024 at 12:30:00 PM GMT+2",76.0,51.0,85.0,59.0,,,True
+C. Astrup,Vejle U19,"Vejle U19 - AaB U19, 1 - 1",T. Lykkebak,"August 31, 2024 at 12:30:00 PM GMT+2",81.0,5.0,87.0,45.0,,,True
+B. Pihl Jørgensen,AaB U19,"Vejle U19 - AaB U19, 1 - 1",N. Stojanovic,"August 31, 2024 at 12:30:00 PM GMT+2",92.0,83.0,92.0,58.0,,,True
+N. Andersen,AaB U19,"Vejle U19 - AaB U19, 1 - 1",,"August 31, 2024 at 12:30:00 PM GMT+2",100.0,100.0,88.0,37.0,,,True
+S. Piechnik Hust,Vejle U19,"Vejle U19 - AaB U19, 1 - 1",A. Muhammad,"August 31, 2024 at 12:30:00 PM GMT+2",68.0,15.0,90.0,62.0,,,True
+A. Noshe,AaB U19,"Vejle U19 - AaB U19, 1 - 1",V. Møller,"August 31, 2024 at 12:30:00 PM GMT+2",90.0,74.0,86.0,47.0,,,True
+A. Noshe,AaB U19,"Vejle U19 - AaB U19, 1 - 1",V. Møller,"August 31, 2024 at 12:30:00 PM GMT+2",96.0,75.0,94.0,45.0,,,True
+A. Muhammad,Vejle U19,"Vejle U19 - AaB U19, 1 - 1",T. Pedersen,"August 31, 2024 at 12:30:00 PM GMT+2",94.0,73.0,89.0,57.0,,,True
+T. Lykkebak,Vejle U19,"Vejle U19 - AaB U19, 1 - 1",T. Pedersen,"August 31, 2024 at 12:30:00 PM GMT+2",72.0,10.0,91.0,54.0,,,True
+M. Udengaard,Vejle U19,"Vejle U19 - AaB U19, 1 - 1",S. Ravn,"August 31, 2024 at 12:30:00 PM GMT+2",100.0,100.0,94.0,48.0,,,True
+F. Nygaard,AaB U19,"Vejle U19 - AaB U19, 1 - 1",V. Møller,"August 31, 2024 at 12:30:00 PM GMT+2",81.0,15.0,84.0,38.0,,,True
+L. Flø Borregaard,Vejle U19,"Vejle U19 - AaB U19, 1 - 1",A. Muhammad,"August 31, 2024 at 12:30:00 PM GMT+2",95.0,86.0,93.0,58.0,,,True
+C. Tcacenco,AaB U19,"Vejle U19 - AaB U19, 1 - 1",,"August 31, 2024 at 12:30:00 PM GMT+2",70.0,81.0,93.0,60.0,,,True
+M. Udengaard,Vejle U19,"Vejle U19 - AaB U19, 1 - 1",A. Klaster,"August 31, 2024 at 12:30:00 PM GMT+2",100.0,100.0,97.0,49.0,,,True
