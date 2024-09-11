@@ -1561,6 +1561,29 @@ def opposition_analysis():
         df_matchstats[f'{col}_per_match_rank'] = df_matchstats[f'{col}_per_match'].rank(ascending=False, method='min')
 
     st.dataframe(df_matchstats,hide_index=True)
+    sorted_teams = df_matchstats['team.name'].sort_values()
+
+    selected_team = st.selectbox('Choose team', sorted_teams)
+    team_df = df_matchstats.loc[df_matchstats['team_name'] == selected_team]
+
+    # Target ranks
+    target_ranks = [1, 2, 3, 4, 9, 10, 11, 12]
+
+    # Filter the selected team's ranks and values
+    filtered_data_df = pd.DataFrame()
+    col1, col2 = st.columns([1, 2])
+    for col in team_df.columns:
+        if col.endswith('_per_match_rank'):
+            original_col = col[:-5]
+            if any(team_df[col].isin(target_ranks)):
+                filtered_ranks = team_df.loc[team_df[col].isin(target_ranks), col]
+                filtered_values = team_df.loc[team_df[col].isin(target_ranks), original_col]
+                filtered_data_df[original_col + '_per_match_rank'] = filtered_ranks.values
+                filtered_data_df[original_col + '_per_match'] = filtered_values.values
+
+    with col1:
+        filtered_data_df = filtered_data_df.T
+        st.dataframe(filtered_data_df)
     
 def keeper_ratings():
     gc = gspread.service_account('wellness-1123-178fea106d0a.json')
