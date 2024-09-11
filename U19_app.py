@@ -1535,9 +1535,7 @@ def opposition_analysis():
         'total_opponentHalfRecoveries': 'sum',
         'total_losses': 'sum',
         'total_ownHalfLosses': 'sum',
-        'totalCrossNocorner': 'sum',
         'total_touchInBox': 'sum',
-        'totalLongBalls': 'sum',
         'total_progressivePasses': 'sum',
         'total_counterpressingRecoveries': 'sum',
 
