@@ -1571,17 +1571,22 @@ def opposition_analysis():
 
     # Filter the selected team's ranks and values
     filtered_data_df = pd.DataFrame()
-    col1, col2 = st.columns([1, 2])
     for col in team_df.columns:
-        if col.endswith('_per_match_rank'):
-            original_col = col[:-5]
-            if any(team_df[col].isin(target_ranks)):
-                filtered_ranks = team_df.loc[team_df[col].isin(target_ranks), col]
-                filtered_values = team_df.loc[team_df[col].isin(target_ranks), original_col]
-                filtered_data_df[original_col] = filtered_ranks.values
-                filtered_data_df[original_col] = filtered_values.values
+        if col.endswith('_rank'):
+            # Original column name without '_rank'
+            original_col = col.replace('_rank', '')
 
+            # Filter based on target ranks
+            team_ranks = team_df[col].values
+            if any(rank in target_ranks for rank in team_ranks):
+                # If any rank is in the target ranks, add it to the filtered data
+                filtered_data_df[original_col] = team_df[col]
+                filtered_data_df[f'{original_col}_value'] = team_df[original_col]
+
+    # Display the filtered data in two columns
+    col1, col2 = st.columns([1, 2])
     with col1:
+        # Transpose the DataFrame for better display
         filtered_data_df = filtered_data_df.T
         st.dataframe(filtered_data_df)
     
