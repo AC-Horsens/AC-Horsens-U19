@@ -8,7 +8,7 @@ import gspread
 import plotly.graph_objs as go
 from datetime import datetime
 from dateutil import parser
-
+import numpy as np
 
 st.set_page_config(layout="wide")
 
@@ -1473,6 +1473,8 @@ def opposition_analysis():
 
     # Correct the date format in 'date' column if necessary
     df_matchstats['date'] = df_matchstats['date'].str.replace(r'GMT\+(\d)$', r'GMT+0\1:00')
+    df_matchstats = df_matchstats.groupby(['contestantId','label', 'date']).sum().reset_index()
+    df_matchstats['label'] = np.where(df_matchstats['label'].notnull(), 1, df_matchstats['label'])
 
     # Convert the 'date' column to datetime objects with mixed format handling
     df_matchstats['date'] = pd.to_datetime(df_matchstats['date'], format='mixed', errors='coerce')
