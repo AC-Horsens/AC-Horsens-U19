@@ -1558,11 +1558,7 @@ def opposition_analysis():
     df_matchstats = df_matchstats[columns_to_keep]
     
     for col in columns_to_per_match:
-        # Special case for 'PPDA per match' to rank in descending order
-        if col == 'total_losses':
-            df_matchstats[col + '_rank'] = df_matchstats[columns_to_keep].rank(axis=0, ascending=True)
-        else:
-            df_matchstats[col + '_rank'] = df_matchstats[columns_to_keep].rank(axis=0, ascending=False)
+        df_matchstats[f'{col}_per_match_rank'] = df_matchstats[f'{col}_per_match'].rank(ascending=False, method='min')
     df_matchstats.columns = [col.replace('total_', '') for col in df_matchstats.columns]
     df_matchstats.columns = [col.replace('_per_match', '') for col in df_matchstats.columns]
 
