@@ -1549,7 +1549,6 @@ def opposition_analysis():
         'total_ownHalfLosses', 'total_touchInBox', 'total_progressivePasses',
         'total_counterpressingRecoveries'
     ]
-    df_matchstats.columns = [col.replace('total_', '') for col in df_matchstats.columns]
 
 # Create "per match" columns by dividing by 'label'
     for col in columns_to_per_match:
@@ -1560,6 +1559,7 @@ def opposition_analysis():
     
     for col in columns_to_per_match:
         df_matchstats[f'{col}_per_match_rank'] = df_matchstats[f'{col}_per_match'].rank(ascending=False, method='min')
+    df_matchstats.columns = [col.replace('total_', '') for col in df_matchstats.columns]
 
     st.dataframe(df_matchstats,hide_index=True)
     sorted_teams = df_matchstats['team.name'].sort_values()
