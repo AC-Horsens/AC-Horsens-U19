@@ -1491,7 +1491,7 @@ def opposition_analysis():
         max_date = df_matchstats['date'].max().to_pydatetime().date()
 
         # Use a date input widget with range selection
-        selected_date_range = st.date_input("Select a date range:", [min_date, max_date])
+        selected_date_range = st.select_slider("Select a date range:", [min_date, max_date])
 
         # Ensure the user has selected a valid range
         if selected_date_range and len(selected_date_range) == 2:
@@ -1502,11 +1502,11 @@ def opposition_analysis():
             end_date = pd.to_datetime(end_date)
 
             # Filter the DataFrame based on the selected date range
-            filtered_df = df_matchstats[(df_matchstats['date'] >= start_date) & (df_matchstats['date'] <= end_date)]
+            matchstats_df = df_matchstats[(df_matchstats['date'] >= start_date) & (df_matchstats['date'] <= end_date)]
 
             # Display the filtered DataFrame
             st.write(f"Filtered Data from {start_date.date()} to {end_date.date()}:")
-            st.write(filtered_df)
+            st.write(matchstats_df)
             st.write(df_matchstats['label'].unique())
 
         else:
