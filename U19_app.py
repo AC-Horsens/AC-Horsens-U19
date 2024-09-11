@@ -1468,6 +1468,7 @@ def dashboard():
 
 def opposition_analysis():
     # Display the full dataframe
+    df_matchstats = load_matchstats()
     st.dataframe(df_matchstats)
 
     # Correct the date format in 'date' column if necessary
