@@ -1514,7 +1514,7 @@ def opposition_analysis():
     ]    
     df_matchstats = df_matchstats.drop(columns=['date','player.id','player.name','matchId','position_names','position_codes'])
     # Perform aggregation
-    df_matchstats = df_matchstats.groupby(['team_name']).agg({
+    df_matchstats = df_matchstats.groupby(['team.name']).agg({
         'label': 'sum',  # Example of a column to sum
         'total_duels': 'sum',  # Example of another column to sum
         'total_duelsWon': 'sum',  # Example of a column to average
