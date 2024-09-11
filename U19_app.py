@@ -1541,7 +1541,7 @@ def opposition_analysis():
         }).reset_index()
     
     df_matchstats['forward pass share'] = df_matchstats['total_forwardPasses'] / df_matchstats['total_passes']
-    df_matchstats['long pass share'] = df_matchstats['total_longPasses'] / df_matchstats['total_passes']
+    df_matchstats['long pass share'] = df_matchstats['total_longPasses'].astype(float) / df_matchstats['total_passes'].astype(float)
     
     columns_to_per_match = [
         'total_duels', 'total_duelsWon', 'total_defensiveDuels',
