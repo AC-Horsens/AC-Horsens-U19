@@ -1560,7 +1560,7 @@ def opposition_analysis():
     for col in columns_to_per_match:
         df_matchstats[f'{col}_per_match_rank'] = df_matchstats[f'{col}_per_match'].rank(ascending=False, method='min')
     df_matchstats.columns = [col.replace('total_', '') for col in df_matchstats.columns]
-    df_matchstats.columns = [col.replace('_per_match_', '') for col in df_matchstats.columns]
+    df_matchstats.columns = [col.replace('_per_match', '') for col in df_matchstats.columns]
 
     st.dataframe(df_matchstats,hide_index=True)
     sorted_teams = df_matchstats['team.name'].sort_values()
