@@ -1564,7 +1564,7 @@ def opposition_analysis():
     sorted_teams = df_matchstats['team.name'].sort_values()
 
     selected_team = st.selectbox('Choose team', sorted_teams)
-    team_df = df_matchstats.loc[df_matchstats['team_name'] == selected_team]
+    team_df = df_matchstats.loc[df_matchstats['team.name'] == selected_team]
 
     # Target ranks
     target_ranks = [1, 2, 3, 4, 9, 10, 11, 12]
