@@ -1558,18 +1558,31 @@ def opposition_analysis():
     df_matchstats = df_matchstats[columns_to_keep]
     
     for col in columns_to_per_match:
-        df_matchstats[f'{col}_per_match_rank'] = df_matchstats[f'{col}_per_match'].rank(ascending=False, method='min')
+        if col == 'total_losses':
+            # Rank losses in ascending order (lower is better)
+            df_matchstats[f'{col}_per_match_rank'] = df_matchstats[f'{col}_per_match'].rank(ascending=True, method='min')
+        else:
+            # Rank other columns in descending order (higher is better)
+            df_matchstats[f'{col}_per_match_rank'] = df_matchstats[f'{col}_per_match'].rank(ascending=False, method='min')
+
+    # Remove 'total_' prefix and '_per_match' suffix from column names
     df_matchstats.columns = [col.replace('total_', '') for col in df_matchstats.columns]
     df_matchstats.columns = [col.replace('_per_match', '') for col in df_matchstats.columns]
 
-    st.dataframe(df_matchstats,hide_index=True)
-    sorted_teams = df_matchstats['team.name'].sort_values()
+    # Display the DataFrame
+    st.dataframe(df_matchstats, hide_index=True)
 
+    # Sort teams alphabetically for the selectbox
+    sorted_teams = df_matchstats['team.name'].sort_values().unique()
+
+    # Select team from dropdown
     selected_team = st.selectbox('Choose team', sorted_teams)
+
+    # Filter DataFrame for selected team
     team_df = df_matchstats.loc[df_matchstats['team.name'] == selected_team]
 
     # Target ranks
-    target_ranks = [1, 2, 3, 4, 10, 11, 12,13,14]
+    target_ranks = [1, 2, 3, 4, 10, 11, 12, 13, 14]
 
     # Filter the selected team's ranks and values
     filtered_data_df = pd.DataFrame()
