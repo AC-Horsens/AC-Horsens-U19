@@ -1580,7 +1580,7 @@ def opposition_analysis():
             team_ranks = team_df[col].values
             if any(rank in target_ranks for rank in team_ranks):
                 # If any rank is in the target ranks, add it to the filtered data
-                filtered_data_df[original_col] = team_df[col]
+                filtered_data_df[f'{original_col}_rank'] = team_df[col]
                 filtered_data_df[f'{original_col}_value'] = team_df[original_col]
 
     # Display the filtered data in two columns
