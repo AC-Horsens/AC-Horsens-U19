@@ -1559,8 +1559,8 @@ def opposition_analysis():
     columns_to_keep = ['team.name', 'label'] + [f'{col}_per_match' for col in columns_to_per_match]
     df_matchstats = df_matchstats[columns_to_keep]
     
-    df_matchstats['forward pass share'] = df_matchstats['total_forwardPasses'] / df_matchstats['total_passes']
-    df_matchstats['long pass share'] = df_matchstats['total_longPasses'] / df_matchstats['total_passes']
+    df_matchstats['forward pass share'] = df_matchstats['total_forwardPasses_per_match'] / df_matchstats['total_passes_per_match']
+    df_matchstats['long pass share'] = df_matchstats['total_longPasses_per_match'] / df_matchstats['total_passes_per_match']
 
     
     for col in columns_to_per_match:
