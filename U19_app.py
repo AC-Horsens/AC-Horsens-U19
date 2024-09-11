@@ -1549,6 +1549,7 @@ def opposition_analysis():
         'total_ownHalfLosses', 'total_touchInBox', 'total_progressivePasses',
         'total_counterpressingRecoveries'
     ]
+    df_matchstats.columns = [col.replace('total_', '') for col in df_matchstats.columns]
 
 # Create "per match" columns by dividing by 'label'
     for col in columns_to_per_match:
