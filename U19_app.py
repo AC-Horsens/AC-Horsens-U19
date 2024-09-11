@@ -1468,34 +1468,40 @@ def dashboard():
 
 def opposition_analysis():
     # Display the full dataframe
-    matchstats_df = load_matchstats()
-    date_format = '%Y-%m-%d'
-    matchstats_df['date'] = pd.to_datetime(matchstats_df['date'], format=date_format)
-    min_date = matchstats_df['date'].min()
-    max_date = matchstats_df['date'].max()
+    st.dataframe(df_matchstats)
 
-    date_range = pd.date_range(start=min_date, end=max_date, freq='D')
-    date_options = date_range.strftime(date_format)  # Convert dates to the specified format
+    # Correct the date format in 'date' column if necessary
+    df_matchstats['date'] = df_matchstats['date'].str.replace(r'GMT\+(\d)$', r'GMT+0\1:00')
 
-    default_end_date = date_options[-1]
+    # Convert the 'date' column to datetime objects with mixed format handling
+    df_matchstats['date'] = pd.to_datetime(df_matchstats['date'], format='mixed', errors='coerce')
 
-    default_end_date_dt = pd.to_datetime(default_end_date, format=date_format)
-    default_start_date_dt = default_end_date_dt - pd.Timedelta(days=2)  # Subtract 14 days
-    default_start_date = default_start_date_dt.strftime(date_format)  # Convert to string
+    # Ensure min_date and max_date are datetime objects
+    if not df_matchstats.empty:
+        # Drop rows where date parsing failed (NaT)
+        df_matchstats = df_matchstats.dropna(subset=['date'])
+        
+        min_date = df_matchstats['date'].min().to_pydatetime()
+        max_date = df_matchstats['date'].max().to_pydatetime()
 
-    # Set the default start and end date values for the select_slider
-    selected_start_date, selected_end_date = st.select_slider(
-        'Choose dates',
-        options=date_options,
-        value=(min_date.strftime(date_format), max_date.strftime(date_format))
-    )
-    
-    selected_start_date = pd.to_datetime(selected_start_date, format=date_format)
-    selected_end_date = pd.to_datetime(selected_end_date, format=date_format)
-    filtered_data = matchstats_df[
-        (matchstats_df['date'] >= selected_start_date) & (matchstats_df['date'] <= selected_end_date)
-    ]    
-    st.dataframe(filtered_data)
+        # Use a date input widget with range selection
+        selected_date_range = st.date_input("Select a date range:", [min_date, max_date])
+
+        # Ensure the user has selected a valid range
+        if selected_date_range and len(selected_date_range) == 2:
+            start_date, end_date = selected_date_range
+
+            # Filter the DataFrame based on the selected date range
+            filtered_df = df_matchstats[(df_matchstats['date'] >= start_date) & (df_matchstats['date'] <= end_date)]
+
+            # Display the filtered DataFrame
+            st.write(f"Filtered Data from {start_date} to {end_date}:")
+            st.write(filtered_df)
+        else:
+            st.write("Please select a valid date range.")
+    else:
+        st.write("No valid dates available for filtering.")
+        
 def keeper_ratings():
     gc = gspread.service_account('wellness-1123-178fea106d0a.json')
     sh = gc.open_by_url('https://docs.google.com/spreadsheets/d/1e5kAIxFAMmTSuamV1E_ymgzva0rLA6Q4oM21VRU6FwI/edit?resourcekey=&gid=1263806243#gid=1263806243')
