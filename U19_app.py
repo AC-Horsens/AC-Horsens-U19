@@ -1486,7 +1486,7 @@ def opposition_analysis():
     df_matchstats['date'] = df_matchstats['date'].astype(str)
     df_matchstats['date'] = df_matchstats['date'].str.slice(0, -9)
     df_matchstats['date'] = pd.to_datetime(df_matchstats['date'], format='%Y-%m-%d')
-
+    st.dataframe(df_matchstats)
     if not df_matchstats.empty:
         # Find the minimum and maximum dates after converting to Python datetime objects
         min_date = df_matchstats['date'].min().to_pydatetime().date()
