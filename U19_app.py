@@ -1539,6 +1539,8 @@ def opposition_analysis():
         'total_counterpressingRecoveries': 'sum',
 
         }).reset_index()
+    
+    df_matchstats['forward pass share'] = df_matchstats['total_forwardPasses'] / df_matchstats['total_passes']
     columns_to_per_match = [
         'total_duels', 'total_duelsWon', 'total_defensiveDuels',
         'total_defensiveDuelsWon', 'total_aerialDuelsWon', 'total_passes',
@@ -1547,7 +1549,7 @@ def opposition_analysis():
         'total_forwardPasses', 'total_successfulForwardPasses', 'total_longPasses',
         'total_recoveries', 'total_opponentHalfRecoveries', 'total_losses',
         'total_ownHalfLosses', 'total_touchInBox', 'total_progressivePasses',
-        'total_counterpressingRecoveries'
+        'total_counterpressingRecoveries','forward pass share'
     ]
 
 # Create "per match" columns by dividing by 'label'
