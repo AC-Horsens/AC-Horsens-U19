@@ -1540,8 +1540,6 @@ def opposition_analysis():
 
         }).reset_index()
     
-    df_matchstats['forward pass share'] = df_matchstats['total_forwardPasses'] / df_matchstats['total_passes']
-    df_matchstats['long pass share'] = df_matchstats['total_longPasses'].astype(float) / df_matchstats['total_passes'].astype(float)
     
     columns_to_per_match = [
         'total_duels', 'total_duelsWon', 'total_defensiveDuels',
@@ -1560,6 +1558,10 @@ def opposition_analysis():
 
     columns_to_keep = ['team.name', 'label'] + [f'{col}_per_match' for col in columns_to_per_match]
     df_matchstats = df_matchstats[columns_to_keep]
+    
+    df_matchstats['forward pass share'] = df_matchstats['total_forwardPasses'] / df_matchstats['total_passes']
+    df_matchstats['long pass share'] = df_matchstats['total_longPasses'] / df_matchstats['total_passes']
+
     
     for col in columns_to_per_match:
         if col == 'total_losses':
