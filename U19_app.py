@@ -1567,7 +1567,7 @@ def opposition_analysis():
     team_df = df_matchstats.loc[df_matchstats['team.name'] == selected_team]
 
     # Target ranks
-    target_ranks = [1, 2, 3, 4, 9, 10, 11, 12]
+    target_ranks = [1, 2, 3, 4, 10, 11, 12,13,14]
 
     # Filter the selected team's ranks and values
     filtered_data_df = pd.DataFrame()
@@ -1578,8 +1578,8 @@ def opposition_analysis():
             if any(team_df[col].isin(target_ranks)):
                 filtered_ranks = team_df.loc[team_df[col].isin(target_ranks), col]
                 filtered_values = team_df.loc[team_df[col].isin(target_ranks), original_col]
-                filtered_data_df[original_col + '_per_match_rank'] = filtered_ranks.values
-                filtered_data_df[original_col + '_per_match'] = filtered_values.values
+                filtered_data_df[original_col] = filtered_ranks.values
+                filtered_data_df[original_col] = filtered_values.values
 
     with col1:
         filtered_data_df = filtered_data_df.T
