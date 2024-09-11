@@ -1477,13 +1477,16 @@ def opposition_analysis():
     # Convert the 'date' column to datetime objects with mixed format handling
     df_matchstats['date'] = pd.to_datetime(df_matchstats['date'], format='mixed', errors='coerce')
 
-    # Ensure min_date and max_date are datetime objects
+    # Ensure all datetime objects are timezone-naive (remove timezones)
+    df_matchstats['date'] = df_matchstats['date'].dt.tz_convert(None)
+
+    # Drop rows where date parsing failed (NaT)
+    df_matchstats = df_matchstats.dropna(subset=['date'])
+
     if not df_matchstats.empty:
-        # Drop rows where date parsing failed (NaT)
-        df_matchstats = df_matchstats.dropna(subset=['date'])
-        
-        min_date = df_matchstats['date'].min().to_pydatetime()
-        max_date = df_matchstats['date'].max().to_pydatetime()
+        # Find the minimum and maximum dates after converting to Python datetime objects
+        min_date = df_matchstats['date'].min().to_pydatetime().date()
+        max_date = df_matchstats['date'].max().to_pydatetime().date()
 
         # Use a date input widget with range selection
         selected_date_range = st.date_input("Select a date range:", [min_date, max_date])
@@ -1492,11 +1495,15 @@ def opposition_analysis():
         if selected_date_range and len(selected_date_range) == 2:
             start_date, end_date = selected_date_range
 
+            # Convert start_date and end_date to datetime for accurate comparison
+            start_date = pd.to_datetime(start_date)
+            end_date = pd.to_datetime(end_date)
+
             # Filter the DataFrame based on the selected date range
             filtered_df = df_matchstats[(df_matchstats['date'] >= start_date) & (df_matchstats['date'] <= end_date)]
 
             # Display the filtered DataFrame
-            st.write(f"Filtered Data from {start_date} to {end_date}:")
+            st.write(f"Filtered Data from {start_date.date()} to {end_date.date()}:")
             st.write(filtered_df)
         else:
             st.write("Please select a valid date range.")
