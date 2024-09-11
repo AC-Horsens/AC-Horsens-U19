@@ -1467,24 +1467,35 @@ def dashboard():
             Data_types[st.session_state['selected_data3']]()
 
 def opposition_analysis():
+    # Display the full dataframe
     st.dataframe(df_matchstats)
-    df_matchstats['date'] = df_matchstats['date'].str.replace('GMT\+(\d)$', r'GMT+0\1:00')
 
-    # Convert the date column to datetime objects
+    # Correct the date format in 'date' column if necessary
+    df_matchstats['date'] = df_matchstats['date'].str.replace(r'GMT\+(\d)$', r'GMT+0\1:00')
+
+    # Convert the 'date' column to datetime objects
     df_matchstats['date'] = df_matchstats['date'].apply(lambda x: parser.parse(x))
 
     # Ensure min_date and max_date are datetime objects
     if not df_matchstats.empty:
-        min_date = df_matchstats['date'].min().to_pydatetime()  # Convert to Python datetime object
-        max_date = df_matchstats['date'].max().to_pydatetime()  # Convert to Python datetime object
-        selected_date = st.slider("Select a date:", min_value=min_date, max_value=max_date, value=min_date)
+        min_date = df_matchstats['date'].min().to_pydatetime()
+        max_date = df_matchstats['date'].max().to_pydatetime()
 
-        # Filter the DataFrame based on the selected date
-        filtered_df = df_matchstats[df_matchstats['date'].dt.date == selected_date.date()]
+        # Use a date input widget with range selection
+        selected_date_range = st.date_input("Select a date range:", [min_date, max_date])
 
-        # Display the filtered DataFrame
-        st.write(f"Filtered Data for {selected_date.date()}:")
-        st.write(filtered_df)
+        # Ensure the user has selected a valid range
+        if selected_date_range and len(selected_date_range) == 2:
+            start_date, end_date = selected_date_range
+
+            # Filter the DataFrame based on the selected date range
+            filtered_df = df_matchstats[(df_matchstats['date'] >= start_date) & (df_matchstats['date'] <= end_date)]
+
+            # Display the filtered DataFrame
+            st.write(f"Filtered Data from {start_date} to {end_date}:")
+            st.write(filtered_df)
+        else:
+            st.write("Please select a valid date range.")
     else:
         st.write("No valid dates available for filtering.")
     
