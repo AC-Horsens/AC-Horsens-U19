@@ -1555,6 +1555,9 @@ def opposition_analysis():
     for col in columns_to_per_match:
         df_matchstats[f'{col}_per_match'] = df_matchstats[col] / df_matchstats['label']
 
+    columns_to_keep = ['team.name', 'label'] + [f'{col}_per_match' for col in columns_to_per_match]
+    df_matchstats = df_matchstats[columns_to_keep]
+
 
     st.dataframe(df_matchstats)
     
