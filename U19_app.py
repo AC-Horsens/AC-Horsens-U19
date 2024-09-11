@@ -1540,6 +1540,22 @@ def opposition_analysis():
         'total_counterpressingRecoveries': 'sum',
 
         }).reset_index()
+    columns_to_per_match = [
+        'total_duels', 'total_duelsWon', 'total_defensiveDuels',
+        'total_defensiveDuelsWon', 'total_aerialDuelsWon', 'total_passes',
+        'total_smartPasses', 'total_successfulSmartPasses', 'total_passesToFinalThird',
+        'total_successfulPassesToFinalThird', 'total_crosses', 'total_successfulCrosses',
+        'total_forwardPasses', 'total_successfulForwardPasses', 'total_longPasses',
+        'total_recoveries', 'total_opponentHalfRecoveries', 'total_losses',
+        'total_ownHalfLosses', 'total_touchInBox', 'total_progressivePasses',
+        'total_counterpressingRecoveries'
+    ]
+
+# Create "per match" columns by dividing by 'label'
+    for col in columns_to_per_match:
+        df_matchstats[f'{col}_per_match'] = df_matchstats[col] / df_matchstats['label']
+
+
     st.dataframe(df_matchstats)
     
 def keeper_ratings():
