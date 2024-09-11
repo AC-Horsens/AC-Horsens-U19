@@ -1509,7 +1509,7 @@ def opposition_analysis():
             st.write("Please select a valid date range.")
     else:
         st.write("No valid dates available for filtering.")
-        
+        st.write(df_matchstats['label'].unique())
 def keeper_ratings():
     gc = gspread.service_account('wellness-1123-178fea106d0a.json')
     sh = gc.open_by_url('https://docs.google.com/spreadsheets/d/1e5kAIxFAMmTSuamV1E_ymgzva0rLA6Q4oM21VRU6FwI/edit?resourcekey=&gid=1263806243#gid=1263806243')
