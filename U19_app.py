@@ -1509,10 +1509,40 @@ def opposition_analysis():
     
     selected_start_date = pd.to_datetime(selected_start_date, format=date_format)
     selected_end_date = pd.to_datetime(selected_end_date, format=date_format)
-    filtered_data = df_matchstats[
+    df_matchstats = df_matchstats[
         (df_matchstats['date'] >= selected_start_date) & (df_matchstats['date'] <= selected_end_date)
     ]    
-    st.dataframe(filtered_data)
+    df_matchstats = df_matchstats.drop(columns=['date','player.id','player.name','matchId','position_names','position_codes'])
+    # Perform aggregation
+    df_matchstats = df_matchstats.groupby(['team_name']).agg({
+        'label': 'sum',  # Example of a column to sum
+        'total_duels': 'sum',  # Example of another column to sum
+        'total_duelsWon': 'sum',  # Example of a column to average
+        'total_defensiveDuels': 'sum',
+        'total_defensiveDuelsWon': 'sum',
+        'total_aerialDuelsWon': 'sum',
+        'total_passes': 'sum',
+        'total_smartPasses': 'sum',
+        'total_successfulSmartPasses': 'sum',
+        'total_passesToFinalThird': 'sum',
+        'total_successfulPassesToFinalThird': 'sum',
+        'total_crosses': 'sum',
+        'total_successfulCrosses': 'sum',
+        'total_forwardPasses': 'sum',
+        'total_successfulForwardPasses': 'sum',
+        'total_longPasses': 'sum',
+        'total_recoveries': 'sum',
+        'total_opponentHalfRecoveries': 'sum',
+        'total_losses': 'sum',
+        'total_ownHalfLosses': 'sum',
+        'totalCrossNocorner': 'sum',
+        'total_touchInBox': 'sum',
+        'totalLongBalls': 'sum',
+        'total_progressivePasses': 'sum',
+        'total_counterpressingRecoveries': 'sum',
+
+        }).reset_index()
+    st.dataframe(df_matchstats)
     
 def keeper_ratings():
     gc = gspread.service_account('wellness-1123-178fea106d0a.json')
