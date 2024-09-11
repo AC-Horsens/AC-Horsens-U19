@@ -1491,7 +1491,7 @@ def opposition_analysis():
         max_date = df_matchstats['date'].max().to_pydatetime().date()
 
         # Use a date input widget with range selection
-        selected_date_range = st.date_input("Select a date range:", [min_date, max_date],value=[min_date, max_date])
+        selected_date_range = st.date_input("Select a date range:", [min_date, max_date],de=[min_date, max_date])
 
         # Ensure the user has selected a valid range
         if selected_date_range and len(selected_date_range) == 2:
