@@ -1549,7 +1549,7 @@ def opposition_analysis():
         'total_forwardPasses', 'total_successfulForwardPasses', 'total_longPasses',
         'total_recoveries', 'total_opponentHalfRecoveries', 'total_losses',
         'total_ownHalfLosses', 'total_touchInBox', 'total_progressivePasses',
-        'total_counterpressingRecoveries','forward pass share','long pass share'
+        'total_counterpressingRecoveries'
     ]
 
 # Create "per match" columns by dividing by 'label'
