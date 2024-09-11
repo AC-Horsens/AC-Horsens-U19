@@ -1481,9 +1481,11 @@ def opposition_analysis():
 
     # Ensure all datetime objects are timezone-naive (remove timezones)
     df_matchstats['date'] = df_matchstats['date'].dt.tz_convert(None)
-
-    # Drop rows where date parsing failed (NaT)
     df_matchstats = df_matchstats.dropna(subset=['date'])
+    # Drop rows where date parsing failed (NaT)
+    df_matchstats['date'] = df_matchstats['date'].astype(str)
+    df_matchstats['date'] = df_matchstats['date'].str.slice(0, -9)
+    df_matchstats['date'] = pd.to_datetime(df_matchstats['date'], format='%Y-%m-%d')
 
     if not df_matchstats.empty:
         # Find the minimum and maximum dates after converting to Python datetime objects
