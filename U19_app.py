@@ -1559,7 +1559,7 @@ def opposition_analysis():
     df_matchstats = df_matchstats[columns_to_keep]
 
 
-    st.dataframe(df_matchstats)
+    st.dataframe(df_matchstats,hide_index=True)
     
 def keeper_ratings():
     gc = gspread.service_account('wellness-1123-178fea106d0a.json')
