@@ -1009,9 +1009,9 @@ def create_pdf_game_report(game_data, df_xg_agg, merged_df, df_possession_stats,
         # Add table content
         for index, row in filtered_df.iterrows():
             total_score = row['Total score']
-            if total_score < 4:
+            if total_score <= 4:
                 fill_color = (255, 0, 0)  # Red
-            elif 4 <= total_score <= 6:
+            elif 4 < total_score <= 6:
                 fill_color = (255, 255, 0)  # Yellow
             else:
                 fill_color = (0, 255, 0)  # Green
@@ -1096,9 +1096,9 @@ def create_pdf_progress_report(horsens_df, total_expected_points_combined):
         # Add table content
         for index, row in filtered_df.iterrows():
             total_score = row['Total score']
-            if total_score < 4:
+            if total_score <= 4:
                 fill_color = (255, 0, 0)  # Red
-            elif 4 <= total_score <= 6:
+            elif 4 < total_score <= 6:
                 fill_color = (255, 255, 0)  # Yellow
             else:
                 fill_color = (0, 255, 0)  # Green
