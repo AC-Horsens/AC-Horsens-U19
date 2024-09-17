@@ -47,8 +47,8 @@ kampdetaljer = kampdetaljer[['wyId','label','date']]
 kampdetaljer = kampdetaljer.rename(columns={'wyId':'matchId'})
 events = kampdetaljer.merge(df)
 groundduel = events[events['groundDuel.duelType'] == 'defensive_duel']
-groundduel = groundduel[['team.name','label','player.name','groundDuel.stoppedProgress','groundDuel.recoveredPossession']]
-
+groundduel = groundduel[['team.name','label','player.name','location.x','location.y','groundDuel.stoppedProgress','groundDuel.recoveredPossession']]
+groundduel.to_csv('groundduels.csv', index=False)
 player_stats = groundduel.groupby(['player.name','team.name','label']).agg(
     stoppedProgressCount=('groundDuel.stoppedProgress', 'sum'),
     recoveredPossessionCount=('groundDuel.recoveredPossession', 'sum'),

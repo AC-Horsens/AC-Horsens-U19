@@ -3,6 +3,8 @@ label,team.name,date,PPDA
 "AGF - Midtjylland, 1 - 1",Midtjylland,"July 19, 2024 at 6:00:00 PM GMT+2",12.058823529411764
 "AGF - Nordsjælland, 4 - 2",AGF,"August 31, 2024 at 4:00:00 PM GMT+2",12.454545454545455
 "AGF - Nordsjælland, 4 - 2",Nordsjælland,"August 31, 2024 at 4:00:00 PM GMT+2",11.210526315789474
+"AGF - Silkeborg, 1 - 1",AGF,"September 15, 2024 at 2:00:00 PM GMT+2",8.833333333333334
+"AGF - Silkeborg, 1 - 1",Silkeborg,"September 15, 2024 at 2:00:00 PM GMT+2",41.4
 "AGF - SønderjyskE, 4 - 0",AGF,"August 2, 2024 at 7:00:00 PM GMT+2",9.05
 "AGF - SønderjyskE, 4 - 0",SønderjyskE,"August 2, 2024 at 7:00:00 PM GMT+2",10.0
 "AGF - Vejle, 5 - 1",AGF,"August 19, 2024 at 7:00:00 PM GMT+2",8.1875
@@ -11,12 +13,16 @@ label,team.name,date,PPDA
 "AaB - AGF, 0 - 4",AaB,"August 23, 2024 at 7:00:00 PM GMT+2",9.181818181818182
 "AaB - Brøndby, 0 - 4",AaB,"August 18, 2024 at 6:00:00 PM GMT+2",58.857142857142854
 "AaB - Brøndby, 0 - 4",Brøndby,"August 18, 2024 at 6:00:00 PM GMT+2",7.5
+"AaB - Lyngby, 2 - 1",AaB,"September 13, 2024 at 7:00:00 PM GMT+2",9.565217391304348
+"AaB - Lyngby, 2 - 1",Lyngby,"September 13, 2024 at 7:00:00 PM GMT+2",12.625
 "AaB - Silkeborg, 2 - 1",AaB,"July 28, 2024 at 4:00:00 PM GMT+2",13.4375
 "AaB - Silkeborg, 2 - 1",Silkeborg,"July 28, 2024 at 4:00:00 PM GMT+2",13.533333333333333
 "Brøndby - AGF, 0 - 1",AGF,"August 11, 2024 at 4:00:00 PM GMT+2",28.636363636363637
 "Brøndby - AGF, 0 - 1",Brøndby,"August 11, 2024 at 4:00:00 PM GMT+2",12.588235294117647
 "Brøndby - Randers, 2 - 2",Brøndby,"August 25, 2024 at 6:00:00 PM GMT+2",5.133333333333334
 "Brøndby - Randers, 2 - 2",Randers,"August 25, 2024 at 6:00:00 PM GMT+2",40.30769230769231
+"Brøndby - SønderjyskE, 2 - 0",Brøndby,"September 15, 2024 at 6:00:00 PM GMT+2",12.894736842105264
+"Brøndby - SønderjyskE, 2 - 0",SønderjyskE,"September 15, 2024 at 6:00:00 PM GMT+2",17.444444444444443
 "Brøndby - Vejle, 2 - 1",Brøndby,"July 29, 2024 at 7:00:00 PM GMT+2",21.083333333333332
 "Brøndby - Vejle, 2 - 1",Vejle,"July 29, 2024 at 7:00:00 PM GMT+2",10.1
 "København - AGF, 3 - 2",AGF,"July 28, 2024 at 6:00:00 PM GMT+2",55.2
@@ -49,6 +55,8 @@ label,team.name,date,PPDA
 "Nordsjælland - Lyngby, 1 - 1",Nordsjælland,"August 11, 2024 at 2:00:00 PM GMT+2",13.777777777777779
 "Nordsjælland - Midtjylland, 2 - 2",Midtjylland,"July 27, 2024 at 4:00:00 PM GMT+2",19.733333333333334
 "Nordsjælland - Midtjylland, 2 - 2",Nordsjælland,"July 27, 2024 at 4:00:00 PM GMT+2",17.153846153846153
+"Nordsjælland - Randers, 1 - 1",Nordsjælland,"September 16, 2024 at 7:00:00 PM GMT+2",10.0
+"Nordsjælland - Randers, 1 - 1",Randers,"September 16, 2024 at 7:00:00 PM GMT+2",66.625
 "Randers - AaB, 1 - 0",AaB,"September 1, 2024 at 6:00:00 PM GMT+2",20.166666666666668
 "Randers - AaB, 1 - 0",Randers,"September 1, 2024 at 6:00:00 PM GMT+2",13.68421052631579
 "Randers - Silkeborg, 0 - 2",Randers,"August 11, 2024 at 2:00:00 PM GMT+2",8.64

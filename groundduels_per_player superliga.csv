@@ -6,6 +6,7 @@ A. Barkarson,SønderjyskE,"SønderjyskE - Lyngby, 1 - 1",6,1,8,75.0,12.5
 A. Bjelland,Lyngby,"Lyngby - Brøndby, 0 - 2",3,0,5,60.0,0.0
 A. Bjelland,Lyngby,"Lyngby - København, 0 - 2",6,3,7,85.71428571428571,42.857142857142854
 A. Bjelland,Lyngby,"SønderjyskE - Lyngby, 1 - 1",7,1,7,100.0,14.285714285714285
+A. Bruus,AaB,"AaB - Lyngby, 2 - 1",2,0,5,40.0,0.0
 A. Buksa,Midtjylland,"AGF - Midtjylland, 1 - 1",1,1,2,50.0,50.0
 A. Buksa,Midtjylland,"Midtjylland - AaB, 2 - 0",2,0,3,66.66666666666666,0.0
 A. Buksa,Midtjylland,"Midtjylland - SønderjyskE, 3 - 2",3,1,4,75.0,25.0
@@ -28,11 +29,13 @@ A. Gabriel,Midtjylland,"Midtjylland - Vejle, 2 - 0",3,0,4,75.0,0.0
 A. Gabriel,Midtjylland,"Silkeborg - Midtjylland, 1 - 3",4,1,4,100.0,25.0
 A. Hakim Sulemana,Randers,"Brøndby - Randers, 2 - 2",True,False,1,100.0,0.0
 A. Hakim Sulemana,Randers,"Randers - AaB, 1 - 0",2,2,2,100.0,100.0
+A. Hansen,Nordsjælland,"Nordsjælland - Randers, 1 - 1",True,False,1,100.0,0.0
 A. Jacobsen,Vejle,"AGF - Vejle, 5 - 1",1,0,2,50.0,0.0
 A. Jacobsen,Vejle,"Lyngby - Vejle, 1 - 0",1,0,3,33.33333333333333,0.0
 A. Jacobsen,Vejle,"Midtjylland - Vejle, 2 - 0",False,False,1,0.0,0.0
 A. Jasson,AaB,"AaB - AGF, 0 - 4",2,0,5,40.0,0.0
 A. Jasson,AaB,"AaB - Brøndby, 0 - 4",7,2,16,43.75,12.5
+A. Jasson,AaB,"AaB - Lyngby, 2 - 1",4,1,6,66.66666666666666,16.666666666666664
 A. Jasson,AaB,"AaB - Silkeborg, 2 - 1",7,5,10,70.0,50.0
 A. Jasson,AaB,"Midtjylland - AaB, 2 - 0",8,3,8,100.0,37.5
 A. Jasson,AaB,"Randers - AaB, 1 - 0",3,0,6,50.0,0.0
@@ -50,12 +53,14 @@ A. Lyng,SønderjyskE,"SønderjyskE - Lyngby, 1 - 1",False,False,1,0.0,0.0
 A. Lyng,SønderjyskE,"SønderjyskE - Viborg, 2 - 2",True,False,1,100.0,0.0
 A. Mohammed,Nordsjælland,"AGF - Nordsjælland, 4 - 2",True,False,1,100.0,0.0
 A. Oggesen,SønderjyskE,"AGF - SønderjyskE, 4 - 0",3,1,6,50.0,16.666666666666664
+A. Oggesen,SønderjyskE,"Brøndby - SønderjyskE, 2 - 0",4,3,5,80.0,60.0
 A. Oggesen,SønderjyskE,"Midtjylland - SønderjyskE, 3 - 2",4,1,6,66.66666666666666,16.666666666666664
 A. Oggesen,SønderjyskE,"Randers - SønderjyskE, 1 - 2",7,2,8,87.5,25.0
 A. Oggesen,SønderjyskE,"Silkeborg - SønderjyskE, 1 - 0",5,0,6,83.33333333333334,0.0
 A. Oggesen,SønderjyskE,"SønderjyskE - København, 0 - 2",4,0,6,66.66666666666666,0.0
 A. Oggesen,SønderjyskE,"SønderjyskE - Lyngby, 1 - 1",1,0,2,50.0,0.0
 A. Oggesen,SønderjyskE,"SønderjyskE - Viborg, 2 - 2",5,2,11,45.45454545454545,18.181818181818183
+A. Poulsen,Silkeborg,"AGF - Silkeborg, 1 - 1",3,0,4,75.0,0.0
 A. Poulsen,Silkeborg,"Randers - Silkeborg, 0 - 2",7,2,10,70.0,20.0
 A. Poulsen,Silkeborg,"Silkeborg - Midtjylland, 1 - 3",3,1,5,60.0,20.0
 A. Poulsen,Silkeborg,"Silkeborg - Nordsjælland, 4 - 1",5,1,8,62.5,12.5
@@ -67,6 +72,7 @@ A. Pyndt,Silkeborg,"Silkeborg - Viborg, 3 - 2",5,1,6,83.33333333333334,16.666666
 A. Rømer,Midtjylland,"AGF - Midtjylland, 1 - 1",1,0,4,25.0,0.0
 A. Rømer,Midtjylland,"Midtjylland - Vejle, 2 - 0",4,1,5,80.0,20.0
 A. Rømer,Randers,"Brøndby - Randers, 2 - 2",5,2,9,55.55555555555556,22.22222222222222
+A. Rømer,Randers,"Nordsjælland - Randers, 1 - 1",2,2,3,66.66666666666666,66.66666666666666
 A. Rømer,Randers,"Randers - AaB, 1 - 0",3,0,6,50.0,0.0
 A. Simmelhack,Silkeborg,"Silkeborg - Midtjylland, 1 - 3",True,True,1,100.0,100.0
 A. Simmelhack,Silkeborg,"Vejle - Silkeborg, 1 - 3",False,False,1,0.0,0.0
@@ -76,6 +82,7 @@ A. Şimşir,Midtjylland,"Midtjylland - AaB, 2 - 0",False,True,1,0.0,100.0
 A. Şimşir,Midtjylland,"Midtjylland - SønderjyskE, 3 - 2",2,0,3,66.66666666666666,0.0
 A. Şimşir,Midtjylland,"Midtjylland - Vejle, 2 - 0",True,False,1,100.0,0.0
 A. Şimşir,Midtjylland,"Nordsjælland - Midtjylland, 2 - 2",3,0,4,75.0,0.0
+B. Hamalainen,Lyngby,"AaB - Lyngby, 2 - 1",3,1,4,75.0,25.0
 B. Hamalainen,Lyngby,"Lyngby - Brøndby, 0 - 2",1,0,2,50.0,0.0
 B. Hamalainen,Lyngby,"Lyngby - København, 0 - 2",True,True,1,100.0,100.0
 B. Hamalainen,Lyngby,"Lyngby - Midtjylland, 1 - 2",4,1,5,80.0,20.0
@@ -91,6 +98,7 @@ B. Meling,København,"SønderjyskE - København, 0 - 2",4,2,4,100.0,50.0
 B. Nygren,Nordsjælland,"AGF - Nordsjælland, 4 - 2",4,0,7,57.14285714285714,0.0
 B. Nygren,Nordsjælland,"Nordsjælland - København, 3 - 2",4,2,7,57.14285714285714,28.57142857142857
 B. Nygren,Nordsjælland,"Nordsjælland - Lyngby, 1 - 1",2,1,3,66.66666666666666,33.33333333333333
+B. Nygren,Nordsjælland,"Nordsjælland - Randers, 1 - 1",2,0,9,22.22222222222222,0.0
 B. Nygren,Nordsjælland,"Silkeborg - Nordsjælland, 4 - 1",5,2,5,100.0,40.0
 B. Nygren,Nordsjælland,"Vejle - Nordsjælland, 0 - 1",True,True,1,100.0,100.0
 B. Pudel,AaB,"Nordsjælland - AaB, 3 - 0",True,False,1,100.0,0.0
@@ -99,6 +107,7 @@ B. Rolland,Lyngby,"Viborg - Lyngby, 1 - 0",4,1,7,57.14285714285714,14.2857142857
 C. Bischoff,Brøndby,"AaB - Brøndby, 0 - 4",True,True,1,100.0,100.0
 C. Bischoff,Brøndby,"Brøndby - AGF, 0 - 1",2,0,4,50.0,0.0
 C. Bischoff,Brøndby,"Brøndby - Randers, 2 - 2",5,3,9,55.55555555555556,33.33333333333333
+C. Bischoff,Brøndby,"Brøndby - SønderjyskE, 2 - 0",2,1,3,66.66666666666666,33.33333333333333
 C. Bischoff,Brøndby,"Brøndby - Vejle, 2 - 1",3,1,8,37.5,12.5
 C. Bischoff,Brøndby,"København - Brøndby, 3 - 1",7,3,9,77.77777777777779,33.33333333333333
 C. Bischoff,Brøndby,"Lyngby - Brøndby, 0 - 2",2,0,4,50.0,0.0
@@ -119,6 +128,7 @@ C. Nouck,Viborg,"Silkeborg - Viborg, 3 - 2",True,False,1,100.0,0.0
 C. Nouck,Viborg,"Viborg - Lyngby, 1 - 0",3,1,3,100.0,33.33333333333333
 C. Sørensen,Midtjylland,"Lyngby - Midtjylland, 1 - 2",True,False,1,100.0,0.0
 C. Sørensen,Midtjylland,"Midtjylland - Vejle, 2 - 0",6,1,8,75.0,12.5
+C. Winther,Lyngby,"AaB - Lyngby, 2 - 1",1,1,4,25.0,25.0
 C. Winther,Lyngby,"Lyngby - Brøndby, 0 - 2",3,2,6,50.0,33.33333333333333
 C. Winther,Lyngby,"Lyngby - København, 0 - 2",1,0,2,50.0,0.0
 C. Winther,Lyngby,"Lyngby - Midtjylland, 1 - 2",8,5,12,66.66666666666666,41.66666666666667
@@ -144,6 +154,7 @@ D. Emmanouilidis,Vejle,"Midtjylland - Vejle, 2 - 0",3,2,8,37.5,25.0
 D. Emmanouilidis,Vejle,"Vejle - Nordsjælland, 0 - 1",False,False,1,0.0,0.0
 D. Emmanouilidis,Vejle,"Vejle - Randers, 2 - 3",2,0,2,100.0,0.0
 D. Emmanouilidis,Vejle,"Vejle - Silkeborg, 1 - 3",3,1,5,60.0,20.0
+D. Grétarsson,SønderjyskE,"Brøndby - SønderjyskE, 2 - 0",6,1,7,85.71428571428571,14.285714285714285
 D. Grétarsson,SønderjyskE,"Midtjylland - SønderjyskE, 3 - 2",0,0,2,0.0,0.0
 D. Grétarsson,SønderjyskE,"Randers - SønderjyskE, 1 - 2",2,0,4,50.0,0.0
 D. Grétarsson,SønderjyskE,"Silkeborg - SønderjyskE, 1 - 0",2,2,2,100.0,100.0
@@ -151,6 +162,7 @@ D. Grétarsson,SønderjyskE,"SønderjyskE - Lyngby, 1 - 1",3,1,3,100.0,33.333333
 D. Grétarsson,SønderjyskE,"SønderjyskE - Viborg, 2 - 2",3,2,6,50.0,33.33333333333333
 D. Høegh,Randers,"Brøndby - Randers, 2 - 2",7,3,7,100.0,42.857142857142854
 D. Høegh,Randers,"København - Randers, 1 - 1",7,3,8,87.5,37.5
+D. Høegh,Randers,"Nordsjælland - Randers, 1 - 1",4,3,5,80.0,60.0
 D. Høegh,Randers,"Randers - AaB, 1 - 0",4,1,4,100.0,25.0
 D. Høegh,Randers,"Randers - Silkeborg, 0 - 2",5,3,7,71.42857142857143,42.857142857142854
 D. Høegh,Randers,"Randers - SønderjyskE, 1 - 2",4,1,5,80.0,20.0
@@ -168,6 +180,7 @@ D. Svensson,Nordsjælland,"Nordsjælland - AaB, 3 - 0",5,1,9,55.55555555555556,1
 D. Svensson,Nordsjælland,"Nordsjælland - København, 3 - 2",4,2,7,57.14285714285714,28.57142857142857
 D. Svensson,Nordsjælland,"Nordsjælland - Lyngby, 1 - 1",3,0,4,75.0,0.0
 D. Svensson,Nordsjælland,"Nordsjælland - Midtjylland, 2 - 2",4,2,4,100.0,50.0
+D. Svensson,Nordsjælland,"Nordsjælland - Randers, 1 - 1",7,1,14,50.0,7.142857142857142
 D. Svensson,Nordsjælland,"Silkeborg - Nordsjælland, 4 - 1",True,False,1,100.0,0.0
 D. Svensson,Nordsjælland,"Vejle - Nordsjælland, 0 - 1",1,0,2,50.0,0.0
 D. Vavro,København,"København - Randers, 1 - 1",5,3,6,83.33333333333334,50.0
@@ -178,6 +191,7 @@ D. Vavro,København,"SønderjyskE - København, 0 - 2",True,False,1,100.0,0.0
 D. Wass,Brøndby,"AaB - Brøndby, 0 - 4",1,0,4,25.0,0.0
 D. Wass,Brøndby,"Brøndby - AGF, 0 - 1",True,True,1,100.0,100.0
 D. Wass,Brøndby,"Brøndby - Randers, 2 - 2",6,2,8,75.0,25.0
+D. Wass,Brøndby,"Brøndby - SønderjyskE, 2 - 0",2,0,3,66.66666666666666,0.0
 D. Wass,Brøndby,"København - Brøndby, 3 - 1",4,3,4,100.0,75.0
 D. Wass,Brøndby,"Lyngby - Brøndby, 0 - 2",1,0,3,33.33333333333333,0.0
 D. Wass,Brøndby,"Viborg - Brøndby, 3 - 3",3,2,3,100.0,66.66666666666666
@@ -213,6 +227,7 @@ E. Chilufya,Midtjylland,"Nordsjælland - Midtjylland, 2 - 2",1,0,2,50.0,0.0
 E. Chilufya,Midtjylland,"Silkeborg - Midtjylland, 1 - 3",2,0,2,100.0,0.0
 E. Kahl,AGF,"AGF - Midtjylland, 1 - 1",1,1,2,50.0,50.0
 E. Kahl,AGF,"AGF - Nordsjælland, 4 - 2",3,0,7,42.857142857142854,0.0
+E. Kahl,AGF,"AGF - Silkeborg, 1 - 1",8,2,11,72.72727272727273,18.181818181818183
 E. Kahl,AGF,"AGF - SønderjyskE, 4 - 0",2,0,2,100.0,0.0
 E. Kahl,AGF,"AGF - Vejle, 5 - 1",4,0,4,100.0,0.0
 E. Kahl,AGF,"AaB - AGF, 0 - 4",5,4,5,100.0,80.0
@@ -232,6 +247,7 @@ F. Alves,Brøndby,"København - Brøndby, 3 - 1",2,2,5,40.0,40.0
 F. Alves,Brøndby,"Lyngby - Brøndby, 0 - 2",3,1,3,100.0,33.33333333333333
 F. Beijmo,AGF,"AGF - Midtjylland, 1 - 1",5,2,6,83.33333333333334,33.33333333333333
 F. Beijmo,AGF,"AGF - Nordsjælland, 4 - 2",2,0,2,100.0,0.0
+F. Beijmo,AGF,"AGF - Silkeborg, 1 - 1",1,0,2,50.0,0.0
 F. Beijmo,AGF,"AGF - SønderjyskE, 4 - 0",2,0,4,50.0,0.0
 F. Beijmo,AGF,"AGF - Vejle, 5 - 1",False,False,1,0.0,0.0
 F. Beijmo,AGF,"AaB - AGF, 0 - 4",5,0,6,83.33333333333334,0.0
@@ -239,17 +255,22 @@ F. Beijmo,AGF,"Brøndby - AGF, 0 - 1",5,1,10,50.0,10.0
 F. Beijmo,AGF,"København - AGF, 3 - 2",6,3,9,66.66666666666666,33.33333333333333
 F. Brandhof,AGF,"AGF - Midtjylland, 1 - 1",2,0,4,50.0,0.0
 F. Brandhof,AGF,"AGF - Nordsjælland, 4 - 2",1,0,2,50.0,0.0
+F. Brandhof,AGF,"AGF - Silkeborg, 1 - 1",0,0,2,0.0,0.0
 F. Brandhof,AGF,"AGF - SønderjyskE, 4 - 0",6,2,9,66.66666666666666,22.22222222222222
 F. Brandhof,AGF,"Brøndby - AGF, 0 - 1",2,1,3,66.66666666666666,33.33333333333333
 F. Brandhof,AGF,"København - AGF, 3 - 2",1,0,2,50.0,0.0
 F. Bundgaard,Brøndby,"AaB - Brøndby, 0 - 4",3,0,5,60.0,0.0
 F. Bundgaard,Brøndby,"Brøndby - AGF, 0 - 1",2,1,5,40.0,20.0
 F. Bundgaard,Brøndby,"Brøndby - Randers, 2 - 2",1,0,2,50.0,0.0
+F. Bundgaard,Brøndby,"Brøndby - SønderjyskE, 2 - 0",2,1,3,66.66666666666666,33.33333333333333
 F. Bundgaard,Brøndby,"København - Brøndby, 3 - 1",True,False,1,100.0,0.0
 F. Bundgaard,Brøndby,"Lyngby - Brøndby, 0 - 2",2,1,3,66.66666666666666,33.33333333333333
 F. Bundgaard,Brøndby,"Viborg - Brøndby, 3 - 3",1,0,2,50.0,0.0
+F. Carlsen,Silkeborg,"AGF - Silkeborg, 1 - 1",1,0,2,50.0,0.0
+F. Danho,Randers,"Nordsjælland - Randers, 1 - 1",True,False,1,100.0,0.0
 F. Danho,Randers,"Randers - Viborg, 3 - 1",1,0,2,50.0,0.0
 F. Danho,Randers,"Vejle - Randers, 2 - 3",True,False,1,100.0,0.0
+F. Gytkjær,Lyngby,"AaB - Lyngby, 2 - 1",2,1,2,100.0,50.0
 F. Gytkjær,Lyngby,"Lyngby - Brøndby, 0 - 2",2,0,5,40.0,0.0
 F. Gytkjær,Lyngby,"Lyngby - København, 0 - 2",3,1,5,60.0,20.0
 F. Gytkjær,Lyngby,"Lyngby - Midtjylland, 1 - 2",4,1,5,80.0,20.0
@@ -260,6 +281,7 @@ F. Lauenborg,Randers,"Randers - Viborg, 3 - 1",0,0,2,0.0,0.0
 F. Lauenborg,Randers,"Vejle - Randers, 2 - 3",2,0,2,100.0,0.0
 F. Tingager,AGF,"AGF - Midtjylland, 1 - 1",3,0,4,75.0,0.0
 F. Tingager,AGF,"AGF - Nordsjælland, 4 - 2",2,1,3,66.66666666666666,33.33333333333333
+F. Tingager,AGF,"AGF - Silkeborg, 1 - 1",8,2,9,88.88888888888889,22.22222222222222
 F. Tingager,AGF,"AGF - SønderjyskE, 4 - 0",7,5,10,70.0,50.0
 F. Tingager,AGF,"AGF - Vejle, 5 - 1",1,0,2,50.0,0.0
 F. Tingager,AGF,"AaB - AGF, 0 - 4",4,4,4,100.0,100.0
@@ -293,6 +315,7 @@ Gabriel Pereira,København,"København - Brøndby, 3 - 1",3,1,3,100.0,33.3333333
 Gabriel Pereira,København,"København - Viborg, 1 - 1",5,2,6,83.33333333333334,33.33333333333333
 Gabriel Pereira,København,"Nordsjælland - København, 3 - 2",9,2,12,75.0,16.666666666666664
 H. Andersson,Randers,"København - Randers, 1 - 1",True,False,1,100.0,0.0
+H. Andersson,Randers,"Nordsjælland - Randers, 1 - 1",2,2,4,50.0,50.0
 H. Barry,Vejle,"AGF - Vejle, 5 - 1",7,0,8,87.5,0.0
 H. Barry,Vejle,"Brøndby - Vejle, 2 - 1",2,0,3,66.66666666666666,0.0
 H. Barry,Vejle,"Lyngby - Vejle, 1 - 0",2,1,3,66.66666666666666,33.33333333333333
@@ -320,6 +343,7 @@ I. Jensen,Viborg,"Viborg - AaB, 2 - 3",3,1,5,60.0,20.0
 I. Jensen,Viborg,"Viborg - Brøndby, 3 - 3",3,1,4,75.0,25.0
 I. Jensen,Viborg,"Viborg - Lyngby, 1 - 0",3,2,6,50.0,33.33333333333333
 I. Nikolov,SønderjyskE,"AGF - SønderjyskE, 4 - 0",4,1,5,80.0,20.0
+I. Nikolov,SønderjyskE,"Brøndby - SønderjyskE, 2 - 0",True,False,1,100.0,0.0
 I. Nikolov,SønderjyskE,"Randers - SønderjyskE, 1 - 2",1,1,3,33.33333333333333,33.33333333333333
 I. Nikolov,SønderjyskE,"Silkeborg - SønderjyskE, 1 - 0",5,1,8,62.5,12.5
 I. Nikolov,SønderjyskE,"SønderjyskE - København, 0 - 2",5,0,8,62.5,0.0
@@ -331,6 +355,7 @@ I. Said,Viborg,"Viborg - Lyngby, 1 - 0",True,True,1,100.0,100.0
 I. Vekič,Vejle,"Lyngby - Vejle, 1 - 0",False,False,1,0.0,0.0
 I. Vekič,Vejle,"Vejle - Nordsjælland, 0 - 1",True,True,1,100.0,100.0
 J. Adedeji,AaB,"Randers - AaB, 1 - 0",True,False,1,100.0,0.0
+J. Amon,Lyngby,"AaB - Lyngby, 2 - 1",3,1,4,75.0,25.0
 J. Amon,Lyngby,"Lyngby - Brøndby, 0 - 2",5,0,6,83.33333333333334,0.0
 J. Amon,Lyngby,"Lyngby - København, 0 - 2",3,0,5,60.0,0.0
 J. Amon,Lyngby,"Lyngby - Midtjylland, 1 - 2",6,2,12,50.0,16.666666666666664
@@ -342,6 +367,7 @@ J. Andersen,AGF,"AGF - Midtjylland, 1 - 1",False,False,1,0.0,0.0
 J. Andersen,AGF,"AGF - Nordsjælland, 4 - 2",1,0,4,25.0,0.0
 J. Andersen,AGF,"AGF - SønderjyskE, 4 - 0",False,False,1,0.0,0.0
 J. Andersen,AGF,"Brøndby - AGF, 0 - 1",False,False,1,0.0,0.0
+J. Andersen,Silkeborg,"AGF - Silkeborg, 1 - 1",1,0,3,33.33333333333333,0.0
 J. Andersen,Silkeborg,"AaB - Silkeborg, 2 - 1",2,1,2,100.0,50.0
 J. Andersen,Silkeborg,"Randers - Silkeborg, 0 - 2",True,False,1,100.0,0.0
 J. Andersen,Silkeborg,"Silkeborg - Midtjylland, 1 - 3",2,1,4,50.0,25.0
@@ -357,12 +383,14 @@ J. Andersson,Midtjylland,"Nordsjælland - Midtjylland, 2 - 2",4,1,11,36.36363636
 J. Andersson,Midtjylland,"Silkeborg - Midtjylland, 1 - 3",3,0,5,60.0,0.0
 J. Björkengren,Randers,"Brøndby - Randers, 2 - 2",6,5,8,75.0,62.5
 J. Björkengren,Randers,"København - Randers, 1 - 1",10,4,14,71.42857142857143,28.57142857142857
+J. Björkengren,Randers,"Nordsjælland - Randers, 1 - 1",4,2,4,100.0,50.0
 J. Björkengren,Randers,"Randers - AaB, 1 - 0",3,1,5,60.0,20.0
 J. Björkengren,Randers,"Randers - Silkeborg, 0 - 2",4,1,5,80.0,20.0
 J. Björkengren,Randers,"Randers - SønderjyskE, 1 - 2",1,0,2,50.0,0.0
 J. Björkengren,Randers,"Randers - Viborg, 3 - 1",4,1,6,66.66666666666666,16.666666666666664
 J. Björkengren,Randers,"Vejle - Randers, 2 - 3",4,0,6,66.66666666666666,0.0
 J. Gallegos,SønderjyskE,"AGF - SønderjyskE, 4 - 0",False,False,1,0.0,0.0
+J. Gallegos,SønderjyskE,"Brøndby - SønderjyskE, 2 - 0",2,1,2,100.0,50.0
 J. Gallegos,SønderjyskE,"Silkeborg - SønderjyskE, 1 - 0",2,1,4,50.0,25.0
 J. Gallegos,SønderjyskE,"SønderjyskE - København, 0 - 2",0,0,2,0.0,0.0
 J. Gallegos,SønderjyskE,"SønderjyskE - Lyngby, 1 - 1",3,1,4,75.0,25.0
@@ -386,6 +414,7 @@ J. Jacobs,Viborg,"Randers - Viborg, 3 - 1",7,2,11,63.63636363636363,18.181818181
 J. Jacobs,Viborg,"Viborg - Brøndby, 3 - 3",4,1,9,44.44444444444444,11.11111111111111
 J. Jensen-Abbew,AGF,"AGF - Midtjylland, 1 - 1",False,False,1,0.0,0.0
 J. Jensen-Abbew,AGF,"AGF - Nordsjælland, 4 - 2",2,1,2,100.0,50.0
+J. Jensen-Abbew,AGF,"AGF - Silkeborg, 1 - 1",3,1,3,100.0,33.33333333333333
 J. Jensen-Abbew,AGF,"AGF - SønderjyskE, 4 - 0",1,0,3,33.33333333333333,0.0
 J. Jensen-Abbew,AGF,"København - AGF, 3 - 2",1,0,2,50.0,0.0
 J. Juninho,Midtjylland,"Midtjylland - AaB, 2 - 0",False,False,1,0.0,0.0
@@ -403,25 +432,30 @@ J. Mbom,Viborg,"Viborg - AaB, 2 - 3",1,1,2,50.0,50.0
 J. Mbom,Viborg,"Viborg - Brøndby, 3 - 3",False,False,1,0.0,0.0
 J. Mbom,Viborg,"Viborg - Lyngby, 1 - 0",True,False,1,100.0,0.0
 J. Meltofte Janssen,Nordsjælland,"Silkeborg - Nordsjælland, 4 - 1",1,0,3,33.33333333333333,0.0
+J. Nielsen,Silkeborg,"AGF - Silkeborg, 1 - 1",1,0,2,50.0,0.0
 J. Nielsen,Silkeborg,"Randers - Silkeborg, 0 - 2",2,1,4,50.0,25.0
 J. Nielsen,Silkeborg,"Silkeborg - Midtjylland, 1 - 3",4,0,8,50.0,0.0
 J. Nielsen,Silkeborg,"Silkeborg - Nordsjælland, 4 - 1",True,False,1,100.0,0.0
 J. Radošević,Brøndby,"AaB - Brøndby, 0 - 4",2,0,4,50.0,0.0
 J. Radošević,Brøndby,"Brøndby - AGF, 0 - 1",4,2,8,50.0,25.0
+J. Radošević,Brøndby,"Brøndby - SønderjyskE, 2 - 0",5,1,6,83.33333333333334,16.666666666666664
 J. Radošević,Brøndby,"Brøndby - Vejle, 2 - 1",4,3,5,80.0,60.0
 J. Radošević,Brøndby,"København - Brøndby, 3 - 1",3,2,4,75.0,50.0
 J. Radošević,Brøndby,"Lyngby - Brøndby, 0 - 2",True,False,1,100.0,0.0
 J. Rasmussen,Brøndby,"AaB - Brøndby, 0 - 4",4,1,7,57.14285714285714,14.285714285714285
 J. Rasmussen,Brøndby,"Brøndby - AGF, 0 - 1",5,3,6,83.33333333333334,50.0
 J. Rasmussen,Brøndby,"Brøndby - Randers, 2 - 2",8,4,12,66.66666666666666,33.33333333333333
+J. Rasmussen,Brøndby,"Brøndby - SønderjyskE, 2 - 0",3,1,3,100.0,33.33333333333333
 J. Rasmussen,Brøndby,"Brøndby - Vejle, 2 - 1",4,2,5,80.0,40.0
 J. Rasmussen,Brøndby,"København - Brøndby, 3 - 1",3,2,5,60.0,40.0
 J. Rasmussen,Brøndby,"Lyngby - Brøndby, 0 - 2",True,False,1,100.0,0.0
 J. Rasmussen,Brøndby,"Viborg - Brøndby, 3 - 3",11,3,11,100.0,27.27272727272727
+J. Simonsen,SønderjyskE,"Brøndby - SønderjyskE, 2 - 0",2,1,4,50.0,25.0
 J. Simonsen,SønderjyskE,"SønderjyskE - Viborg, 2 - 2",3,1,5,60.0,20.0
 J. Tverskov,Nordsjælland,"Nordsjælland - AaB, 3 - 0",2,1,4,50.0,25.0
 J. Tverskov,Nordsjælland,"Nordsjælland - Lyngby, 1 - 1",True,False,1,100.0,0.0
 J. Tverskov,Nordsjælland,"Nordsjælland - Midtjylland, 2 - 2",3,0,7,42.857142857142854,0.0
+J. Tverskov,Nordsjælland,"Nordsjælland - Randers, 1 - 1",3,1,4,75.0,25.0
 J. Tverskov,Nordsjælland,"Vejle - Nordsjælland, 0 - 1",4,1,4,100.0,25.0
 J. Vanlerberghe,Brøndby,"Brøndby - Vejle, 2 - 1",4,3,7,57.14285714285714,42.857142857142854
 J. Vanlerberghe,Brøndby,"Lyngby - Brøndby, 0 - 2",1,1,4,25.0,25.0
@@ -432,12 +466,14 @@ J. Vester,Viborg,"SønderjyskE - Viborg, 2 - 2",False,False,1,0.0,0.0
 J. Vester,Viborg,"Viborg - AaB, 2 - 3",6,4,8,75.0,50.0
 J. Vester,Viborg,"Viborg - Brøndby, 3 - 3",True,False,1,100.0,0.0
 J. Vester,Viborg,"Viborg - Lyngby, 1 - 0",3,2,3,100.0,66.66666666666666
+K. Arnstad,AGF,"AGF - Silkeborg, 1 - 1",2,2,3,66.66666666666666,66.66666666666666
 K. Askildsen,Midtjylland,"AGF - Midtjylland, 1 - 1",1,0,2,50.0,0.0
 K. Askildsen,Midtjylland,"Midtjylland - AaB, 2 - 0",2,0,4,50.0,0.0
 K. Askildsen,Midtjylland,"Midtjylland - Vejle, 2 - 0",3,0,5,60.0,0.0
 K. Askildsen,Midtjylland,"Nordsjælland - Midtjylland, 2 - 2",False,False,1,0.0,0.0
 K. Davidsen,AaB,"AaB - AGF, 0 - 4",2,0,2,100.0,0.0
 K. Davidsen,AaB,"AaB - Brøndby, 0 - 4",3,3,6,50.0,50.0
+K. Davidsen,AaB,"AaB - Lyngby, 2 - 1",4,3,4,100.0,75.0
 K. Davidsen,AaB,"AaB - Silkeborg, 2 - 1",5,2,7,71.42857142857143,28.57142857142857
 K. Davidsen,AaB,"Midtjylland - AaB, 2 - 0",6,2,11,54.54545454545454,18.181818181818183
 K. Davidsen,AaB,"Nordsjælland - AaB, 3 - 0",4,2,8,50.0,25.0
@@ -462,12 +498,14 @@ K. Hansen,Nordsjælland,"Nordsjælland - Midtjylland, 2 - 2",6,3,7,85.7142857142
 K. Hansen,Nordsjælland,"Silkeborg - Nordsjælland, 4 - 1",5,0,8,62.5,0.0
 K. Hansen,Nordsjælland,"Vejle - Nordsjælland, 0 - 1",5,1,7,71.42857142857143,14.285714285714285
 K. Ingason,SønderjyskE,"AGF - SønderjyskE, 4 - 0",1,0,2,50.0,0.0
+K. Ingason,SønderjyskE,"Brøndby - SønderjyskE, 2 - 0",4,1,5,80.0,20.0
 K. Ingason,SønderjyskE,"Midtjylland - SønderjyskE, 3 - 2",2,1,3,66.66666666666666,33.33333333333333
 K. Ingason,SønderjyskE,"Randers - SønderjyskE, 1 - 2",2,0,4,50.0,0.0
 K. Ingason,SønderjyskE,"SønderjyskE - København, 0 - 2",True,False,1,100.0,0.0
 K. Ingason,SønderjyskE,"SønderjyskE - Lyngby, 1 - 1",2,0,5,40.0,0.0
 K. Ingason,SønderjyskE,"SønderjyskE - Viborg, 2 - 2",2,0,8,25.0,0.0
 K. John,AaB,"AaB - AGF, 0 - 4",2,0,4,50.0,0.0
+K. John,AaB,"AaB - Lyngby, 2 - 1",2,1,4,50.0,25.0
 K. John,AaB,"AaB - Silkeborg, 2 - 1",False,False,1,0.0,0.0
 K. John,AaB,"Midtjylland - AaB, 2 - 0",1,0,2,50.0,0.0
 K. John,AaB,"Nordsjælland - AaB, 3 - 0",2,1,2,100.0,50.0
@@ -475,6 +513,7 @@ K. John,AaB,"Randers - AaB, 1 - 0",2,1,2,100.0,50.0
 K. John,AaB,"Viborg - AaB, 2 - 3",4,2,5,80.0,40.0
 K. Jørgensen,AaB,"AaB - AGF, 0 - 4",True,False,1,100.0,0.0
 K. Jørgensen,AaB,"AaB - Brøndby, 0 - 4",4,1,6,66.66666666666666,16.666666666666664
+K. Jørgensen,AaB,"AaB - Lyngby, 2 - 1",8,2,11,72.72727272727273,18.181818181818183
 K. Jørgensen,AaB,"AaB - Silkeborg, 2 - 1",4,2,5,80.0,40.0
 K. Jørgensen,AaB,"Midtjylland - AaB, 2 - 0",3,0,4,75.0,0.0
 K. Jørgensen,AaB,"Nordsjælland - AaB, 3 - 0",1,1,4,25.0,25.0
@@ -487,6 +526,7 @@ K. Kirkegaard,Vejle,"Vejle - Randers, 2 - 3",2,2,3,66.66666666666666,66.66666666
 K. Kirkegaard,Vejle,"Vejle - Silkeborg, 1 - 3",3,2,3,100.0,66.66666666666666
 K. Tshiembe,Brøndby,"Viborg - Brøndby, 3 - 3",False,False,1,0.0,0.0
 L. Björklund,SønderjyskE,"AGF - SønderjyskE, 4 - 0",3,1,5,60.0,20.0
+L. Björklund,SønderjyskE,"Brøndby - SønderjyskE, 2 - 0",1,0,4,25.0,0.0
 L. Björklund,SønderjyskE,"Midtjylland - SønderjyskE, 3 - 2",4,2,8,50.0,25.0
 L. Björklund,SønderjyskE,"Randers - SønderjyskE, 1 - 2",3,2,5,60.0,40.0
 L. Björklund,SønderjyskE,"SønderjyskE - København, 0 - 2",3,2,5,60.0,40.0
@@ -506,6 +546,7 @@ L. Hey,Nordsjælland,"Nordsjælland - AaB, 3 - 0",2,0,2,100.0,0.0
 L. Hey,Nordsjælland,"Nordsjælland - København, 3 - 2",4,4,5,80.0,80.0
 L. Hey,Nordsjælland,"Nordsjælland - Lyngby, 1 - 1",4,2,5,80.0,40.0
 L. Hey,Nordsjælland,"Nordsjælland - Midtjylland, 2 - 2",True,False,1,100.0,0.0
+L. Hey,Nordsjælland,"Nordsjælland - Randers, 1 - 1",2,1,5,40.0,20.0
 L. Hey,Nordsjælland,"Silkeborg - Nordsjælland, 4 - 1",2,0,4,50.0,0.0
 L. Hey,Nordsjælland,"Vejle - Nordsjælland, 0 - 1",4,3,4,100.0,75.0
 L. Hujber,Vejle,"AGF - Vejle, 5 - 1",6,1,10,60.0,10.0
@@ -514,9 +555,11 @@ L. Hujber,Vejle,"Midtjylland - Vejle, 2 - 0",6,1,8,75.0,12.5
 L. Hujber,Vejle,"Vejle - Randers, 2 - 3",1,0,3,33.33333333333333,0.0
 L. Høgsberg,Nordsjælland,"AGF - Nordsjælland, 4 - 2",4,1,6,66.66666666666666,16.666666666666664
 L. Høgsberg,Nordsjælland,"Nordsjælland - København, 3 - 2",1,0,2,50.0,0.0
+L. Klassen,Lyngby,"AaB - Lyngby, 2 - 1",True,False,1,100.0,0.0
 L. Klassen,Lyngby,"Lyngby - Vejle, 1 - 0",0,0,2,0.0,0.0
 L. Kramer,AaB,"AaB - AGF, 0 - 4",0,0,2,0.0,0.0
 L. Kramer,AaB,"AaB - Brøndby, 0 - 4",3,2,3,100.0,66.66666666666666
+L. Kramer,AaB,"AaB - Lyngby, 2 - 1",4,0,5,80.0,0.0
 L. Kramer,AaB,"AaB - Silkeborg, 2 - 1",5,3,8,62.5,37.5
 L. Kramer,AaB,"Nordsjælland - AaB, 3 - 0",4,1,7,57.14285714285714,14.285714285714285
 L. Kramer,AaB,"Viborg - AaB, 2 - 3",5,2,7,71.42857142857143,28.57142857142857
@@ -525,18 +568,22 @@ L. Lerager,København,"København - Brøndby, 3 - 1",5,3,7,71.42857142857143,42.
 L. Lerager,København,"København - Viborg, 1 - 1",1,0,4,25.0,0.0
 L. Lerager,København,"Nordsjælland - København, 3 - 2",4,2,6,66.66666666666666,33.33333333333333
 L. Lerager,København,"SønderjyskE - København, 0 - 2",8,4,9,88.88888888888889,44.44444444444444
+L. Lissens,Lyngby,"AaB - Lyngby, 2 - 1",3,1,5,60.0,20.0
 L. Lissens,Lyngby,"Lyngby - Brøndby, 0 - 2",1,0,3,33.33333333333333,0.0
 L. Lissens,Lyngby,"Lyngby - København, 0 - 2",6,4,7,85.71428571428571,57.14285714285714
 L. Lissens,Lyngby,"Lyngby - Vejle, 1 - 0",6,4,8,75.0,50.0
 L. Lissens,Lyngby,"SønderjyskE - Lyngby, 1 - 1",9,3,11,81.81818181818183,27.27272727272727
 L. Nene,Nordsjælland,"AGF - Nordsjælland, 4 - 2",False,False,1,0.0,0.0
 L. Nene,Nordsjælland,"Nordsjælland - Midtjylland, 2 - 2",True,False,1,100.0,0.0
+L. Nene,Nordsjælland,"Nordsjælland - Randers, 1 - 1",1,1,3,33.33333333333333,33.33333333333333
 L. Nene,Nordsjælland,"Silkeborg - Nordsjælland, 4 - 1",True,True,1,100.0,100.0
 L. Pedersen,Randers,"Randers - SønderjyskE, 1 - 2",1,1,2,50.0,50.0
+L. Qamili,SønderjyskE,"Brøndby - SønderjyskE, 2 - 0",3,1,4,75.0,25.0
 L. Qamili,SønderjyskE,"Midtjylland - SønderjyskE, 3 - 2",5,3,6,83.33333333333334,50.0
 L. Qamili,SønderjyskE,"Randers - SønderjyskE, 1 - 2",4,0,5,80.0,0.0
 L. Qamili,SønderjyskE,"SønderjyskE - København, 0 - 2",False,False,1,0.0,0.0
 L. Qamili,SønderjyskE,"SønderjyskE - Viborg, 2 - 2",2,0,6,33.33333333333333,0.0
+L. Sandgrav,Lyngby,"AaB - Lyngby, 2 - 1",4,3,7,57.14285714285714,42.857142857142854
 L. Sandgrav,Lyngby,"Lyngby - Brøndby, 0 - 2",5,3,10,50.0,30.0
 L. Sandgrav,Lyngby,"Lyngby - København, 0 - 2",7,3,10,70.0,30.0
 L. Sandgrav,Lyngby,"Lyngby - Midtjylland, 1 - 2",12,3,17,70.58823529411765,17.647058823529413
@@ -546,9 +593,11 @@ L. Sandgrav,Lyngby,"SønderjyskE - Lyngby, 1 - 1",4,3,8,50.0,37.5
 L. Sandgrav,Lyngby,"Viborg - Lyngby, 1 - 0",3,2,5,60.0,40.0
 Lee Han-Beom,Midtjylland,"Midtjylland - SønderjyskE, 3 - 2",5,2,6,83.33333333333334,33.33333333333333
 Lee Han-Beom,Midtjylland,"Silkeborg - Midtjylland, 1 - 3",1,0,2,50.0,0.0
+M. Abubakari,Lyngby,"AaB - Lyngby, 2 - 1",2,1,4,50.0,25.0
 M. Abubakari,Lyngby,"Lyngby - Midtjylland, 1 - 2",True,False,1,100.0,0.0
 M. Abubakari,Lyngby,"Lyngby - Vejle, 1 - 0",2,0,3,66.66666666666666,0.0
 M. Abubakari,Lyngby,"Nordsjælland - Lyngby, 1 - 1",0,0,2,0.0,0.0
+M. Agger,SønderjyskE,"Brøndby - SønderjyskE, 2 - 0",False,False,1,0.0,0.0
 M. Agger,SønderjyskE,"Midtjylland - SønderjyskE, 3 - 2",4,0,4,100.0,0.0
 M. Agger,SønderjyskE,"Randers - SønderjyskE, 1 - 2",0,0,2,0.0,0.0
 M. Agger,SønderjyskE,"SønderjyskE - København, 0 - 2",True,True,1,100.0,100.0
@@ -559,6 +608,7 @@ M. Albornoz,Vejle,"Lyngby - Vejle, 1 - 0",2,1,2,100.0,50.0
 M. Albornoz,Vejle,"Vejle - Randers, 2 - 3",2,1,3,66.66666666666666,33.33333333333333
 M. Anderson,AGF,"AGF - Midtjylland, 1 - 1",3,0,5,60.0,0.0
 M. Anderson,AGF,"AGF - Nordsjælland, 4 - 2",1,0,3,33.33333333333333,0.0
+M. Anderson,AGF,"AGF - Silkeborg, 1 - 1",2,1,2,100.0,50.0
 M. Anderson,AGF,"AGF - SønderjyskE, 4 - 0",2,0,5,40.0,0.0
 M. Anderson,AGF,"AGF - Vejle, 5 - 1",False,False,1,0.0,0.0
 M. Anderson,AGF,"AaB - AGF, 0 - 4",5,3,8,62.5,37.5
@@ -570,8 +620,10 @@ M. Bech,Midtjylland,"Midtjylland - Vejle, 2 - 0",3,0,5,60.0,0.0
 M. Bech,Midtjylland,"Silkeborg - Midtjylland, 1 - 3",4,4,4,100.0,100.0
 M. Bomholt,AaB,"AaB - AGF, 0 - 4",True,False,1,100.0,0.0
 M. Bomholt,AaB,"AaB - Brøndby, 0 - 4",2,0,3,66.66666666666666,0.0
+M. Bomholt,AaB,"AaB - Lyngby, 2 - 1",True,False,1,100.0,0.0
 M. Bomholt,AaB,"Midtjylland - AaB, 2 - 0",True,True,1,100.0,100.0
 M. Bomholt,AaB,"Viborg - AaB, 2 - 3",3,0,5,60.0,0.0
+M. Brink,Nordsjælland,"Nordsjælland - Randers, 1 - 1",5,3,6,83.33333333333334,50.0
 M. Brink,Silkeborg,"AaB - Silkeborg, 2 - 1",5,2,8,62.5,25.0
 M. Brink,Silkeborg,"Silkeborg - Midtjylland, 1 - 3",2,0,2,100.0,0.0
 M. Brink,Silkeborg,"Silkeborg - Nordsjælland, 4 - 1",4,2,4,100.0,50.0
@@ -580,11 +632,13 @@ M. Brink,Silkeborg,"Vejle - Silkeborg, 1 - 3",True,False,1,100.0,0.0
 M. Dal Hende,SønderjyskE,"AGF - SønderjyskE, 4 - 0",2,1,2,100.0,50.0
 M. Divković,Brøndby,"AaB - Brøndby, 0 - 4",False,False,1,0.0,0.0
 M. Divković,Brøndby,"Brøndby - Randers, 2 - 2",False,False,1,0.0,0.0
+M. Divković,Brøndby,"Brøndby - SønderjyskE, 2 - 0",2,2,3,66.66666666666666,66.66666666666666
 M. Dorgeles,Nordsjælland,"AGF - Nordsjælland, 4 - 2",3,2,5,60.0,40.0
 M. Dorgeles,Nordsjælland,"Nordsjælland - AaB, 3 - 0",0,0,3,0.0,0.0
 M. Dorgeles,Nordsjælland,"Nordsjælland - København, 3 - 2",6,1,8,75.0,12.5
 M. Dorgeles,Nordsjælland,"Nordsjælland - Lyngby, 1 - 1",3,1,3,100.0,33.33333333333333
 M. Dorgeles,Nordsjælland,"Nordsjælland - Midtjylland, 2 - 2",2,0,4,50.0,0.0
+M. Dorgeles,Nordsjælland,"Nordsjælland - Randers, 1 - 1",3,1,6,50.0,16.666666666666664
 M. Dorgeles,Nordsjælland,"Silkeborg - Nordsjælland, 4 - 1",2,1,3,66.66666666666666,33.33333333333333
 M. Dorgeles,Nordsjælland,"Vejle - Nordsjælland, 0 - 1",0,0,2,0.0,0.0
 M. Elvius,Vejle,"AGF - Vejle, 5 - 1",2,1,4,50.0,25.0
@@ -601,6 +655,7 @@ M. Elyounoussi,København,"Nordsjælland - København, 3 - 2",8,2,10,80.0,20.0
 M. Elyounoussi,København,"SønderjyskE - København, 0 - 2",3,1,3,100.0,33.33333333333333
 M. Emil Madsen,AGF,"AGF - Midtjylland, 1 - 1",3,1,5,60.0,20.0
 M. Emil Madsen,AGF,"AGF - Nordsjælland, 4 - 2",4,0,6,66.66666666666666,0.0
+M. Emil Madsen,AGF,"AGF - Silkeborg, 1 - 1",1,0,5,20.0,0.0
 M. Emil Madsen,AGF,"AGF - SønderjyskE, 4 - 0",6,3,8,75.0,37.5
 M. Emil Madsen,AGF,"AGF - Vejle, 5 - 1",2,1,3,66.66666666666666,33.33333333333333
 M. Emil Madsen,AGF,"AaB - AGF, 0 - 4",7,3,9,77.77777777777779,33.33333333333333
@@ -610,6 +665,7 @@ M. Enggård,Randers,"København - Randers, 1 - 1",3,1,3,100.0,33.33333333333333
 M. Enggård,Randers,"Randers - Silkeborg, 0 - 2",7,2,10,70.0,20.0
 M. Enggård,Randers,"Randers - Viborg, 3 - 1",7,2,14,50.0,14.285714285714285
 M. Enggård,Randers,"Vejle - Randers, 2 - 3",5,1,7,71.42857142857143,14.285714285714285
+M. Freundlich,Silkeborg,"AGF - Silkeborg, 1 - 1",3,1,4,75.0,25.0
 M. Freundlich,Silkeborg,"AaB - Silkeborg, 2 - 1",2,2,2,100.0,100.0
 M. Freundlich,Silkeborg,"Randers - Silkeborg, 0 - 2",2,0,2,100.0,0.0
 M. Freundlich,Silkeborg,"Silkeborg - Midtjylland, 1 - 3",4,0,7,57.14285714285714,0.0
@@ -627,10 +683,12 @@ M. Garananga,København,"SønderjyskE - København, 0 - 2",4,2,5,80.0,40.0
 M. Greve,Brøndby,"Brøndby - AGF, 0 - 1",2,0,2,100.0,0.0
 M. Greve,Brøndby,"Brøndby - Vejle, 2 - 1",True,False,1,100.0,0.0
 M. Greve,Brøndby,"Lyngby - Brøndby, 0 - 2",False,False,1,0.0,0.0
+M. Greve,Randers,"Nordsjælland - Randers, 1 - 1",0,0,3,0.0,0.0
 M. Greve,Randers,"Randers - AaB, 1 - 0",5,1,5,100.0,20.0
 M. Hansen,Nordsjælland,"AGF - Nordsjælland, 4 - 2",1,0,2,50.0,0.0
 M. Hansen,Nordsjælland,"Nordsjælland - AaB, 3 - 0",1,0,2,50.0,0.0
 M. Hansen,Nordsjælland,"Nordsjælland - Lyngby, 1 - 1",True,False,1,100.0,0.0
+M. Hansen,Nordsjælland,"Nordsjælland - Randers, 1 - 1",2,1,5,40.0,20.0
 M. Hansen,Nordsjælland,"Silkeborg - Nordsjælland, 4 - 1",1,0,2,50.0,0.0
 M. Højholt,AaB,"AaB - Silkeborg, 2 - 1",7,4,7,100.0,57.14285714285714
 M. Højholt,AaB,"Midtjylland - AaB, 2 - 0",9,6,12,75.0,50.0
@@ -641,6 +699,7 @@ M. Ingvartsen,Nordsjælland,"Nordsjælland - AaB, 3 - 0",0,0,2,0.0,0.0
 M. Ingvartsen,Nordsjælland,"Nordsjælland - København, 3 - 2",4,1,6,66.66666666666666,16.666666666666664
 M. Ingvartsen,Nordsjælland,"Nordsjælland - Lyngby, 1 - 1",True,False,1,100.0,0.0
 M. Ingvartsen,Nordsjælland,"Nordsjælland - Midtjylland, 2 - 2",2,1,5,40.0,20.0
+M. Ingvartsen,Nordsjælland,"Nordsjælland - Randers, 1 - 1",1,1,3,33.33333333333333,33.33333333333333
 M. Ingvartsen,Nordsjælland,"Silkeborg - Nordsjælland, 4 - 1",3,2,3,100.0,66.66666666666666
 M. Ingvartsen,Nordsjælland,"Vejle - Nordsjælland, 0 - 1",3,1,4,75.0,25.0
 M. Jensen,Lyngby,"Lyngby - Brøndby, 0 - 2",2,1,2,100.0,50.0
@@ -650,6 +709,7 @@ M. Jensen,Lyngby,"Nordsjælland - Lyngby, 1 - 1",3,2,3,100.0,66.66666666666666
 M. Jensen,Lyngby,"SønderjyskE - Lyngby, 1 - 1",3,1,3,100.0,33.33333333333333
 M. Jiménez,AaB,"AaB - AGF, 0 - 4",3,0,4,75.0,0.0
 M. Jiménez,AaB,"AaB - Brøndby, 0 - 4",8,2,10,80.0,20.0
+M. Jiménez,AaB,"AaB - Lyngby, 2 - 1",5,1,5,100.0,20.0
 M. Jiménez,AaB,"AaB - Silkeborg, 2 - 1",False,False,1,0.0,0.0
 M. Jiménez,AaB,"Midtjylland - AaB, 2 - 0",7,3,10,70.0,30.0
 M. Jiménez,AaB,"Nordsjælland - AaB, 3 - 0",0,0,3,0.0,0.0
@@ -663,6 +723,7 @@ M. Juwara,Vejle,"Vejle - Nordsjælland, 0 - 1",2,1,5,40.0,20.0
 M. Juwara,Vejle,"Vejle - Randers, 2 - 3",9,5,12,75.0,41.66666666666667
 M. Juwara,Vejle,"Vejle - Silkeborg, 1 - 3",True,False,1,100.0,0.0
 M. Jørgensen,AaB,"AaB - AGF, 0 - 4",1,1,3,33.33333333333333,33.33333333333333
+M. Jørgensen,AaB,"AaB - Lyngby, 2 - 1",1,1,3,33.33333333333333,33.33333333333333
 M. Jørgensen,AaB,"AaB - Silkeborg, 2 - 1",1,0,3,33.33333333333333,0.0
 M. Jørgensen,AaB,"Midtjylland - AaB, 2 - 0",False,False,1,0.0,0.0
 M. Jørgensen,AaB,"Nordsjælland - AaB, 3 - 0",1,0,2,50.0,0.0
@@ -671,11 +732,13 @@ M. Jørgensen,AaB,"Viborg - AaB, 2 - 3",True,False,1,100.0,0.0
 M. Kvistgaarden,Brøndby,"AaB - Brøndby, 0 - 4",True,True,1,100.0,100.0
 M. Kvistgaarden,Brøndby,"Brøndby - AGF, 0 - 1",False,False,1,0.0,0.0
 M. Kvistgaarden,Brøndby,"Brøndby - Randers, 2 - 2",1,0,3,33.33333333333333,0.0
+M. Kvistgaarden,Brøndby,"Brøndby - SønderjyskE, 2 - 0",1,0,5,20.0,0.0
 M. Kvistgaarden,Brøndby,"Brøndby - Vejle, 2 - 1",1,0,2,50.0,0.0
 M. Kvistgaarden,Brøndby,"København - Brøndby, 3 - 1",2,2,2,100.0,100.0
 M. Kvistgaarden,Brøndby,"Viborg - Brøndby, 3 - 3",False,False,1,0.0,0.0
 M. Ladefoged,SønderjyskE,"AGF - SønderjyskE, 4 - 0",True,False,1,100.0,0.0
 M. Ladefoged,SønderjyskE,"Midtjylland - SønderjyskE, 3 - 2",True,True,1,100.0,100.0
+M. Larsen,Silkeborg,"AGF - Silkeborg, 1 - 1",False,False,1,0.0,0.0
 M. Larsen,Silkeborg,"AaB - Silkeborg, 2 - 1",6,1,8,75.0,12.5
 M. Larsen,Silkeborg,"Randers - Silkeborg, 0 - 2",8,2,8,100.0,25.0
 M. Larsen,Silkeborg,"Silkeborg - Midtjylland, 1 - 3",5,4,7,71.42857142857143,57.14285714285714
@@ -701,10 +764,12 @@ M. Nielsen,AaB,"AaB - Silkeborg, 2 - 1",2,0,4,50.0,0.0
 M. Nielsen,AaB,"Viborg - AaB, 2 - 3",0,0,4,0.0,0.0
 M. Opoku,Lyngby,"Lyngby - Brøndby, 0 - 2",False,False,1,0.0,0.0
 M. Opoku,Lyngby,"Viborg - Lyngby, 1 - 0",1,0,2,50.0,0.0
+M. Rajović,Brøndby,"Brøndby - SønderjyskE, 2 - 0",False,False,1,0.0,0.0
 M. Rømer,Lyngby,"Lyngby - Midtjylland, 1 - 2",3,3,3,100.0,100.0
 M. Rømer,Lyngby,"Lyngby - Vejle, 1 - 0",True,True,1,100.0,100.0
 M. Rømer,Lyngby,"Viborg - Lyngby, 1 - 0",True,True,1,100.0,100.0
 M. Soulas,SønderjyskE,"AGF - SønderjyskE, 4 - 0",1,0,2,50.0,0.0
+M. Soulas,SønderjyskE,"Brøndby - SønderjyskE, 2 - 0",5,3,6,83.33333333333334,50.0
 M. Soulas,SønderjyskE,"Midtjylland - SønderjyskE, 3 - 2",3,1,4,75.0,25.0
 M. Soulas,SønderjyskE,"Randers - SønderjyskE, 1 - 2",7,2,11,63.63636363636363,18.181818181818183
 M. Soulas,SønderjyskE,"Silkeborg - SønderjyskE, 1 - 0",4,1,4,100.0,25.0
@@ -719,6 +784,7 @@ M. Touré,Randers,"Brøndby - Randers, 2 - 2",False,False,1,0.0,0.0
 M. Touré,Randers,"København - Randers, 1 - 1",True,True,1,100.0,100.0
 M. Touré,Randers,"Randers - AaB, 1 - 0",2,0,3,66.66666666666666,0.0
 M. Touré,Randers,"Vejle - Randers, 2 - 3",True,True,1,100.0,100.0
+M. Warming,Lyngby,"AaB - Lyngby, 2 - 1",True,False,1,100.0,0.0
 M. Warming,Lyngby,"Lyngby - Vejle, 1 - 0",1,0,3,33.33333333333333,0.0
 M. Warming,Lyngby,"Viborg - Lyngby, 1 - 0",0,0,2,0.0,0.0
 M. Westergaard,Viborg,"København - Viborg, 1 - 1",10,5,11,90.9090909090909,45.45454545454545
@@ -730,6 +796,7 @@ M. Westergaard,Viborg,"Viborg - Brøndby, 3 - 3",3,0,6,50.0,0.0
 M. Westergaard,Viborg,"Viborg - Lyngby, 1 - 0",9,4,12,75.0,33.33333333333333
 M. Widell,AaB,"AaB - AGF, 0 - 4",4,1,7,57.14285714285714,14.285714285714285
 M. Widell,AaB,"AaB - Brøndby, 0 - 4",2,0,4,50.0,0.0
+M. Widell,AaB,"AaB - Lyngby, 2 - 1",2,0,4,50.0,0.0
 M. Widell,AaB,"AaB - Silkeborg, 2 - 1",5,0,11,45.45454545454545,0.0
 M. Widell,AaB,"Midtjylland - AaB, 2 - 0",5,2,8,62.5,25.0
 M. Widell,AaB,"Nordsjælland - AaB, 3 - 0",7,4,9,77.77777777777779,44.44444444444444
@@ -747,6 +814,7 @@ N. Bürgy,Viborg,"Silkeborg - Viborg, 3 - 2",True,False,1,100.0,0.0
 N. Bürgy,Viborg,"SønderjyskE - Viborg, 2 - 2",1,0,2,50.0,0.0
 N. Bürgy,Viborg,"Viborg - AaB, 2 - 3",True,False,1,100.0,0.0
 N. Campbell,Randers,"Brøndby - Randers, 2 - 2",2,0,4,50.0,0.0
+N. Campbell,Randers,"Nordsjælland - Randers, 1 - 1",2,1,4,50.0,25.0
 N. Campbell,Randers,"Randers - AaB, 1 - 0",5,2,7,71.42857142857143,28.57142857142857
 N. Campbell,Randers,"Randers - Silkeborg, 0 - 2",2,2,5,40.0,40.0
 N. Campbell,Randers,"Randers - SønderjyskE, 1 - 2",3,1,4,75.0,25.0
@@ -761,22 +829,26 @@ N. Dyhr,Randers,"Vejle - Randers, 2 - 3",2,0,2,100.0,0.0
 N. Gammelgaard,Vejle,"Lyngby - Vejle, 1 - 0",True,False,1,100.0,0.0
 N. Helenius,AaB,"AaB - AGF, 0 - 4",2,0,3,66.66666666666666,0.0
 N. Helenius,AaB,"AaB - Brøndby, 0 - 4",2,1,3,66.66666666666666,33.33333333333333
+N. Helenius,AaB,"AaB - Lyngby, 2 - 1",False,False,1,0.0,0.0
 N. Helenius,AaB,"Viborg - AaB, 2 - 3",2,1,2,100.0,50.0
 N. Larsen,Silkeborg,"AaB - Silkeborg, 2 - 1",False,False,1,0.0,0.0
 N. Nartey,Brøndby,"AaB - Brøndby, 0 - 4",3,0,8,37.5,0.0
 N. Nartey,Brøndby,"Brøndby - AGF, 0 - 1",5,3,10,50.0,30.0
 N. Nartey,Brøndby,"Brøndby - Randers, 2 - 2",2,1,8,25.0,12.5
+N. Nartey,Brøndby,"Brøndby - SønderjyskE, 2 - 0",1,0,2,50.0,0.0
 N. Nartey,Brøndby,"Brøndby - Vejle, 2 - 1",6,0,7,85.71428571428571,0.0
 N. Nartey,Brøndby,"København - Brøndby, 3 - 1",9,4,11,81.81818181818183,36.36363636363637
 N. Nartey,Brøndby,"Lyngby - Brøndby, 0 - 2",1,0,4,25.0,0.0
 N. Nartey,Brøndby,"Viborg - Brøndby, 3 - 3",3,1,6,50.0,16.666666666666664
 N. Poulsen,AGF,"AGF - Midtjylland, 1 - 1",3,2,10,30.0,20.0
 N. Poulsen,AGF,"AGF - Nordsjælland, 4 - 2",3,1,5,60.0,20.0
+N. Poulsen,AGF,"AGF - Silkeborg, 1 - 1",3,1,7,42.857142857142854,14.285714285714285
 N. Poulsen,AGF,"AGF - Vejle, 5 - 1",3,1,6,50.0,16.666666666666664
 N. Poulsen,AGF,"AaB - AGF, 0 - 4",4,1,5,80.0,20.0
 N. Poulsen,AGF,"Brøndby - AGF, 0 - 1",4,4,6,66.66666666666666,66.66666666666666
 N. Shamoun,Randers,"Randers - SønderjyskE, 1 - 2",True,False,1,100.0,0.0
 N. Vallys,Brøndby,"Brøndby - Randers, 2 - 2",2,2,3,66.66666666666666,66.66666666666666
+N. Vallys,Brøndby,"Brøndby - SønderjyskE, 2 - 0",True,False,1,100.0,0.0
 O. Antman,Nordsjælland,"Nordsjælland - AaB, 3 - 0",False,False,1,0.0,0.0
 O. Antman,Nordsjælland,"Nordsjælland - Midtjylland, 2 - 2",2,1,4,50.0,25.0
 O. Antman,Nordsjælland,"Vejle - Nordsjælland, 0 - 1",2,1,5,40.0,20.0
@@ -792,6 +864,7 @@ O. Bundgaard,Viborg,"Randers - Viborg, 3 - 1",False,False,1,0.0,0.0
 O. Bundgaard,Viborg,"Viborg - Brøndby, 3 - 3",8,3,10,80.0,30.0
 O. Diakhité,AaB,"AaB - AGF, 0 - 4",6,4,8,75.0,50.0
 O. Diakhité,AaB,"AaB - Brøndby, 0 - 4",3,1,7,42.857142857142854,14.285714285714285
+O. Diakhité,AaB,"AaB - Lyngby, 2 - 1",2,0,7,28.57142857142857,0.0
 O. Diakhité,AaB,"AaB - Silkeborg, 2 - 1",True,False,1,100.0,0.0
 O. Diakhité,AaB,"Midtjylland - AaB, 2 - 0",3,1,4,75.0,25.0
 O. Diakhité,AaB,"Randers - AaB, 1 - 0",3,3,3,100.0,100.0
@@ -803,8 +876,10 @@ O. Diao,Midtjylland,"Midtjylland - Vejle, 2 - 0",8,3,9,88.88888888888889,33.3333
 O. Diao,Midtjylland,"Nordsjælland - Midtjylland, 2 - 2",2,0,4,50.0,0.0
 O. Diao,Midtjylland,"Silkeborg - Midtjylland, 1 - 3",3,1,3,100.0,33.33333333333333
 O. Hedvall,Viborg,"SønderjyskE - Viborg, 2 - 2",True,True,1,100.0,100.0
+O. Hyseni,SønderjyskE,"Brøndby - SønderjyskE, 2 - 0",2,0,2,100.0,0.0
 O. Olsen,Randers,"Brøndby - Randers, 2 - 2",13,2,19,68.42105263157895,10.526315789473683
 O. Olsen,Randers,"København - Randers, 1 - 1",13,4,18,72.22222222222221,22.22222222222222
+O. Olsen,Randers,"Nordsjælland - Randers, 1 - 1",8,5,13,61.53846153846154,38.46153846153847
 O. Olsen,Randers,"Randers - AaB, 1 - 0",3,0,4,75.0,0.0
 O. Olsen,Randers,"Randers - Silkeborg, 0 - 2",2,1,3,66.66666666666666,33.33333333333333
 O. Olsen,Randers,"Randers - SønderjyskE, 1 - 2",4,3,6,66.66666666666666,50.0
@@ -819,6 +894,7 @@ O. Provstgaard,Vejle,"Vejle - Randers, 2 - 3",8,3,10,80.0,30.0
 O. Provstgaard,Vejle,"Vejle - Silkeborg, 1 - 3",7,3,9,77.77777777777779,33.33333333333333
 O. Ross,AaB,"AaB - AGF, 0 - 4",2,1,4,50.0,25.0
 O. Ross,AaB,"AaB - Brøndby, 0 - 4",2,0,3,66.66666666666666,0.0
+O. Ross,AaB,"AaB - Lyngby, 2 - 1",2,0,4,50.0,0.0
 O. Ross,AaB,"AaB - Silkeborg, 2 - 1",True,True,1,100.0,100.0
 O. Ross,AaB,"Midtjylland - AaB, 2 - 0",2,0,2,100.0,0.0
 O. Ross,AaB,"Nordsjælland - AaB, 3 - 0",True,False,1,100.0,0.0
@@ -827,6 +903,7 @@ O. Ross,AaB,"Viborg - AaB, 2 - 3",3,0,7,42.857142857142854,0.0
 O. Schwartau,Brøndby,"AaB - Brøndby, 0 - 4",3,0,3,100.0,0.0
 O. Schwartau,Brøndby,"Brøndby - Vejle, 2 - 1",4,0,5,80.0,0.0
 O. Schwartau,Brøndby,"Lyngby - Brøndby, 0 - 2",3,1,6,50.0,16.666666666666664
+O. Sonne,Silkeborg,"AGF - Silkeborg, 1 - 1",9,3,12,75.0,25.0
 O. Sonne,Silkeborg,"AaB - Silkeborg, 2 - 1",6,2,7,85.71428571428571,28.57142857142857
 O. Sonne,Silkeborg,"Silkeborg - Midtjylland, 1 - 3",4,0,4,100.0,0.0
 O. Sonne,Silkeborg,"Silkeborg - Nordsjælland, 4 - 1",2,2,4,50.0,50.0
@@ -850,9 +927,11 @@ P. Ankersen,Nordsjælland,"Nordsjælland - AaB, 3 - 0",3,1,7,42.857142857142854,
 P. Ankersen,Nordsjælland,"Nordsjælland - København, 3 - 2",6,2,10,60.0,20.0
 P. Ankersen,Nordsjælland,"Nordsjælland - Lyngby, 1 - 1",False,False,1,0.0,0.0
 P. Ankersen,Nordsjælland,"Nordsjælland - Midtjylland, 2 - 2",12,3,19,63.1578947368421,15.789473684210526
+P. Ankersen,Nordsjælland,"Nordsjælland - Randers, 1 - 1",2,0,4,50.0,0.0
 P. Ankersen,Nordsjælland,"Silkeborg - Nordsjælland, 4 - 1",4,1,6,66.66666666666666,16.666666666666664
 P. Ankersen,Nordsjælland,"Vejle - Nordsjælland, 0 - 1",0,0,2,0.0,0.0
 P. Bravo,Midtjylland,"Midtjylland - SønderjyskE, 3 - 2",4,1,4,100.0,25.0
+P. Gregor,Lyngby,"AaB - Lyngby, 2 - 1",3,1,3,100.0,33.33333333333333
 P. Gregor,Lyngby,"Lyngby - Brøndby, 0 - 2",2,2,2,100.0,100.0
 P. Gregor,Lyngby,"Lyngby - København, 0 - 2",5,1,8,62.5,12.5
 P. Gregor,Lyngby,"Lyngby - Midtjylland, 1 - 2",True,False,1,100.0,0.0
@@ -861,10 +940,12 @@ P. Gregor,Lyngby,"Nordsjælland - Lyngby, 1 - 1",8,4,9,88.88888888888889,44.4444
 P. Gregor,Lyngby,"SønderjyskE - Lyngby, 1 - 1",9,1,11,81.81818181818183,9.090909090909092
 P. Gregor,Lyngby,"Viborg - Lyngby, 1 - 0",6,1,9,66.66666666666666,11.11111111111111
 P. Izzo,Randers,"Brøndby - Randers, 2 - 2",True,False,1,100.0,0.0
+P. Mattsson,Silkeborg,"AGF - Silkeborg, 1 - 1",4,2,7,57.14285714285714,28.57142857142857
 P. Mattsson,Silkeborg,"AaB - Silkeborg, 2 - 1",False,False,1,0.0,0.0
 P. Mattsson,Silkeborg,"Silkeborg - SønderjyskE, 1 - 0",4,2,4,100.0,50.0
 P. Mortensen,AGF,"AGF - Midtjylland, 1 - 1",False,False,1,0.0,0.0
 P. Mortensen,AGF,"AGF - Nordsjælland, 4 - 2",1,1,2,50.0,50.0
+P. Mortensen,AGF,"AGF - Silkeborg, 1 - 1",True,False,1,100.0,0.0
 P. Mortensen,AGF,"AGF - SønderjyskE, 4 - 0",3,0,6,50.0,0.0
 P. Mortensen,AGF,"AGF - Vejle, 5 - 1",False,False,1,0.0,0.0
 P. Mortensen,AGF,"AaB - AGF, 0 - 4",1,0,3,33.33333333333333,0.0
@@ -875,6 +956,7 @@ P. Rödin,Silkeborg,"Randers - Silkeborg, 0 - 2",3,1,4,75.0,25.0
 P. Rödin,Silkeborg,"Silkeborg - SønderjyskE, 1 - 0",2,0,4,50.0,0.0
 P. Rödin,Silkeborg,"Silkeborg - Viborg, 3 - 2",1,0,2,50.0,0.0
 Paulinho,Midtjylland,"AGF - Midtjylland, 1 - 1",0,0,3,0.0,0.0
+Pedro Ganchas,Silkeborg,"AGF - Silkeborg, 1 - 1",4,4,6,66.66666666666666,66.66666666666666
 Pedro Ganchas,Silkeborg,"AaB - Silkeborg, 2 - 1",5,4,6,83.33333333333334,66.66666666666666
 Pedro Ganchas,Silkeborg,"Randers - Silkeborg, 0 - 2",5,2,6,83.33333333333334,33.33333333333333
 Pedro Ganchas,Silkeborg,"Silkeborg - Midtjylland, 1 - 3",3,1,4,75.0,25.0
@@ -898,22 +980,27 @@ R. Huescas,København,"Lyngby - København, 0 - 2",8,2,12,66.66666666666666,16.6
 R. Jensen,Vejle,"Lyngby - Vejle, 1 - 0",3,2,6,50.0,33.33333333333333
 R. Lauritsen,Brøndby,"Brøndby - AGF, 0 - 1",1,1,2,50.0,50.0
 R. Lauritsen,Brøndby,"Brøndby - Randers, 2 - 2",True,True,1,100.0,100.0
+R. Lauritsen,Brøndby,"Brøndby - SønderjyskE, 2 - 0",2,0,4,50.0,0.0
 R. Lauritsen,Brøndby,"Brøndby - Vejle, 2 - 1",2,1,4,50.0,25.0
 R. Lauritsen,Brøndby,"Lyngby - Brøndby, 0 - 2",6,4,8,75.0,50.0
 R. Lauritsen,Brøndby,"Viborg - Brøndby, 3 - 3",10,3,12,83.33333333333334,25.0
+R. Orazov,Silkeborg,"AGF - Silkeborg, 1 - 1",5,1,7,71.42857142857143,14.285714285714285
 R. Orazov,Silkeborg,"AaB - Silkeborg, 2 - 1",2,1,5,40.0,20.0
 R. Orazov,Silkeborg,"Randers - Silkeborg, 0 - 2",6,2,6,100.0,33.33333333333333
 R. Orazov,Silkeborg,"Silkeborg - Nordsjælland, 4 - 1",True,False,1,100.0,0.0
 R. Orazov,Silkeborg,"Silkeborg - SønderjyskE, 1 - 0",1,0,3,33.33333333333333,0.0
 R. Orazov,Silkeborg,"Silkeborg - Viborg, 3 - 2",True,True,1,100.0,100.0
 R. Orazov,Silkeborg,"Vejle - Silkeborg, 1 - 3",True,False,1,100.0,0.0
+R. Thelander,Silkeborg,"AGF - Silkeborg, 1 - 1",2,0,2,100.0,0.0
 R. Vinderslev,SønderjyskE,"AGF - SønderjyskE, 4 - 0",5,0,8,62.5,0.0
+R. Vinderslev,SønderjyskE,"Brøndby - SønderjyskE, 2 - 0",2,2,3,66.66666666666666,66.66666666666666
 R. Vinderslev,SønderjyskE,"Midtjylland - SønderjyskE, 3 - 2",5,3,7,71.42857142857143,42.857142857142854
 R. Vinderslev,SønderjyskE,"Randers - SønderjyskE, 1 - 2",5,3,9,55.55555555555556,33.33333333333333
 R. Vinderslev,SønderjyskE,"Silkeborg - SønderjyskE, 1 - 0",5,2,8,62.5,25.0
 R. Vinderslev,SønderjyskE,"SønderjyskE - København, 0 - 2",1,0,3,33.33333333333333,0.0
 R. Vinderslev,SønderjyskE,"SønderjyskE - Lyngby, 1 - 1",5,0,8,62.5,0.0
 R. Vinderslev,SønderjyskE,"SønderjyskE - Viborg, 2 - 2",2,1,3,66.66666666666666,33.33333333333333
+R. Østrøm,Silkeborg,"AGF - Silkeborg, 1 - 1",1,0,3,33.33333333333333,0.0
 R. Østrøm,Silkeborg,"AaB - Silkeborg, 2 - 1",3,0,5,60.0,0.0
 R. Østrøm,Silkeborg,"Randers - Silkeborg, 0 - 2",3,0,5,60.0,0.0
 R. Østrøm,Silkeborg,"Silkeborg - Midtjylland, 1 - 3",9,2,9,100.0,22.22222222222222
@@ -934,8 +1021,10 @@ S. Cherif Haidara,SønderjyskE,"SønderjyskE - Lyngby, 1 - 1",2,1,2,100.0,50.0
 S. Egeli,Nordsjælland,"AGF - Nordsjælland, 4 - 2",4,2,4,100.0,50.0
 S. Egeli,Nordsjælland,"Nordsjælland - AaB, 3 - 0",False,False,1,0.0,0.0
 S. Egeli,Nordsjælland,"Nordsjælland - København, 3 - 2",3,1,3,100.0,33.33333333333333
+S. Egeli,Nordsjælland,"Nordsjælland - Randers, 1 - 1",3,0,7,42.857142857142854,0.0
 S. Egeli,Nordsjælland,"Silkeborg - Nordsjælland, 4 - 1",2,1,3,66.66666666666666,33.33333333333333
 S. Emini,SønderjyskE,"AGF - SønderjyskE, 4 - 0",7,3,10,70.0,30.0
+S. Emini,SønderjyskE,"Brøndby - SønderjyskE, 2 - 0",8,2,14,57.14285714285714,14.285714285714285
 S. Emini,SønderjyskE,"Midtjylland - SønderjyskE, 3 - 2",7,3,12,58.333333333333336,25.0
 S. Emini,SønderjyskE,"Randers - SønderjyskE, 1 - 2",4,2,8,50.0,25.0
 S. Emini,SønderjyskE,"Silkeborg - SønderjyskE, 1 - 0",2,1,3,66.66666666666666,33.33333333333333
@@ -949,6 +1038,7 @@ S. Hansen,Randers,"Randers - SønderjyskE, 1 - 2",4,1,8,50.0,12.5
 S. Klaiber,Brøndby,"AaB - Brøndby, 0 - 4",5,1,10,50.0,10.0
 S. Klaiber,Brøndby,"Brøndby - AGF, 0 - 1",0,0,4,0.0,0.0
 S. Klaiber,Brøndby,"Brøndby - Randers, 2 - 2",4,2,9,44.44444444444444,22.22222222222222
+S. Klaiber,Brøndby,"Brøndby - SønderjyskE, 2 - 0",4,2,6,66.66666666666666,33.33333333333333
 S. Klaiber,Brøndby,"Brøndby - Vejle, 2 - 1",3,0,3,100.0,0.0
 S. Klaiber,Brøndby,"København - Brøndby, 3 - 1",5,0,9,55.55555555555556,0.0
 S. Klaiber,Brøndby,"Viborg - Brøndby, 3 - 3",5,2,7,71.42857142857143,28.57142857142857
@@ -958,6 +1048,7 @@ S. Kuzmić,Viborg,"SønderjyskE - Viborg, 2 - 2",8,3,10,80.0,30.0
 S. Kuzmić,Viborg,"Viborg - AaB, 2 - 3",4,2,6,66.66666666666666,33.33333333333333
 S. Kuzmić,Viborg,"Viborg - Brøndby, 3 - 3",1,0,3,33.33333333333333,0.0
 S. Kuzmić,Viborg,"Viborg - Lyngby, 1 - 0",6,1,9,66.66666666666666,11.11111111111111
+S. Magnússon,Lyngby,"AaB - Lyngby, 2 - 1",5,1,5,100.0,20.0
 S. Magnússon,Lyngby,"Lyngby - Brøndby, 0 - 2",6,3,10,60.0,30.0
 S. Magnússon,Lyngby,"Lyngby - København, 0 - 2",0,0,3,0.0,0.0
 S. Magnússon,Lyngby,"Lyngby - Midtjylland, 1 - 2",8,1,13,61.53846153846154,7.6923076923076925
@@ -967,6 +1058,7 @@ S. Magnússon,Lyngby,"SønderjyskE - Lyngby, 1 - 1",2,1,2,100.0,50.0
 S. Magnússon,Lyngby,"Viborg - Lyngby, 1 - 0",3,2,5,60.0,40.0
 S. Nordli,Randers,"Brøndby - Randers, 2 - 2",1,1,3,33.33333333333333,33.33333333333333
 S. Nordli,Randers,"København - Randers, 1 - 1",2,0,5,40.0,0.0
+S. Nordli,Randers,"Nordsjælland - Randers, 1 - 1",3,0,4,75.0,0.0
 S. Nordli,Randers,"Randers - AaB, 1 - 0",5,3,8,62.5,37.5
 S. Nordli,Randers,"Randers - Silkeborg, 0 - 2",2,1,3,66.66666666666666,33.33333333333333
 S. Nordli,Randers,"Randers - SønderjyskE, 1 - 2",0,0,3,0.0,0.0
@@ -974,6 +1066,7 @@ S. Nordli,Randers,"Randers - Viborg, 3 - 1",7,2,11,63.63636363636363,18.18181818
 S. Nordli,Randers,"Vejle - Randers, 2 - 3",2,1,2,100.0,50.0
 S. Odey,Randers,"Brøndby - Randers, 2 - 2",True,True,1,100.0,100.0
 S. Odey,Randers,"København - Randers, 1 - 1",1,0,2,50.0,0.0
+S. Odey,Randers,"Nordsjælland - Randers, 1 - 1",False,False,1,0.0,0.0
 S. Odey,Randers,"Randers - AaB, 1 - 0",0,0,3,0.0,0.0
 S. Odey,Randers,"Randers - Silkeborg, 0 - 2",2,0,3,66.66666666666666,0.0
 S. Odey,Randers,"Randers - SønderjyskE, 1 - 2",True,True,1,100.0,100.0
@@ -981,6 +1074,7 @@ S. Odey,Randers,"Randers - Viborg, 3 - 1",3,1,4,75.0,25.0
 S. Odey,Randers,"Vejle - Randers, 2 - 3",1,0,2,50.0,0.0
 S. Otoa,AaB,"AaB - AGF, 0 - 4",3,1,5,60.0,20.0
 S. Otoa,AaB,"AaB - Brøndby, 0 - 4",3,2,5,60.0,40.0
+S. Otoa,AaB,"AaB - Lyngby, 2 - 1",5,1,5,100.0,20.0
 S. Otoa,AaB,"AaB - Silkeborg, 2 - 1",3,1,8,37.5,12.5
 S. Otoa,AaB,"Midtjylland - AaB, 2 - 0",7,2,12,58.333333333333336,16.666666666666664
 S. Otoa,AaB,"Nordsjælland - AaB, 3 - 0",4,2,7,57.14285714285714,28.57142857142857
@@ -995,9 +1089,11 @@ S. Radić,Viborg,"Viborg - Lyngby, 1 - 0",4,2,5,80.0,40.0
 S. Sebulonsen,Brøndby,"AaB - Brøndby, 0 - 4",5,4,8,62.5,50.0
 S. Sebulonsen,Brøndby,"Brøndby - AGF, 0 - 1",3,2,5,60.0,40.0
 S. Sebulonsen,Brøndby,"Brøndby - Randers, 2 - 2",2,1,2,100.0,50.0
+S. Sebulonsen,Brøndby,"Brøndby - SønderjyskE, 2 - 0",4,1,4,100.0,25.0
 S. Sebulonsen,Brøndby,"Brøndby - Vejle, 2 - 1",True,True,1,100.0,100.0
 S. Sebulonsen,Brøndby,"København - Brøndby, 3 - 1",3,0,4,75.0,0.0
 S. Sebulonsen,Brøndby,"Lyngby - Brøndby, 0 - 2",6,3,11,54.54545454545454,27.27272727272727
+S. Spierings,Brøndby,"Brøndby - SønderjyskE, 2 - 0",2,1,2,100.0,50.0
 S. Spierings,Brøndby,"København - Brøndby, 3 - 1",True,True,1,100.0,100.0
 S. Velkov,Vejle,"AGF - Vejle, 5 - 1",4,2,6,66.66666666666666,33.33333333333333
 S. Velkov,Vejle,"Brøndby - Vejle, 2 - 1",3,1,3,100.0,33.33333333333333
@@ -1012,6 +1108,7 @@ Serginho,Viborg,"SønderjyskE - Viborg, 2 - 2",1,0,2,50.0,0.0
 Serginho,Viborg,"Viborg - AaB, 2 - 3",4,1,7,57.14285714285714,14.285714285714285
 Serginho,Viborg,"Viborg - Brøndby, 3 - 3",1,0,5,20.0,0.0
 Serginho,Viborg,"Viborg - Lyngby, 1 - 0",1,0,3,33.33333333333333,0.0
+T. Adamsen,Silkeborg,"AGF - Silkeborg, 1 - 1",1,1,2,50.0,50.0
 T. Adamsen,Silkeborg,"AaB - Silkeborg, 2 - 1",1,0,4,25.0,0.0
 T. Adamsen,Silkeborg,"Randers - Silkeborg, 0 - 2",2,0,3,66.66666666666666,0.0
 T. Adamsen,Silkeborg,"Silkeborg - Midtjylland, 1 - 3",3,0,4,75.0,0.0
@@ -1022,6 +1119,7 @@ T. Bach,AGF,"AGF - Nordsjælland, 4 - 2",True,False,1,100.0,0.0
 T. Bach,AGF,"Brøndby - AGF, 0 - 1",2,0,2,100.0,0.0
 T. Bany,Randers,"Brøndby - Randers, 2 - 2",3,0,5,60.0,0.0
 T. Bany,Randers,"København - Randers, 1 - 1",1,1,4,25.0,25.0
+T. Bany,Randers,"Nordsjælland - Randers, 1 - 1",1,0,2,50.0,0.0
 T. Bany,Randers,"Randers - AaB, 1 - 0",2,0,4,50.0,0.0
 T. Bany,Randers,"Randers - Silkeborg, 0 - 2",1,1,2,50.0,50.0
 T. Bany,Randers,"Randers - SønderjyskE, 1 - 2",4,2,9,44.44444444444444,22.22222222222222
@@ -1042,11 +1140,13 @@ T. Klysner,SønderjyskE,"Silkeborg - SønderjyskE, 1 - 0",1,0,2,50.0,0.0
 T. Lauritsen,Vejle,"Lyngby - Vejle, 1 - 0",1,1,2,50.0,50.0
 T. Lauritsen,Vejle,"Vejle - Silkeborg, 1 - 3",False,False,1,0.0,0.0
 T. Sommer,SønderjyskE,"AGF - SønderjyskE, 4 - 0",5,1,8,62.5,12.5
+T. Sommer,SønderjyskE,"Brøndby - SønderjyskE, 2 - 0",3,2,4,75.0,50.0
 T. Sommer,SønderjyskE,"Randers - SønderjyskE, 1 - 2",True,False,1,100.0,0.0
 T. Sommer,SønderjyskE,"Silkeborg - SønderjyskE, 1 - 0",0,0,2,0.0,0.0
 T. Sommer,SønderjyskE,"SønderjyskE - København, 0 - 2",6,2,8,75.0,25.0
 T. Sommer,SønderjyskE,"SønderjyskE - Lyngby, 1 - 1",4,1,5,80.0,20.0
 T. Sommer,SønderjyskE,"SønderjyskE - Viborg, 2 - 2",2,0,6,33.33333333333333,0.0
+T. Storm,Lyngby,"AaB - Lyngby, 2 - 1",2,1,3,66.66666666666666,33.33333333333333
 T. Storm,Lyngby,"Lyngby - Brøndby, 0 - 2",5,3,10,50.0,30.0
 T. Storm,Lyngby,"Lyngby - København, 0 - 2",1,0,3,33.33333333333333,0.0
 T. Storm,Lyngby,"Lyngby - Midtjylland, 1 - 2",3,3,7,42.857142857142854,42.857142857142854
@@ -1079,12 +1179,14 @@ W. Dammers,Randers,"Randers - Silkeborg, 0 - 2",2,0,3,66.66666666666666,0.0
 W. Dammers,Randers,"Randers - SønderjyskE, 1 - 2",3,2,5,60.0,40.0
 W. Dammers,Randers,"Randers - Viborg, 3 - 1",3,2,3,100.0,66.66666666666666
 W. Dammers,Randers,"Vejle - Randers, 2 - 3",3,2,3,100.0,66.66666666666666
+W. Kumado,Lyngby,"AaB - Lyngby, 2 - 1",4,0,6,66.66666666666666,0.0
 W. Kumado,Lyngby,"Lyngby - København, 0 - 2",2,0,3,66.66666666666666,0.0
 W. Kumado,Lyngby,"Lyngby - Midtjylland, 1 - 2",0,0,2,0.0,0.0
 W. Kumado,Lyngby,"Lyngby - Vejle, 1 - 0",4,1,8,50.0,12.5
 W. Kumado,Lyngby,"Nordsjælland - Lyngby, 1 - 1",1,1,2,50.0,50.0
 W. Kumado,Lyngby,"SønderjyskE - Lyngby, 1 - 1",3,0,4,75.0,0.0
 W. Kumado,Lyngby,"Viborg - Lyngby, 1 - 0",3,3,6,50.0,50.0
+Y. Badji,AGF,"AGF - Silkeborg, 1 - 1",True,False,1,100.0,0.0
 Y. Bakiz,Silkeborg,"Randers - Silkeborg, 0 - 2",3,0,7,42.857142857142854,0.0
 Y. Bakiz,Silkeborg,"Silkeborg - Midtjylland, 1 - 3",True,False,1,100.0,0.0
 Y. Bakiz,Silkeborg,"Silkeborg - Nordsjælland, 4 - 1",4,0,9,44.44444444444444,0.0
@@ -1097,6 +1199,7 @@ Y. N'Gbakoto,Vejle,"Vejle - Silkeborg, 1 - 3",2,2,3,66.66666666666666,66.6666666
 Y. Suzuki,Brøndby,"AaB - Brøndby, 0 - 4",5,2,7,71.42857142857143,28.57142857142857
 Y. Suzuki,Brøndby,"Brøndby - AGF, 0 - 1",2,0,5,40.0,0.0
 Y. Suzuki,Brøndby,"Brøndby - Randers, 2 - 2",3,2,3,100.0,66.66666666666666
+Y. Suzuki,Brøndby,"Brøndby - SønderjyskE, 2 - 0",2,2,2,100.0,100.0
 Y. Suzuki,Brøndby,"Brøndby - Vejle, 2 - 1",2,0,2,100.0,0.0
 Y. Suzuki,Brøndby,"København - Brøndby, 3 - 1",1,0,2,50.0,0.0
 Y. Suzuki,Brøndby,"Lyngby - Brøndby, 0 - 2",5,0,5,100.0,0.0
@@ -1106,6 +1209,7 @@ Z. Sertdemir,Nordsjælland,"Nordsjælland - AaB, 3 - 0",False,False,1,0.0,0.0
 Z. Sertdemir,Nordsjælland,"Nordsjælland - København, 3 - 2",7,4,7,100.0,57.14285714285714
 Z. Sertdemir,Nordsjælland,"Nordsjælland - Lyngby, 1 - 1",3,0,4,75.0,0.0
 Z. Sertdemir,Nordsjælland,"Nordsjælland - Midtjylland, 2 - 2",1,1,3,33.33333333333333,33.33333333333333
+Z. Sertdemir,Nordsjælland,"Nordsjælland - Randers, 1 - 1",1,0,2,50.0,0.0
 Z. Sertdemir,Nordsjælland,"Silkeborg - Nordsjælland, 4 - 1",False,False,1,0.0,0.0
 Ž. Zaletel,Viborg,"Randers - Viborg, 3 - 1",3,1,4,75.0,25.0
 Ž. Zaletel,Viborg,"Silkeborg - Viborg, 3 - 2",4,2,5,80.0,40.0
