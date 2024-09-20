@@ -12,8 +12,8 @@ import numpy as np
 
 events = pd.read_csv(r'C:\Users\SéamusPeareBartholdy\Documents\GitHub\AC-Horsens-U19\events.csv')
 loss = events[events['type.secondary'].str.contains('loss')]
-loss = loss[loss['label'].str.contains('Nordsjælland U19 - Horsens U19')]
-loss = loss[loss['team.name'].str.contains('Horsens')]
+#loss = loss[loss['label'].str.contains('Nordsjælland U19 - Horsens U19')]
+loss = loss[loss['team.name'].str.contains('Brøndby')]
 loss = loss[['player.name','location.x','location.y','pass.endLocation.x','pass.endLocation.y','carry.endLocation.x','carry.endLocation.y']]
 print(loss)
 pitch = Pitch(pitch_type='wyscout',line_zorder=2, pitch_color='grass', line_color='white')
@@ -27,7 +27,7 @@ y_coords = np.where(loss['pass.endLocation.x'] > 0, loss['pass.endLocation.y'],
 
 # Plot the heatmap
 fig.set_facecolor('#22312b')
-bin_statistic = pitch.bin_statistic(x_coords, y_coords, statistic='count', bins=(25, 25))  # Adjust bins as needed
+bin_statistic = pitch.bin_statistic(x_coords, y_coords, statistic='count', bins=(50, 25))  # Adjust bins as needed
 bin_statistic['statistic'] = gaussian_filter(bin_statistic['statistic'], 1)
 pcm = pitch.heatmap(bin_statistic, ax=ax, cmap='hot')
 
