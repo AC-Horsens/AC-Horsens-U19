@@ -1469,6 +1469,7 @@ def dashboard():
 def opposition_analysis():
     # Display the full dataframe
     df_matchstats = load_matchstats()
+    df_matchstats['label'] = df_matchstats['label'] + ' ' + df_matchstats['date']
     df_PPDA = load_PPDA()
     df_PPDA['PPDA'] = df_PPDA['PPDA'].round(2)
     st.dataframe(df_PPDA)
