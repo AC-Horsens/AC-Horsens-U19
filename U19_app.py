@@ -1469,7 +1469,9 @@ def dashboard():
 def opposition_analysis():
     # Display the full dataframe
     df_matchstats = load_matchstats()
-
+    groundduels = load_groundduels()
+    groundduels = groundduels.groupby(['team.name','label']).sum().reset_index()
+    st.dataframe(groundduels)
     # Correct the date format in 'date' column if necessary
     df_matchstats['date'] = df_matchstats['date'].str.replace(r'GMT\+(\d)$', r'GMT+0\1:00')
     df_matchstats = df_matchstats.groupby(['team.name','label', 'date']).sum().reset_index()
@@ -1540,6 +1542,11 @@ def opposition_analysis():
 
         }).reset_index()
     
+    df_matchstats['Long pass %'] = df_matchstats['total_longPasses'] / df_matchstats['total_passes']
+    df_matchstats['Forward pass %'] = df_matchstats['total_forwardPasses'] / df_matchstats['total_passes']
+    df_matchstats['Opponent half recoveries %'] = df_matchstats['total_opponentHalfRecoveries'] / df_matchstats['total_recoveries']
+    df_matchstats['Own half losses %'] = df_matchstats['total_ownHalfLosses'] / df_matchstats['total_losses']
+    df_matchstats['Progressive passes %'] = df_matchstats['total_progressivePasses'] / df_matchstats['total_passes']
     
     columns_to_per_match = [
         'total_duels', 'total_duelsWon', 'total_defensiveDuels',
@@ -1549,7 +1556,7 @@ def opposition_analysis():
         'total_forwardPasses', 'total_successfulForwardPasses', 'total_longPasses',
         'total_recoveries', 'total_opponentHalfRecoveries', 'total_losses',
         'total_ownHalfLosses', 'total_touchInBox', 'total_progressivePasses',
-        'total_counterpressingRecoveries'
+        'total_counterpressingRecoveries','Long pass %','Forward pass %'
     ]
 
 # Create "per match" columns by dividing by 'label'
