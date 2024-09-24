@@ -1470,6 +1470,7 @@ def opposition_analysis():
     # Display the full dataframe
     df_matchstats = load_matchstats()
     df_PPDA = load_PPDA()
+    df_PPDA['PPDA'] = df_PPDA['PPDA'].round(2)
     st.dataframe(df_PPDA)
     # Correct the date format in 'date' column if necessary
     df_matchstats['date'] = df_matchstats['date'].str.replace(r'GMT\+(\d)$', r'GMT+0\1:00')
