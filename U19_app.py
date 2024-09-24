@@ -1547,11 +1547,6 @@ def opposition_analysis():
         'PPDA' : 'mean'
         }).reset_index()
     
-    df_matchstats['Long pass %'] = df_matchstats['total_longPasses'] / df_matchstats['total_passes']
-    df_matchstats['Forward pass %'] = df_matchstats['total_forwardPasses'] / df_matchstats['total_passes']
-    df_matchstats['Opponent half recoveries %'] = df_matchstats['total_opponentHalfRecoveries'] / df_matchstats['total_recoveries']
-    df_matchstats['Own half losses %'] = df_matchstats['total_ownHalfLosses'] / df_matchstats['total_losses']
-    df_matchstats['Progressive passes %'] = df_matchstats['total_progressivePasses'] / df_matchstats['total_passes']
     
     columns_to_per_match = [
         'total_duels', 'total_duelsWon', 'total_defensiveDuels',
@@ -1561,19 +1556,22 @@ def opposition_analysis():
         'total_forwardPasses', 'total_successfulForwardPasses', 'total_longPasses',
         'total_recoveries', 'total_opponentHalfRecoveries', 'total_losses',
         'total_ownHalfLosses', 'total_touchInBox', 'total_progressivePasses',
-        'total_counterpressingRecoveries','Long pass %','Forward pass %'
+        'total_counterpressingRecoveries'
     ]
 
 # Create "per match" columns by dividing by 'label'
     for col in columns_to_per_match:
         df_matchstats[f'{col}_per_match'] = df_matchstats[col] / df_matchstats['label']
 
-    columns_to_keep = ['team.name', 'label'] + [f'{col}_per_match' for col in columns_to_per_match]
+    columns_to_keep = ['team.name', 'label','PPDA'] + [f'{col}_per_match' for col in columns_to_per_match]
     df_matchstats = df_matchstats[columns_to_keep]
     
     df_matchstats['forward pass share'] = df_matchstats['total_forwardPasses_per_match'] / df_matchstats['total_passes_per_match']
     df_matchstats['long pass share'] = df_matchstats['total_longPasses_per_match'] / df_matchstats['total_passes_per_match']
     df_matchstats['pass per loss'] = df_matchstats['total_passes_per_match'] / df_matchstats['total_losses_per_match']
+    df_matchstats['Own half losses %'] = df_matchstats['total_ownHalfLosses'] / df_matchstats['total_losses']
+    df_matchstats['Opponent half recoveries %'] = df_matchstats['total_opponentHalfRecoveries'] / df_matchstats['total_recoveries']
+
     
     for col in columns_to_per_match:
         if col == 'total_losses':
