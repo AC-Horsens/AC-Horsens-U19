@@ -1590,12 +1590,12 @@ def opposition_analysis():
             st.warning(f"Column '{col}' not found for ranking.")
 
     # Remove 'total_' prefix and '_per_match' suffix from column names
-
+    sorted_teams = df_matchstats['team.name'].sort_values().unique()
+    df_matchstats.set_index('team.name')
     # Display the DataFrame
-    st.dataframe(df_matchstats, hide_index=True)
+    st.dataframe(df_matchstats)
 
     # Sort teams alphabetically for the selectbox
-    sorted_teams = df_matchstats['team.name'].sort_values().unique()
 
     # Select team from dropdown
     selected_team = st.selectbox('Choose team', sorted_teams)
