@@ -1573,19 +1573,15 @@ def opposition_analysis():
     df_matchstats['Opponent half recoveries %'] = df_matchstats['total_opponentHalfRecoveries_per_match'] / df_matchstats['total_recoveries_per_match']
 
     
-    for col in columns_to_per_match:
-        if col == 'total_losses':
-            # Rank losses in ascending order (lower is better)
-            df_matchstats[f'{col}_per_match_rank'] = df_matchstats[f'{col}_per_match'].rank(ascending=True, method='min')
-        elif col == 'PPDA':
-            # Rank losses in ascending order (lower is better)
-            df_matchstats[f'{col}'] = df_matchstats[f'{col}'].rank(ascending=True, method='min')
-
+    for col in columns_to_per_match + ['PPDA', 'forward pass share', 'long pass share', 'pass per loss', 'Own half losses %', 'Opponent half recoveries %']:
+        if col == 'total_losses' or col == 'PPDA':
+            # Rank losses and PPDA in ascending order (lower is better)
+            df_matchstats[f'{col}_rank'] = df_matchstats[col].rank(ascending=True, method='min')
         else:
             # Rank other columns in descending order (higher is better)
-            df_matchstats[f'{col}_per_match_rank'] = df_matchstats[f'{col}_per_match'].rank(ascending=False, method='min')
+            df_matchstats[f'{col}_rank'] = df_matchstats[col].rank(ascending=False, method='min')
 
-    # Remove 'total_' prefix and '_per_match' suffix from column names
+    # Remove 'total_' prefix and '_per_match' suffix from column names for cleaner output
     df_matchstats.columns = [col.replace('total_', '') for col in df_matchstats.columns]
     df_matchstats.columns = [col.replace('_per_match', '') for col in df_matchstats.columns]
 
@@ -1601,7 +1597,7 @@ def opposition_analysis():
     # Filter DataFrame for selected team
     team_df = df_matchstats.loc[df_matchstats['team.name'] == selected_team]
 
-    # Target ranks
+    # Target ranks to filter
     target_ranks = [1, 2, 3, 4, 10, 11, 12, 13, 14]
 
     # Filter the selected team's ranks and values
