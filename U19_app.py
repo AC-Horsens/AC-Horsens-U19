@@ -1544,7 +1544,7 @@ def opposition_analysis():
         'total_touchInBox': 'sum',
         'total_progressivePasses': 'sum',
         'total_counterpressingRecoveries': 'sum',
-
+        'PPDA' : 'mean'
         }).reset_index()
     
     df_matchstats['Long pass %'] = df_matchstats['total_longPasses'] / df_matchstats['total_passes']
