@@ -1469,9 +1469,9 @@ def dashboard():
 def opposition_analysis():
     # Display the full dataframe
     df_matchstats = load_matchstats()
-    groundduels = load_groundduels()
-    groundduels = groundduels.groupby(['team.name','label']).sum().reset_index()
-    st.dataframe(groundduels)
+    df_PPDA = load_PPDA()
+    st.dataframe(df_PPDA)
+    st.dataframe(df_matchstats)
     # Correct the date format in 'date' column if necessary
     df_matchstats['date'] = df_matchstats['date'].str.replace(r'GMT\+(\d)$', r'GMT+0\1:00')
     df_matchstats = df_matchstats.groupby(['team.name','label', 'date']).sum().reset_index()
