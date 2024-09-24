@@ -1589,8 +1589,6 @@ def opposition_analysis():
             st.warning(f"Column '{col}' not found for ranking.")
 
     # Remove 'total_' prefix and '_per_match' suffix from column names
-    df_matchstats.columns = [col.replace('total_', '') for col in df_matchstats.columns]
-    df_matchstats.columns = [col.replace('_per_match', '') for col in df_matchstats.columns]
 
     # Display the DataFrame
     st.dataframe(df_matchstats, hide_index=True)
