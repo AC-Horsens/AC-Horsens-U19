@@ -1507,10 +1507,13 @@ def opposition_analysis():
     selected_start_date = pd.to_datetime(selected_start_date)
     selected_end_date = pd.to_datetime(selected_end_date)
 
+    df_matchstats['date'] = pd.to_datetime(df_matchstats['date'])
+
     # Filter the DataFrame based on selected dates
     df_matchstats = df_matchstats[
         (df_matchstats['date'] >= selected_start_date) & (df_matchstats['date'] <= selected_end_date)
     ]
+
 
     # Drop unnecessary columns
     df_matchstats = df_matchstats.drop(columns=['date', 'player.id', 'player.name', 'matchId', 'position_names', 'position_codes'])
