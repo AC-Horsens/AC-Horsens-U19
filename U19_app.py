@@ -1547,8 +1547,6 @@ def opposition_analysis():
         'PPDA': 'mean'  # Keep PPDA as mean for the team
     }).reset_index()
 
-    # Check the DataFrame columns after aggregation
-    st.write("Columns after aggregation:", df_matchstats.columns.tolist())
 
     # Create "per match" columns by dividing by 'label', excluding PPDA
     columns_to_per_match = [
@@ -1562,17 +1560,19 @@ def opposition_analysis():
         'total_counterpressingRecoveries'
     ]
 
-    # Create "per match" columns by dividing by 'label', but do not include PPDA
+    # Create "per match" columns by dividing by 'label'
     for col in columns_to_per_match:
         if col in df_matchstats.columns:  # Check if the column exists
             df_matchstats[f'{col}_per_match'] = df_matchstats[col] / df_matchstats['label']
-        else:
-            st.warning(f"Column '{col}' not found for 'per_match' calculation.")
 
-    # Check columns again after creating per_match columns
-    st.write("Columns after per_match calculations:", df_matchstats.columns.tolist())
+    # Calculate additional metrics
+    df_matchstats['forward pass share'] = df_matchstats['total_forwardPasses_per_match'] / df_matchstats['total_passes_per_match']
+    df_matchstats['long pass share'] = df_matchstats['total_longPasses_per_match'] / df_matchstats['total_passes_per_match']
+    df_matchstats['pass per loss'] = df_matchstats['total_passes_per_match'] / df_matchstats['total_losses_per_match']
+    df_matchstats['Own half losses %'] = df_matchstats['total_ownHalfLosses'] / df_matchstats['total_losses']
+    df_matchstats['Opponent half recoveries %'] = df_matchstats['total_opponentHalfRecoveries'] / df_matchstats['total_recoveries']
 
-    # Now, attempt to rank the specified columns, including PPDA
+    # Now attempt to rank the specified columns
     metrics_to_rank = [
         'PPDA', 'forward pass share', 'long pass share', 'pass per loss', 
         'Own half losses %', 'Opponent half recoveries %'
