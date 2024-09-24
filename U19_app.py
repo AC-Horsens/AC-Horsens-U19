@@ -1579,7 +1579,7 @@ def opposition_analysis():
             df_matchstats[f'{col}_per_match_rank'] = df_matchstats[f'{col}_per_match'].rank(ascending=True, method='min')
         elif col == 'PPDA':
             # Rank losses in ascending order (lower is better)
-            df_matchstats[f'{col}_per_match_rank'] = df_matchstats[f'{col}_per_match'].rank(ascending=True, method='min')
+            df_matchstats[f'{col}'] = df_matchstats[f'{col}'].rank(ascending=True, method='min')
 
         else:
             # Rank other columns in descending order (higher is better)
