@@ -1471,10 +1471,11 @@ def opposition_analysis():
     df_matchstats = load_matchstats()
     df_PPDA = load_PPDA()
     st.dataframe(df_PPDA)
-    st.dataframe(df_matchstats)
     # Correct the date format in 'date' column if necessary
     df_matchstats['date'] = df_matchstats['date'].str.replace(r'GMT\+(\d)$', r'GMT+0\1:00')
     df_matchstats = df_matchstats.groupby(['team.name','label', 'date']).sum().reset_index()
+    st.dataframe(df_matchstats)
+
     df_matchstats['label'] = np.where(df_matchstats['label'].notnull(), 1, df_matchstats['label'])
 
     # Convert the 'date' column to datetime objects with mixed format handling
