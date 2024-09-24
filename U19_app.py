@@ -1591,8 +1591,9 @@ def opposition_analysis():
 
     # Remove 'total_' prefix and '_per_match' suffix from column names
     sorted_teams = df_matchstats['team.name'].sort_values().unique()
+    df_matchstats_1 = df_matchstats.set_index('team.name')
     # Display the DataFrame
-    st.dataframe(df_matchstats, hide_index=True)
+    st.dataframe(df_matchstats_1)
 
     # Sort teams alphabetically for the selectbox
 
