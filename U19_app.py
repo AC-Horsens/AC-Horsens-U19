@@ -1575,8 +1575,9 @@ def opposition_analysis():
     # Now attempt to rank the specified columns
     metrics_to_rank = [
         'PPDA', 'forward pass share', 'long pass share', 'pass per loss', 
-        'Own half losses %', 'Opponent half recoveries %','PPDA'
-    ]
+        'Own half losses %', 'Opponent half recoveries %'
+    ] + [f'{col}_per_match' for col in columns_to_per_match]  # Add per-match metrics
+
 
     # Rank the specified metrics
     for col in metrics_to_rank:
