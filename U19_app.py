@@ -1569,14 +1569,18 @@ def opposition_analysis():
     df_matchstats['forward pass share'] = df_matchstats['total_forwardPasses_per_match'] / df_matchstats['total_passes_per_match']
     df_matchstats['long pass share'] = df_matchstats['total_longPasses_per_match'] / df_matchstats['total_passes_per_match']
     df_matchstats['pass per loss'] = df_matchstats['total_passes_per_match'] / df_matchstats['total_losses_per_match']
-    df_matchstats['Own half losses %'] = df_matchstats['total_ownHalfLosses'] / df_matchstats['total_losses']
-    df_matchstats['Opponent half recoveries %'] = df_matchstats['total_opponentHalfRecoveries'] / df_matchstats['total_recoveries']
+    df_matchstats['Own half losses %'] = df_matchstats['total_ownHalfLosses_per_match'] / df_matchstats['total_losses_per_match']
+    df_matchstats['Opponent half recoveries %'] = df_matchstats['total_opponentHalfRecoveries_per_match'] / df_matchstats['total_recoveries_per_match']
 
     
     for col in columns_to_per_match:
         if col == 'total_losses':
             # Rank losses in ascending order (lower is better)
             df_matchstats[f'{col}_per_match_rank'] = df_matchstats[f'{col}_per_match'].rank(ascending=True, method='min')
+        elif col == 'PPDA':
+            # Rank losses in ascending order (lower is better)
+            df_matchstats[f'{col}_per_match_rank'] = df_matchstats[f'{col}_per_match'].rank(ascending=True, method='min')
+
         else:
             # Rank other columns in descending order (higher is better)
             df_matchstats[f'{col}_per_match_rank'] = df_matchstats[f'{col}_per_match'].rank(ascending=False, method='min')
