@@ -1467,57 +1467,58 @@ def dashboard():
             Data_types[st.session_state['selected_data3']]()
 
 def opposition_analysis():
-    # Load match statistics and PPDA data
+    # Display the full dataframe
     df_matchstats = load_matchstats()
     df_matchstats['label'] = df_matchstats['label'] + ' ' + df_matchstats['date']
     df_PPDA = load_PPDA()
     df_PPDA['PPDA'] = df_PPDA['PPDA'].round(2)
-
-
+    st.dataframe(df_PPDA)
     # Correct the date format in 'date' column if necessary
     df_matchstats['date'] = df_matchstats['date'].str.replace(r'GMT\+(\d)$', r'GMT+0\1:00')
     df_PPDA['date'] = df_PPDA['date'].str.replace(r'GMT\+(\d)$', r'GMT+0\1:00')
-
-    # Group and sum match statistics
-    df_matchstats = df_matchstats.groupby(['team.name', 'label', 'date']).sum().reset_index()
-    df_matchstats = df_matchstats.merge(df_PPDA, on=['team.name', 'label', 'date'], how='left')
+    df_matchstats = df_matchstats.groupby(['team.name','label', 'date']).sum().reset_index()
+    df_matchstats = df_matchstats.merge(df_PPDA, on=['team.name','label','date'], how='left')
     st.dataframe(df_matchstats)
 
-    # Convert the 'date' column to datetime objects
-    df_matchstats['date'] = pd.to_datetime(df_matchstats['date'], errors='coerce')
+    df_matchstats['label'] = np.where(df_matchstats['label'].notnull(), 1, df_matchstats['label'])
 
-    # Drop rows where date parsing failed
+    # Convert the 'date' column to datetime objects with mixed format handling
+    df_matchstats['date'] = pd.to_datetime(df_matchstats['date'], format='mixed', errors='coerce')
+
+    # Ensure all datetime objects are timezone-naive (remove timezones)
+    df_matchstats['date'] = df_matchstats['date'].dt.tz_convert(None)
     df_matchstats = df_matchstats.dropna(subset=['date'])
-    df_matchstats['date'] = df_matchstats['date'].dt.date
-
-    # Filter dates
+    # Drop rows where date parsing failed (NaT)
+    df_matchstats['date'] = df_matchstats['date'].astype(str)
+    df_matchstats['date'] = df_matchstats['date'].str.slice(0, -9)
+    df_matchstats['date'] = pd.to_datetime(df_matchstats['date'], format='%Y-%m-%d')
+    date_format = '%Y-%m-%d'
+    df_matchstats['date'] = pd.to_datetime(df_matchstats['date'], format=date_format)
     min_date = df_matchstats['date'].min()
     max_date = df_matchstats['date'].max()
+
     date_range = pd.date_range(start=min_date, end=max_date, freq='D')
-    date_options = date_range.strftime('%Y-%m-%d')
+    date_options = date_range.strftime(date_format)  # Convert dates to the specified format
+
+    default_end_date = date_options[-1]
+
+    default_end_date_dt = pd.to_datetime(default_end_date, format=date_format)
+    default_start_date_dt = default_end_date_dt - pd.Timedelta(days=2)  # Subtract 14 days
+    default_start_date = default_start_date_dt.strftime(date_format)  # Convert to string
 
     # Set the default start and end date values for the select_slider
     selected_start_date, selected_end_date = st.select_slider(
         'Choose dates',
         options=date_options,
-        value=(min_date.strftime('%Y-%m-%d'), max_date.strftime('%Y-%m-%d'))
+        value=(min_date.strftime(date_format), max_date.strftime(date_format))
     )
-
-    # Convert selected dates back to datetime
-    selected_start_date = pd.to_datetime(selected_start_date)
-    selected_end_date = pd.to_datetime(selected_end_date)
-
-    df_matchstats['date'] = pd.to_datetime(df_matchstats['date'])
-
-    # Filter the DataFrame based on selected dates
+    
+    selected_start_date = pd.to_datetime(selected_start_date, format=date_format)
+    selected_end_date = pd.to_datetime(selected_end_date, format=date_format)
     df_matchstats = df_matchstats[
         (df_matchstats['date'] >= selected_start_date) & (df_matchstats['date'] <= selected_end_date)
-    ]
-
-
-    # Drop unnecessary columns
-    df_matchstats = df_matchstats.drop(columns=['date', 'player.id', 'player.name', 'matchId', 'position_names', 'position_codes'])
-
+    ]    
+    df_matchstats = df_matchstats.drop(columns=['date','player.id','player.name','matchId','position_names','position_codes'])
     # Perform aggregation
     df_matchstats = df_matchstats.groupby(['team.name']).agg({
         'label': 'sum',
@@ -1546,6 +1547,7 @@ def opposition_analysis():
         'PPDA': 'mean'  # Keep PPDA as mean for the team
     }).reset_index()
 
+
     # Create "per match" columns by dividing by 'label', excluding PPDA
     columns_to_per_match = [
         'total_duels', 'total_duelsWon', 'total_defensiveDuels',
@@ -1558,9 +1560,9 @@ def opposition_analysis():
         'total_counterpressingRecoveries'
     ]
 
-    # Create "per match" columns
+    # Create "per match" columns by dividing by 'label'
     for col in columns_to_per_match:
-        if col in df_matchstats.columns:
+        if col in df_matchstats.columns:  # Check if the column exists
             df_matchstats[f'{col}_per_match'] = df_matchstats[col] / df_matchstats['label']
 
     # Calculate additional metrics
@@ -1570,12 +1572,13 @@ def opposition_analysis():
     df_matchstats['Own half losses %'] = df_matchstats['total_ownHalfLosses'] / df_matchstats['total_losses']
     df_matchstats['Opponent half recoveries %'] = df_matchstats['total_opponentHalfRecoveries'] / df_matchstats['total_recoveries']
 
-    # Rank the specified metrics
+    # Now attempt to rank the specified columns
     metrics_to_rank = [
         'PPDA', 'forward pass share', 'long pass share', 'pass per loss', 
         'Own half losses %', 'Opponent half recoveries %'
     ]
 
+    # Rank the specified metrics
     for col in metrics_to_rank:
         if col in df_matchstats.columns:
             if col == 'PPDA':
@@ -1585,8 +1588,9 @@ def opposition_analysis():
         else:
             st.warning(f"Column '{col}' not found for ranking.")
 
-    # Clean up column names to avoid duplicates
-    df_matchstats.columns = [col.replace('total_', '').replace('_per_match', '') for col in df_matchstats.columns]
+    # Remove 'total_' prefix and '_per_match' suffix from column names
+    df_matchstats.columns = [col.replace('total_', '') for col in df_matchstats.columns]
+    df_matchstats.columns = [col.replace('_per_match', '') for col in df_matchstats.columns]
 
     # Display the DataFrame
     st.dataframe(df_matchstats, hide_index=True)
@@ -1607,15 +1611,20 @@ def opposition_analysis():
     filtered_data_df = pd.DataFrame()
     for col in team_df.columns:
         if col.endswith('_rank'):
+            # Original column name without '_rank'
             original_col = col.replace('_rank', '')
+
+            # Filter based on target ranks
             team_ranks = team_df[col].values
             if any(rank in target_ranks for rank in team_ranks):
+                # If any rank is in the target ranks, add it to the filtered data
                 filtered_data_df[f'{original_col}_rank'] = team_df[col]
                 filtered_data_df[f'{original_col}_value'] = team_df[original_col]
 
     # Display the filtered data in two columns
     col1, col2 = st.columns([1, 2])
     with col1:
+        # Transpose the DataFrame for better display
         filtered_data_df = filtered_data_df.T
         st.dataframe(filtered_data_df)
     
