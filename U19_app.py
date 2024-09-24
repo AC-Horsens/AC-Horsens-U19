@@ -1521,9 +1521,9 @@ def opposition_analysis():
     df_matchstats = df_matchstats.drop(columns=['date','player.id','player.name','matchId','position_names','position_codes'])
     # Perform aggregation
     df_matchstats = df_matchstats.groupby(['team.name']).agg({
-        'label': 'sum',  # Example of a column to sum
-        'total_duels': 'sum',  # Example of another column to sum
-        'total_duelsWon': 'sum',  # Example of a column to average
+        'label': 'sum',
+        'total_duels': 'sum',
+        'total_duelsWon': 'sum',
         'total_defensiveDuels': 'sum',
         'total_defensiveDuelsWon': 'sum',
         'total_aerialDuelsWon': 'sum',
@@ -1544,10 +1544,13 @@ def opposition_analysis():
         'total_touchInBox': 'sum',
         'total_progressivePasses': 'sum',
         'total_counterpressingRecoveries': 'sum',
-        'PPDA' : 'mean'
-        }).reset_index()
-    
-    
+        'PPDA': 'mean'  # Keep PPDA as mean for the team
+    }).reset_index()
+
+    # Check the DataFrame columns after aggregation
+    st.write("Columns after aggregation:", df_matchstats.columns.tolist())
+
+    # Create "per match" columns by dividing by 'label', excluding PPDA
     columns_to_per_match = [
         'total_duels', 'total_duelsWon', 'total_defensiveDuels',
         'total_defensiveDuelsWon', 'total_aerialDuelsWon', 'total_passes',
@@ -1559,29 +1562,33 @@ def opposition_analysis():
         'total_counterpressingRecoveries'
     ]
 
-# Create "per match" columns by dividing by 'label'
+    # Create "per match" columns by dividing by 'label', but do not include PPDA
     for col in columns_to_per_match:
-        df_matchstats[f'{col}_per_match'] = df_matchstats[col] / df_matchstats['label']
-
-    columns_to_keep = ['team.name', 'label','PPDA'] + [f'{col}_per_match' for col in columns_to_per_match]
-    df_matchstats = df_matchstats[columns_to_keep]
-    
-    df_matchstats['forward pass share'] = df_matchstats['total_forwardPasses_per_match'] / df_matchstats['total_passes_per_match']
-    df_matchstats['long pass share'] = df_matchstats['total_longPasses_per_match'] / df_matchstats['total_passes_per_match']
-    df_matchstats['pass per loss'] = df_matchstats['total_passes_per_match'] / df_matchstats['total_losses_per_match']
-    df_matchstats['Own half losses %'] = df_matchstats['total_ownHalfLosses_per_match'] / df_matchstats['total_losses_per_match']
-    df_matchstats['Opponent half recoveries %'] = df_matchstats['total_opponentHalfRecoveries_per_match'] / df_matchstats['total_recoveries_per_match']
-
-    
-    for col in columns_to_per_match + ['PPDA', 'forward pass share', 'long pass share', 'pass per loss', 'Own half losses %', 'Opponent half recoveries %']:
-        if col == 'total_losses' or col == 'PPDA':
-            # Rank losses and PPDA in ascending order (lower is better)
-            df_matchstats[f'{col}_rank'] = df_matchstats[col].rank(ascending=True, method='min')
+        if col in df_matchstats.columns:  # Check if the column exists
+            df_matchstats[f'{col}_per_match'] = df_matchstats[col] / df_matchstats['label']
         else:
-            # Rank other columns in descending order (higher is better)
-            df_matchstats[f'{col}_rank'] = df_matchstats[col].rank(ascending=False, method='min')
+            st.warning(f"Column '{col}' not found for 'per_match' calculation.")
 
-    # Remove 'total_' prefix and '_per_match' suffix from column names for cleaner output
+    # Check columns again after creating per_match columns
+    st.write("Columns after per_match calculations:", df_matchstats.columns.tolist())
+
+    # Now, attempt to rank the specified columns, including PPDA
+    metrics_to_rank = [
+        'PPDA', 'forward pass share', 'long pass share', 'pass per loss', 
+        'Own half losses %', 'Opponent half recoveries %'
+    ]
+
+    # Rank the specified metrics
+    for col in metrics_to_rank:
+        if col in df_matchstats.columns:
+            if col == 'PPDA':
+                df_matchstats[f'{col}_rank'] = df_matchstats[col].rank(ascending=True, method='min')
+            else:
+                df_matchstats[f'{col}_rank'] = df_matchstats[col].rank(ascending=False, method='min')
+        else:
+            st.warning(f"Column '{col}' not found for ranking.")
+
+    # Remove 'total_' prefix and '_per_match' suffix from column names
     df_matchstats.columns = [col.replace('total_', '') for col in df_matchstats.columns]
     df_matchstats.columns = [col.replace('_per_match', '') for col in df_matchstats.columns]
 
