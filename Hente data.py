@@ -112,7 +112,6 @@ players_list = []
 for item in json_files:
     players_list.extend(item['players'])
 
-
 # Convert the events_list to a DataFrame
 matchstats = pd.DataFrame(players_list)
 matchstats.to_csv('matchstats.csv', index=False)
