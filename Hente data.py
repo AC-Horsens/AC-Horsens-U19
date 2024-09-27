@@ -117,9 +117,9 @@ matchstats = pd.DataFrame(players_list)
 matchstats.to_csv('matchstats.csv', index=False)
 import pandas as pd
 import ast
-matchstats = pd.read_csv(r'C:\Users\SéamusPeareBartholdy\Documents\GitHub\AC-Horsens-U19\matchstats.csv')
+matchstats = pd.read_csv(r'C:\Users\Seamus-admin\Documents\GitHub\AC-Horsens-U19\matchstats.csv')
 matchstats.rename(columns={'playerId': 'player.id'}, inplace=True)
-events = pd.read_csv(r'C:\Users\SéamusPeareBartholdy\Documents\GitHub\AC-Horsens-U19\events.csv')
+events = pd.read_csv(r'C:\Users\Seamus-admin\Documents\GitHub\AC-Horsens-U19\events.csv')
 name_and_id = events[['player.name','player.id','team.name','date','matchId','label']]
 name_and_id = name_and_id.drop_duplicates()
 matchstats = matchstats.merge(name_and_id)

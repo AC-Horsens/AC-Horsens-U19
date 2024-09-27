@@ -8,21 +8,21 @@ from datetime import date
 from fileinput import filename
 
 def load_data():
-    df_xg = pd.read_csv('C:/Users/SéamusPeareBartholdy/Documents/GitHub/AC-Horsens-U19/xg.csv')
+    df_xg = pd.read_csv('C:/Users/Seamus-admin/Documents/GitHub/AC-Horsens-U19/xg.csv')
     
-    events = pd.read_csv('C:/Users/SéamusPeareBartholdy/Documents/GitHub/AC-Horsens-U19/events.csv')
+    events = pd.read_csv('C:/Users/Seamus-admin/Documents/GitHub/AC-Horsens-U19/events.csv')
     
-    df_possession_stats = pd.read_csv('C:/Users/SéamusPeareBartholdy/Documents/GitHub/AC-Horsens-U19/terr_poss.csv')
+    df_possession_stats = pd.read_csv('C:/Users/Seamus-admin/Documents/GitHub/AC-Horsens-U19/terr_poss.csv')
     
-    df_xg_agg = pd.read_csv('C:/Users/SéamusPeareBartholdy/Documents/GitHub/AC-Horsens-U19/xg.csv')
+    df_xg_agg = pd.read_csv('C:/Users/Seamus-admin/Documents/GitHub/AC-Horsens-U19/xg.csv')
     
-    penalty_area_entry_counts = pd.read_csv('C:/Users/SéamusPeareBartholdy/Documents/GitHub/AC-Horsens-U19/penalty_area_entry_counts.csv')
+    penalty_area_entry_counts = pd.read_csv('C:/Users/Seamus-admin/Documents/GitHub/AC-Horsens-U19/penalty_area_entry_counts.csv')
     
-    df_matchstats = pd.read_csv('C:/Users/SéamusPeareBartholdy/Documents/GitHub/AC-Horsens-U19/matchstats.csv')
+    df_matchstats = pd.read_csv('C:/Users/Seamus-admin/Documents/GitHub/AC-Horsens-U19/matchstats.csv')
     
-    df_ppda = pd.read_csv('C:/Users/SéamusPeareBartholdy/Documents/GitHub/AC-Horsens-U19/ppda.csv')
+    df_ppda = pd.read_csv('C:/Users/Seamus-admin/Documents/GitHub/AC-Horsens-U19/ppda.csv')
     
-    df_groundduels = pd.read_csv('C:/Users/SéamusPeareBartholdy/Documents/GitHub/AC-Horsens-U19/groundduels_per_player.csv')
+    df_groundduels = pd.read_csv('C:/Users/Seamus-admin/Documents/GitHub/AC-Horsens-U19/groundduels_per_player.csv')
     
     return df_xg ,events, df_possession_stats,df_xg_agg, penalty_area_entry_counts, df_matchstats, df_ppda, df_groundduels
 
@@ -1119,7 +1119,7 @@ def create_pdf_progress_report(horsens_df, total_expected_points_combined):
 create_pdf_progress_report(horsens_df,total_expected_points_combined)
 
 
-folder_path = 'C:/Users/SéamusPeareBartholdy/Documents/GitHub/AC-Horsens-U19/'
+folder_path = 'C:/Users/Seamus-admin/Documents/GitHub/AC-Horsens-U19/'
 
 # List all files in the folder
 files = os.listdir(folder_path)
