@@ -4222,7 +4222,6 @@ Randers U19,"Midtjylland U19 - Randers U19, 1 - 2",N. Krogh,36.0,71.0,True,False
 Randers U19,"Midtjylland U19 - Randers U19, 1 - 2",L. Pedersen,30.0,60.0,True,True
 Midtjylland U19,"Midtjylland U19 - Randers U19, 1 - 2",,22.0,61.0,True,True
 Randers U19,"Midtjylland U19 - Randers U19, 1 - 2",C. Østergaard,27.0,36.0,True,True
-Midtjylland U19,"Midtjylland U19 - Randers U19, 1 - 2",S. Lodberg,30.0,79.0,True,False
 Midtjylland U19,"Midtjylland U19 - Randers U19, 1 - 2",M. Konradsen,33.0,68.0,True,False
 Midtjylland U19,"Midtjylland U19 - Randers U19, 1 - 2",L. Nielsen,33.0,36.0,False,False
 Randers U19,"Midtjylland U19 - Randers U19, 1 - 2",L. Pedersen,24.0,62.0,True,False
@@ -4480,7 +4479,7 @@ AaB U19,"Silkeborg U19 - AaB U19, 2 - 2 (P)",,87.0,88.0,True,True
 Silkeborg U19,"Silkeborg U19 - AaB U19, 2 - 2 (P)",,6.0,20.0,False,False
 AaB U19,"Silkeborg U19 - AaB U19, 2 - 2 (P)",B. Pihl Jørgensen,42.0,22.0,True,False
 Silkeborg U19,"Silkeborg U19 - AaB U19, 2 - 2 (P)",W. Kirk,35.0,78.0,True,True
-Silkeborg U19,"Silkeborg U19 - AaB U19, 2 - 2 (P)",,32.0,62.0,True,True
+Silkeborg U19,"Silkeborg U19 - AaB U19, 2 - 2 (P)",M. Øxenberg,33.0,65.0,True,True
 Silkeborg U19,"Silkeborg U19 - AaB U19, 2 - 2 (P)",,63.0,60.0,True,True
 AaB U19,"Silkeborg U19 - AaB U19, 2 - 2 (P)",A. Diagne,36.0,39.0,False,False
 AaB U19,"Silkeborg U19 - AaB U19, 2 - 2 (P)",M. Holt,12.0,71.0,True,False
@@ -4526,6 +4525,7 @@ AaB U19,"Silkeborg U19 - AaB U19, 2 - 2 (P)",C. Tcacenco,38.0,85.0,True,False
 Silkeborg U19,"Silkeborg U19 - AaB U19, 2 - 2 (P)",S. Stüker,66.0,93.0,False,False
 Silkeborg U19,"Silkeborg U19 - AaB U19, 2 - 2 (P)",S. Stüker,62.0,78.0,False,False
 Silkeborg U19,"Silkeborg U19 - AaB U19, 2 - 2 (P)",,47.0,86.0,True,True
+AaB U19,"Silkeborg U19 - AaB U19, 2 - 2 (P)",,51.0,12.0,False,False
 AaB U19,"Silkeborg U19 - AaB U19, 2 - 2 (P)",A. Diagne,23.0,35.0,True,False
 Silkeborg U19,"Silkeborg U19 - AaB U19, 2 - 2 (P)",G. Smith Balle,69.0,49.0,True,False
 Silkeborg U19,"Silkeborg U19 - AaB U19, 2 - 2 (P)",M. Øxenberg,64.0,48.0,True,True
@@ -4796,3 +4796,1043 @@ Horsens U19,"Brøndby U19 - Horsens U19, 2 - 3",,44.0,76.0,True,False
 Horsens U19,"Brøndby U19 - Horsens U19, 2 - 3",A. Arouna,67.0,82.0,True,False
 Brøndby U19,"Brøndby U19 - Horsens U19, 2 - 3",R. Lynder,9.0,89.0,True,True
 Horsens U19,"Brøndby U19 - Horsens U19, 2 - 3",R. Nybo,16.0,67.0,True,False
+AaB U19,"AaB U19 - København U19, 2 - 1",B. Skovgaard,95.0,8.0,False,False
+AaB U19,"AaB U19 - København U19, 2 - 1",A. Diagne,55.0,57.0,True,False
+AaB U19,"AaB U19 - København U19, 2 - 1",M. Holt,55.0,54.0,True,False
+København U19,"AaB U19 - København U19, 2 - 1",N. Blicher,41.0,16.0,True,False
+AaB U19,"AaB U19 - København U19, 2 - 1",C. Tcacenco,73.0,76.0,False,False
+AaB U19,"AaB U19 - København U19, 2 - 1",C. Tcacenco,67.0,89.0,True,False
+AaB U19,"AaB U19 - København U19, 2 - 1",A. Diagne,71.0,85.0,True,True
+København U19,"AaB U19 - København U19, 2 - 1",,4.0,15.0,True,False
+København U19,"AaB U19 - København U19, 2 - 1",B. Llana,4.0,13.0,False,False
+AaB U19,"AaB U19 - København U19, 2 - 1",,77.0,27.0,False,False
+København U19,"AaB U19 - København U19, 2 - 1",,90.0,86.0,True,True
+AaB U19,"AaB U19 - København U19, 2 - 1",F. Nygaard,42.0,18.0,True,False
+København U19,"AaB U19 - København U19, 2 - 1",A. Chiakha,75.0,28.0,True,False
+København U19,"AaB U19 - København U19, 2 - 1",T. Birch,13.0,34.0,True,False
+AaB U19,"AaB U19 - København U19, 2 - 1",C. Tcacenco,56.0,82.0,True,False
+AaB U19,"AaB U19 - København U19, 2 - 1",B. Pihl Jørgensen,50.0,21.0,False,False
+AaB U19,"AaB U19 - København U19, 2 - 1",B. Pihl Jørgensen,33.0,7.0,False,False
+AaB U19,"AaB U19 - København U19, 2 - 1",F. Nygaard,27.0,11.0,False,False
+AaB U19,"AaB U19 - København U19, 2 - 1",M. Holt,31.0,22.0,True,False
+København U19,"AaB U19 - København U19, 2 - 1",H. Bidstrup,11.0,64.0,True,False
+AaB U19,"AaB U19 - København U19, 2 - 1",A. Diagne,64.0,33.0,True,True
+København U19,"AaB U19 - København U19, 2 - 1",H. Németh,54.0,69.0,False,False
+København U19,"AaB U19 - København U19, 2 - 1",,66.0,41.0,False,False
+København U19,"AaB U19 - København U19, 2 - 1",R. Risnæs,69.0,20.0,False,False
+AaB U19,"AaB U19 - København U19, 2 - 1",B. Skovgaard,29.0,27.0,True,True
+København U19,"AaB U19 - København U19, 2 - 1",O. Højer,46.0,45.0,False,False
+København U19,"AaB U19 - København U19, 2 - 1",,33.0,52.0,True,False
+København U19,"AaB U19 - København U19, 2 - 1",A. Chiakha,22.0,89.0,True,False
+AaB U19,"AaB U19 - København U19, 2 - 1",B. Skovgaard,73.0,15.0,True,False
+AaB U19,"AaB U19 - København U19, 2 - 1",M. Holt,59.0,23.0,True,False
+AaB U19,"AaB U19 - København U19, 2 - 1",,67.0,35.0,False,False
+København U19,"AaB U19 - København U19, 2 - 1",W. Glintvad,56.0,68.0,True,False
+AaB U19,"AaB U19 - København U19, 2 - 1",,22.0,27.0,True,False
+AaB U19,"AaB U19 - København U19, 2 - 1",C. Tcacenco,18.0,83.0,True,False
+AaB U19,"AaB U19 - København U19, 2 - 1",C. Tcacenco,21.0,77.0,True,True
+København U19,"AaB U19 - København U19, 2 - 1",,88.0,27.0,True,False
+København U19,"AaB U19 - København U19, 2 - 1",T. Birch,58.0,77.0,False,False
+København U19,"AaB U19 - København U19, 2 - 1",,57.0,12.0,True,True
+AaB U19,"AaB U19 - København U19, 2 - 1",,39.0,89.0,False,False
+AaB U19,"AaB U19 - København U19, 2 - 1",F. Nygaard,4.0,14.0,True,False
+København U19,"AaB U19 - København U19, 2 - 1",H. Bidstrup,66.0,88.0,True,True
+AaB U19,"AaB U19 - København U19, 2 - 1",M. Kjølby,19.0,54.0,True,False
+AaB U19,"AaB U19 - København U19, 2 - 1",B. Skovgaard,33.0,40.0,False,False
+København U19,"AaB U19 - København U19, 2 - 1",A. Chiakha,95.0,21.0,True,False
+AaB U19,"AaB U19 - København U19, 2 - 1",M. Kjølby,25.0,59.0,True,False
+AaB U19,"AaB U19 - København U19, 2 - 1",,12.0,31.0,False,False
+AaB U19,"AaB U19 - København U19, 2 - 1",,45.0,33.0,False,False
+AaB U19,"AaB U19 - København U19, 2 - 1",N. Andersen,71.0,92.0,True,False
+København U19,"AaB U19 - København U19, 2 - 1",H. Németh,44.0,31.0,False,False
+AaB U19,"AaB U19 - København U19, 2 - 1",M. Samson,5.0,37.0,True,False
+AaB U19,"AaB U19 - København U19, 2 - 1",B. Skovgaard,38.0,63.0,True,True
+AaB U19,"AaB U19 - København U19, 2 - 1",F. Nygaard,30.0,27.0,True,True
+København U19,"AaB U19 - København U19, 2 - 1",H. Németh,67.0,65.0,False,False
+København U19,"AaB U19 - København U19, 2 - 1",H. Németh,45.0,53.0,False,False
+København U19,"AaB U19 - København U19, 2 - 1",O. Højer,66.0,6.0,False,False
+København U19,"AaB U19 - København U19, 2 - 1",T. Birch,59.0,24.0,False,False
+København U19,"AaB U19 - København U19, 2 - 1",A. Chiakha,67.0,30.0,True,True
+AaB U19,"AaB U19 - København U19, 2 - 1",,33.0,83.0,False,False
+København U19,"AaB U19 - København U19, 2 - 1",H. Németh,63.0,14.0,True,False
+København U19,"AaB U19 - København U19, 2 - 1",O. Højer,58.0,13.0,True,False
+København U19,"AaB U19 - København U19, 2 - 1",A. Chiakha,78.0,61.0,True,False
+København U19,"AaB U19 - København U19, 2 - 1",H. Bidstrup,81.0,85.0,True,False
+København U19,"AaB U19 - København U19, 2 - 1",W. Glintvad,58.0,66.0,True,False
+AaB U19,"AaB U19 - København U19, 2 - 1",B. Pihl Jørgensen,68.0,14.0,True,False
+AaB U19,"AaB U19 - København U19, 2 - 1",F. Nygaard,68.0,11.0,True,False
+AaB U19,"AaB U19 - København U19, 2 - 1",A. Diagne,58.0,30.0,True,False
+København U19,"AaB U19 - København U19, 2 - 1",H. Németh,24.0,75.0,True,True
+AaB U19,"AaB U19 - København U19, 2 - 1",F. Nygaard,78.0,32.0,True,True
+København U19,"AaB U19 - København U19, 2 - 1",B. Llana,8.0,68.0,True,False
+AaB U19,"AaB U19 - København U19, 2 - 1",V. Møller,80.0,22.0,False,False
+AaB U19,"AaB U19 - København U19, 2 - 1",B. Pihl Jørgensen,28.0,19.0,False,False
+AaB U19,"AaB U19 - København U19, 2 - 1",,29.0,72.0,False,False
+AaB U19,"AaB U19 - København U19, 2 - 1",M. Kjølby,22.0,59.0,False,False
+København U19,"AaB U19 - København U19, 2 - 1",N. Blicher,70.0,13.0,True,False
+København U19,"AaB U19 - København U19, 2 - 1",,70.0,12.0,False,False
+København U19,"AaB U19 - København U19, 2 - 1",H. Bidstrup,61.0,85.0,True,False
+København U19,"AaB U19 - København U19, 2 - 1",O. Højer,34.0,21.0,True,False
+København U19,"AaB U19 - København U19, 2 - 1",A. Chiakha,56.0,33.0,False,False
+AaB U19,"AaB U19 - København U19, 2 - 1",M. Holt,26.0,59.0,True,False
+AaB U19,"AaB U19 - København U19, 2 - 1",,21.0,58.0,True,False
+København U19,"AaB U19 - København U19, 2 - 1",H. Németh,64.0,44.0,False,False
+København U19,"AaB U19 - København U19, 2 - 1",O. Højer,68.0,13.0,True,False
+København U19,"AaB U19 - København U19, 2 - 1",R. Risnæs,75.0,11.0,True,False
+København U19,"AaB U19 - København U19, 2 - 1",H. Németh,70.0,72.0,True,False
+København U19,"AaB U19 - København U19, 2 - 1",T. Birch,59.0,78.0,False,False
+København U19,"AaB U19 - København U19, 2 - 1",R. Risnæs,68.0,48.0,False,False
+København U19,"AaB U19 - København U19, 2 - 1",A. Chiakha,59.0,35.0,False,False
+AaB U19,"AaB U19 - København U19, 2 - 1",M. Holt,45.0,64.0,True,False
+København U19,"AaB U19 - København U19, 2 - 1",W. Glintvad,25.0,55.0,True,False
+AaB U19,"AaB U19 - København U19, 2 - 1",M. Holt,57.0,18.0,False,False
+AaB U19,"AaB U19 - København U19, 2 - 1",M. Holt,41.0,12.0,True,False
+AaB U19,"AaB U19 - København U19, 2 - 1",M. Kjølby,15.0,70.0,True,False
+AaB U19,"AaB U19 - København U19, 2 - 1",M. Kjølby,24.0,70.0,True,False
+AaB U19,"AaB U19 - København U19, 2 - 1",M. Kjølby,26.0,61.0,False,False
+København U19,"AaB U19 - København U19, 2 - 1",W. Renecke,36.0,25.0,True,False
+AaB U19,"AaB U19 - København U19, 2 - 1",B. Pihl Jørgensen,69.0,10.0,False,False
+AaB U19,"AaB U19 - København U19, 2 - 1",M. Samson,34.0,12.0,True,True
+København U19,"AaB U19 - København U19, 2 - 1",A. Chiakha,62.0,91.0,False,False
+København U19,"AaB U19 - København U19, 2 - 1",T. Birch,32.0,26.0,True,False
+AaB U19,"AaB U19 - København U19, 2 - 1",A. Diagne,76.0,79.0,True,False
+København U19,"AaB U19 - København U19, 2 - 1",N. Blicher,11.0,16.0,True,True
+København U19,"AaB U19 - København U19, 2 - 1",H. Bidstrup,25.0,87.0,True,True
+AaB U19,"AaB U19 - København U19, 2 - 1",,81.0,22.0,False,False
+København U19,"AaB U19 - København U19, 2 - 1",A. Chiakha,59.0,36.0,False,False
+AaB U19,"AaB U19 - København U19, 2 - 1",F. Nygaard,19.0,36.0,True,True
+AaB U19,"AaB U19 - København U19, 2 - 1",B. Pihl Jørgensen,67.0,15.0,True,False
+AaB U19,"AaB U19 - København U19, 2 - 1",M. Holt,67.0,15.0,True,True
+København U19,"AaB U19 - København U19, 2 - 1",H. Bidstrup,4.0,78.0,True,False
+København U19,"AaB U19 - København U19, 2 - 1",,64.0,88.0,True,True
+København U19,"AaB U19 - København U19, 2 - 1",O. Højer,71.0,50.0,False,False
+København U19,"AaB U19 - København U19, 2 - 1",,29.0,56.0,True,True
+AaB U19,"AaB U19 - København U19, 2 - 1",M. Holt,68.0,30.0,True,False
+København U19,"AaB U19 - København U19, 2 - 1",T. Panduro,58.0,40.0,True,True
+AaB U19,"AaB U19 - København U19, 2 - 1",,6.0,72.0,True,False
+København U19,"AaB U19 - København U19, 2 - 1",,90.0,24.0,True,False
+København U19,"AaB U19 - København U19, 2 - 1",A. Chiakha,88.0,10.0,True,True
+AaB U19,"AaB U19 - København U19, 2 - 1",C. Tcacenco,16.0,87.0,True,True
+København U19,"AaB U19 - København U19, 2 - 1",W. Renecke,61.0,28.0,True,False
+København U19,"AaB U19 - København U19, 2 - 1",H. Bidstrup,19.0,77.0,False,False
+AaB U19,"AaB U19 - København U19, 2 - 1",M. Holt,35.0,83.0,False,False
+AaB U19,"AaB U19 - København U19, 2 - 1",M. Holt,27.0,68.0,True,False
+AaB U19,"AaB U19 - København U19, 2 - 1",M. Holt,36.0,64.0,False,False
+AaB U19,"AaB U19 - København U19, 2 - 1",A. Diagne,24.0,62.0,False,False
+København U19,"AaB U19 - København U19, 2 - 1",,32.0,52.0,True,True
+AaB U19,"AaB U19 - København U19, 2 - 1",N. Andersen,53.0,47.0,False,False
+København U19,"AaB U19 - København U19, 2 - 1",H. Bidstrup,42.0,75.0,True,False
+København U19,"AaB U19 - København U19, 2 - 1",,12.0,94.0,True,True
+København U19,"AaB U19 - København U19, 2 - 1",,26.0,74.0,True,False
+AaB U19,"AaB U19 - København U19, 2 - 1",B. Pihl Jørgensen,93.0,16.0,False,False
+AaB U19,"AaB U19 - København U19, 2 - 1",M. Samson,62.0,4.0,True,False
+København U19,"AaB U19 - København U19, 2 - 1",A. Chiakha,36.0,89.0,True,False
+København U19,"AaB U19 - København U19, 2 - 1",T. Birch,27.0,87.0,True,False
+København U19,"AaB U19 - København U19, 2 - 1",H. Bidstrup,21.0,93.0,True,True
+AaB U19,"AaB U19 - København U19, 2 - 1",A. Diagne,71.0,3.0,False,False
+AaB U19,"AaB U19 - København U19, 2 - 1",N. Andersen,52.0,39.0,True,False
+AaB U19,"AaB U19 - København U19, 2 - 1",F. Nygaard,13.0,16.0,False,False
+København U19,"AaB U19 - København U19, 2 - 1",,94.0,70.0,True,False
+AaB U19,"AaB U19 - København U19, 2 - 1",,7.0,87.0,True,False
+AaB U19,"AaB U19 - København U19, 2 - 1",B. Skovgaard,13.0,83.0,True,False
+København U19,"AaB U19 - København U19, 2 - 1",A. Chiakha,88.0,23.0,True,False
+København U19,"AaB U19 - København U19, 2 - 1",,80.0,20.0,True,False
+København U19,"AaB U19 - København U19, 2 - 1",W. Renecke,62.0,14.0,True,True
+AaB U19,"AaB U19 - København U19, 2 - 1",A. Diagne,46.0,90.0,False,False
+AaB U19,"AaB U19 - København U19, 2 - 1",F. Nygaard,35.0,14.0,False,False
+AaB U19,"AaB U19 - København U19, 2 - 1",B. Pihl Jørgensen,16.0,11.0,True,False
+København U19,"AaB U19 - København U19, 2 - 1",T. Birch,76.0,19.0,True,False
+København U19,"AaB U19 - København U19, 2 - 1",T. Panduro,69.0,42.0,False,False
+København U19,"AaB U19 - København U19, 2 - 1",H. Bidstrup,36.0,81.0,True,False
+København U19,"AaB U19 - København U19, 2 - 1",L. West,25.0,75.0,True,False
+AaB U19,"AaB U19 - København U19, 2 - 1",F. Nygaard,74.0,17.0,True,False
+AaB U19,"AaB U19 - København U19, 2 - 1",A. Diagne,63.0,46.0,True,False
+København U19,"AaB U19 - København U19, 2 - 1",L. West,56.0,62.0,True,True
+AaB U19,"AaB U19 - København U19, 2 - 1",C. Tcacenco,16.0,82.0,False,False
+AaB U19,"AaB U19 - København U19, 2 - 1",B. Pihl Jørgensen,14.0,4.0,True,False
+København U19,"AaB U19 - København U19, 2 - 1",O. Højer,56.0,49.0,True,False
+København U19,"AaB U19 - København U19, 2 - 1",N. Blicher,56.0,39.0,True,True
+AaB U19,"AaB U19 - København U19, 2 - 1",B. Skovgaard,40.0,78.0,True,False
+AaB U19,"AaB U19 - København U19, 2 - 1",A. Diagne,29.0,73.0,False,False
+København U19,"AaB U19 - København U19, 2 - 1",H. Bidstrup,42.0,79.0,True,False
+København U19,"AaB U19 - København U19, 2 - 1",L. West,46.0,81.0,False,False
+AaB U19,"AaB U19 - København U19, 2 - 1",C. Tcacenco,19.0,71.0,True,False
+København U19,"AaB U19 - København U19, 2 - 1",O. Højer,86.0,25.0,True,False
+AaB U19,"AaB U19 - København U19, 2 - 1",M. Holt,42.0,26.0,True,False
+København U19,"AaB U19 - København U19, 2 - 1",R. Risnæs,81.0,14.0,True,False
+København U19,"AaB U19 - København U19, 2 - 1",T. Birch,75.0,23.0,True,True
+AaB U19,"AaB U19 - København U19, 2 - 1",N. Andersen,31.0,90.0,True,False
+AaB U19,"AaB U19 - København U19, 2 - 1",M. Samson,25.0,45.0,False,False
+København U19,"AaB U19 - København U19, 2 - 1",,53.0,75.0,True,True
+AaB U19,"AaB U19 - København U19, 2 - 1",M. Holt,31.0,28.0,False,True
+København U19,"AaB U19 - København U19, 2 - 1",,66.0,57.0,True,False
+AaB U19,"AaB U19 - København U19, 2 - 1",M. Holt,58.0,51.0,True,False
+AaB U19,"AaB U19 - København U19, 2 - 1",M. Samson,24.0,29.0,True,False
+København U19,"AaB U19 - København U19, 2 - 1",N. Blicher,69.0,42.0,True,False
+København U19,"AaB U19 - København U19, 2 - 1",,57.0,88.0,True,False
+AaB U19,"AaB U19 - København U19, 2 - 1",M. Holt,31.0,34.0,False,False
+København U19,"AaB U19 - København U19, 2 - 1",,73.0,33.0,True,False
+København U19,"AaB U19 - København U19, 2 - 1",T. Birch,58.0,84.0,True,False
+København U19,"AaB U19 - København U19, 2 - 1",R. Risnæs,75.0,36.0,True,True
+AaB U19,"AaB U19 - København U19, 2 - 1",A. Diagne,27.0,63.0,True,False
+AaB U19,"AaB U19 - København U19, 2 - 1",A. Diagne,24.0,39.0,True,False
+København U19,"AaB U19 - København U19, 2 - 1",L. West,61.0,86.0,False,False
+AaB U19,"AaB U19 - København U19, 2 - 1",M. Kjølby,10.0,78.0,True,False
+København U19,"AaB U19 - København U19, 2 - 1",O. Højer,90.0,10.0,True,True
+AaB U19,"AaB U19 - København U19, 2 - 1",N. Andersen,13.0,81.0,True,True
+København U19,"AaB U19 - København U19, 2 - 1",W. Renecke,21.0,18.0,True,False
+AaB U19,"AaB U19 - København U19, 2 - 1",B. Skovgaard,53.0,54.0,True,True
+København U19,"AaB U19 - København U19, 2 - 1",R. Risnæs,78.0,81.0,False,False
+København U19,"AaB U19 - København U19, 2 - 1",T. Panduro,67.0,70.0,True,False
+AaB U19,"AaB U19 - København U19, 2 - 1",N. Stojanovic,10.0,11.0,True,False
+AaB U19,"AaB U19 - København U19, 2 - 1",E. Nymann,27.0,85.0,True,True
+København U19,"AaB U19 - København U19, 2 - 1",W. Renecke,17.0,29.0,True,False
+København U19,"AaB U19 - København U19, 2 - 1",,4.0,20.0,True,True
+AaB U19,"AaB U19 - København U19, 2 - 1",E. Nymann,33.0,91.0,True,False
+AaB U19,"AaB U19 - København U19, 2 - 1",E. Nymann,12.0,87.0,True,True
+København U19,"AaB U19 - København U19, 2 - 1",,61.0,14.0,True,False
+København U19,"AaB U19 - København U19, 2 - 1",N. Blicher,49.0,13.0,True,False
+København U19,"AaB U19 - København U19, 2 - 1",L. West,43.0,63.0,True,True
+AaB U19,"AaB U19 - København U19, 2 - 1",A. Diagne,41.0,63.0,False,False
+AaB U19,"AaB U19 - København U19, 2 - 1",A. Diagne,30.0,63.0,False,False
+AaB U19,"AaB U19 - København U19, 2 - 1",M. Holt,58.0,85.0,False,False
+AaB U19,"AaB U19 - København U19, 2 - 1",F. Nygaard,33.0,14.0,True,True
+København U19,"AaB U19 - København U19, 2 - 1",,6.0,92.0,True,False
+København U19,"AaB U19 - København U19, 2 - 1",G. Ankamafio,3.0,89.0,True,False
+København U19,"AaB U19 - København U19, 2 - 1",N. Jönsson,7.0,87.0,True,False
+AaB U19,"AaB U19 - København U19, 2 - 1",,21.0,78.0,True,False
+København U19,"AaB U19 - København U19, 2 - 1",G. Ankamafio,56.0,92.0,True,False
+AaB U19,"AaB U19 - København U19, 2 - 1",M. Ritter,44.0,9.0,True,False
+AaB U19,"AaB U19 - København U19, 2 - 1",N. Stojanovic,44.0,19.0,False,False
+AaB U19,"AaB U19 - København U19, 2 - 1",,45.0,20.0,False,False
+København U19,"AaB U19 - København U19, 2 - 1",G. Ankamafio,38.0,60.0,False,False
+Esbjerg U19,"Horsens U19 - Esbjerg U19, 2 - 0",F. Flaskager,29.0,12.0,True,True
+Horsens U19,"Horsens U19 - Esbjerg U19, 2 - 0",,71.0,78.0,True,True
+Esbjerg U19,"Horsens U19 - Esbjerg U19, 2 - 0",,22.0,30.0,True,False
+Horsens U19,"Horsens U19 - Esbjerg U19, 2 - 0",A. Arouna,35.0,97.0,False,False
+Horsens U19,"Horsens U19 - Esbjerg U19, 2 - 0",P. Rolke,34.0,80.0,False,False
+Esbjerg U19,"Horsens U19 - Esbjerg U19, 2 - 0",A. Kristiansen,57.0,29.0,False,False
+Esbjerg U19,"Horsens U19 - Esbjerg U19, 2 - 0",,67.0,79.0,False,False
+Esbjerg U19,"Horsens U19 - Esbjerg U19, 2 - 0",E. Larsen,28.0,89.0,False,False
+Horsens U19,"Horsens U19 - Esbjerg U19, 2 - 0",A. Mandrup,74.0,23.0,True,False
+Horsens U19,"Horsens U19 - Esbjerg U19, 2 - 0",M. Andy,61.0,34.0,True,False
+Esbjerg U19,"Horsens U19 - Esbjerg U19, 2 - 0",K. Pedersen,52.0,67.0,True,False
+Horsens U19,"Horsens U19 - Esbjerg U19, 2 - 0",E. Favor Fully,31.0,40.0,True,True
+Horsens U19,"Horsens U19 - Esbjerg U19, 2 - 0",P. Rolke,36.0,95.0,True,True
+Esbjerg U19,"Horsens U19 - Esbjerg U19, 2 - 0",J. Lucena,37.0,92.0,True,False
+Horsens U19,"Horsens U19 - Esbjerg U19, 2 - 0",,21.0,28.0,True,False
+Horsens U19,"Horsens U19 - Esbjerg U19, 2 - 0",,22.0,38.0,True,False
+Esbjerg U19,"Horsens U19 - Esbjerg U19, 2 - 0",K. Pedersen,19.0,35.0,True,False
+Horsens U19,"Horsens U19 - Esbjerg U19, 2 - 0",E. Favor Fully,22.0,28.0,True,True
+Esbjerg U19,"Horsens U19 - Esbjerg U19, 2 - 0",,55.0,6.0,True,False
+Horsens U19,"Horsens U19 - Esbjerg U19, 2 - 0",,25.0,84.0,True,False
+Horsens U19,"Horsens U19 - Esbjerg U19, 2 - 0",A. Arouna,78.0,94.0,False,False
+Esbjerg U19,"Horsens U19 - Esbjerg U19, 2 - 0",A. Kristiansen,79.0,21.0,False,False
+Horsens U19,"Horsens U19 - Esbjerg U19, 2 - 0",A. Moro,57.0,64.0,False,False
+Esbjerg U19,"Horsens U19 - Esbjerg U19, 2 - 0",A. Kristiansen,69.0,34.0,True,False
+Esbjerg U19,"Horsens U19 - Esbjerg U19, 2 - 0",M. Kruse,37.0,26.0,True,True
+Horsens U19,"Horsens U19 - Esbjerg U19, 2 - 0",A. Moro,34.0,28.0,True,True
+Esbjerg U19,"Horsens U19 - Esbjerg U19, 2 - 0",K. Pedersen,64.0,64.0,True,True
+Esbjerg U19,"Horsens U19 - Esbjerg U19, 2 - 0",A. Lund Jørgensen,45.0,94.0,True,False
+Esbjerg U19,"Horsens U19 - Esbjerg U19, 2 - 0",E. Larsen,39.0,94.0,True,False
+Horsens U19,"Horsens U19 - Esbjerg U19, 2 - 0",M. Andy,93.0,12.0,False,True
+Esbjerg U19,"Horsens U19 - Esbjerg U19, 2 - 0",E. Omerovic,6.0,88.0,False,False
+Esbjerg U19,"Horsens U19 - Esbjerg U19, 2 - 0",,46.0,69.0,True,False
+Esbjerg U19,"Horsens U19 - Esbjerg U19, 2 - 0",K. Pedersen,53.0,33.0,True,False
+Esbjerg U19,"Horsens U19 - Esbjerg U19, 2 - 0",M. Kruse,42.0,38.0,True,True
+Horsens U19,"Horsens U19 - Esbjerg U19, 2 - 0",S. Traoré,49.0,50.0,True,True
+Horsens U19,"Horsens U19 - Esbjerg U19, 2 - 0",S. Traoré,86.0,32.0,True,True
+Esbjerg U19,"Horsens U19 - Esbjerg U19, 2 - 0",A. Drexel,9.0,61.0,True,False
+Horsens U19,"Horsens U19 - Esbjerg U19, 2 - 0",,69.0,11.0,False,False
+Esbjerg U19,"Horsens U19 - Esbjerg U19, 2 - 0",M. Kruse,95.0,93.0,True,False
+Esbjerg U19,"Horsens U19 - Esbjerg U19, 2 - 0",E. Larsen,74.0,91.0,True,False
+Horsens U19,"Horsens U19 - Esbjerg U19, 2 - 0",,21.0,37.0,True,False
+Horsens U19,"Horsens U19 - Esbjerg U19, 2 - 0",E. Favor Fully,20.0,60.0,False,False
+Esbjerg U19,"Horsens U19 - Esbjerg U19, 2 - 0",M. Kruse,63.0,26.0,False,False
+Esbjerg U19,"Horsens U19 - Esbjerg U19, 2 - 0",J. Lucena,60.0,91.0,True,False
+Esbjerg U19,"Horsens U19 - Esbjerg U19, 2 - 0",E. Larsen,69.0,90.0,True,False
+Esbjerg U19,"Horsens U19 - Esbjerg U19, 2 - 0",A. Lund Jørgensen,79.0,21.0,True,False
+Esbjerg U19,"Horsens U19 - Esbjerg U19, 2 - 0",R. Zwinge,39.0,30.0,True,True
+Horsens U19,"Horsens U19 - Esbjerg U19, 2 - 0",,55.0,82.0,True,True
+Esbjerg U19,"Horsens U19 - Esbjerg U19, 2 - 0",A. Kristiansen,49.0,20.0,True,False
+Esbjerg U19,"Horsens U19 - Esbjerg U19, 2 - 0",,48.0,15.0,False,False
+Horsens U19,"Horsens U19 - Esbjerg U19, 2 - 0",A. Mandrup,25.0,25.0,False,False
+Horsens U19,"Horsens U19 - Esbjerg U19, 2 - 0",P. Rolke,13.0,86.0,False,False
+Esbjerg U19,"Horsens U19 - Esbjerg U19, 2 - 0",F. Flaskager,78.0,15.0,False,False
+Esbjerg U19,"Horsens U19 - Esbjerg U19, 2 - 0",M. Kruse,64.0,29.0,False,False
+Esbjerg U19,"Horsens U19 - Esbjerg U19, 2 - 0",A. Kristiansen,36.0,35.0,True,False
+Horsens U19,"Horsens U19 - Esbjerg U19, 2 - 0",A. Mandrup,77.0,22.0,True,False
+Horsens U19,"Horsens U19 - Esbjerg U19, 2 - 0",A. Moro,46.0,27.0,False,False
+Esbjerg U19,"Horsens U19 - Esbjerg U19, 2 - 0",K. Pedersen,66.0,51.0,True,False
+Esbjerg U19,"Horsens U19 - Esbjerg U19, 2 - 0",,9.0,64.0,False,False
+Horsens U19,"Horsens U19 - Esbjerg U19, 2 - 0",,61.0,48.0,True,False
+Esbjerg U19,"Horsens U19 - Esbjerg U19, 2 - 0",M. Svane,29.0,22.0,True,False
+Esbjerg U19,"Horsens U19 - Esbjerg U19, 2 - 0",A. Lund Jørgensen,43.0,33.0,True,False
+Esbjerg U19,"Horsens U19 - Esbjerg U19, 2 - 0",K. Pedersen,59.0,35.0,True,False
+Esbjerg U19,"Horsens U19 - Esbjerg U19, 2 - 0",,17.0,64.0,True,False
+Esbjerg U19,"Horsens U19 - Esbjerg U19, 2 - 0",E. Omerovic,8.0,28.0,False,False
+Esbjerg U19,"Horsens U19 - Esbjerg U19, 2 - 0",M. Svane,3.0,25.0,True,False
+Esbjerg U19,"Horsens U19 - Esbjerg U19, 2 - 0",J. Lucena,17.0,73.0,True,False
+Esbjerg U19,"Horsens U19 - Esbjerg U19, 2 - 0",A. Lund Jørgensen,73.0,20.0,True,False
+Esbjerg U19,"Horsens U19 - Esbjerg U19, 2 - 0",K. Pedersen,67.0,24.0,False,False
+Esbjerg U19,"Horsens U19 - Esbjerg U19, 2 - 0",A. Lund Jørgensen,72.0,33.0,True,False
+Horsens U19,"Horsens U19 - Esbjerg U19, 2 - 0",A. Moro,34.0,62.0,False,False
+Esbjerg U19,"Horsens U19 - Esbjerg U19, 2 - 0",A. Kristiansen,74.0,10.0,True,False
+Esbjerg U19,"Horsens U19 - Esbjerg U19, 2 - 0",R. Zwinge,58.0,5.0,True,False
+Horsens U19,"Horsens U19 - Esbjerg U19, 2 - 0",A. Mandrup,31.0,13.0,True,False
+Esbjerg U19,"Horsens U19 - Esbjerg U19, 2 - 0",A. Kristiansen,50.0,35.0,False,False
+Esbjerg U19,"Horsens U19 - Esbjerg U19, 2 - 0",M. Svane,41.0,31.0,True,True
+Horsens U19,"Horsens U19 - Esbjerg U19, 2 - 0",A. Moro,46.0,68.0,False,False
+Horsens U19,"Horsens U19 - Esbjerg U19, 2 - 0",E. Favor Fully,19.0,74.0,True,True
+Esbjerg U19,"Horsens U19 - Esbjerg U19, 2 - 0",R. Zwinge,43.0,2.0,True,False
+Esbjerg U19,"Horsens U19 - Esbjerg U19, 2 - 0",A. Kristiansen,43.0,12.0,True,False
+Esbjerg U19,"Horsens U19 - Esbjerg U19, 2 - 0",K. Pedersen,43.0,14.0,True,False
+Esbjerg U19,"Horsens U19 - Esbjerg U19, 2 - 0",E. Omerovic,39.0,24.0,False,False
+Horsens U19,"Horsens U19 - Esbjerg U19, 2 - 0",A. Mandrup,40.0,23.0,True,False
+Horsens U19,"Horsens U19 - Esbjerg U19, 2 - 0",,63.0,25.0,True,False
+Esbjerg U19,"Horsens U19 - Esbjerg U19, 2 - 0",E. Larsen,27.0,78.0,True,False
+Esbjerg U19,"Horsens U19 - Esbjerg U19, 2 - 0",J. Lucena,26.0,81.0,True,False
+Horsens U19,"Horsens U19 - Esbjerg U19, 2 - 0",S. Traoré,41.0,48.0,True,True
+Horsens U19,"Horsens U19 - Esbjerg U19, 2 - 0",P. Rolke,37.0,98.0,False,False
+Esbjerg U19,"Horsens U19 - Esbjerg U19, 2 - 0",,85.0,56.0,False,False
+Horsens U19,"Horsens U19 - Esbjerg U19, 2 - 0",,48.0,66.0,True,True
+Horsens U19,"Horsens U19 - Esbjerg U19, 2 - 0",,46.0,90.0,False,False
+Horsens U19,"Horsens U19 - Esbjerg U19, 2 - 0",A. Moro,27.0,97.0,True,True
+Esbjerg U19,"Horsens U19 - Esbjerg U19, 2 - 0",,55.0,13.0,True,False
+Horsens U19,"Horsens U19 - Esbjerg U19, 2 - 0",,68.0,99.0,True,False
+Esbjerg U19,"Horsens U19 - Esbjerg U19, 2 - 0",E. Larsen,18.0,78.0,False,False
+Horsens U19,"Horsens U19 - Esbjerg U19, 2 - 0",,63.0,39.0,True,True
+Esbjerg U19,"Horsens U19 - Esbjerg U19, 2 - 0",,32.0,76.0,False,False
+Esbjerg U19,"Horsens U19 - Esbjerg U19, 2 - 0",R. Zwinge,15.0,66.0,True,False
+Horsens U19,"Horsens U19 - Esbjerg U19, 2 - 0",A. Moro,72.0,3.0,False,False
+Horsens U19,"Horsens U19 - Esbjerg U19, 2 - 0",E. Favor Fully,11.0,12.0,True,False
+Horsens U19,"Horsens U19 - Esbjerg U19, 2 - 0",A. Moro,25.0,44.0,False,False
+Horsens U19,"Horsens U19 - Esbjerg U19, 2 - 0",A. Mandrup,23.0,6.0,False,False
+Esbjerg U19,"Horsens U19 - Esbjerg U19, 2 - 0",A. Lund Jørgensen,89.0,12.0,True,False
+Esbjerg U19,"Horsens U19 - Esbjerg U19, 2 - 0",C. E. Lauridsen,66.0,22.0,True,True
+Horsens U19,"Horsens U19 - Esbjerg U19, 2 - 0",E. A´Ngon,24.0,72.0,True,False
+Horsens U19,"Horsens U19 - Esbjerg U19, 2 - 0",,24.0,81.0,True,True
+Horsens U19,"Horsens U19 - Esbjerg U19, 2 - 0",A. Moro,33.0,19.0,True,False
+Horsens U19,"Horsens U19 - Esbjerg U19, 2 - 0",Y. Ouorou,41.0,26.0,True,True
+Esbjerg U19,"Horsens U19 - Esbjerg U19, 2 - 0",J. Lucena,62.0,96.0,True,True
+Horsens U19,"Horsens U19 - Esbjerg U19, 2 - 0",A. Moro,35.0,17.0,False,False
+Horsens U19,"Horsens U19 - Esbjerg U19, 2 - 0",,10.0,82.0,True,True
+Horsens U19,"Horsens U19 - Esbjerg U19, 2 - 0",A. Arouna,17.0,85.0,True,False
+Horsens U19,"Horsens U19 - Esbjerg U19, 2 - 0",,24.0,21.0,False,False
+Horsens U19,"Horsens U19 - Esbjerg U19, 2 - 0",H. Toftegaard,10.0,73.0,True,False
+Horsens U19,"Horsens U19 - Esbjerg U19, 2 - 0",H. Toftegaard,1.0,68.0,True,False
+Esbjerg U19,"Horsens U19 - Esbjerg U19, 2 - 0",A. Lund Jørgensen,79.0,30.0,True,True
+Horsens U19,"Horsens U19 - Esbjerg U19, 2 - 0",H. Toftegaard,14.0,81.0,True,False
+Horsens U19,"Horsens U19 - Esbjerg U19, 2 - 0",R. Nybo,14.0,85.0,False,False
+Esbjerg U19,"Horsens U19 - Esbjerg U19, 2 - 0",C. E. Lauridsen,58.0,71.0,True,False
+Esbjerg U19,"Horsens U19 - Esbjerg U19, 2 - 0",M. Svane,47.0,15.0,True,False
+Esbjerg U19,"Horsens U19 - Esbjerg U19, 2 - 0",M. Svane,63.0,30.0,True,False
+Esbjerg U19,"Horsens U19 - Esbjerg U19, 2 - 0",E. Larsen,18.0,78.0,True,False
+Esbjerg U19,"Horsens U19 - Esbjerg U19, 2 - 0",C. E. Lauridsen,13.0,72.0,True,False
+Esbjerg U19,"Horsens U19 - Esbjerg U19, 2 - 0",E. Larsen,8.0,69.0,True,True
+Esbjerg U19,"Horsens U19 - Esbjerg U19, 2 - 0",C. E. Lauridsen,21.0,80.0,True,True
+Esbjerg U19,"Horsens U19 - Esbjerg U19, 2 - 0",E. Larsen,12.0,55.0,True,True
+Esbjerg U19,"Horsens U19 - Esbjerg U19, 2 - 0",K. Pedersen,56.0,96.0,False,False
+Esbjerg U19,"Horsens U19 - Esbjerg U19, 2 - 0",P. Nielsen,72.0,13.0,True,False
+Esbjerg U19,"Horsens U19 - Esbjerg U19, 2 - 0",,73.0,12.0,True,False
+Esbjerg U19,"Horsens U19 - Esbjerg U19, 2 - 0",A. Cehobasic,66.0,96.0,True,True
+Horsens U19,"Horsens U19 - Esbjerg U19, 2 - 0",A. Mandrup,34.0,5.0,False,False
+Esbjerg U19,"Horsens U19 - Esbjerg U19, 2 - 0",C. E. Lauridsen,74.0,77.0,True,False
+Esbjerg U19,"Horsens U19 - Esbjerg U19, 2 - 0",C. E. Lauridsen,62.0,56.0,False,False
+Horsens U19,"Horsens U19 - Esbjerg U19, 2 - 0",Y. Ouorou,61.0,74.0,True,True
+Esbjerg U19,"Horsens U19 - Esbjerg U19, 2 - 0",E. Larsen,26.0,30.0,True,False
+Esbjerg U19,"Horsens U19 - Esbjerg U19, 2 - 0",P. Nielsen,31.0,11.0,False,False
+Horsens U19,"Horsens U19 - Esbjerg U19, 2 - 0",,35.0,44.0,True,False
+Horsens U19,"Horsens U19 - Esbjerg U19, 2 - 0",,31.0,60.0,True,False
+Esbjerg U19,"Horsens U19 - Esbjerg U19, 2 - 0",K. Pedersen,76.0,90.0,True,False
+Esbjerg U19,"Horsens U19 - Esbjerg U19, 2 - 0",A. Lund Jørgensen,90.0,90.0,False,False
+Esbjerg U19,"Horsens U19 - Esbjerg U19, 2 - 0",R. Zwinge,23.0,24.0,False,False
+Esbjerg U19,"Horsens U19 - Esbjerg U19, 2 - 0",P. Nielsen,75.0,8.0,False,False
+Esbjerg U19,"Horsens U19 - Esbjerg U19, 2 - 0",A. Lund Jørgensen,78.0,22.0,True,False
+Horsens U19,"Horsens U19 - Esbjerg U19, 2 - 0",E. Favor Fully,8.0,80.0,True,False
+Horsens U19,"Horsens U19 - Esbjerg U19, 2 - 0",E. Favor Fully,11.0,92.0,True,True
+Esbjerg U19,"Horsens U19 - Esbjerg U19, 2 - 0",A. Kristiansen,83.0,16.0,True,False
+Horsens U19,"Horsens U19 - Esbjerg U19, 2 - 0",A. Moro,23.0,5.0,True,False
+Esbjerg U19,"Horsens U19 - Esbjerg U19, 2 - 0",A. Lund Jørgensen,67.0,84.0,True,True
+Horsens U19,"Horsens U19 - Esbjerg U19, 2 - 0",A. Mandrup,33.0,10.0,True,False
+Horsens U19,"Horsens U19 - Esbjerg U19, 2 - 0",A. Moro,35.0,13.0,True,True
+Esbjerg U19,"Horsens U19 - Esbjerg U19, 2 - 0",R. Zwinge,32.0,47.0,False,False
+Esbjerg U19,"Horsens U19 - Esbjerg U19, 2 - 0",K. Pedersen,25.0,76.0,True,False
+Esbjerg U19,"Horsens U19 - Esbjerg U19, 2 - 0",K. Pedersen,19.0,95.0,True,False
+Esbjerg U19,"Horsens U19 - Esbjerg U19, 2 - 0",A. Cehobasic,10.0,87.0,True,False
+Esbjerg U19,"Horsens U19 - Esbjerg U19, 2 - 0",K. Pedersen,20.0,70.0,True,True
+Horsens U19,"Horsens U19 - Esbjerg U19, 2 - 0",A. Moro,19.0,18.0,True,True
+Esbjerg U19,"Horsens U19 - Esbjerg U19, 2 - 0",A. Kristiansen,58.0,72.0,True,False
+Esbjerg U19,"Horsens U19 - Esbjerg U19, 2 - 0",C. E. Lauridsen,54.0,73.0,True,False
+Esbjerg U19,"Horsens U19 - Esbjerg U19, 2 - 0",M. Kruse,55.0,72.0,True,True
+Esbjerg U19,"Horsens U19 - Esbjerg U19, 2 - 0",M. Kruse,37.0,56.0,False,False
+Horsens U19,"Horsens U19 - Esbjerg U19, 2 - 0",A. Moro,37.0,64.0,False,False
+Horsens U19,"Horsens U19 - Esbjerg U19, 2 - 0",,18.0,83.0,True,True
+Esbjerg U19,"Horsens U19 - Esbjerg U19, 2 - 0",K. Pedersen,30.0,95.0,True,True
+Esbjerg U19,"Horsens U19 - Esbjerg U19, 2 - 0",P. Nielsen,41.0,32.0,True,False
+Esbjerg U19,"Horsens U19 - Esbjerg U19, 2 - 0",K. Pedersen,74.0,77.0,False,False
+Esbjerg U19,"Horsens U19 - Esbjerg U19, 2 - 0",E. Larsen,10.0,51.0,True,False
+Esbjerg U19,"Horsens U19 - Esbjerg U19, 2 - 0",M. Svane,39.0,8.0,True,False
+Esbjerg U19,"Horsens U19 - Esbjerg U19, 2 - 0",A. Kristiansen,84.0,16.0,False,False
+Esbjerg U19,"Horsens U19 - Esbjerg U19, 2 - 0",C. E. Lauridsen,74.0,38.0,True,True
+Horsens U19,"Horsens U19 - Esbjerg U19, 2 - 0",,17.0,52.0,True,False
+Horsens U19,"Horsens U19 - Esbjerg U19, 2 - 0",,12.0,39.0,True,False
+Horsens U19,"Horsens U19 - Esbjerg U19, 2 - 0",,10.0,12.0,True,False
+Midtjylland U19,"AGF U19 - Midtjylland U19, 0 - 1",M. Konradsen,49.0,97.0,True,False
+AGF U19,"AGF U19 - Midtjylland U19, 0 - 1",W. Rygaard,88.0,7.0,True,True
+Midtjylland U19,"AGF U19 - Midtjylland U19, 0 - 1",M. Konradsen,8.0,86.0,True,False
+Midtjylland U19,"AGF U19 - Midtjylland U19, 0 - 1",B. Konteh Krubally,7.0,86.0,True,False
+Midtjylland U19,"AGF U19 - Midtjylland U19, 0 - 1",N. Tornvig,64.0,9.0,True,True
+AGF U19,"AGF U19 - Midtjylland U19, 0 - 1",F. Elkjær Andersen,31.0,96.0,True,False
+Midtjylland U19,"AGF U19 - Midtjylland U19, 0 - 1",S. Lodberg,73.0,46.0,True,False
+AGF U19,"AGF U19 - Midtjylland U19, 0 - 1",O. Haugstrup,30.0,97.0,False,False
+AGF U19,"AGF U19 - Midtjylland U19, 0 - 1",O. Haugstrup,42.0,70.0,True,False
+Midtjylland U19,"AGF U19 - Midtjylland U19, 0 - 1",S. Lodberg,88.0,79.0,True,False
+Midtjylland U19,"AGF U19 - Midtjylland U19, 0 - 1",B. Konteh Krubally,57.0,74.0,True,True
+AGF U19,"AGF U19 - Midtjylland U19, 0 - 1",L. Falk Hansen,45.0,83.0,False,False
+Midtjylland U19,"AGF U19 - Midtjylland U19, 0 - 1",S. Lodberg,93.0,67.0,True,True
+AGF U19,"AGF U19 - Midtjylland U19, 0 - 1",N. Strandby,3.0,16.0,True,False
+Midtjylland U19,"AGF U19 - Midtjylland U19, 0 - 1",M. Pimpong,70.0,80.0,True,False
+AGF U19,"AGF U19 - Midtjylland U19, 0 - 1",M. Kannegaard,21.0,27.0,True,True
+Midtjylland U19,"AGF U19 - Midtjylland U19, 0 - 1",S. Lodberg,74.0,75.0,True,False
+Midtjylland U19,"AGF U19 - Midtjylland U19, 0 - 1",M. Konradsen,60.0,93.0,True,False
+Midtjylland U19,"AGF U19 - Midtjylland U19, 0 - 1",S. Johannesen,33.0,59.0,True,False
+Midtjylland U19,"AGF U19 - Midtjylland U19, 0 - 1",L. Nielsen,33.0,76.0,True,False
+Midtjylland U19,"AGF U19 - Midtjylland U19, 0 - 1",J. Arinze,46.0,89.0,False,False
+AGF U19,"AGF U19 - Midtjylland U19, 0 - 1",R. Düring,86.0,90.0,True,False
+Midtjylland U19,"AGF U19 - Midtjylland U19, 0 - 1",,57.0,10.0,True,False
+AGF U19,"AGF U19 - Midtjylland U19, 0 - 1",,63.0,54.0,True,False
+AGF U19,"AGF U19 - Midtjylland U19, 0 - 1",,6.0,9.0,False,False
+Midtjylland U19,"AGF U19 - Midtjylland U19, 0 - 1",S. Kristiansen,36.0,36.0,True,False
+Midtjylland U19,"AGF U19 - Midtjylland U19, 0 - 1",S. Kristiansen,4.0,19.0,True,False
+AGF U19,"AGF U19 - Midtjylland U19, 0 - 1",S. Stefánsson,22.0,86.0,True,False
+Midtjylland U19,"AGF U19 - Midtjylland U19, 0 - 1",S. Lodberg,76.0,94.0,True,True
+AGF U19,"AGF U19 - Midtjylland U19, 0 - 1",N. Strandby,19.0,7.0,True,False
+AGF U19,"AGF U19 - Midtjylland U19, 0 - 1",A. Halsgaard,17.0,45.0,True,False
+AGF U19,"AGF U19 - Midtjylland U19, 0 - 1",W. Rygaard,31.0,94.0,True,True
+Midtjylland U19,"AGF U19 - Midtjylland U19, 0 - 1",G. Bjerge,24.0,30.0,True,False
+Midtjylland U19,"AGF U19 - Midtjylland U19, 0 - 1",S. Kristiansen,10.0,10.0,True,False
+Midtjylland U19,"AGF U19 - Midtjylland U19, 0 - 1",,12.0,6.0,True,True
+AGF U19,"AGF U19 - Midtjylland U19, 0 - 1",L. Falk Hansen,84.0,93.0,False,False
+AGF U19,"AGF U19 - Midtjylland U19, 0 - 1",,84.0,88.0,False,False
+Midtjylland U19,"AGF U19 - Midtjylland U19, 0 - 1",,88.0,32.0,True,False
+Midtjylland U19,"AGF U19 - Midtjylland U19, 0 - 1",S. Johannesen,54.0,48.0,True,False
+Midtjylland U19,"AGF U19 - Midtjylland U19, 0 - 1",L. Nielsen,56.0,32.0,True,False
+Midtjylland U19,"AGF U19 - Midtjylland U19, 0 - 1",,66.0,86.0,True,True
+AGF U19,"AGF U19 - Midtjylland U19, 0 - 1",A. Halsgaard,30.0,25.0,True,False
+Midtjylland U19,"AGF U19 - Midtjylland U19, 0 - 1",S. Johannesen,70.0,70.0,True,False
+Midtjylland U19,"AGF U19 - Midtjylland U19, 0 - 1",L. Nielsen,4.0,27.0,True,False
+Midtjylland U19,"AGF U19 - Midtjylland U19, 0 - 1",S. Johannesen,7.0,16.0,False,False
+Midtjylland U19,"AGF U19 - Midtjylland U19, 0 - 1",L. Nielsen,19.0,80.0,False,False
+AGF U19,"AGF U19 - Midtjylland U19, 0 - 1",L. Falk Hansen,40.0,85.0,False,False
+Midtjylland U19,"AGF U19 - Midtjylland U19, 0 - 1",M. Konradsen,78.0,83.0,True,True
+AGF U19,"AGF U19 - Midtjylland U19, 0 - 1",N. Strandby,29.0,13.0,True,False
+AGF U19,"AGF U19 - Midtjylland U19, 0 - 1",E. Ime,62.0,60.0,True,False
+Midtjylland U19,"AGF U19 - Midtjylland U19, 0 - 1",L. Nielsen,66.0,14.0,False,False
+AGF U19,"AGF U19 - Midtjylland U19, 0 - 1",F. Elkjær Andersen,45.0,78.0,True,True
+Midtjylland U19,"AGF U19 - Midtjylland U19, 0 - 1",G. Bjerge,19.0,25.0,False,False
+Midtjylland U19,"AGF U19 - Midtjylland U19, 0 - 1",,81.0,20.0,True,False
+AGF U19,"AGF U19 - Midtjylland U19, 0 - 1",E. Ime,20.0,66.0,True,True
+AGF U19,"AGF U19 - Midtjylland U19, 0 - 1",R. Düring,26.0,71.0,True,True
+Midtjylland U19,"AGF U19 - Midtjylland U19, 0 - 1",N. Tornvig,82.0,9.0,False,False
+Midtjylland U19,"AGF U19 - Midtjylland U19, 0 - 1",M. Konradsen,43.0,73.0,True,True
+AGF U19,"AGF U19 - Midtjylland U19, 0 - 1",L. Falk Hansen,29.0,47.0,True,True
+Midtjylland U19,"AGF U19 - Midtjylland U19, 0 - 1",M. Pimpong,77.0,57.0,True,True
+AGF U19,"AGF U19 - Midtjylland U19, 0 - 1",,72.0,22.0,True,False
+Midtjylland U19,"AGF U19 - Midtjylland U19, 0 - 1",L. Nielsen,30.0,17.0,False,False
+AGF U19,"AGF U19 - Midtjylland U19, 0 - 1",,80.0,79.0,True,False
+AGF U19,"AGF U19 - Midtjylland U19, 0 - 1",M. Kannegaard,16.0,20.0,True,False
+AGF U19,"AGF U19 - Midtjylland U19, 0 - 1",,25.0,32.0,False,False
+Midtjylland U19,"AGF U19 - Midtjylland U19, 0 - 1",M. Konradsen,44.0,63.0,True,False
+Midtjylland U19,"AGF U19 - Midtjylland U19, 0 - 1",G. Bjerge,28.0,10.0,True,False
+AGF U19,"AGF U19 - Midtjylland U19, 0 - 1",S. Stefánsson,61.0,95.0,False,False
+AGF U19,"AGF U19 - Midtjylland U19, 0 - 1",E. Ime,32.0,87.0,True,False
+Midtjylland U19,"AGF U19 - Midtjylland U19, 0 - 1",S. Kristiansen,81.0,14.0,True,True
+AGF U19,"AGF U19 - Midtjylland U19, 0 - 1",E. Ime,15.0,90.0,True,False
+AGF U19,"AGF U19 - Midtjylland U19, 0 - 1",R. Düring,12.0,84.0,True,True
+Midtjylland U19,"AGF U19 - Midtjylland U19, 0 - 1",S. Johannesen,91.0,25.0,False,False
+Midtjylland U19,"AGF U19 - Midtjylland U19, 0 - 1",S. Kristiansen,66.0,22.0,False,False
+Midtjylland U19,"AGF U19 - Midtjylland U19, 0 - 1",M. Konradsen,16.0,89.0,False,False
+Midtjylland U19,"AGF U19 - Midtjylland U19, 0 - 1",B. Konteh Krubally,22.0,18.0,True,True
+AGF U19,"AGF U19 - Midtjylland U19, 0 - 1",,62.0,93.0,True,False
+AGF U19,"AGF U19 - Midtjylland U19, 0 - 1",R. Düring,75.0,94.0,True,False
+AGF U19,"AGF U19 - Midtjylland U19, 0 - 1",,24.0,28.0,False,False
+Midtjylland U19,"AGF U19 - Midtjylland U19, 0 - 1",G. Bjerge,54.0,14.0,False,False
+AGF U19,"AGF U19 - Midtjylland U19, 0 - 1",S. Stefánsson,33.0,68.0,True,True
+Midtjylland U19,"AGF U19 - Midtjylland U19, 0 - 1",L. Nielsen,36.0,52.0,True,False
+Midtjylland U19,"AGF U19 - Midtjylland U19, 0 - 1",S. Kristiansen,28.0,6.0,False,False
+Midtjylland U19,"AGF U19 - Midtjylland U19, 0 - 1",S. Johannesen,22.0,4.0,True,True
+Midtjylland U19,"AGF U19 - Midtjylland U19, 0 - 1",L. Nielsen,64.0,69.0,True,False
+AGF U19,"AGF U19 - Midtjylland U19, 0 - 1",S. Stefánsson,54.0,47.0,True,True
+Midtjylland U19,"AGF U19 - Midtjylland U19, 0 - 1",M. Pimpong,44.0,55.0,True,False
+AGF U19,"AGF U19 - Midtjylland U19, 0 - 1",W. Rygaard,70.0,42.0,False,False
+AGF U19,"AGF U19 - Midtjylland U19, 0 - 1",S. Stefánsson,54.0,90.0,True,False
+AGF U19,"AGF U19 - Midtjylland U19, 0 - 1",,73.0,94.0,True,False
+AGF U19,"AGF U19 - Midtjylland U19, 0 - 1",A. Halsgaard,46.0,65.0,True,True
+Midtjylland U19,"AGF U19 - Midtjylland U19, 0 - 1",M. Pimpong,60.0,30.0,True,True
+AGF U19,"AGF U19 - Midtjylland U19, 0 - 1",E. Ime,41.0,59.0,True,False
+AGF U19,"AGF U19 - Midtjylland U19, 0 - 1",,14.0,29.0,False,False
+AGF U19,"AGF U19 - Midtjylland U19, 0 - 1",S. Stefánsson,45.0,88.0,True,False
+AGF U19,"AGF U19 - Midtjylland U19, 0 - 1",S. Stefánsson,39.0,96.0,True,False
+Midtjylland U19,"AGF U19 - Midtjylland U19, 0 - 1",G. Bjerge,16.0,30.0,True,True
+AGF U19,"AGF U19 - Midtjylland U19, 0 - 1",,71.0,93.0,True,True
+Midtjylland U19,"AGF U19 - Midtjylland U19, 0 - 1",N. Tornvig,21.0,4.0,True,False
+Midtjylland U19,"AGF U19 - Midtjylland U19, 0 - 1",L. Nielsen,15.0,13.0,True,False
+AGF U19,"AGF U19 - Midtjylland U19, 0 - 1",S. Stefánsson,77.0,87.0,True,True
+Midtjylland U19,"AGF U19 - Midtjylland U19, 0 - 1",N. Tornvig,14.0,7.0,True,True
+AGF U19,"AGF U19 - Midtjylland U19, 0 - 1",R. Düring,81.0,93.0,True,False
+Midtjylland U19,"AGF U19 - Midtjylland U19, 0 - 1",,63.0,17.0,True,True
+AGF U19,"AGF U19 - Midtjylland U19, 0 - 1",W. Rygaard,57.0,61.0,True,True
+Midtjylland U19,"AGF U19 - Midtjylland U19, 0 - 1",S. Lodberg,19.0,86.0,True,True
+Midtjylland U19,"AGF U19 - Midtjylland U19, 0 - 1",J. Emefile,36.0,3.0,True,False
+AGF U19,"AGF U19 - Midtjylland U19, 0 - 1",N. Strandby,70.0,32.0,False,False
+AGF U19,"AGF U19 - Midtjylland U19, 0 - 1",S. Stefánsson,25.0,49.0,True,False
+Midtjylland U19,"AGF U19 - Midtjylland U19, 0 - 1",D. Catak,69.0,49.0,True,True
+Midtjylland U19,"AGF U19 - Midtjylland U19, 0 - 1",D. Catak,40.0,25.0,True,False
+Midtjylland U19,"AGF U19 - Midtjylland U19, 0 - 1",,19.0,10.0,False,False
+Midtjylland U19,"AGF U19 - Midtjylland U19, 0 - 1",J. Emefile,33.0,17.0,True,True
+AGF U19,"AGF U19 - Midtjylland U19, 0 - 1",,64.0,86.0,False,False
+AGF U19,"AGF U19 - Midtjylland U19, 0 - 1",,19.0,49.0,True,False
+AGF U19,"AGF U19 - Midtjylland U19, 0 - 1",L. Falk Hansen,22.0,11.0,False,False
+Midtjylland U19,"AGF U19 - Midtjylland U19, 0 - 1",D. Catak,66.0,62.0,True,False
+AGF U19,"AGF U19 - Midtjylland U19, 0 - 1",W. Rygaard,27.0,38.0,True,False
+AGF U19,"AGF U19 - Midtjylland U19, 0 - 1",,20.0,36.0,True,False
+AGF U19,"AGF U19 - Midtjylland U19, 0 - 1",W. Rygaard,22.0,36.0,True,True
+Midtjylland U19,"AGF U19 - Midtjylland U19, 0 - 1",S. Johannesen,63.0,96.0,True,False
+AGF U19,"AGF U19 - Midtjylland U19, 0 - 1",M. Kannegaard,40.0,14.0,True,False
+AGF U19,"AGF U19 - Midtjylland U19, 0 - 1",,46.0,9.0,True,False
+AGF U19,"AGF U19 - Midtjylland U19, 0 - 1",,31.0,7.0,True,True
+Midtjylland U19,"AGF U19 - Midtjylland U19, 0 - 1",J. Emefile,84.0,10.0,True,False
+Midtjylland U19,"AGF U19 - Midtjylland U19, 0 - 1",,47.0,13.0,True,True
+AGF U19,"AGF U19 - Midtjylland U19, 0 - 1",F. Elkjær Andersen,52.0,95.0,True,False
+AGF U19,"AGF U19 - Midtjylland U19, 0 - 1",W. Rygaard,49.0,78.0,True,False
+AGF U19,"AGF U19 - Midtjylland U19, 0 - 1",F. Elkjær Andersen,48.0,56.0,True,True
+Midtjylland U19,"AGF U19 - Midtjylland U19, 0 - 1",,51.0,57.0,False,False
+Midtjylland U19,"AGF U19 - Midtjylland U19, 0 - 1",M. Konradsen,31.0,84.0,True,False
+Midtjylland U19,"AGF U19 - Midtjylland U19, 0 - 1",J. Arinze,37.0,75.0,False,False
+Midtjylland U19,"AGF U19 - Midtjylland U19, 0 - 1",,88.0,25.0,False,False
+Midtjylland U19,"AGF U19 - Midtjylland U19, 0 - 1",G. Bjerge,60.0,5.0,False,False
+Midtjylland U19,"AGF U19 - Midtjylland U19, 0 - 1",J. Emefile,51.0,4.0,True,False
+AGF U19,"AGF U19 - Midtjylland U19, 0 - 1",,32.0,97.0,False,False
+Midtjylland U19,"AGF U19 - Midtjylland U19, 0 - 1",B. Konteh Krubally,52.0,43.0,True,False
+AGF U19,"AGF U19 - Midtjylland U19, 0 - 1",,42.0,14.0,True,True
+Midtjylland U19,"AGF U19 - Midtjylland U19, 0 - 1",,56.0,88.0,True,False
+AGF U19,"AGF U19 - Midtjylland U19, 0 - 1",W. Rygaard,30.0,6.0,False,False
+AGF U19,"AGF U19 - Midtjylland U19, 0 - 1",F. Elkjær Andersen,24.0,13.0,True,False
+AGF U19,"AGF U19 - Midtjylland U19, 0 - 1",W. Rygaard,12.0,4.0,True,False
+AGF U19,"AGF U19 - Midtjylland U19, 0 - 1",,10.0,77.0,True,False
+AGF U19,"AGF U19 - Midtjylland U19, 0 - 1",,16.0,77.0,True,True
+Midtjylland U19,"AGF U19 - Midtjylland U19, 0 - 1",S. Johannesen,40.0,68.0,True,False
+Midtjylland U19,"AGF U19 - Midtjylland U19, 0 - 1",J. Arinze,39.0,57.0,False,False
+Midtjylland U19,"AGF U19 - Midtjylland U19, 0 - 1",J. Arinze,52.0,49.0,False,False
+AGF U19,"AGF U19 - Midtjylland U19, 0 - 1",,82.0,16.0,False,False
+AGF U19,"AGF U19 - Midtjylland U19, 0 - 1",F. Elkjær Andersen,79.0,19.0,False,True
+Midtjylland U19,"AGF U19 - Midtjylland U19, 0 - 1",B. Konteh Krubally,30.0,88.0,True,False
+Midtjylland U19,"AGF U19 - Midtjylland U19, 0 - 1",J. Emefile,81.0,2.0,True,False
+AGF U19,"AGF U19 - Midtjylland U19, 0 - 1",A. Halsgaard,29.0,92.0,True,False
+AGF U19,"AGF U19 - Midtjylland U19, 0 - 1",E. Helt,36.0,97.0,True,False
+AGF U19,"AGF U19 - Midtjylland U19, 0 - 1",A. Halsgaard,36.0,83.0,False,False
+AGF U19,"AGF U19 - Midtjylland U19, 0 - 1",,27.0,53.0,True,True
+Midtjylland U19,"AGF U19 - Midtjylland U19, 0 - 1",M. Konradsen,13.0,67.0,True,True
+AGF U19,"AGF U19 - Midtjylland U19, 0 - 1",,57.0,74.0,True,False
+Midtjylland U19,"AGF U19 - Midtjylland U19, 0 - 1",M. Konradsen,15.0,86.0,True,False
+AGF U19,"AGF U19 - Midtjylland U19, 0 - 1",,31.0,66.0,False,False
+AGF U19,"AGF U19 - Midtjylland U19, 0 - 1",L. Falk Hansen,12.0,34.0,True,False
+Midtjylland U19,"AGF U19 - Midtjylland U19, 0 - 1",J. Arinze,67.0,51.0,True,False
+Midtjylland U19,"AGF U19 - Midtjylland U19, 0 - 1",J. Arinze,53.0,91.0,False,False
+AGF U19,"AGF U19 - Midtjylland U19, 0 - 1",E. Ime,34.0,80.0,True,True
+Midtjylland U19,"AGF U19 - Midtjylland U19, 0 - 1",C. Jørgensen,76.0,11.0,True,True
+AGF U19,"AGF U19 - Midtjylland U19, 0 - 1",,26.0,90.0,True,False
+AGF U19,"AGF U19 - Midtjylland U19, 0 - 1",E. Ime,17.0,92.0,True,True
+Midtjylland U19,"AGF U19 - Midtjylland U19, 0 - 1",G. Bjerge,60.0,15.0,False,False
+AGF U19,"AGF U19 - Midtjylland U19, 0 - 1",L. Falk Hansen,25.0,6.0,False,False
+AGF U19,"AGF U19 - Midtjylland U19, 0 - 1",E. Helt,16.0,40.0,False,False
+Midtjylland U19,"AGF U19 - Midtjylland U19, 0 - 1",J. Emefile,43.0,41.0,True,False
+Midtjylland U19,"AGF U19 - Midtjylland U19, 0 - 1",C. Jørgensen,36.0,54.0,True,True
+AGF U19,"AGF U19 - Midtjylland U19, 0 - 1",M. Kannegaard,25.0,22.0,True,True
+Midtjylland U19,"AGF U19 - Midtjylland U19, 0 - 1",S. Lodberg,28.0,90.0,True,True
+AGF U19,"AGF U19 - Midtjylland U19, 0 - 1",S. Tchamche,67.0,6.0,False,False
+AGF U19,"AGF U19 - Midtjylland U19, 0 - 1",,39.0,82.0,True,False
+AGF U19,"AGF U19 - Midtjylland U19, 0 - 1",F. Elkjær Andersen,50.0,41.0,False,False
+Midtjylland U19,"AGF U19 - Midtjylland U19, 0 - 1",J. Emefile,30.0,21.0,False,False
+AGF U19,"AGF U19 - Midtjylland U19, 0 - 1",,80.0,40.0,False,False
+Midtjylland U19,"AGF U19 - Midtjylland U19, 0 - 1",,50.0,63.0,True,True
+AGF U19,"AGF U19 - Midtjylland U19, 0 - 1",S. Stefánsson,32.0,78.0,False,False
+Midtjylland U19,"AGF U19 - Midtjylland U19, 0 - 1",,27.0,95.0,True,True
+AGF U19,"AGF U19 - Midtjylland U19, 0 - 1",A. Sediq,79.0,7.0,True,False
+AGF U19,"AGF U19 - Midtjylland U19, 0 - 1",L. Falk Hansen,57.0,65.0,True,False
+Midtjylland U19,"AGF U19 - Midtjylland U19, 0 - 1",,70.0,93.0,True,True
+AGF U19,"AGF U19 - Midtjylland U19, 0 - 1",,17.0,6.0,False,False
+AGF U19,"AGF U19 - Midtjylland U19, 0 - 1",A. Skovgaard,12.0,27.0,True,False
+AGF U19,"AGF U19 - Midtjylland U19, 0 - 1",M. Kannegaard,21.0,32.0,True,True
+Midtjylland U19,"AGF U19 - Midtjylland U19, 0 - 1",M. Konradsen,39.0,92.0,False,False
+Midtjylland U19,"AGF U19 - Midtjylland U19, 0 - 1",M. Konradsen,9.0,80.0,False,False
+AGF U19,"AGF U19 - Midtjylland U19, 0 - 1",A. Halsgaard,50.0,41.0,True,False
+AGF U19,"AGF U19 - Midtjylland U19, 0 - 1",,32.0,67.0,False,False
+AGF U19,"AGF U19 - Midtjylland U19, 0 - 1",A. Halsgaard,8.0,61.0,True,False
+Midtjylland U19,"AGF U19 - Midtjylland U19, 0 - 1",,84.0,90.0,False,False
+Midtjylland U19,"AGF U19 - Midtjylland U19, 0 - 1",C. Jørgensen,5.0,72.0,True,False
+AGF U19,"AGF U19 - Midtjylland U19, 0 - 1",A. Skovgaard,27.0,7.0,True,True
+AGF U19,"AGF U19 - Midtjylland U19, 0 - 1",,20.0,22.0,False,False
+AGF U19,"AGF U19 - Midtjylland U19, 0 - 1",L. Falk Hansen,45.0,56.0,True,True
+Midtjylland U19,"AGF U19 - Midtjylland U19, 0 - 1",,53.0,48.0,False,False
+Midtjylland U19,"AGF U19 - Midtjylland U19, 0 - 1",M. Konradsen,18.0,74.0,True,False
+Midtjylland U19,"AGF U19 - Midtjylland U19, 0 - 1",A. Nnorom,75.0,50.0,False,False
+Midtjylland U19,"AGF U19 - Midtjylland U19, 0 - 1",,29.0,10.0,False,False
+AGF U19,"AGF U19 - Midtjylland U19, 0 - 1",,91.0,55.0,True,True
+Midtjylland U19,"AGF U19 - Midtjylland U19, 0 - 1",S. Lodberg,16.0,78.0,False,False
+AGF U19,"AGF U19 - Midtjylland U19, 0 - 1",A. Skovgaard,51.0,19.0,True,False
+Nordsjælland U19,"Nordsjælland U19 - Silkeborg U19, 3 - 0",J. Meltofte Janssen,9.0,15.0,True,True
+Silkeborg U19,"Nordsjælland U19 - Silkeborg U19, 3 - 0",S. Biller Mikkelsen,78.0,5.0,False,False
+Silkeborg U19,"Nordsjælland U19 - Silkeborg U19, 3 - 0",S. Laustsen,22.0,76.0,True,False
+Silkeborg U19,"Nordsjælland U19 - Silkeborg U19, 3 - 0",S. Biller Mikkelsen,40.0,11.0,False,False
+Silkeborg U19,"Nordsjælland U19 - Silkeborg U19, 3 - 0",,19.0,73.0,False,False
+Nordsjælland U19,"Nordsjælland U19 - Silkeborg U19, 3 - 0",S. Acquah,59.0,83.0,True,False
+Nordsjælland U19,"Nordsjælland U19 - Silkeborg U19, 3 - 0",C. Yirenkyi,47.0,63.0,True,False
+Nordsjælland U19,"Nordsjælland U19 - Silkeborg U19, 3 - 0",D. Jóhannesson,44.0,69.0,True,True
+Silkeborg U19,"Nordsjælland U19 - Silkeborg U19, 3 - 0",W. Kirk,55.0,54.0,True,False
+Nordsjælland U19,"Nordsjælland U19 - Silkeborg U19, 3 - 0",V. Gustafsen,76.0,82.0,True,False
+Nordsjælland U19,"Nordsjælland U19 - Silkeborg U19, 3 - 0",J. Meltofte Janssen,73.0,52.0,False,False
+Nordsjælland U19,"Nordsjælland U19 - Silkeborg U19, 3 - 0",D. Jóhannesson,40.0,79.0,False,False
+Nordsjælland U19,"Nordsjælland U19 - Silkeborg U19, 3 - 0",J. Meltofte Janssen,23.0,28.0,True,True
+Silkeborg U19,"Nordsjælland U19 - Silkeborg U19, 3 - 0",S. Stüker,44.0,87.0,True,False
+Silkeborg U19,"Nordsjælland U19 - Silkeborg U19, 3 - 0",W. Kirk,41.0,87.0,False,False
+Silkeborg U19,"Nordsjælland U19 - Silkeborg U19, 3 - 0",S. Biller Mikkelsen,8.0,89.0,False,False
+Nordsjælland U19,"Nordsjælland U19 - Silkeborg U19, 3 - 0",M. Heyde,62.0,21.0,True,True
+Silkeborg U19,"Nordsjælland U19 - Silkeborg U19, 3 - 0",S. Laustsen,11.0,70.0,False,False
+Nordsjælland U19,"Nordsjælland U19 - Silkeborg U19, 3 - 0",O. Bødker,30.0,95.0,True,False
+Nordsjælland U19,"Nordsjælland U19 - Silkeborg U19, 3 - 0",J. Valtteri Lähteenmäki,36.0,14.0,False,False
+Nordsjælland U19,"Nordsjælland U19 - Silkeborg U19, 3 - 0",J. Meltofte Janssen,44.0,17.0,True,False
+Silkeborg U19,"Nordsjælland U19 - Silkeborg U19, 3 - 0",S. Laustsen,6.0,85.0,True,False
+Nordsjælland U19,"Nordsjælland U19 - Silkeborg U19, 3 - 0",M. Walker,76.0,17.0,True,False
+Nordsjælland U19,"Nordsjælland U19 - Silkeborg U19, 3 - 0",J. Valtteri Lähteenmäki,62.0,20.0,True,True
+Silkeborg U19,"Nordsjælland U19 - Silkeborg U19, 3 - 0",J. Nielsen,31.0,85.0,True,False
+Nordsjælland U19,"Nordsjælland U19 - Silkeborg U19, 3 - 0",,54.0,20.0,True,False
+Nordsjælland U19,"Nordsjælland U19 - Silkeborg U19, 3 - 0",M. Heyde,39.0,13.0,False,False
+Nordsjælland U19,"Nordsjælland U19 - Silkeborg U19, 3 - 0",,37.0,27.0,True,True
+Silkeborg U19,"Nordsjælland U19 - Silkeborg U19, 3 - 0",W. Kirk,95.0,2.0,True,False
+Silkeborg U19,"Nordsjælland U19 - Silkeborg U19, 3 - 0",W. Pedersen,71.0,6.0,True,True
+Nordsjælland U19,"Nordsjælland U19 - Silkeborg U19, 3 - 0",V. Gustafsen,30.0,89.0,False,False
+Nordsjælland U19,"Nordsjælland U19 - Silkeborg U19, 3 - 0",O. Bødker,9.0,77.0,False,False
+Nordsjælland U19,"Nordsjælland U19 - Silkeborg U19, 3 - 0",C. Yirenkyi,40.0,89.0,True,False
+Nordsjælland U19,"Nordsjælland U19 - Silkeborg U19, 3 - 0",M. Walker,25.0,18.0,True,False
+Nordsjælland U19,"Nordsjælland U19 - Silkeborg U19, 3 - 0",M. Heyde,95.0,16.0,False,False
+Nordsjælland U19,"Nordsjælland U19 - Silkeborg U19, 3 - 0",S. Acquah,25.0,39.0,True,False
+Silkeborg U19,"Nordsjælland U19 - Silkeborg U19, 3 - 0",S. Laustsen,56.0,62.0,True,False
+Silkeborg U19,"Nordsjælland U19 - Silkeborg U19, 3 - 0",S. Biller Mikkelsen,68.0,9.0,False,False
+Silkeborg U19,"Nordsjælland U19 - Silkeborg U19, 3 - 0",M. Micha Jacobsen,54.0,10.0,True,True
+Nordsjælland U19,"Nordsjælland U19 - Silkeborg U19, 3 - 0",D. Jóhannesson,43.0,96.0,True,False
+Nordsjælland U19,"Nordsjælland U19 - Silkeborg U19, 3 - 0",M. Walker,37.0,27.0,True,True
+Silkeborg U19,"Nordsjælland U19 - Silkeborg U19, 3 - 0",M. Ryberg,57.0,42.0,True,False
+Nordsjælland U19,"Nordsjælland U19 - Silkeborg U19, 3 - 0",J. Valtteri Lähteenmäki,68.0,19.0,True,False
+Silkeborg U19,"Nordsjælland U19 - Silkeborg U19, 3 - 0",S. Biller Mikkelsen,35.0,47.0,True,False
+Silkeborg U19,"Nordsjælland U19 - Silkeborg U19, 3 - 0",M. Øxenberg,52.0,45.0,True,True
+Silkeborg U19,"Nordsjælland U19 - Silkeborg U19, 3 - 0",M. Øxenberg,52.0,67.0,False,False
+Silkeborg U19,"Nordsjælland U19 - Silkeborg U19, 3 - 0",M. Ryberg,48.0,53.0,True,False
+Silkeborg U19,"Nordsjælland U19 - Silkeborg U19, 3 - 0",,60.0,21.0,True,False
+Nordsjælland U19,"Nordsjælland U19 - Silkeborg U19, 3 - 0",V. Gustafsen,74.0,89.0,False,False
+Silkeborg U19,"Nordsjælland U19 - Silkeborg U19, 3 - 0",V. Dahl,69.0,98.0,False,False
+Silkeborg U19,"Nordsjælland U19 - Silkeborg U19, 3 - 0",V. Dahl,56.0,95.0,False,False
+Silkeborg U19,"Nordsjælland U19 - Silkeborg U19, 3 - 0",W. Pedersen,56.0,10.0,False,False
+Silkeborg U19,"Nordsjælland U19 - Silkeborg U19, 3 - 0",S. Biller Mikkelsen,41.0,19.0,True,False
+Nordsjælland U19,"Nordsjælland U19 - Silkeborg U19, 3 - 0",J. Meltofte Janssen,56.0,20.0,True,False
+Nordsjælland U19,"Nordsjælland U19 - Silkeborg U19, 3 - 0",V. Berthelsen,63.0,67.0,True,True
+Nordsjælland U19,"Nordsjælland U19 - Silkeborg U19, 3 - 0",V. Berthelsen,67.0,19.0,True,True
+Silkeborg U19,"Nordsjælland U19 - Silkeborg U19, 3 - 0",M. Ryberg,15.0,62.0,False,False
+Silkeborg U19,"Nordsjælland U19 - Silkeborg U19, 3 - 0",S. Stüker,41.0,92.0,False,False
+Nordsjælland U19,"Nordsjælland U19 - Silkeborg U19, 3 - 0",C. Yirenkyi,56.0,16.0,True,True
+Nordsjælland U19,"Nordsjælland U19 - Silkeborg U19, 3 - 0",M. Walker,70.0,19.0,True,True
+Silkeborg U19,"Nordsjælland U19 - Silkeborg U19, 3 - 0",W. Pedersen,10.0,45.0,False,False
+Silkeborg U19,"Nordsjælland U19 - Silkeborg U19, 3 - 0",,26.0,24.0,True,False
+Silkeborg U19,"Nordsjælland U19 - Silkeborg U19, 3 - 0",S. Laustsen,10.0,63.0,True,True
+Silkeborg U19,"Nordsjælland U19 - Silkeborg U19, 3 - 0",M. Øxenberg,27.0,77.0,True,False
+Silkeborg U19,"Nordsjælland U19 - Silkeborg U19, 3 - 0",M. Øxenberg,23.0,77.0,True,False
+Nordsjælland U19,"Nordsjælland U19 - Silkeborg U19, 3 - 0",M. Walker,90.0,25.0,True,False
+Silkeborg U19,"Nordsjælland U19 - Silkeborg U19, 3 - 0",M. Øxenberg,29.0,92.0,True,False
+Nordsjælland U19,"Nordsjælland U19 - Silkeborg U19, 3 - 0",O. Bødker,31.0,63.0,True,False
+Nordsjælland U19,"Nordsjælland U19 - Silkeborg U19, 3 - 0",V. Gustafsen,28.0,79.0,True,True
+Nordsjælland U19,"Nordsjælland U19 - Silkeborg U19, 3 - 0",V. Berthelsen,62.0,65.0,False,False
+Silkeborg U19,"Nordsjælland U19 - Silkeborg U19, 3 - 0",S. Laustsen,58.0,85.0,True,True
+Nordsjælland U19,"Nordsjælland U19 - Silkeborg U19, 3 - 0",J. Valtteri Lähteenmäki,43.0,16.0,True,False
+Nordsjælland U19,"Nordsjælland U19 - Silkeborg U19, 3 - 0",M. Walker,26.0,10.0,True,True
+Silkeborg U19,"Nordsjælland U19 - Silkeborg U19, 3 - 0",V. Dahl,73.0,83.0,True,True
+Nordsjælland U19,"Nordsjælland U19 - Silkeborg U19, 3 - 0",M. Walker,24.0,16.0,True,False
+Silkeborg U19,"Nordsjælland U19 - Silkeborg U19, 3 - 0",M. Ryberg,59.0,70.0,True,False
+Silkeborg U19,"Nordsjælland U19 - Silkeborg U19, 3 - 0",,55.0,22.0,True,True
+Nordsjælland U19,"Nordsjælland U19 - Silkeborg U19, 3 - 0",M. Heyde,32.0,27.0,True,True
+Silkeborg U19,"Nordsjælland U19 - Silkeborg U19, 3 - 0",V. Dahl,63.0,67.0,False,False
+Silkeborg U19,"Nordsjælland U19 - Silkeborg U19, 3 - 0",S. Laustsen,3.0,70.0,True,False
+Silkeborg U19,"Nordsjælland U19 - Silkeborg U19, 3 - 0",S. Biller Mikkelsen,61.0,28.0,True,False
+Silkeborg U19,"Nordsjælland U19 - Silkeborg U19, 3 - 0",V. Dahl,71.0,92.0,True,True
+Nordsjælland U19,"Nordsjælland U19 - Silkeborg U19, 3 - 0",V. Gustafsen,62.0,84.0,True,False
+Silkeborg U19,"Nordsjælland U19 - Silkeborg U19, 3 - 0",G. Smith Balle,97.0,22.0,True,False
+Silkeborg U19,"Nordsjælland U19 - Silkeborg U19, 3 - 0",G. Smith Balle,25.0,13.0,False,False
+Nordsjælland U19,"Nordsjælland U19 - Silkeborg U19, 3 - 0",,29.0,61.0,True,True
+Silkeborg U19,"Nordsjælland U19 - Silkeborg U19, 3 - 0",G. Smith Balle,69.0,6.0,True,False
+Silkeborg U19,"Nordsjælland U19 - Silkeborg U19, 3 - 0",M. Ryberg,54.0,54.0,False,False
+Nordsjælland U19,"Nordsjælland U19 - Silkeborg U19, 3 - 0",,55.0,16.0,True,False
+Nordsjælland U19,"Nordsjælland U19 - Silkeborg U19, 3 - 0",J. Valtteri Lähteenmäki,67.0,5.0,False,False
+Nordsjælland U19,"Nordsjælland U19 - Silkeborg U19, 3 - 0",O. Bødker,29.0,32.0,True,False
+Nordsjælland U19,"Nordsjælland U19 - Silkeborg U19, 3 - 0",S. Acquah,8.0,34.0,True,False
+Nordsjælland U19,"Nordsjælland U19 - Silkeborg U19, 3 - 0",J. Meltofte Janssen,34.0,62.0,True,True
+Silkeborg U19,"Nordsjælland U19 - Silkeborg U19, 3 - 0",S. Christoffersen,77.0,54.0,False,False
+Nordsjælland U19,"Nordsjælland U19 - Silkeborg U19, 3 - 0",M. Heyde,24.0,65.0,True,False
+Nordsjælland U19,"Nordsjælland U19 - Silkeborg U19, 3 - 0",J. Meltofte Janssen,21.0,59.0,True,True
+Silkeborg U19,"Nordsjælland U19 - Silkeborg U19, 3 - 0",,61.0,81.0,True,True
+Silkeborg U19,"Nordsjælland U19 - Silkeborg U19, 3 - 0",S. Biller Mikkelsen,69.0,5.0,False,False
+Silkeborg U19,"Nordsjælland U19 - Silkeborg U19, 3 - 0",S. Biller Mikkelsen,71.0,10.0,False,False
+Silkeborg U19,"Nordsjælland U19 - Silkeborg U19, 3 - 0",,29.0,56.0,False,False
+Silkeborg U19,"Nordsjælland U19 - Silkeborg U19, 3 - 0",,29.0,29.0,True,False
+Nordsjælland U19,"Nordsjælland U19 - Silkeborg U19, 3 - 0",D. Jóhannesson,92.0,67.0,False,False
+Nordsjælland U19,"Nordsjælland U19 - Silkeborg U19, 3 - 0",V. Gustafsen,69.0,80.0,True,False
+Silkeborg U19,"Nordsjælland U19 - Silkeborg U19, 3 - 0",S. Biller Mikkelsen,13.0,24.0,True,False
+Silkeborg U19,"Nordsjælland U19 - Silkeborg U19, 3 - 0",G. Smith Balle,12.0,6.0,True,False
+Nordsjælland U19,"Nordsjælland U19 - Silkeborg U19, 3 - 0",M. Seim-Monsen,55.0,68.0,True,False
+Nordsjælland U19,"Nordsjælland U19 - Silkeborg U19, 3 - 0",J. Valtteri Lähteenmäki,45.0,38.0,True,False
+Nordsjælland U19,"Nordsjælland U19 - Silkeborg U19, 3 - 0",V. Berthelsen,42.0,32.0,True,True
+Nordsjælland U19,"Nordsjælland U19 - Silkeborg U19, 3 - 0",V. Berthelsen,62.0,26.0,False,False
+Nordsjælland U19,"Nordsjælland U19 - Silkeborg U19, 3 - 0",M. Heyde,44.0,70.0,False,False
+Silkeborg U19,"Nordsjælland U19 - Silkeborg U19, 3 - 0",S. Biller Mikkelsen,57.0,33.0,True,True
+Nordsjælland U19,"Nordsjælland U19 - Silkeborg U19, 3 - 0",M. Heyde,44.0,80.0,True,False
+Nordsjælland U19,"Nordsjælland U19 - Silkeborg U19, 3 - 0",V. Gustafsen,16.0,88.0,True,False
+Silkeborg U19,"Nordsjælland U19 - Silkeborg U19, 3 - 0",S. Biller Mikkelsen,66.0,10.0,True,False
+Silkeborg U19,"Nordsjælland U19 - Silkeborg U19, 3 - 0",,11.0,75.0,False,False
+Silkeborg U19,"Nordsjælland U19 - Silkeborg U19, 3 - 0",,63.0,87.0,True,False
+Silkeborg U19,"Nordsjælland U19 - Silkeborg U19, 3 - 0",B. Binggeli,41.0,17.0,True,False
+Silkeborg U19,"Nordsjælland U19 - Silkeborg U19, 3 - 0",S. Biller Mikkelsen,42.0,14.0,False,False
+Nordsjælland U19,"Nordsjælland U19 - Silkeborg U19, 3 - 0",M. Walker,41.0,62.0,False,False
+Nordsjælland U19,"Nordsjælland U19 - Silkeborg U19, 3 - 0",M. Karim,32.0,73.0,False,False
+Nordsjælland U19,"Nordsjælland U19 - Silkeborg U19, 3 - 0",M. Heyde,30.0,68.0,True,False
+Lyngby U19,"OB U19 - Lyngby U19, 2 - 0",N. Bosselmann,22.0,13.0,True,True
+OB U19,"OB U19 - Lyngby U19, 2 - 0",E. Hansborg-Sørensen,93.0,93.0,False,False
+OB U19,"OB U19 - Lyngby U19, 2 - 0",V. Friis,46.0,73.0,True,False
+OB U19,"OB U19 - Lyngby U19, 2 - 0",M. McCoy,53.0,92.0,True,False
+OB U19,"OB U19 - Lyngby U19, 2 - 0",J. Askou,30.0,17.0,True,True
+Lyngby U19,"OB U19 - Lyngby U19, 2 - 0",M. Henriksen,57.0,77.0,True,False
+OB U19,"OB U19 - Lyngby U19, 2 - 0",,22.0,34.0,False,False
+OB U19,"OB U19 - Lyngby U19, 2 - 0",,14.0,61.0,True,False
+OB U19,"OB U19 - Lyngby U19, 2 - 0",Noah Barholt Rasmussen,30.0,7.0,True,False
+OB U19,"OB U19 - Lyngby U19, 2 - 0",Noah Barholt Rasmussen,25.0,6.0,False,False
+OB U19,"OB U19 - Lyngby U19, 2 - 0",Noah Barholt Rasmussen,11.0,11.0,True,False
+Lyngby U19,"OB U19 - Lyngby U19, 2 - 0",M. Kaarsbo,67.0,66.0,True,False
+OB U19,"OB U19 - Lyngby U19, 2 - 0",N. Juul-Sandberg,35.0,5.0,True,True
+Lyngby U19,"OB U19 - Lyngby U19, 2 - 0",,54.0,90.0,True,False
+Lyngby U19,"OB U19 - Lyngby U19, 2 - 0",V. Lykke,16.0,8.0,True,False
+Lyngby U19,"OB U19 - Lyngby U19, 2 - 0",H. Heidarali,73.0,74.0,False,False
+Lyngby U19,"OB U19 - Lyngby U19, 2 - 0",T. Di Carlo,76.0,9.0,True,True
+OB U19,"OB U19 - Lyngby U19, 2 - 0",M. McCoy,16.0,91.0,True,False
+OB U19,"OB U19 - Lyngby U19, 2 - 0",T. Slotsager,19.0,85.0,True,False
+OB U19,"OB U19 - Lyngby U19, 2 - 0",,17.0,91.0,True,True
+OB U19,"OB U19 - Lyngby U19, 2 - 0",Noah Barholt Rasmussen,47.0,6.0,True,False
+OB U19,"OB U19 - Lyngby U19, 2 - 0",N. Juul-Sandberg,38.0,16.0,False,False
+OB U19,"OB U19 - Lyngby U19, 2 - 0",,77.0,31.0,True,False
+OB U19,"OB U19 - Lyngby U19, 2 - 0",N. Juul-Sandberg,78.0,26.0,True,False
+OB U19,"OB U19 - Lyngby U19, 2 - 0",Noah Barholt Rasmussen,57.0,7.0,True,False
+OB U19,"OB U19 - Lyngby U19, 2 - 0",H. Rasmussen,74.0,92.0,True,False
+OB U19,"OB U19 - Lyngby U19, 2 - 0",M. McCoy,74.0,89.0,True,True
+OB U19,"OB U19 - Lyngby U19, 2 - 0",T. Slotsager,11.0,87.0,True,False
+Lyngby U19,"OB U19 - Lyngby U19, 2 - 0",A. Aslani,63.0,29.0,True,False
+Lyngby U19,"OB U19 - Lyngby U19, 2 - 0",,84.0,8.0,True,False
+OB U19,"OB U19 - Lyngby U19, 2 - 0",E. Petersen,75.0,77.0,True,False
+OB U19,"OB U19 - Lyngby U19, 2 - 0",M. McCoy,36.0,97.0,True,True
+OB U19,"OB U19 - Lyngby U19, 2 - 0",E. Petersen,63.0,66.0,False,False
+Lyngby U19,"OB U19 - Lyngby U19, 2 - 0",W. Steindorsson,67.0,19.0,True,True
+Lyngby U19,"OB U19 - Lyngby U19, 2 - 0",A. Jørgensen,64.0,89.0,False,False
+OB U19,"OB U19 - Lyngby U19, 2 - 0",E. Hansborg-Sørensen,73.0,9.0,False,False
+OB U19,"OB U19 - Lyngby U19, 2 - 0",J. Askou,28.0,5.0,True,False
+Lyngby U19,"OB U19 - Lyngby U19, 2 - 0",H. Heidarali,60.0,75.0,True,False
+OB U19,"OB U19 - Lyngby U19, 2 - 0",,16.0,33.0,True,False
+OB U19,"OB U19 - Lyngby U19, 2 - 0",E. Hansborg-Sørensen,28.0,4.0,False,False
+OB U19,"OB U19 - Lyngby U19, 2 - 0",M. McCoy,36.0,90.0,True,False
+OB U19,"OB U19 - Lyngby U19, 2 - 0",Noah Barholt Rasmussen,17.0,12.0,True,True
+OB U19,"OB U19 - Lyngby U19, 2 - 0",N. Juul-Sandberg,28.0,22.0,True,True
+Lyngby U19,"OB U19 - Lyngby U19, 2 - 0",A. Aslani,59.0,78.0,False,False
+OB U19,"OB U19 - Lyngby U19, 2 - 0",E. Hansborg-Sørensen,30.0,3.0,True,False
+OB U19,"OB U19 - Lyngby U19, 2 - 0",J. Askou,27.0,21.0,True,False
+OB U19,"OB U19 - Lyngby U19, 2 - 0",Noah Barholt Rasmussen,45.0,11.0,True,False
+OB U19,"OB U19 - Lyngby U19, 2 - 0",G. Wulff,46.0,16.0,True,False
+OB U19,"OB U19 - Lyngby U19, 2 - 0",J. Askou,5.0,5.0,True,False
+OB U19,"OB U19 - Lyngby U19, 2 - 0",J. Askou,7.0,23.0,True,False
+Lyngby U19,"OB U19 - Lyngby U19, 2 - 0",W. Steindorsson,35.0,6.0,True,False
+Lyngby U19,"OB U19 - Lyngby U19, 2 - 0",W. Steindorsson,61.0,36.0,False,False
+Lyngby U19,"OB U19 - Lyngby U19, 2 - 0",M. Henriksen,8.0,25.0,False,False
+OB U19,"OB U19 - Lyngby U19, 2 - 0",Noah Barholt Rasmussen,54.0,4.0,True,False
+OB U19,"OB U19 - Lyngby U19, 2 - 0",G. Wulff,66.0,16.0,True,False
+OB U19,"OB U19 - Lyngby U19, 2 - 0",H. Rasmussen,33.0,63.0,True,True
+Lyngby U19,"OB U19 - Lyngby U19, 2 - 0",,9.0,73.0,True,False
+Lyngby U19,"OB U19 - Lyngby U19, 2 - 0",,7.0,74.0,True,True
+OB U19,"OB U19 - Lyngby U19, 2 - 0",,79.0,28.0,True,False
+Lyngby U19,"OB U19 - Lyngby U19, 2 - 0",A. Aslani,51.0,73.0,True,True
+Lyngby U19,"OB U19 - Lyngby U19, 2 - 0",,55.0,70.0,True,True
+OB U19,"OB U19 - Lyngby U19, 2 - 0",V. Friis,35.0,42.0,True,False
+OB U19,"OB U19 - Lyngby U19, 2 - 0",J. Askou,22.0,41.0,True,True
+OB U19,"OB U19 - Lyngby U19, 2 - 0",E. Hansborg-Sørensen,56.0,61.0,True,False
+OB U19,"OB U19 - Lyngby U19, 2 - 0",M. McCoy,23.0,88.0,False,False
+Lyngby U19,"OB U19 - Lyngby U19, 2 - 0",A. Jørgensen,34.0,30.0,True,False
+Lyngby U19,"OB U19 - Lyngby U19, 2 - 0",,30.0,32.0,False,False
+OB U19,"OB U19 - Lyngby U19, 2 - 0",Noah Barholt Rasmussen,78.0,12.0,True,False
+OB U19,"OB U19 - Lyngby U19, 2 - 0",Noah Barholt Rasmussen,76.0,5.0,True,False
+OB U19,"OB U19 - Lyngby U19, 2 - 0",Noah Barholt Rasmussen,72.0,5.0,False,False
+OB U19,"OB U19 - Lyngby U19, 2 - 0",H. Rasmussen,65.0,88.0,False,False
+OB U19,"OB U19 - Lyngby U19, 2 - 0",E. Hansborg-Sørensen,53.0,40.0,False,False
+OB U19,"OB U19 - Lyngby U19, 2 - 0",E. Hansborg-Sørensen,22.0,29.0,True,False
+OB U19,"OB U19 - Lyngby U19, 2 - 0",T. Slotsager,15.0,60.0,True,True
+OB U19,"OB U19 - Lyngby U19, 2 - 0",G. Wulff,29.0,19.0,True,True
+Lyngby U19,"OB U19 - Lyngby U19, 2 - 0",A. Jørgensen,77.0,8.0,True,True
+Lyngby U19,"OB U19 - Lyngby U19, 2 - 0",K. Jasovic,65.0,34.0,True,False
+Lyngby U19,"OB U19 - Lyngby U19, 2 - 0",V. Lykke,76.0,12.0,True,True
+OB U19,"OB U19 - Lyngby U19, 2 - 0",V. Friis,40.0,88.0,True,False
+Lyngby U19,"OB U19 - Lyngby U19, 2 - 0",M. Henriksen,4.0,68.0,True,False
+OB U19,"OB U19 - Lyngby U19, 2 - 0",V. Friis,50.0,87.0,True,True
+Lyngby U19,"OB U19 - Lyngby U19, 2 - 0",,9.0,83.0,False,False
+OB U19,"OB U19 - Lyngby U19, 2 - 0",H. Rasmussen,74.0,82.0,True,True
+Lyngby U19,"OB U19 - Lyngby U19, 2 - 0",M. Henriksen,37.0,20.0,True,True
+OB U19,"OB U19 - Lyngby U19, 2 - 0",E. Hansborg-Sørensen,36.0,57.0,True,False
+Lyngby U19,"OB U19 - Lyngby U19, 2 - 0",,38.0,76.0,True,True
+OB U19,"OB U19 - Lyngby U19, 2 - 0",G. Wulff,58.0,44.0,False,False
+OB U19,"OB U19 - Lyngby U19, 2 - 0",M. McCoy,27.0,92.0,True,False
+OB U19,"OB U19 - Lyngby U19, 2 - 0",,36.0,96.0,True,False
+OB U19,"OB U19 - Lyngby U19, 2 - 0",,29.0,91.0,True,False
+OB U19,"OB U19 - Lyngby U19, 2 - 0",N. Juul-Sandberg,29.0,68.0,False,False
+OB U19,"OB U19 - Lyngby U19, 2 - 0",,13.0,67.0,False,False
+Lyngby U19,"OB U19 - Lyngby U19, 2 - 0",A. Aslani,62.0,66.0,False,False
+OB U19,"OB U19 - Lyngby U19, 2 - 0",E. Hansborg-Sørensen,74.0,23.0,True,False
+Lyngby U19,"OB U19 - Lyngby U19, 2 - 0",,20.0,18.0,True,False
+OB U19,"OB U19 - Lyngby U19, 2 - 0",J. Askou,65.0,22.0,True,True
+Lyngby U19,"OB U19 - Lyngby U19, 2 - 0",M. Kaarsbo,80.0,86.0,True,False
+OB U19,"OB U19 - Lyngby U19, 2 - 0",N. Juul-Sandberg,21.0,13.0,True,True
+Lyngby U19,"OB U19 - Lyngby U19, 2 - 0",W. Steindorsson,68.0,87.0,True,True
+OB U19,"OB U19 - Lyngby U19, 2 - 0",E. Petersen,30.0,16.0,True,True
+OB U19,"OB U19 - Lyngby U19, 2 - 0",,38.0,65.0,False,False
+OB U19,"OB U19 - Lyngby U19, 2 - 0",,12.0,93.0,False,False
+OB U19,"OB U19 - Lyngby U19, 2 - 0",M. McCoy,13.0,69.0,True,False
+OB U19,"OB U19 - Lyngby U19, 2 - 0",V. Friis,46.0,71.0,True,False
+Lyngby U19,"OB U19 - Lyngby U19, 2 - 0",A. Aslani,43.0,91.0,True,False
+Lyngby U19,"OB U19 - Lyngby U19, 2 - 0",,36.0,98.0,True,True
+Lyngby U19,"OB U19 - Lyngby U19, 2 - 0",,1.0,86.0,True,False
+Lyngby U19,"OB U19 - Lyngby U19, 2 - 0",K. Jasovic,31.0,24.0,True,True
+OB U19,"OB U19 - Lyngby U19, 2 - 0",M. McCoy,34.0,56.0,True,False
+OB U19,"OB U19 - Lyngby U19, 2 - 0",M. Abrahamsen,22.0,85.0,True,False
+OB U19,"OB U19 - Lyngby U19, 2 - 0",T. Slotsager,24.0,67.0,True,False
+Lyngby U19,"OB U19 - Lyngby U19, 2 - 0",A. Jørgensen,76.0,21.0,True,True
+OB U19,"OB U19 - Lyngby U19, 2 - 0",T. Slotsager,23.0,66.0,True,True
+Lyngby U19,"OB U19 - Lyngby U19, 2 - 0",A. Aslani,54.0,74.0,True,False
+Lyngby U19,"OB U19 - Lyngby U19, 2 - 0",K. Jasovic,42.0,70.0,True,False
+OB U19,"OB U19 - Lyngby U19, 2 - 0",J. Askou,22.0,15.0,False,False
+Lyngby U19,"OB U19 - Lyngby U19, 2 - 0",M. Henriksen,33.0,7.0,True,False
+OB U19,"OB U19 - Lyngby U19, 2 - 0",,46.0,8.0,True,False
+OB U19,"OB U19 - Lyngby U19, 2 - 0",T. Slotsager,23.0,56.0,True,True
+Lyngby U19,"OB U19 - Lyngby U19, 2 - 0",B. Andersen Magui,76.0,53.0,True,True
+Lyngby U19,"OB U19 - Lyngby U19, 2 - 0",H. Heidarali,94.0,66.0,True,False
+OB U19,"OB U19 - Lyngby U19, 2 - 0",E. Hansborg-Sørensen,73.0,45.0,True,True
+OB U19,"OB U19 - Lyngby U19, 2 - 0",M. Abrahamsen,44.0,52.0,False,False
+OB U19,"OB U19 - Lyngby U19, 2 - 0",J. Askou,5.0,18.0,True,False
+Lyngby U19,"OB U19 - Lyngby U19, 2 - 0",A. Aslani,63.0,70.0,False,False
+OB U19,"OB U19 - Lyngby U19, 2 - 0",V. Friis,68.0,70.0,True,True
+OB U19,"OB U19 - Lyngby U19, 2 - 0",M. Andersen,42.0,10.0,True,False
+Lyngby U19,"OB U19 - Lyngby U19, 2 - 0",A. Jørgensen,67.0,70.0,True,False
+OB U19,"OB U19 - Lyngby U19, 2 - 0",J. Askou,17.0,11.0,True,False
+OB U19,"OB U19 - Lyngby U19, 2 - 0",,15.0,11.0,True,True
+Lyngby U19,"OB U19 - Lyngby U19, 2 - 0",A. Aslani,93.0,91.0,True,True
+OB U19,"OB U19 - Lyngby U19, 2 - 0",R. Helveg,2.0,5.0,True,False
+OB U19,"OB U19 - Lyngby U19, 2 - 0",M. Andersen,15.0,17.0,True,False
+OB U19,"OB U19 - Lyngby U19, 2 - 0",E. Hansborg-Sørensen,22.0,16.0,True,False
+Lyngby U19,"OB U19 - Lyngby U19, 2 - 0",N. Bosselmann,38.0,90.0,True,False
+OB U19,"OB U19 - Lyngby U19, 2 - 0",V. Bender,36.0,11.0,True,True
+OB U19,"OB U19 - Lyngby U19, 2 - 0",V. Friis,41.0,14.0,True,False
+Lyngby U19,"OB U19 - Lyngby U19, 2 - 0",K. Jasovic,60.0,82.0,True,False
+OB U19,"OB U19 - Lyngby U19, 2 - 0",V. Bender,45.0,8.0,True,False
+Lyngby U19,"OB U19 - Lyngby U19, 2 - 0",,40.0,56.0,True,True
+OB U19,"OB U19 - Lyngby U19, 2 - 0",,64.0,35.0,True,False
+OB U19,"OB U19 - Lyngby U19, 2 - 0",E. Hansborg-Sørensen,63.0,51.0,True,False
+OB U19,"OB U19 - Lyngby U19, 2 - 0",M. Abrahamsen,66.0,46.0,False,False
+Lyngby U19,"OB U19 - Lyngby U19, 2 - 0",T. Nilsson,15.0,65.0,False,False
+OB U19,"OB U19 - Lyngby U19, 2 - 0",J. Askou,4.0,9.0,True,False
+OB U19,"OB U19 - Lyngby U19, 2 - 0",,41.0,19.0,False,False
+OB U19,"OB U19 - Lyngby U19, 2 - 0",E. Hansborg-Sørensen,16.0,13.0,True,True
+OB U19,"OB U19 - Lyngby U19, 2 - 0",M. Andersen,44.0,77.0,True,False
+OB U19,"OB U19 - Lyngby U19, 2 - 0",N. Juul-Sandberg,36.0,83.0,True,True
+OB U19,"OB U19 - Lyngby U19, 2 - 0",N. Juul-Sandberg,71.0,68.0,False,False
+Lyngby U19,"OB U19 - Lyngby U19, 2 - 0",N. Bosselmann,71.0,82.0,True,False
+OB U19,"OB U19 - Lyngby U19, 2 - 0",V. Bender,12.0,18.0,False,False
+OB U19,"OB U19 - Lyngby U19, 2 - 0",,14.0,85.0,True,False
+Lyngby U19,"OB U19 - Lyngby U19, 2 - 0",B. Andersen Magui,68.0,16.0,True,False
+Lyngby U19,"OB U19 - Lyngby U19, 2 - 0",,62.0,5.0,True,False
+OB U19,"OB U19 - Lyngby U19, 2 - 0",M. Abrahamsen,46.0,93.0,True,True
+Lyngby U19,"OB U19 - Lyngby U19, 2 - 0",,28.0,11.0,False,False
+OB U19,"OB U19 - Lyngby U19, 2 - 0",R. Helveg,27.0,21.0,True,False
+OB U19,"OB U19 - Lyngby U19, 2 - 0",V. Bender,35.0,11.0,True,False
+OB U19,"OB U19 - Lyngby U19, 2 - 0",R. Helveg,27.0,7.0,False,False
+OB U19,"OB U19 - Lyngby U19, 2 - 0",M. Abrahamsen,40.0,89.0,False,False
+Vejle U19,"SønderjyskE U19 - Vejle U19, 2 - 3",,23.0,82.0,True,False
+Vejle U19,"SønderjyskE U19 - Vejle U19, 2 - 3",H. Christensen,24.0,65.0,True,False
+Vejle U19,"SønderjyskE U19 - Vejle U19, 2 - 3",C. Astrup,24.0,65.0,True,False
+Vejle U19,"SønderjyskE U19 - Vejle U19, 2 - 3",T. Lykkebak,22.0,61.0,True,True
+Vejle U19,"SønderjyskE U19 - Vejle U19, 2 - 3",S. Ravn,25.0,75.0,False,False
+SønderjyskE U19,"SønderjyskE U19 - Vejle U19, 2 - 3",J. Jonsson,52.0,4.0,True,False
+SønderjyskE U19,"SønderjyskE U19 - Vejle U19, 2 - 3",V. Klindt Sørensen,27.0,45.0,True,False
+SønderjyskE U19,"SønderjyskE U19 - Vejle U19, 2 - 3",,8.0,72.0,False,False
+Vejle U19,"SønderjyskE U19 - Vejle U19, 2 - 3",S. Ravn,60.0,91.0,True,False
+Vejle U19,"SønderjyskE U19 - Vejle U19, 2 - 3",M. Udengaard,32.0,22.0,True,True
+SønderjyskE U19,"SønderjyskE U19 - Vejle U19, 2 - 3",A. Rrahmani,70.0,57.0,False,False
+SønderjyskE U19,"SønderjyskE U19 - Vejle U19, 2 - 3",,26.0,1.0,False,False
+SønderjyskE U19,"SønderjyskE U19 - Vejle U19, 2 - 3",S. Larsen,31.0,54.0,False,False
+SønderjyskE U19,"SønderjyskE U19 - Vejle U19, 2 - 3",,23.0,16.0,False,False
+Vejle U19,"SønderjyskE U19 - Vejle U19, 2 - 3",S. Ravn,48.0,76.0,True,False
+Vejle U19,"SønderjyskE U19 - Vejle U19, 2 - 3",H. Christensen,38.0,84.0,True,False
+SønderjyskE U19,"SønderjyskE U19 - Vejle U19, 2 - 3",A. Rrahmani,68.0,28.0,False,False
+SønderjyskE U19,"SønderjyskE U19 - Vejle U19, 2 - 3",A. Bergholdt,61.0,35.0,True,False
+SønderjyskE U19,"SønderjyskE U19 - Vejle U19, 2 - 3",,55.0,62.0,False,False
+Vejle U19,"SønderjyskE U19 - Vejle U19, 2 - 3",T. Lykkebak,69.0,89.0,True,True
+SønderjyskE U19,"SønderjyskE U19 - Vejle U19, 2 - 3",,30.0,35.0,False,False
+SønderjyskE U19,"SønderjyskE U19 - Vejle U19, 2 - 3",L. Riggelsen,21.0,88.0,True,False
+Vejle U19,"SønderjyskE U19 - Vejle U19, 2 - 3",A. Dahche,45.0,89.0,True,False
+SønderjyskE U19,"SønderjyskE U19 - Vejle U19, 2 - 3",,22.0,68.0,False,False
+SønderjyskE U19,"SønderjyskE U19 - Vejle U19, 2 - 3",E. Hjorth Pedersen,29.0,76.0,True,False
+SønderjyskE U19,"SønderjyskE U19 - Vejle U19, 2 - 3",L. Riggelsen,12.0,83.0,False,False
+SønderjyskE U19,"SønderjyskE U19 - Vejle U19, 2 - 3",,12.0,4.0,True,False
+SønderjyskE U19,"SønderjyskE U19 - Vejle U19, 2 - 3",S. Larsen,18.0,36.0,True,True
+SønderjyskE U19,"SønderjyskE U19 - Vejle U19, 2 - 3",,24.0,5.0,False,False
+SønderjyskE U19,"SønderjyskE U19 - Vejle U19, 2 - 3",L. Riggelsen,5.0,56.0,True,False
+SønderjyskE U19,"SønderjyskE U19 - Vejle U19, 2 - 3",L. Riggelsen,16.0,83.0,True,False
+Vejle U19,"SønderjyskE U19 - Vejle U19, 2 - 3",E. Subasic,74.0,59.0,True,True
+SønderjyskE U19,"SønderjyskE U19 - Vejle U19, 2 - 3",A. Rrahmani,31.0,65.0,True,False
+SønderjyskE U19,"SønderjyskE U19 - Vejle U19, 2 - 3",,26.0,7.0,True,False
+Vejle U19,"SønderjyskE U19 - Vejle U19, 2 - 3",A. Dahche,42.0,95.0,True,False
+Vejle U19,"SønderjyskE U19 - Vejle U19, 2 - 3",R. Koch Groth Pedersen,54.0,98.0,True,False
+SønderjyskE U19,"SønderjyskE U19 - Vejle U19, 2 - 3",,32.0,8.0,True,False
+SønderjyskE U19,"SønderjyskE U19 - Vejle U19, 2 - 3",A. Vogtmann,16.0,12.0,False,False
+Vejle U19,"SønderjyskE U19 - Vejle U19, 2 - 3",A. Dahche,60.0,98.0,True,True
+SønderjyskE U19,"SønderjyskE U19 - Vejle U19, 2 - 3",A. Bergholdt,45.0,9.0,True,False
+SønderjyskE U19,"SønderjyskE U19 - Vejle U19, 2 - 3",J. Jonsson,12.0,59.0,True,False
+Vejle U19,"SønderjyskE U19 - Vejle U19, 2 - 3",,59.0,55.0,True,False
+Vejle U19,"SønderjyskE U19 - Vejle U19, 2 - 3",M. Udengaard,42.0,18.0,True,True
+SønderjyskE U19,"SønderjyskE U19 - Vejle U19, 2 - 3",M. Ottesen,42.0,75.0,True,False
+Vejle U19,"SønderjyskE U19 - Vejle U19, 2 - 3",S. Ravn,60.0,73.0,False,False
+Vejle U19,"SønderjyskE U19 - Vejle U19, 2 - 3",A. Dahche,41.0,95.0,False,False
+Vejle U19,"SønderjyskE U19 - Vejle U19, 2 - 3",E. Subasic,65.0,98.0,True,False
+Vejle U19,"SønderjyskE U19 - Vejle U19, 2 - 3",E. Subasic,56.0,91.0,True,False
+Vejle U19,"SønderjyskE U19 - Vejle U19, 2 - 3",T. Lykkebak,49.0,65.0,True,False
+SønderjyskE U19,"SønderjyskE U19 - Vejle U19, 2 - 3",,38.0,20.0,True,False
+SønderjyskE U19,"SønderjyskE U19 - Vejle U19, 2 - 3",A. Bergholdt,44.0,19.0,True,False
+SønderjyskE U19,"SønderjyskE U19 - Vejle U19, 2 - 3",,21.0,1.0,True,False
+Vejle U19,"SønderjyskE U19 - Vejle U19, 2 - 3",S. Ravn,82.0,50.0,False,False
+Vejle U19,"SønderjyskE U19 - Vejle U19, 2 - 3",H. Christensen,84.0,42.0,True,False
+SønderjyskE U19,"SønderjyskE U19 - Vejle U19, 2 - 3",S. Escobar Jensen,24.0,88.0,True,False
+SønderjyskE U19,"SønderjyskE U19 - Vejle U19, 2 - 3",S. Escobar Jensen,42.0,25.0,False,False
+SønderjyskE U19,"SønderjyskE U19 - Vejle U19, 2 - 3",,17.0,10.0,True,False
+SønderjyskE U19,"SønderjyskE U19 - Vejle U19, 2 - 3",A. Vogtmann,8.0,11.0,False,False
+SønderjyskE U19,"SønderjyskE U19 - Vejle U19, 2 - 3",L. Riggelsen,9.0,85.0,False,False
+SønderjyskE U19,"SønderjyskE U19 - Vejle U19, 2 - 3",L. Riggelsen,10.0,66.0,False,False
+SønderjyskE U19,"SønderjyskE U19 - Vejle U19, 2 - 3",J. Jonsson,26.0,11.0,True,True
+Vejle U19,"SønderjyskE U19 - Vejle U19, 2 - 3",H. Christensen,53.0,75.0,True,False
+Vejle U19,"SønderjyskE U19 - Vejle U19, 2 - 3",T. Lykkebak,60.0,60.0,True,False
+SønderjyskE U19,"SønderjyskE U19 - Vejle U19, 2 - 3",S. Larsen,52.0,26.0,False,False
+SønderjyskE U19,"SønderjyskE U19 - Vejle U19, 2 - 3",A. Bergholdt,54.0,32.0,False,False
+SønderjyskE U19,"SønderjyskE U19 - Vejle U19, 2 - 3",A. Vogtmann,53.0,5.0,True,False
+SønderjyskE U19,"SønderjyskE U19 - Vejle U19, 2 - 3",A. Rrahmani,44.0,51.0,False,False
+SønderjyskE U19,"SønderjyskE U19 - Vejle U19, 2 - 3",E. Hjorth Pedersen,41.0,71.0,True,True
+Vejle U19,"SønderjyskE U19 - Vejle U19, 2 - 3",A. Klaster,46.0,17.0,False,False
+Vejle U19,"SønderjyskE U19 - Vejle U19, 2 - 3",C. Astrup,43.0,29.0,False,False
+Vejle U19,"SønderjyskE U19 - Vejle U19, 2 - 3",T. Lykkebak,47.0,35.0,True,True
+SønderjyskE U19,"SønderjyskE U19 - Vejle U19, 2 - 3",J. Jonsson,40.0,61.0,False,False
+SønderjyskE U19,"SønderjyskE U19 - Vejle U19, 2 - 3",V. Klindt Sørensen,11.0,56.0,True,False
+Vejle U19,"SønderjyskE U19 - Vejle U19, 2 - 3",E. Subasic,63.0,74.0,True,False
+SønderjyskE U19,"SønderjyskE U19 - Vejle U19, 2 - 3",S. Larsen,70.0,2.0,False,False
+Vejle U19,"SønderjyskE U19 - Vejle U19, 2 - 3",R. Koch Groth Pedersen,44.0,80.0,True,True
+SønderjyskE U19,"SønderjyskE U19 - Vejle U19, 2 - 3",A. Rrahmani,55.0,30.0,False,False
+SønderjyskE U19,"SønderjyskE U19 - Vejle U19, 2 - 3",V. Klindt Sørensen,4.0,30.0,True,False
+SønderjyskE U19,"SønderjyskE U19 - Vejle U19, 2 - 3",V. Klindt Sørensen,3.0,40.0,True,True
+SønderjyskE U19,"SønderjyskE U19 - Vejle U19, 2 - 3",J. Jonsson,52.0,32.0,True,False
+SønderjyskE U19,"SønderjyskE U19 - Vejle U19, 2 - 3",L. Riggelsen,21.0,61.0,False,False
+Vejle U19,"SønderjyskE U19 - Vejle U19, 2 - 3",R. Koch Groth Pedersen,62.0,88.0,False,False
+Vejle U19,"SønderjyskE U19 - Vejle U19, 2 - 3",C. Astrup,46.0,51.0,False,False
+SønderjyskE U19,"SønderjyskE U19 - Vejle U19, 2 - 3",A. Bergholdt,56.0,12.0,False,False
+Vejle U19,"SønderjyskE U19 - Vejle U19, 2 - 3",E. Subasic,63.0,98.0,False,False
+Vejle U19,"SønderjyskE U19 - Vejle U19, 2 - 3",T. Lykkebak,41.0,28.0,True,True
+SønderjyskE U19,"SønderjyskE U19 - Vejle U19, 2 - 3",S. Escobar Jensen,85.0,49.0,True,False
+SønderjyskE U19,"SønderjyskE U19 - Vejle U19, 2 - 3",A. Vogtmann,30.0,5.0,True,False
+SønderjyskE U19,"SønderjyskE U19 - Vejle U19, 2 - 3",V. Klindt Sørensen,12.0,19.0,True,False
+SønderjyskE U19,"SønderjyskE U19 - Vejle U19, 2 - 3",,13.0,27.0,True,True
+SønderjyskE U19,"SønderjyskE U19 - Vejle U19, 2 - 3",L. Riggelsen,18.0,71.0,True,False
+SønderjyskE U19,"SønderjyskE U19 - Vejle U19, 2 - 3",F. Nygaard Jürgensen,15.0,11.0,False,False
+Vejle U19,"SønderjyskE U19 - Vejle U19, 2 - 3",C. Astrup,73.0,79.0,True,False
+Vejle U19,"SønderjyskE U19 - Vejle U19, 2 - 3",H. Christensen,48.0,71.0,True,False
+Vejle U19,"SønderjyskE U19 - Vejle U19, 2 - 3",A. Dahche,54.0,82.0,True,True
+SønderjyskE U19,"SønderjyskE U19 - Vejle U19, 2 - 3",L. Riggelsen,30.0,97.0,True,False
+Vejle U19,"SønderjyskE U19 - Vejle U19, 2 - 3",A. Klaster,51.0,19.0,True,True
+SønderjyskE U19,"SønderjyskE U19 - Vejle U19, 2 - 3",S. Larsen,44.0,84.0,True,False
+Vejle U19,"SønderjyskE U19 - Vejle U19, 2 - 3",H. Christensen,20.0,30.0,False,False
+Vejle U19,"SønderjyskE U19 - Vejle U19, 2 - 3",S. Ravn,43.0,24.0,True,True
+SønderjyskE U19,"SønderjyskE U19 - Vejle U19, 2 - 3",F. Nygaard Jürgensen,30.0,49.0,True,False
+SønderjyskE U19,"SønderjyskE U19 - Vejle U19, 2 - 3",F. Nygaard Jürgensen,39.0,31.0,False,False
+SønderjyskE U19,"SønderjyskE U19 - Vejle U19, 2 - 3",V. Klindt Sørensen,9.0,34.0,True,True
+SønderjyskE U19,"SønderjyskE U19 - Vejle U19, 2 - 3",A. Bergholdt,22.0,17.0,True,False
+SønderjyskE U19,"SønderjyskE U19 - Vejle U19, 2 - 3",F. Nygaard Jürgensen,23.0,34.0,False,False
+Vejle U19,"SønderjyskE U19 - Vejle U19, 2 - 3",T. Pedersen,74.0,18.0,True,True
+SønderjyskE U19,"SønderjyskE U19 - Vejle U19, 2 - 3",A. Bergholdt,61.0,38.0,True,True
+Vejle U19,"SønderjyskE U19 - Vejle U19, 2 - 3",M. Udengaard,41.0,0.0,False,False
+SønderjyskE U19,"SønderjyskE U19 - Vejle U19, 2 - 3",V. Klindt Sørensen,37.0,14.0,True,False
+SønderjyskE U19,"SønderjyskE U19 - Vejle U19, 2 - 3",A. Vogtmann,37.0,13.0,True,False
+SønderjyskE U19,"SønderjyskE U19 - Vejle U19, 2 - 3",S. Escobar Jensen,28.0,28.0,True,False
+SønderjyskE U19,"SønderjyskE U19 - Vejle U19, 2 - 3",,32.0,78.0,True,False
+Vejle U19,"SønderjyskE U19 - Vejle U19, 2 - 3",H. Christensen,1.0,70.0,True,True
+SønderjyskE U19,"SønderjyskE U19 - Vejle U19, 2 - 3",F. Nygaard Jürgensen,90.0,30.0,True,False
+Vejle U19,"SønderjyskE U19 - Vejle U19, 2 - 3",H. Christensen,93.0,48.0,True,True
+SønderjyskE U19,"SønderjyskE U19 - Vejle U19, 2 - 3",,30.0,76.0,False,False
+SønderjyskE U19,"SønderjyskE U19 - Vejle U19, 2 - 3",,23.0,94.0,False,False
+Vejle U19,"SønderjyskE U19 - Vejle U19, 2 - 3",C. Astrup,62.0,46.0,True,False
+SønderjyskE U19,"SønderjyskE U19 - Vejle U19, 2 - 3",S. Escobar Jensen,34.0,63.0,False,False
+Vejle U19,"SønderjyskE U19 - Vejle U19, 2 - 3",T. Lykkebak,83.0,96.0,True,False
+SønderjyskE U19,"SønderjyskE U19 - Vejle U19, 2 - 3",A. Vogtmann,12.0,19.0,True,False
+Vejle U19,"SønderjyskE U19 - Vejle U19, 2 - 3",C. Astrup,82.0,75.0,False,False
+Vejle U19,"SønderjyskE U19 - Vejle U19, 2 - 3",T. Pedersen,40.0,59.0,False,False
+SønderjyskE U19,"SønderjyskE U19 - Vejle U19, 2 - 3",L. Riggelsen,55.0,88.0,True,False
+Vejle U19,"SønderjyskE U19 - Vejle U19, 2 - 3",T. Pedersen,49.0,31.0,True,True
+SønderjyskE U19,"SønderjyskE U19 - Vejle U19, 2 - 3",F. Nygaard Jürgensen,36.0,27.0,True,False
+SønderjyskE U19,"SønderjyskE U19 - Vejle U19, 2 - 3",,22.0,2.0,True,False
+SønderjyskE U19,"SønderjyskE U19 - Vejle U19, 2 - 3",N. Sabroe Lund,33.0,7.0,False,False
+SønderjyskE U19,"SønderjyskE U19 - Vejle U19, 2 - 3",,25.0,33.0,False,False
+SønderjyskE U19,"SønderjyskE U19 - Vejle U19, 2 - 3",,21.0,71.0,True,False
+SønderjyskE U19,"SønderjyskE U19 - Vejle U19, 2 - 3",,36.0,69.0,False,False
+SønderjyskE U19,"SønderjyskE U19 - Vejle U19, 2 - 3",A. Vogtmann,20.0,21.0,True,False
+SønderjyskE U19,"SønderjyskE U19 - Vejle U19, 2 - 3",F. Nygaard Jürgensen,26.0,42.0,True,True
+Vejle U19,"SønderjyskE U19 - Vejle U19, 2 - 3",S. Ravn,72.0,56.0,True,False
+SønderjyskE U19,"SønderjyskE U19 - Vejle U19, 2 - 3",A. Bergholdt,59.0,50.0,False,False
+SønderjyskE U19,"SønderjyskE U19 - Vejle U19, 2 - 3",N. Sabroe Lund,39.0,23.0,True,False
+SønderjyskE U19,"SønderjyskE U19 - Vejle U19, 2 - 3",F. Nygaard Jürgensen,31.0,17.0,False,False
+SønderjyskE U19,"SønderjyskE U19 - Vejle U19, 2 - 3",A. Rrahmani,56.0,78.0,True,True
+Vejle U19,"SønderjyskE U19 - Vejle U19, 2 - 3",E. Subasic,43.0,32.0,False,False
+Vejle U19,"SønderjyskE U19 - Vejle U19, 2 - 3",S. Ravn,54.0,10.0,True,True
+SønderjyskE U19,"SønderjyskE U19 - Vejle U19, 2 - 3",L. Riggelsen,35.0,96.0,True,False
+SønderjyskE U19,"SønderjyskE U19 - Vejle U19, 2 - 3",F. Nygaard Jürgensen,43.0,64.0,False,False
+SønderjyskE U19,"SønderjyskE U19 - Vejle U19, 2 - 3",J. Jonsson,36.0,70.0,False,False
+SønderjyskE U19,"SønderjyskE U19 - Vejle U19, 2 - 3",,17.0,88.0,False,False
+SønderjyskE U19,"SønderjyskE U19 - Vejle U19, 2 - 3",,17.0,86.0,False,False
+SønderjyskE U19,"SønderjyskE U19 - Vejle U19, 2 - 3",,26.0,11.0,True,False
+SønderjyskE U19,"SønderjyskE U19 - Vejle U19, 2 - 3",L. Riggelsen,20.0,98.0,True,False
+Vejle U19,"SønderjyskE U19 - Vejle U19, 2 - 3",T. Pedersen,33.0,67.0,True,True
+SønderjyskE U19,"SønderjyskE U19 - Vejle U19, 2 - 3",,44.0,77.0,True,True
+SønderjyskE U19,"SønderjyskE U19 - Vejle U19, 2 - 3",,91.0,13.0,False,False
+SønderjyskE U19,"SønderjyskE U19 - Vejle U19, 2 - 3",A. Vogtmann,64.0,24.0,True,False
+SønderjyskE U19,"SønderjyskE U19 - Vejle U19, 2 - 3",N. Sabroe Lund,75.0,18.0,False,False
+Vejle U19,"SønderjyskE U19 - Vejle U19, 2 - 3",S. Ravn,55.0,0.0,True,True
+SønderjyskE U19,"SønderjyskE U19 - Vejle U19, 2 - 3",,27.0,65.0,False,False
+SønderjyskE U19,"SønderjyskE U19 - Vejle U19, 2 - 3",,23.0,51.0,True,False
+SønderjyskE U19,"SønderjyskE U19 - Vejle U19, 2 - 3",J. Bengtsen,39.0,98.0,True,False
+SønderjyskE U19,"SønderjyskE U19 - Vejle U19, 2 - 3",A. Ebrat,13.0,74.0,False,False
+Vejle U19,"SønderjyskE U19 - Vejle U19, 2 - 3",,22.0,90.0,False,False
+SønderjyskE U19,"SønderjyskE U19 - Vejle U19, 2 - 3",J. Bengtsen,22.0,99.0,True,False
+SønderjyskE U19,"SønderjyskE U19 - Vejle U19, 2 - 3",,27.0,98.0,True,False
+SønderjyskE U19,"SønderjyskE U19 - Vejle U19, 2 - 3",,61.0,85.0,False,False
+SønderjyskE U19,"SønderjyskE U19 - Vejle U19, 2 - 3",A. Ebrat,18.0,69.0,True,False
+SønderjyskE U19,"SønderjyskE U19 - Vejle U19, 2 - 3",J. Jonsson,76.0,77.0,True,False
+SønderjyskE U19,"SønderjyskE U19 - Vejle U19, 2 - 3",J. Jonsson,53.0,57.0,True,True
+SønderjyskE U19,"SønderjyskE U19 - Vejle U19, 2 - 3",J. Bengtsen,44.0,98.0,True,False
+SønderjyskE U19,"SønderjyskE U19 - Vejle U19, 2 - 3",J. Bengtsen,26.0,91.0,False,False
+SønderjyskE U19,"SønderjyskE U19 - Vejle U19, 2 - 3",J. Bengtsen,14.0,96.0,True,False
+SønderjyskE U19,"SønderjyskE U19 - Vejle U19, 2 - 3",,18.0,98.0,True,False
+SønderjyskE U19,"SønderjyskE U19 - Vejle U19, 2 - 3",,12.0,82.0,True,False
+Vejle U19,"SønderjyskE U19 - Vejle U19, 2 - 3",G. Knudsen,12.0,38.0,True,True
+Vejle U19,"SønderjyskE U19 - Vejle U19, 2 - 3",T. Pedersen,13.0,12.0,True,True
+SønderjyskE U19,"SønderjyskE U19 - Vejle U19, 2 - 3",J. Jonsson,72.0,83.0,True,False
