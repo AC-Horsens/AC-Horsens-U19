@@ -910,11 +910,14 @@ def player_data():
     winger_df = position_dataframes['Winger']
     classic_striker_df = position_dataframes['Classic striker']
 
-    col1,col2 = st.columns(2)
+    col1, col2 = st.columns(2)
+
     with col1:
-        team_name = st.selectbox('Choose team',events['team.name'].unique())
+        team_name = st.selectbox('Choose team', sorted(events['team.name'].unique()))
+
     with col2:
-        player_name = st.selectbox('Choose player', events['player.name'].unique())
+        player_name = st.selectbox('Choose player', sorted(events['player.name'].unique()))
+
     st.title(f'{player_name} dashboard')    
     events = events[events['team.name'] == team_name]
     df = events[(events['player.name'] == player_name)|(events['pass.recipient.name'] == player_name)]
