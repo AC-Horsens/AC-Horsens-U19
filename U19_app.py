@@ -36,7 +36,7 @@ def load_xg_agg():
 @st.cache_data()
 def load_horsens_events():
     events = pd.read_csv(r'events.csv')
-    events = events[events['label'].str.contains('Horsens')]
+    #events = events[events['label'].str.contains('Horsens')]
     return events
 
 @st.cache_data()
@@ -712,6 +712,7 @@ classic_striker_df = position_dataframes['Classic striker']
 #box_striker_df = position_dataframes['Boxstriker']
 
 players = events['player.name'].unique()
+teams = events['team.name'].unique()
 def plot_heatmap_location(data, title):
     pitch = Pitch(pitch_type='wyscout', line_zorder=2, pitch_color='grass', line_color='white')
     fig, ax = pitch.draw(figsize=(6.6, 4.125))
@@ -908,10 +909,14 @@ def player_data():
     number10_df = position_dataframes['Number 10']
     winger_df = position_dataframes['Winger']
     classic_striker_df = position_dataframes['Classic striker']
-    horsens = events[events['team.name'].str.contains('Horsens')]
-    horsens = horsens.sort_values(by='player.name')
-    player_name = st.selectbox('Choose player', horsens['player.name'].unique())
+
+    col1,col2 = st.columns(2)
+    with col1:
+        team_name = st.selectbox('Choose team',events['team.name'].unique())
+    with col2:
+        player_name = st.selectbox('Choose player', events['player.name'].unique())
     st.title(f'{player_name} dashboard')    
+    events = events[events['team.name'] == team_name]
     df = events[(events['player.name'] == player_name)|(events['pass.recipient.name'] == player_name)]
     df = df[~df['type.primary'].isin(['corner', 'free_kick', 'throw_in'])]
     df['date'] = pd.to_datetime(df['date'])
