@@ -913,15 +913,15 @@ def player_data():
     col1, col2 = st.columns(2)
 
     with col1:
-        # Filter out non-string values, drop NaN, and sort alphabetically
-        team_name = st.selectbox('Choose team', sorted([name for name in events['team.name'].dropna() if isinstance(name, str)]))
+        # Filter out non-string values, drop NaN, ensure uniqueness, and sort alphabetically
+        team_name = st.selectbox('Choose team', sorted(set([name for name in events['team.name'].dropna() if isinstance(name, str)])))
 
+    events = events[events['team.name'] == team_name]
     with col2:
-        # Filter out non-string values, drop NaN, and sort alphabetically
-        player_name = st.selectbox('Choose player', sorted([name for name in events['player.name'].dropna() if isinstance(name, str)]))
+        # Filter out non-string values, drop NaN, ensure uniqueness, and sort alphabetically
+        player_name = st.selectbox('Choose player', sorted(set([name for name in events['player.name'].dropna() if isinstance(name, str)])))
 
     st.title(f'{player_name} dashboard')    
-    events = events[events['team.name'] == team_name]
     df = events[(events['player.name'] == player_name)|(events['pass.recipient.name'] == player_name)]
     df = df[~df['type.primary'].isin(['corner', 'free_kick', 'throw_in'])]
     df['date'] = pd.to_datetime(df['date'])
