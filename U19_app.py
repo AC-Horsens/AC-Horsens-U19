@@ -910,9 +910,6 @@ def player_data():
     winger_df = position_dataframes['Winger']
     classic_striker_df = position_dataframes['Classic striker']
 
-    players = events['player.name'].unique()
-    players = sorted(players)
-
     col1, col2 = st.columns(2)
 
     with col1:
