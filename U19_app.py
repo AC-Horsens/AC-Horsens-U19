@@ -36,7 +36,7 @@ def load_xg_agg():
 @st.cache_data()
 def load_horsens_events():
     events = pd.read_csv(r'events.csv')
-    #events = events[events['label'].str.contains('Horsens')]
+    events = events[events['label'].str.contains('Horsens')]
     return events
 
 @st.cache_data()
