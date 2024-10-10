@@ -1011,7 +1011,8 @@ def dashboard():
     events['label'] = events['label'] + ' ' + events['date']
     events['date'] = pd.to_datetime(events['date'],utc=True)
     events = events.sort_values('date').reset_index(drop=True)
-    matches = events['label'].unique()
+    horsens_df = events[events['team.name'].str.contains('Horsens')]
+    matches = horsens_df['label'].unique()
     matches = matches[::-1]
     match_choice = st.multiselect('Choose a match', matches)
     df_xg = load_xg()
