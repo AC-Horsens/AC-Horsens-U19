@@ -1723,7 +1723,7 @@ def sportspsykologiske_målinger():
     # Check if the password is correct
     if password == "ACHORSENSU19":
         # Initialize Google Sheets connection
-        gc = gspread.service_account(r'C:\Users\SéamusPeareBartholdy\Documents\GitHub\AC-Horsens-U19\wellness-1123-178fea106d0a.json')
+        gc = gspread.service_account(r'wellness-1123-178fea106d0a.json')
 
         # Function to open a Google Sheet and return it as a DataFrame
         def get_sheet_as_dataframe(sheet_url, worksheet_name, num_columns=None):
