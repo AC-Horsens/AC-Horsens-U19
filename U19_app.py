@@ -1716,15 +1716,171 @@ def keeper_ratings():
 
     st.plotly_chart(fig, use_container_width=True)
 
+def sportspsykologiske_målinger():
+    # Password input
+    password = st.text_input("Input password", type="password")
 
+    # Check if the password is correct
+    if password == "ACHORSENSU19":
+        # Initialize Google Sheets connection
+        gc = gspread.service_account(r'C:\Users\SéamusPeareBartholdy\Documents\GitHub\AC-Horsens-U19\wellness-1123-178fea106d0a.json')
+
+        # Function to open a Google Sheet and return it as a DataFrame
+        def get_sheet_as_dataframe(sheet_url, worksheet_name, num_columns=None):
+            sh = gc.open_by_url(sheet_url)
+            ws = sh.worksheet(worksheet_name)
+            data = ws.get_all_values()
+            
+            # Convert the sheet data to a DataFrame
+            df = pd.DataFrame(data[1:], columns=data[0])
+            
+            # Optionally limit the number of columns
+            if num_columns:
+                df = df.iloc[:, :num_columns]
+            
+            return df
+
+        # Function to process the DataFrame: convert 'Tidsstempel' to datetime, extract the month, and rename columns
+        def process_dataframe(dataframe, suffix):
+            # Convert 'Tidsstempel' to datetime format
+            dataframe['Tidsstempel'] = pd.to_datetime(dataframe['Tidsstempel'], format='%d/%m/%Y %H.%M.%S', errors='coerce')
+            
+            # Remove rows with invalid or missing 'Tidsstempel'
+            dataframe.dropna(subset=['Tidsstempel'], inplace=True)
+            
+            # Extract the month
+            dataframe['Month'] = dataframe['Tidsstempel'].dt.month
+            
+            # Drop the 'Tidsstempel' column
+            dataframe.drop(columns=['Tidsstempel'], inplace=True)
+            
+            # Rename other columns to avoid conflicts (except 'Your Name' and 'Month')
+            dataframe = dataframe.rename(columns={col: f"{col}_{suffix}" for col in dataframe.columns if col not in ['Your Name', 'Month']})
+            
+            return dataframe
+
+        # Load the sheets into DataFrames
+        df = get_sheet_as_dataframe('https://docs.google.com/spreadsheets/d/1h4WAhpuT6uQ_jp6bfMUUgMrhGtXnbqaaz1p6yUZCPbM/edit?resourcekey=&gid=1240737519#gid=1240737519', 'Formularsvar 1')
+        df1 = get_sheet_as_dataframe('https://docs.google.com/spreadsheets/d/1zXEFfrD_meajd32Hy_TT0-yT5v9vi5WdQHYI51yfZH4/edit?resourcekey=&gid=198410459#gid=198410459', 'Formularsvar 1', num_columns=14)
+        df2 = get_sheet_as_dataframe('https://docs.google.com/spreadsheets/d/1GGtgwYYoLWQ1yS9tyM2-2MVvrQNgMpVECRjA3-H2O8A/edit?resourcekey=&gid=698467196#gid=698467196', 'Formularsvar 1')
+        df3 = get_sheet_as_dataframe('https://docs.google.com/spreadsheets/d/1Z_MANeXqcyMrhnoqbk_9bHy1Ic3-VGlnRT0vcn6Bb5k/edit?resourcekey=&gid=1340211860#gid=1340211860', 'Formularsvar 1')
+
+        # Process each DataFrame to extract 'Month' and rename columns
+        df = process_dataframe(df, 'CD_RISC')
+        df1 = process_dataframe(df1, 'PNSS-S')
+        df2 = process_dataframe(df2, 'TMID')
+        df3 = process_dataframe(df3, 'PSS')
+
+        # Merge all the DataFrames on 'Your Name' and 'Month'
+        merged_df = df.merge(df1, on=['Your Name', 'Month'], how='outer') \
+                    .merge(df2, on=['Your Name', 'Month'], how='outer') \
+                    .merge(df3, on=['Your Name', 'Month'], how='outer')
+
+        # Group by 'Your Name' and 'Month' and get the first non-null value
+        merged_df = merged_df.groupby(['Your Name', 'Month'], as_index=False).first()
+
+        # Extract only the first character for all columns except 'Your Name' and 'Month'
+        columns_to_modify = merged_df.columns.difference(['Your Name', 'Month'])
+        merged_df[columns_to_modify] = merged_df[columns_to_modify].applymap(lambda x: x[0] if pd.notnull(x) else x)
+
+        # Remove rows where 'Your Name' is empty
+        merged_df = merged_df[merged_df['Your Name'] != ""]
+
+        # Calculate the overall averages for all players (unfiltered)
+        categories = {
+            'CD_RISC': [col for col in merged_df.columns if 'CD_RISC' in col],
+            'PNSS-S': [col for col in merged_df.columns if 'PNSS-S' in col],
+            'TMID': [col for col in merged_df.columns if 'TMID' in col],
+            'PSS': [col for col in merged_df.columns if 'PSS' in col]
+        }
+
+        # Calculate averages for each category for ALL players
+        for category, columns in categories.items():
+            merged_df[f'{category}_Average'] = merged_df[columns].apply(pd.to_numeric, errors='coerce').mean(axis=1)
+
+        # Streamlit interaction for player selection
+        players = merged_df['Your Name'].unique()
+
+        # Create side-by-side selectboxes
+        col1, col2 = st.columns(2)
+
+        with col1:
+            chosen_players = st.selectbox('Choose player(s)', players)
+
+        with col2:
+            # Selectbox for category selection
+            selected_category = st.selectbox('Select a category', ['CD_RISC', 'PNSS-S', 'TMID', 'PSS'])
+
+        # Filter data based on selected players
+        if chosen_players:
+            filtered_df = merged_df[merged_df['Your Name']==chosen_players]
+            
+            # Show scatterplots for each column in the selected category
+            for col in categories[selected_category]:
+                filtered_df[col] = pd.to_numeric(filtered_df[col], errors='coerce')
+                valid_data = filtered_df[['Month', col]].dropna()
+                
+                if not valid_data.empty:
+                    plt.figure(figsize=(8, 6))
+                    plt.scatter(valid_data['Month'], valid_data[col], label=col)
+                    plt.xlim(0, 12)  # Set x-axis from 0 to 12 (months)
+                    plt.ylim(1, 7)   # Set y-axis from 1 to 7 (responses)
+                    plt.title(f'Scatterplot of {col}')
+                    plt.xlabel('Month')
+                    plt.ylabel(col)
+                    plt.legend()
+                    st.pyplot(plt)
+
+            # Combined scatterplot of averages for each category
+            plt.figure(figsize=(8, 6))
+            
+            # Plot averages for each category for the chosen players
+            for category in categories.keys():
+                valid_category_avg = filtered_df[['Month', f'{category}_Average']].dropna()
+                if not valid_category_avg.empty:
+                    plt.scatter(valid_category_avg['Month'], valid_category_avg[f'{category}_Average'], label=f'{category} Average')
+            
+            # Plot formatting
+            plt.xlim(0, 12)  # Set x-axis from 0 to 12 (months)
+            plt.ylim(1, 7)   # Set y-axis from 1 to 7 (responses)
+            plt.title('Scatterplot of Category Averages (Chosen Players)')
+            plt.xlabel('Month')
+            plt.ylabel('Average Score')
+            plt.legend()
+            st.pyplot(plt)
+
+        # Scatterplot for the overall average of all players (not filtered by selected players)
+        plt.figure(figsize=(8, 6))
+
+        for category in categories.keys():
+            # Group by month to get the average for each month across all players
+            overall_category_avg = merged_df.groupby('Month')[f'{category}_Average'].mean().reset_index()
+            
+            if not overall_category_avg.empty:
+                plt.scatter(overall_category_avg['Month'], overall_category_avg[f'{category}_Average'], label=f'Overall {category} Average')
+
+        # Plot formatting for overall averages
+        plt.xlim(0, 12)  # Set x-axis from 0 to 12 (months)
+        plt.ylim(1, 7)   # Set y-axis from 1 to 7 (responses)
+        plt.title('Overall Averages for All Players (By Category)')
+        plt.xlabel('Month')
+        plt.ylabel('Average Score Across All Players')
+        plt.legend()
+        st.pyplot(plt)
+
+    else:
+        st.error("Wrong password. Please try again.")
+    
 Data_types = {
     'Dashboard': dashboard,
     'Opposition analysis': opposition_analysis,
     'Wellness data': wellness,
     'Player data': player_data,
     'Training ratings': training_ratings,
-    'Keeper ratings': keeper_ratings
+    'Keeper ratings': keeper_ratings,
+    'Sports Psychological measures': sportspsykologiske_målinger
     }
+
 
 st.cache_data(experimental_allow_widgets=True)
 st.cache_resource(experimental_allow_widgets=True)
