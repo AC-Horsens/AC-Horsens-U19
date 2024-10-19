@@ -933,7 +933,7 @@ def create_pdf_game_report(game_data, df_xg_agg, merged_df, df_possession_stats,
     loss_prob = game_data['loss_probability']
     
     # Add the team logo
-    pdf.image(r'C:\Users\SéamusPeareBartholdy\Documents\GitHub\AC-Horsens-U19\Logo.png', x=165, y=5, w=15, h=15)
+    pdf.image(r'C:\Users\Seamus-admin\Documents\GitHub\AC-Horsens-U19\Logo.png', x=165, y=5, w=15, h=15)
     pdf.set_xy(10, 10)
     pdf.cell(140, 5, txt=f"Match Report: {label}", ln=True, align='L')
     
@@ -1037,7 +1037,7 @@ def create_pdf_progress_report(horsens_df, total_expected_points_combined):
     pdf.add_page()
     pdf.set_font("Arial", size=12)
     # Add the team logo
-    pdf.image('C:/Users/SéamusPeareBartholdy/Documents/GitHub/AC-Horsens-First-Team/Logo.png', x=165, y=5, w=10, h=10)
+    pdf.image(r'C:\Users\Seamus-admin\Documents\GitHub\AC-Horsens-U19\Logo.png', x=165, y=5, w=10, h=10)
     pdf.set_xy(5, 5)
     pdf.cell(140, 5, txt=f"Progress report: {today}", ln=True, align='L')
 
