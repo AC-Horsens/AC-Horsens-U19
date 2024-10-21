@@ -15,71 +15,71 @@ st.set_page_config(layout="wide")
 @st.cache_data()
 def load_matchstats():
     #events = pd.read_csv(r'events.csv')
-    df_matchstats = pd.read_csv('https://raw.githubusercontent.com/AC-Horsens/AC-Horsens-U19/main/matchstats.csv')    
+    df_matchstats = pd.read_csv(r'matchstats.csv')    
     return df_matchstats
 
 @st.cache_data()
 def load_events():
-    events = pd.read_csv(r'https://raw.githubusercontent.com/AC-Horsens/AC-Horsens-U19/main/events.csv')
+    events = pd.read_csv(r'events.csv')
     return events
 
 @st.cache_data()
 def load_xg():
-    df_xg = pd.read_csv(r'https://raw.githubusercontent.com/AC-Horsens/AC-Horsens-U19/main/xg.csv')    
+    df_xg = pd.read_csv(r'xg.csv')    
     return df_xg
 
 @st.cache_data()
 def load_xg_agg():
-    df_xg_agg = pd.read_csv(r'https://raw.githubusercontent.com/AC-Horsens/AC-Horsens-U19/main/xg_agg.csv')
+    df_xg_agg = pd.read_csv(r'xg_agg.csv')
     return df_xg_agg
 
 @st.cache_data()
 def load_horsens_events():
-    events = pd.read_csv(r'https://raw.githubusercontent.com/AC-Horsens/AC-Horsens-U19/main/events.csv')
+    events = pd.read_csv(r'events.csv')
     events = events[events['label'].str.contains('Horsens')]
     return events
 
 @st.cache_data()
 def load_transitions():
-    transitions = pd.read_csv(r'https://raw.githubusercontent.com/AC-Horsens/AC-Horsens-U19/main/transitions.csv')
+    transitions = pd.read_csv(r'transitions.csv')
     transitions['label'] = transitions['label'] + ' ' + transitions['date']
     return transitions
 
 @st.cache_data()
 def load_PPDA():
-    df_ppda = pd.read_csv(r'https://raw.githubusercontent.com/AC-Horsens/AC-Horsens-U19/main/PPDA.csv')
+    df_ppda = pd.read_csv(r'PPDA.csv')
     df_ppda['label'] = df_ppda['label'] + ' ' + df_ppda['date']
 
     return df_ppda
 
 @st.cache_data()
 def load_penalty_area_entry_counts():
-    penalty_area_entry_counts = pd.read_csv(r'https://raw.githubusercontent.com/AC-Horsens/AC-Horsens-U19/main/penalty_area_entry_counts.csv')
+    penalty_area_entry_counts = pd.read_csv(r'penalty_area_entry_counts.csv')
     penalty_area_entry_counts['label'] = penalty_area_entry_counts['label'] + ' ' + penalty_area_entry_counts['date']
     return penalty_area_entry_counts
 
 st.cache_data()
 def load_dangerzone_entries():
-    dangerzone_entries = pd.read_csv(r'https://raw.githubusercontent.com/AC-Horsens/AC-Horsens-U19/main/dangerzone_entries.csv')
+    dangerzone_entries = pd.read_csv(r'dangerzone_entries.csv')
     dangerzone_entries['label'] = dangerzone_entries['label'] + ' ' + dangerzone_entries['date']
     return dangerzone_entries
 
 @st.cache_data()
 def load_penalty_area_entries():
-    penalty_area_entries = pd.read_csv(r'https://raw.githubusercontent.com/AC-Horsens/AC-Horsens-U19/main/penalty_area_entries.csv')
+    penalty_area_entries = pd.read_csv(r'penalty_area_entries.csv')
     penalty_area_entries['label'] = penalty_area_entries['label'] + ' ' + penalty_area_entries['date']
 
     return penalty_area_entries    
 
 @st.cache_data()
 def load_possession_stats():
-    df_possession_stats = pd.read_csv(r'https://raw.githubusercontent.com/AC-Horsens/AC-Horsens-U19/main/terr_poss.csv')
+    df_possession_stats = pd.read_csv(r'terr_poss.csv')
     df_possession_stats['label'] = df_possession_stats['label'] + ' ' + df_possession_stats['date']
     return df_possession_stats
 
 @st.cache_data
 def load_groundduels():
-    groundduels = pd.read_csv(r'https://raw.githubusercontent.com/AC-Horsens/AC-Horsens-U19/main/groundduels_per_player.csv')
+    groundduels = pd.read_csv(r'groundduels_per_player.csv')
     return groundduels
 
 @st.cache_data()
