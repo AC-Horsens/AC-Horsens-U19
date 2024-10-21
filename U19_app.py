@@ -15,7 +15,7 @@ st.set_page_config(layout="wide")
 @st.cache_data()
 def load_matchstats():
     #events = pd.read_csv(r'events.csv')
-    df_matchstats = pd.read_csv(r'https://raw.githubusercontent.com/AC-Horsens/AC-Horsens-U19/main/matchstats.csv')    
+    df_matchstats = pd.read_csv('https://raw.githubusercontent.com/AC-Horsens/AC-Horsens-U19/main/matchstats.csv')    
     return df_matchstats
 
 @st.cache_data()
