@@ -2,10 +2,12 @@ player.name,team.name,label,stoppedProgressCount,recoveredPossessionCount,totalD
 A. Arouna,Horsens U19,"Brøndby U19 - Horsens U19, 2 - 3",7,0,8,87.5,0.0
 A. Arouna,Horsens U19,"Horsens U19 - AGF U19, 1 - 1 (P)",2,1,2,100.0,50.0
 A. Arouna,Horsens U19,"Horsens U19 - Esbjerg U19, 2 - 0",1,0,3,33.33333333333333,0.0
+A. Arouna,Horsens U19,"Horsens U19 - København U19, 1 - 1 (P)",9,3,9,100.0,33.33333333333333
 A. Arouna,Horsens U19,"Horsens U19 - Midtjylland U19, 0 - 2",3,1,3,100.0,33.33333333333333
 A. Arouna,Horsens U19,"Nordsjælland U19 - Horsens U19, 3 - 0",True,False,1,100.0,0.0
 A. Arouna,Horsens U19,"Randers U19 - Horsens U19, 2 - 1",True,False,1,100.0,0.0
 A. Aslani,Lyngby U19,"Lyngby U19 - Esbjerg U19, 1 - 1 (P)",8,2,9,88.88888888888889,22.22222222222222
+A. Aslani,Lyngby U19,"Lyngby U19 - Silkeborg U19, 2 - 2 (P)",3,1,4,75.0,25.0
 A. Aslani,Lyngby U19,"Lyngby U19 - SønderjyskE U19, 4 - 3",3,1,4,75.0,25.0
 A. Aslani,Lyngby U19,"Lyngby U19 - Vejle U19, 0 - 1",4,3,4,100.0,75.0
 A. Aslani,Lyngby U19,"Midtjylland U19 - Lyngby U19, 11 - 1",3,1,8,37.5,12.5
@@ -28,14 +30,17 @@ A. Claridge,Brøndby U19,"Brøndby U19 - Midtjylland U19, 4 - 0",4,2,9,44.444444
 A. Claridge,Brøndby U19,"Brøndby U19 - OB U19, 2 - 4",5,2,7,71.42857142857143,28.57142857142857
 A. Claridge,Brøndby U19,"Brøndby U19 - Silkeborg U19, 2 - 3",5,1,7,71.42857142857143,14.285714285714285
 A. Claridge,Brøndby U19,"Brøndby U19 - SønderjyskE U19, 5 - 2",True,False,1,100.0,0.0
+A. Claridge,Brøndby U19,"Nordsjælland U19 - Brøndby U19, 1 - 0",4,1,9,44.44444444444444,11.11111111111111
 A. Claridge,Brøndby U19,"Vejle U19 - Brøndby U19, 1 - 1",True,False,1,100.0,0.0
 A. Dahche,Vejle U19,"Lyngby U19 - Vejle U19, 0 - 1",6,1,9,66.66666666666666,11.11111111111111
 A. Dahche,Vejle U19,"SønderjyskE U19 - Vejle U19, 2 - 3",4,2,5,80.0,40.0
+A. Daramy,København U19,"Horsens U19 - København U19, 1 - 1 (P)",1,0,2,50.0,0.0
 A. Diagne,AaB U19,"AaB U19 - København U19, 2 - 1",8,2,14,57.14285714285714,14.285714285714285
 A. Diagne,AaB U19,"AaB U19 - OB U19, 1 - 0",0,0,3,0.0,0.0
 A. Diagne,AaB U19,"AaB U19 - Randers U19, 0 - 3",5,5,8,62.5,62.5
 A. Diagne,AaB U19,"Nordsjælland U19 - AaB U19, 2 - 0",4,3,9,44.44444444444444,33.33333333333333
 A. Diagne,AaB U19,"Silkeborg U19 - AaB U19, 2 - 2 (P)",6,1,8,75.0,12.5
+A. Diagne,AaB U19,"SønderjyskE U19 - AaB U19, 0 - 2",3,0,8,37.5,0.0
 A. Drexel,Esbjerg U19,"Esbjerg U19 - AGF U19, 1 - 2",True,True,1,100.0,100.0
 A. Drexel,Esbjerg U19,"Horsens U19 - Esbjerg U19, 2 - 0",True,False,1,100.0,0.0
 A. Ebrat,SønderjyskE U19,"Esbjerg U19 - SønderjyskE U19, 2 - 0",1,0,2,50.0,0.0
@@ -47,16 +52,21 @@ A. Escobar,Brøndby U19,"AGF U19 - Brøndby U19, 5 - 1",5,2,7,71.42857142857143,
 A. Escobar,Brøndby U19,"Brøndby U19 - Horsens U19, 2 - 3",3,0,6,50.0,0.0
 A. Escobar,Brøndby U19,"Brøndby U19 - OB U19, 2 - 4",2,0,4,50.0,0.0
 A. Escobar,Brøndby U19,"Brøndby U19 - SønderjyskE U19, 5 - 2",False,False,1,0.0,0.0
+A. Escobar,Brøndby U19,"Nordsjælland U19 - Brøndby U19, 1 - 0",6,1,9,66.66666666666666,11.11111111111111
 A. Gudmundsson,København U19,"AGF U19 - København U19, 0 - 3",2,0,6,33.33333333333333,0.0
+A. Gudmundsson,København U19,"Horsens U19 - København U19, 1 - 1 (P)",3,1,4,75.0,25.0
 A. Gudmundsson,København U19,"SønderjyskE U19 - København U19, 2 - 0",2,0,2,100.0,0.0
+A. Hakim Sulemana,Randers U19,"AGF U19 - Randers U19, 5 - 2",6,2,8,75.0,25.0
 A. Hakim Sulemana,Randers U19,"Randers U19 - Horsens U19, 2 - 1",2,2,6,33.33333333333333,33.33333333333333
 A. Halsgaard,AGF U19,"AGF U19 - Midtjylland U19, 0 - 1",6,1,7,85.71428571428571,14.285714285714285
+A. Halsgaard,AGF U19,"AGF U19 - Randers U19, 5 - 2",7,5,9,77.77777777777779,55.55555555555556
 A. Halsgaard,AGF U19,"Silkeborg U19 - AGF U19, 0 - 1",2,1,4,50.0,25.0
 A. Høyer,Randers U19,"Randers U19 - Lyngby U19, 0 - 2",7,5,9,77.77777777777779,55.55555555555556
 A. Høyer,Randers U19,"Randers U19 - SønderjyskE U19, 0 - 2",4,2,5,80.0,40.0
 A. Jensen,OB U19,"AaB U19 - OB U19, 1 - 0",2,1,2,100.0,50.0
 A. Jensen,OB U19,"København U19 - OB U19, 4 - 0",4,1,6,66.66666666666666,16.666666666666664
 A. Jørgensen,Lyngby U19,"Lyngby U19 - Esbjerg U19, 1 - 1 (P)",4,2,4,100.0,50.0
+A. Jørgensen,Lyngby U19,"Lyngby U19 - Silkeborg U19, 2 - 2 (P)",1,1,2,50.0,50.0
 A. Jørgensen,Lyngby U19,"Lyngby U19 - Vejle U19, 0 - 1",4,1,5,80.0,20.0
 A. Jørgensen,Lyngby U19,"Midtjylland U19 - Lyngby U19, 11 - 1",3,1,3,100.0,33.33333333333333
 A. Jørgensen,Lyngby U19,"OB U19 - Lyngby U19, 2 - 0",4,2,5,80.0,40.0
@@ -79,6 +89,7 @@ A. Lund Jørgensen,Esbjerg U19,"Lyngby U19 - Esbjerg U19, 1 - 1 (P)",False,False
 A. Lund Jørgensen,Esbjerg U19,"OB U19 - Esbjerg U19, 3 - 1",3,0,4,75.0,0.0
 A. Mandrup,Horsens U19,"Brøndby U19 - Horsens U19, 2 - 3",5,4,5,100.0,80.0
 A. Mandrup,Horsens U19,"Horsens U19 - Esbjerg U19, 2 - 0",5,0,8,62.5,0.0
+A. Mandrup,Horsens U19,"Horsens U19 - København U19, 1 - 1 (P)",3,1,4,75.0,25.0
 A. Mandrup,Horsens U19,"Horsens U19 - Midtjylland U19, 0 - 2",7,2,9,77.77777777777779,22.22222222222222
 A. Mandrup,Horsens U19,"Nordsjælland U19 - Horsens U19, 3 - 0",6,1,8,75.0,12.5
 A. Mandrup,Horsens U19,"Randers U19 - Horsens U19, 2 - 1",6,2,8,75.0,25.0
@@ -87,6 +98,7 @@ A. Mohammed,Nordsjælland U19,"Nordsjælland U19 - Horsens U19, 3 - 0",6,1,6,100
 A. Moro,Horsens U19,"Brøndby U19 - Horsens U19, 2 - 3",13,7,14,92.85714285714286,50.0
 A. Moro,Horsens U19,"Horsens U19 - AGF U19, 1 - 1 (P)",8,7,9,88.88888888888889,77.77777777777779
 A. Moro,Horsens U19,"Horsens U19 - Esbjerg U19, 2 - 0",6,4,14,42.857142857142854,28.57142857142857
+A. Moro,Horsens U19,"Horsens U19 - København U19, 1 - 1 (P)",7,2,9,77.77777777777779,22.22222222222222
 A. Moro,Horsens U19,"Horsens U19 - Midtjylland U19, 0 - 2",4,3,10,40.0,30.0
 A. Moro,Horsens U19,"Nordsjælland U19 - Horsens U19, 3 - 0",6,4,11,54.54545454545454,36.36363636363637
 A. Moro,Horsens U19,"Randers U19 - Horsens U19, 2 - 1",6,2,12,50.0,16.666666666666664
@@ -97,8 +109,10 @@ A. Muhammad,Vejle U19,"Vejle U19 - Brøndby U19, 1 - 1",True,False,1,100.0,0.0
 A. Najar,Brøndby U19,"Brøndby U19 - Horsens U19, 2 - 3",3,1,5,60.0,20.0
 A. Nnorom,Midtjylland U19,"AGF U19 - Midtjylland U19, 0 - 1",False,False,1,0.0,0.0
 A. Noshe,AaB U19,"AaB U19 - OB U19, 1 - 0",False,False,1,0.0,0.0
+A. Noshe,AaB U19,"SønderjyskE U19 - AaB U19, 0 - 2",3,3,6,50.0,50.0
 A. Noshe,AaB U19,"Vejle U19 - AaB U19, 1 - 1",True,False,1,100.0,0.0
 A. Owusu,Midtjylland U19,"Midtjylland U19 - Randers U19, 1 - 2",True,False,1,100.0,0.0
+A. Peyman,Lyngby U19,"Lyngby U19 - Silkeborg U19, 2 - 2 (P)",2,1,2,100.0,50.0
 A. Peyman,Lyngby U19,"Lyngby U19 - Vejle U19, 0 - 1",2,1,3,66.66666666666666,33.33333333333333
 A. Peyman,Lyngby U19,"Midtjylland U19 - Lyngby U19, 11 - 1",1,1,4,25.0,25.0
 A. Raffnsøe Hoeg,SønderjyskE U19,"Esbjerg U19 - SønderjyskE U19, 2 - 0",8,1,9,88.88888888888889,11.11111111111111
@@ -108,6 +122,7 @@ A. Riiser,Randers U19,"Midtjylland U19 - Randers U19, 1 - 2",3,1,6,50.0,16.66666
 A. Riiser,Randers U19,"Randers U19 - Lyngby U19, 0 - 2",2,1,3,66.66666666666666,33.33333333333333
 A. Riiser,Randers U19,"Randers U19 - SønderjyskE U19, 0 - 2",True,False,1,100.0,0.0
 A. Riiser,Randers U19,"Silkeborg U19 - Randers U19, 2 - 0",3,0,3,100.0,0.0
+A. Risgaard,Randers U19,"AGF U19 - Randers U19, 5 - 2",6,2,8,75.0,25.0
 A. Risgaard,Randers U19,"AaB U19 - Randers U19, 0 - 3",2,0,3,66.66666666666666,0.0
 A. Risgaard,Randers U19,"Midtjylland U19 - Randers U19, 1 - 2",3,0,7,42.857142857142854,0.0
 A. Risgaard,Randers U19,"Randers U19 - Lyngby U19, 0 - 2",5,1,15,33.33333333333333,6.666666666666667
@@ -117,10 +132,12 @@ A. Rrahmani,SønderjyskE U19,"Brøndby U19 - SønderjyskE U19, 5 - 2",1,0,2,50.0
 A. Rrahmani,SønderjyskE U19,"Esbjerg U19 - SønderjyskE U19, 2 - 0",3,2,7,42.857142857142854,28.57142857142857
 A. Rrahmani,SønderjyskE U19,"Lyngby U19 - SønderjyskE U19, 4 - 3",5,2,11,45.45454545454545,18.181818181818183
 A. Rrahmani,SønderjyskE U19,"Randers U19 - SønderjyskE U19, 0 - 2",8,1,11,72.72727272727273,9.090909090909092
+A. Rrahmani,SønderjyskE U19,"SønderjyskE U19 - AaB U19, 0 - 2",9,2,14,64.28571428571429,14.285714285714285
 A. Rrahmani,SønderjyskE U19,"SønderjyskE U19 - København U19, 2 - 0",7,3,13,53.84615384615385,23.076923076923077
 A. Rrahmani,SønderjyskE U19,"SønderjyskE U19 - OB U19, 1 - 3",2,1,3,66.66666666666666,33.33333333333333
 A. Rrahmani,SønderjyskE U19,"SønderjyskE U19 - Vejle U19, 2 - 3",2,1,6,33.33333333333333,16.666666666666664
 A. Samukai,Horsens U19,"Brøndby U19 - Horsens U19, 2 - 3",False,False,1,0.0,0.0
+A. Samukai,Horsens U19,"Horsens U19 - København U19, 1 - 1 (P)",False,False,1,0.0,0.0
 A. Samukai,Horsens U19,"Horsens U19 - Midtjylland U19, 0 - 2",True,False,1,100.0,0.0
 A. Samukai,Horsens U19,"Randers U19 - Horsens U19, 2 - 1",3,2,6,50.0,33.33333333333333
 A. Sediq,AGF U19,"AGF U19 - Midtjylland U19, 0 - 1",True,False,1,100.0,0.0
@@ -142,9 +159,11 @@ A. Vogtmann,SønderjyskE U19,"Brøndby U19 - SønderjyskE U19, 5 - 2",2,1,2,100.
 A. Vogtmann,SønderjyskE U19,"Esbjerg U19 - SønderjyskE U19, 2 - 0",4,2,7,57.14285714285714,28.57142857142857
 A. Vogtmann,SønderjyskE U19,"Lyngby U19 - SønderjyskE U19, 4 - 3",5,1,5,100.0,20.0
 A. Vogtmann,SønderjyskE U19,"Randers U19 - SønderjyskE U19, 0 - 2",4,1,9,44.44444444444444,11.11111111111111
+A. Vogtmann,SønderjyskE U19,"SønderjyskE U19 - AaB U19, 0 - 2",6,3,9,66.66666666666666,33.33333333333333
 A. Vogtmann,SønderjyskE U19,"SønderjyskE U19 - København U19, 2 - 0",10,6,15,66.66666666666666,40.0
 A. Vogtmann,SønderjyskE U19,"SønderjyskE U19 - OB U19, 1 - 3",4,0,8,50.0,0.0
 A. Vogtmann,SønderjyskE U19,"SønderjyskE U19 - Vejle U19, 2 - 3",6,0,8,75.0,0.0
+B. Andersen,Randers U19,"AGF U19 - Randers U19, 5 - 2",1,1,3,33.33333333333333,33.33333333333333
 B. Andersen,Randers U19,"AaB U19 - Randers U19, 0 - 3",2,1,3,66.66666666666666,33.33333333333333
 B. Andersen,Randers U19,"Midtjylland U19 - Randers U19, 1 - 2",2,0,3,66.66666666666666,0.0
 B. Andersen,Randers U19,"Randers U19 - Horsens U19, 2 - 1",True,True,1,100.0,100.0
@@ -152,6 +171,7 @@ B. Andersen,Randers U19,"Randers U19 - Lyngby U19, 0 - 2",3,0,3,100.0,0.0
 B. Andersen,Randers U19,"Randers U19 - SønderjyskE U19, 0 - 2",2,1,2,100.0,50.0
 B. Andersen,Randers U19,"Silkeborg U19 - Randers U19, 2 - 0",True,False,1,100.0,0.0
 B. Andersen Magui,Lyngby U19,"Lyngby U19 - Esbjerg U19, 1 - 1 (P)",2,0,3,66.66666666666666,0.0
+B. Andersen Magui,Lyngby U19,"Lyngby U19 - Silkeborg U19, 2 - 2 (P)",3,1,4,75.0,25.0
 B. Andersen Magui,Lyngby U19,"Lyngby U19 - SønderjyskE U19, 4 - 3",2,1,3,66.66666666666666,33.33333333333333
 B. Andersen Magui,Lyngby U19,"Lyngby U19 - Vejle U19, 0 - 1",2,1,3,66.66666666666666,33.33333333333333
 B. Andersen Magui,Lyngby U19,"Midtjylland U19 - Lyngby U19, 11 - 1",7,5,7,100.0,71.42857142857143
@@ -166,6 +186,7 @@ B. Baldursson,Esbjerg U19,"København U19 - Esbjerg U19, 9 - 1",7,2,12,58.333333
 B. Baldursson,Esbjerg U19,"Lyngby U19 - Esbjerg U19, 1 - 1 (P)",4,0,11,36.36363636363637,0.0
 B. Baldursson,Esbjerg U19,"OB U19 - Esbjerg U19, 3 - 1",3,1,6,50.0,16.666666666666664
 B. Binggeli,Silkeborg U19,"Brøndby U19 - Silkeborg U19, 2 - 3",1,0,2,50.0,0.0
+B. Binggeli,Silkeborg U19,"Lyngby U19 - Silkeborg U19, 2 - 2 (P)",True,True,1,100.0,100.0
 B. Binggeli,Silkeborg U19,"Midtjylland U19 - Silkeborg U19, 2 - 3",3,1,3,100.0,33.33333333333333
 B. Binggeli,Silkeborg U19,"Nordsjælland U19 - Silkeborg U19, 3 - 0",True,False,1,100.0,0.0
 B. Binggeli,Silkeborg U19,"Silkeborg U19 - Horsens U19, 1 - 1 (P)",True,False,1,100.0,0.0
@@ -178,6 +199,7 @@ B. Konteh Krubally,Midtjylland U19,"Horsens U19 - Midtjylland U19, 0 - 2",6,1,6,
 B. Konteh Krubally,Midtjylland U19,"Midtjylland U19 - Lyngby U19, 11 - 1",3,0,5,60.0,0.0
 B. Konteh Krubally,Midtjylland U19,"Midtjylland U19 - Randers U19, 1 - 2",2,0,2,100.0,0.0
 B. Konteh Krubally,Midtjylland U19,"Midtjylland U19 - Silkeborg U19, 2 - 3",2,0,3,66.66666666666666,0.0
+B. Konteh Krubally,Midtjylland U19,"OB U19 - Midtjylland U19, 3 - 4",1,0,2,50.0,0.0
 B. Llana,København U19,"AaB U19 - København U19, 2 - 1",1,0,2,50.0,0.0
 B. Llana,København U19,"København U19 - OB U19, 4 - 0",1,1,2,50.0,50.0
 B. Llana,København U19,"SønderjyskE U19 - København U19, 2 - 0",2,1,3,66.66666666666666,33.33333333333333
@@ -186,12 +208,14 @@ B. Pihl Jørgensen,AaB U19,"AaB U19 - OB U19, 1 - 0",4,1,5,80.0,20.0
 B. Pihl Jørgensen,AaB U19,"AaB U19 - Randers U19, 0 - 3",7,2,8,87.5,25.0
 B. Pihl Jørgensen,AaB U19,"Nordsjælland U19 - AaB U19, 2 - 0",3,0,6,50.0,0.0
 B. Pihl Jørgensen,AaB U19,"Silkeborg U19 - AaB U19, 2 - 2 (P)",5,0,8,62.5,0.0
+B. Pihl Jørgensen,AaB U19,"SønderjyskE U19 - AaB U19, 0 - 2",1,0,2,50.0,0.0
 B. Pihl Jørgensen,AaB U19,"Vejle U19 - AaB U19, 1 - 1",3,0,6,50.0,0.0
 B. Skovgaard,AaB U19,"AaB U19 - København U19, 2 - 1",6,3,8,75.0,37.5
 B. Skovgaard,AaB U19,"AaB U19 - OB U19, 1 - 0",False,False,1,0.0,0.0
 B. Skovgaard,AaB U19,"AaB U19 - Randers U19, 0 - 3",5,3,7,71.42857142857143,42.857142857142854
 B. Skovgaard,AaB U19,"Nordsjælland U19 - AaB U19, 2 - 0",4,1,5,80.0,20.0
 B. Skovgaard,AaB U19,"Silkeborg U19 - AaB U19, 2 - 2 (P)",1,0,2,50.0,0.0
+B. Skovgaard,AaB U19,"SønderjyskE U19 - AaB U19, 0 - 2",True,True,1,100.0,100.0
 B. Skovgaard,AaB U19,"Vejle U19 - AaB U19, 1 - 1",True,False,1,100.0,0.0
 C. Astrup,Vejle U19,"Lyngby U19 - Vejle U19, 0 - 1",8,3,11,72.72727272727273,27.27272727272727
 C. Astrup,Vejle U19,"OB U19 - Vejle U19, 4 - 0",1,1,2,50.0,50.0
@@ -207,6 +231,7 @@ C. Jørgensen,Midtjylland U19,"Brøndby U19 - Midtjylland U19, 4 - 0",2,1,3,66.6
 C. Jørgensen,Midtjylland U19,"Horsens U19 - Midtjylland U19, 0 - 2",4,2,5,80.0,40.0
 C. Jørgensen,Midtjylland U19,"Midtjylland U19 - Lyngby U19, 11 - 1",0,0,4,0.0,0.0
 C. Jørgensen,Midtjylland U19,"Midtjylland U19 - Randers U19, 1 - 2",2,1,2,100.0,50.0
+C. Jørgensen,Midtjylland U19,"OB U19 - Midtjylland U19, 3 - 4",6,2,7,85.71428571428571,28.57142857142857
 C. Olsson,København U19,"AGF U19 - København U19, 0 - 3",5,1,7,71.42857142857143,14.285714285714285
 C. Risom,Silkeborg U19,"Silkeborg U19 - Horsens U19, 1 - 1 (P)",True,False,1,100.0,0.0
 C. Storch,AGF U19,"AGF U19 - Brøndby U19, 5 - 1",10,4,13,76.92307692307693,30.76923076923077
@@ -218,11 +243,14 @@ C. Tcacenco,AaB U19,"AaB U19 - OB U19, 1 - 0",4,4,6,66.66666666666666,66.6666666
 C. Tcacenco,AaB U19,"AaB U19 - Randers U19, 0 - 3",4,1,8,50.0,12.5
 C. Tcacenco,AaB U19,"Nordsjælland U19 - AaB U19, 2 - 0",6,4,7,85.71428571428571,57.14285714285714
 C. Tcacenco,AaB U19,"Silkeborg U19 - AaB U19, 2 - 2 (P)",6,2,10,60.0,20.0
+C. Tcacenco,AaB U19,"SønderjyskE U19 - AaB U19, 0 - 2",3,0,5,60.0,0.0
 C. Tcacenco,AaB U19,"Vejle U19 - AaB U19, 1 - 1",9,3,12,75.0,25.0
 C. Yirenkyi,Nordsjælland U19,"Esbjerg U19 - Nordsjælland U19, 0 - 5",6,3,11,54.54545454545454,27.27272727272727
 C. Yirenkyi,Nordsjælland U19,"Nordsjælland U19 - AaB U19, 2 - 0",2,1,4,50.0,25.0
+C. Yirenkyi,Nordsjælland U19,"Nordsjælland U19 - Brøndby U19, 1 - 0",5,3,11,45.45454545454545,27.27272727272727
 C. Yirenkyi,Nordsjælland U19,"Nordsjælland U19 - Horsens U19, 3 - 0",8,3,17,47.05882352941176,17.647058823529413
 C. Yirenkyi,Nordsjælland U19,"Nordsjælland U19 - Silkeborg U19, 3 - 0",3,1,3,100.0,33.33333333333333
+C. Østergaard,Randers U19,"AGF U19 - Randers U19, 5 - 2",False,False,1,0.0,0.0
 C. Østergaard,Randers U19,"AaB U19 - Randers U19, 0 - 3",5,2,6,83.33333333333334,33.33333333333333
 C. Østergaard,Randers U19,"Midtjylland U19 - Randers U19, 1 - 2",3,2,4,75.0,50.0
 C. Østergaard,Randers U19,"Randers U19 - SønderjyskE U19, 0 - 2",4,1,4,100.0,25.0
@@ -237,10 +265,13 @@ D. Catak,Midtjylland U19,"Brøndby U19 - Midtjylland U19, 4 - 0",3,1,3,100.0,33.
 D. Catak,Midtjylland U19,"Horsens U19 - Midtjylland U19, 0 - 2",1,0,2,50.0,0.0
 D. Catak,Midtjylland U19,"Midtjylland U19 - Lyngby U19, 11 - 1",4,3,6,66.66666666666666,50.0
 D. Catak,Midtjylland U19,"Midtjylland U19 - Silkeborg U19, 2 - 3",3,1,3,100.0,33.33333333333333
+D. Catak,Midtjylland U19,"OB U19 - Midtjylland U19, 3 - 4",9,3,13,69.23076923076923,23.076923076923077
 D. Jóhannesson,Nordsjælland U19,"Esbjerg U19 - Nordsjælland U19, 0 - 5",1,0,2,50.0,0.0
 D. Jóhannesson,Nordsjælland U19,"Nordsjælland U19 - AaB U19, 2 - 0",0,1,4,0.0,25.0
+D. Jóhannesson,Nordsjælland U19,"Nordsjælland U19 - Brøndby U19, 1 - 0",4,1,5,80.0,20.0
 D. Jóhannesson,Nordsjælland U19,"Nordsjælland U19 - Horsens U19, 3 - 0",3,1,3,100.0,33.33333333333333
 D. Jóhannesson,Nordsjælland U19,"Nordsjælland U19 - Silkeborg U19, 3 - 0",2,1,4,50.0,25.0
+D. Katlego Hansen,København U19,"Horsens U19 - København U19, 1 - 1 (P)",9,5,16,56.25,31.25
 D. Katlego Hansen,København U19,"København U19 - Esbjerg U19, 9 - 1",2,0,3,66.66666666666666,0.0
 D. Katlego Hansen,København U19,"SønderjyskE U19 - København U19, 2 - 0",3,0,5,60.0,0.0
 E. A Ngon,Horsens U19,"Brøndby U19 - Horsens U19, 2 - 3",7,3,9,77.77777777777779,33.33333333333333
@@ -252,8 +283,10 @@ E. A Ngon,Horsens U19,"Randers U19 - Horsens U19, 2 - 1",3,0,5,60.0,0.0
 E. A Ngon,Horsens U19,"Silkeborg U19 - Horsens U19, 1 - 1 (P)",3,1,6,50.0,16.666666666666664
 E. Andersen,Esbjerg U19,"København U19 - Esbjerg U19, 9 - 1",1,1,2,50.0,50.0
 E. Arnarsson,Midtjylland U19,"Midtjylland U19 - Lyngby U19, 11 - 1",2,1,4,50.0,25.0
+E. Arnarsson,Midtjylland U19,"OB U19 - Midtjylland U19, 3 - 4",1,0,4,25.0,0.0
 E. Borup,AaB U19,"AaB U19 - Randers U19, 0 - 3",6,1,9,66.66666666666666,11.11111111111111
 E. Borup,AaB U19,"Nordsjælland U19 - AaB U19, 2 - 0",2,0,3,66.66666666666666,0.0
+E. Bramsen,Randers U19,"AGF U19 - Randers U19, 5 - 2",3,0,9,33.33333333333333,0.0
 E. Bramsen,Randers U19,"AaB U19 - Randers U19, 0 - 3",False,False,1,0.0,0.0
 E. Bramsen,Randers U19,"Midtjylland U19 - Randers U19, 1 - 2",7,2,12,58.333333333333336,16.666666666666664
 E. Bramsen,Randers U19,"Randers U19 - Horsens U19, 2 - 1",1,0,2,50.0,0.0
@@ -263,6 +296,7 @@ E. Bramsen,Randers U19,"Silkeborg U19 - Randers U19, 2 - 0",3,1,7,42.85714285714
 E. Favor Fully,Horsens U19,"Brøndby U19 - Horsens U19, 2 - 3",7,3,9,77.77777777777779,33.33333333333333
 E. Favor Fully,Horsens U19,"Horsens U19 - AGF U19, 1 - 1 (P)",True,False,1,100.0,0.0
 E. Favor Fully,Horsens U19,"Horsens U19 - Esbjerg U19, 2 - 0",6,4,7,85.71428571428571,57.14285714285714
+E. Favor Fully,Horsens U19,"Horsens U19 - København U19, 1 - 1 (P)",4,3,5,80.0,60.0
 E. Favor Fully,Horsens U19,"Horsens U19 - Midtjylland U19, 0 - 2",True,True,1,100.0,100.0
 E. Favor Fully,Horsens U19,"Randers U19 - Horsens U19, 2 - 1",2,1,6,33.33333333333333,16.666666666666664
 E. Favor Fully,Horsens U19,"Silkeborg U19 - Horsens U19, 1 - 1 (P)",4,2,5,80.0,40.0
@@ -272,17 +306,21 @@ E. Hansborg-Sørensen,OB U19,"OB U19 - Lyngby U19, 2 - 0",9,2,13,69.230769230769
 E. Hansborg-Sørensen,OB U19,"SønderjyskE U19 - OB U19, 1 - 3",2,1,3,66.66666666666666,33.33333333333333
 E. Helt,AGF U19,"AGF U19 - København U19, 0 - 3",1,1,2,50.0,50.0
 E. Helt,AGF U19,"AGF U19 - Midtjylland U19, 0 - 1",1,0,2,50.0,0.0
+E. Helt,AGF U19,"AGF U19 - Randers U19, 5 - 2",False,False,1,0.0,0.0
 E. Helt,AGF U19,"Silkeborg U19 - AGF U19, 0 - 1",3,1,5,60.0,20.0
 E. Hjorth Pedersen,SønderjyskE U19,"Brøndby U19 - SønderjyskE U19, 5 - 2",1,1,4,25.0,25.0
 E. Hjorth Pedersen,SønderjyskE U19,"Esbjerg U19 - SønderjyskE U19, 2 - 0",7,4,9,77.77777777777779,44.44444444444444
 E. Hjorth Pedersen,SønderjyskE U19,"Lyngby U19 - SønderjyskE U19, 4 - 3",2,1,4,50.0,25.0
 E. Hjorth Pedersen,SønderjyskE U19,"Randers U19 - SønderjyskE U19, 0 - 2",5,1,7,71.42857142857143,14.285714285714285
+E. Hjorth Pedersen,SønderjyskE U19,"SønderjyskE U19 - AaB U19, 0 - 2",2,0,3,66.66666666666666,0.0
 E. Hjorth Pedersen,SønderjyskE U19,"SønderjyskE U19 - København U19, 2 - 0",2,0,4,50.0,0.0
 E. Hjorth Pedersen,SønderjyskE U19,"SønderjyskE U19 - OB U19, 1 - 3",4,1,6,66.66666666666666,16.666666666666664
 E. Hjorth Pedersen,SønderjyskE U19,"SønderjyskE U19 - Vejle U19, 2 - 3",2,1,2,100.0,50.0
 E. Ime,AGF U19,"AGF U19 - Midtjylland U19, 0 - 1",7,3,7,100.0,42.857142857142854
+E. Ime,AGF U19,"AGF U19 - Randers U19, 5 - 2",7,1,13,53.84615384615385,7.6923076923076925
 E. Ime,AGF U19,"Silkeborg U19 - AGF U19, 0 - 1",10,4,12,83.33333333333334,33.33333333333333
 E. Kjær,Silkeborg U19,"Brøndby U19 - Silkeborg U19, 2 - 3",3,0,5,60.0,0.0
+E. Kjær,Silkeborg U19,"Lyngby U19 - Silkeborg U19, 2 - 2 (P)",True,True,1,100.0,100.0
 E. Kjær,Silkeborg U19,"Midtjylland U19 - Silkeborg U19, 2 - 3",2,0,3,66.66666666666666,0.0
 E. Kjær,Silkeborg U19,"Silkeborg U19 - AGF U19, 0 - 1",2,0,3,66.66666666666666,0.0
 E. Kjær,Silkeborg U19,"Silkeborg U19 - AaB U19, 2 - 2 (P)",4,2,5,80.0,40.0
@@ -306,6 +344,7 @@ E. Omerovic,Esbjerg U19,"OB U19 - Esbjerg U19, 3 - 1",6,2,9,66.66666666666666,22
 E. Petersen,OB U19,"København U19 - OB U19, 4 - 0",4,2,8,50.0,25.0
 E. Petersen,OB U19,"OB U19 - Esbjerg U19, 3 - 1",3,1,5,60.0,20.0
 E. Petersen,OB U19,"OB U19 - Lyngby U19, 2 - 0",2,1,3,66.66666666666666,33.33333333333333
+E. Petersen,OB U19,"OB U19 - Midtjylland U19, 3 - 4",1,0,4,25.0,0.0
 E. Petersen,OB U19,"OB U19 - Vejle U19, 4 - 0",True,False,1,100.0,0.0
 E. Pettersen,Midtjylland U19,"Horsens U19 - Midtjylland U19, 0 - 2",4,0,5,80.0,0.0
 E. Subasic,Vejle U19,"SønderjyskE U19 - Vejle U19, 2 - 3",4,1,6,66.66666666666666,16.666666666666664
@@ -314,11 +353,13 @@ E. Thor,Lyngby U19,"Randers U19 - Lyngby U19, 0 - 2",2,2,4,50.0,50.0
 F. Elkjær Andersen,AGF U19,"AGF U19 - Brøndby U19, 5 - 1",3,3,3,100.0,100.0
 F. Elkjær Andersen,AGF U19,"AGF U19 - København U19, 0 - 3",2,1,5,40.0,20.0
 F. Elkjær Andersen,AGF U19,"AGF U19 - Midtjylland U19, 0 - 1",5,3,7,71.42857142857143,42.857142857142854
+F. Elkjær Andersen,AGF U19,"AGF U19 - Randers U19, 5 - 2",2,1,3,66.66666666666666,33.33333333333333
 F. Elkjær Andersen,AGF U19,"Esbjerg U19 - AGF U19, 1 - 2",True,True,1,100.0,100.0
 F. Elkjær Andersen,AGF U19,"Horsens U19 - AGF U19, 1 - 1 (P)",3,0,7,42.857142857142854,0.0
 F. Elkjær Andersen,AGF U19,"Silkeborg U19 - AGF U19, 0 - 1",4,2,4,100.0,50.0
 F. Emmery,AGF U19,"AGF U19 - Brøndby U19, 5 - 1",3,0,4,75.0,0.0
 F. Emmery,AGF U19,"AGF U19 - København U19, 0 - 3",1,1,4,25.0,25.0
+F. Emmery,AGF U19,"AGF U19 - Randers U19, 5 - 2",2,0,4,50.0,0.0
 F. Emmery,AGF U19,"Horsens U19 - AGF U19, 1 - 1 (P)",False,False,1,0.0,0.0
 F. Emmery,AGF U19,"Silkeborg U19 - AGF U19, 0 - 1",2,1,2,100.0,50.0
 F. Flaskager,Esbjerg U19,"Esbjerg U19 - SønderjyskE U19, 2 - 0",3,1,4,75.0,25.0
@@ -327,6 +368,7 @@ F. Flaskager,Esbjerg U19,"København U19 - Esbjerg U19, 9 - 1",2,0,5,40.0,0.0
 F. Kongslev,Lyngby U19,"Lyngby U19 - SønderjyskE U19, 4 - 3",True,True,1,100.0,100.0
 F. Kongslev,Lyngby U19,"Lyngby U19 - Vejle U19, 0 - 1",4,3,6,66.66666666666666,50.0
 F. Kongslev,Lyngby U19,"Randers U19 - Lyngby U19, 0 - 2",2,1,2,100.0,50.0
+F. Konstmann,Randers U19,"AGF U19 - Randers U19, 5 - 2",6,4,6,100.0,66.66666666666666
 F. Konstmann,Randers U19,"AaB U19 - Randers U19, 0 - 3",5,2,7,71.42857142857143,28.57142857142857
 F. Konstmann,Randers U19,"Midtjylland U19 - Randers U19, 1 - 2",12,7,14,85.71428571428571,50.0
 F. Konstmann,Randers U19,"Randers U19 - Horsens U19, 2 - 1",2,1,3,66.66666666666666,33.33333333333333
@@ -337,6 +379,7 @@ F. Nygaard,AaB U19,"AaB U19 - København U19, 2 - 1",8,4,11,72.72727272727273,36
 F. Nygaard,AaB U19,"AaB U19 - OB U19, 1 - 0",7,3,8,87.5,37.5
 F. Nygaard,AaB U19,"AaB U19 - Randers U19, 0 - 3",2,0,2,100.0,0.0
 F. Nygaard,AaB U19,"Silkeborg U19 - AaB U19, 2 - 2 (P)",4,0,8,50.0,0.0
+F. Nygaard,AaB U19,"SønderjyskE U19 - AaB U19, 0 - 2",8,3,11,72.72727272727273,27.27272727272727
 F. Nygaard,AaB U19,"Vejle U19 - AaB U19, 1 - 1",4,2,8,50.0,25.0
 F. Nygaard Jürgensen,SønderjyskE U19,"SønderjyskE U19 - København U19, 2 - 0",2,0,4,50.0,0.0
 F. Nygaard Jürgensen,SønderjyskE U19,"SønderjyskE U19 - OB U19, 1 - 3",2,1,4,50.0,25.0
@@ -344,11 +387,14 @@ F. Nygaard Jürgensen,SønderjyskE U19,"SønderjyskE U19 - Vejle U19, 2 - 3",4,1
 F. Pedersen,Esbjerg U19,"Esbjerg U19 - Nordsjælland U19, 0 - 5",1,1,3,33.33333333333333,33.33333333333333
 F. Roslyng Christiansen,Horsens U19,"Horsens U19 - AGF U19, 1 - 1 (P)",7,2,13,53.84615384615385,15.384615384615385
 F. Roslyng Christiansen,Horsens U19,"Horsens U19 - Midtjylland U19, 0 - 2",6,4,7,85.71428571428571,57.14285714285714
+F. Schmidt Petersen,København U19,"Horsens U19 - København U19, 1 - 1 (P)",1,1,2,50.0,50.0
 F. Schmidt Petersen,København U19,"København U19 - Esbjerg U19, 9 - 1",2,0,3,66.66666666666666,0.0
+F. Taraldset,Randers U19,"AGF U19 - Randers U19, 5 - 2",4,0,6,66.66666666666666,0.0
 F. Taraldset,Randers U19,"Midtjylland U19 - Randers U19, 1 - 2",3,2,4,75.0,50.0
 F. Taraldset,Randers U19,"Randers U19 - Horsens U19, 2 - 1",1,1,3,33.33333333333333,33.33333333333333
 G. Ankamafio,København U19,"AGF U19 - København U19, 0 - 3",6,0,10,60.0,0.0
 G. Ankamafio,København U19,"AaB U19 - København U19, 2 - 1",2,0,3,66.66666666666666,0.0
+G. Ankamafio,København U19,"Horsens U19 - København U19, 1 - 1 (P)",5,2,8,62.5,25.0
 G. Ankamafio,København U19,"København U19 - Esbjerg U19, 9 - 1",5,2,8,62.5,25.0
 G. Ankamafio,København U19,"København U19 - OB U19, 4 - 0",3,1,3,100.0,33.33333333333333
 G. Bjerge,Midtjylland U19,"AGF U19 - Midtjylland U19, 0 - 1",3,1,7,42.857142857142854,14.285714285714285
@@ -357,6 +403,8 @@ G. Bjerge,Midtjylland U19,"Horsens U19 - Midtjylland U19, 0 - 2",2,1,4,50.0,25.0
 G. Bjerge,Midtjylland U19,"Midtjylland U19 - Lyngby U19, 11 - 1",2,1,4,50.0,25.0
 G. Bjerge,Midtjylland U19,"Midtjylland U19 - Randers U19, 1 - 2",4,3,7,57.14285714285714,42.857142857142854
 G. Bjerge,Midtjylland U19,"Midtjylland U19 - Silkeborg U19, 2 - 3",0,0,2,0.0,0.0
+G. Bjerge,Midtjylland U19,"OB U19 - Midtjylland U19, 3 - 4",3,2,6,50.0,33.33333333333333
+G. Drest Wagner,SønderjyskE U19,"SønderjyskE U19 - AaB U19, 0 - 2",2,0,2,100.0,0.0
 G. Efe Egbedi,AGF U19,"Silkeborg U19 - AGF U19, 0 - 1",2,0,2,100.0,0.0
 G. Ejsing,AaB U19,"Nordsjælland U19 - AaB U19, 2 - 0",False,False,1,0.0,0.0
 G. Knudsen,Vejle U19,"SønderjyskE U19 - Vejle U19, 2 - 3",True,True,1,100.0,100.0
@@ -366,6 +414,7 @@ G. Nøhr,Brøndby U19,"Brøndby U19 - Midtjylland U19, 4 - 0",6,3,6,100.0,50.0
 G. Nøhr,Brøndby U19,"Brøndby U19 - OB U19, 2 - 4",5,2,13,38.46153846153847,15.384615384615385
 G. Nøhr,Brøndby U19,"Brøndby U19 - Silkeborg U19, 2 - 3",4,1,9,44.44444444444444,11.11111111111111
 G. Nøhr,Brøndby U19,"Vejle U19 - Brøndby U19, 1 - 1",7,1,13,53.84615384615385,7.6923076923076925
+G. Smith Balle,Silkeborg U19,"Lyngby U19 - Silkeborg U19, 2 - 2 (P)",False,False,1,0.0,0.0
 G. Smith Balle,Silkeborg U19,"Midtjylland U19 - Silkeborg U19, 2 - 3",10,3,13,76.92307692307693,23.076923076923077
 G. Smith Balle,Silkeborg U19,"Nordsjælland U19 - Silkeborg U19, 3 - 0",3,0,4,75.0,0.0
 G. Smith Balle,Silkeborg U19,"Silkeborg U19 - AGF U19, 0 - 1",5,3,10,50.0,30.0
@@ -376,6 +425,7 @@ G. Wulff,OB U19,"AaB U19 - OB U19, 1 - 0",1,0,2,50.0,0.0
 G. Wulff,OB U19,"Brøndby U19 - OB U19, 2 - 4",1,0,2,50.0,0.0
 G. Wulff,OB U19,"København U19 - OB U19, 4 - 0",4,3,7,57.14285714285714,42.857142857142854
 G. Wulff,OB U19,"OB U19 - Lyngby U19, 2 - 0",3,1,4,75.0,25.0
+G. Wulff,OB U19,"OB U19 - Midtjylland U19, 3 - 4",5,2,15,33.33333333333333,13.333333333333334
 H. Bidstrup,København U19,"AGF U19 - København U19, 0 - 3",10,3,16,62.5,18.75
 H. Bidstrup,København U19,"AaB U19 - København U19, 2 - 1",10,3,11,90.9090909090909,27.27272727272727
 H. Bidstrup,København U19,"København U19 - Esbjerg U19, 9 - 1",6,1,7,85.71428571428571,14.285714285714285
@@ -386,6 +436,7 @@ H. Christensen,Vejle U19,"Vejle U19 - Brøndby U19, 1 - 1",True,True,1,100.0,100
 H. Heidarali,Lyngby U19,"Lyngby U19 - Esbjerg U19, 1 - 1 (P)",False,False,1,0.0,0.0
 H. Heidarali,Lyngby U19,"OB U19 - Lyngby U19, 2 - 0",2,0,3,66.66666666666666,0.0
 H. Németh,København U19,"AaB U19 - København U19, 2 - 1",3,1,8,37.5,12.5
+H. Németh,København U19,"Horsens U19 - København U19, 1 - 1 (P)",3,0,6,50.0,0.0
 H. Németh,København U19,"København U19 - Esbjerg U19, 9 - 1",2,0,2,100.0,0.0
 H. Rasmussen,OB U19,"AaB U19 - OB U19, 1 - 0",5,2,7,71.42857142857143,28.57142857142857
 H. Rasmussen,OB U19,"Brøndby U19 - OB U19, 2 - 4",6,3,7,85.71428571428571,42.857142857142854
@@ -404,6 +455,7 @@ J. Agyekum,Brøndby U19,"Brøndby U19 - Horsens U19, 2 - 3",7,3,8,87.5,37.5
 J. Agyekum,Brøndby U19,"Brøndby U19 - Midtjylland U19, 4 - 0",7,2,13,53.84615384615385,15.384615384615385
 J. Agyekum,Brøndby U19,"Brøndby U19 - OB U19, 2 - 4",2,0,7,28.57142857142857,0.0
 J. Agyekum,Brøndby U19,"Brøndby U19 - SønderjyskE U19, 5 - 2",2,2,3,66.66666666666666,66.66666666666666
+J. Agyekum,Brøndby U19,"Nordsjælland U19 - Brøndby U19, 1 - 0",3,0,7,42.857142857142854,0.0
 J. Agyekum,Brøndby U19,"Vejle U19 - Brøndby U19, 1 - 1",0,0,3,0.0,0.0
 J. Ambæk,Brøndby U19,"AGF U19 - Brøndby U19, 5 - 1",3,2,5,60.0,40.0
 J. Ambæk,Brøndby U19,"Brøndby U19 - Horsens U19, 2 - 3",7,1,10,70.0,10.0
@@ -411,6 +463,7 @@ J. Ambæk,Brøndby U19,"Brøndby U19 - Midtjylland U19, 4 - 0",3,2,3,100.0,66.66
 J. Ambæk,Brøndby U19,"Brøndby U19 - OB U19, 2 - 4",True,True,1,100.0,100.0
 J. Ambæk,Brøndby U19,"Brøndby U19 - Silkeborg U19, 2 - 3",0,0,2,0.0,0.0
 J. Ambæk,Brøndby U19,"Brøndby U19 - SønderjyskE U19, 5 - 2",8,0,11,72.72727272727273,0.0
+J. Ambæk,Brøndby U19,"Nordsjælland U19 - Brøndby U19, 1 - 0",5,0,5,100.0,0.0
 J. Ambæk,Brøndby U19,"Vejle U19 - Brøndby U19, 1 - 1",1,1,2,50.0,50.0
 J. Arinze,Midtjylland U19,"AGF U19 - Midtjylland U19, 0 - 1",1,0,6,16.666666666666664,0.0
 J. Arinze,Midtjylland U19,"Brøndby U19 - Midtjylland U19, 4 - 0",2,1,3,66.66666666666666,33.33333333333333
@@ -418,10 +471,12 @@ J. Arinze,Midtjylland U19,"Horsens U19 - Midtjylland U19, 0 - 2",0,0,2,0.0,0.0
 J. Arinze,Midtjylland U19,"Midtjylland U19 - Lyngby U19, 11 - 1",2,0,6,33.33333333333333,0.0
 J. Arinze,Midtjylland U19,"Midtjylland U19 - Randers U19, 1 - 2",3,2,7,42.857142857142854,28.57142857142857
 J. Arinze,Midtjylland U19,"Midtjylland U19 - Silkeborg U19, 2 - 3",True,True,1,100.0,100.0
+J. Arinze,Midtjylland U19,"OB U19 - Midtjylland U19, 3 - 4",0,0,2,0.0,0.0
 J. Askou,OB U19,"Brøndby U19 - OB U19, 2 - 4",True,True,1,100.0,100.0
 J. Askou,OB U19,"København U19 - OB U19, 4 - 0",5,1,7,71.42857142857143,14.285714285714285
 J. Askou,OB U19,"OB U19 - Esbjerg U19, 3 - 1",4,2,6,66.66666666666666,33.33333333333333
 J. Askou,OB U19,"OB U19 - Lyngby U19, 2 - 0",10,3,11,90.9090909090909,27.27272727272727
+J. Askou,OB U19,"OB U19 - Midtjylland U19, 3 - 4",3,3,4,75.0,75.0
 J. Askou,OB U19,"OB U19 - Vejle U19, 4 - 0",2,0,2,100.0,0.0
 J. Askou,OB U19,"SønderjyskE U19 - OB U19, 1 - 3",6,2,6,100.0,33.33333333333333
 J. Bengtsen,SønderjyskE U19,"SønderjyskE U19 - Vejle U19, 2 - 3",4,0,5,80.0,0.0
@@ -430,6 +485,7 @@ J. Emefile,Midtjylland U19,"Brøndby U19 - Midtjylland U19, 4 - 0",2,0,2,100.0,0
 J. Emefile,Midtjylland U19,"Horsens U19 - Midtjylland U19, 0 - 2",1,1,5,20.0,20.0
 J. Emefile,Midtjylland U19,"Midtjylland U19 - Lyngby U19, 11 - 1",5,2,8,62.5,25.0
 J. Emefile,Midtjylland U19,"Midtjylland U19 - Silkeborg U19, 2 - 3",2,0,3,66.66666666666666,0.0
+J. Emefile,Midtjylland U19,"OB U19 - Midtjylland U19, 3 - 4",2,0,3,66.66666666666666,0.0
 J. Jensen,Esbjerg U19,"Esbjerg U19 - AGF U19, 1 - 2",3,1,5,60.0,20.0
 J. Jensen,Esbjerg U19,"Esbjerg U19 - SønderjyskE U19, 2 - 0",5,2,7,71.42857142857143,28.57142857142857
 J. Jensen,Esbjerg U19,"Lyngby U19 - Esbjerg U19, 1 - 1 (P)",6,4,8,75.0,50.0
@@ -437,11 +493,13 @@ J. Jensen,Esbjerg U19,"OB U19 - Esbjerg U19, 3 - 1",5,2,6,83.33333333333334,33.3
 J. Jonsson,SønderjyskE U19,"Brøndby U19 - SønderjyskE U19, 5 - 2",4,3,5,80.0,60.0
 J. Jonsson,SønderjyskE U19,"Lyngby U19 - SønderjyskE U19, 4 - 3",1,0,2,50.0,0.0
 J. Jonsson,SønderjyskE U19,"Randers U19 - SønderjyskE U19, 0 - 2",4,1,7,57.14285714285714,14.285714285714285
+J. Jonsson,SønderjyskE U19,"SønderjyskE U19 - AaB U19, 0 - 2",5,2,7,71.42857142857143,28.57142857142857
 J. Jonsson,SønderjyskE U19,"SønderjyskE U19 - København U19, 2 - 0",5,1,7,71.42857142857143,14.285714285714285
 J. Jonsson,SønderjyskE U19,"SønderjyskE U19 - OB U19, 1 - 3",5,1,6,83.33333333333334,16.666666666666664
 J. Jonsson,SønderjyskE U19,"SønderjyskE U19 - Vejle U19, 2 - 3",7,2,9,77.77777777777779,22.22222222222222
 J. Klemann Pålsson,SønderjyskE U19,"Esbjerg U19 - SønderjyskE U19, 2 - 0",2,1,2,100.0,50.0
 J. Klemann Pålsson,SønderjyskE U19,"Randers U19 - SønderjyskE U19, 0 - 2",1,0,2,50.0,0.0
+J. Klemann Pålsson,SønderjyskE U19,"SønderjyskE U19 - AaB U19, 0 - 2",13,2,19,68.42105263157895,10.526315789473683
 J. Klemann Pålsson,SønderjyskE U19,"SønderjyskE U19 - København U19, 2 - 0",2,0,4,50.0,0.0
 J. Lagoni Thorsen,SønderjyskE U19,"Lyngby U19 - SønderjyskE U19, 4 - 3",4,0,7,57.14285714285714,0.0
 J. Lagoni Thorsen,SønderjyskE U19,"Randers U19 - SønderjyskE U19, 0 - 2",2,2,2,100.0,100.0
@@ -449,6 +507,7 @@ J. Lucena,Esbjerg U19,"Esbjerg U19 - Nordsjælland U19, 0 - 5",3,2,3,100.0,66.66
 J. Lucena,Esbjerg U19,"Horsens U19 - Esbjerg U19, 2 - 0",5,1,5,100.0,20.0
 J. Lucena,Esbjerg U19,"OB U19 - Esbjerg U19, 3 - 1",2,1,3,66.66666666666666,33.33333333333333
 J. Meltofte Janssen,Nordsjælland U19,"Esbjerg U19 - Nordsjælland U19, 0 - 5",4,3,8,50.0,37.5
+J. Meltofte Janssen,Nordsjælland U19,"Nordsjælland U19 - Brøndby U19, 1 - 0",3,2,3,100.0,66.66666666666666
 J. Meltofte Janssen,Nordsjælland U19,"Nordsjælland U19 - Horsens U19, 3 - 0",6,4,7,85.71428571428571,57.14285714285714
 J. Meltofte Janssen,Nordsjælland U19,"Nordsjælland U19 - Silkeborg U19, 3 - 0",6,4,7,85.71428571428571,57.14285714285714
 J. Moalem,København U19,"AGF U19 - København U19, 0 - 3",5,3,8,62.5,37.5
@@ -456,6 +515,7 @@ J. Moalem,København U19,"København U19 - OB U19, 4 - 0",3,0,3,100.0,0.0
 J. Moalem,København U19,"SønderjyskE U19 - København U19, 2 - 0",3,2,4,75.0,50.0
 J. Nielsen,Silkeborg U19,"Nordsjælland U19 - Silkeborg U19, 3 - 0",True,False,1,100.0,0.0
 J. Otoa,Lyngby U19,"Lyngby U19 - Esbjerg U19, 1 - 1 (P)",False,False,1,0.0,0.0
+J. Otoa,Lyngby U19,"Lyngby U19 - Silkeborg U19, 2 - 2 (P)",4,1,5,80.0,20.0
 J. Otoa,Lyngby U19,"Midtjylland U19 - Lyngby U19, 11 - 1",6,3,6,100.0,50.0
 J. Palsmark,Nordsjælland U19,"Nordsjælland U19 - AaB U19, 2 - 0",1,0,2,50.0,0.0
 J. Pedersen,Randers U19,"Midtjylland U19 - Randers U19, 1 - 2",False,False,1,0.0,0.0
@@ -466,10 +526,13 @@ J. Remark Wismann,Brøndby U19,"Brøndby U19 - Midtjylland U19, 4 - 0",True,True
 J. Remark Wismann,Brøndby U19,"Brøndby U19 - OB U19, 2 - 4",True,True,1,100.0,100.0
 J. Remark Wismann,Brøndby U19,"Brøndby U19 - Silkeborg U19, 2 - 3",2,1,2,100.0,50.0
 J. Remark Wismann,Brøndby U19,"Brøndby U19 - SønderjyskE U19, 5 - 2",2,1,2,100.0,50.0
+J. Remark Wismann,Brøndby U19,"Nordsjælland U19 - Brøndby U19, 1 - 0",1,0,2,50.0,0.0
 J. Remark Wismann,Brøndby U19,"Vejle U19 - Brøndby U19, 1 - 1",2,2,5,40.0,40.0
 J. Valtteri Lähteenmäki,Nordsjælland U19,"Esbjerg U19 - Nordsjælland U19, 0 - 5",3,0,4,75.0,0.0
+J. Valtteri Lähteenmäki,Nordsjælland U19,"Nordsjælland U19 - Brøndby U19, 1 - 0",2,1,2,100.0,50.0
 J. Valtteri Lähteenmäki,Nordsjælland U19,"Nordsjælland U19 - Horsens U19, 3 - 0",4,2,5,80.0,40.0
 J. Valtteri Lähteenmäki,Nordsjælland U19,"Nordsjælland U19 - Silkeborg U19, 3 - 0",4,1,6,66.66666666666666,16.666666666666664
+K. Jasovic,Lyngby U19,"Lyngby U19 - Silkeborg U19, 2 - 2 (P)",2,0,4,50.0,0.0
 K. Jasovic,Lyngby U19,"Lyngby U19 - SønderjyskE U19, 4 - 3",True,False,1,100.0,0.0
 K. Jasovic,Lyngby U19,"Lyngby U19 - Vejle U19, 0 - 1",1,0,2,50.0,0.0
 K. Jasovic,Lyngby U19,"Midtjylland U19 - Lyngby U19, 11 - 1",3,0,6,50.0,0.0
@@ -486,6 +549,7 @@ L. Bolvinkel,OB U19,"OB U19 - Vejle U19, 4 - 0",True,True,1,100.0,100.0
 L. Falk Hansen,AGF U19,"AGF U19 - Brøndby U19, 5 - 1",8,2,12,66.66666666666666,16.666666666666664
 L. Falk Hansen,AGF U19,"AGF U19 - København U19, 0 - 3",True,False,1,100.0,0.0
 L. Falk Hansen,AGF U19,"AGF U19 - Midtjylland U19, 0 - 1",4,2,9,44.44444444444444,22.22222222222222
+L. Falk Hansen,AGF U19,"AGF U19 - Randers U19, 5 - 2",2,1,2,100.0,50.0
 L. Falk Hansen,AGF U19,"Esbjerg U19 - AGF U19, 1 - 2",2,2,2,100.0,100.0
 L. Falk Hansen,AGF U19,"Horsens U19 - AGF U19, 1 - 1 (P)",True,True,1,100.0,100.0
 L. Falk Hansen,AGF U19,"Silkeborg U19 - AGF U19, 0 - 1",1,0,2,50.0,0.0
@@ -497,7 +561,9 @@ L. Larsen,Brøndby U19,"Brøndby U19 - Midtjylland U19, 4 - 0",3,2,5,60.0,40.0
 L. Larsen,Brøndby U19,"Brøndby U19 - OB U19, 2 - 4",5,1,10,50.0,10.0
 L. Larsen,Brøndby U19,"Brøndby U19 - Silkeborg U19, 2 - 3",3,1,4,75.0,25.0
 L. Larsen,Brøndby U19,"Brøndby U19 - SønderjyskE U19, 5 - 2",3,0,5,60.0,0.0
+L. Larsen,Brøndby U19,"Nordsjælland U19 - Brøndby U19, 1 - 0",17,8,19,89.47368421052632,42.10526315789473
 L. Larsen,Brøndby U19,"Vejle U19 - Brøndby U19, 1 - 1",4,1,6,66.66666666666666,16.666666666666664
+L. Mandal Andersen,Randers U19,"AGF U19 - Randers U19, 5 - 2",2,0,5,40.0,0.0
 L. Mandal Andersen,Randers U19,"AaB U19 - Randers U19, 0 - 3",3,1,8,37.5,12.5
 L. Mandal Andersen,Randers U19,"Midtjylland U19 - Randers U19, 1 - 2",3,1,5,60.0,20.0
 L. Mandal Andersen,Randers U19,"Randers U19 - Horsens U19, 2 - 1",3,0,3,100.0,0.0
@@ -516,18 +582,23 @@ L. Riggelsen,SønderjyskE U19,"Brøndby U19 - SønderjyskE U19, 5 - 2",2,0,6,33.
 L. Riggelsen,SønderjyskE U19,"Esbjerg U19 - SønderjyskE U19, 2 - 0",3,2,7,42.857142857142854,28.57142857142857
 L. Riggelsen,SønderjyskE U19,"Lyngby U19 - SønderjyskE U19, 4 - 3",4,2,8,50.0,25.0
 L. Riggelsen,SønderjyskE U19,"Randers U19 - SønderjyskE U19, 0 - 2",3,3,3,100.0,100.0
+L. Riggelsen,SønderjyskE U19,"SønderjyskE U19 - AaB U19, 0 - 2",5,1,8,62.5,12.5
 L. Riggelsen,SønderjyskE U19,"SønderjyskE U19 - København U19, 2 - 0",3,0,10,30.0,0.0
 L. Riggelsen,SønderjyskE U19,"SønderjyskE U19 - OB U19, 1 - 3",2,1,4,50.0,25.0
 L. Riggelsen,SønderjyskE U19,"SønderjyskE U19 - Vejle U19, 2 - 3",8,0,12,66.66666666666666,0.0
+L. Risager Kristensen,Horsens U19,"Horsens U19 - København U19, 1 - 1 (P)",4,1,4,100.0,25.0
 L. Risager Kristensen,Horsens U19,"Nordsjælland U19 - Horsens U19, 3 - 0",4,2,6,66.66666666666666,33.33333333333333
 L. Vraa-Jensen,Brøndby U19,"Vejle U19 - Brøndby U19, 1 - 1",2,1,3,66.66666666666666,33.33333333333333
 L. West,København U19,"AaB U19 - København U19, 2 - 1",3,2,5,60.0,40.0
+L. West,København U19,"Horsens U19 - København U19, 1 - 1 (P)",11,5,14,78.57142857142857,35.714285714285715
 L. West,København U19,"København U19 - OB U19, 4 - 0",6,3,7,85.71428571428571,42.857142857142854
 L. West,København U19,"SønderjyskE U19 - København U19, 2 - 0",2,1,3,66.66666666666666,33.33333333333333
 M. Abrahamsen,OB U19,"AaB U19 - OB U19, 1 - 0",True,True,1,100.0,100.0
 M. Abrahamsen,OB U19,"København U19 - OB U19, 4 - 0",3,3,4,75.0,75.0
 M. Abrahamsen,OB U19,"OB U19 - Esbjerg U19, 3 - 1",5,0,5,100.0,0.0
 M. Abrahamsen,OB U19,"OB U19 - Lyngby U19, 2 - 0",2,1,5,40.0,20.0
+M. Abrahamsen,OB U19,"OB U19 - Midtjylland U19, 3 - 4",2,1,2,100.0,50.0
+M. Albæk,Randers U19,"AGF U19 - Randers U19, 5 - 2",9,6,14,64.28571428571429,42.857142857142854
 M. Albæk,Randers U19,"AaB U19 - Randers U19, 0 - 3",3,1,7,42.857142857142854,14.285714285714285
 M. Albæk,Randers U19,"Midtjylland U19 - Randers U19, 1 - 2",1,0,4,25.0,0.0
 M. Albæk,Randers U19,"Randers U19 - Lyngby U19, 0 - 2",6,1,11,54.54545454545454,9.090909090909092
@@ -537,23 +608,28 @@ M. Andersen,Brøndby U19,"AGF U19 - Brøndby U19, 5 - 1",3,0,5,60.0,0.0
 M. Andersen,Brøndby U19,"Brøndby U19 - Horsens U19, 2 - 3",True,False,1,100.0,0.0
 M. Andersen,Brøndby U19,"Brøndby U19 - Silkeborg U19, 2 - 3",1,0,3,33.33333333333333,0.0
 M. Andersen,Brøndby U19,"Brøndby U19 - SønderjyskE U19, 5 - 2",True,False,1,100.0,0.0
+M. Andersen,Brøndby U19,"Nordsjælland U19 - Brøndby U19, 1 - 0",True,False,1,100.0,0.0
 M. Andersen,Brøndby U19,"Vejle U19 - Brøndby U19, 1 - 1",True,False,1,100.0,0.0
 M. Andersen,OB U19,"AaB U19 - OB U19, 1 - 0",8,1,9,88.88888888888889,11.11111111111111
 M. Andersen,OB U19,"Brøndby U19 - OB U19, 2 - 4",5,1,9,55.55555555555556,11.11111111111111
 M. Andersen,OB U19,"OB U19 - Esbjerg U19, 3 - 1",5,2,6,83.33333333333334,33.33333333333333
 M. Andersen,OB U19,"OB U19 - Lyngby U19, 2 - 0",3,0,3,100.0,0.0
+M. Andersen,OB U19,"OB U19 - Midtjylland U19, 3 - 4",8,3,15,53.333333333333336,20.0
 M. Andersen,OB U19,"OB U19 - Vejle U19, 4 - 0",3,1,4,75.0,25.0
 M. Andersen,OB U19,"SønderjyskE U19 - OB U19, 1 - 3",3,0,4,75.0,0.0
 M. Andy,Horsens U19,"Brøndby U19 - Horsens U19, 2 - 3",2,1,4,50.0,25.0
 M. Andy,Horsens U19,"Horsens U19 - Esbjerg U19, 2 - 0",1,1,2,50.0,50.0
+M. Andy,Horsens U19,"Horsens U19 - København U19, 1 - 1 (P)",0,0,3,0.0,0.0
 M. Andy,Horsens U19,"Nordsjælland U19 - Horsens U19, 3 - 0",True,False,1,100.0,0.0
 M. Andy,Horsens U19,"Randers U19 - Horsens U19, 2 - 1",True,False,1,100.0,0.0
 M. Bakhit,Brøndby U19,"Brøndby U19 - Horsens U19, 2 - 3",3,2,4,75.0,50.0
+M. Bakhit,Brøndby U19,"Nordsjælland U19 - Brøndby U19, 1 - 0",False,False,1,0.0,0.0
 M. Bang,Vejle U19,"OB U19 - Vejle U19, 4 - 0",True,False,1,100.0,0.0
 M. Beyer,Brøndby U19,"AGF U19 - Brøndby U19, 5 - 1",True,True,1,100.0,100.0
 M. Beyer,Brøndby U19,"Brøndby U19 - Silkeborg U19, 2 - 3",3,1,4,75.0,25.0
 M. Beyer,Brøndby U19,"Brøndby U19 - SønderjyskE U19, 5 - 2",True,False,1,100.0,0.0
 M. Bonde,AaB U19,"Nordsjælland U19 - AaB U19, 2 - 0",4,1,7,57.14285714285714,14.285714285714285
+M. Bonde,AaB U19,"SønderjyskE U19 - AaB U19, 0 - 2",7,1,7,100.0,14.285714285714285
 M. Engsted,Esbjerg U19,"Esbjerg U19 - AGF U19, 1 - 2",1,0,3,33.33333333333333,0.0
 M. Engsted,Esbjerg U19,"Esbjerg U19 - Nordsjælland U19, 0 - 5",3,1,3,100.0,33.33333333333333
 M. Engsted,Esbjerg U19,"København U19 - Esbjerg U19, 9 - 1",1,1,2,50.0,50.0
@@ -561,13 +637,17 @@ M. Engsted,Esbjerg U19,"Lyngby U19 - Esbjerg U19, 1 - 1 (P)",0,0,2,0.0,0.0
 M. Engsted,Esbjerg U19,"OB U19 - Esbjerg U19, 3 - 1",2,0,6,33.33333333333333,0.0
 M. Frederiksen,Horsens U19,"Brøndby U19 - Horsens U19, 2 - 3",True,False,1,100.0,0.0
 M. Frederiksen,Horsens U19,"Horsens U19 - AGF U19, 1 - 1 (P)",3,0,6,50.0,0.0
+M. Frederiksen,Horsens U19,"Horsens U19 - København U19, 1 - 1 (P)",2,1,3,66.66666666666666,33.33333333333333
 M. Frederiksen,Horsens U19,"Silkeborg U19 - Horsens U19, 1 - 1 (P)",5,2,5,100.0,40.0
+M. Gogorza,Midtjylland U19,"OB U19 - Midtjylland U19, 3 - 4",2,0,2,100.0,0.0
+M. Hening,Randers U19,"AGF U19 - Randers U19, 5 - 2",4,0,5,80.0,0.0
 M. Hening,Randers U19,"Randers U19 - Horsens U19, 2 - 1",3,0,6,50.0,0.0
 M. Henning,Randers U19,"AaB U19 - Randers U19, 0 - 3",False,False,1,0.0,0.0
 M. Henning,Randers U19,"Midtjylland U19 - Randers U19, 1 - 2",3,1,5,60.0,20.0
 M. Henning,Randers U19,"Randers U19 - SønderjyskE U19, 0 - 2",True,True,1,100.0,100.0
 M. Henning,Randers U19,"Silkeborg U19 - Randers U19, 2 - 0",5,2,7,71.42857142857143,28.57142857142857
 M. Henriksen,Lyngby U19,"Lyngby U19 - Esbjerg U19, 1 - 1 (P)",2,2,6,33.33333333333333,33.33333333333333
+M. Henriksen,Lyngby U19,"Lyngby U19 - Silkeborg U19, 2 - 2 (P)",1,1,2,50.0,50.0
 M. Henriksen,Lyngby U19,"Lyngby U19 - SønderjyskE U19, 4 - 3",4,0,5,80.0,0.0
 M. Henriksen,Lyngby U19,"Lyngby U19 - Vejle U19, 0 - 1",3,0,4,75.0,0.0
 M. Henriksen,Lyngby U19,"Midtjylland U19 - Lyngby U19, 11 - 1",3,1,3,100.0,33.33333333333333
@@ -575,14 +655,17 @@ M. Henriksen,Lyngby U19,"OB U19 - Lyngby U19, 2 - 0",4,1,5,80.0,20.0
 M. Henriksen,Lyngby U19,"Randers U19 - Lyngby U19, 0 - 2",2,0,3,66.66666666666666,0.0
 M. Heyde,Nordsjælland U19,"Esbjerg U19 - Nordsjælland U19, 0 - 5",4,1,6,66.66666666666666,16.666666666666664
 M. Heyde,Nordsjælland U19,"Nordsjælland U19 - AaB U19, 2 - 0",1,0,3,33.33333333333333,0.0
+M. Heyde,Nordsjælland U19,"Nordsjælland U19 - Brøndby U19, 1 - 0",2,1,4,50.0,25.0
 M. Heyde,Nordsjælland U19,"Nordsjælland U19 - Horsens U19, 3 - 0",True,False,1,100.0,0.0
 M. Heyde,Nordsjælland U19,"Nordsjælland U19 - Silkeborg U19, 3 - 0",5,2,8,62.5,25.0
 M. Holt,AaB U19,"AaB U19 - København U19, 2 - 1",11,2,17,64.70588235294117,11.76470588235294
 M. Holt,AaB U19,"AaB U19 - OB U19, 1 - 0",8,2,11,72.72727272727273,18.181818181818183
 M. Holt,AaB U19,"Nordsjælland U19 - AaB U19, 2 - 0",3,1,7,42.857142857142854,14.285714285714285
 M. Holt,AaB U19,"Silkeborg U19 - AaB U19, 2 - 2 (P)",6,1,13,46.15384615384615,7.6923076923076925
+M. Holt,AaB U19,"SønderjyskE U19 - AaB U19, 0 - 2",6,2,8,75.0,25.0
 M. Holt,AaB U19,"Vejle U19 - AaB U19, 1 - 1",10,4,14,71.42857142857143,28.57142857142857
 M. Jalloh,Brøndby U19,"Brøndby U19 - OB U19, 2 - 4",False,False,1,0.0,0.0
+M. Jalloh,Brøndby U19,"Nordsjælland U19 - Brøndby U19, 1 - 0",True,False,1,100.0,0.0
 M. Jensen,AaB U19,"AaB U19 - Randers U19, 0 - 3",4,2,6,66.66666666666666,33.33333333333333
 M. Jensen,AaB U19,"Nordsjælland U19 - AaB U19, 2 - 0",2,0,4,50.0,0.0
 M. Jensen,Brøndby U19,"AGF U19 - Brøndby U19, 5 - 1",4,0,7,57.14285714285714,0.0
@@ -591,14 +674,17 @@ M. Jensen,Brøndby U19,"Brøndby U19 - Midtjylland U19, 4 - 0",8,5,11,72.7272727
 M. Jensen,Brøndby U19,"Brøndby U19 - OB U19, 2 - 4",4,1,6,66.66666666666666,16.666666666666664
 M. Jensen,Brøndby U19,"Brøndby U19 - Silkeborg U19, 2 - 3",5,2,5,100.0,40.0
 M. Jensen,Brøndby U19,"Brøndby U19 - SønderjyskE U19, 5 - 2",4,2,5,80.0,40.0
+M. Jensen,Brøndby U19,"Nordsjælland U19 - Brøndby U19, 1 - 0",11,2,18,61.111111111111114,11.11111111111111
 M. Jensen,Brøndby U19,"Vejle U19 - Brøndby U19, 1 - 1",3,0,6,50.0,0.0
 M. Kaarsbo,Lyngby U19,"Lyngby U19 - Esbjerg U19, 1 - 1 (P)",5,1,8,62.5,12.5
+M. Kaarsbo,Lyngby U19,"Lyngby U19 - Silkeborg U19, 2 - 2 (P)",7,4,9,77.77777777777779,44.44444444444444
 M. Kaarsbo,Lyngby U19,"Lyngby U19 - SønderjyskE U19, 4 - 3",True,False,1,100.0,0.0
 M. Kaarsbo,Lyngby U19,"Lyngby U19 - Vejle U19, 0 - 1",5,1,5,100.0,20.0
 M. Kaarsbo,Lyngby U19,"Midtjylland U19 - Lyngby U19, 11 - 1",6,4,12,50.0,33.33333333333333
 M. Kaarsbo,Lyngby U19,"OB U19 - Lyngby U19, 2 - 0",2,0,2,100.0,0.0
 M. Kaarsbo,Lyngby U19,"Randers U19 - Lyngby U19, 0 - 2",5,2,6,83.33333333333334,33.33333333333333
 M. Kannegaard,AGF U19,"AGF U19 - Midtjylland U19, 0 - 1",5,3,5,100.0,60.0
+M. Kannegaard,AGF U19,"AGF U19 - Randers U19, 5 - 2",7,2,10,70.0,20.0
 M. Kannegaard,AGF U19,"Silkeborg U19 - AGF U19, 0 - 1",6,3,7,85.71428571428571,42.857142857142854
 M. Karim,Nordsjælland U19,"Nordsjælland U19 - Silkeborg U19, 3 - 0",False,False,1,0.0,0.0
 M. Kjølby,AaB U19,"AaB U19 - København U19, 2 - 1",5,0,7,71.42857142857143,0.0
@@ -606,6 +692,7 @@ M. Kjølby,AaB U19,"AaB U19 - OB U19, 1 - 0",True,False,1,100.0,0.0
 M. Kjølby,AaB U19,"AaB U19 - Randers U19, 0 - 3",5,1,5,100.0,20.0
 M. Kjølby,AaB U19,"Nordsjælland U19 - AaB U19, 2 - 0",3,2,5,60.0,40.0
 M. Kjølby,AaB U19,"Silkeborg U19 - AaB U19, 2 - 2 (P)",4,0,4,100.0,0.0
+M. Kjølby,AaB U19,"SønderjyskE U19 - AaB U19, 0 - 2",8,4,9,88.88888888888889,44.44444444444444
 M. Kjølby,AaB U19,"Vejle U19 - AaB U19, 1 - 1",1,0,3,33.33333333333333,0.0
 M. Konradsen,Midtjylland U19,"AGF U19 - Midtjylland U19, 0 - 1",10,3,13,76.92307692307693,23.076923076923077
 M. Konradsen,Midtjylland U19,"Brøndby U19 - Midtjylland U19, 4 - 0",8,6,10,80.0,60.0
@@ -613,6 +700,7 @@ M. Konradsen,Midtjylland U19,"Horsens U19 - Midtjylland U19, 0 - 2",5,4,12,41.66
 M. Konradsen,Midtjylland U19,"Midtjylland U19 - Lyngby U19, 11 - 1",4,1,7,57.14285714285714,14.285714285714285
 M. Konradsen,Midtjylland U19,"Midtjylland U19 - Randers U19, 1 - 2",5,2,5,100.0,40.0
 M. Konradsen,Midtjylland U19,"Midtjylland U19 - Silkeborg U19, 2 - 3",4,1,4,100.0,25.0
+M. Konradsen,Midtjylland U19,"OB U19 - Midtjylland U19, 3 - 4",7,3,9,77.77777777777779,33.33333333333333
 M. Kruse,Esbjerg U19,"Esbjerg U19 - AGF U19, 1 - 2",6,2,9,66.66666666666666,22.22222222222222
 M. Kruse,Esbjerg U19,"Esbjerg U19 - Nordsjælland U19, 0 - 5",10,3,12,83.33333333333334,25.0
 M. Kruse,Esbjerg U19,"Esbjerg U19 - SønderjyskE U19, 2 - 0",3,1,3,100.0,33.33333333333333
@@ -622,6 +710,7 @@ M. Kruse,Esbjerg U19,"Lyngby U19 - Esbjerg U19, 1 - 1 (P)",6,2,9,66.666666666666
 M. Kruse,Esbjerg U19,"OB U19 - Esbjerg U19, 3 - 1",3,0,6,50.0,0.0
 M. Larsen,OB U19,"OB U19 - Esbjerg U19, 3 - 1",2,0,4,50.0,0.0
 M. Larsen,OB U19,"OB U19 - Vejle U19, 4 - 0",2,1,2,100.0,50.0
+M. Larsson,Randers U19,"AGF U19 - Randers U19, 5 - 2",2,0,2,100.0,0.0
 M. Larsson,Randers U19,"AaB U19 - Randers U19, 0 - 3",7,2,9,77.77777777777779,22.22222222222222
 M. Larsson,Randers U19,"Midtjylland U19 - Randers U19, 1 - 2",3,2,3,100.0,66.66666666666666
 M. Larsson,Randers U19,"Randers U19 - Horsens U19, 2 - 1",2,2,2,100.0,100.0
@@ -633,9 +722,11 @@ M. McCoy,OB U19,"Brøndby U19 - OB U19, 2 - 4",4,2,6,66.66666666666666,33.333333
 M. McCoy,OB U19,"København U19 - OB U19, 4 - 0",6,1,10,60.0,10.0
 M. McCoy,OB U19,"OB U19 - Esbjerg U19, 3 - 1",3,2,3,100.0,66.66666666666666
 M. McCoy,OB U19,"OB U19 - Lyngby U19, 2 - 0",8,2,9,88.88888888888889,22.22222222222222
+M. McCoy,OB U19,"OB U19 - Midtjylland U19, 3 - 4",12,4,17,70.58823529411765,23.52941176470588
 M. McCoy,OB U19,"OB U19 - Vejle U19, 4 - 0",4,3,5,80.0,60.0
 M. McCoy,OB U19,"SønderjyskE U19 - OB U19, 1 - 3",7,5,9,77.77777777777779,55.55555555555556
 M. Micha Jacobsen,Silkeborg U19,"Brøndby U19 - Silkeborg U19, 2 - 3",3,3,7,42.857142857142854,42.857142857142854
+M. Micha Jacobsen,Silkeborg U19,"Lyngby U19 - Silkeborg U19, 2 - 2 (P)",4,2,5,80.0,40.0
 M. Micha Jacobsen,Silkeborg U19,"Midtjylland U19 - Silkeborg U19, 2 - 3",3,1,5,60.0,20.0
 M. Micha Jacobsen,Silkeborg U19,"Nordsjælland U19 - Silkeborg U19, 3 - 0",True,True,1,100.0,100.0
 M. Micha Jacobsen,Silkeborg U19,"Silkeborg U19 - AGF U19, 0 - 1",1,0,3,33.33333333333333,0.0
@@ -645,9 +736,11 @@ M. Micha Jacobsen,Silkeborg U19,"Silkeborg U19 - Randers U19, 2 - 0",1,1,3,33.33
 M. Møller Pedersen,SønderjyskE U19,"Brøndby U19 - SønderjyskE U19, 5 - 2",True,True,1,100.0,100.0
 M. Møller Pedersen,SønderjyskE U19,"Lyngby U19 - SønderjyskE U19, 4 - 3",6,2,8,75.0,25.0
 M. Odekunie,Midtjylland U19,"Midtjylland U19 - Lyngby U19, 11 - 1",0,0,2,0.0,0.0
+M. Odekunie,Midtjylland U19,"OB U19 - Midtjylland U19, 3 - 4",False,False,1,0.0,0.0
 M. Ottesen,SønderjyskE U19,"Brøndby U19 - SønderjyskE U19, 5 - 2",1,1,6,16.666666666666664,16.666666666666664
 M. Ottesen,SønderjyskE U19,"Esbjerg U19 - SønderjyskE U19, 2 - 0",3,1,5,60.0,20.0
 M. Ottesen,SønderjyskE U19,"Randers U19 - SønderjyskE U19, 0 - 2",3,1,3,100.0,33.33333333333333
+M. Ottesen,SønderjyskE U19,"SønderjyskE U19 - AaB U19, 0 - 2",3,2,3,100.0,66.66666666666666
 M. Ottesen,SønderjyskE U19,"SønderjyskE U19 - København U19, 2 - 0",4,4,7,57.14285714285714,57.14285714285714
 M. Ottesen,SønderjyskE U19,"SønderjyskE U19 - OB U19, 1 - 3",5,0,6,83.33333333333334,0.0
 M. Ottesen,SønderjyskE U19,"SønderjyskE U19 - Vejle U19, 2 - 3",True,False,1,100.0,0.0
@@ -661,6 +754,7 @@ M. Ritter,AaB U19,"AaB U19 - Randers U19, 0 - 3",3,2,5,60.0,40.0
 M. Ritter,AaB U19,"Silkeborg U19 - AaB U19, 2 - 2 (P)",True,False,1,100.0,0.0
 M. Ritter,AaB U19,"Vejle U19 - AaB U19, 1 - 1",2,0,3,66.66666666666666,0.0
 M. Ryberg,Silkeborg U19,"Brøndby U19 - Silkeborg U19, 2 - 3",5,2,6,83.33333333333334,33.33333333333333
+M. Ryberg,Silkeborg U19,"Lyngby U19 - Silkeborg U19, 2 - 2 (P)",13,5,17,76.47058823529412,29.411764705882355
 M. Ryberg,Silkeborg U19,"Midtjylland U19 - Silkeborg U19, 2 - 3",6,1,8,75.0,12.5
 M. Ryberg,Silkeborg U19,"Nordsjælland U19 - Silkeborg U19, 3 - 0",3,0,5,60.0,0.0
 M. Ryberg,Silkeborg U19,"Silkeborg U19 - AGF U19, 0 - 1",2,0,3,66.66666666666666,0.0
@@ -669,6 +763,7 @@ M. Ryberg,Silkeborg U19,"Silkeborg U19 - Horsens U19, 1 - 1 (P)",3,2,5,60.0,40.0
 M. Ryberg,Silkeborg U19,"Silkeborg U19 - Randers U19, 2 - 0",5,1,7,71.42857142857143,14.285714285714285
 M. Salah,Horsens U19,"Brøndby U19 - Horsens U19, 2 - 3",0,0,2,0.0,0.0
 M. Salah,Horsens U19,"Horsens U19 - AGF U19, 1 - 1 (P)",2,0,4,50.0,0.0
+M. Salah,Horsens U19,"Horsens U19 - København U19, 1 - 1 (P)",4,1,7,57.14285714285714,14.285714285714285
 M. Salah,Horsens U19,"Horsens U19 - Midtjylland U19, 0 - 2",1,0,2,50.0,0.0
 M. Salah,Horsens U19,"Randers U19 - Horsens U19, 2 - 1",3,1,3,100.0,33.33333333333333
 M. Salah,Horsens U19,"Silkeborg U19 - Horsens U19, 1 - 1 (P)",5,0,5,100.0,0.0
@@ -677,6 +772,7 @@ M. Samson,AaB U19,"AaB U19 - OB U19, 1 - 0",7,2,7,100.0,28.57142857142857
 M. Samson,AaB U19,"AaB U19 - Randers U19, 0 - 3",5,2,7,71.42857142857143,28.57142857142857
 M. Samson,AaB U19,"Nordsjælland U19 - AaB U19, 2 - 0",2,1,5,40.0,20.0
 M. Samson,AaB U19,"Silkeborg U19 - AaB U19, 2 - 2 (P)",4,2,5,80.0,40.0
+M. Samson,AaB U19,"SønderjyskE U19 - AaB U19, 0 - 2",7,1,8,87.5,12.5
 M. Samson,AaB U19,"Vejle U19 - AaB U19, 1 - 1",2,2,3,66.66666666666666,66.66666666666666
 M. Seim-Monsen,Nordsjælland U19,"Esbjerg U19 - Nordsjælland U19, 0 - 5",1,0,2,50.0,0.0
 M. Seim-Monsen,Nordsjælland U19,"Nordsjælland U19 - AaB U19, 2 - 0",1,0,4,25.0,0.0
@@ -684,6 +780,7 @@ M. Seim-Monsen,Nordsjælland U19,"Nordsjælland U19 - Horsens U19, 3 - 0",2,0,2,
 M. Seim-Monsen,Nordsjælland U19,"Nordsjælland U19 - Silkeborg U19, 3 - 0",True,False,1,100.0,0.0
 M. Simonsen,Randers U19,"Randers U19 - SønderjyskE U19, 0 - 2",False,False,1,0.0,0.0
 M. Steffensen,AGF U19,"AGF U19 - Brøndby U19, 5 - 1",6,3,7,85.71428571428571,42.857142857142854
+M. Steffensen,AGF U19,"AGF U19 - Randers U19, 5 - 2",3,1,4,75.0,25.0
 M. Steffensen,AGF U19,"Esbjerg U19 - AGF U19, 1 - 2",1,1,2,50.0,50.0
 M. Steffensen,AGF U19,"Horsens U19 - AGF U19, 1 - 1 (P)",8,3,9,88.88888888888889,33.33333333333333
 M. Steffensen,AGF U19,"Silkeborg U19 - AGF U19, 0 - 1",6,3,6,100.0,50.0
@@ -693,10 +790,12 @@ M. Svane,Esbjerg U19,"Horsens U19 - Esbjerg U19, 2 - 0",6,1,6,100.0,16.666666666
 M. Svane,Esbjerg U19,"København U19 - Esbjerg U19, 9 - 1",4,1,12,33.33333333333333,8.333333333333332
 M. Svane,Esbjerg U19,"Lyngby U19 - Esbjerg U19, 1 - 1 (P)",8,0,10,80.0,0.0
 M. Svane,Esbjerg U19,"OB U19 - Esbjerg U19, 3 - 1",6,4,10,60.0,40.0
+M. Søfeldt Nielsen,Horsens U19,"Horsens U19 - København U19, 1 - 1 (P)",False,False,1,0.0,0.0
 M. Søfeldt Nielsen,Horsens U19,"Nordsjælland U19 - Horsens U19, 3 - 0",4,3,6,66.66666666666666,50.0
 M. Søfeldt Nielsen,OB U19,"OB U19 - Vejle U19, 4 - 0",2,0,2,100.0,0.0
 M. Søfeldt Nielsen,OB U19,"SønderjyskE U19 - OB U19, 1 - 3",False,False,1,0.0,0.0
 M. Søgaard Hansen,Silkeborg U19,"Brøndby U19 - Silkeborg U19, 2 - 3",2,0,2,100.0,0.0
+M. Søgaard Hansen,Silkeborg U19,"Lyngby U19 - Silkeborg U19, 2 - 2 (P)",3,0,3,100.0,0.0
 M. Søgaard Hansen,Silkeborg U19,"Midtjylland U19 - Silkeborg U19, 2 - 3",3,1,3,100.0,33.33333333333333
 M. Søgaard Hansen,Silkeborg U19,"Silkeborg U19 - AGF U19, 0 - 1",3,1,4,75.0,25.0
 M. Søgaard Hansen,Silkeborg U19,"Silkeborg U19 - AaB U19, 2 - 2 (P)",False,False,1,0.0,0.0
@@ -710,9 +809,11 @@ M. Udengaard,Vejle U19,"Vejle U19 - Brøndby U19, 1 - 1",5,2,6,83.33333333333334
 M. Van Der Raad,AGF U19,"Silkeborg U19 - AGF U19, 0 - 1",True,False,1,100.0,0.0
 M. Walker,Nordsjælland U19,"Esbjerg U19 - Nordsjælland U19, 0 - 5",2,0,5,40.0,0.0
 M. Walker,Nordsjælland U19,"Nordsjælland U19 - AaB U19, 2 - 0",True,False,1,100.0,0.0
+M. Walker,Nordsjælland U19,"Nordsjælland U19 - Brøndby U19, 1 - 0",2,0,2,100.0,0.0
 M. Walker,Nordsjælland U19,"Nordsjælland U19 - Horsens U19, 3 - 0",6,2,6,100.0,33.33333333333333
 M. Walker,Nordsjælland U19,"Nordsjælland U19 - Silkeborg U19, 3 - 0",7,3,8,87.5,37.5
 M. Øxenberg,Silkeborg U19,"Brøndby U19 - Silkeborg U19, 2 - 3",7,2,11,63.63636363636363,18.181818181818183
+M. Øxenberg,Silkeborg U19,"Lyngby U19 - Silkeborg U19, 2 - 2 (P)",6,2,10,60.0,20.0
 M. Øxenberg,Silkeborg U19,"Midtjylland U19 - Silkeborg U19, 2 - 3",6,1,9,66.66666666666666,11.11111111111111
 M. Øxenberg,Silkeborg U19,"Nordsjælland U19 - Silkeborg U19, 3 - 0",4,1,5,80.0,20.0
 M. Øxenberg,Silkeborg U19,"Silkeborg U19 - AGF U19, 0 - 1",4,3,8,50.0,37.5
@@ -723,11 +824,13 @@ N. Andersen,AaB U19,"AaB U19 - København U19, 2 - 1",4,1,5,80.0,20.0
 N. Andersen,AaB U19,"AaB U19 - OB U19, 1 - 0",2,0,3,66.66666666666666,0.0
 N. Andersen,AaB U19,"AaB U19 - Randers U19, 0 - 3",0,0,2,0.0,0.0
 N. Andersen,AaB U19,"Nordsjælland U19 - AaB U19, 2 - 0",6,1,8,75.0,12.5
+N. Andersen,AaB U19,"SønderjyskE U19 - AaB U19, 0 - 2",True,False,1,100.0,0.0
 N. Andersen,AaB U19,"Vejle U19 - AaB U19, 1 - 1",3,0,4,75.0,0.0
 N. Blicher,København U19,"AGF U19 - København U19, 0 - 3",2,0,5,40.0,0.0
 N. Blicher,København U19,"AaB U19 - København U19, 2 - 1",6,2,6,100.0,33.33333333333333
 N. Blicher,København U19,"København U19 - OB U19, 4 - 0",True,True,1,100.0,100.0
 N. Blicher,København U19,"SønderjyskE U19 - København U19, 2 - 0",2,0,5,40.0,0.0
+N. Bosselmann,Lyngby U19,"Lyngby U19 - Silkeborg U19, 2 - 2 (P)",5,3,7,71.42857142857143,42.857142857142854
 N. Bosselmann,Lyngby U19,"Lyngby U19 - SønderjyskE U19, 4 - 3",0,0,3,0.0,0.0
 N. Bosselmann,Lyngby U19,"OB U19 - Lyngby U19, 2 - 0",3,1,3,100.0,33.33333333333333
 N. Bosselmann,Lyngby U19,"Randers U19 - Lyngby U19, 0 - 2",0,0,3,0.0,0.0
@@ -754,11 +857,14 @@ N. Krogh,Randers U19,"Randers U19 - Horsens U19, 2 - 1",3,1,4,75.0,25.0
 N. Krogh,Randers U19,"Silkeborg U19 - Randers U19, 2 - 0",1,0,4,25.0,0.0
 N. Lassen,OB U19,"AaB U19 - OB U19, 1 - 0",2,2,6,33.33333333333333,33.33333333333333
 N. Lassen,OB U19,"Brøndby U19 - OB U19, 2 - 4",1,0,4,25.0,0.0
+N. Lassen,OB U19,"OB U19 - Midtjylland U19, 3 - 4",8,2,10,80.0,20.0
 N. Lassen,OB U19,"OB U19 - Vejle U19, 4 - 0",9,1,10,90.0,10.0
 N. Lassen,OB U19,"SønderjyskE U19 - OB U19, 1 - 3",4,1,6,66.66666666666666,16.666666666666664
 N. Markmann,Nordsjælland U19,"Esbjerg U19 - Nordsjælland U19, 0 - 5",4,3,5,80.0,60.0
+N. Markmann,Nordsjælland U19,"Nordsjælland U19 - Brøndby U19, 1 - 0",2,2,3,66.66666666666666,66.66666666666666
 N. Markmann,Nordsjælland U19,"Nordsjælland U19 - Horsens U19, 3 - 0",2,1,3,66.66666666666666,33.33333333333333
 N. Nielsen,Nordsjælland U19,"Esbjerg U19 - Nordsjælland U19, 0 - 5",2,1,3,66.66666666666666,33.33333333333333
+N. Sabroe Lund,SønderjyskE U19,"SønderjyskE U19 - AaB U19, 0 - 2",1,0,3,33.33333333333333,0.0
 N. Sabroe Lund,SønderjyskE U19,"SønderjyskE U19 - København U19, 2 - 0",2,0,2,100.0,0.0
 N. Sabroe Lund,SønderjyskE U19,"SønderjyskE U19 - OB U19, 1 - 3",True,True,1,100.0,100.0
 N. Sabroe Lund,SønderjyskE U19,"SønderjyskE U19 - Vejle U19, 2 - 3",1,0,3,33.33333333333333,0.0
@@ -771,20 +877,25 @@ N. Stojanovic,AaB U19,"Vejle U19 - AaB U19, 1 - 1",2,0,6,33.33333333333333,0.0
 N. Strandby,AGF U19,"AGF U19 - Brøndby U19, 5 - 1",6,2,11,54.54545454545454,18.181818181818183
 N. Strandby,AGF U19,"AGF U19 - København U19, 0 - 3",7,5,8,87.5,62.5
 N. Strandby,AGF U19,"AGF U19 - Midtjylland U19, 0 - 1",3,0,4,75.0,0.0
+N. Strandby,AGF U19,"AGF U19 - Randers U19, 5 - 2",8,2,11,72.72727272727273,18.181818181818183
 N. Strandby,AGF U19,"Horsens U19 - AGF U19, 1 - 1 (P)",0,0,2,0.0,0.0
 N. Strandby,AGF U19,"Silkeborg U19 - AGF U19, 0 - 1",6,3,9,66.66666666666666,33.33333333333333
 N. Tornvig,Midtjylland U19,"AGF U19 - Midtjylland U19, 0 - 1",3,2,4,75.0,50.0
 N. Tornvig,Midtjylland U19,"Horsens U19 - Midtjylland U19, 0 - 2",True,False,1,100.0,0.0
 N. Tornvig,Midtjylland U19,"Midtjylland U19 - Lyngby U19, 11 - 1",1,1,2,50.0,50.0
 N. Tornvig,Midtjylland U19,"Midtjylland U19 - Randers U19, 1 - 2",True,True,1,100.0,100.0
+N. Tornvig,Midtjylland U19,"OB U19 - Midtjylland U19, 3 - 4",1,0,3,33.33333333333333,0.0
 Noah Barholt Rasmussen,OB U19,"AaB U19 - OB U19, 1 - 0",4,3,8,50.0,37.5
 Noah Barholt Rasmussen,OB U19,"Brøndby U19 - OB U19, 2 - 4",14,1,21,66.66666666666666,4.761904761904762
 Noah Barholt Rasmussen,OB U19,"København U19 - OB U19, 4 - 0",2,0,4,50.0,0.0
 Noah Barholt Rasmussen,OB U19,"OB U19 - Esbjerg U19, 3 - 1",7,1,10,70.0,10.0
 Noah Barholt Rasmussen,OB U19,"OB U19 - Lyngby U19, 2 - 0",9,1,11,81.81818181818183,9.090909090909092
+Noah Barholt Rasmussen,OB U19,"OB U19 - Midtjylland U19, 3 - 4",3,1,4,75.0,25.0
 Noah Barholt Rasmussen,OB U19,"OB U19 - Vejle U19, 4 - 0",11,4,11,100.0,36.36363636363637
 Noah Barholt Rasmussen,OB U19,"SønderjyskE U19 - OB U19, 1 - 3",4,0,5,80.0,0.0
+O. Aare Vest,Nordsjælland U19,"Nordsjælland U19 - Brøndby U19, 1 - 0",False,False,1,0.0,0.0
 O. Bødker,Nordsjælland U19,"Nordsjælland U19 - AaB U19, 2 - 0",1,0,3,33.33333333333333,0.0
+O. Bødker,Nordsjælland U19,"Nordsjælland U19 - Brøndby U19, 1 - 0",4,0,6,66.66666666666666,0.0
 O. Bødker,Nordsjælland U19,"Nordsjælland U19 - Horsens U19, 3 - 0",1,0,3,33.33333333333333,0.0
 O. Bødker,Nordsjælland U19,"Nordsjælland U19 - Silkeborg U19, 3 - 0",3,0,4,75.0,0.0
 O. Einarsson Morales,Esbjerg U19,"Esbjerg U19 - Nordsjælland U19, 0 - 5",4,1,7,57.14285714285714,14.285714285714285
@@ -799,7 +910,9 @@ O. Hyseni,SønderjyskE U19,"SønderjyskE U19 - OB U19, 1 - 3",2,1,6,33.333333333
 O. Højer,København U19,"AGF U19 - København U19, 0 - 3",5,2,5,100.0,40.0
 O. Højer,København U19,"AaB U19 - København U19, 2 - 1",6,1,9,66.66666666666666,11.11111111111111
 O. Kahr,Randers U19,"AaB U19 - Randers U19, 0 - 3",0,0,2,0.0,0.0
+O. Kurakin,SønderjyskE U19,"SønderjyskE U19 - AaB U19, 0 - 2",5,0,9,55.55555555555556,0.0
 O. Mandrup,Horsens U19,"Horsens U19 - AGF U19, 1 - 1 (P)",2,1,2,100.0,50.0
+O. Mandrup,Horsens U19,"Horsens U19 - København U19, 1 - 1 (P)",0,0,2,0.0,0.0
 O. Mandrup,Horsens U19,"Horsens U19 - Midtjylland U19, 0 - 2",2,2,5,40.0,40.0
 O. Mandrup,Horsens U19,"Nordsjælland U19 - Horsens U19, 3 - 0",2,0,3,66.66666666666666,0.0
 O. Sejer Lauritsen,Brøndby U19,"AGF U19 - Brøndby U19, 5 - 1",7,3,7,100.0,42.857142857142854
@@ -808,6 +921,7 @@ O. Sejer Lauritsen,Brøndby U19,"Brøndby U19 - Midtjylland U19, 4 - 0",True,Fal
 O. Sejer Lauritsen,Brøndby U19,"Brøndby U19 - OB U19, 2 - 4",9,6,9,100.0,66.66666666666666
 O. Sejer Lauritsen,Brøndby U19,"Brøndby U19 - Silkeborg U19, 2 - 3",8,7,11,72.72727272727273,63.63636363636363
 O. Sejer Lauritsen,Brøndby U19,"Brøndby U19 - SønderjyskE U19, 5 - 2",2,0,3,66.66666666666666,0.0
+O. Sejer Lauritsen,Brøndby U19,"Nordsjælland U19 - Brøndby U19, 1 - 0",0,0,2,0.0,0.0
 O. Wettergren,Brøndby U19,"Brøndby U19 - Midtjylland U19, 4 - 0",1,1,2,50.0,50.0
 P. Nielsen,Esbjerg U19,"Esbjerg U19 - AGF U19, 1 - 2",2,0,5,40.0,0.0
 P. Nielsen,Esbjerg U19,"Esbjerg U19 - Nordsjælland U19, 0 - 5",1,1,3,33.33333333333333,33.33333333333333
@@ -825,13 +939,16 @@ P. Søndergaard,Brøndby U19,"Brøndby U19 - Midtjylland U19, 4 - 0",6,2,7,85.71
 P. Søndergaard,Brøndby U19,"Brøndby U19 - OB U19, 2 - 4",4,1,7,57.14285714285714,14.285714285714285
 P. Søndergaard,Brøndby U19,"Brøndby U19 - Silkeborg U19, 2 - 3",5,3,9,55.55555555555556,33.33333333333333
 P. Søndergaard,Brøndby U19,"Brøndby U19 - SønderjyskE U19, 5 - 2",8,3,11,72.72727272727273,27.27272727272727
+P. Søndergaard,Brøndby U19,"Nordsjælland U19 - Brøndby U19, 1 - 0",4,0,8,50.0,0.0
 P. Søndergaard,Brøndby U19,"Vejle U19 - Brøndby U19, 1 - 1",13,6,16,81.25,37.5
 R. Düring,AGF U19,"AGF U19 - Brøndby U19, 5 - 1",9,2,12,75.0,16.666666666666664
 R. Düring,AGF U19,"AGF U19 - København U19, 0 - 3",8,5,19,42.10526315789473,26.31578947368421
 R. Düring,AGF U19,"AGF U19 - Midtjylland U19, 0 - 1",5,2,5,100.0,40.0
+R. Düring,AGF U19,"AGF U19 - Randers U19, 5 - 2",3,0,5,60.0,0.0
 R. Düring,AGF U19,"Esbjerg U19 - AGF U19, 1 - 2",3,1,6,50.0,16.666666666666664
 R. Düring,AGF U19,"Horsens U19 - AGF U19, 1 - 1 (P)",2,1,4,50.0,25.0
 R. Flügge,Lyngby U19,"Lyngby U19 - Esbjerg U19, 1 - 1 (P)",3,2,3,100.0,66.66666666666666
+R. Flügge,Lyngby U19,"Lyngby U19 - Silkeborg U19, 2 - 2 (P)",2,0,5,40.0,0.0
 R. Flügge,Lyngby U19,"Lyngby U19 - SønderjyskE U19, 4 - 3",1,1,2,50.0,50.0
 R. Flügge,Lyngby U19,"Randers U19 - Lyngby U19, 0 - 2",3,0,6,50.0,0.0
 R. Helveg,OB U19,"AaB U19 - OB U19, 1 - 0",False,False,1,0.0,0.0
@@ -839,6 +956,7 @@ R. Helveg,OB U19,"Brøndby U19 - OB U19, 2 - 4",True,False,1,100.0,0.0
 R. Helveg,OB U19,"København U19 - OB U19, 4 - 0",2,0,2,100.0,0.0
 R. Helveg,OB U19,"OB U19 - Esbjerg U19, 3 - 1",3,1,4,75.0,25.0
 R. Helveg,OB U19,"OB U19 - Lyngby U19, 2 - 0",2,0,3,66.66666666666666,0.0
+R. Helveg,OB U19,"OB U19 - Midtjylland U19, 3 - 4",3,1,3,100.0,33.33333333333333
 R. Koch Groth Pedersen,Vejle U19,"Lyngby U19 - Vejle U19, 0 - 1",5,1,7,71.42857142857143,14.285714285714285
 R. Koch Groth Pedersen,Vejle U19,"OB U19 - Vejle U19, 4 - 0",4,1,4,100.0,25.0
 R. Koch Groth Pedersen,Vejle U19,"SønderjyskE U19 - Vejle U19, 2 - 3",3,1,4,75.0,25.0
@@ -851,14 +969,17 @@ R. Lynder,Brøndby U19,"Brøndby U19 - Horsens U19, 2 - 3",9,4,10,90.0,40.0
 R. Lynder,Brøndby U19,"Brøndby U19 - Midtjylland U19, 4 - 0",4,4,4,100.0,100.0
 R. Lynder,Brøndby U19,"Brøndby U19 - OB U19, 2 - 4",7,3,15,46.666666666666664,20.0
 R. Lynder,Brøndby U19,"Brøndby U19 - SønderjyskE U19, 5 - 2",5,2,6,83.33333333333334,33.33333333333333
+R. Lynder,Brøndby U19,"Nordsjælland U19 - Brøndby U19, 1 - 0",5,1,6,83.33333333333334,16.666666666666664
 R. Lynder,Brøndby U19,"Vejle U19 - Brøndby U19, 1 - 1",7,2,10,70.0,20.0
 R. Nybo,Horsens U19,"Brøndby U19 - Horsens U19, 2 - 3",2,0,2,100.0,0.0
 R. Nybo,Horsens U19,"Horsens U19 - AGF U19, 1 - 1 (P)",5,0,7,71.42857142857143,0.0
 R. Nybo,Horsens U19,"Horsens U19 - Esbjerg U19, 2 - 0",False,False,1,0.0,0.0
+R. Nybo,Horsens U19,"Horsens U19 - København U19, 1 - 1 (P)",8,3,13,61.53846153846154,23.076923076923077
 R. Nybo,Horsens U19,"Horsens U19 - Midtjylland U19, 0 - 2",1,0,2,50.0,0.0
 R. Nybo,Horsens U19,"Nordsjælland U19 - Horsens U19, 3 - 0",1,0,2,50.0,0.0
 R. Nybo,Horsens U19,"Randers U19 - Horsens U19, 2 - 1",3,2,4,75.0,50.0
 R. Nybo,Horsens U19,"Silkeborg U19 - Horsens U19, 1 - 1 (P)",2,0,3,66.66666666666666,0.0
+R. Rexhepi,Randers U19,"AGF U19 - Randers U19, 5 - 2",1,0,3,33.33333333333333,0.0
 R. Rexhepi,Randers U19,"AaB U19 - Randers U19, 0 - 3",3,2,7,42.857142857142854,28.57142857142857
 R. Rexhepi,Randers U19,"Randers U19 - Horsens U19, 2 - 1",1,0,5,20.0,0.0
 R. Rexhepi,Randers U19,"Randers U19 - Lyngby U19, 0 - 2",1,0,3,33.33333333333333,0.0
@@ -866,6 +987,7 @@ R. Rexhepi,Randers U19,"Randers U19 - SønderjyskE U19, 0 - 2",True,False,1,100.
 R. Rexhepi,Randers U19,"Silkeborg U19 - Randers U19, 2 - 0",4,1,4,100.0,25.0
 R. Risnæs,København U19,"AGF U19 - København U19, 0 - 3",3,3,8,37.5,37.5
 R. Risnæs,København U19,"AaB U19 - København U19, 2 - 1",3,1,6,50.0,16.666666666666664
+R. Risnæs,København U19,"Horsens U19 - København U19, 1 - 1 (P)",5,0,7,71.42857142857143,0.0
 R. Risnæs,København U19,"København U19 - OB U19, 4 - 0",5,2,6,83.33333333333334,33.33333333333333
 R. Risnæs,København U19,"SønderjyskE U19 - København U19, 2 - 0",2,0,3,66.66666666666666,0.0
 R. Zwinge,Esbjerg U19,"Esbjerg U19 - AGF U19, 1 - 2",6,3,8,75.0,37.5
@@ -877,9 +999,11 @@ R. Zwinge,Esbjerg U19,"Lyngby U19 - Esbjerg U19, 1 - 1 (P)",9,3,13,69.2307692307
 R. Zwinge,Esbjerg U19,"OB U19 - Esbjerg U19, 3 - 1",4,0,8,50.0,0.0
 S. Acquah,Nordsjælland U19,"Esbjerg U19 - Nordsjælland U19, 0 - 5",6,5,7,85.71428571428571,71.42857142857143
 S. Acquah,Nordsjælland U19,"Nordsjælland U19 - AaB U19, 2 - 0",1,0,4,25.0,0.0
+S. Acquah,Nordsjælland U19,"Nordsjælland U19 - Brøndby U19, 1 - 0",6,3,9,66.66666666666666,33.33333333333333
 S. Acquah,Nordsjælland U19,"Nordsjælland U19 - Horsens U19, 3 - 0",4,1,6,66.66666666666666,16.666666666666664
 S. Acquah,Nordsjælland U19,"Nordsjælland U19 - Silkeborg U19, 3 - 0",3,0,3,100.0,0.0
 S. Biller Mikkelsen,Silkeborg U19,"Brøndby U19 - Silkeborg U19, 2 - 3",2,2,2,100.0,100.0
+S. Biller Mikkelsen,Silkeborg U19,"Lyngby U19 - Silkeborg U19, 2 - 2 (P)",6,2,13,46.15384615384615,15.384615384615385
 S. Biller Mikkelsen,Silkeborg U19,"Midtjylland U19 - Silkeborg U19, 2 - 3",6,2,9,66.66666666666666,22.22222222222222
 S. Biller Mikkelsen,Silkeborg U19,"Nordsjælland U19 - Silkeborg U19, 3 - 0",6,1,13,46.15384615384615,7.6923076923076925
 S. Biller Mikkelsen,Silkeborg U19,"Silkeborg U19 - AGF U19, 0 - 1",5,2,10,50.0,20.0
@@ -898,6 +1022,7 @@ S. Escobar Jensen,SønderjyskE U19,"Esbjerg U19 - SønderjyskE U19, 2 - 0",1,1,3
 S. Escobar Jensen,SønderjyskE U19,"Lyngby U19 - SønderjyskE U19, 4 - 3",4,0,5,80.0,0.0
 S. Escobar Jensen,SønderjyskE U19,"Randers U19 - SønderjyskE U19, 0 - 2",1,0,2,50.0,0.0
 S. Escobar Jensen,SønderjyskE U19,"SønderjyskE U19 - Vejle U19, 2 - 3",3,0,5,60.0,0.0
+S. Frahm Gade,Randers U19,"AGF U19 - Randers U19, 5 - 2",True,True,1,100.0,100.0
 S. Frahm Gade,Randers U19,"Midtjylland U19 - Randers U19, 1 - 2",2,1,2,100.0,50.0
 S. Frahm Gade,Randers U19,"Randers U19 - Horsens U19, 2 - 1",1,0,4,25.0,0.0
 S. Johannesen,Midtjylland U19,"AGF U19 - Midtjylland U19, 0 - 1",6,1,8,75.0,12.5
@@ -906,6 +1031,7 @@ S. Johannesen,Midtjylland U19,"Horsens U19 - Midtjylland U19, 0 - 2",6,2,8,75.0,
 S. Johannesen,Midtjylland U19,"Midtjylland U19 - Lyngby U19, 11 - 1",3,2,4,75.0,50.0
 S. Johannesen,Midtjylland U19,"Midtjylland U19 - Randers U19, 1 - 2",1,0,2,50.0,0.0
 S. Johannesen,Midtjylland U19,"Midtjylland U19 - Silkeborg U19, 2 - 3",3,1,3,100.0,33.33333333333333
+S. Johannesen,Midtjylland U19,"OB U19 - Midtjylland U19, 3 - 4",4,0,8,50.0,0.0
 S. Juel,Horsens U19,"Silkeborg U19 - Horsens U19, 1 - 1 (P)",3,0,5,60.0,0.0
 S. Kristiansen,Midtjylland U19,"AGF U19 - Midtjylland U19, 0 - 1",4,1,6,66.66666666666666,16.666666666666664
 S. Kristiansen,Midtjylland U19,"Brøndby U19 - Midtjylland U19, 4 - 0",2,1,2,100.0,50.0
@@ -914,10 +1040,12 @@ S. Kristiansen,Midtjylland U19,"Midtjylland U19 - Randers U19, 1 - 2",False,Fals
 S. Larsen,SønderjyskE U19,"Esbjerg U19 - SønderjyskE U19, 2 - 0",2,0,2,100.0,0.0
 S. Larsen,SønderjyskE U19,"Lyngby U19 - SønderjyskE U19, 4 - 3",0,0,2,0.0,0.0
 S. Larsen,SønderjyskE U19,"Randers U19 - SønderjyskE U19, 0 - 2",4,1,5,80.0,20.0
+S. Larsen,SønderjyskE U19,"SønderjyskE U19 - AaB U19, 0 - 2",4,1,7,57.14285714285714,14.285714285714285
 S. Larsen,SønderjyskE U19,"SønderjyskE U19 - København U19, 2 - 0",2,0,6,33.33333333333333,0.0
 S. Larsen,SønderjyskE U19,"SønderjyskE U19 - OB U19, 1 - 3",1,1,2,50.0,50.0
 S. Larsen,SønderjyskE U19,"SønderjyskE U19 - Vejle U19, 2 - 3",3,1,5,60.0,20.0
 S. Laustsen,Silkeborg U19,"Brøndby U19 - Silkeborg U19, 2 - 3",5,0,8,62.5,0.0
+S. Laustsen,Silkeborg U19,"Lyngby U19 - Silkeborg U19, 2 - 2 (P)",9,8,11,81.81818181818183,72.72727272727273
 S. Laustsen,Silkeborg U19,"Midtjylland U19 - Silkeborg U19, 2 - 3",6,1,7,85.71428571428571,14.285714285714285
 S. Laustsen,Silkeborg U19,"Nordsjælland U19 - Silkeborg U19, 3 - 0",6,2,7,85.71428571428571,28.57142857142857
 S. Laustsen,Silkeborg U19,"Silkeborg U19 - AGF U19, 0 - 1",4,0,6,66.66666666666666,0.0
@@ -928,10 +1056,12 @@ S. Lodberg,Midtjylland U19,"AGF U19 - Midtjylland U19, 0 - 1",7,4,8,87.5,50.0
 S. Lodberg,Midtjylland U19,"Midtjylland U19 - Lyngby U19, 11 - 1",1,1,3,33.33333333333333,33.33333333333333
 S. Lodberg,Midtjylland U19,"Midtjylland U19 - Randers U19, 1 - 2",3,0,4,75.0,0.0
 S. Lodberg,Midtjylland U19,"Midtjylland U19 - Silkeborg U19, 2 - 3",True,False,1,100.0,0.0
+S. Lodberg,Midtjylland U19,"OB U19 - Midtjylland U19, 3 - 4",2,0,5,40.0,0.0
 S. Maass,SønderjyskE U19,"Brøndby U19 - SønderjyskE U19, 5 - 2",6,4,8,75.0,50.0
 S. Maass,SønderjyskE U19,"Esbjerg U19 - SønderjyskE U19, 2 - 0",4,2,4,100.0,50.0
 S. Maass,SønderjyskE U19,"Lyngby U19 - SønderjyskE U19, 4 - 3",5,2,7,71.42857142857143,28.57142857142857
 S. Maass,SønderjyskE U19,"Randers U19 - SønderjyskE U19, 0 - 2",4,3,6,66.66666666666666,50.0
+S. Maass,SønderjyskE U19,"SønderjyskE U19 - AaB U19, 0 - 2",9,0,10,90.0,0.0
 S. Maass,SønderjyskE U19,"SønderjyskE U19 - København U19, 2 - 0",9,1,14,64.28571428571429,7.142857142857142
 S. Maass,SønderjyskE U19,"SønderjyskE U19 - OB U19, 1 - 3",4,1,4,100.0,25.0
 S. Piechnik Hust,Vejle U19,"Vejle U19 - AaB U19, 1 - 1",5,0,6,83.33333333333334,0.0
@@ -947,6 +1077,7 @@ S. Stefánsson,AGF U19,"AGF U19 - Midtjylland U19, 0 - 1",8,3,10,80.0,30.0
 S. Stefánsson,AGF U19,"Esbjerg U19 - AGF U19, 1 - 2",4,2,6,66.66666666666666,33.33333333333333
 S. Stefánsson,AGF U19,"Horsens U19 - AGF U19, 1 - 1 (P)",7,3,8,87.5,37.5
 S. Stüker,Silkeborg U19,"Brøndby U19 - Silkeborg U19, 2 - 3",3,1,6,50.0,16.666666666666664
+S. Stüker,Silkeborg U19,"Lyngby U19 - Silkeborg U19, 2 - 2 (P)",5,1,5,100.0,20.0
 S. Stüker,Silkeborg U19,"Midtjylland U19 - Silkeborg U19, 2 - 3",5,0,8,62.5,0.0
 S. Stüker,Silkeborg U19,"Nordsjælland U19 - Silkeborg U19, 3 - 0",1,0,2,50.0,0.0
 S. Stüker,Silkeborg U19,"Silkeborg U19 - AGF U19, 0 - 1",7,3,8,87.5,37.5
@@ -956,11 +1087,13 @@ S. Stüker,Silkeborg U19,"Silkeborg U19 - Randers U19, 2 - 0",2,1,5,40.0,20.0
 S. Tchamche,AGF U19,"AGF U19 - Brøndby U19, 5 - 1",1,0,3,33.33333333333333,0.0
 S. Tchamche,AGF U19,"AGF U19 - København U19, 0 - 3",1,1,5,20.0,20.0
 S. Tchamche,AGF U19,"AGF U19 - Midtjylland U19, 0 - 1",False,False,1,0.0,0.0
+S. Tchamche,AGF U19,"AGF U19 - Randers U19, 5 - 2",3,2,10,30.0,20.0
 S. Tchamche,AGF U19,"Horsens U19 - AGF U19, 1 - 1 (P)",5,1,8,62.5,12.5
 S. Tchamche,AGF U19,"Silkeborg U19 - AGF U19, 0 - 1",3,1,5,60.0,20.0
 S. Traoré,Horsens U19,"Brøndby U19 - Horsens U19, 2 - 3",1,0,2,50.0,0.0
 S. Traoré,Horsens U19,"Horsens U19 - AGF U19, 1 - 1 (P)",9,3,12,75.0,25.0
 S. Traoré,Horsens U19,"Horsens U19 - Esbjerg U19, 2 - 0",3,3,3,100.0,100.0
+S. Traoré,Horsens U19,"Horsens U19 - København U19, 1 - 1 (P)",10,5,13,76.92307692307693,38.46153846153847
 S. Traoré,Horsens U19,"Horsens U19 - Midtjylland U19, 0 - 2",2,1,8,25.0,12.5
 S. Traoré,Horsens U19,"Nordsjælland U19 - Horsens U19, 3 - 0",2,1,4,50.0,25.0
 S. Traoré,Horsens U19,"Randers U19 - Horsens U19, 2 - 1",2,1,5,40.0,20.0
@@ -970,6 +1103,8 @@ T. Andrew,København U19,"København U19 - Esbjerg U19, 9 - 1",3,1,5,60.0,20.0
 T. Andrew,København U19,"København U19 - OB U19, 4 - 0",2,1,3,66.66666666666666,33.33333333333333
 T. Andrew,København U19,"SønderjyskE U19 - København U19, 2 - 0",1,1,3,33.33333333333333,33.33333333333333
 T. Birch,København U19,"AaB U19 - København U19, 2 - 1",6,1,9,66.66666666666666,11.11111111111111
+T. Birch,København U19,"Horsens U19 - København U19, 1 - 1 (P)",5,2,7,71.42857142857143,28.57142857142857
+T. Breum-Harild,København U19,"Horsens U19 - København U19, 1 - 1 (P)",True,False,1,100.0,0.0
 T. Di Carlo,Lyngby U19,"Lyngby U19 - Esbjerg U19, 1 - 1 (P)",False,False,1,0.0,0.0
 T. Di Carlo,Lyngby U19,"Lyngby U19 - SønderjyskE U19, 4 - 3",3,3,7,42.857142857142854,42.857142857142854
 T. Di Carlo,Lyngby U19,"Lyngby U19 - Vejle U19, 0 - 1",4,2,6,66.66666666666666,33.33333333333333
@@ -982,7 +1117,9 @@ T. Lykkebak,Vejle U19,"Vejle U19 - AaB U19, 1 - 1",10,4,14,71.42857142857143,28.
 T. Lykkebak,Vejle U19,"Vejle U19 - Brøndby U19, 1 - 1",7,4,9,77.77777777777779,44.44444444444444
 T. Nielsen,Nordsjælland U19,"Esbjerg U19 - Nordsjælland U19, 0 - 5",3,1,4,75.0,25.0
 T. Nielsen,Nordsjælland U19,"Nordsjælland U19 - AaB U19, 2 - 0",3,0,4,75.0,0.0
+T. Nielsen,Nordsjælland U19,"Nordsjælland U19 - Brøndby U19, 1 - 0",3,2,3,100.0,66.66666666666666
 T. Nielsen,Nordsjælland U19,"Nordsjælland U19 - Horsens U19, 3 - 0",2,1,3,66.66666666666666,33.33333333333333
+T. Nilsson,Lyngby U19,"Lyngby U19 - Silkeborg U19, 2 - 2 (P)",3,2,3,100.0,66.66666666666666
 T. Nilsson,Lyngby U19,"Lyngby U19 - SønderjyskE U19, 4 - 3",2,0,3,66.66666666666666,0.0
 T. Nilsson,Lyngby U19,"Lyngby U19 - Vejle U19, 0 - 1",True,True,1,100.0,100.0
 T. Nilsson,Lyngby U19,"Midtjylland U19 - Lyngby U19, 11 - 1",4,1,5,80.0,20.0
@@ -990,6 +1127,7 @@ T. Nilsson,Lyngby U19,"OB U19 - Lyngby U19, 2 - 0",False,False,1,0.0,0.0
 T. Nilsson,Lyngby U19,"Randers U19 - Lyngby U19, 0 - 2",True,False,1,100.0,0.0
 T. Panduro,København U19,"AGF U19 - København U19, 0 - 3",0,0,2,0.0,0.0
 T. Panduro,København U19,"AaB U19 - København U19, 2 - 1",2,1,3,66.66666666666666,33.33333333333333
+T. Panduro,København U19,"Horsens U19 - København U19, 1 - 1 (P)",3,1,8,37.5,12.5
 T. Panduro,København U19,"København U19 - OB U19, 4 - 0",3,1,4,75.0,25.0
 T. Panduro,København U19,"SønderjyskE U19 - København U19, 2 - 0",2,0,2,100.0,0.0
 T. Pedersen,Vejle U19,"Lyngby U19 - Vejle U19, 0 - 1",1,0,4,25.0,0.0
@@ -1003,22 +1141,27 @@ V. Bender,OB U19,"Brøndby U19 - OB U19, 2 - 4",False,False,1,0.0,0.0
 V. Bender,OB U19,"København U19 - OB U19, 4 - 0",2,1,4,50.0,25.0
 V. Bender,OB U19,"OB U19 - Esbjerg U19, 3 - 1",3,1,4,75.0,25.0
 V. Bender,OB U19,"OB U19 - Lyngby U19, 2 - 0",3,1,4,75.0,25.0
+V. Bender,OB U19,"OB U19 - Midtjylland U19, 3 - 4",2,1,3,66.66666666666666,33.33333333333333
 V. Berthelsen,Nordsjælland U19,"Esbjerg U19 - Nordsjælland U19, 0 - 5",3,1,5,60.0,20.0
 V. Berthelsen,Nordsjælland U19,"Nordsjælland U19 - AaB U19, 2 - 0",4,4,8,50.0,50.0
+V. Berthelsen,Nordsjælland U19,"Nordsjælland U19 - Brøndby U19, 1 - 0",6,1,8,75.0,12.5
 V. Berthelsen,Nordsjælland U19,"Nordsjælland U19 - Horsens U19, 3 - 0",2,0,6,33.33333333333333,0.0
 V. Berthelsen,Nordsjælland U19,"Nordsjælland U19 - Silkeborg U19, 3 - 0",3,3,5,60.0,60.0
 V. Bolander,OB U19,"AaB U19 - OB U19, 1 - 0",3,1,5,60.0,20.0
 V. Bolander,OB U19,"Brøndby U19 - OB U19, 2 - 4",False,False,1,0.0,0.0
 V. Bolander,OB U19,"København U19 - OB U19, 4 - 0",3,2,5,60.0,40.0
 V. Bolander,OB U19,"OB U19 - Esbjerg U19, 3 - 1",2,0,2,100.0,0.0
+V. Bolander,OB U19,"OB U19 - Midtjylland U19, 3 - 4",4,2,7,57.14285714285714,28.57142857142857
 V. Bolander,OB U19,"SønderjyskE U19 - OB U19, 1 - 3",3,0,5,60.0,0.0
 V. Dahl,Silkeborg U19,"Brøndby U19 - Silkeborg U19, 2 - 3",5,2,9,55.55555555555556,22.22222222222222
+V. Dahl,Silkeborg U19,"Lyngby U19 - Silkeborg U19, 2 - 2 (P)",6,4,11,54.54545454545454,36.36363636363637
 V. Dahl,Silkeborg U19,"Midtjylland U19 - Silkeborg U19, 2 - 3",4,0,8,50.0,0.0
 V. Dahl,Silkeborg U19,"Nordsjælland U19 - Silkeborg U19, 3 - 0",2,2,5,40.0,40.0
 V. Dahl,Silkeborg U19,"Silkeborg U19 - AGF U19, 0 - 1",2,0,3,66.66666666666666,0.0
 V. Dahl,Silkeborg U19,"Silkeborg U19 - AaB U19, 2 - 2 (P)",0,0,2,0.0,0.0
 V. Dahl,Silkeborg U19,"Silkeborg U19 - Horsens U19, 1 - 1 (P)",0,0,3,0.0,0.0
 V. Dahl,Silkeborg U19,"Silkeborg U19 - Randers U19, 2 - 0",1,0,2,50.0,0.0
+V. Daðason,København U19,"Horsens U19 - København U19, 1 - 1 (P)",4,2,5,80.0,40.0
 V. De Paoli,AGF U19,"Esbjerg U19 - AGF U19, 1 - 2",True,False,1,100.0,0.0
 V. Fjeldgaard,AaB U19,"AaB U19 - OB U19, 1 - 0",False,False,1,0.0,0.0
 V. Fjeldgaard,AaB U19,"AaB U19 - Randers U19, 0 - 3",True,True,1,100.0,100.0
@@ -1030,22 +1173,27 @@ V. Friis,OB U19,"Brøndby U19 - OB U19, 2 - 4",5,3,7,71.42857142857143,42.857142
 V. Friis,OB U19,"København U19 - OB U19, 4 - 0",3,0,5,60.0,0.0
 V. Friis,OB U19,"OB U19 - Esbjerg U19, 3 - 1",False,False,1,0.0,0.0
 V. Friis,OB U19,"OB U19 - Lyngby U19, 2 - 0",7,2,7,100.0,28.57142857142857
+V. Friis,OB U19,"OB U19 - Midtjylland U19, 3 - 4",2,0,4,50.0,0.0
 V. Friis,OB U19,"OB U19 - Vejle U19, 4 - 0",6,2,8,75.0,25.0
 V. Friis,OB U19,"SønderjyskE U19 - OB U19, 1 - 3",2,1,3,66.66666666666666,33.33333333333333
 V. Gaml,Randers U19,"Silkeborg U19 - Randers U19, 2 - 0",1,0,3,33.33333333333333,0.0
 V. Grymer,OB U19,"AaB U19 - OB U19, 1 - 0",4,0,7,57.14285714285714,0.0
+V. Grymer,OB U19,"OB U19 - Midtjylland U19, 3 - 4",6,1,7,85.71428571428571,14.285714285714285
 V. Grymer,OB U19,"OB U19 - Vejle U19, 4 - 0",1,0,2,50.0,0.0
 V. Gustafsen,Nordsjælland U19,"Esbjerg U19 - Nordsjælland U19, 0 - 5",6,1,7,85.71428571428571,14.285714285714285
 V. Gustafsen,Nordsjælland U19,"Nordsjælland U19 - AaB U19, 2 - 0",5,3,8,62.5,37.5
+V. Gustafsen,Nordsjælland U19,"Nordsjælland U19 - Brøndby U19, 1 - 0",8,1,11,72.72727272727273,9.090909090909092
 V. Gustafsen,Nordsjælland U19,"Nordsjælland U19 - Horsens U19, 3 - 0",1,1,2,50.0,50.0
 V. Gustafsen,Nordsjælland U19,"Nordsjælland U19 - Silkeborg U19, 3 - 0",5,1,7,71.42857142857143,14.285714285714285
 V. Klindt Sørensen,SønderjyskE U19,"Brøndby U19 - SønderjyskE U19, 5 - 2",2,0,5,40.0,0.0
 V. Klindt Sørensen,SønderjyskE U19,"Lyngby U19 - SønderjyskE U19, 4 - 3",5,2,7,71.42857142857143,28.57142857142857
 V. Klindt Sørensen,SønderjyskE U19,"Randers U19 - SønderjyskE U19, 0 - 2",5,2,6,83.33333333333334,33.33333333333333
+V. Klindt Sørensen,SønderjyskE U19,"SønderjyskE U19 - AaB U19, 0 - 2",6,3,8,75.0,37.5
 V. Klindt Sørensen,SønderjyskE U19,"SønderjyskE U19 - København U19, 2 - 0",7,3,9,77.77777777777779,33.33333333333333
 V. Klindt Sørensen,SønderjyskE U19,"SønderjyskE U19 - OB U19, 1 - 3",4,2,7,57.14285714285714,28.57142857142857
 V. Klindt Sørensen,SønderjyskE U19,"SønderjyskE U19 - Vejle U19, 2 - 3",7,2,7,100.0,28.57142857142857
 V. Lykke,Lyngby U19,"Lyngby U19 - Esbjerg U19, 1 - 1 (P)",2,1,3,66.66666666666666,33.33333333333333
+V. Lykke,Lyngby U19,"Lyngby U19 - Silkeborg U19, 2 - 2 (P)",2,1,6,33.33333333333333,16.666666666666664
 V. Lykke,Lyngby U19,"Lyngby U19 - SønderjyskE U19, 4 - 3",4,1,5,80.0,20.0
 V. Lykke,Lyngby U19,"Lyngby U19 - Vejle U19, 0 - 1",5,1,8,62.5,12.5
 V. Lykke,Lyngby U19,"Midtjylland U19 - Lyngby U19, 11 - 1",6,1,10,60.0,10.0
@@ -1056,21 +1204,28 @@ V. Møller,AaB U19,"AaB U19 - OB U19, 1 - 0",3,2,4,75.0,50.0
 V. Møller,AaB U19,"AaB U19 - Randers U19, 0 - 3",3,0,7,42.857142857142854,0.0
 V. Møller,AaB U19,"Nordsjælland U19 - AaB U19, 2 - 0",4,1,6,66.66666666666666,16.666666666666664
 V. Møller,AaB U19,"Silkeborg U19 - AaB U19, 2 - 2 (P)",2,0,3,66.66666666666666,0.0
+V. Møller,AaB U19,"SønderjyskE U19 - AaB U19, 0 - 2",2,0,4,50.0,0.0
 V. Møller,AaB U19,"Vejle U19 - AaB U19, 1 - 1",3,0,3,100.0,0.0
+V. Poulsen,Brøndby U19,"Nordsjælland U19 - Brøndby U19, 1 - 0",True,True,1,100.0,100.0
 V. Svenstrup,Lyngby U19,"Lyngby U19 - Esbjerg U19, 1 - 1 (P)",True,True,1,100.0,100.0
+V. Valdemar Gaml,Randers U19,"AGF U19 - Randers U19, 5 - 2",2,0,2,100.0,0.0
 W. Bjergfeldt,Brøndby U19,"AGF U19 - Brøndby U19, 5 - 1",7,2,9,77.77777777777779,22.22222222222222
 W. Bjergfeldt,Brøndby U19,"Brøndby U19 - Horsens U19, 2 - 3",8,1,9,88.88888888888889,11.11111111111111
 W. Bjergfeldt,Brøndby U19,"Brøndby U19 - Midtjylland U19, 4 - 0",8,2,8,100.0,25.0
 W. Bjergfeldt,Brøndby U19,"Brøndby U19 - OB U19, 2 - 4",1,0,3,33.33333333333333,0.0
 W. Bjergfeldt,Brøndby U19,"Brøndby U19 - Silkeborg U19, 2 - 3",1,0,4,25.0,0.0
 W. Bjergfeldt,Brøndby U19,"Brøndby U19 - SønderjyskE U19, 5 - 2",2,1,5,40.0,20.0
+W. Bjergfeldt,Brøndby U19,"Nordsjælland U19 - Brøndby U19, 1 - 0",4,1,8,50.0,12.5
 W. Bjergfeldt,Brøndby U19,"Vejle U19 - Brøndby U19, 1 - 1",7,4,12,58.333333333333336,33.33333333333333
+W. Faber,Nordsjælland U19,"Nordsjælland U19 - Brøndby U19, 1 - 0",1,1,3,33.33333333333333,33.33333333333333
 W. Glintvad,København U19,"AGF U19 - København U19, 0 - 3",4,0,5,80.0,0.0
 W. Glintvad,København U19,"AaB U19 - København U19, 2 - 1",3,0,3,100.0,0.0
+W. Glintvad,København U19,"Horsens U19 - København U19, 1 - 1 (P)",7,2,8,87.5,25.0
 W. Glintvad,København U19,"København U19 - Esbjerg U19, 9 - 1",3,1,5,60.0,20.0
 W. Glintvad,København U19,"København U19 - OB U19, 4 - 0",4,2,4,100.0,50.0
 W. Glintvad,København U19,"SønderjyskE U19 - København U19, 2 - 0",2,1,2,100.0,50.0
 W. Kirk,Silkeborg U19,"Brøndby U19 - Silkeborg U19, 2 - 3",3,0,3,100.0,0.0
+W. Kirk,Silkeborg U19,"Lyngby U19 - Silkeborg U19, 2 - 2 (P)",7,2,8,87.5,25.0
 W. Kirk,Silkeborg U19,"Midtjylland U19 - Silkeborg U19, 2 - 3",2,0,8,25.0,0.0
 W. Kirk,Silkeborg U19,"Nordsjælland U19 - Silkeborg U19, 3 - 0",2,0,3,66.66666666666666,0.0
 W. Kirk,Silkeborg U19,"Silkeborg U19 - AGF U19, 0 - 1",4,2,4,100.0,50.0
@@ -1081,6 +1236,7 @@ W. Kold,Midtjylland U19,"Brøndby U19 - Midtjylland U19, 4 - 0",1,0,3,33.3333333
 W. Kold,Midtjylland U19,"Horsens U19 - Midtjylland U19, 0 - 2",4,2,6,66.66666666666666,33.33333333333333
 W. Kold,Midtjylland U19,"Midtjylland U19 - Lyngby U19, 11 - 1",3,1,7,42.857142857142854,14.285714285714285
 W. Kold,Midtjylland U19,"Midtjylland U19 - Silkeborg U19, 2 - 3",1,1,2,50.0,50.0
+W. Kold,Midtjylland U19,"OB U19 - Midtjylland U19, 3 - 4",True,True,1,100.0,100.0
 W. Køhler Simonsen,Randers U19,"AaB U19 - Randers U19, 0 - 3",7,2,13,53.84615384615385,15.384615384615385
 W. Køhler Simonsen,Randers U19,"Randers U19 - Horsens U19, 2 - 1",6,4,7,85.71428571428571,57.14285714285714
 W. Køhler Simonsen,Randers U19,"Randers U19 - Lyngby U19, 0 - 2",3,0,11,27.27272727272727,0.0
@@ -1093,6 +1249,7 @@ W. Møller,Silkeborg U19,"Silkeborg U19 - Horsens U19, 1 - 1 (P)",4,3,5,80.0,60.
 W. Møller,Silkeborg U19,"Silkeborg U19 - Randers U19, 2 - 0",True,False,1,100.0,0.0
 W. Nørlev,København U19,"AGF U19 - København U19, 0 - 3",0,0,2,0.0,0.0
 W. Pedersen,Silkeborg U19,"Brøndby U19 - Silkeborg U19, 2 - 3",True,False,1,100.0,0.0
+W. Pedersen,Silkeborg U19,"Lyngby U19 - Silkeborg U19, 2 - 2 (P)",3,1,3,100.0,33.33333333333333
 W. Pedersen,Silkeborg U19,"Nordsjælland U19 - Silkeborg U19, 3 - 0",1,1,3,33.33333333333333,33.33333333333333
 W. Pedersen,Silkeborg U19,"Silkeborg U19 - Horsens U19, 1 - 1 (P)",True,False,1,100.0,0.0
 W. Renecke,København U19,"AaB U19 - København U19, 2 - 1",5,1,5,100.0,20.0
@@ -1102,9 +1259,11 @@ W. Renecke,København U19,"SønderjyskE U19 - København U19, 2 - 0",6,5,7,85.71
 W. Rygaard,AGF U19,"AGF U19 - Brøndby U19, 5 - 1",5,0,6,83.33333333333334,0.0
 W. Rygaard,AGF U19,"AGF U19 - København U19, 0 - 3",0,0,2,0.0,0.0
 W. Rygaard,AGF U19,"AGF U19 - Midtjylland U19, 0 - 1",7,4,9,77.77777777777779,44.44444444444444
+W. Rygaard,AGF U19,"AGF U19 - Randers U19, 5 - 2",3,0,4,75.0,0.0
 W. Rygaard,AGF U19,"Esbjerg U19 - AGF U19, 1 - 2",0,0,3,0.0,0.0
 W. Rygaard,AGF U19,"Silkeborg U19 - AGF U19, 0 - 1",4,3,7,57.14285714285714,42.857142857142854
 W. Steindorsson,Lyngby U19,"Lyngby U19 - Esbjerg U19, 1 - 1 (P)",4,2,7,57.14285714285714,28.57142857142857
+W. Steindorsson,Lyngby U19,"Lyngby U19 - Silkeborg U19, 2 - 2 (P)",7,2,9,77.77777777777779,22.22222222222222
 W. Steindorsson,Lyngby U19,"Lyngby U19 - SønderjyskE U19, 4 - 3",1,0,2,50.0,0.0
 W. Steindorsson,Lyngby U19,"Lyngby U19 - Vejle U19, 0 - 1",4,2,9,44.44444444444444,22.22222222222222
 W. Steindorsson,Lyngby U19,"Midtjylland U19 - Lyngby U19, 11 - 1",2,1,6,33.33333333333333,16.666666666666664
@@ -1113,6 +1272,7 @@ W. Steindorsson,Lyngby U19,"Randers U19 - Lyngby U19, 0 - 2",4,2,6,66.6666666666
 Y. Ouorou,Horsens U19,"Brøndby U19 - Horsens U19, 2 - 3",4,3,8,50.0,37.5
 Y. Ouorou,Horsens U19,"Horsens U19 - AGF U19, 1 - 1 (P)",8,5,9,88.88888888888889,55.55555555555556
 Y. Ouorou,Horsens U19,"Horsens U19 - Esbjerg U19, 2 - 0",2,2,2,100.0,100.0
+Y. Ouorou,Horsens U19,"Horsens U19 - København U19, 1 - 1 (P)",2,0,7,28.57142857142857,0.0
 Y. Ouorou,Horsens U19,"Horsens U19 - Midtjylland U19, 0 - 2",4,0,5,80.0,0.0
 Y. Ouorou,Horsens U19,"Nordsjælland U19 - Horsens U19, 3 - 0",8,3,10,80.0,30.0
 Y. Ouorou,Horsens U19,"Randers U19 - Horsens U19, 2 - 1",2,0,3,66.66666666666666,0.0
