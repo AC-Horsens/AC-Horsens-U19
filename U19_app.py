@@ -1781,8 +1781,8 @@ def sportspsykologiske_målinger():
         merged_df = merged_df.groupby(['Your Name', 'Month'], as_index=False).first()
 
         # Extract only the first character for all columns except 'Your Name' and 'Month'
-        columns_to_modify = merged_df.columns.difference(['Your Name', 'Month'])
-        merged_df[columns_to_modify] = merged_df[columns_to_modify].applymap(lambda x: x[0] if pd.notnull(x) else x)
+        #columns_to_modify = merged_df.columns.difference(['Your Name', 'Month'])
+        #merged_df[columns_to_modify] = merged_df[columns_to_modify].applymap(lambda x: x[0] if pd.notnull(x) else x)
 
         # Remove rows where 'Your Name' is empty
         merged_df = merged_df[merged_df['Your Name'] != ""]
