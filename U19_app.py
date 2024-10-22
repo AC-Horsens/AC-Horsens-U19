@@ -1770,10 +1770,7 @@ def sportspsykologiske_målinger():
         df1 = process_dataframe(df1, 'PNSS-S')
         df2 = process_dataframe(df2, 'TMID')
         df3 = process_dataframe(df3, 'PSS')
-        st.dataframe(df)
-        st.dataframe(df1)
-        st.dataframe(df2)
-        st.dataframe(df3)
+
 
         # Merge all the DataFrames on 'Your Name' and 'Month'
         merged_df = df.merge(df1, on=['Your Name', 'Month'], how='outer') \
