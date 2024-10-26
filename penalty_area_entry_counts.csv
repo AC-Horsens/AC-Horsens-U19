@@ -35,8 +35,8 @@ label,date,team.name,count
 "Horsens U19 - AGF U19, 1 - 1 (P)","August 31, 2024 at 12:30:00 PM GMT+2",Horsens U19,42
 "Horsens U19 - Esbjerg U19, 2 - 0","September 28, 2024 at 12:30:00 PM GMT+2",Esbjerg U19,35
 "Horsens U19 - Esbjerg U19, 2 - 0","September 28, 2024 at 12:30:00 PM GMT+2",Horsens U19,20
-"Horsens U19 - København U19, 1 - 1 (P)","October 19, 2024 at 12:30:00 PM GMT+2",Horsens U19,39
-"Horsens U19 - København U19, 1 - 1 (P)","October 19, 2024 at 12:30:00 PM GMT+2",København U19,17
+"Horsens U19 - København U19, 1 - 1","October 19, 2024 at 12:30:00 PM GMT+2",Horsens U19,39
+"Horsens U19 - København U19, 1 - 1","October 19, 2024 at 12:30:00 PM GMT+2",København U19,17
 "Horsens U19 - Midtjylland U19, 0 - 2","August 17, 2024 at 12:30:00 PM GMT+2",Horsens U19,28
 "Horsens U19 - Midtjylland U19, 0 - 2","August 17, 2024 at 12:30:00 PM GMT+2",Midtjylland U19,46
 "København U19 - Esbjerg U19, 9 - 1","October 5, 2024 at 3:00:00 PM GMT+2",Esbjerg U19,25
@@ -75,6 +75,8 @@ label,date,team.name,count
 "OB U19 - Vejle U19, 4 - 0","August 17, 2024 at 12:30:00 PM GMT+2",Vejle U19,18
 "Randers U19 - Horsens U19, 2 - 1","October 5, 2024 at 1:00:00 PM GMT+2",Horsens U19,56
 "Randers U19 - Horsens U19, 2 - 1","October 5, 2024 at 1:00:00 PM GMT+2",Randers U19,26
+"Randers U19 - København U19, 1 - 1","October 23, 2024 at 3:00:00 PM GMT+2",København U19,62
+"Randers U19 - København U19, 1 - 1","October 23, 2024 at 3:00:00 PM GMT+2",Randers U19,20
 "Randers U19 - Lyngby U19, 0 - 2","August 31, 2024 at 1:00:00 PM GMT+2",Lyngby U19,13
 "Randers U19 - Lyngby U19, 0 - 2","August 31, 2024 at 1:00:00 PM GMT+2",Randers U19,41
 "Randers U19 - SønderjyskE U19, 0 - 2","August 17, 2024 at 1:00:00 PM GMT+2",Randers U19,43
