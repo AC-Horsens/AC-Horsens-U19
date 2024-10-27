@@ -5,6 +5,8 @@ label,team.name,date,PPDA
 "AGF U19 - København U19, 0 - 3",København U19,"August 23, 2024 at 2:00:00 PM GMT+2",7.62962962962963
 "AGF U19 - Midtjylland U19, 0 - 1",AGF U19,"September 28, 2024 at 2:00:00 PM GMT+2",18.454545454545453
 "AGF U19 - Midtjylland U19, 0 - 1",Midtjylland U19,"September 28, 2024 at 2:00:00 PM GMT+2",8.11111111111111
+"AGF U19 - Nordsjælland U19, 0 - 1",AGF U19,"October 26, 2024 at 2:00:00 PM GMT+2",12.565217391304348
+"AGF U19 - Nordsjælland U19, 0 - 1",Nordsjælland U19,"October 26, 2024 at 2:00:00 PM GMT+2",12.705882352941176
 "AGF U19 - Randers U19, 5 - 2",AGF U19,"October 19, 2024 at 2:00:00 PM GMT+2",11.166666666666666
 "AGF U19 - Randers U19, 5 - 2",Randers U19,"October 19, 2024 at 2:00:00 PM GMT+2",11.0
 "AaB U19 - København U19, 2 - 1",AaB U19,"September 28, 2024 at 1:00:00 PM GMT+2",16.473684210526315
@@ -79,6 +81,8 @@ label,team.name,date,PPDA
 "Randers U19 - København U19, 1 - 1",Randers U19,"October 23, 2024 at 3:00:00 PM GMT+2",29.764705882352942
 "Randers U19 - Lyngby U19, 0 - 2",Lyngby U19,"August 31, 2024 at 1:00:00 PM GMT+2",25.53846153846154
 "Randers U19 - Lyngby U19, 0 - 2",Randers U19,"August 31, 2024 at 1:00:00 PM GMT+2",6.071428571428571
+"Randers U19 - OB U19, 1 - 5",OB U19,"October 26, 2024 at 1:00:00 PM GMT+2",29.363636363636363
+"Randers U19 - OB U19, 1 - 5",Randers U19,"October 26, 2024 at 1:00:00 PM GMT+2",16.0625
 "Randers U19 - SønderjyskE U19, 0 - 2",Randers U19,"August 17, 2024 at 1:00:00 PM GMT+2",19.083333333333332
 "Randers U19 - SønderjyskE U19, 0 - 2",SønderjyskE U19,"August 17, 2024 at 1:00:00 PM GMT+2",13.181818181818182
 "Silkeborg U19 - AGF U19, 0 - 1",AGF U19,"October 5, 2024 at 1:00:00 PM GMT+2",35.1
@@ -101,3 +105,5 @@ label,team.name,date,PPDA
 "Vejle U19 - AaB U19, 1 - 1",Vejle U19,"August 31, 2024 at 12:30:00 PM GMT+2",11.25
 "Vejle U19 - Brøndby U19, 1 - 1",Brøndby U19,"August 24, 2024 at 12:30:00 PM GMT+2",6.52
 "Vejle U19 - Brøndby U19, 1 - 1",Vejle U19,"August 24, 2024 at 12:30:00 PM GMT+2",43.625
+"Vejle U19 - København U19, 2 - 3",København U19,"October 26, 2024 at 12:30:00 PM GMT+2",17.785714285714285
+"Vejle U19 - København U19, 2 - 3",Vejle U19,"October 26, 2024 at 12:30:00 PM GMT+2",33.0
