@@ -11,6 +11,8 @@ label,team.name,date,PPDA
 "AGF U19 - Randers U19, 5 - 2",Randers U19,"October 19, 2024 at 2:00:00 PM GMT+2",11.0
 "AaB U19 - København U19, 2 - 1",AaB U19,"September 28, 2024 at 1:00:00 PM GMT+2",16.473684210526315
 "AaB U19 - København U19, 2 - 1",København U19,"September 28, 2024 at 1:00:00 PM GMT+2",4.096774193548387
+"AaB U19 - Lyngby U19, 2 - 0",AaB U19,"November 2, 2024 at 1:00:00 PM GMT+1",9.176470588235293
+"AaB U19 - Lyngby U19, 2 - 0",Lyngby U19,"November 2, 2024 at 1:00:00 PM GMT+1",12.916666666666666
 "AaB U19 - OB U19, 1 - 0",AaB U19,"October 5, 2024 at 1:00:00 PM GMT+2",21.076923076923077
 "AaB U19 - OB U19, 1 - 0",OB U19,"October 5, 2024 at 1:00:00 PM GMT+2",9.933333333333334
 "AaB U19 - Randers U19, 0 - 3",AaB U19,"August 24, 2024 at 1:00:00 PM GMT+2",11.0
@@ -29,6 +31,8 @@ label,team.name,date,PPDA
 "Brøndby U19 - SønderjyskE U19, 5 - 2",SønderjyskE U19,"October 5, 2024 at 12:30:00 PM GMT+2",19.333333333333332
 "Esbjerg U19 - AGF U19, 1 - 2",AGF U19,"August 16, 2024 at 2:00:00 PM GMT+2",13.777777777777779
 "Esbjerg U19 - AGF U19, 1 - 2",Esbjerg U19,"August 16, 2024 at 2:00:00 PM GMT+2",6.523809523809524
+"Esbjerg U19 - Brøndby U19, 4 - 2",Brøndby U19,"November 2, 2024 at 12:00:00 PM GMT+1",5.782608695652174
+"Esbjerg U19 - Brøndby U19, 4 - 2",Esbjerg U19,"November 2, 2024 at 12:00:00 PM GMT+1",21.0
 "Esbjerg U19 - Nordsjælland U19, 0 - 5",Esbjerg U19,"September 21, 2024 at 12:00:00 PM GMT+2",21.8
 "Esbjerg U19 - Nordsjælland U19, 0 - 5",Nordsjælland U19,"September 21, 2024 at 12:00:00 PM GMT+2",26.0
 "Esbjerg U19 - SønderjyskE U19, 2 - 0",Esbjerg U19,"August 31, 2024 at 12:00:00 PM GMT+2",17.384615384615383
@@ -47,6 +51,8 @@ label,team.name,date,PPDA
 "København U19 - Esbjerg U19, 9 - 1",København U19,"October 5, 2024 at 3:00:00 PM GMT+2",6.636363636363637
 "København U19 - OB U19, 4 - 0",København U19,"September 21, 2024 at 1:00:00 PM GMT+2",26.09090909090909
 "København U19 - OB U19, 4 - 0",OB U19,"September 21, 2024 at 1:00:00 PM GMT+2",11.8
+"København U19 - Silkeborg U19, 2 - 0",København U19,"November 2, 2024 at 1:30:00 PM GMT+1",8.565217391304348
+"København U19 - Silkeborg U19, 2 - 0",Silkeborg U19,"November 2, 2024 at 1:30:00 PM GMT+1",21.615384615384617
 "Lyngby U19 - Esbjerg U19, 1 - 1 (P)",Esbjerg U19,"August 24, 2024 at 1:00:00 PM GMT+2",13.210526315789474
 "Lyngby U19 - Esbjerg U19, 1 - 1 (P)",Lyngby U19,"August 24, 2024 at 1:00:00 PM GMT+2",7.909090909090909
 "Lyngby U19 - Silkeborg U19, 2 - 2 (P)",Lyngby U19,"October 19, 2024 at 1:00:00 PM GMT+2",15.208333333333334
@@ -69,10 +75,14 @@ label,team.name,date,PPDA
 "Nordsjælland U19 - Brøndby U19, 1 - 0",Nordsjælland U19,"October 19, 2024 at 1:00:00 PM GMT+2",7.32
 "Nordsjælland U19 - Horsens U19, 3 - 0",Horsens U19,"September 14, 2024 at 1:30:00 PM GMT+2",46.625
 "Nordsjælland U19 - Horsens U19, 3 - 0",Nordsjælland U19,"September 14, 2024 at 1:30:00 PM GMT+2",7.0
+"Nordsjælland U19 - Randers U19, 2 - 0",Nordsjælland U19,"November 2, 2024 at 1:00:00 PM GMT+1",4.342105263157895
+"Nordsjælland U19 - Randers U19, 2 - 0",Randers U19,"November 2, 2024 at 1:00:00 PM GMT+1",62.0
 "Nordsjælland U19 - Silkeborg U19, 3 - 0",Nordsjælland U19,"September 28, 2024 at 1:30:00 PM GMT+2",8.758620689655173
 "Nordsjælland U19 - Silkeborg U19, 3 - 0",Silkeborg U19,"September 28, 2024 at 1:30:00 PM GMT+2",44.0
 "OB U19 - Esbjerg U19, 3 - 1",Esbjerg U19,"September 14, 2024 at 12:30:00 PM GMT+2",17.58823529411765
 "OB U19 - Esbjerg U19, 3 - 1",OB U19,"September 14, 2024 at 12:30:00 PM GMT+2",19.8
+"OB U19 - Horsens U19, 2 - 0",Horsens U19,"November 2, 2024 at 12:30:00 PM GMT+1",6.521739130434782
+"OB U19 - Horsens U19, 2 - 0",OB U19,"November 2, 2024 at 12:30:00 PM GMT+1",15.764705882352942
 "OB U19 - Lyngby U19, 2 - 0",Lyngby U19,"September 28, 2024 at 12:30:00 PM GMT+2",11.4
 "OB U19 - Lyngby U19, 2 - 0",OB U19,"September 28, 2024 at 12:30:00 PM GMT+2",11.157894736842104
 "OB U19 - Midtjylland U19, 3 - 4",Midtjylland U19,"October 18, 2024 at 12:30:00 PM GMT+2",6.40625
