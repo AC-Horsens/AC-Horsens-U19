@@ -1499,18 +1499,20 @@ def opposition_analysis():
 
     # Attempt to convert 'date' to datetime and drop rows where it fails
     df_matchstats['date'] = pd.to_datetime(df_matchstats['date'], errors='coerce')
-
-    # Check for any remaining non-datetime values and display them
-    non_datetime_rows = df_matchstats[df_matchstats['date'].isna()]
-    if not non_datetime_rows.empty:
-        st.write("Rows with non-datetime values in 'date' column:", non_datetime_rows[['team.name', 'label', 'date']])
-
-    # Drop rows with NaT in 'date' (non-converted values)
     df_matchstats = df_matchstats.dropna(subset=['date'])
 
-    # Define date range and options for the slider
-    min_date = df_matchstats['date'].min()
-    max_date = df_matchstats['date'].max()
+    # Verify and enforce timezone-naive dates
+    df_matchstats['date'] = df_matchstats['date'].apply(lambda x: x.tz_localize(None) if x.tzinfo else x)
+
+    # Define date range for slider, ensuring both are timezone-naive
+    min_date = df_matchstats['date'].min().replace(tzinfo=None)
+    max_date = df_matchstats['date'].max().replace(tzinfo=None)
+
+    # Check if min_date and max_date are indeed timezone-naive
+    if min_date.tzinfo is not None or max_date.tzinfo is not None:
+        raise ValueError("min_date and max_date must be timezone-naive.")
+
+    # Generate date options and set up the select_slider for Streamlit
     date_range = pd.date_range(start=min_date, end=max_date, freq='D')
     date_options = date_range.strftime('%Y-%m-%d').tolist()
 
@@ -1518,21 +1520,21 @@ def opposition_analysis():
     default_start_date = min_date.strftime('%Y-%m-%d')
     default_end_date = max_date.strftime('%Y-%m-%d')
 
-    # Set up select_slider for date range selection
     selected_start_date, selected_end_date = st.select_slider(
         'Choose dates',
         options=date_options,
         value=(default_start_date, default_end_date)
     )
 
-    # Convert selected dates to datetime for filtering
-    selected_start_date = pd.to_datetime(selected_start_date)
-    selected_end_date = pd.to_datetime(selected_end_date)
+    # Convert selected dates for filtering, making sure they're timezone-naive
+    selected_start_date = pd.to_datetime(selected_start_date).replace(tzinfo=None)
+    selected_end_date = pd.to_datetime(selected_end_date).replace(tzinfo=None)
 
-    # Filter the dataframe based on the selected date range
+    # Filter based on selected date range
     df_matchstats = df_matchstats[
         (df_matchstats['date'] >= selected_start_date) & (df_matchstats['date'] <= selected_end_date)
     ]
+
 
     # Drop unnecessary columns
     columns_to_drop = ['player.id', 'player.name', 'matchId', 'position_names', 'position_codes']
