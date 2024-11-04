@@ -1521,8 +1521,8 @@ def opposition_analysis():
     )
 
     # Convert selected dates to datetime for filtering
-    selected_start_date = pd.to_datetime(selected_start_date, format='%Y-%m-%d')
-    selected_end_date = pd.to_datetime(selected_end_date, format='%Y-%m-%d')
+    selected_start_date = pd.to_datetime(selected_start_date, format='%Y-%m-%d').replace(tzinfo=None)
+    selected_end_date = pd.to_datetime(selected_end_date, format='%Y-%m-%d').replace(tzinfo=None)
 
     # Filter the dataframe based on the selected date range
     df_matchstats = df_matchstats[
