@@ -1497,13 +1497,18 @@ def opposition_analysis():
     # Ensure 'label' column contains only 1 for non-null values
     df_matchstats['label'] = np.where(df_matchstats['label'].notnull(), 1, df_matchstats['label'])
 
-    # Convert 'date' column to datetime, ensuring non-datetimes are coerced to NaT
+    # Convert 'date' column to datetime, coercing errors to NaT
     df_matchstats['date'] = pd.to_datetime(df_matchstats['date'], errors='coerce')
 
-    # Drop rows with NaT values in 'date'
+    # Identify and print any problematic entries in 'date'
+    non_datetime_entries = df_matchstats[df_matchstats['date'].isna()]
+    if not non_datetime_entries.empty:
+        print("Non-datetime values in 'date' column after conversion:", non_datetime_entries[['team.name', 'label', 'date']])
+
+    # Drop rows with NaT in 'date'
     df_matchstats = df_matchstats.dropna(subset=['date'])
 
-    # Verify that all values in 'date' are datetime, raising an error if not
+    # Final check to confirm all values in 'date' are datetime
     if not pd.api.types.is_datetime64_any_dtype(df_matchstats['date']):
         raise ValueError("Date column still contains non-datetime values after conversion.")
 
