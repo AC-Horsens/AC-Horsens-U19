@@ -1487,7 +1487,7 @@ def opposition_analysis():
     # Correct date format in 'date' column
     df_matchstats['date'] = df_matchstats['date'].str.replace(r'GMT\+(\d)$', r'GMT+0\1:00', regex=True)
     df_PPDA['date'] = df_PPDA['date'].str.replace(r'GMT\+(\d)$', r'GMT+0\1:00', regex=True)
-
+    
     # Group by and aggregate match stats
     df_matchstats = df_matchstats.groupby(['team.name', 'label', 'date']).sum().reset_index()
     df_matchstats = df_matchstats.merge(df_PPDA, on=['team.name', 'label', 'date'], how='left')
@@ -1498,13 +1498,9 @@ def opposition_analysis():
     # Convert 'date' column to datetime, handling mixed formats and coercing errors
     df_matchstats['date'] = pd.to_datetime(df_matchstats['date'], errors='coerce')
 
-
-
-    # Drop rows with NaT in 'date' column
-    df_matchstats = df_matchstats.dropna(subset=['date'])
-
     # Drop rows where date parsing failed
-    df_matchstats['date'] = df_matchstats['date'].dt.date
+    df_matchstats = df_matchstats.dropna(subset=['date'])
+    # Ensure all datetime objects are timezone-naive (remove timezone if present)
 
     # Drop rows where date parsing failed (NaT)
     df_matchstats['date'] = df_matchstats['date'].astype(str)
