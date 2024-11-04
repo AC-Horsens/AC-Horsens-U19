@@ -1520,20 +1520,26 @@ def opposition_analysis():
         st.write("Rows with inconsistent 'date' types:", inconsistent_dates[['team.name', 'label', 'date']])
 
     # Define date range and options for the slider
-    min_date = pd.to_datetime(df_matchstats['date'].min()).replace(tzinfo=None)  # Ensure timezone-naive
-    max_date = pd.to_datetime(df_matchstats['date'].max()).replace(tzinfo=None)  # Ensure timezone-naive
+    min_date = pd.to_datetime(df_matchstats['date'].min()).replace(tzinfo=None)
+    max_date = pd.to_datetime(df_matchstats['date'].max()).replace(tzinfo=None)
     date_range = pd.date_range(start=min_date, end=max_date, freq='D')
-    date_options = date_range.strftime('%Y-%m-%d')  # Convert dates to strings
+    date_options = date_range.strftime('%Y-%m-%d').tolist()  # Convert dates to strings and make a list
+
+    # Ensure min_date and max_date are included in date_options
+    if min_date.strftime('%Y-%m-%d') not in date_options:
+        date_options.insert(0, min_date.strftime('%Y-%m-%d'))
+    if max_date.strftime('%Y-%m-%d') not in date_options:
+        date_options.append(max_date.strftime('%Y-%m-%d'))
 
     # Default dates for slider
-    default_start_date = (max_date - pd.Timedelta(days=2)).strftime('%Y-%m-%d')
+    default_start_date = min_date.strftime('%Y-%m-%d')
     default_end_date = max_date.strftime('%Y-%m-%d')
 
     # Set up select_slider for date range selection
     selected_start_date, selected_end_date = st.select_slider(
         'Choose dates',
         options=date_options,
-        value=(min_date.strftime('%Y-%m-%d'), max_date.strftime('%Y-%m-%d'))
+        value=(default_start_date, default_end_date)
     )
 
     # Convert selected dates to datetime for filtering
