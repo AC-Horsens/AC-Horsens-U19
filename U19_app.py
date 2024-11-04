@@ -1478,29 +1478,25 @@ def dashboard():
             Data_types[st.session_state['selected_data3']]()
 
 def opposition_analysis():
-    # Load and preprocess match statistics data
+    # Display the full dataframe
     df_matchstats = load_matchstats()
     df_matchstats['label'] = df_matchstats['label'] + ' ' + df_matchstats['date']
     df_PPDA = load_PPDA()
     df_PPDA['PPDA'] = df_PPDA['PPDA'].round(2)
+    # Correct the date format in 'date' column if necessary
+    df_matchstats['date'] = df_matchstats['date'].str.replace(r'GMT\+(\d)$', r'GMT+0\1:00')
+    df_PPDA['date'] = df_PPDA['date'].str.replace(r'GMT\+(\d)$', r'GMT+0\1:00')
+    df_matchstats = df_matchstats.groupby(['team.name','label', 'date']).sum().reset_index()
+    df_matchstats = df_matchstats.merge(df_PPDA, on=['team.name','label','date'], how='left')
 
-    # Correct date format in 'date' column
-    df_matchstats['date'] = df_matchstats['date'].str.replace(r'GMT\+(\d)$', r'GMT+0\1:00', regex=True)
-    df_PPDA['date'] = df_PPDA['date'].str.replace(r'GMT\+(\d)$', r'GMT+0\1:00', regex=True)
-    
-    # Group by and aggregate match stats
-    df_matchstats = df_matchstats.groupby(['team.name', 'label', 'date']).sum().reset_index()
-    df_matchstats = df_matchstats.merge(df_PPDA, on=['team.name', 'label', 'date'], how='left')
+    df_matchstats['label'] = np.where(df_matchstats['label'].notnull(), 1, df_matchstats['label'])
 
-    # Replace null values in 'label' column with 1 (if intended)
-    df_matchstats['label'] = np.where(df_matchstats['label'].notnull(), df_matchstats['label'], 1)
+    # Convert the 'date' column to datetime objects with mixed format handling
+    df_matchstats['date'] = pd.to_datetime(df_matchstats['date'], format='mixed', errors='coerce')
 
-    # Convert 'date' column to datetime, handling mixed formats and coercing errors
-    df_matchstats['date'] = pd.to_datetime(df_matchstats['date'], errors='coerce')
-
-    # Drop rows where date parsing failed
+    # Ensure all datetime objects are timezone-naive (remove timezones)
+    df_matchstats['date'] = df_matchstats['date'].dt.tz_convert(None)
     df_matchstats = df_matchstats.dropna(subset=['date'])
-    # Ensure all datetime objects are timezone-naive (remove timezone if present)
 
     # Drop rows where date parsing failed (NaT)
     df_matchstats['date'] = df_matchstats['date'].astype(str)
