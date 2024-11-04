@@ -1478,15 +1478,15 @@ def dashboard():
             Data_types[st.session_state['selected_data3']]()
 
 def opposition_analysis():
-    # Load and preprocess match statistics data
+    # Load and preprocess match statistics data as usual...
     df_matchstats = load_matchstats()
     df_PPDA = load_PPDA()
-
+    
     # Combine 'label' with 'date' and round 'PPDA' values
     df_matchstats['label'] += ' ' + df_matchstats['date']
     df_PPDA['PPDA'] = df_PPDA['PPDA'].round(2)
 
-    # Standardize date format in both dataframes, if necessary
+    # Standardize date format if necessary
     df_matchstats['date'] = df_matchstats['date'].str.replace(r'GMT\+(\d)$', r'GMT+0\1:00', regex=True)
     df_PPDA['date'] = df_PPDA['date'].str.replace(r'GMT\+(\d)$', r'GMT+0\1:00', regex=True)
 
@@ -1494,47 +1494,46 @@ def opposition_analysis():
     df_matchstats = df_matchstats.groupby(['team.name', 'label', 'date']).sum().reset_index()
     df_matchstats = df_matchstats.merge(df_PPDA, on=['team.name', 'label', 'date'], how='left')
 
-    # Ensure 'label' column contains only 1 for non-null values
+    # Set 'label' column to 1 for non-null values
     df_matchstats['label'] = np.where(df_matchstats['label'].notnull(), 1, df_matchstats['label'])
 
-    # Attempt to convert 'date' to datetime and drop rows where it fails
+    # Convert 'date' column to datetime (without timezone handling)
     df_matchstats['date'] = pd.to_datetime(df_matchstats['date'], errors='coerce')
+
+    # Drop rows with NaT in 'date'
     df_matchstats = df_matchstats.dropna(subset=['date'])
 
-    # Verify and enforce timezone-naive dates
-    df_matchstats['date'] = df_matchstats['date'].apply(lambda x: x.tz_localize(None) if x.tzinfo else x)
-
-    # Define date range for slider, ensuring both are timezone-naive
-    min_date = df_matchstats['date'].min().replace(tzinfo=None)
-    max_date = df_matchstats['date'].max().replace(tzinfo=None)
-
-    # Check if min_date and max_date are indeed timezone-naive
-    if min_date.tzinfo is not None or max_date.tzinfo is not None:
-        raise ValueError("min_date and max_date must be timezone-naive.")
-
-    # Generate date options and set up the select_slider for Streamlit
+    # Define date range for slider
+    min_date = df_matchstats['date'].min()
+    max_date = df_matchstats['date'].max()
     date_range = pd.date_range(start=min_date, end=max_date, freq='D')
     date_options = date_range.strftime('%Y-%m-%d').tolist()
 
-    # Set up default and selected dates for the slider
+    # Ensure min_date and max_date are included in date_options
+    if min_date.strftime('%Y-%m-%d') not in date_options:
+        date_options.insert(0, min_date.strftime('%Y-%m-%d'))
+    if max_date.strftime('%Y-%m-%d') not in date_options:
+        date_options.append(max_date.strftime('%Y-%m-%d'))
+
+    # Default dates for slider
     default_start_date = min_date.strftime('%Y-%m-%d')
     default_end_date = max_date.strftime('%Y-%m-%d')
 
+    # Set up select_slider for date range selection
     selected_start_date, selected_end_date = st.select_slider(
         'Choose dates',
         options=date_options,
         value=(default_start_date, default_end_date)
     )
 
-    # Convert selected dates for filtering, making sure they're timezone-naive
-    selected_start_date = pd.to_datetime(selected_start_date).replace(tzinfo=None)
-    selected_end_date = pd.to_datetime(selected_end_date).replace(tzinfo=None)
+    # Convert selected dates to datetime for filtering
+    selected_start_date = pd.to_datetime(selected_start_date, format='%Y-%m-%d')
+    selected_end_date = pd.to_datetime(selected_end_date, format='%Y-%m-%d')
 
-    # Filter based on selected date range
+    # Filter the dataframe based on the selected date range
     df_matchstats = df_matchstats[
         (df_matchstats['date'] >= selected_start_date) & (df_matchstats['date'] <= selected_end_date)
     ]
-
 
     # Drop unnecessary columns
     columns_to_drop = ['player.id', 'player.name', 'matchId', 'position_names', 'position_codes']
