@@ -1487,8 +1487,8 @@ def opposition_analysis():
     df_PPDA['PPDA'] = df_PPDA['PPDA'].round(2)
 
     # Standardize date format in both dataframes, if necessary
-    df_matchstats['date'] = df_matchstats['date'].str.replace(r'GMT\+(\d)$', r'GMT+0\1:00', regex=True)
-    df_PPDA['date'] = df_PPDA['date'].str.replace(r'GMT\+(\d)$', r'GMT+0\1:00', regex=True)
+    #df_matchstats['date'] = df_matchstats['date'].str.replace(r'GMT\+(\d)$', r'GMT+0\1:00', regex=True)
+    #df_PPDA['date'] = df_PPDA['date'].str.replace(r'GMT\+(\d)$', r'GMT+0\1:00', regex=True)
 
     # Aggregate match statistics and merge with PPDA data
     df_matchstats = df_matchstats.groupby(['team.name', 'label', 'date']).sum().reset_index()
