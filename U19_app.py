@@ -1503,7 +1503,7 @@ def opposition_analysis():
     # Identify and print any problematic entries in 'date'
     non_datetime_entries = df_matchstats[df_matchstats['date'].isna()]
     if not non_datetime_entries.empty:
-        print("Non-datetime values in 'date' column after conversion:", non_datetime_entries[['team.name', 'label', 'date']])
+        st.write("Non-datetime values in 'date' column after conversion:", non_datetime_entries[['team.name', 'label', 'date']])
 
     # Drop rows with NaT in 'date'
     df_matchstats = df_matchstats.dropna(subset=['date'])
