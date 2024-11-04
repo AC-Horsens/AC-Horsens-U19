@@ -1498,14 +1498,6 @@ def opposition_analysis():
     # Convert 'date' column to datetime, handling mixed formats and coercing errors
     df_matchstats['date'] = pd.to_datetime(df_matchstats['date'], errors='coerce')
 
-    # Drop rows where date parsing failed
-    df_matchstats = df_matchstats.dropna(subset=['date'])
-
-    # Ensure all datetime objects are timezone-naive (remove timezone if present)
-    df_matchstats['date'] = df_matchstats['date'].apply(
-        lambda x: x.tz_convert(None) if x.tzinfo else x
-    )
-
     # Drop rows where date parsing failed (NaT)
     df_matchstats['date'] = df_matchstats['date'].astype(str)
     df_matchstats['date'] = df_matchstats['date'].str.slice(0, -9)
