@@ -1497,27 +1497,27 @@ def opposition_analysis():
     # Ensure 'label' column contains only 1 for non-null values
     df_matchstats['label'] = np.where(df_matchstats['label'].notnull(), 1, df_matchstats['label'])
 
-    # Convert 'date' column to datetime and enforce timezone-naive
-    df_matchstats['date'] = pd.to_datetime(df_matchstats['date'], errors='coerce').dt.tz_localize(None)
+    # Attempt to convert 'date' to datetime and drop rows where it fails
+    df_matchstats['date'] = pd.to_datetime(df_matchstats['date'], errors='coerce')
 
-    # Drop rows with NaT in 'date'
+    # Display non-datetime entries for debugging
+    non_datetime_rows = df_matchstats[df_matchstats['date'].isna()]
+    if not non_datetime_rows.empty:
+        st.write("Rows with non-datetime values in 'date' column:", non_datetime_rows[['team.name', 'label', 'date']])
+
+    # Drop rows with NaT in 'date' (non-converted values)
     df_matchstats = df_matchstats.dropna(subset=['date'])
 
-    # Define min_date and max_date as timezone-naive from the start
+    # Verify 'date' column is fully datetime and timezone-naive
+    df_matchstats['date'] = df_matchstats['date'].dt.tz_localize(None)
+
+    # Define date range and options for the slider
     min_date = df_matchstats['date'].min().replace(tzinfo=None)
     max_date = df_matchstats['date'].max().replace(tzinfo=None)
-    
-    # Generate date options for the slider
     date_range = pd.date_range(start=min_date, end=max_date, freq='D')
     date_options = date_range.strftime('%Y-%m-%d').tolist()
 
-    # Ensure min_date and max_date are included in date_options
-    if min_date.strftime('%Y-%m-%d') not in date_options:
-        date_options.insert(0, min_date.strftime('%Y-%m-%d'))
-    if max_date.strftime('%Y-%m-%d') not in date_options:
-        date_options.append(max_date.strftime('%Y-%m-%d'))
-
-    # Default dates for slider
+    # Set up default and selected dates for the slider
     default_start_date = min_date.strftime('%Y-%m-%d')
     default_end_date = max_date.strftime('%Y-%m-%d')
 
@@ -1528,9 +1528,9 @@ def opposition_analysis():
         value=(default_start_date, default_end_date)
     )
 
-    # Convert selected dates to timezone-naive datetime for filtering
-    selected_start_date = pd.to_datetime(selected_start_date, format='%Y-%m-%d').replace(tzinfo=None)
-    selected_end_date = pd.to_datetime(selected_end_date, format='%Y-%m-%d').replace(tzinfo=None)
+    # Convert selected dates to datetime and make timezone-naive
+    selected_start_date = pd.to_datetime(selected_start_date).replace(tzinfo=None)
+    selected_end_date = pd.to_datetime(selected_end_date).replace(tzinfo=None)
 
     # Filter the dataframe based on the selected date range
     df_matchstats = df_matchstats[
@@ -1538,7 +1538,7 @@ def opposition_analysis():
     ]
 
     # Drop unnecessary columns
-    columns_to_drop = ['date', 'player.id', 'player.name', 'matchId', 'position_names', 'position_codes']
+    columns_to_drop = ['player.id', 'player.name', 'matchId', 'position_names', 'position_codes']
     df_matchstats = df_matchstats.drop(columns=[col for col in columns_to_drop if col in df_matchstats.columns])
     # Perform aggregation
     df_matchstats = df_matchstats.groupby(['team.name']).agg({
