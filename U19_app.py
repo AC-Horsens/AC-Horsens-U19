@@ -1500,7 +1500,7 @@ def opposition_analysis():
     # Attempt to convert 'date' to datetime and drop rows where it fails
     df_matchstats['date'] = pd.to_datetime(df_matchstats['date'], errors='coerce')
 
-    # Display non-datetime entries for debugging
+    # Check for any remaining non-datetime values and display them
     non_datetime_rows = df_matchstats[df_matchstats['date'].isna()]
     if not non_datetime_rows.empty:
         st.write("Rows with non-datetime values in 'date' column:", non_datetime_rows[['team.name', 'label', 'date']])
@@ -1508,12 +1508,9 @@ def opposition_analysis():
     # Drop rows with NaT in 'date' (non-converted values)
     df_matchstats = df_matchstats.dropna(subset=['date'])
 
-    # Verify 'date' column is fully datetime and timezone-naive
-    df_matchstats['date'] = df_matchstats['date'].dt.tz_localize(None)
-
     # Define date range and options for the slider
-    min_date = df_matchstats['date'].min().replace(tzinfo=None)
-    max_date = df_matchstats['date'].max().replace(tzinfo=None)
+    min_date = df_matchstats['date'].min()
+    max_date = df_matchstats['date'].max()
     date_range = pd.date_range(start=min_date, end=max_date, freq='D')
     date_options = date_range.strftime('%Y-%m-%d').tolist()
 
@@ -1528,9 +1525,9 @@ def opposition_analysis():
         value=(default_start_date, default_end_date)
     )
 
-    # Convert selected dates to datetime and make timezone-naive
-    selected_start_date = pd.to_datetime(selected_start_date).replace(tzinfo=None)
-    selected_end_date = pd.to_datetime(selected_end_date).replace(tzinfo=None)
+    # Convert selected dates to datetime for filtering
+    selected_start_date = pd.to_datetime(selected_start_date)
+    selected_end_date = pd.to_datetime(selected_end_date)
 
     # Filter the dataframe based on the selected date range
     df_matchstats = df_matchstats[
