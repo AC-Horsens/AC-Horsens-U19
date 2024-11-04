@@ -1501,7 +1501,7 @@ def opposition_analysis():
 
     # Drop rows where date parsing failed (NaT)
     #df_matchstats['date'] = df_matchstats['date'].astype(str)
-    df_matchstats['date'] = df_matchstats['date'].str.slice(0, -9)
+    #df_matchstats['date'] = df_matchstats['date'].str.slice(0, -9)
     date_format = '%Y-%m-%d'
     #df_matchstats['date'] = pd.to_datetime(df_matchstats['date'], format=date_format)
     min_date = df_matchstats['date'].min()
