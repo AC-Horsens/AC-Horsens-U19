@@ -1502,7 +1502,8 @@ def opposition_analysis():
     df_matchstats = df_matchstats.dropna(subset=['date'])
 
     # Ensure all datetime objects are timezone-naive (remove timezone if present)
-    df_matchstats['date'] = df_matchstats['date'].dt.tz_convert(None)
+    if df_matchstats['date'].dt.tz is not None:
+        df_matchstats['date'] = df_matchstats['date'].dt.tz_convert(None)
 
     # Drop rows where date parsing failed (NaT)
     df_matchstats['date'] = df_matchstats['date'].astype(str)
