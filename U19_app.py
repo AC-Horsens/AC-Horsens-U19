@@ -1504,9 +1504,7 @@ def opposition_analysis():
     df_matchstats = df_matchstats.dropna(subset=['date'])
 
     # Drop rows where date parsing failed
-    df_matchstats['date'] = df_matchstats['date'].apply(
-        lambda x: x.tz_convert(None) if hasattr(x, 'tz_convert') else x
-    )
+    df_matchstats['date'] = df_matchstats['date'].dt.date
 
     # Drop rows where date parsing failed (NaT)
     df_matchstats['date'] = df_matchstats['date'].astype(str)
