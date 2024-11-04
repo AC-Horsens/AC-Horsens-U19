@@ -1497,18 +1497,6 @@ def opposition_analysis():
     df_matchstats['date'] = pd.to_datetime(df_matchstats['date'], errors='raise')
 
 
-    # Drop rows with NaT in 'date'
-    df_matchstats = df_matchstats.dropna(subset=['date'])
-
-    # Confirm data types in 'date' column after conversion
-    types_in_date_column = df_matchstats['date'].apply(lambda x: type(x)).value_counts()
-    st.write("Data types in 'date' column after conversion:", types_in_date_column)
-
-    # Display any rows that might still be inconsistent
-    inconsistent_dates = df_matchstats[~df_matchstats['date'].apply(lambda x: isinstance(x, pd.Timestamp))]
-    if not inconsistent_dates.empty:
-        st.write("Rows with inconsistent 'date' types:", inconsistent_dates[['team.name', 'label', 'date']])
-
     # Define date range and options for the slider
     min_date = pd.to_datetime(df_matchstats['date'].min()).replace(tzinfo=None)
     max_date = pd.to_datetime(df_matchstats['date'].max()).replace(tzinfo=None)
