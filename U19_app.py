@@ -1520,8 +1520,8 @@ def opposition_analysis():
         st.write("Rows with inconsistent 'date' types:", inconsistent_dates[['team.name', 'label', 'date']])
 
     # Define date range and options for the slider
-    min_date = df_matchstats['date'].min().tz_localize(None)  # Ensure timezone-naive
-    max_date = df_matchstats['date'].max().tz_localize(None)  # Ensure timezone-naive
+    min_date = pd.to_datetime(df_matchstats['date'].min()).replace(tzinfo=None)  # Ensure timezone-naive
+    max_date = pd.to_datetime(df_matchstats['date'].max()).replace(tzinfo=None)  # Ensure timezone-naive
     date_range = pd.date_range(start=min_date, end=max_date, freq='D')
     date_options = date_range.strftime('%Y-%m-%d')  # Convert dates to strings
 
