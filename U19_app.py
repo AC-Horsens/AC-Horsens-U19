@@ -1499,7 +1499,7 @@ def opposition_analysis():
     df_matchstats['date'] = pd.to_datetime(df_matchstats['date'], errors='coerce')
 
     # Drop rows where date parsing failed
-        invalid_dates = df_matchstats[df_matchstats['date'].isna()]
+    invalid_dates = df_matchstats[df_matchstats['date'].isna()]
     if not invalid_dates.empty:
         print("Invalid date entries detected, which could not be converted to datetime:")
         print(invalid_dates[['team.name', 'label', 'date']])  # Display relevant columns
