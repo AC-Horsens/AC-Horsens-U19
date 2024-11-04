@@ -1478,57 +1478,60 @@ def dashboard():
             Data_types[st.session_state['selected_data3']]()
 
 def opposition_analysis():
-    # Display the full dataframe
+    # Load and preprocess match statistics data
     df_matchstats = load_matchstats()
-    df_matchstats['label'] = df_matchstats['label'] + ' ' + df_matchstats['date']
     df_PPDA = load_PPDA()
+    
+    # Combine 'label' with 'date' and round 'PPDA' values
+    df_matchstats['label'] += ' ' + df_matchstats['date']
     df_PPDA['PPDA'] = df_PPDA['PPDA'].round(2)
-    # Correct the date format in 'date' column if necessary
-    df_matchstats['date'] = df_matchstats['date'].str.replace(r'GMT\+(\d)$', r'GMT+0\1:00')
-    df_PPDA['date'] = df_PPDA['date'].str.replace(r'GMT\+(\d)$', r'GMT+0\1:00')
-    df_matchstats = df_matchstats.groupby(['team.name','label', 'date']).sum().reset_index()
-    df_matchstats = df_matchstats.merge(df_PPDA, on=['team.name','label','date'], how='left')
 
+    # Standardize date format in both dataframes, if necessary
+    df_matchstats['date'] = df_matchstats['date'].str.replace(r'GMT\+(\d)$', r'GMT+0\1:00', regex=True)
+    df_PPDA['date'] = df_PPDA['date'].str.replace(r'GMT\+(\d)$', r'GMT+0\1:00', regex=True)
+
+    # Aggregate match statistics and merge with PPDA data
+    df_matchstats = df_matchstats.groupby(['team.name', 'label', 'date']).sum().reset_index()
+    df_matchstats = df_matchstats.merge(df_PPDA, on=['team.name', 'label', 'date'], how='left')
+
+    # Ensure 'label' column contains only 1 for non-null values
     df_matchstats['label'] = np.where(df_matchstats['label'].notnull(), 1, df_matchstats['label'])
 
-    # Convert the 'date' column to datetime objects with mixed format handling
-    df_matchstats['date'] = pd.to_datetime(df_matchstats['date'], format='mixed', errors='coerce')
-    df_matchstats['date'] = df_matchstats['date'].apply(lambda x: x if pd.notna(x) else '')
+    # Convert 'date' column to datetime format
+    df_matchstats['date'] = pd.to_datetime(df_matchstats['date'], errors='coerce').dt.normalize()
 
+    # Drop rows where 'date' conversion failed (NaT values)
     df_matchstats = df_matchstats.dropna(subset=['date'])
-    # Ensure all datetime objects are timezone-naive (remove timezones)
-    #df_matchstats['date'] = df_matchstats['date'].dt.tz_localize(None)
 
-    # Drop rows where date parsing failed (NaT)
-    df_matchstats['date'] = df_matchstats['date'].astype(str)
-    df_matchstats['date'] = df_matchstats['date'].str.slice(0, -9)
-    date_format = '%Y-%m-%d'
-    df_matchstats['date'] = pd.to_datetime(df_matchstats['date'], format=date_format)
+    # Define date range and options for the slider
     min_date = df_matchstats['date'].min()
     max_date = df_matchstats['date'].max()
-
     date_range = pd.date_range(start=min_date, end=max_date, freq='D')
-    date_options = date_range.strftime(date_format)  # Convert dates to the specified format
+    date_options = date_range.strftime('%Y-%m-%d')  # Convert dates to strings
 
-    default_end_date = date_options[-1]
+    # Default dates for slider
+    default_start_date = (max_date - pd.Timedelta(days=2)).strftime('%Y-%m-%d')
+    default_end_date = max_date.strftime('%Y-%m-%d')
 
-    default_end_date_dt = pd.to_datetime(default_end_date, format=date_format)
-    default_start_date_dt = default_end_date_dt - pd.Timedelta(days=2)  # Subtract 14 days
-    default_start_date = default_start_date_dt.strftime(date_format)  # Convert to string
-
-    # Set the default start and end date values for the select_slider
+    # Set up select_slider for date range selection
     selected_start_date, selected_end_date = st.select_slider(
         'Choose dates',
         options=date_options,
-        value=(min_date.strftime(date_format), max_date.strftime(date_format))
+        value=(min_date.strftime('%Y-%m-%d'), max_date.strftime('%Y-%m-%d'))
     )
-    
-    selected_start_date = pd.to_datetime(selected_start_date, format=date_format)
-    selected_end_date = pd.to_datetime(selected_end_date, format=date_format)
+
+    # Convert selected dates to datetime for filtering
+    selected_start_date = pd.to_datetime(selected_start_date, format='%Y-%m-%d')
+    selected_end_date = pd.to_datetime(selected_end_date, format='%Y-%m-%d')
+
+    # Filter the dataframe based on the selected date range
     df_matchstats = df_matchstats[
         (df_matchstats['date'] >= selected_start_date) & (df_matchstats['date'] <= selected_end_date)
-    ]    
-    df_matchstats = df_matchstats.drop(columns=['date','player.id','player.name','matchId','position_names','position_codes'])
+    ]
+
+    # Drop unnecessary columns
+    columns_to_drop = ['date', 'player.id', 'player.name', 'matchId', 'position_names', 'position_codes']
+    df_matchstats = df_matchstats.drop(columns=[col for col in columns_to_drop if col in df_matchstats.columns])
     # Perform aggregation
     df_matchstats = df_matchstats.groupby(['team.name']).agg({
         'label': 'sum',
