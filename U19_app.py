@@ -1481,10 +1481,14 @@ def opposition_analysis():
     # Load and preprocess match statistics data
     df_matchstats = load_matchstats()
     df_PPDA = load_PPDA()
-    
+
     # Combine 'label' with 'date' and round 'PPDA' values
     df_matchstats['label'] += ' ' + df_matchstats['date']
     df_PPDA['PPDA'] = df_PPDA['PPDA'].round(2)
+
+    # Standardize date format in both dataframes, if necessary
+    df_matchstats['date'] = df_matchstats['date'].str.replace(r'GMT\+(\d)$', r'GMT+0\1:00', regex=True)
+    df_PPDA['date'] = df_PPDA['date'].str.replace(r'GMT\+(\d)$', r'GMT+0\1:00', regex=True)
 
     # Aggregate match statistics and merge with PPDA data
     df_matchstats = df_matchstats.groupby(['team.name', 'label', 'date']).sum().reset_index()
@@ -1493,15 +1497,19 @@ def opposition_analysis():
     # Ensure 'label' column contains only 1 for non-null values
     df_matchstats['label'] = np.where(df_matchstats['label'].notnull(), 1, df_matchstats['label'])
 
+    # Convert 'date' column to datetime and enforce timezone-naive
+    df_matchstats['date'] = pd.to_datetime(df_matchstats['date'], errors='coerce').dt.tz_localize(None)
 
-    df_matchstats['date'] = pd.to_datetime(df_matchstats['date'], errors='raise')
+    # Drop rows with NaT in 'date'
+    df_matchstats = df_matchstats.dropna(subset=['date'])
 
-
-    # Define date range and options for the slider
-    min_date = pd.to_datetime(df_matchstats['date'].min()).replace(tzinfo=None)
-    max_date = pd.to_datetime(df_matchstats['date'].max()).replace(tzinfo=None)
+    # Define min_date and max_date as timezone-naive from the start
+    min_date = df_matchstats['date'].min().replace(tzinfo=None)
+    max_date = df_matchstats['date'].max().replace(tzinfo=None)
+    
+    # Generate date options for the slider
     date_range = pd.date_range(start=min_date, end=max_date, freq='D')
-    date_options = date_range.strftime('%Y-%m-%d').tolist()  # Convert dates to strings and make a list
+    date_options = date_range.strftime('%Y-%m-%d').tolist()
 
     # Ensure min_date and max_date are included in date_options
     if min_date.strftime('%Y-%m-%d') not in date_options:
@@ -1520,7 +1528,7 @@ def opposition_analysis():
         value=(default_start_date, default_end_date)
     )
 
-    # Convert selected dates to datetime for filtering
+    # Convert selected dates to timezone-naive datetime for filtering
     selected_start_date = pd.to_datetime(selected_start_date, format='%Y-%m-%d').replace(tzinfo=None)
     selected_end_date = pd.to_datetime(selected_end_date, format='%Y-%m-%d').replace(tzinfo=None)
 
