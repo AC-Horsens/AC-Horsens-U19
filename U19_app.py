@@ -1478,10 +1478,10 @@ def dashboard():
             Data_types[st.session_state['selected_data3']]()
 
 def opposition_analysis():
-    # Load and preprocess match statistics data as usual...
+    # Load and preprocess match statistics data
     df_matchstats = load_matchstats()
     df_PPDA = load_PPDA()
-    
+
     # Combine 'label' with 'date' and round 'PPDA' values
     df_matchstats['label'] += ' ' + df_matchstats['date']
     df_PPDA['PPDA'] = df_PPDA['PPDA'].round(2)
@@ -1497,8 +1497,8 @@ def opposition_analysis():
     # Set 'label' column to 1 for non-null values
     df_matchstats['label'] = np.where(df_matchstats['label'].notnull(), 1, df_matchstats['label'])
 
-    # Convert 'date' column to datetime (without timezone handling)
-    df_matchstats['date'] = pd.to_datetime(df_matchstats['date'], errors='coerce')
+    # Convert 'date' column to UTC, then make it timezone-naive
+    df_matchstats['date'] = pd.to_datetime(df_matchstats['date'], errors='coerce', utc=True).dt.tz_convert(None)
 
     # Drop rows with NaT in 'date'
     df_matchstats = df_matchstats.dropna(subset=['date'])
@@ -1526,7 +1526,7 @@ def opposition_analysis():
         value=(default_start_date, default_end_date)
     )
 
-    # Convert selected dates to datetime for filtering
+    # Convert selected dates to datetime (naive) for filtering
     selected_start_date = pd.to_datetime(selected_start_date, format='%Y-%m-%d')
     selected_end_date = pd.to_datetime(selected_end_date, format='%Y-%m-%d')
 
