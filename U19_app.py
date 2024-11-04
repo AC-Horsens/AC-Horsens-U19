@@ -1499,15 +1499,16 @@ def opposition_analysis():
     df_matchstats['date'] = pd.to_datetime(df_matchstats['date'], errors='coerce')
 
     # Drop rows where date parsing failed
+        invalid_dates = df_matchstats[df_matchstats['date'].isna()]
+    if not invalid_dates.empty:
+        print("Invalid date entries detected, which could not be converted to datetime:")
+        print(invalid_dates[['team.name', 'label', 'date']])  # Display relevant columns
+
+    # Drop rows with NaT in 'date' column
     df_matchstats = df_matchstats.dropna(subset=['date'])
-    
-    # Confirm 'date' column is in datetime format
-    if not pd.api.types.is_datetime64_any_dtype(df_matchstats['date']):
-        raise ValueError("Date column could not be converted to datetime.")
 
-    # Ensure all datetime objects are timezone-naive (remove timezone if present)
+    # Ensure timezone-naive dates
     df_matchstats['date'] = df_matchstats['date'].apply(lambda x: x.tz_convert(None) if x.tzinfo else x)
-
 
     # Drop rows where date parsing failed (NaT)
     df_matchstats['date'] = df_matchstats['date'].astype(str)
