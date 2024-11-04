@@ -1500,13 +1500,22 @@ def opposition_analysis():
     # Convert 'date' column to datetime, coercing errors to NaT
     df_matchstats['date'] = pd.to_datetime(df_matchstats['date'], errors='coerce')
 
-    # Identify and print any problematic entries in 'date'
+    # Identify and display non-datetime entries in 'date' (should be NaT if conversion failed)
     non_datetime_entries = df_matchstats[df_matchstats['date'].isna()]
     if not non_datetime_entries.empty:
         st.write("Non-datetime values in 'date' column after conversion:", non_datetime_entries[['team.name', 'label', 'date']])
 
     # Drop rows with NaT in 'date'
     df_matchstats = df_matchstats.dropna(subset=['date'])
+
+    # **Second Check**: Confirm all entries are datetime and display data types
+    types_in_date_column = df_matchstats['date'].apply(lambda x: type(x)).value_counts()
+    st.write("Data types in 'date' column after conversion:", types_in_date_column)
+
+    # Display rows with any type inconsistencies in 'date' column
+    inconsistent_dates = df_matchstats[~df_matchstats['date'].apply(lambda x: isinstance(x, pd.Timestamp))]
+    if not inconsistent_dates.empty:
+        st.write("Rows with inconsistent 'date' types:", inconsistent_dates[['team.name', 'label', 'date']])
 
     # Final check to confirm all values in 'date' are datetime
     if not pd.api.types.is_datetime64_any_dtype(df_matchstats['date']):
