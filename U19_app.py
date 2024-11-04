@@ -1493,10 +1493,10 @@ def opposition_analysis():
 
     # Convert the 'date' column to datetime objects with mixed format handling
     df_matchstats['date'] = pd.to_datetime(df_matchstats['date'], format='mixed', errors='coerce')
+    df_matchstats = df_matchstats.dropna(subset=['date'])
 
     # Ensure all datetime objects are timezone-naive (remove timezones)
     df_matchstats['date'] = df_matchstats['date'].dt.tz_convert(None)
-    df_matchstats = df_matchstats.dropna(subset=['date'])
 
     # Drop rows where date parsing failed (NaT)
     df_matchstats['date'] = df_matchstats['date'].astype(str)
