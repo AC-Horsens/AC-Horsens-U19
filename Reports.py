@@ -1029,7 +1029,16 @@ def create_pdf_game_report(game_data, df_xg_agg, merged_df, df_possession_stats,
     print(f'{label} report created')
 
 for index, row in horsens_df.iterrows():
-    create_pdf_game_report(row, df_xg_agg, merged_df, df_possession_stats,position_dataframes)
+    # Define the file path based on the label
+    label = row['label']  # Adjust this to the correct column name for your label
+    file_path = f"Match reports/Match_Report_{label}.pdf"
+    
+    # Check if the file already exists
+    if not os.path.exists(file_path):
+        # If it doesn't exist, create the PDF
+        create_pdf_game_report(row, df_xg_agg, merged_df, df_possession_stats, position_dataframes)
+    else:
+        print(f"Skipping creation for {label}, PDF already exists.")
 
 def create_pdf_progress_report(horsens_df, total_expected_points_combined):
     today = date.today()
