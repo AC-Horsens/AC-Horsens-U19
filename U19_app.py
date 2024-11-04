@@ -1496,7 +1496,7 @@ def opposition_analysis():
     df_matchstats['date'] = df_matchstats['date'].apply(lambda x: x if pd.notna(x) else '')
 
     df_matchstats = df_matchstats.dropna(subset=['date'])
-
+    st.dataframe(df_matchstats)
     # Ensure all datetime objects are timezone-naive (remove timezones)
     df_matchstats['date'] = df_matchstats['date'].dt.tz_convert(None)
 
