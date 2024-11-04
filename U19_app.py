@@ -1487,8 +1487,8 @@ def opposition_analysis():
     df_PPDA['PPDA'] = df_PPDA['PPDA'].round(2)
 
     # Standardize date format in both dataframes, if necessary
-    #df_matchstats['date'] = df_matchstats['date'].str.replace(r'GMT\+(\d)$', r'GMT+0\1:00', regex=True)
-    #df_PPDA['date'] = df_PPDA['date'].str.replace(r'GMT\+(\d)$', r'GMT+0\1:00', regex=True)
+    df_matchstats['date'] = df_matchstats['date'].str.replace(r'GMT\+(\d)$', r'GMT+0\1:00', regex=True)
+    df_PPDA['date'] = df_PPDA['date'].str.replace(r'GMT\+(\d)$', r'GMT+0\1:00', regex=True)
 
     # Aggregate match statistics and merge with PPDA data
     df_matchstats = df_matchstats.groupby(['team.name', 'label', 'date']).sum().reset_index()
@@ -1497,11 +1497,15 @@ def opposition_analysis():
     # Ensure 'label' column contains only 1 for non-null values
     df_matchstats['label'] = np.where(df_matchstats['label'].notnull(), 1, df_matchstats['label'])
 
-    # Convert 'date' column to datetime format
-    df_matchstats['date'] = pd.to_datetime(df_matchstats['date'], errors='coerce').dt.normalize()
+    # Convert 'date' column to datetime, ensuring non-datetimes are coerced to NaT
+    df_matchstats['date'] = pd.to_datetime(df_matchstats['date'], errors='coerce')
 
-    # Drop rows where 'date' conversion failed (NaT values)
+    # Drop rows with NaT values in 'date'
     df_matchstats = df_matchstats.dropna(subset=['date'])
+
+    # Verify that all values in 'date' are datetime, raising an error if not
+    if not pd.api.types.is_datetime64_any_dtype(df_matchstats['date']):
+        raise ValueError("Date column still contains non-datetime values after conversion.")
 
     # Define date range and options for the slider
     min_date = df_matchstats['date'].min()
