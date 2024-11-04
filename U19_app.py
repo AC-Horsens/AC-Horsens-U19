@@ -1497,33 +1497,17 @@ def opposition_analysis():
     # Ensure 'label' column contains only 1 for non-null values
     df_matchstats['label'] = np.where(df_matchstats['label'].notnull(), 1, df_matchstats['label'])
 
-    # Debugging: Show unique values in 'date' before conversion
-    st.write("Unique values in 'date' column before conversion:", df_matchstats['date'].unique())
-
-    # Attempt to convert 'date' to datetime with error handling
-    try:
-        df_matchstats['date'] = pd.to_datetime(df_matchstats['date'], errors='raise')
-    except Exception as e:
-        st.write("Error during datetime conversion:", e)
-        return
+    # Convert 'date' column to datetime, coercing errors to NaT
+    df_matchstats['date'] = pd.to_datetime(df_matchstats['date'], errors='coerce').dt.tz_localize(None)
 
     # Drop rows with NaT in 'date'
     df_matchstats = df_matchstats.dropna(subset=['date'])
 
-    # Confirm data types in 'date' column after conversion
-    types_in_date_column = df_matchstats['date'].apply(lambda x: type(x)).value_counts()
-    st.write("Data types in 'date' column after conversion:", types_in_date_column)
-
-    # Display any rows that might still be inconsistent
-    inconsistent_dates = df_matchstats[~df_matchstats['date'].apply(lambda x: isinstance(x, pd.Timestamp))]
-    if not inconsistent_dates.empty:
-        st.write("Rows with inconsistent 'date' types:", inconsistent_dates[['team.name', 'label', 'date']])
-
     # Define date range and options for the slider
-    min_date = pd.to_datetime(df_matchstats['date'].min()).replace(tzinfo=None)
-    max_date = pd.to_datetime(df_matchstats['date'].max()).replace(tzinfo=None)
+    min_date = df_matchstats['date'].min().replace(tzinfo=None)  # Ensure timezone-naive
+    max_date = df_matchstats['date'].max().replace(tzinfo=None)  # Ensure timezone-naive
     date_range = pd.date_range(start=min_date, end=max_date, freq='D')
-    date_options = date_range.strftime('%Y-%m-%d').tolist()  # Convert dates to strings and make a list
+    date_options = date_range.strftime('%Y-%m-%d').tolist()  # Convert dates to strings
 
     # Ensure min_date and max_date are included in date_options
     if min_date.strftime('%Y-%m-%d') not in date_options:
@@ -1542,9 +1526,9 @@ def opposition_analysis():
         value=(default_start_date, default_end_date)
     )
 
-    # Convert selected dates to datetime for filtering
-    selected_start_date = pd.to_datetime(selected_start_date, format='%Y-%m-%d')
-    selected_end_date = pd.to_datetime(selected_end_date, format='%Y-%m-%d')
+    # Convert selected dates to timezone-naive datetime for filtering
+    selected_start_date = pd.to_datetime(selected_start_date, format='%Y-%m-%d').replace(tzinfo=None)
+    selected_end_date = pd.to_datetime(selected_end_date, format='%Y-%m-%d').replace(tzinfo=None)
 
     # Filter the dataframe based on the selected date range
     df_matchstats = df_matchstats[
