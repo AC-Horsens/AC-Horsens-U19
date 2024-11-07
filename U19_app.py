@@ -719,7 +719,7 @@ def plot_heatmap_location(data, title):
     fig.set_facecolor('#22312b')
     bin_statistic = pitch.bin_statistic(data['location.x'], data['location.y'], statistic='count', bins=(50, 25))
     bin_statistic['statistic'] = gaussian_filter(bin_statistic['statistic'], 1)
-    pcm = pitch.heatmap(bin_statistic, ax=ax, cmap='hot', edgecolors='black')
+    pcm = pitch.heatmap(bin_statistic, ax=ax, cmap='hot')
     st.write(title)  # Use st.title() instead of plt.title()
     st.pyplot(fig)
 
@@ -729,7 +729,7 @@ def plot_heatmap_end_location(data, title):
     fig.set_facecolor('#22312b')
     bin_statistic = pitch.bin_statistic(data['pass.endLocation.x'], data['pass.endLocation.y'], statistic='count', bins=(50, 25))
     bin_statistic['statistic'] = gaussian_filter(bin_statistic['statistic'], 1)
-    pcm = pitch.heatmap(bin_statistic, ax=ax, cmap='hot', edgecolors='black')
+    pcm = pitch.heatmap(bin_statistic, ax=ax, cmap='hot')
     st.write(title)  # Use st.title() instead of plt.title()
     st.pyplot(fig)
 
