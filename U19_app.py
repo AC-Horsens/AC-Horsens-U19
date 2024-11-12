@@ -153,8 +153,7 @@ def Process_data_spillere(events,df_xg,df_matchstats,groundduels):
         df_spillende_stoppertotal = df_spillende_stoppertotal[df_spillende_stoppertotal['total_minutesOnField total'].astype(int) >= minutter_total]
         df_spillende_stoppertotal = df_spillende_stoppertotal.sort_values('Total score',ascending = False)
         return df_spillende_stopper
-  
-  
+   
     def defending_central_defender():
         df_forsvarende_stopper = df_scouting[df_scouting['player_codes'].str.contains('cb')]
         df_forsvarende_stopper['total_minutesOnField'] = df_forsvarende_stopper['total_minutesOnField'].astype(int)
@@ -209,19 +208,26 @@ def Process_data_spillere(events,df_xg,df_matchstats,groundduels):
         df_balanced_central_defender['Defending'] = df_balanced_central_defender[['percent_duelsWon score','totalDuels score','stoppedProgressPercentage score','stoppedProgressPercentage score','recoveredPossessionPercentage score','stoppedProgressPercentage score','opponents xg score','opponents xg score','percent_aerialDuelsWon score', 'average_interceptions score', 'average_interceptions score', 'ballRecovery score']].mean(axis=1)
         df_balanced_central_defender['Possession value added'] = df_balanced_central_defender[['average_successfulPassesToFinalThird score','percent_successfulPassesToFinalThird score','percent_successfulProgressivePasses score','percent_successfulProgressivePasses score','average_progressivePasses score','average_losses score']].mean(axis=1)
         df_balanced_central_defender['Passing'] = df_balanced_central_defender[['percent_successfulPasses score', 'percent_successfulPasses score','percent_successfulPassesToFinalThird score']].mean(axis=1)
-        df_balanced_central_defender['Total score'] = df_balanced_central_defender[['Defending','Defending','Possession value added','Passing']].mean(axis=1)
 
-        df_balanced_central_defender = df_balanced_central_defender[['player.name','team.name','position_codes','label','total_minutesOnField','Defending','Possession value added','Passing','Total score']]
+        df_balanced_central_defender = calculate_score(df_balanced_central_defender, 'Defending', 'Defending_')
+        df_balanced_central_defender = calculate_score(df_balanced_central_defender, 'Passing', 'Passing_')
+        df_balanced_central_defender = calculate_score(df_balanced_central_defender, 'Possession value added', 'Possession_value_added')
+
+
+        df_balanced_central_defender['Total score'] = df_balanced_central_defender[['Defending_','Defending_','Possession_value_added','Passing_']].mean(axis=1)
+
+        df_balanced_central_defender = df_balanced_central_defender[['player.name','team.name','position_codes','label','total_minutesOnField','Defending_','Possession_value_added','Passing_','Total score']]
         
-        df_balanced_central_defendertotal = df_balanced_central_defender[['player.name','team.name','position_codes','total_minutesOnField','Defending','Possession value added','Passing','Total score']]
+        df_balanced_central_defendertotal = df_balanced_central_defender[['player.name','team.name','position_codes','total_minutesOnField','Defending_','Possession_value_added','Passing_','Total score']]
         df_balanced_central_defendertotal = df_balanced_central_defendertotal.groupby(['player.name','team.name','position_codes']).mean().reset_index()
         minutter = df_balanced_central_defender.groupby(['player.name', 'team.name','position_codes'])['total_minutesOnField'].sum().astype(float).reset_index()
         df_balanced_central_defendertotal['total_minutesOnField total'] = minutter['total_minutesOnField']
         df_balanced_central_defender = df_balanced_central_defender.sort_values('Total score',ascending = False)
-        df_balanced_central_defendertotal = df_balanced_central_defendertotal[['player.name','team.name','position_codes','total_minutesOnField total','Defending','Possession value added','Passing','Total score']]
+        df_balanced_central_defendertotal = df_balanced_central_defendertotal[['player.name','team.name','position_codes','total_minutesOnField total','Defending_','Possession_value_added','Passing_','Total score']]
         df_balanced_central_defendertotal = df_balanced_central_defendertotal[df_balanced_central_defendertotal['total_minutesOnField total'].astype(int) >= minutter_total]
         df_balanced_central_defendertotal = df_balanced_central_defendertotal.sort_values('Total score',ascending = False)
         return df_balanced_central_defender
+
     
     def fullbacks():
         df_backs = df_scouting[(df_scouting['position_codes'].str.contains('rb') |df_scouting['position_codes'].str.contains('lb') |df_scouting['position_codes'].str.contains('lwb') |df_scouting['position_codes'].str.contains('rwb'))]        
