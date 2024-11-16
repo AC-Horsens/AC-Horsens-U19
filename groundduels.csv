@@ -2225,8 +2225,6 @@ AGF U19,"AGF U19 - OB U19, 2 - 2 (P)",M. Kannegaard,7.0,29.0,True,False
 AGF U19,"AGF U19 - OB U19, 2 - 2 (P)",E. Ime,26.0,86.0,False,False
 AGF U19,"AGF U19 - OB U19, 2 - 2 (P)",A. Halsgaard,16.0,86.0,False,False
 AGF U19,"AGF U19 - OB U19, 2 - 2 (P)",E. Ime,12.0,72.0,False,False
-OB U19,"AGF U19 - OB U19, 2 - 2 (P)",,11.0,72.0,False,False
-OB U19,"AGF U19 - OB U19, 2 - 2 (P)",N. Juul-Sandberg,10.0,87.0,False,False
 OB U19,"AGF U19 - OB U19, 2 - 2 (P)",V. Bolander,10.0,63.0,True,False
 AGF U19,"AGF U19 - OB U19, 2 - 2 (P)",F. Emmery,13.0,8.0,False,False
 AGF U19,"AGF U19 - OB U19, 2 - 2 (P)",E. Helt,6.0,67.0,True,False
@@ -2243,7 +2241,6 @@ OB U19,"AGF U19 - OB U19, 2 - 2 (P)",V. Bolander,54.0,54.0,True,False
 AGF U19,"AGF U19 - OB U19, 2 - 2 (P)",E. Helt,46.0,55.0,False,False
 OB U19,"AGF U19 - OB U19, 2 - 2 (P)",N. Juul-Sandberg,45.0,72.0,True,False
 OB U19,"AGF U19 - OB U19, 2 - 2 (P)",,70.0,86.0,True,True
-AGF U19,"AGF U19 - OB U19, 2 - 2 (P)",A. Halsgaard,41.0,86.0,True,False
 AGF U19,"AGF U19 - OB U19, 2 - 2 (P)",F. Emmery,36.0,25.0,True,True
 OB U19,"AGF U19 - OB U19, 2 - 2 (P)",M. McCoy,13.0,73.0,False,False
 OB U19,"AGF U19 - OB U19, 2 - 2 (P)",,14.0,76.0,False,False
@@ -2338,7 +2335,8 @@ OB U19,"AGF U19 - OB U19, 2 - 2 (P)",R. Helveg,25.0,38.0,False,False
 OB U19,"AGF U19 - OB U19, 2 - 2 (P)",N. Lassen,14.0,11.0,True,True
 OB U19,"AGF U19 - OB U19, 2 - 2 (P)",M. Andersen,39.0,34.0,True,False
 AGF U19,"AGF U19 - OB U19, 2 - 2 (P)",M. Steffensen,74.0,92.0,False,False
-OB U19,"AGF U19 - OB U19, 2 - 2 (P)",R. Helveg,31.0,9.0,True,False
+OB U19,"AGF U19 - OB U19, 2 - 2 (P)",R. Helveg,29.0,10.0,True,True
+AGF U19,"AGF U19 - OB U19, 2 - 2 (P)",S. Tchamche,69.0,85.0,True,True
 AGF U19,"AGF U19 - OB U19, 2 - 2 (P)",L. Falk Hansen,25.0,20.0,False,False
 AGF U19,"AGF U19 - OB U19, 2 - 2 (P)",M. Steffensen,2.0,85.0,True,False
 OB U19,"AGF U19 - OB U19, 2 - 2 (P)",G. Wulff,50.0,8.0,True,False
@@ -2367,8 +2365,7 @@ OB U19,"AGF U19 - OB U19, 2 - 2 (P)",D. Amtrup,9.0,33.0,True,True
 OB U19,"AGF U19 - OB U19, 2 - 2 (P)",M. Abrahamsen,19.0,14.0,True,False
 OB U19,"AGF U19 - OB U19, 2 - 2 (P)",G. Wulff,17.0,18.0,False,False
 OB U19,"AGF U19 - OB U19, 2 - 2 (P)",M. Abrahamsen,26.0,6.0,True,True
-AGF U19,"AGF U19 - OB U19, 2 - 2 (P)",,71.0,88.0,True,True
-OB U19,"AGF U19 - OB U19, 2 - 2 (P)",,26.0,7.0,True,True
+AGF U19,"AGF U19 - OB U19, 2 - 2 (P)",F. Emmery,73.0,90.0,False,False
 OB U19,"AGF U19 - OB U19, 2 - 2 (P)",D. Amtrup,47.0,27.0,True,True
 AGF U19,"AGF U19 - OB U19, 2 - 2 (P)",A. Halsgaard,42.0,19.0,False,False
 OB U19,"AGF U19 - OB U19, 2 - 2 (P)",S. Zografos,47.0,50.0,True,False
