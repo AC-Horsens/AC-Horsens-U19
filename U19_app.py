@@ -1824,22 +1824,35 @@ def sportspsykologiske_målinger():
 
                     # Plot each question in the selected category
         for col in categories[selected_category]:
-            if col in filtered_df.columns:  # Check if column exists
-                st.write(f"Processing column: {col}")  # Debugging statement
-                filtered_df[col] = pd.to_numeric(filtered_df[col], errors='coerce')  # Convert to numeric
-                valid_data = filtered_df[['Month', col]].dropna()  # Remove NaN values
-                if not valid_data.empty:  # Check if valid_data has rows
-                    plt.figure(figsize=(8, 6))
-                    plt.scatter(valid_data['Month'], valid_data[col], label=col)
-                    plt.xlim(0, 12)
-                    plt.ylim(1, 7)
-                    plt.title(f'Scatterplot of {col}')
-                    plt.xlabel('Month')
-                    plt.ylabel('Score')
-                    plt.legend()
-                    st.pyplot(plt)
+            # Check if the column exists in the filtered DataFrame
+            if col in filtered_df.columns:
+                st.write(f"Processing column: {col}")  # Debugging information
+
+                # Ensure column is a Series
+                if isinstance(filtered_df[col], pd.Series):
+                    # Convert to numeric, coerce invalid values to NaN
+                    filtered_df[col] = pd.to_numeric(filtered_df[col], errors='coerce')
+
+                    # Check if the column has valid (non-NaN) data
+                    valid_data = filtered_df[['Month', col]].dropna()
+                    if not valid_data.empty:
+                        # Plot the data
+                        plt.figure(figsize=(8, 6))
+                        plt.scatter(valid_data['Month'], valid_data[col], label=col)
+                        plt.xlim(0, 12)
+                        plt.ylim(1, 7)
+                        plt.title(f'Scatterplot of {col}')
+                        plt.xlabel('Month')
+                        plt.ylabel('Score')
+                        plt.legend()
+                        st.pyplot(plt)
+                    else:
+                        st.warning(f"No valid data found for column {col}.")
+                else:
+                    st.error(f"Column {col} is not a valid Series. Skipping.")
             else:
                 st.warning(f"Column {col} not found in filtered DataFrame.")
+
             # Plot average scores for the selected category
             plt.figure(figsize=(8, 6))
             valid_category_avg = filtered_df[['Month', f'{selected_category}_Average']].dropna()
