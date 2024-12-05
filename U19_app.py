@@ -1744,6 +1744,7 @@ def sportspsykologiske_målinger():
         # Initialize Google Sheets connection
         gc = gspread.service_account(r'wellness-1123-178fea106d0a.json')
 
+        # Function to open a Google Sheet and return it as a DataFrame
         def get_sheet_as_dataframe(sheet_url, worksheet_name):
             sh = gc.open_by_url(sheet_url)
             ws = sh.worksheet(worksheet_name)
@@ -1751,6 +1752,7 @@ def sportspsykologiske_målinger():
             df = pd.DataFrame(data[1:], columns=data[0])
             return df
 
+        # Function to process the DataFrame: convert 'Tidsstempel' to datetime, extract the month, and rename columns
         def process_dataframe(dataframe, suffix):
             dataframe['Tidsstempel'] = pd.to_datetime(dataframe['Tidsstempel'], format='%d/%m/%Y %H.%M.%S', errors='coerce')
             dataframe.dropna(subset=['Tidsstempel'], inplace=True)
@@ -1759,72 +1761,54 @@ def sportspsykologiske_målinger():
             dataframe = dataframe.rename(columns={col: f"{col}_{suffix}" for col in dataframe.columns if col not in ['Your Name', 'Month']})
             return dataframe
 
+        # Function to extract numeric values from mixed responses
         def extract_numeric(value):
             if isinstance(value, str):
                 match = re.match(r'^(\d+)', value.strip())
                 if match:
                     return int(match.group(1))
             return pd.NA
+
         
         df = process_dataframe(get_sheet_as_dataframe('https://docs.google.com/spreadsheets/d/1h4WAhpuT6uQ_jp6bfMUUgMrhGtXnbqaaz1p6yUZCPbM/edit?resourcekey=&gid=1240737519#gid=1240737519', 'Formularsvar 1'), 'CD-RISC')
         df1 = process_dataframe(get_sheet_as_dataframe('https://docs.google.com/spreadsheets/d/1zXEFfrD_meajd32Hy_TT0-yT5v9vi5WdQHYI51yfZH4/edit?resourcekey=&gid=198410459#gid=198410459', 'Formularsvar 1'), 'PNSS-S')
         df2 = process_dataframe(get_sheet_as_dataframe('https://docs.google.com/spreadsheets/d/1GGtgwYYoLWQ1yS9tyM2-2MVvrQNgMpVECRjA3-H2O8A/edit?resourcekey=&gid=698467196#gid=698467196', 'Formularsvar 1'), 'TMID')
         df3 = process_dataframe(get_sheet_as_dataframe('https://docs.google.com/spreadsheets/d/1Z_MANeXqcyMrhnoqbk_9bHy1Ic3-VGlnRT0vcn6Bb5k/edit?resourcekey=&gid=1340211860#gid=1340211860', 'Formularsvar 1'), 'PSS')
 
+        # Merge DataFrames
         merged_df = df.merge(df1, on=['Your Name', 'Month'], how='outer') \
                       .merge(df2, on=['Your Name', 'Month'], how='outer') \
                       .merge(df3, on=['Your Name', 'Month'], how='outer')
-        merged_df = merged_df[merged_df['Your Name'] != ""]  # Remove rows where 'Your Name' is empty
 
+        # Debugging: Check column data types before processing
+        st.write("DataFrame before numeric conversion:")
+        st.write(merged_df.dtypes)
+
+        # Clean responses to extract numeric values
         for col in merged_df.columns:
             if col not in ['Your Name', 'Month']:
+                st.write(f"Processing column: {col}")  # Debugging: Show column being processed
+                st.write(merged_df[col].head())  # Debugging: Show first few rows of the column
                 merged_df[col] = merged_df[col].apply(extract_numeric)
-
-        # Convert all columns to numeric where applicable
-        for col in merged_df.columns:
-            if col not in ['Your Name', 'Month']:
                 merged_df[col] = pd.to_numeric(merged_df[col], errors='coerce')
 
+        # Debugging: Check column data types after processing
+        st.write("DataFrame after numeric conversion:")
+        st.write(merged_df.dtypes)
 
-        # Define columns to reverse for normalization
-        columns_to_reverse = [
-            col for col in merged_df.columns 
-            if any(key in col for key in ['Frustration', 'Indifference'])
-        ]
-        pss_reverse_items = ['PSS_4', 'PSS_5', 'PSS_7', 'PSS_8']
-        columns_to_reverse.extend(pss_reverse_items)
-
-        # Reverse scores for normalization
-        def reverse_scores(df, columns, min_val=1, max_val=7):
-            for col in columns:
-                if col in df.columns:
-                    df[col] = pd.to_numeric(df[col], errors='coerce')
-                    df[col] = max_val + min_val - df[col]
-            return df
-
-        # Reverse PSS-specific scores (0–4 scale)
-        def reverse_pss_scores(df, columns, min_val=0, max_val=4):
-            for col in columns:
-                if col in df.columns:
-                    df[col] = pd.to_numeric(df[col], errors='coerce')
-                    df[col] = max_val + min_val - df[col]
-            return df
-
-        merged_df = reverse_scores(merged_df, columns_to_reverse)
-        merged_df = reverse_pss_scores(merged_df, pss_reverse_items)
-
-        # Calculate category averages
+        # Define categories for visualization
         categories = {
-            'CD-RISC': [col for col in merged_df.columns if 'CD-RISC' in col],
+            'CD_RISC': [col for col in merged_df.columns if 'CD_RISC' in col],
             'PNSS-S': [col for col in merged_df.columns if 'PNSS-S' in col],
             'TMID': [col for col in merged_df.columns if 'TMID' in col],
             'PSS': [col for col in merged_df.columns if 'PSS' in col]
         }
 
+        # Calculate category averages
         for category, columns in categories.items():
-            merged_df[f'{category}_Average'] = merged_df[columns].apply(pd.to_numeric, errors='coerce').mean(axis=1)
+            merged_df[f'{category}_Average'] = merged_df[columns].mean(axis=1)
 
-        # Streamlit UI
+        # Streamlit UI for player and category selection
         players = merged_df['Your Name'].unique()
         col1, col2 = st.columns(2)
 
@@ -1832,26 +1816,17 @@ def sportspsykologiske_målinger():
             chosen_player = st.selectbox('Choose player', players)
 
         with col2:
-            selected_category = st.selectbox('Select a category', ['CD-RISC', 'PNSS-S', 'TMID', 'PSS'])
+            selected_category = st.selectbox('Select a category', ['CD_RISC', 'PNSS-S', 'TMID', 'PSS'])
 
+        # Visualization for the selected player and category
         if chosen_player:
             filtered_df = merged_df[merged_df['Your Name'] == chosen_player]
 
-                    # Plot each question in the selected category
-        for col in categories[selected_category]:
-            # Check if the column exists in the filtered DataFrame
-            if col in filtered_df.columns:
-                st.write(f"Processing column: {col}")  # Debugging information
-
-                # Ensure column is a Series
-                if isinstance(filtered_df[col], pd.Series):
-                    # Convert to numeric, coerce invalid values to NaN
-                    filtered_df[col] = pd.to_numeric(filtered_df[col], errors='coerce')
-
-                    # Check if the column has valid (non-NaN) data
+            # Plot each question in the selected category
+            for col in categories[selected_category]:
+                if col in filtered_df.columns:
                     valid_data = filtered_df[['Month', col]].dropna()
                     if not valid_data.empty:
-                        # Plot the data
                         plt.figure(figsize=(8, 6))
                         plt.scatter(valid_data['Month'], valid_data[col], label=col)
                         plt.xlim(0, 12)
@@ -1861,25 +1836,20 @@ def sportspsykologiske_målinger():
                         plt.ylabel('Score')
                         plt.legend()
                         st.pyplot(plt)
-                    else:
-                        st.warning(f"No valid data found for column {col}.")
-                else:
-                    st.error(f"Column {col} is not a valid Series. Skipping.")
-            else:
-                st.warning(f"Column {col} not found in filtered DataFrame.")
 
             # Plot average scores for the selected category
-            plt.figure(figsize=(8, 6))
-            valid_category_avg = filtered_df[['Month', f'{selected_category}_Average']].dropna()
-            if not valid_category_avg.empty:
-                plt.scatter(valid_category_avg['Month'], valid_category_avg[f'{selected_category}_Average'], label=f'{selected_category} Average')
-                plt.xlim(0, 12)
-                plt.ylim(1, 7)
-                plt.title(f'Average Score for {selected_category}')
-                plt.xlabel('Month')
-                plt.ylabel('Average Score')
-                plt.legend()
-                st.pyplot(plt)
+            if f'{selected_category}_Average' in filtered_df.columns:
+                valid_category_avg = filtered_df[['Month', f'{selected_category}_Average']].dropna()
+                if not valid_category_avg.empty:
+                    plt.figure(figsize=(8, 6))
+                    plt.scatter(valid_category_avg['Month'], valid_category_avg[f'{selected_category}_Average'], label=f'{selected_category} Average')
+                    plt.xlim(0, 12)
+                    plt.ylim(1, 7)
+                    plt.title(f'Average Score for {selected_category}')
+                    plt.xlabel('Month')
+                    plt.ylabel('Average Score')
+                    plt.legend()
+                    st.pyplot(plt)
 
         # Overall average plot for all players
         plt.figure(figsize=(8, 6))
