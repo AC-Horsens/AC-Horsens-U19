@@ -1822,11 +1822,13 @@ def sportspsykologiske_målinger():
         if chosen_player:
             filtered_df = merged_df[merged_df['Your Name'] == chosen_player]
 
-            # Plot each question in the selected category
-            for col in categories[selected_category]:
-                filtered_df[col] = pd.to_numeric(filtered_df[col], errors='coerce')
-                valid_data = filtered_df[['Month', col]].dropna()
-                if not valid_data.empty:
+                    # Plot each question in the selected category
+        for col in categories[selected_category]:
+            if col in filtered_df.columns:  # Check if column exists
+                st.write(f"Processing column: {col}")  # Debugging statement
+                filtered_df[col] = pd.to_numeric(filtered_df[col], errors='coerce')  # Convert to numeric
+                valid_data = filtered_df[['Month', col]].dropna()  # Remove NaN values
+                if not valid_data.empty:  # Check if valid_data has rows
                     plt.figure(figsize=(8, 6))
                     plt.scatter(valid_data['Month'], valid_data[col], label=col)
                     plt.xlim(0, 12)
@@ -1836,7 +1838,8 @@ def sportspsykologiske_målinger():
                     plt.ylabel('Score')
                     plt.legend()
                     st.pyplot(plt)
-
+            else:
+                st.warning(f"Column {col} not found in filtered DataFrame.")
             # Plot average scores for the selected category
             plt.figure(figsize=(8, 6))
             valid_category_avg = filtered_df[['Month', f'{selected_category}_Average']].dropna()
