@@ -1761,11 +1761,10 @@ def sportspsykologiske_målinger():
             dataframe = dataframe.rename(columns={col: f"{col}_{suffix}" for col in dataframe.columns if col not in ['Your Name', 'Month']})
             return dataframe
 
-        # Load the sheets into DataFrames
-        df = get_sheet_as_dataframe('https://docs.google.com/spreadsheets/d/1h4WAhpuT6uQ_jp6bfMUUgMrhGtXnbqaaz1p6yUZCPbM/edit?resourcekey=&gid=1240737519#gid=1240737519', 'Formularsvar 1')
-        df1 = get_sheet_as_dataframe('https://docs.google.com/spreadsheets/d/1zXEFfrD_meajd32Hy_TT0-yT5v9vi5WdQHYI51yfZH4/edit?resourcekey=&gid=198410459#gid=198410459', 'Formularsvar 1')
-        df2 = get_sheet_as_dataframe('https://docs.google.com/spreadsheets/d/1GGtgwYYoLWQ1yS9tyM2-2MVvrQNgMpVECRjA3-H2O8A/edit?resourcekey=&gid=698467196#gid=698467196', 'Formularsvar 1')
-        df3 = get_sheet_as_dataframe('https://docs.google.com/spreadsheets/d/1Z_MANeXqcyMrhnoqbk_9bHy1Ic3-VGlnRT0vcn6Bb5k/edit?resourcekey=&gid=1340211860#gid=1340211860', 'Formularsvar 1')
+        df = process_dataframe(get_sheet_as_dataframe('https://docs.google.com/spreadsheets/d/1h4WAhpuT6uQ_jp6bfMUUgMrhGtXnbqaaz1p6yUZCPbM/edit?resourcekey=&gid=1240737519#gid=1240737519', 'Formularsvar 1'), 'CD_RISC')
+        df1 = process_dataframe(get_sheet_as_dataframe('https://docs.google.com/spreadsheets/d/1zXEFfrD_meajd32Hy_TT0-yT5v9vi5WdQHYI51yfZH4/edit?resourcekey=&gid=198410459#gid=198410459', 'Formularsvar 1'), 'PNSS-S')
+        df2 = process_dataframe(get_sheet_as_dataframe('https://docs.google.com/spreadsheets/d/1GGtgwYYoLWQ1yS9tyM2-2MVvrQNgMpVECRjA3-H2O8A/edit?resourcekey=&gid=698467196#gid=698467196', 'Formularsvar 1'), 'TMID')
+        df3 = process_dataframe(get_sheet_as_dataframe('https://docs.google.com/spreadsheets/d/1Z_MANeXqcyMrhnoqbk_9bHy1Ic3-VGlnRT0vcn6Bb5k/edit?resourcekey=&gid=1340211860#gid=1340211860', 'Formularsvar 1'), 'PSS')
 
         merged_df = df.merge(df1, on=['Your Name', 'Month'], how='outer') \
                       .merge(df2, on=['Your Name', 'Month'], how='outer') \
