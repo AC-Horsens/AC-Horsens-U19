@@ -1761,7 +1761,7 @@ def sportspsykologiske_målinger():
             dataframe = dataframe.rename(columns={col: f"{col}_{suffix}" for col in dataframe.columns if col not in ['Your Name', 'Month']})
             return dataframe
 
-        df = process_dataframe(get_sheet_as_dataframe('https://docs.google.com/spreadsheets/d/1h4WAhpuT6uQ_jp6bfMUUgMrhGtXnbqaaz1p6yUZCPbM/edit?resourcekey=&gid=1240737519#gid=1240737519', 'Formularsvar 1'), 'CD_RISC')
+        df = process_dataframe(get_sheet_as_dataframe('https://docs.google.com/spreadsheets/d/1h4WAhpuT6uQ_jp6bfMUUgMrhGtXnbqaaz1p6yUZCPbM/edit?resourcekey=&gid=1240737519#gid=1240737519', 'Formularsvar 1'), 'CD-RISC')
         df1 = process_dataframe(get_sheet_as_dataframe('https://docs.google.com/spreadsheets/d/1zXEFfrD_meajd32Hy_TT0-yT5v9vi5WdQHYI51yfZH4/edit?resourcekey=&gid=198410459#gid=198410459', 'Formularsvar 1'), 'PNSS-S')
         df2 = process_dataframe(get_sheet_as_dataframe('https://docs.google.com/spreadsheets/d/1GGtgwYYoLWQ1yS9tyM2-2MVvrQNgMpVECRjA3-H2O8A/edit?resourcekey=&gid=698467196#gid=698467196', 'Formularsvar 1'), 'TMID')
         df3 = process_dataframe(get_sheet_as_dataframe('https://docs.google.com/spreadsheets/d/1Z_MANeXqcyMrhnoqbk_9bHy1Ic3-VGlnRT0vcn6Bb5k/edit?resourcekey=&gid=1340211860#gid=1340211860', 'Formularsvar 1'), 'PSS')
@@ -1800,7 +1800,7 @@ def sportspsykologiske_målinger():
 
         # Calculate category averages
         categories = {
-            'CD_RISC': [col for col in merged_df.columns if 'CD_RISC' in col],
+            'CD-RISC': [col for col in merged_df.columns if 'CD-RISC' in col],
             'PNSS-S': [col for col in merged_df.columns if 'PNSS-S' in col],
             'TMID': [col for col in merged_df.columns if 'TMID' in col],
             'PSS': [col for col in merged_df.columns if 'PSS' in col]
