@@ -1758,21 +1758,11 @@ def sportspsykologiske_målinger():
 
         # Function to process the DataFrame: convert 'Tidsstempel' to datetime, extract the month, and rename columns
         def process_dataframe(dataframe, suffix):
-            # Convert 'Tidsstempel' to datetime format
             dataframe['Tidsstempel'] = pd.to_datetime(dataframe['Tidsstempel'], format='%d/%m/%Y %H.%M.%S', errors='coerce')
-            
-            # Remove rows with invalid or missing 'Tidsstempel'
             dataframe.dropna(subset=['Tidsstempel'], inplace=True)
-            
-            # Extract the month
             dataframe['Month'] = dataframe['Tidsstempel'].dt.month
-            
-            # Drop the 'Tidsstempel' column
             dataframe.drop(columns=['Tidsstempel'], inplace=True)
-            
-            # Rename other columns to avoid conflicts (except 'Your Name' and 'Month')
             dataframe = dataframe.rename(columns={col: f"{col}_{suffix}" for col in dataframe.columns if col not in ['Your Name', 'Month']})
-            
             return dataframe
 
         # Load the sheets into DataFrames
@@ -1787,23 +1777,49 @@ def sportspsykologiske_målinger():
         df2 = process_dataframe(df2, 'TMID')
         df3 = process_dataframe(df3, 'PSS')
 
+        # Process each DataFrame
+        df = process_dataframe(df, 'CD_RISC')
+        df1 = process_dataframe(df1, 'PNSS-S')
+        df2 = process_dataframe(df2, 'TMID')
+        df3 = process_dataframe(df3, 'PSS')
 
-        # Merge all the DataFrames on 'Your Name' and 'Month'
+        # Merge all the DataFrames
         merged_df = df.merge(df1, on=['Your Name', 'Month'], how='outer') \
                     .merge(df2, on=['Your Name', 'Month'], how='outer') \
                     .merge(df3, on=['Your Name', 'Month'], how='outer')
 
-        # Group by 'Your Name' and 'Month' and get the first non-null value
-        merged_df = merged_df.groupby(['Your Name', 'Month'], as_index=False).first()
-
-        # Extract only the first character for all columns except 'Your Name' and 'Month'
-        #columns_to_modify = merged_df.columns.difference(['Your Name', 'Month'])
-        #merged_df[columns_to_modify] = merged_df[columns_to_modify].applymap(lambda x: x[0] if pd.notnull(x) else x)
-
         # Remove rows where 'Your Name' is empty
         merged_df = merged_df[merged_df['Your Name'] != ""]
 
-        # Calculate the overall averages for all players (unfiltered)
+        # Define columns to reverse for normalization
+        columns_to_reverse = [
+            col for col in merged_df.columns 
+            if any(key in col for key in ['Frustration', 'Indifference'])  # Example patterns
+        ]
+        pss_reverse_items = ['PSS_4', 'PSS_5', 'PSS_7', 'PSS_8']
+        columns_to_reverse.extend(pss_reverse_items)
+
+        # Function to reverse scores
+        def reverse_scores(df, columns, min_val=1, max_val=7):
+            for col in columns:
+                if col in df.columns:
+                    df[col] = pd.to_numeric(df[col], errors='coerce')
+                    df[col] = max_val + min_val - df[col]
+            return df
+
+        # Reverse PSS-specific scores (0–4 scale)
+        def reverse_pss_scores(df, columns, min_val=0, max_val=4):
+            for col in columns:
+                if col in df.columns:
+                    df[col] = pd.to_numeric(df[col], errors='coerce')
+                    df[col] = max_val + min_val - df[col]
+            return df
+
+        # Apply normalization
+        merged_df = reverse_scores(merged_df, columns_to_reverse)
+        merged_df = reverse_pss_scores(merged_df, pss_reverse_items)
+
+        # Calculate overall averages
         categories = {
             'CD_RISC': [col for col in merged_df.columns if 'CD_RISC' in col],
             'PNSS-S': [col for col in merged_df.columns if 'PNSS-S' in col],
@@ -1811,82 +1827,67 @@ def sportspsykologiske_målinger():
             'PSS': [col for col in merged_df.columns if 'PSS' in col]
         }
 
-        # Calculate averages for each category for ALL players
         for category, columns in categories.items():
             merged_df[f'{category}_Average'] = merged_df[columns].apply(pd.to_numeric, errors='coerce').mean(axis=1)
 
-        # Streamlit interaction for player selection
+        # Streamlit UI
         players = merged_df['Your Name'].unique()
-
-        # Create side-by-side selectboxes
         col1, col2 = st.columns(2)
 
         with col1:
-            chosen_players = st.selectbox('Choose player(s)', players)
+            chosen_player = st.selectbox('Choose player', players)
 
         with col2:
-            # Selectbox for category selection
             selected_category = st.selectbox('Select a category', ['CD_RISC', 'PNSS-S', 'TMID', 'PSS'])
 
-        # Filter data based on selected players
-        if chosen_players:
-            filtered_df = merged_df[merged_df['Your Name']==chosen_players]
-            
-            # Show scatterplots for each column in the selected category
+        if chosen_player:
+            filtered_df = merged_df[merged_df['Your Name'] == chosen_player]
             for col in categories[selected_category]:
                 filtered_df[col] = pd.to_numeric(filtered_df[col], errors='coerce')
                 valid_data = filtered_df[['Month', col]].dropna()
-                
                 if not valid_data.empty:
                     plt.figure(figsize=(8, 6))
                     plt.scatter(valid_data['Month'], valid_data[col], label=col)
-                    plt.xlim(0, 12)  # Set x-axis from 0 to 12 (months)
-                    plt.ylim(1, 7)   # Set y-axis from 1 to 7 (responses)
+                    plt.xlim(0, 12)
+                    plt.ylim(1, 7)
                     plt.title(f'Scatterplot of {col}')
                     plt.xlabel('Month')
                     plt.ylabel(col)
                     plt.legend()
                     st.pyplot(plt)
 
-            # Combined scatterplot of averages for each category
             plt.figure(figsize=(8, 6))
-            
-            # Plot averages for each category for the chosen players
             for category in categories.keys():
                 valid_category_avg = filtered_df[['Month', f'{category}_Average']].dropna()
                 if not valid_category_avg.empty:
                     plt.scatter(valid_category_avg['Month'], valid_category_avg[f'{category}_Average'], label=f'{category} Average')
-            
-            # Plot formatting
-            plt.xlim(0, 12)  # Set x-axis from 0 to 12 (months)
-            plt.ylim(1, 7)   # Set y-axis from 1 to 7 (responses)
-            plt.title('Scatterplot of Category Averages (Chosen Players)')
+
+            plt.xlim(0, 12)
+            plt.ylim(1, 7)
+            plt.title('Scatterplot of Averages')
             plt.xlabel('Month')
             plt.ylabel('Average Score')
             plt.legend()
             st.pyplot(plt)
 
-        # Scatterplot for the overall average of all players (not filtered by selected players)
+        # Overall averages scatterplot
         plt.figure(figsize=(8, 6))
-
         for category in categories.keys():
-            # Group by month to get the average for each month across all players
-            overall_category_avg = merged_df.groupby('Month')[f'{category}_Average'].mean().reset_index()
-            
-            if not overall_category_avg.empty:
-                plt.scatter(overall_category_avg['Month'], overall_category_avg[f'{category}_Average'], label=f'Overall {category} Average')
+            overall_avg = merged_df.groupby('Month')[f'{category}_Average'].mean().reset_index()
+            if not overall_avg.empty:
+                plt.scatter(overall_avg['Month'], overall_avg[f'{category}_Average'], label=f'Overall {category} Average')
 
-        # Plot formatting for overall averages
-        plt.xlim(0, 12)  # Set x-axis from 0 to 12 (months)
-        plt.ylim(1, 7)   # Set y-axis from 1 to 7 (responses)
-        plt.title('Overall Averages for All Players (By Category)')
+        plt.xlim(0, 12)
+        plt.ylim(1, 7)
+        plt.title('Overall Averages for All Players')
         plt.xlabel('Month')
-        plt.ylabel('Average Score Across All Players')
+        plt.ylabel('Average Score')
         plt.legend()
         st.pyplot(plt)
 
     else:
         st.error("Wrong password. Please try again.")
+
     
 Data_types = {
     'Dashboard': dashboard,
