@@ -1732,6 +1732,7 @@ def keeper_ratings():
 
     st.plotly_chart(fig, use_container_width=True)
 
+
 def sportspsykologiske_målinger():
     # Password input
     password = st.text_input("Input password", type="password")
@@ -1746,14 +1747,9 @@ def sportspsykologiske_målinger():
             sh = gc.open_by_url(sheet_url)
             ws = sh.worksheet(worksheet_name)
             data = ws.get_all_values()
-            
-            # Convert the sheet data to a DataFrame
             df = pd.DataFrame(data[1:], columns=data[0])
-            
-            # Optionally limit the number of columns
             if num_columns:
                 df = df.iloc[:, :num_columns]
-            
             return df
 
         # Function to process the DataFrame: convert 'Tidsstempel' to datetime, extract the month, and rename columns
@@ -1771,35 +1767,20 @@ def sportspsykologiske_målinger():
         df2 = get_sheet_as_dataframe('https://docs.google.com/spreadsheets/d/1GGtgwYYoLWQ1yS9tyM2-2MVvrQNgMpVECRjA3-H2O8A/edit?resourcekey=&gid=698467196#gid=698467196', 'Formularsvar 1')
         df3 = get_sheet_as_dataframe('https://docs.google.com/spreadsheets/d/1Z_MANeXqcyMrhnoqbk_9bHy1Ic3-VGlnRT0vcn6Bb5k/edit?resourcekey=&gid=1340211860#gid=1340211860', 'Formularsvar 1')
 
-        # Process each DataFrame to extract 'Month' and rename columns
-        df = process_dataframe(df, 'CD_RISC')
-        df1 = process_dataframe(df1, 'PNSS-S')
-        df2 = process_dataframe(df2, 'TMID')
-        df3 = process_dataframe(df3, 'PSS')
-
-        # Process each DataFrame
-        df = process_dataframe(df, 'CD_RISC')
-        df1 = process_dataframe(df1, 'PNSS-S')
-        df2 = process_dataframe(df2, 'TMID')
-        df3 = process_dataframe(df3, 'PSS')
-
-        # Merge all the DataFrames
         merged_df = df.merge(df1, on=['Your Name', 'Month'], how='outer') \
-                    .merge(df2, on=['Your Name', 'Month'], how='outer') \
-                    .merge(df3, on=['Your Name', 'Month'], how='outer')
-
-        # Remove rows where 'Your Name' is empty
-        merged_df = merged_df[merged_df['Your Name'] != ""]
+                      .merge(df2, on=['Your Name', 'Month'], how='outer') \
+                      .merge(df3, on=['Your Name', 'Month'], how='outer')
+        merged_df = merged_df[merged_df['Your Name'] != ""]  # Remove rows where 'Your Name' is empty
 
         # Define columns to reverse for normalization
         columns_to_reverse = [
             col for col in merged_df.columns 
-            if any(key in col for key in ['Frustration', 'Indifference'])  # Example patterns
+            if any(key in col for key in ['Frustration', 'Indifference'])
         ]
         pss_reverse_items = ['PSS_4', 'PSS_5', 'PSS_7', 'PSS_8']
         columns_to_reverse.extend(pss_reverse_items)
 
-        # Function to reverse scores
+        # Reverse scores for normalization
         def reverse_scores(df, columns, min_val=1, max_val=7):
             for col in columns:
                 if col in df.columns:
@@ -1815,11 +1796,10 @@ def sportspsykologiske_målinger():
                     df[col] = max_val + min_val - df[col]
             return df
 
-        # Apply normalization
         merged_df = reverse_scores(merged_df, columns_to_reverse)
         merged_df = reverse_pss_scores(merged_df, pss_reverse_items)
 
-        # Calculate overall averages
+        # Calculate category averages
         categories = {
             'CD_RISC': [col for col in merged_df.columns if 'CD_RISC' in col],
             'PNSS-S': [col for col in merged_df.columns if 'PNSS-S' in col],
@@ -1842,6 +1822,8 @@ def sportspsykologiske_målinger():
 
         if chosen_player:
             filtered_df = merged_df[merged_df['Your Name'] == chosen_player]
+
+            # Plot each question in the selected category
             for col in categories[selected_category]:
                 filtered_df[col] = pd.to_numeric(filtered_df[col], errors='coerce')
                 valid_data = filtered_df[['Month', col]].dropna()
@@ -1852,25 +1834,24 @@ def sportspsykologiske_målinger():
                     plt.ylim(1, 7)
                     plt.title(f'Scatterplot of {col}')
                     plt.xlabel('Month')
-                    plt.ylabel(col)
+                    plt.ylabel('Score')
                     plt.legend()
                     st.pyplot(plt)
 
+            # Plot average scores for the selected category
             plt.figure(figsize=(8, 6))
-            for category in categories.keys():
-                valid_category_avg = filtered_df[['Month', f'{category}_Average']].dropna()
-                if not valid_category_avg.empty:
-                    plt.scatter(valid_category_avg['Month'], valid_category_avg[f'{category}_Average'], label=f'{category} Average')
+            valid_category_avg = filtered_df[['Month', f'{selected_category}_Average']].dropna()
+            if not valid_category_avg.empty:
+                plt.scatter(valid_category_avg['Month'], valid_category_avg[f'{selected_category}_Average'], label=f'{selected_category} Average')
+                plt.xlim(0, 12)
+                plt.ylim(1, 7)
+                plt.title(f'Average Score for {selected_category}')
+                plt.xlabel('Month')
+                plt.ylabel('Average Score')
+                plt.legend()
+                st.pyplot(plt)
 
-            plt.xlim(0, 12)
-            plt.ylim(1, 7)
-            plt.title('Scatterplot of Averages')
-            plt.xlabel('Month')
-            plt.ylabel('Average Score')
-            plt.legend()
-            st.pyplot(plt)
-
-        # Overall averages scatterplot
+        # Overall average plot for all players
         plt.figure(figsize=(8, 6))
         for category in categories.keys():
             overall_avg = merged_df.groupby('Month')[f'{category}_Average'].mean().reset_index()
