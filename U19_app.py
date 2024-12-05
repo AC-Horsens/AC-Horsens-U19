@@ -1817,7 +1817,7 @@ def sportspsykologiske_målinger():
             chosen_player = st.selectbox('Choose player', players)
 
         with col2:
-            selected_category = st.selectbox('Select a category', ['CD_RISC', 'PNSS-S', 'TMID', 'PSS'])
+            selected_category = st.selectbox('Select a category', ['CD-RISC', 'PNSS-S', 'TMID', 'PSS'])
 
         if chosen_player:
             filtered_df = merged_df[merged_df['Your Name'] == chosen_player]
