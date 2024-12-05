@@ -9,6 +9,9 @@ import plotly.graph_objs as go
 from datetime import datetime
 from dateutil import parser
 import numpy as np
+import re
+
+
 
 st.set_page_config(layout="wide")
 
@@ -1737,22 +1740,17 @@ def sportspsykologiske_målinger():
     # Password input
     password = st.text_input("Input password", type="password")
 
-    # Check if the password is correct
     if password == "ACHORSENSU19":
         # Initialize Google Sheets connection
         gc = gspread.service_account(r'wellness-1123-178fea106d0a.json')
 
-        # Function to open a Google Sheet and return it as a DataFrame
-        def get_sheet_as_dataframe(sheet_url, worksheet_name, num_columns=None):
+        def get_sheet_as_dataframe(sheet_url, worksheet_name):
             sh = gc.open_by_url(sheet_url)
             ws = sh.worksheet(worksheet_name)
             data = ws.get_all_values()
             df = pd.DataFrame(data[1:], columns=data[0])
-            if num_columns:
-                df = df.iloc[:, :num_columns]
             return df
 
-        # Function to process the DataFrame: convert 'Tidsstempel' to datetime, extract the month, and rename columns
         def process_dataframe(dataframe, suffix):
             dataframe['Tidsstempel'] = pd.to_datetime(dataframe['Tidsstempel'], format='%d/%m/%Y %H.%M.%S', errors='coerce')
             dataframe.dropna(subset=['Tidsstempel'], inplace=True)
@@ -1761,6 +1759,13 @@ def sportspsykologiske_målinger():
             dataframe = dataframe.rename(columns={col: f"{col}_{suffix}" for col in dataframe.columns if col not in ['Your Name', 'Month']})
             return dataframe
 
+        def extract_numeric(value):
+            if isinstance(value, str):
+                match = re.match(r'^(\d+)', value.strip())
+                if match:
+                    return int(match.group(1))
+            return pd.NA
+        
         df = process_dataframe(get_sheet_as_dataframe('https://docs.google.com/spreadsheets/d/1h4WAhpuT6uQ_jp6bfMUUgMrhGtXnbqaaz1p6yUZCPbM/edit?resourcekey=&gid=1240737519#gid=1240737519', 'Formularsvar 1'), 'CD-RISC')
         df1 = process_dataframe(get_sheet_as_dataframe('https://docs.google.com/spreadsheets/d/1zXEFfrD_meajd32Hy_TT0-yT5v9vi5WdQHYI51yfZH4/edit?resourcekey=&gid=198410459#gid=198410459', 'Formularsvar 1'), 'PNSS-S')
         df2 = process_dataframe(get_sheet_as_dataframe('https://docs.google.com/spreadsheets/d/1GGtgwYYoLWQ1yS9tyM2-2MVvrQNgMpVECRjA3-H2O8A/edit?resourcekey=&gid=698467196#gid=698467196', 'Formularsvar 1'), 'TMID')
@@ -1770,6 +1775,16 @@ def sportspsykologiske_målinger():
                       .merge(df2, on=['Your Name', 'Month'], how='outer') \
                       .merge(df3, on=['Your Name', 'Month'], how='outer')
         merged_df = merged_df[merged_df['Your Name'] != ""]  # Remove rows where 'Your Name' is empty
+
+        for col in merged_df.columns:
+            if col not in ['Your Name', 'Month']:
+                merged_df[col] = merged_df[col].apply(extract_numeric)
+
+        # Convert all columns to numeric where applicable
+        for col in merged_df.columns:
+            if col not in ['Your Name', 'Month']:
+                merged_df[col] = pd.to_numeric(merged_df[col], errors='coerce')
+
 
         # Define columns to reverse for normalization
         columns_to_reverse = [
