@@ -1769,7 +1769,7 @@ def sportspsykologiske_målinger():
         # Load and process data
         df = process_dataframe(get_sheet_as_dataframe('https://docs.google.com/spreadsheets/d/1h4WAhpuT6uQ_jp6bfMUUgMrhGtXnbqaaz1p6yUZCPbM/edit?resourcekey=&gid=1240737519', 'Formularsvar 1'), 'CD-RISC')
         df1 = process_dataframe(get_sheet_as_dataframe('https://docs.google.com/spreadsheets/d/1zXEFfrD_meajd32Hy_TT0-yT5v9vi5WdQHYI51yfZH4/edit?resourcekey=&gid=198410459', 'Formularsvar 1'), 'PNSS-S')
-        df2 = process_dataframe(get_sheet_as_dataframe('https://docs.google.com/spreadsheets/d/1GGtgwYYoLWQ1yS9tyM2-2MVvrQNgMpVECRjA3-H2O8A/edit?resourcekey=&gid=698467196', 'Formularsvar 1'), 'TMID')
+        df2 = process_dataframe(get_sheet_as_dataframe('https://docs.google.com/spreadsheets/d/1GGtgwYYoLWQ1yS9tyM2-2MVvrQNgMpVECRjA3-H2O8A/edit?resourcekey=&gid=698467196', 'Formularsvar 1'), 'TMIB')
         df3 = process_dataframe(get_sheet_as_dataframe('https://docs.google.com/spreadsheets/d/1Z_MANeXqcyMrhnoqbk_9bHy1Ic3-VGlnRT0vcn6Bb5k', 'Formularsvar 1'), 'PSS')
 
         # Merge DataFrames
@@ -1803,7 +1803,7 @@ def sportspsykologiske_målinger():
         categories = {
             'CD-RISC': [col for col in merged_df.columns if 'CD-RISC' in col],
             'PNSS-S': [col for col in merged_df.columns if 'PNSS-S' in col],
-            'TMID': [col for col in merged_df.columns if 'TMID' in col],
+            'TMIB': [col for col in merged_df.columns if 'TMIB' in col],
             'PSS': [col for col in merged_df.columns if 'PSS' in col]
         }
 
@@ -1818,7 +1818,7 @@ def sportspsykologiske_målinger():
             chosen_player = st.selectbox('Choose player', players)
 
         with col2:
-            selected_category = st.selectbox('Select a category', ['CD-RISC', 'PNSS-S', 'TMID', 'PSS'])
+            selected_category = st.selectbox('Select a category', ['CD-RISC', 'PNSS-S', 'TMIB', 'PSS'])
 
         if chosen_player:
             filtered_df = merged_df[merged_df['Your Name'] == chosen_player]
