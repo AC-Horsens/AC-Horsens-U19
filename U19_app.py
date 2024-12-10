@@ -777,7 +777,7 @@ def plot_arrows(df):
 
     # Use Streamlit to display the plot
     st.pyplot(fig)
-    
+  
 def training_ratings():
     gc = gspread.service_account('wellness-1123-178fea106d0a.json')
     sh = gc.open_by_url('https://docs.google.com/spreadsheets/d/1fG0BYf_BbbDIgELdkSGTgjzdT_7pnKDfocUW7TR510I/edit?resourcekey=&gid=201497853#gid=201497853')
@@ -1652,7 +1652,7 @@ def opposition_analysis():
         # Transpose the DataFrame for better display
         filtered_data_df = filtered_data_df.T
         st.dataframe(filtered_data_df)
-    
+  
 def keeper_ratings():
     gc = gspread.service_account('wellness-1123-178fea106d0a.json')
     sh = gc.open_by_url('https://docs.google.com/spreadsheets/d/1e5kAIxFAMmTSuamV1E_ymgzva0rLA6Q4oM21VRU6FwI/edit?resourcekey=&gid=1263806243#gid=1263806243')
@@ -1870,7 +1870,6 @@ def sportspsykologiske_målinger():
     else:
         st.error("Wrong password. Please try again.")
 
-    
 Data_types = {
     'Dashboard': dashboard,
     'Opposition analysis': opposition_analysis,
@@ -1880,7 +1879,6 @@ Data_types = {
     'Keeper ratings': keeper_ratings,
     'Sports Psychological measures': sportspsykologiske_målinger
     }
-
 
 st.cache_data(experimental_allow_widgets=True)
 st.cache_resource(experimental_allow_widgets=True)
