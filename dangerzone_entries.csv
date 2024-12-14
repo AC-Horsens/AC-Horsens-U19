@@ -324,7 +324,7 @@ A. Escobar,Brøndby U19,"København U19 - Brøndby U19, 2 - 2 (P)",J. Ambæk,"No
 L. Larsen,Brøndby U19,"København U19 - Brøndby U19, 2 - 2 (P)",A. Escobar,"November 22, 2024 at 1:30:00 PM GMT+1",82.0,13.0,88.0,59.0,,,True
 A. Claridge,Brøndby U19,"København U19 - Brøndby U19, 2 - 2 (P)",J. Ambæk,"November 22, 2024 at 1:30:00 PM GMT+1",78.0,29.0,93.0,54.0,,,True
 O. Højer,København U19,"København U19 - Brøndby U19, 2 - 2 (P)",G. Ankamafio,"November 22, 2024 at 1:30:00 PM GMT+1",67.0,14.0,90.0,48.0,,,True
-L. Larsen,Brøndby U19,"København U19 - Brøndby U19, 2 - 2 (P)",J. Ambæk,"November 22, 2024 at 1:30:00 PM GMT+1",89.0,10.0,94.0,46.0,,,True
+L. Larsen,Brøndby U19,"København U19 - Brøndby U19, 2 - 2 (P)",J. Ambæk,"November 22, 2024 at 1:30:00 PM GMT+1",89.0,10.0,90.0,48.0,,,True
 J. Moalem,København U19,"København U19 - Brøndby U19, 2 - 2 (P)",B. Llana,"November 22, 2024 at 1:30:00 PM GMT+1",87.0,83.0,97.0,41.0,,,True
 H. Németh,København U19,"København U19 - Brøndby U19, 2 - 2 (P)",V. Daðason,"November 22, 2024 at 1:30:00 PM GMT+1",71.0,75.0,92.0,51.0,,,True
 N. Jönsson,København U19,"København U19 - Brøndby U19, 2 - 2 (P)",N. Jönsson,"November 22, 2024 at 1:30:00 PM GMT+1",89.0,73.0,96.0,63.0,96.0,63.0,True
@@ -868,7 +868,7 @@ J. Moalem,København U19,"SønderjyskE U19 - København U19, 2 - 0",W. Renecke,"
 J. Moalem,København U19,"SønderjyskE U19 - København U19, 2 - 0",W. Renecke,"September 14, 2024 at 12:30:00 PM GMT+2",100.0,100.0,87.0,38.0,,,True
 S. Lodberg,Midtjylland U19,"AaB U19 - Midtjylland U19, 0 - 0 (P)",G. Bjerge,"December 4, 2024 at 5:00:00 PM GMT+1",100.0,0.0,92.0,43.0,,,True
 S. Lodberg,Midtjylland U19,"AaB U19 - Midtjylland U19, 0 - 0 (P)",J. Arinze,"December 4, 2024 at 5:00:00 PM GMT+1",78.0,13.0,89.0,52.0,,,True
-S. Lodberg,Midtjylland U19,"AaB U19 - Midtjylland U19, 0 - 0 (P)",J. Arinze,"December 4, 2024 at 5:00:00 PM GMT+1",80.0,67.0,88.0,60.0,,,True
+S. Lodberg,Midtjylland U19,"AaB U19 - Midtjylland U19, 0 - 0 (P)",J. Arinze,"December 4, 2024 at 5:00:00 PM GMT+1",80.0,67.0,86.0,61.0,,,True
 S. Lodberg,Midtjylland U19,"AaB U19 - Midtjylland U19, 0 - 0 (P)",J. Arinze,"December 4, 2024 at 5:00:00 PM GMT+1",81.0,88.0,86.0,50.0,,,True
 J. Arinze,Midtjylland U19,"AaB U19 - Midtjylland U19, 0 - 0 (P)",M. Odekunle,"December 4, 2024 at 5:00:00 PM GMT+1",94.0,85.0,91.0,49.0,,,True
 L. Nielsen,Midtjylland U19,"AaB U19 - Midtjylland U19, 0 - 0 (P)",M. Odekunle,"December 4, 2024 at 5:00:00 PM GMT+1",80.0,49.0,86.0,54.0,,,True
@@ -1001,6 +1001,26 @@ M. Jensen,Brøndby U19,"Brøndby U19 - Horsens U19, 2 - 3",J. Ambæk,"September 
 M. Andersen,Brøndby U19,"Brøndby U19 - Horsens U19, 2 - 3",J. Ambæk,"September 22, 2024 at 12:30:00 PM GMT+2",84.0,13.0,89.0,50.0,,,True
 A. Arouna,Horsens U19,"Brøndby U19 - Horsens U19, 2 - 3",M. Salah,"September 22, 2024 at 12:30:00 PM GMT+2",89.0,27.0,87.0,42.0,,,True
 W. Sonne,Brøndby U19,"Brøndby U19 - Horsens U19, 2 - 3",J. Ambæk,"September 22, 2024 at 12:30:00 PM GMT+2",33.0,28.0,84.0,55.0,,,True
+F. Emmery,AGF U19,"Vejle U19 - AGF U19, 2 - 2 (P)",M. Steffensen,"December 6, 2024 at 3:30:00 PM GMT+1",96.0,24.0,95.0,57.0,,,True
+F. Elkjær Andersen,AGF U19,"Vejle U19 - AGF U19, 2 - 2 (P)",L. Callø Carstensen,"December 6, 2024 at 3:30:00 PM GMT+1",100.0,100.0,96.0,51.0,,,True
+F. Emmery,AGF U19,"Vejle U19 - AGF U19, 2 - 2 (P)",O. Haugstrup,"December 6, 2024 at 3:30:00 PM GMT+1",67.0,9.0,88.0,50.0,,,True
+S. Piechnik Hust,Vejle U19,"Vejle U19 - AGF U19, 2 - 2 (P)",R. Koch Groth Pedersen,"December 6, 2024 at 3:30:00 PM GMT+1",82.0,97.0,89.0,62.0,,,True
+O. Haugstrup,AGF U19,"Vejle U19 - AGF U19, 2 - 2 (P)",W. Rygaard,"December 6, 2024 at 3:30:00 PM GMT+1",77.0,75.0,93.0,44.0,,,True
+C. Astrup,Vejle U19,"Vejle U19 - AGF U19, 2 - 2 (P)",R. Koch Groth Pedersen,"December 6, 2024 at 3:30:00 PM GMT+1",92.0,73.0,94.0,54.0,,,True
+F. Elkjær Andersen,AGF U19,"Vejle U19 - AGF U19, 2 - 2 (P)",E. Ime,"December 6, 2024 at 3:30:00 PM GMT+1",70.0,29.0,92.0,54.0,,,True
+M. Kannegaard,AGF U19,"Vejle U19 - AGF U19, 2 - 2 (P)",W. Rygaard,"December 6, 2024 at 3:30:00 PM GMT+1",67.0,17.0,97.0,55.0,,,True
+M. Steffensen,AGF U19,"Vejle U19 - AGF U19, 2 - 2 (P)",W. Rygaard,"December 6, 2024 at 3:30:00 PM GMT+1",93.0,64.0,92.0,49.0,,,True
+F. Elkjær Andersen,AGF U19,"Vejle U19 - AGF U19, 2 - 2 (P)",L. Callø Carstensen,"December 6, 2024 at 3:30:00 PM GMT+1",70.0,73.0,92.0,55.0,,,True
+F. Elkjær Andersen,AGF U19,"Vejle U19 - AGF U19, 2 - 2 (P)",W. Rygaard,"December 6, 2024 at 3:30:00 PM GMT+1",75.0,75.0,93.0,54.0,,,True
+M. Udengaard,Vejle U19,"Vejle U19 - AGF U19, 2 - 2 (P)",C. Astrup,"December 6, 2024 at 3:30:00 PM GMT+1",82.0,15.0,96.0,56.0,,,True
+F. Elkjær Andersen,AGF U19,"Vejle U19 - AGF U19, 2 - 2 (P)",A. Halsgaard,"December 6, 2024 at 3:30:00 PM GMT+1",73.0,57.0,94.0,51.0,,,True
+F. Emmery,AGF U19,"Vejle U19 - AGF U19, 2 - 2 (P)",S. Tchamche,"December 6, 2024 at 3:30:00 PM GMT+1",93.0,18.0,94.0,44.0,,,True
+F. Elkjær Andersen,AGF U19,"Vejle U19 - AGF U19, 2 - 2 (P)",A. Halsgaard,"December 6, 2024 at 3:30:00 PM GMT+1",100.0,100.0,97.0,55.0,,,True
+F. Elkjær Andersen,AGF U19,"Vejle U19 - AGF U19, 2 - 2 (P)",A. Halsgaard,"December 6, 2024 at 3:30:00 PM GMT+1",69.0,92.0,91.0,48.0,,,True
+A. Halsgaard,AGF U19,"Vejle U19 - AGF U19, 2 - 2 (P)",,"December 6, 2024 at 3:30:00 PM GMT+1",62.0,70.0,88.0,46.0,,,True
+M. Steffensen,AGF U19,"Vejle U19 - AGF U19, 2 - 2 (P)",,"December 6, 2024 at 3:30:00 PM GMT+1",82.0,93.0,94.0,49.0,,,True
+M. Udengaard,Vejle U19,"Vejle U19 - AGF U19, 2 - 2 (P)",K. Tonnisen,"December 6, 2024 at 3:30:00 PM GMT+1",92.0,27.0,90.0,38.0,,,True
+F. Emmery,AGF U19,"Vejle U19 - AGF U19, 2 - 2 (P)",W. Rygaard,"December 6, 2024 at 3:30:00 PM GMT+1",93.0,31.0,94.0,47.0,,,True
 N. Andersen,AaB U19,"AaB U19 - København U19, 2 - 1",B. Skovgaard,"September 28, 2024 at 1:00:00 PM GMT+2",96.0,72.0,89.0,58.0,,,True
 N. Andersen,AaB U19,"AaB U19 - København U19, 2 - 1",,"September 28, 2024 at 1:00:00 PM GMT+2",95.0,84.0,91.0,39.0,,,True
 B. Pihl Jørgensen,AaB U19,"AaB U19 - København U19, 2 - 1",V. Møller,"September 28, 2024 at 1:00:00 PM GMT+2",94.0,22.0,87.0,40.0,,,True
