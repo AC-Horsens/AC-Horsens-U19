@@ -400,7 +400,7 @@ def Process_data_spillere(events,df_xg,df_matchstats,groundduels):
         return df_otter
         
     def number10():
-        df_10 = df_scouting[(df_scouting['POSITION1CODE'].str.contains('amf'))]
+        df_10 = df_scouting[df_scouting['POSITION1CODE'].notna() & df_scouting['POSITION1CODE'].str.contains('amf')]
         df_10['MINUTESONFIELD'] = df_10['MINUTESONFIELD'].astype(int)
         df_10 = df_10[df_10['MINUTESONFIELD'].astype(int) >= minutter_kamp]
         
