@@ -136,8 +136,6 @@ def Process_data_spillere(events,df_xg,df_matchstats,groundduels):
         return df_forsvarende_stopper
 
     def balanced_central_defender():
-        df_scouting = df_scouting.copy()
-        df_scouting = df_scouting[df_scouting['POSITION1CODE'].notna()]
         df_balanced_central_defender = df_scouting[df_scouting['POSITION1CODE'].str.contains('cb')]
         df_balanced_central_defender['MINUTESONFIELD'] = df_balanced_central_defender['MINUTESONFIELD'].astype(int)
         df_balanced_central_defender = df_balanced_central_defender[df_balanced_central_defender['MINUTESONFIELD'].astype(int) >= minutter_kamp]
