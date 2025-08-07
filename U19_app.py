@@ -40,8 +40,6 @@ def Process_data_spillere(events,df_xg,df_matchstats,groundduels):
 #    df_matchstats = df_matchstats[['SHORTNAME','TEAMNAME','MATCHLABEL','POSITION1CODE','MINUTESONFIELD','SUCCESSFULPASSESTOFINALTHIRD_AVERAGE','FIELDAERIALDUELSWON_PERCENT','SUCCESSFULDRIBBLES_PERCENT','SUCCESSFULTHROUGHPASSES_AVERAGE','DUELSWON_PERCENT','SUCCESSFULPASSESTOFINALTHIRD_PERCENT','XGASSIST','SUCCESSFULCROSSES_AVERAGE','SUCCESSFULPROGRESSIVEPASSES_AVERAGE','PROGRESSIVERUN','ACCELERATIONS','SUCCESSFULPASSESTOFINALTHIRD_AVERAGE','SUCCESSFULPROGRESSIVEPASSES_PERCENT','SUCCESSFULPASSES_PERCENT','BALLRECOVERIES','INTERCEPTIONS','DEFENSIVEDUELSWON_AVERAGE','SUCCESSFULDEFENSIVEACTION','SUCCESSFULFORWARDPASSES_AVERAGE','SUCCESSFULFORWARDPASSES_AVERAGE','TOUCHINBOX','XGSHOT','SUCCESSFULKEYPASSES_AVERAGE','SUCCESSFULATTACKINGACTIONS','SUCCESSFULSHOTASSISTS','BALLLOSSES']]
 
     df_scouting = xg.merge(df_matchstats, on=['SHORTNAME', 'MATCHLABEL'], how='left').reset_index()
-    st.write(df_matchstats)
-    st.write(xg)
     def calculate_score(df, column, score_column):
         df_unique = df.drop_duplicates(column).copy()
         df_unique.loc[:, score_column] = pd.qcut(df_unique[column], q=10, labels=False, duplicates='raise') + 1
@@ -138,7 +136,7 @@ def Process_data_spillere(events,df_xg,df_matchstats,groundduels):
         return df_forsvarende_stopper
 
     def balanced_central_defender():
-
+        st.write(df_scouting)
         df_balanced_central_defender = df_scouting[df_scouting['POSITION1CODE'].str.contains('cb')]
         df_balanced_central_defender['MINUTESONFIELD'] = df_balanced_central_defender['MINUTESONFIELD'].astype(int)
         df_balanced_central_defender = df_balanced_central_defender[df_balanced_central_defender['MINUTESONFIELD'].astype(int) >= minutter_kamp]
