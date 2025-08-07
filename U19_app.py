@@ -240,7 +240,6 @@ def Process_data_spillere(events,df_xg,df_matchstats,groundduels):
         df_sekser = calculate_score(df_sekser, 'SUCCESSFULPASSES_PERCENT', 'SUCCESSFULPASSES_PERCENT score')
         df_sekser = calculate_score(df_sekser, 'INTERCEPTIONS', 'INTERCEPTIONS score')
         df_sekser = calculate_score(df_sekser, 'SUCCESSFULFORWARDPASSES_AVERAGE', 'SUCCESSFULFORWARDPASSES_AVERAGE score')
-        df_sekser = calculate_score(df_sekser, 'SUCCESSFULFORWARDPASSES_AVERAGE', 'SUCCESSFULFORWARDPASSES_AVERAGE score')
         df_sekser = calculate_score(df_sekser, 'BALLRECOVERIES', 'possWonDef3rd_possWonMid3rd_possWonAtt3rd_per90 score')
         df_sekser = calculate_score(df_sekser, 'SUCCESSFULPASSESTOFINALTHIRD_PERCENT', 'SUCCESSFULPASSESTOFINALTHIRD_PERCENT score')
         df_sekser = calculate_score(df_sekser, 'BALLRECOVERIES', 'ballRecovery score')
