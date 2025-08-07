@@ -53,7 +53,6 @@ def Process_data_spillere(events,df_xg,df_matchstats,groundduels):
     minutter_total = 160
     
     df_scouting.fillna(0, inplace=True)
-    st.write(df_scouting)
     df_scouting['penAreaEntries_per90&crosses%shotassists'] = ((df_scouting['SUCCESSFULPASSESTOFINALTHIRD_AVERAGE'].astype(float)+df_scouting['SUCCESSFULCROSSES_AVERAGE'].astype(float) + df_scouting['XGASSIST'].astype(float))/ df_scouting['MINUTESONFIELD'].astype(float)) * 90
 
     df_scouting = df_scouting.drop_duplicates(subset=['SHORTNAME', 'TEAMNAME', 'POSITION1CODE','MATCHLABEL'])
