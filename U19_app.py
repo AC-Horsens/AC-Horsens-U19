@@ -226,14 +226,14 @@ def Process_data_spillere(events,df_xg,df_matchstats,groundduels):
         return df_backs
     
     def number6():
-        df_sekser = df_scouting[(df_scouting['POSITION1CODE'].str.contains('dmf'))]
+        df_sekser = df_scouting[df_scouting['POSITION1CODE'].notna() & df_scouting['POSITION1CODE'].str.contains('dmf')]
         df_sekser['MINUTESONFIELD'] = df_sekser['MINUTESONFIELD'].astype(int)
         df_sekser = df_sekser[df_sekser['MINUTESONFIELD'].astype(int) >= minutter_kamp]
 
 
-        df_sekser = calculate_score(df_sekser,'totalDuels', 'totalDuels score')
-        df_sekser = calculate_score(df_sekser,'stoppedProgressPercentage', 'stoppedProgressPercentage score')
-        df_sekser = calculate_score(df_sekser,'recoveredPossessionPercentage', 'recoveredPossessionPercentage score')
+        #df_sekser = calculate_score(df_sekser,'totalDuels', 'totalDuels score')
+        #df_sekser = calculate_score(df_sekser,'stoppedProgressPercentage', 'stoppedProgressPercentage score')
+        #df_sekser = calculate_score(df_sekser,'recoveredPossessionPercentage', 'recoveredPossessionPercentage score')
         df_sekser = calculate_opposite_score(df_sekser,'opponents_xg', 'opponents xg score')
         df_sekser = calculate_score(df_sekser,'SUCCESSFULATTACKINGACTIONS', 'Possession value added score')
         df_sekser = calculate_score(df_sekser, 'DUELSWON_PERCENT', 'DUELSWON_PERCENT score')
@@ -250,7 +250,7 @@ def Process_data_spillere(events,df_xg,df_matchstats,groundduels):
         df_sekser = calculate_opposite_score(df_sekser,'BALLLOSSES','BALLLOSSES score')
         
         
-        df_sekser['Defending'] = df_sekser[['DUELSWON_PERCENT score','opponents xg score','totalDuels score','stoppedProgressPercentage score','stoppedProgressPercentage score','recoveredPossessionPercentage score','INTERCEPTIONS score','INTERCEPTIONS score','ballRecovery score']].mean(axis=1)
+        df_sekser['Defending'] = df_sekser[['DUELSWON_PERCENT score','opponents xg score','INTERCEPTIONS score','INTERCEPTIONS score','ballRecovery score']].mean(axis=1)
         df_sekser['Passing'] = df_sekser[['SUCCESSFULPASSES_PERCENT score','SUCCESSFULPASSES_PERCENT score','SUCCESSFULPASSES_PERCENT score','BALLLOSSES score']].mean(axis=1)
         df_sekser['Progressive ball movement'] = df_sekser[['SUCCESSFULPROGRESSIVEPASSES_AVERAGE score','SUCCESSFULFORWARDPASSES_AVERAGE score','SUCCESSFULFORWARDPASSES_AVERAGE score','SUCCESSFULPASSESTOFINALTHIRD_PERCENT score']].mean(axis=1)
         df_sekser['Possession value added'] = df_sekser[['BALLLOSSES score','SUCCESSFULPASSESTOFINALTHIRD_AVERAGE score','SUCCESSFULPROGRESSIVEPASSES_AVERAGE score','SUCCESSFULPROGRESSIVEPASSES_AVERAGE score','SUCCESSFULPASSESTOFINALTHIRD_PERCENT score','SUCCESSFULPROGRESSIVEPASSES_PERCENT score','SUCCESSFULPROGRESSIVEPASSES_PERCENT score']].mean(axis=1)
@@ -356,7 +356,7 @@ def Process_data_spillere(events,df_xg,df_matchstats,groundduels):
         return df_sekser_double_6_forward
     
     def number8():
-        df_otter = df_scouting[(df_scouting['POSITION1CODE'].str.contains('cmf'))]
+        df_otter = df_scouting[df_scouting['POSITION1CODE'].notna() &df_scouting['POSITION1CODE'].str.contains('cmf')]
         df_otter['MINUTESONFIELD'] = df_otter['MINUTESONFIELD'].astype(int)
         df_otter = df_otter[df_otter['MINUTESONFIELD'].astype(int) >= minutter_kamp]
 
