@@ -367,7 +367,6 @@ def Process_data_spillere(events,df_xg,df_matchstats,groundduels):
         df_otter = calculate_score(df_otter, 'SUCCESSFULPASSESTOFINALTHIRD_PERCENT', 'SUCCESSFULPASSESTOFINALTHIRD_PERCENT score')
         df_otter = calculate_score(df_otter, 'INTERCEPTIONS', 'INTERCEPTIONS score')
         df_otter = calculate_score(df_otter, 'BALLRECOVERIES', 'possWonDef3rd_possWonMid3rd_possWonAtt3rd_per90 score')
-        df_otter = calculate_score(df_otter, 'SUCCESSFULPASSESTOFINALTHIRD_AVERAGE', 'SUCCESSFULPASSESTOFINALTHIRD_AVERAGE score')
         df_otter = calculate_score(df_otter, 'SUCCESSFULSHOTASSISTS','SUCCESSFULSHOTASSISTS score')
         df_otter = calculate_score(df_otter, 'TOUCHINBOX','TOUCHINBOX score')
         df_otter = calculate_score(df_otter, 'SUCCESSFULPROGRESSIVEPASSES_AVERAGE', 'SUCCESSFULPROGRESSIVEPASSES_AVERAGE score')
