@@ -489,7 +489,7 @@ def Process_data_spillere(events,df_xg,df_matchstats,groundduels):
         return df_kant
     
     def Classic_striker():
-        df_striker = df_scouting[(df_scouting['POSITION1CODE'].str.contains('cf'))]
+        df_striker = df_scouting[df_scouting['POSITION1CODE'].notna() & df_scouting['POSITION1CODE'].str.contains('cf'))]
         df_striker['MINUTESONFIELD'] = df_striker['MINUTESONFIELD'].astype(int)
         df_striker = df_striker[df_striker['MINUTESONFIELD'].astype(int) >= minutter_kamp]
 
