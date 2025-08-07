@@ -74,6 +74,7 @@ def Process_data_spillere(events,df_xg,df_matchstats,groundduels):
 
     df_scouting = calculate_match_xg(df_scouting)
     df_scouting.fillna(0, inplace=True)
+    df_scouting = df_scouting.dropna(subset=['POSITION1CODE'])
 
     def ball_playing_central_defender():
         df_spillende_stopper = df_scouting[df_scouting['player_codes'].str.contains('cb')]
@@ -137,6 +138,7 @@ def Process_data_spillere(events,df_xg,df_matchstats,groundduels):
         return df_forsvarende_stopper
 
     def balanced_central_defender():
+
         df_balanced_central_defender = df_scouting[df_scouting['POSITION1CODE'].str.contains('cb')]
         df_balanced_central_defender['MINUTESONFIELD'] = df_balanced_central_defender['MINUTESONFIELD'].astype(int)
         df_balanced_central_defender = df_balanced_central_defender[df_balanced_central_defender['MINUTESONFIELD'].astype(int) >= minutter_kamp]
