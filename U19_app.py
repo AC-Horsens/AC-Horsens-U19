@@ -726,7 +726,7 @@ def dashboard():
     dangerzone_entries['TEAMNAME'] = dangerzone_entries['TEAMNAME'].apply(lambda x: x if x == 'Horsens U19' else 'Opponent')
     events = load_events()
     events['MATCHLABEL'] = events['MATCHLABEL'] + ' ' + events['DATE']
-    events['DATE'] = pd.to_DATEtime(events['DATE'],utc=True)
+    events['DATE'] = pd.to_datetime(events['DATE'],utc=True)
     events = events.sort_values('DATE').reset_index(drop=True)
     events = events[events['TEAMNAME'].str.contains('Horsens')]
     matches = events['MATCHLABEL'].unique()
