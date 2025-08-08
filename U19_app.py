@@ -781,8 +781,8 @@ def dashboard():
     # Store PPDA for both teams in a DataFrame
     df_ppda = pd.DataFrame({
         'TEAMNAME': ['Horsens U19', 'Opponent'],
-        'Passes': [passes_horsens_count, passes_opponent_count],
-        'Defensive Actions': [defensive_actions_opponent_count, defensive_actions_horsens_count],
+        'Opponnent Passes': [passes_opponent_count, passes_horsens_count, ],
+        'Defensive Actions': [defensive_actions_horsens_count, defensive_actions_opponent_count],
         'PPDA': [ppda_horsens, ppda_opponent]
     })
 
