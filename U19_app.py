@@ -752,9 +752,9 @@ def dashboard():
     events = events[events['MATCHLABEL'].isin(match_choice)]
 
     # Calculate PPDA for Horsens U19
-    passes_horsens = events[(events['TEAMNAME'] == 'Horsens U19') & 
-                            (events['PRIMARYTYPE'] == 'pass') & 
-                            (events['LOCATIONX'] < 60)]
+    passes_horsens = events[(events['TEAMNAME'].str.contains('Horsens U19') & 
+                            (events['PRIMARYTYPE'].str.contains('pass') & 
+                            (events['LOCATIONX'] < 60)))]
     st.dataframe(passes_horsens)
     defensive_actions_opponent = events[(events['TEAMNAME'] == 'Opponent') & 
                                         (events['PRIMARYTYPE'].isin(['duel', 'interception', 'clearance'])) & 
