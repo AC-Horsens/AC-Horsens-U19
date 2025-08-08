@@ -34,13 +34,13 @@ def load_groundduels():
 
 @st.cache_data()
 def Process_data_spillere(events,df_xg,df_matchstats,df_groundduels):
-    xg = events[['SHORTNAME','MATCHLABEL','SHOTXG']]
+    xg = events[['SHORTNAME','TEAMNAME','MATCHLABEL','SHOTXG']]
     xg['SHOTXG'] = xg['SHOTXG'].astype(float)
-    xg = xg.groupby(['SHORTNAME', 'MATCHLABEL'])['SHOTXG'].sum().reset_index()
+    xg = xg.groupby(['SHORTNAME','TEAMNAME', 'MATCHLABEL'])['SHOTXG'].sum().reset_index()
 #    df_matchstats = df_matchstats[['SHORTNAME','TEAMNAME','MATCHLABEL','POSITION1CODE','MINUTESONFIELD','SUCCESSFULPASSESTOFINALTHIRD_AVERAGE','FIELDAERIALDUELSWON_PERCENT','SUCCESSFULDRIBBLES_PERCENT','SUCCESSFULTHROUGHPASSES_AVERAGE','DUELSWON_PERCENT','SUCCESSFULPASSESTOFINALTHIRD_PERCENT','XGASSIST','SUCCESSFULCROSSES_AVERAGE','SUCCESSFULPROGRESSIVEPASSES_AVERAGE','PROGRESSIVERUN','ACCELERATIONS','SUCCESSFULPASSESTOFINALTHIRD_AVERAGE','SUCCESSFULPROGRESSIVEPASSES_PERCENT','SUCCESSFULPASSES_PERCENT','BALLRECOVERIES','INTERCEPTIONS','DEFENSIVEDUELSWON_AVERAGE','SUCCESSFULDEFENSIVEACTION','SUCCESSFULFORWARDPASSES_AVERAGE','SUCCESSFULFORWARDPASSES_AVERAGE','TOUCHINBOX','XGSHOT','SUCCESSFULKEYPASSES_AVERAGE','SUCCESSFULATTACKINGACTIONS','SUCCESSFULSHOTASSISTS','BALLLOSSES']]
 
-    df_scouting = xg.merge(df_matchstats, on=['SHORTNAME', 'MATCHLABEL'], how='left').reset_index()
-    df_scouting = df_scouting.merge(df_groundduels, on=['SHORTNAME', 'MATCHLABEL'], how='left').reset_index()
+    df_scouting = xg.merge(df_matchstats, on=['SHORTNAME','TEAMNAME', 'MATCHLABEL'], how='left').reset_index()
+    df_scouting = df_scouting.merge(df_groundduels, on=['SHORTNAME','TEAMNAME', 'MATCHLABEL'], how='left').reset_index()
 
     def calculate_score(df, column, score_column):
         df_unique = df.drop_duplicates(column).copy()
@@ -57,7 +57,7 @@ def Process_data_spillere(events,df_xg,df_matchstats,df_groundduels):
     df_scouting.fillna(0, inplace=True)
     df_scouting['penAreaEntries_per90&crosses%shotassists'] = ((df_scouting['SUCCESSFULPASSESTOFINALTHIRD_AVERAGE'].astype(float)+df_scouting['SUCCESSFULCROSSES_AVERAGE'].astype(float) + df_scouting['XGASSIST'].astype(float))/ df_scouting['MINUTESONFIELD'].astype(float)) * 90
 
-    df_scouting = df_scouting.drop_duplicates(subset=['SHORTNAME', 'POSITION1CODE','MATCHLABEL'])
+    df_scouting = df_scouting.drop_duplicates(subset=['SHORTNAME','TEAMNAME', 'POSITION1CODE','MATCHLABEL'])
     df_scouting = df_scouting[df_scouting['POSITION1CODE'].notna()]
 
     def calculate_match_xg(df_scouting):
