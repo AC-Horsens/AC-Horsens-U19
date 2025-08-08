@@ -763,8 +763,6 @@ def dashboard():
     st.write(defensive_actions_opponent_count)
     # Calculate PPDA for Horsens U19
     ppda_horsens = passes_horsens_count / defensive_actions_opponent_count
-    else:
-        ppda_horsens = 0
 
     # Calculate PPDA for Opponent
     passes_opponent = events[(events['TEAMNAME'].str.contains('Opponent') & 
