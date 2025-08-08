@@ -766,10 +766,10 @@ def dashboard():
     # Calculate PPDA for Opponent
     passes_opponent = events[(events['TEAMNAME'].str.contains('Opponent') & 
                              (events['PRIMARYTYPE'].str.contains('pass') & 
-                             (events['LOCATIONX'] < 40)))]
+                             (events['LOCATIONX'] < 60)))]
     defensive_actions_horsens = events[(events['TEAMNAME'].str.contains('Horsens U19') & 
                                        (events['PRIMARYTYPE'].isin(['duel', 'interception'])) & 
-                                       (events['LOCATIONX'] > 60))]
+                                       (events['LOCATIONX'] > 40))]
     defensive_actions_horsens = defensive_actions_horsens.drop_duplicates(subset=['MINUTE','SECOND'])
     passes_opponent_count = passes_opponent.shape[0]
     defensive_actions_horsens_count = defensive_actions_horsens.shape[0]
@@ -792,10 +792,10 @@ def dashboard():
     df_matchstats['TEAMNAME'] = df_matchstats['TEAMNAME'].apply(lambda x: x if x == 'Horsens U19' else 'Opponent')
 
     st.dataframe(df_ppda)
-    df_xg_summary = df_xg.groupby(['TEAMNAME','MATCHLABEL'])['SHOTXG'].sum().reset_index()
-    penareaentries = penareaentries.groupby(['TEAMNAME'])['EVENT_WYID'].sum().reset_index()
+    df_xg_summary = df_xg.groupby(['TEAMNAME'])['SHOTXG'].sum().reset_index()
+    penareaentries = penareaentries.groupby(['TEAMNAME'])['EVENT_WYID'].count().reset_index()
     penareaentries = penareaentries.rename(columns={'EVENT_WYID':'PA actions'})
-    dangerzone_entries  = dangerzone_entries .groupby(['TEAMNAME'])['EVENT_WYID'].sum().reset_index()
+    dangerzone_entries  = dangerzone_entries .groupby(['TEAMNAME'])['EVENT_WYID'].count().reset_index()
     dangerzone_entries = dangerzone_entries.rename(columns={'EVENT_WYID':'dz actions'})
     team_summary = df_xg_summary.merge(penareaentries, on=['TEAMNAME'])
     st.dataframe(team_summary)
