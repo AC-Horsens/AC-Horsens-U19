@@ -737,7 +737,7 @@ def dashboard():
     events['DATE'] = pd.to_datetime(events['DATE'],utc=True)
     events = events.sort_values('DATE').reset_index(drop=True)
     matches = events['MATCHLABEL'].unique()
-    matches = matches.str.contains('Horsens')
+    matches = matches[matches.str.contains('Horsens')]  # Filter matches with 'Horsens'
     matches = matches[::-1]
     match_choice = st.multiselect('Choose a match', matches)
     df_xg['MATCHLABEL'] = df_xg['MATCHLABEL'] + ' ' + df_xg['DATE']
