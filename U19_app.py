@@ -731,6 +731,7 @@ def dashboard():
     df_groundduels = load_groundduels()
     st.title('U19 Dashboard')
     dangerzone_entries = events[(events['LOCATIONX'] > 87) & (events['LOCATIONY'] < 63) & (events['LOCATIONY'] > 37)]
+    penareaentries = events[(events['LOCATIONX'] > 84) & (events['LOCATIONY'] < 81) & (events['LOCATIONY'] > 19)]
     dangerzone_entries['TEAMNAME'] = dangerzone_entries['TEAMNAME'].apply(lambda x: x if x == 'Horsens U19' else 'Opponent')
     events['MATCHLABEL'] = events['MATCHLABEL'] + ' ' + events['DATE']
     events['DATE'] = pd.to_datetime(events['DATE'],utc=True)
@@ -749,7 +750,6 @@ def dashboard():
     df_matchstats = df_matchstats.drop(columns=['DATE'],errors = 'ignore')
 
     df_xg = df_xg[df_xg['MATCHLABEL'].isin(match_choice)]
-    df_possession_stats = df_possession_stats[df_possession_stats['MATCHLABEL'].isin(match_choice)]
     df_matchstats = df_matchstats[df_matchstats['MATCHLABEL'].isin(match_choice)]
     penareaentries = penareaentries[penareaentries['MATCHLABEL'].isin(match_choice)]
     dangerzone_entries = dangerzone_entries[dangerzone_entries['MATCHLABEL'].isin(match_choice)]
