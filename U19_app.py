@@ -736,7 +736,6 @@ def dashboard():
     events['MATCHLABEL'] = events['MATCHLABEL'] + ' ' + events['DATE']
     events['DATE'] = pd.to_datetime(events['DATE'],utc=True)
     events = events.sort_values('DATE').reset_index(drop=True)
-    events = events[events['TEAMNAME'].str.contains('Horsens')]
     matches = events['MATCHLABEL'].unique()
     matches = matches[::-1]
     match_choice = st.multiselect('Choose a match', matches)
