@@ -755,7 +755,7 @@ def dashboard():
     passes_horsens = events[(events['TEAMNAME'] == 'Horsens U19') & 
                             (events['PRIMARYTYPE'] == 'pass') & 
                             (events['LOCATIONX'] < 60)]
-
+    st.dataframe(passes_horsens)
     defensive_actions_opponent = events[(events['TEAMNAME'] == 'Opponent') & 
                                         (events['PRIMARYTYPE'].isin(['duel', 'interception', 'clearance'])) & 
                                         (events['LOCATIONX'] > 40)]
