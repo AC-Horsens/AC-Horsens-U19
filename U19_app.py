@@ -29,17 +29,19 @@ def load_xg():
 
 @st.cache_data()
 def load_groundduels():
-    df_xg = pd.read_csv(r'U19 Ligaen_groundduels.csv')    
-    return df_xg
+    df_groundduels = pd.read_csv(r'U19 Ligaen_groundduels.csv')    
+    return df_groundduels
 
 @st.cache_data()
-def Process_data_spillere(events,df_xg,df_matchstats,groundduels):
+def Process_data_spillere(events,df_xg,df_matchstats,df_groundduels):
     xg = events[['SHORTNAME','MATCHLABEL','SHOTXG']]
     xg['SHOTXG'] = xg['SHOTXG'].astype(float)
     xg = xg.groupby(['SHORTNAME', 'MATCHLABEL'])['SHOTXG'].sum().reset_index()
 #    df_matchstats = df_matchstats[['SHORTNAME','TEAMNAME','MATCHLABEL','POSITION1CODE','MINUTESONFIELD','SUCCESSFULPASSESTOFINALTHIRD_AVERAGE','FIELDAERIALDUELSWON_PERCENT','SUCCESSFULDRIBBLES_PERCENT','SUCCESSFULTHROUGHPASSES_AVERAGE','DUELSWON_PERCENT','SUCCESSFULPASSESTOFINALTHIRD_PERCENT','XGASSIST','SUCCESSFULCROSSES_AVERAGE','SUCCESSFULPROGRESSIVEPASSES_AVERAGE','PROGRESSIVERUN','ACCELERATIONS','SUCCESSFULPASSESTOFINALTHIRD_AVERAGE','SUCCESSFULPROGRESSIVEPASSES_PERCENT','SUCCESSFULPASSES_PERCENT','BALLRECOVERIES','INTERCEPTIONS','DEFENSIVEDUELSWON_AVERAGE','SUCCESSFULDEFENSIVEACTION','SUCCESSFULFORWARDPASSES_AVERAGE','SUCCESSFULFORWARDPASSES_AVERAGE','TOUCHINBOX','XGSHOT','SUCCESSFULKEYPASSES_AVERAGE','SUCCESSFULATTACKINGACTIONS','SUCCESSFULSHOTASSISTS','BALLLOSSES']]
 
     df_scouting = xg.merge(df_matchstats, on=['SHORTNAME', 'MATCHLABEL'], how='left').reset_index()
+    df_scouting = df_scouting.merge(df_groundduels, on=['SHORTNAME', 'MATCHLABEL'], how='left').reset_index()
+
     def calculate_score(df, column, score_column):
         df_unique = df.drop_duplicates(column).copy()
         df_unique.loc[:, score_column] = pd.qcut(df_unique[column], q=10, labels=False, duplicates='raise') + 1
@@ -641,12 +643,13 @@ def Process_data_spillere(events,df_xg,df_matchstats,groundduels):
         'Classic striker': Classic_striker(),
     }
 
+
 df_matchstats = load_matchstats()
 df_xg = load_xg()
 events = load_events()
-groundduels = load_groundduels()
+df_groundduels = load_groundduels()
 
-position_dataframes = Process_data_spillere(events,df_xg,df_matchstats,groundduels)
+position_dataframes = Process_data_spillere(events,df_xg,df_matchstats,df_groundduels)
 #defending_central_defender_df = position_dataframes['defending_central_defender']
 #ball_playing_central_defender_df = position_dataframes['ball_playing_central_defender']
 balanced_central_defender_df = position_dataframes['Central defender']
@@ -723,8 +726,8 @@ def plot_arrows(df):
   
 def dashboard():
     st.title('U19 Dashboard')
+    dangerzone_entries = events[(events['LOCATIONX'] > 87) & (events['LOCATIONY'] < 63) & (events['LOCATIONY'] > 37)]
     dangerzone_entries['TEAMNAME'] = dangerzone_entries['TEAMNAME'].apply(lambda x: x if x == 'Horsens U19' else 'Opponent')
-    events = load_events()
     events['MATCHLABEL'] = events['MATCHLABEL'] + ' ' + events['DATE']
     events['DATE'] = pd.to_datetime(events['DATE'],utc=True)
     events = events.sort_values('DATE').reset_index(drop=True)
@@ -732,7 +735,6 @@ def dashboard():
     matches = events['MATCHLABEL'].unique()
     matches = matches[::-1]
     match_choice = st.multiselect('Choose a match', matches)
-    df_xg = load_xg()
     df_xg['MATCHLABEL'] = df_xg['MATCHLABEL'] + ' ' + df_xg['DATE']
     df_xg = df_xg.drop(columns=['DATE'],errors = 'ignore')
     events['TEAMNAME'] = events['TEAMNAME'].apply(lambda x: x if x == 'Horsens U19' else 'Opponent')
@@ -762,21 +764,6 @@ def dashboard():
     penareaentries = penareaentries.rename(columns={'count':'penaltyAreaEntryCount'})
     penareaentries['TEAMNAME'] = penareaentries['TEAMNAME'].apply(lambda x: x if x == 'Horsens U19' else 'Opponent')
     penareaentries = penareaentries.drop(columns=['DATE'],errors = 'ignore')
-    df_possession_stats = df_possession_stats.value_counts(['territorial_possession','MATCHLABEL']).reset_index()
-    df_possession_stats_grouped = df_possession_stats.groupby('MATCHLABEL')['count'].sum().reset_index()
-    df_possession_stats_grouped.columns = ['MATCHLABEL', 'total_possession']
-
-    # Merge back with original dataframe to calculate percentage
-    df_possession_stats = pd.merge(df_possession_stats, df_possession_stats_grouped, on='MATCHLABEL')
-
-    # Calculate the possession percentage
-    df_possession_stats['terr_poss %'] = (df_possession_stats['count'] / df_possession_stats['total_possession']) * 100
-
-    # Drop unnecessary columns if needed
-    df_possession_stats = df_possession_stats.drop(columns=['total_possession','count'])
-    df_possession_stats = df_possession_stats[df_possession_stats['territorial_possession'] != 'Middle']
-    df_possession_stats = df_possession_stats.rename(columns={'territorial_possession':'TEAMNAME'})
-    df_possession_stats['TEAMNAME'] = df_possession_stats['TEAMNAME'].apply(lambda x: x if x == 'Horsens U19' else 'Opponent')
     dangerzone_entries = dangerzone_entries.value_counts(['TEAMNAME','MATCHLABEL']).reset_index()
     dangerzone_entries = dangerzone_entries.rename(columns={'count':'dangerzoneEntryCount'})
     team_summary = df_xg_summary.merge(df_passes, on=['TEAMNAME','MATCHLABEL'])
@@ -790,101 +777,6 @@ def dashboard():
     st.dataframe(team_summary.style.format(precision=2), use_container_width=True,hide_index=True)
     
 
-    def xg():
-        df_xg = load_xg()
-
-        all_xg = df_xg.copy()
-        df_xg1 = df_xg.copy()
-        all_xg['MATCHLABEL'] = all_xg['MATCHLABEL'] + ' ' + all_xg['DATE']
-        df_xg_agg['MATCHLABEL'] = df_xg_agg['MATCHLABEL'] + ' ' + df_xg_agg['DATE']
-
-        all_xg['DATE'] = pd.to_DATEtime(all_xg['DATE'], utc=True)
-        all_xg = all_xg.sort_values('DATE').reset_index(drop=True)
-        all_xg['match_xg'] = all_xg.groupby('MATCHLABEL')['SHOTXG'].transform('sum')
-        all_xg['team_xg'] = all_xg.groupby(['MATCHLABEL', 'TEAMNAME'])['SHOTXG'].transform('sum')
-        all_xg['xg_diff'] = all_xg['team_xg'] - all_xg['match_xg'] + all_xg['team_xg']
-        all_xg['xG rolling average'] = all_xg.groupby('TEAMNAME')['xg_diff'].transform(lambda x: x.rolling(window=3, min_periods=1).mean())
-        fig = go.Figure()
-        
-        for team in all_xg['TEAMNAME'].unique():
-            team_data = all_xg[all_xg['TEAMNAME'] == team]
-            line_size = 5 if team == 'Horsens U19' else 1  # Larger line for Horsens
-            fig.add_trace(go.Scatter(
-                x=team_data['DATE'], 
-                y=team_data['xG rolling average'], 
-                mode='lines',
-                name=team,
-                line=dict(width=line_size)
-            ))
-        
-        fig.upDATE_layout(
-            title='3-Game Rolling Average of xG Difference Over Time',
-            xaxis_title='DATE',
-            yaxis_title='3-Game Rolling Average xG Difference',
-            template='plotly_white'
-        )
-        st.header('Whole season')
-        
-        st.plotly_chart(fig)
-
-        all_xg = all_xg[['TEAMNAME','xg_diff']]
-        all_xg = all_xg.drop_duplicates()
-        all_xg = all_xg.groupby('TEAMNAME')['xg_diff'].sum().reset_index()
-        all_xg = all_xg.sort_values('xg_diff', ascending=False)
-        df_xg['MATCHLABEL'] = df_xg['MATCHLABEL'] + ' ' + df_xg['DATE']
-        df_xg1['MATCHLABEL'] = df_xg1['MATCHLABEL'] + ' ' + df_xg1['DATE']
-
-        df_xg = df_xg[df_xg['MATCHLABEL'].isin(match_choice)]
-        df_xg1 = df_xg1[df_xg1['MATCHLABEL'].isin(match_choice)]
-
-        df_xg['match_xg'] = df_xg.groupby('MATCHLABEL')['SHOTXG'].transform('sum')
-        df_xg['team_xg'] = df_xg.groupby(['MATCHLABEL','TEAMNAME'])['SHOTXG'].transform('sum')
-        df_xg['xg_diff'] = df_xg['team_xg'] - df_xg['match_xg'] + df_xg['team_xg']
-        df_xg = df_xg[['TEAMNAME','xg_diff']]
-        df_xg = df_xg.drop_duplicates()
-        df_xg = df_xg[df_xg['TEAMNAME'].str.contains('Horsens')]
-        df_xg = df_xg.groupby('TEAMNAME')['xg_diff'].sum().reset_index()
-        st.dataframe(all_xg, hide_index=True)
-        st.header('Chosen matches')
-        st.dataframe(df_xg, hide_index=True)
-        df_xg1['TEAMNAME'] = df_xg1['TEAMNAME'].apply(lambda x: x if x == 'Horsens U19' else 'Opponent')
-        df_xg1 = df_xg1.sort_values(by=['TEAMNAME','minute'])
-
-        df_xg1['cumulative_xG'] = df_xg1.groupby(['TEAMNAME'])['SHOTXG'].cumsum()
-        fig = go.Figure()
-        
-        for team in df_xg1['TEAMNAME'].unique():
-            team_data = df_xg1[df_xg1['TEAMNAME'] == team]
-            fig.add_trace(go.Scatter(
-                x=team_data['minute'], 
-                y=team_data['cumulative_xG'], 
-                mode='lines',
-                name=team,
-            ))
-        
-        fig.upDATE_layout(
-            title='Average Cumulative xG Over Time',
-            xaxis_title='Time (Minutes)',
-            yaxis_title='Average Cumulative xG',
-            template='plotly_white'
-        )
-        st.plotly_chart(fig)
-        df_xg_agg = df_xg_agg[df_xg_agg['MATCHLABEL'].isin(match_choice)]    
-        df_xg_plot = df_xg_agg[['SHORTNAME','TEAMNAME','location.x','location.y', 'SHOTXG']]
-        df_xg_plot = df_xg_plot[df_xg_plot['TEAMNAME'] == 'Horsens U19']
-        pitch = Pitch(pitch_type='wyscout',half=True,line_color='white', pitch_color='grass')
-        fig, ax = pitch.draw(figsize=(10, 6))
-        
-        sc = ax.scatter(df_xg_plot['location.x'], df_xg_plot['location.y'], s=df_xg_plot['SHOTXG'] * 100, c='yellow', edgecolors='black', alpha=0.6)
-        
-        for i, row in df_xg_plot.iterrows():
-            ax.text(row['location.x'], row['location.y'], f"{row['SHORTNAME']}\n{row['SHOTXG']:.2f}", fontsize=6, ha='center', va='center')
-        
-        st.pyplot(fig)
-        df_xg_plot = df_xg_plot.groupby(['SHORTNAME'])['SHOTXG'].sum().reset_index()
-        df_xg_plot = df_xg_plot.sort_values('SHOTXG', ascending=False)
-        st.dataframe(df_xg_plot, hide_index=True)
-        
     def offensive_transitions():
         st.header('Whole season')
         st.write('Transition xg')
@@ -948,7 +840,7 @@ def dashboard():
         player_involvement = player_involvement.sort_values('possession.attack.xg', ascending=False)
         st.dataframe(player_involvement, hide_index=True)
 
-    def chance_creation():
+    def breakthrough():
         st.header('Whole season')
         penalty_area_entries = events[
             (events['LOCATIONX'] > 84) &
@@ -1072,9 +964,8 @@ def dashboard():
     
         
     Data_types = {
-        'xG': xg,
         'Offensive transitions': offensive_transitions,
-        'Chance Creation': chance_creation,
+        'Chance Creation': breakthrough,
     }
 
     for i in range(1, 4):
