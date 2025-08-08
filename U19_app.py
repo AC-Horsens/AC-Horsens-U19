@@ -754,7 +754,7 @@ def dashboard():
                             (events['PRIMARYTYPE'].str.contains('pass') & 
                             (events['LOCATIONX'] < 60)))]
     defensive_actions_opponent = events[(events['TEAMNAME'] == 'Opponent') & 
-                                       (events['PRIMARYTYPE'].isin(['duel', 'interception', 'clearance'])) & 
+                                       (events['PRIMARYTYPE'].isin(['duel', 'interception'])) & 
                                        (events['LOCATIONX'] > 40) &
                                        ~events[['SECONDARYTYPE1', 'SECONDARYTYPE2', 'SECONDARYTYPE3', 
                                                 'SECONDARYTYPE4', 'SECONDARYTYPE5', 'SECONDARYTYPE6', 
@@ -772,7 +772,7 @@ def dashboard():
                              (events['PRIMARYTYPE'].str.contains('pass') & 
                              (events['LOCATIONX'] < 60)))]
     defensive_actions_horsens = events[(events['TEAMNAME'] == 'Horsens U19') & 
-                                       (events['PRIMARYTYPE'].isin(['duel', 'interception', 'clearance'])) & 
+                                       (events['PRIMARYTYPE'].isin(['duel', 'interception'])) & 
                                        (events['LOCATIONX'] > 40) &
                                        ~events[['SECONDARYTYPE1', 'SECONDARYTYPE2', 'SECONDARYTYPE3', 
                                                 'SECONDARYTYPE4', 'SECONDARYTYPE5', 'SECONDARYTYPE6', 
