@@ -800,18 +800,15 @@ def dashboard():
 
     df_matchstats = df_matchstats.drop_duplicates()
     df_matchstats['TEAMNAME'] = df_matchstats['TEAMNAME'].apply(lambda x: x if x == 'Horsens U19' else 'Opponent')
-    df_passes = df_matchstats[['TEAMNAME','MATCHLABEL','SUCCESSFULFORWARDPASSES_AVERAGE','SUCCESSFULFORWARDPASSES_AVERAGE']]
 
-    df_passes = df_passes.groupby(['TEAMNAME','MATCHLABEL']).sum().reset_index()
 
     df_xg_summary = df_xg.groupby(['TEAMNAME','MATCHLABEL'])['SHOTXG'].sum().reset_index()
-    penareaentries = penareaentries.groupby(['TEAMNAME','MATCHLABEL']).sum().reset_index()
+    penareaentries = penareaentries.groupby(['TEAMNAME'])['EVENT_WYID'].sum().reset_index()
     penareaentries = penareaentries.rename(columns={'count':'penaltyAreaEntryCount'})
     penareaentries = penareaentries.drop(columns=['DATE'],errors = 'ignore')
-    dangerzone_entries = dangerzone_entries.value_counts(['TEAMNAME','MATCHLABEL']).reset_index()
+    dangerzone_entries  = dangerzone_entries .groupby(['TEAMNAME'])['EVENT_WYID'].sum().reset_index()
     dangerzone_entries = dangerzone_entries.rename(columns={'count':'dangerzoneEntryCount'})
-    team_summary = df_xg_summary.merge(df_passes, on=['TEAMNAME','MATCHLABEL'])
-    team_summary = team_summary.merge(penareaentries, on=['TEAMNAME','MATCHLABEL'])
+    team_summary = df_xg_summary.merge(penareaentries, on=['TEAMNAME','MATCHLABEL'])
     team_summary = team_summary.merge(dangerzone_entries, on=['TEAMNAME','MATCHLABEL'])
     team_summary = team_summary.merge(df_ppda, on=['TEAMNAME','MATCHLABEL'])
     team_summary = team_summary.drop(columns=['MATCHLABEL'])
