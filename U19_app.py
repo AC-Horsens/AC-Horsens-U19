@@ -749,7 +749,6 @@ def dashboard():
     df_xg = df_xg[df_xg['MATCHLABEL'].isin(match_choice)]
     df_matchstats = df_matchstats[df_matchstats['MATCHLABEL'].isin(match_choice)]
     events = events[events['MATCHLABEL'].isin(match_choice)]
-    st.dataframe(events)
     # Calculate PPDA for Horsens U19
     passes_horsens = events[(events['TEAMNAME'].str.contains('Horsens U19') & 
                             (events['PRIMARYTYPE'].str.contains('pass') & 
