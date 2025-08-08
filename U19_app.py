@@ -725,6 +725,10 @@ def plot_arrows(df):
     st.pyplot(fig)
   
 def dashboard():
+    df_matchstats = load_matchstats()
+    df_xg = load_xg()
+    events = load_events()
+    df_groundduels = load_groundduels()
     st.title('U19 Dashboard')
     dangerzone_entries = events[(events['LOCATIONX'] > 87) & (events['LOCATIONY'] < 63) & (events['LOCATIONY'] > 37)]
     dangerzone_entries['TEAMNAME'] = dangerzone_entries['TEAMNAME'].apply(lambda x: x if x == 'Horsens U19' else 'Opponent')
