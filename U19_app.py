@@ -760,7 +760,7 @@ def dashboard():
 
     passes_horsens_count = passes_horsens.shape[0]
     defensive_actions_opponent_count = defensive_actions_opponent.shape[0]
-
+    st.write(defensive_actions_opponent_count)
     # Calculate PPDA for Horsens U19
     if defensive_actions_opponent_count > 0:
         ppda_horsens = passes_horsens_count / defensive_actions_opponent_count
@@ -770,11 +770,11 @@ def dashboard():
     # Calculate PPDA for Opponent
     passes_opponent = events[(events['TEAMNAME'].str.contains('Opponent') & 
                              (events['PRIMARYTYPE'].str.contains('pass') & 
-                             (events['LOCATIONX'] > 40)))]
+                             (events['LOCATIONX'] < 40)))]
     st.dataframe(passes_opponent)
     defensive_actions_horsens = events[(events['TEAMNAME'].str.contains('Horsens U19') & 
                                        (events['PRIMARYTYPE'].isin(['duel', 'interception', 'clearance'])) & 
-                                       (events['LOCATIONX'] < 60))]
+                                       (events['LOCATIONX'] > 60))]
 
     passes_opponent_count = passes_opponent.shape[0]
     defensive_actions_horsens_count = defensive_actions_horsens.shape[0]
