@@ -730,9 +730,9 @@ def dashboard():
     events = load_events()
     df_groundduels = load_groundduels()
     st.title('U19 Dashboard')
-    dangerzone_entries = events[(events['LOCATIONX'] > 87) & (events['LOCATIONY'] < 63) & (events['LOCATIONY'] > 37)]
-    penareaentries = events[(events['LOCATIONX'] > 84) & (events['LOCATIONY'] < 81) & (events['LOCATIONY'] > 19)]
-    dangerzone_entries['TEAMNAME'] = dangerzone_entries['TEAMNAME'].apply(lambda x: x if x == 'Horsens U19' else 'Opponent')
+    events['TEAMNAME'] = events['TEAMNAME'].apply(lambda x: x if x == 'Horsens U19' else 'Opponent')
+    df_xg['TEAMNAME'] = df_xg['TEAMNAME'].apply(lambda x: x if x == 'Horsens U19' else 'Opponent')
+    df_matchstats['TEAMNAME'] = df_matchstats['TEAMNAME'].apply(lambda x: x if x == 'Horsens U19' else 'Opponent')
     events['MATCHLABEL'] = events['MATCHLABEL'] + ' ' + events['DATE']
     events['DATE'] = pd.to_datetime(events['DATE'],utc=True)
     events = events.sort_values('DATE').reset_index(drop=True)
@@ -742,8 +742,6 @@ def dashboard():
     match_choice = st.multiselect('Choose a match', matches)
     df_xg['MATCHLABEL'] = df_xg['MATCHLABEL'] + ' ' + df_xg['DATE']
     df_xg = df_xg.drop(columns=['DATE'],errors = 'ignore')
-    events['TEAMNAME'] = events['TEAMNAME'].apply(lambda x: x if x == 'Horsens U19' else 'Opponent')
-    df_xg['TEAMNAME'] = df_xg['TEAMNAME'].apply(lambda x: x if x == 'Horsens U19' else 'Opponent')
 
     df_matchstats = load_matchstats()
     df_matchstats['MATCHLABEL'] = df_matchstats['MATCHLABEL'] + ' ' + df_matchstats['DATE']
@@ -751,8 +749,55 @@ def dashboard():
 
     df_xg = df_xg[df_xg['MATCHLABEL'].isin(match_choice)]
     df_matchstats = df_matchstats[df_matchstats['MATCHLABEL'].isin(match_choice)]
-    penareaentries = penareaentries[penareaentries['MATCHLABEL'].isin(match_choice)]
-    dangerzone_entries = dangerzone_entries[dangerzone_entries['MATCHLABEL'].isin(match_choice)]
+    events = events[events['MATCHLABEL'].isin(match_choice)]
+
+    # Calculate PPDA for Horsens U19
+    passes_horsens = events[(events['TEAMNAME'] == 'Horsens U19') & 
+                            (events['PRIMARYTYPE'] == 'pass') & 
+                            (events['LOCATIONX'] < 60)]
+
+    defensive_actions_opponent = events[(events['TEAMNAME'] == 'Opponent') & 
+                                        (events['PRIMARYTYPE'].isin(['duel', 'interception', 'clearance'])) & 
+                                        (events['LOCATIONX'] > 40)]
+
+    passes_horsens_count = passes_horsens.shape[0]
+    defensive_actions_opponent_count = defensive_actions_opponent.shape[0]
+
+    # Calculate PPDA for Horsens U19
+    if defensive_actions_opponent_count > 0:
+        ppda_horsens = passes_horsens_count / defensive_actions_opponent_count
+    else:
+        ppda_horsens = 0
+
+    # Calculate PPDA for Opponent
+    passes_opponent = events[(events['TEAMNAME'] == 'Opponent') & 
+                             (events['PRIMARYTYPE'] == 'pass') & 
+                             (events['LOCATIONX'] > 40)]
+
+    defensive_actions_horsens = events[(events['TEAMNAME'] == 'Horsens U19') & 
+                                       (events['PRIMARYTYPE'].isin(['duel', 'interception', 'clearance'])) & 
+                                       (events['LOCATIONX'] < 60)]
+
+    passes_opponent_count = passes_opponent.shape[0]
+    defensive_actions_horsens_count = defensive_actions_horsens.shape[0]
+
+    # Calculate PPDA for Opponent
+    if defensive_actions_horsens_count > 0:
+        ppda_opponent = passes_opponent_count / defensive_actions_horsens_count
+    else:
+        ppda_opponent = 0
+
+    # Store PPDA for both teams in a DataFrame
+    df_ppda = pd.DataFrame({
+        'TEAMNAME': ['Horsens U19', 'Opponent'],
+        'Passes': [passes_horsens_count, passes_opponent_count],
+        'Defensive Actions': [defensive_actions_opponent_count, defensive_actions_horsens_count],
+        'PPDA': [ppda_horsens, ppda_opponent]
+    })
+
+    dangerzone_entries = events[(events['LOCATIONX'] > 87) & (events['LOCATIONY'] < 63) & (events['LOCATIONY'] > 37)]
+    penareaentries = events[(events['LOCATIONX'] > 84) & (events['LOCATIONY'] < 81) & (events['LOCATIONY'] > 19)]
+
     df_matchstats = df_matchstats.drop_duplicates()
     df_matchstats['TEAMNAME'] = df_matchstats['TEAMNAME'].apply(lambda x: x if x == 'Horsens U19' else 'Opponent')
     df_passes = df_matchstats[['TEAMNAME','MATCHLABEL','SUCCESSFULFORWARDPASSES_AVERAGE','SUCCESSFULFORWARDPASSES_AVERAGE']]
@@ -760,13 +805,8 @@ def dashboard():
     df_passes = df_passes.groupby(['TEAMNAME','MATCHLABEL']).sum().reset_index()
 
     df_xg_summary = df_xg.groupby(['TEAMNAME','MATCHLABEL'])['SHOTXG'].sum().reset_index()
-    df_ppda = df_ppda[df_ppda['MATCHLABEL'].isin(match_choice)]
-    df_ppda = df_ppda.groupby(['TEAMNAME','MATCHLABEL'])['PPDA'].sum().reset_index()
-    df_ppda = df_ppda.drop(columns=['DATE'],errors = 'ignore')
-    df_ppda['TEAMNAME'] = df_ppda['TEAMNAME'] = df_ppda['TEAMNAME'].apply(lambda x: x if x == 'Horsens U19' else 'Opponent')
     penareaentries = penareaentries.groupby(['TEAMNAME','MATCHLABEL']).sum().reset_index()
     penareaentries = penareaentries.rename(columns={'count':'penaltyAreaEntryCount'})
-    penareaentries['TEAMNAME'] = penareaentries['TEAMNAME'].apply(lambda x: x if x == 'Horsens U19' else 'Opponent')
     penareaentries = penareaentries.drop(columns=['DATE'],errors = 'ignore')
     dangerzone_entries = dangerzone_entries.value_counts(['TEAMNAME','MATCHLABEL']).reset_index()
     dangerzone_entries = dangerzone_entries.rename(columns={'count':'dangerzoneEntryCount'})
