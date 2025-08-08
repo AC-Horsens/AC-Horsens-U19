@@ -724,7 +724,7 @@ def plot_arrows(df):
     # Use Streamlit to display the plot
     st.pyplot(fig)
   
-def dashboard():
+def dashboard(events):
     st.title('U19 Dashboard')
     dangerzone_entries = events[(events['LOCATIONX'] > 87) & (events['LOCATIONY'] < 63) & (events['LOCATIONY'] > 37)]
     dangerzone_entries['TEAMNAME'] = dangerzone_entries['TEAMNAME'].apply(lambda x: x if x == 'Horsens U19' else 'Opponent')
