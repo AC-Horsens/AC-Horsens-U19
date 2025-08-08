@@ -774,7 +774,6 @@ def dashboard():
     team_summary = team_summary.merge(penareaentries, on=['TEAMNAME','MATCHLABEL'])
     team_summary = team_summary.merge(dangerzone_entries, on=['TEAMNAME','MATCHLABEL'])
     team_summary = team_summary.merge(df_ppda, on=['TEAMNAME','MATCHLABEL'])
-    team_summary = team_summary.merge(df_possession_stats, on=['TEAMNAME','MATCHLABEL'])
     team_summary = team_summary.drop(columns=['MATCHLABEL'])
     team_summary = team_summary.groupby('TEAMNAME').mean().reset_index()
     team_summary = team_summary.round(2)
