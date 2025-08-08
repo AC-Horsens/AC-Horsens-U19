@@ -804,10 +804,9 @@ def dashboard():
 
     df_xg_summary = df_xg.groupby(['TEAMNAME','MATCHLABEL'])['SHOTXG'].sum().reset_index()
     penareaentries = penareaentries.groupby(['TEAMNAME'])['EVENT_WYID'].sum().reset_index()
-    penareaentries = penareaentries.rename(columns={'count':'penaltyAreaEntryCount'})
-    penareaentries = penareaentries.drop(columns=['DATE'],errors = 'ignore')
+    penareaentries = penareaentries.rename(columns={'EVENT_WYID':'PA actions'})
     dangerzone_entries  = dangerzone_entries .groupby(['TEAMNAME'])['EVENT_WYID'].sum().reset_index()
-    dangerzone_entries = dangerzone_entries.rename(columns={'count':'dangerzoneEntryCount'})
+    dangerzone_entries = dangerzone_entries.rename(columns={'EVENT_WYID':'dz actions'})
     team_summary = df_xg_summary.merge(penareaentries, on=['TEAMNAME'])
     team_summary = team_summary.merge(dangerzone_entries, on=['TEAMNAME'])
     team_summary = team_summary.merge(df_ppda, on=['TEAMNAME'])
